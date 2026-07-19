@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "802ecdc6ce116fade30a2ffbaade287087d6cf51",
+    "node_id": "C_kwDOB5aMANoAKDgwMmVjZGM2Y2UxMTZmYWRlMzBhMmZmYmFhZGUyODcwODdkNmNmNTE",
+    "commit": {
+      "author": {
+        "name": "CY Chen",
+        "email": "cyc@nvidia.com",
+        "date": "2026-07-07T08:20:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-07T08:20:31Z"
+      },
+      "message": "Initialize topic endpoint info in rosbag2 test (#2446)\n\nSigned-off-by: CY Chen <cyc@nvidia.com>",
+      "tree": {
+        "sha": "e27eeea61491dbf23cf2a14db2947e96bf186f1a",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/e27eeea61491dbf23cf2a14db2947e96bf186f1a"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/802ecdc6ce116fade30a2ffbaade287087d6cf51",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTLbPCRC1aQ7uu5UhlAAAvSkQADzk5PwuWRqiAfTtc3cvb1ig\n5LZJ6CqrFZhka9danEYfysFuxBUNphZ0I6uhinzoOlswPxYR6yISPzSG0KIw074+\nmOqTTEQ5a8HGcyh7/Wedyto+x/FgMW7Rj59AoPBkj9DUycTi2NNv6fuGhRowSfhp\nf7RQQcsmCvZmG5rqLQ+gi2YP+680U+UucogBAUD4TtbMldSc9INYWNV3ja36gagZ\nj/o+IWEWEh0yIaA0plvyrG/nqxE1rWL9Yxbe3e/gYABfCni9RUFV8ght0B0A8Y0G\nHzGUeN46rzseNGYJL+LM2xqFheU5kd1sQjK3OKdxyrHdvtKVtXDUwZ3wYd9kPywW\n0xTArAS27NDBkt89Whle/11UkPQxoyeJNDohqKH4kC0daBZwovG/DvvEJTIzeHlX\n9G5EbJ5vAXg3bcHYOx8V0IXiKAD7wb8Z/WfTHgdlFqo3O79b8aOgNODLmz4g+088\noYXpMQQR4H/lu+BBlkP5U7RfvE1dYxOJFwdcdfHNimvunLzVcAVi/HjJc555yNxc\nwpQ51/KXHzQ5qqSyDQ2LIH+6T39Q84ptzwZzPoRVYSu85sT8v7ozoQdkpXdHW/xM\nXvIEN41hIlymHtgnc0RyYbFRCCUYlJ6SZ5ySWfZNODawSz614jdZP4svX9bg+AqL\n+k837WsH9s05OMVOoL0X\n=LpQP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e27eeea61491dbf23cf2a14db2947e96bf186f1a\nparent 90065bdc182d213161fe407107cfab1d493f5987\nauthor CY Chen <cyc@nvidia.com> 1783412431 +0800\ncommitter GitHub <noreply@github.com> 1783412431 +0200\n\nInitialize topic endpoint info in rosbag2 test (#2446)\n\nSigned-off-by: CY Chen <cyc@nvidia.com>",
+        "verified_at": "2026-07-07T08:20:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/802ecdc6ce116fade30a2ffbaade287087d6cf51",
+    "html_url": "https://github.com/ros2/rosbag2/commit/802ecdc6ce116fade30a2ffbaade287087d6cf51",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/802ecdc6ce116fade30a2ffbaade287087d6cf51/comments",
+    "author": {
+      "login": "nvcyc",
+      "id": 75277827,
+      "node_id": "MDQ6VXNlcjc1Mjc3ODI3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75277827?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nvcyc",
+      "html_url": "https://github.com/nvcyc",
+      "followers_url": "https://api.github.com/users/nvcyc/followers",
+      "following_url": "https://api.github.com/users/nvcyc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nvcyc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nvcyc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nvcyc/subscriptions",
+      "organizations_url": "https://api.github.com/users/nvcyc/orgs",
+      "repos_url": "https://api.github.com/users/nvcyc/repos",
+      "events_url": "https://api.github.com/users/nvcyc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nvcyc/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90065bdc182d213161fe407107cfab1d493f5987",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/90065bdc182d213161fe407107cfab1d493f5987",
+        "html_url": "https://github.com/ros2/rosbag2/commit/90065bdc182d213161fe407107cfab1d493f5987"
+      }
+    ]
+  }
+]

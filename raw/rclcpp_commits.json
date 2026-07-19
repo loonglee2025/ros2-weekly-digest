@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "d0312175e380cf09bc975e844e42d3094b607bc7",
+    "node_id": "C_kwDOAVrxtdoAKGQwMzEyMTc1ZTM4MGNmMDliYzk3NWU4NDRlNDJkMzA5NGI2MDdiYzc",
+    "commit": {
+      "author": {
+        "name": "Tomoya Fujita",
+        "email": "fujita.tomoya@triorb.co.jp",
+        "date": "2026-07-08T07:25:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-08T07:25:37Z"
+      },
+      "message": "use C++ 20 in default. (#3187)\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>\nCo-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "5af048406bb185a71ed84cf477b0bf14385ef0c8",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/5af048406bb185a71ed84cf477b0bf14385ef0c8"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/d0312175e380cf09bc975e844e42d3094b607bc7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTftxCRC1aQ7uu5UhlAAAW9YQADN30ua2b5KbjWLABJNSDksJ\nmAQ59ETlXNTJrqoK7i/fQeZ6jIuiieRgBZGOrHgTnzgyeu7JRs3EVfC2Az2yHzuW\nDGeE7XpLI0XIPbv/wR5LC4wOr2BFu2GjAjZTU4sceHeAfsRZIBqFOyrfYPfJ+WQL\nlbWpDBfJ9oVxEwF7RmJMfr2FKo8zIHB1a4JvsJ/Npfc07n2Apo355G6GzjDlWMgq\nuCbb5t7AmV3uXoDyhE0Zd63n1jDhpYeOOr5r0bahAfHv1hkEIXNxui7o29V6l1q8\njnf1K+y8cSEPKRGkfDr73iJihiYSEs7EqW+W55ijUX0BpfsecN3PW8IZkK70IeTy\nr5uDPC6Z7qoBIDMgSwecN9gHaCZcY+IZb8Jw2tKCro4xa8w99K/EEJIkL3fztCFV\nwKOLSp0lp/a5uBRfXqFZGxzlTpnFfZWT+S2C9jtYf8ILD4RJCeHXVvH+TtZcj8Ug\nvFDEXaajZDmoVK4Q6BWZodj6TbToEYrqZ3n4NLxgrh9+GQOu2MZRO5aYBcJakSF2\nbmnDMWrqiJ16b6YyNDXclcZ7S+oUcLvwaTBbGSTfGelyO5V1nFzLHl0fSKVq4pMY\nC6wsdoCiE3sVKVnPVBNv6bG8tgP3GYfCsLc+f/XagRJLcgYp6csTc+AJkQjB+yUO\nkVBNGip0GxSpRX4UJRve\n=tNgZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5af048406bb185a71ed84cf477b0bf14385ef0c8\nparent 569edb884138c2e3de25cbfe462a6d4d09dde52a\nauthor Tomoya Fujita <fujita.tomoya@triorb.co.jp> 1783495537 +0900\ncommitter GitHub <noreply@github.com> 1783495537 +0200\n\nuse C++ 20 in default. (#3187)\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>\nCo-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+        "verified_at": "2026-07-08T07:25:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/d0312175e380cf09bc975e844e42d3094b607bc7",
+    "html_url": "https://github.com/ros2/rclcpp/commit/d0312175e380cf09bc975e844e42d3094b607bc7",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/d0312175e380cf09bc975e844e42d3094b607bc7/comments",
+    "author": {
+      "login": "fujitatomoya",
+      "id": 43395114,
+      "node_id": "MDQ6VXNlcjQzMzk1MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43395114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fujitatomoya",
+      "html_url": "https://github.com/fujitatomoya",
+      "followers_url": "https://api.github.com/users/fujitatomoya/followers",
+      "following_url": "https://api.github.com/users/fujitatomoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fujitatomoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fujitatomoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fujitatomoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/fujitatomoya/orgs",
+      "repos_url": "https://api.github.com/users/fujitatomoya/repos",
+      "events_url": "https://api.github.com/users/fujitatomoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fujitatomoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "569edb884138c2e3de25cbfe462a6d4d09dde52a",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/569edb884138c2e3de25cbfe462a6d4d09dde52a",
+        "html_url": "https://github.com/ros2/rclcpp/commit/569edb884138c2e3de25cbfe462a6d4d09dde52a"
+      }
+    ]
+  },
+  {
+    "sha": "569edb884138c2e3de25cbfe462a6d4d09dde52a",
+    "node_id": "C_kwDOAVrxtdoAKDU2OWVkYjg4NDEzOGMyZTNkZTI1Y2JmZTQ2MmE2ZDRkMDlkZGU1MmE",
+    "commit": {
+      "author": {
+        "name": "Ivo Ivanov",
+        "email": "52303770+iv461@users.noreply.github.com",
+        "date": "2026-07-07T09:08:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-07T09:08:32Z"
+      },
+      "message": "Bugfix/rclcpp action UUID rng race condition (#3183)\n\nSigned-off-by: Ivo Ivanov <ivo.ivanov@tha.de>\nCo-authored-by: Ivo Ivanov <ivo.ivanov@tha.de>",
+      "tree": {
+        "sha": "d2a9cf1aeafb94a141d8e743a854f77634369363",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/d2a9cf1aeafb94a141d8e743a854f77634369363"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/569edb884138c2e3de25cbfe462a6d4d09dde52a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTMIQCRC1aQ7uu5UhlAAAn5AQAGmNFHHf1fujit6dbXaFWdcH\n927UiSK40phZmt3exxms/wkW55zyBi9rbhIZ1mfcgcv/8na2IHMYcr4ID6x/2efN\nKysNoB3ea1jHZHoETmzWzFevY4nhZrcOnszyxldrmkknojpna6qGOFrqjRSX91R1\nnNg3BnVjgcxenR3+iAOIAz+CzoU38sNGysxe7YnaHG2HG389W2jkF5RY4I8KaWUI\n/AU2Lbiy3og8JgSsQ21KfSp70mHZNRT73nyEUQTPdQI8qHAGz+gR0HfKdbuvYqyW\n6k4ugUMoj/P64Zu7tRyJFzhpcqCgD0Y91K1yOMeTfmIZ0gXszKn3SUd9rlwcElrx\nZaxjS6+aVyrpMB46XSC/SqPXTueiAsHJAXkdgx22Z7lM+cgjmWs+2KxnIt0YMvUZ\n44T5Z829xHWWMiAYYFc+ugYH34GLQGyxXksVj1E6U0xZcU+j6Y3c8ST0Hs7f/kGh\ntk70ZJiI+vlHktBulZLFg88QYvqf3nnSdZotMkSHtpE2cT1t2ckGoh7EkSRycR6h\nA/WNJZ7P4PSyf0jLHiP5feoz9rUZjCp0cb7veHcP2EnoKCgDG99eKwRt7S5QoIqO\nWn2S3YRYDkpn5pTRVI9lXdfcj9uUIaWvKFMwgC5YuURvR7IshwhsXffkahwbIEgd\nj+HvXqBRqJgRXpOKhiTR\n=/01M\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d2a9cf1aeafb94a141d8e743a854f77634369363\nparent 6a6bbea46a248c69aaf49d2b2e73575a7f52a2b8\nauthor Ivo Ivanov <52303770+iv461@users.noreply.github.com> 1783415312 +0200\ncommitter GitHub <noreply@github.com> 1783415312 +0200\n\nBugfix/rclcpp action UUID rng race condition (#3183)\n\nSigned-off-by: Ivo Ivanov <ivo.ivanov@tha.de>\nCo-authored-by: Ivo Ivanov <ivo.ivanov@tha.de>",
+        "verified_at": "2026-07-07T09:08:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/569edb884138c2e3de25cbfe462a6d4d09dde52a",
+    "html_url": "https://github.com/ros2/rclcpp/commit/569edb884138c2e3de25cbfe462a6d4d09dde52a",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/569edb884138c2e3de25cbfe462a6d4d09dde52a/comments",
+    "author": {
+      "login": "iv461",
+      "id": 52303770,
+      "node_id": "MDQ6VXNlcjUyMzAzNzcw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/52303770?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/iv461",
+      "html_url": "https://github.com/iv461",
+      "followers_url": "https://api.github.com/users/iv461/followers",
+      "following_url": "https://api.github.com/users/iv461/following{/other_user}",
+      "gists_url": "https://api.github.com/users/iv461/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/iv461/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/iv461/subscriptions",
+      "organizations_url": "https://api.github.com/users/iv461/orgs",
+      "repos_url": "https://api.github.com/users/iv461/repos",
+      "events_url": "https://api.github.com/users/iv461/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/iv461/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6a6bbea46a248c69aaf49d2b2e73575a7f52a2b8",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/6a6bbea46a248c69aaf49d2b2e73575a7f52a2b8",
+        "html_url": "https://github.com/ros2/rclcpp/commit/6a6bbea46a248c69aaf49d2b2e73575a7f52a2b8"
+      }
+    ]
+  }
+]

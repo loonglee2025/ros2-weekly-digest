@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "2fb8492b64ceb426d96e7f97e71846fb91394aa2",
+    "node_id": "C_kwDOCi-gUdoAKDJmYjg0OTJiNjRjZWI0MjZkOTZlN2Y5N2U3MTg0NmZiOTEzOTRhYTI",
+    "commit": {
+      "author": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-07-09T23:16:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-09T23:16:24Z"
+      },
+      "message": "resolute: complete ament_index_cpp::get_package_share migration on Rolling (#3705)\n\nament_index_cpp evolved its API in two steps, and the RCLCPP_VERSION_GTE(30, 0, 0)\nguards added in #3703 hit the wrong branch on Rolling-on-Noble (where\nthe header still exists but the 1-arg form is now deprecated) and\noutright fail to compile on Rolling-on-Resolute (where the header no\nlonger exists at all).\n\nGuard on ament_index_cpp's own version macro — three tiers:\n\n  1.14+ (Rolling on Resolute)\n    <ament_index_cpp/get_package_share_path.hpp> replaced the old\n    header, exposing get_package_share_path(pkg) which returns\n    std::filesystem::path directly.\n\n  1.5+ (Jazzy 1.8.4, Kilted 1.11.4, Lyrical 1.13.3, Rolling-on-Noble 1.13.1)\n    Old header still present; use the 2-arg out-param overload\n    get_package_share_directory(pkg, path) which is non-deprecated\n    (matters for the -Werror=deprecated-declarations job on\n    Rolling-on-Noble where the 1-arg form is deprecated).\n\n  older (Humble 1.4.1)\n    Only the 1-arg get_package_share_directory(pkg) returning\n    std::string is available; wrap in std::filesystem::path().\n\nGuarding on ament_index_cpp's own version (rather than rclcpp's) is\nimportant because the two packages release independently — the API\nchange lives in ament_index_cpp, and using RCLCPP_VERSION as a proxy\nmisfires when Rolling's rclcpp advances without a corresponding\nament_index_cpp bump (as happened in #3703 → this fix).\n\nDrops the now-unused `#include <rclcpp/version.h>` in each file (added\nby #3703 for the guard we replaced).\n\nVerified with a full source-build of moveit2 + downstream against\n`ubuntu:resolute` + ROS Rolling (`ros2-testing` apt).\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "b5e29711414f4703fcf1ca93535bf3fea9a5d512",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/b5e29711414f4703fcf1ca93535bf3fea9a5d512"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/2fb8492b64ceb426d96e7f97e71846fb91394aa2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqUCvICRC1aQ7uu5UhlAAAkgsQAE74qjtNmBNree2cE/XIzVIP\nMQKMN04jQYmodlUexupCrUoywIZk56ODFqAOmhURVG/O/slPka2lyZmBPpawf+RX\njwbqWu/Sh8EKsDYeIw9gyI4w8fx85bDTNyKBjnjxjZZs6hZ0w58+Kje1bCkITkFq\nh7E5WlQtxem8EG3POu/mcPW+lTHuuvURBwH/k4bJzoIyh/KeCKIuovmyq8qtmlfz\n3ORsPhPcWWsDxTBp4V16Vr9zbEd3EqY5HDpQwjPSRSTc/goTwpJviHUEMScUpXBK\nlTeBizflzqn2jdrBwzFcztxrQYdYe+d94gq/vx2oSN4oSGSUuPMx0Z9F9vzrSEfJ\njn2TAShMJsnyydKPFxVsXQFW1zdoccbFRLf+UyJe2ixFxOr1MZklKu2wMiAx9d0k\n+lnLyzNzzwIluZ4kM5m/TwAki5vkkhYpCVsttcFKYx43QNidcsmqPlzNQEpjX6aY\ntcLLgCCRxW4iqkHzgGw7Vqri91a+U/cr/sBVNJnB8lrzu5swtrjKoHTfuBUVLrxJ\nlY280onEnTU5dJxQiDAxbYudoEjbcUHRY6FqaBN2Sib7U3QqRo9XjNMsOz1f15WB\noc9UrRwlp1P9tJgn/XeMObqG43T8X3EqmhTWnl6oUK+s3eCGbtHTq/OMCUDB560v\nErrnbJReZJxSHJOuDBWY\n=QE6v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b5e29711414f4703fcf1ca93535bf3fea9a5d512\nparent 4a766fd1ba7798822c8e5997ba8c18ecdff2f113\nauthor Nathan Brooks <nathanbrooks@picknik.ai> 1783638984 -0600\ncommitter GitHub <noreply@github.com> 1783638984 -0600\n\nresolute: complete ament_index_cpp::get_package_share migration on Rolling (#3705)\n\nament_index_cpp evolved its API in two steps, and the RCLCPP_VERSION_GTE(30, 0, 0)\nguards added in #3703 hit the wrong branch on Rolling-on-Noble (where\nthe header still exists but the 1-arg form is now deprecated) and\noutright fail to compile on Rolling-on-Resolute (where the header no\nlonger exists at all).\n\nGuard on ament_index_cpp's own version macro — three tiers:\n\n  1.14+ (Rolling on Resolute)\n    <ament_index_cpp/get_package_share_path.hpp> replaced the old\n    header, exposing get_package_share_path(pkg) which returns\n    std::filesystem::path directly.\n\n  1.5+ (Jazzy 1.8.4, Kilted 1.11.4, Lyrical 1.13.3, Rolling-on-Noble 1.13.1)\n    Old header still present; use the 2-arg out-param overload\n    get_package_share_directory(pkg, path) which is non-deprecated\n    (matters for the -Werror=deprecated-declarations job on\n    Rolling-on-Noble where the 1-arg form is deprecated).\n\n  older (Humble 1.4.1)\n    Only the 1-arg get_package_share_directory(pkg) returning\n    std::string is available; wrap in std::filesystem::path().\n\nGuarding on ament_index_cpp's own version (rather than rclcpp's) is\nimportant because the two packages release independently — the API\nchange lives in ament_index_cpp, and using RCLCPP_VERSION as a proxy\nmisfires when Rolling's rclcpp advances without a corresponding\nament_index_cpp bump (as happened in #3703 → this fix).\n\nDrops the now-unused `#include <rclcpp/version.h>` in each file (added\nby #3703 for the guard we replaced).\n\nVerified with a full source-build of moveit2 + downstream against\n`ubuntu:resolute` + ROS Rolling (`ros2-testing` apt).\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+        "verified_at": "2026-07-09T23:16:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/2fb8492b64ceb426d96e7f97e71846fb91394aa2",
+    "html_url": "https://github.com/moveit/moveit2/commit/2fb8492b64ceb426d96e7f97e71846fb91394aa2",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/2fb8492b64ceb426d96e7f97e71846fb91394aa2/comments",
+    "author": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a766fd1ba7798822c8e5997ba8c18ecdff2f113",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/4a766fd1ba7798822c8e5997ba8c18ecdff2f113",
+        "html_url": "https://github.com/moveit/moveit2/commit/4a766fd1ba7798822c8e5997ba8c18ecdff2f113"
+      }
+    ]
+  }
+]

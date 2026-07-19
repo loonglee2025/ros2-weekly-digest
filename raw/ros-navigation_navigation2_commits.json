@@ -1,0 +1,658 @@
+[
+  {
+    "sha": "4a40bb9357f3bd11414be6573522ef1613f1cdd3",
+    "node_id": "C_kwDOCBF7SNoAKDRhNDBiYjkzNTdmM2JkMTE0MTRiZTY1NzM1MjJlZjE2MTNmMWNkZDM",
+    "commit": {
+      "author": {
+        "name": "Ramon Wijnands",
+        "email": "ramon.wijnands@nobleo.nl",
+        "date": "2026-07-10T19:10:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-10T19:10:54Z"
+      },
+      "message": "Fix various compilation issues with clang (#6259)\n\n- The last argument to MapTest is the default cost value, not the\nresolution\n- Many logging statements were incorrect\n- I've removed some unused lambda captures\n- std::sqrt is not constexpr until C++26 in clang\n- some float constants were bigger than what could be represented\n  without conversion loss\n\nSigned-off-by: Ramon Wijnands <ramon.wijnands@nobleo.nl>",
+      "tree": {
+        "sha": "00baba7d134e8b5096e75ffcf428b7612aa81e7d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/00baba7d134e8b5096e75ffcf428b7612aa81e7d"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/4a40bb9357f3bd11414be6573522ef1613f1cdd3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqUUO+CRC1aQ7uu5UhlAAAao4QAFEJt1oOFXI8e5mPyA0Kwt9J\nD4tnwp5L/DmgNLvRJAdwK+XAVhXctl68d5JJe1IwY2ZdGIEEnhMii2AYSDR67wqH\n1HeaNwefWOjkwzBUMRSUqg5XsCHfXVmlpKojBVpXmB6Gqs9P3Ro2WL23Le/1rx2u\nFVo1xSsDvo+/EdGXp2ccxfNnSAmbCKfbEi0yoln8kAAxBiECahpViSRu9Oyfzx9Y\nOdUn7cVKVsCSAAc1BBB1VhF5+StOQuKIcd1GsfZj4kMcNt0olaKg3JUdjJenEkCB\nJhdT1KklpmcvX8hjc9Re8idaTc/Q5CaInTjCYcnA7cbyU/98G496cGloCc0ErrkC\nxINUw4l1Vm7fWjW42cn85LajuoKEhxgcavBw90Lx5ryDCdGdeZWG+LklwTNMo4jA\nJooTFpJwNfu4BDZqZfkDrsOfe78XxMNGzRF4PjdZ1h6ppmzEmn2rStiNVSSyogmF\ndAUgllkcvnYCHI1IhW0rlirZBN3dEyps4qrosJmtLlo2dvepFb3XU7to/qDVoSF4\nw6zzOM/E/NEaeziS25NEpsePhJfXTZFoxByyQfc9sUZ1sT6BYK6x/aoZnxcYvWvX\nl2rDkzMOjr5ai2LfVGxalLUQrotnXNrESaExR6wvj6O+kPOnNqYZ/9SgMsI90jVb\niVsqpGRoVVD2jkHfSPc5\n=b2hg\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 00baba7d134e8b5096e75ffcf428b7612aa81e7d\nparent 6518863316a7f04a8181d5c382fb7f2dae0b91cc\nauthor Ramon Wijnands <ramon.wijnands@nobleo.nl> 1783710654 +0200\ncommitter GitHub <noreply@github.com> 1783710654 -0700\n\nFix various compilation issues with clang (#6259)\n\n- The last argument to MapTest is the default cost value, not the\nresolution\n- Many logging statements were incorrect\n- I've removed some unused lambda captures\n- std::sqrt is not constexpr until C++26 in clang\n- some float constants were bigger than what could be represented\n  without conversion loss\n\nSigned-off-by: Ramon Wijnands <ramon.wijnands@nobleo.nl>",
+        "verified_at": "2026-07-10T19:10:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4a40bb9357f3bd11414be6573522ef1613f1cdd3",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/4a40bb9357f3bd11414be6573522ef1613f1cdd3",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4a40bb9357f3bd11414be6573522ef1613f1cdd3/comments",
+    "author": {
+      "login": "Rayman",
+      "id": 91969,
+      "node_id": "MDQ6VXNlcjkxOTY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91969?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Rayman",
+      "html_url": "https://github.com/Rayman",
+      "followers_url": "https://api.github.com/users/Rayman/followers",
+      "following_url": "https://api.github.com/users/Rayman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Rayman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Rayman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Rayman/subscriptions",
+      "organizations_url": "https://api.github.com/users/Rayman/orgs",
+      "repos_url": "https://api.github.com/users/Rayman/repos",
+      "events_url": "https://api.github.com/users/Rayman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Rayman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/6518863316a7f04a8181d5c382fb7f2dae0b91cc"
+      }
+    ]
+  },
+  {
+    "sha": "6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+    "node_id": "C_kwDOCBF7SNoAKDY1MTg4NjMzMTZhN2YwNGE4MTgxZDVjMzgyZmI3ZjJkYWUwYjkxY2M",
+    "commit": {
+      "author": {
+        "name": "Adi Vardi",
+        "email": "57910756+adivardi@users.noreply.github.com",
+        "date": "2026-07-09T17:32:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-09T17:32:36Z"
+      },
+      "message": "add param to clamp raw controls (#6248)\n\n* add param to clamp raw controls\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n* fix tests\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n* add test for clamp_raw_controls=true\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n---------\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>",
+      "tree": {
+        "sha": "26d06031eb8c28c595f7cbf0aa883d7e40c462d0",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/26d06031eb8c28c595f7cbf0aa883d7e40c462d0"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqT9s0CRC1aQ7uu5UhlAAA8PIQAC6uG/fobAoMxEx4Y1UwxwjV\nbEPPrtj4GO4WSH7RSoljKge1HjZ0JkbQfqMOuiKAny8Hg2/2PSiFyT9vmDZbZrsM\nb4A7hde18J5PmyyFoMI/67RDfvPaOuxqMuLTQMGSObGh6VG4JfHtNsOBZTmBV7VW\nv7qM3cJ5PSw+uz5cbh2ZUKw8XJjGmGI/mb6e+HjmJXWHeb4id8gezFLbLNwPFuAj\nMPOUDSMFaD62r6QPIIIkTxrwQdNR4UwEdQwe+49Hn6PgnO5VBKplKOS0lbvZRsBd\n9mBZyM2Rq85x/yCj1MQBdqPNm4GSzvchN9M3/kqbinctEtOfQ90guD3S378mgQr6\ni4ZOw9yHqXEuQUAnrIuQXwMIc3aZt4kfKZz0+HiqDYPar0BuBNKzcVPd76eJc///\nUW/LjJGVeZg6O7EkpR3gd2P1cwLcCBAO788ZoDvPxk7d5nLiu7OvDKwcKyGs6ohx\nldI/WsGWht+F/NWXpLkNJj/BuIXEsFg8OKGIGNdqjU6x3nGV/qR0ybUMRWddb3an\n88oAsSq6IZqa2xuwcBrZ/brs416WLciKSHIyfLiDf9guxRfckMa8WzaNeHBAPi03\nwMrMBgz0DgNyj/x9I2UKmC0tQ4qkAgO4fcR0Yp831tEML7wpfOqAFmEr7Nq5DNP/\nArdj3oE9CdVorwONObYd\n=foFh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 26d06031eb8c28c595f7cbf0aa883d7e40c462d0\nparent cb9671ca8c049538648ddcc61091bd6393b14fde\nauthor Adi Vardi <57910756+adivardi@users.noreply.github.com> 1783618356 +0200\ncommitter GitHub <noreply@github.com> 1783618356 -0700\n\nadd param to clamp raw controls (#6248)\n\n* add param to clamp raw controls\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n* fix tests\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n* add test for clamp_raw_controls=true\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>\n\n---------\n\nSigned-off-by: Adi Vardi <adi.vardi@enway.ai>",
+        "verified_at": "2026-07-09T17:32:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/6518863316a7f04a8181d5c382fb7f2dae0b91cc",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6518863316a7f04a8181d5c382fb7f2dae0b91cc/comments",
+    "author": {
+      "login": "adivardi",
+      "id": 57910756,
+      "node_id": "MDQ6VXNlcjU3OTEwNzU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57910756?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/adivardi",
+      "html_url": "https://github.com/adivardi",
+      "followers_url": "https://api.github.com/users/adivardi/followers",
+      "following_url": "https://api.github.com/users/adivardi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/adivardi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/adivardi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/adivardi/subscriptions",
+      "organizations_url": "https://api.github.com/users/adivardi/orgs",
+      "repos_url": "https://api.github.com/users/adivardi/repos",
+      "events_url": "https://api.github.com/users/adivardi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/adivardi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cb9671ca8c049538648ddcc61091bd6393b14fde",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cb9671ca8c049538648ddcc61091bd6393b14fde",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/cb9671ca8c049538648ddcc61091bd6393b14fde"
+      }
+    ]
+  },
+  {
+    "sha": "cb9671ca8c049538648ddcc61091bd6393b14fde",
+    "node_id": "C_kwDOCBF7SNoAKGNiOTY3MWNhOGMwNDk1Mzg2NDhkZGNjNjEwOTFiZDYzOTNiMTRmZGU",
+    "commit": {
+      "author": {
+        "name": "Alireza Moayyedi",
+        "email": "137421365+alireza-moayyedi@users.noreply.github.com",
+        "date": "2026-07-09T17:30:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-09T17:30:27Z"
+      },
+      "message": "[nav2_controller] First check if goal reached then calculate velocity (#6253)\n\n* First check if goal is reached then calculate velocity\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n* update transformed_end_pose_ in isGoalReached\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n* Improve coverage\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n---------\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>",
+      "tree": {
+        "sha": "8a1ca1aea86099201c4e0c76f170ef7cb6842309",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/8a1ca1aea86099201c4e0c76f170ef7cb6842309"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/cb9671ca8c049538648ddcc61091bd6393b14fde",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqT9qzCRC1aQ7uu5UhlAAAHxgQAGxAE6R5aKLJPVO2ClUtD82t\nMULKP7DH0pz89CjNNLh9pliOElDCW8ebe5ZTTXTM1jVnNoPVtVNo9W7ANBCQe8eG\nrjYcjx3J9/KxDZutCr7p+Sqtq6yrbeGmflgJzkalwiyp7xe5r6PhJNFLYHPo+BkC\nhBHaOJyyN57BmcaxNlTCpdmWUdhiKwYsI7jdf15+xTIRAc7xmGO5yNY3Gnw31GES\ns3zdYntUKMGhBWJ62TSjWtwWA+E4PUyvB1BLKZffJZAMM6Aa1l5WOHXpGls48V8u\nbxfodQYHH48bLeASu6hQOvKeul6pjkhyCEZ0i7Otf331ArMm6zTv55lERhA0quHf\nl3gG5JlX1/YDtW0j/tC1eWk3cKgT9V3mSXQbUDiY0iXy4BHeIH80hZER1DQcXwpg\nwy9I1rK1xIjjx8asSx0JWdeLwY2RtHQkHD0NRGiBJJFfY2JUEyJrTYABweEjjZMI\nUB+pIhBvTm3tIci+4/PO3Ma8QW8FcTk6HQx49SMbMwKHpQeNLArF9O+muyi+K105\nTcTFzHIQsKC4w/4XGPenmh3g1OFYCeAGldE1bRtavoA/UVgq0NF7rRaPEI0i8eyX\nN8oKaBPazq3qjFZGyggsKiHGu+fT9a4CkPVulxmPlLF9N7ffFr3qkWIY4TPfoGzF\nps5Xc9kRETi8ezNu4uee\n=DYsy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8a1ca1aea86099201c4e0c76f170ef7cb6842309\nparent d8c8b939f3353f7cc43492c85251ca2633a27f32\nauthor Alireza Moayyedi <137421365+alireza-moayyedi@users.noreply.github.com> 1783618227 +0200\ncommitter GitHub <noreply@github.com> 1783618227 -0700\n\n[nav2_controller] First check if goal reached then calculate velocity (#6253)\n\n* First check if goal is reached then calculate velocity\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n* update transformed_end_pose_ in isGoalReached\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n* Improve coverage\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>\n\n---------\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>",
+        "verified_at": "2026-07-09T17:30:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cb9671ca8c049538648ddcc61091bd6393b14fde",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/cb9671ca8c049538648ddcc61091bd6393b14fde",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cb9671ca8c049538648ddcc61091bd6393b14fde/comments",
+    "author": {
+      "login": "alireza-moayyedi",
+      "id": 137421365,
+      "node_id": "U_kgDOCDDiNQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137421365?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alireza-moayyedi",
+      "html_url": "https://github.com/alireza-moayyedi",
+      "followers_url": "https://api.github.com/users/alireza-moayyedi/followers",
+      "following_url": "https://api.github.com/users/alireza-moayyedi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alireza-moayyedi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alireza-moayyedi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alireza-moayyedi/subscriptions",
+      "organizations_url": "https://api.github.com/users/alireza-moayyedi/orgs",
+      "repos_url": "https://api.github.com/users/alireza-moayyedi/repos",
+      "events_url": "https://api.github.com/users/alireza-moayyedi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alireza-moayyedi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d8c8b939f3353f7cc43492c85251ca2633a27f32",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d8c8b939f3353f7cc43492c85251ca2633a27f32",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/d8c8b939f3353f7cc43492c85251ca2633a27f32"
+      }
+    ]
+  },
+  {
+    "sha": "d8c8b939f3353f7cc43492c85251ca2633a27f32",
+    "node_id": "C_kwDOCBF7SNoAKGQ4YzhiOTM5ZjMzNTNmN2NjNDM0OTJjODUyNTFjYTI2MzNhMjdmMzI",
+    "commit": {
+      "author": {
+        "name": "Alireza Moayyedi",
+        "email": "137421365+alireza-moayyedi@users.noreply.github.com",
+        "date": "2026-07-08T18:11:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-08T18:11:25Z"
+      },
+      "message": "include nav2_package.cmake inside the package itself as well (#6252)\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>",
+      "tree": {
+        "sha": "ee628caebeab3add3f76e13e45127f9aba92e193",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/ee628caebeab3add3f76e13e45127f9aba92e193"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/d8c8b939f3353f7cc43492c85251ca2633a27f32",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTpLNCRC1aQ7uu5UhlAAAk+UQAByabWMiyffnzXOzaKQwymGI\nAwFyqTCQKJtrTOyXd2Y00HK4l1omiyw/GIp5EiXxbi5XWI+dE24N7s9zX2GdKjGN\noOvoMtIHhJO7y/6rMcogihKIg47axB0MPR1tUEbqcO8jqxllW6kHpGy9lJOF1eNQ\nNhReWVUSzGuTUrUr4mqXpDoS9MAAX6CDi7CmSdy1t1+0gXJUUgAr4H0UXZeL+V6n\nZHF5SlmuTfrbxZbyAuNiwlhJsm2ucn+Hco3CtmupSv8/FTb6D1A5lIgUrWbou3Fx\nKXQEu7+kse2edRYFpfJ0+jaEEMP3u4FcBP8JgT8IUFLSrKl1+oWVC5S81u4hA6rw\nDt2JSF4NqL3f2PwfH50mfwAIROQOpjhZlVIXqW+OjBAd/oPFPGhe09yNfUgkNOB+\nnP1jO14QwZwhDMQFUgLAfDs4SqJUAjf3SqFjcb9IHjusE77nw3L7vaqfGzJa01R1\nSSuK8sncMf1uyvyo+oWxUAMOTbVnjHK0Hn1+SNw4jrCUp9erSuTlZDhZGeQCQIZH\nxiafMJiqkS+cXEjaD/mXfqrGIP1qMefc+vIHTBBLCpWif7SDS83ACj3bBlmb6cyk\nXqRyBTTjeH6csm1ImJz1xbl6LgjuQjjOW3LZVF6VcZVLoS4guLhgQK0yHzAH1k3A\nfowgr3tGILBmTuN2TCwg\n=DAwh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ee628caebeab3add3f76e13e45127f9aba92e193\nparent 7fabb3b082bfb7abecaeccea8a5b989b17c0ea92\nauthor Alireza Moayyedi <137421365+alireza-moayyedi@users.noreply.github.com> 1783534285 +0200\ncommitter GitHub <noreply@github.com> 1783534285 -0700\n\ninclude nav2_package.cmake inside the package itself as well (#6252)\n\nSigned-off-by: Alireza Moayyedi <alireza.moayyedi@nobleo.nl>",
+        "verified_at": "2026-07-08T18:11:25Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d8c8b939f3353f7cc43492c85251ca2633a27f32",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/d8c8b939f3353f7cc43492c85251ca2633a27f32",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d8c8b939f3353f7cc43492c85251ca2633a27f32/comments",
+    "author": {
+      "login": "alireza-moayyedi",
+      "id": 137421365,
+      "node_id": "U_kgDOCDDiNQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137421365?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alireza-moayyedi",
+      "html_url": "https://github.com/alireza-moayyedi",
+      "followers_url": "https://api.github.com/users/alireza-moayyedi/followers",
+      "following_url": "https://api.github.com/users/alireza-moayyedi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alireza-moayyedi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alireza-moayyedi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alireza-moayyedi/subscriptions",
+      "organizations_url": "https://api.github.com/users/alireza-moayyedi/orgs",
+      "repos_url": "https://api.github.com/users/alireza-moayyedi/repos",
+      "events_url": "https://api.github.com/users/alireza-moayyedi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alireza-moayyedi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92"
+      }
+    ]
+  },
+  {
+    "sha": "7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+    "node_id": "C_kwDOCBF7SNoAKDdmYWJiM2IwODJiZmI3YWJlY2FlY2NlYThhNWI5ODliMTdjMGVhOTI",
+    "commit": {
+      "author": {
+        "name": "Andrei Jedancov",
+        "email": "56676753+AJedancov@users.noreply.github.com",
+        "date": "2026-07-08T17:31:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-08T17:31:18Z"
+      },
+      "message": "docs: update robot_base_frame port description for TruncatePathLocal BT node (#6254)\n\nSigned-off-by: Andrei Jedancov <56676753+AJedancov@users.noreply.github.com>",
+      "tree": {
+        "sha": "188407ee05ddb967a611ea72cf573526b0880489",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/188407ee05ddb967a611ea72cf573526b0880489"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTolmCRC1aQ7uu5UhlAAAKNUQAIeGHm8d+70AZ+ezHpVGY1B0\nHHlSfG3z73AK8wx/oRyTzxoK4skxiTLG0e8CYDS2tk1p9H6NVq6lhRIMBHfu85Be\nebcGOYlycqYZJHI6rtc2IwyFBOzeclOEPgG1D/Z5I0yWjRIhPPYHy530LW0Dr5ad\ndcB7PCH5PkGuEwsKB84jiiAELx3ohar7PYlydg3iQeQQ9Is8zU6p9lWFncrJU7fo\nDbL77pKrDwOnXiOuelbVez15tq+1bTq0vu4GRIHGYz64TG4zsoE2pk7qXERL8OPb\n67mMruwVXUqdPZSKV75DJL3L2Cz5ZlYLzU6VZHHgMfN5/mnoGfa37gWDVuLttupN\nqLUaXiN1gTwD22MHdqNUhPz3PK96KvZlvsZxpaB+1coiH30/2tGN81XEz3OD8Ld1\nV5w1sgT50U6dRogQjmODYpsuXdnX9EGIm0iHhqxwEp1qDpo/uYMXKlb6ZA0ElRn+\noQGJH70yU1S3HCJYLqX7f9BcjvLQGz9wPo+GnaZ11Km1SOdIrGHU1H/9YtPSjEpv\nEoKtRVKNiwzpauY1Sq00htSrUs0HP9nwB1NPhcvUoS7DcexTxe4QdWjXlcjGx+DN\nRQNhElrPrMEgYWJAe7G3NdHi18JE4gU2l0NHxhESA3uWvx1aMnJJlOAKiA53rW7e\n/BmI51ojJqkII9o7YNzT\n=/H9X\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 188407ee05ddb967a611ea72cf573526b0880489\nparent 1129cb43086719d0e44f577be7a7ff70be3cd274\nauthor Andrei Jedancov <56676753+AJedancov@users.noreply.github.com> 1783531878 +0300\ncommitter GitHub <noreply@github.com> 1783531878 -0700\n\ndocs: update robot_base_frame port description for TruncatePathLocal BT node (#6254)\n\nSigned-off-by: Andrei Jedancov <56676753+AJedancov@users.noreply.github.com>",
+        "verified_at": "2026-07-08T17:31:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7fabb3b082bfb7abecaeccea8a5b989b17c0ea92/comments",
+    "author": {
+      "login": "AJedancov",
+      "id": 56676753,
+      "node_id": "MDQ6VXNlcjU2Njc2NzUz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56676753?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/AJedancov",
+      "html_url": "https://github.com/AJedancov",
+      "followers_url": "https://api.github.com/users/AJedancov/followers",
+      "following_url": "https://api.github.com/users/AJedancov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/AJedancov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/AJedancov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/AJedancov/subscriptions",
+      "organizations_url": "https://api.github.com/users/AJedancov/orgs",
+      "repos_url": "https://api.github.com/users/AJedancov/repos",
+      "events_url": "https://api.github.com/users/AJedancov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/AJedancov/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1129cb43086719d0e44f577be7a7ff70be3cd274",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1129cb43086719d0e44f577be7a7ff70be3cd274",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/1129cb43086719d0e44f577be7a7ff70be3cd274"
+      }
+    ]
+  },
+  {
+    "sha": "1129cb43086719d0e44f577be7a7ff70be3cd274",
+    "node_id": "C_kwDOCBF7SNoAKDExMjljYjQzMDg2NzE5ZDBlNDRmNTc3YmU3YTdmZjcwYmUzY2QyNzQ",
+    "commit": {
+      "author": {
+        "name": "Old-Ding",
+        "email": "35417409+Old-Ding@users.noreply.github.com",
+        "date": "2026-07-07T21:34:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-07T21:34:09Z"
+      },
+      "message": "fix HasNodeParams on non-mapping YAML (#6246)\n\nSigned-off-by: aineoae86-sys <ai.neo.ae86@gmail.com>\nCo-authored-by: aineoae86-sys <ai.neo.ae86@gmail.com>",
+      "tree": {
+        "sha": "b0625929b8b939f25f0373adbebfa79f5ccf3e0a",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/b0625929b8b939f25f0373adbebfa79f5ccf3e0a"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/1129cb43086719d0e44f577be7a7ff70be3cd274",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTXDRCRC1aQ7uu5UhlAAA0gMQAFWyfnF8jI0pskb2H4wweY0w\nQHJegqMjwJV/cuko+PDg5zkboYxnhp4xdgIzT94kv0Aq/oK7sAJWlWcejgAG6ai1\nQWV2QZXkJkBVI2l8tKbaVnu2ksEJBGwHQFCQRosu7ERhtUPQ20Ea4r+uVX2TLDF/\nkDMQv/2E6fxTW1SOKZPaiZ6mXvSCUKes6TR9F6kcQeL68I6CxQ/XBAeg3wIDaqjx\n6twb8zoVr1JEril2BLD4wWL87XyoUJAEUl4msxCLFe8lqYNL4khuUwdLxnOyKp9T\nIeOJQMm/zEJNwajvwznv19LSapM2VIBhkbP+ll2NoWaHAbF/NajNtn9t9xAmmDpE\nW16nSGGFDRRcHjBYityxz/bWCvGBDOk+hkv0RiiuTDb6TjDU7Gzu0vJwEKRXuI65\nsB2IK0Q7ylndP9NjzQlkQyrs0GLWKwN5ocK13NTuM3DhypgvMYBEqDhH7W/4g7AC\nfu37XojcTkX2z6Cl7KKUyrklEqCM5J57bTK7cpJQ2wxTFOheCZnvrt5L9rpM4vq8\n0ap2asOv/1MCgD3OSYL9K1QU5+iHE85IQTokz1TERMrGxBj3q/1G9RJLgWqcFSXo\nOL5Zu5xosYmDPiY6lJBs1TnV5dqyNtPG+pyjfBJF+IsLlS12UJ856nWnC10VmjTD\nCgmHY33/2Wpns9M+1JHX\n=MUVO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b0625929b8b939f25f0373adbebfa79f5ccf3e0a\nparent a920d3ceef0c2741e1c863ef39749d25aaf1ff4e\nauthor Old-Ding <35417409+Old-Ding@users.noreply.github.com> 1783460049 +0800\ncommitter GitHub <noreply@github.com> 1783460049 -0700\n\nfix HasNodeParams on non-mapping YAML (#6246)\n\nSigned-off-by: aineoae86-sys <ai.neo.ae86@gmail.com>\nCo-authored-by: aineoae86-sys <ai.neo.ae86@gmail.com>",
+        "verified_at": "2026-07-07T21:34:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1129cb43086719d0e44f577be7a7ff70be3cd274",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/1129cb43086719d0e44f577be7a7ff70be3cd274",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1129cb43086719d0e44f577be7a7ff70be3cd274/comments",
+    "author": {
+      "login": "Old-Ding",
+      "id": 35417409,
+      "node_id": "MDQ6VXNlcjM1NDE3NDA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35417409?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Old-Ding",
+      "html_url": "https://github.com/Old-Ding",
+      "followers_url": "https://api.github.com/users/Old-Ding/followers",
+      "following_url": "https://api.github.com/users/Old-Ding/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Old-Ding/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Old-Ding/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Old-Ding/subscriptions",
+      "organizations_url": "https://api.github.com/users/Old-Ding/orgs",
+      "repos_url": "https://api.github.com/users/Old-Ding/repos",
+      "events_url": "https://api.github.com/users/Old-Ding/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Old-Ding/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e"
+      }
+    ]
+  },
+  {
+    "sha": "a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+    "node_id": "C_kwDOCBF7SNoAKGE5MjBkM2NlZWYwYzI3NDFlMWM4NjNlZjM5NzQ5ZDI1YWFmMWZmNGU",
+    "commit": {
+      "author": {
+        "name": "Adil Farooq",
+        "email": "mdadilfarooq@gmail.com",
+        "date": "2026-07-07T21:25:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-07T21:25:49Z"
+      },
+      "message": "Fix TruncatePathLocal to use robot_base_frame from parameter file (#6242)\n\n* fix(nav2_behavior_tree): TruncatePathLocal respects robot_base_frame parameter\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>\n\n* Re-trigger CI\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>\n\n---------\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>",
+      "tree": {
+        "sha": "34f4da30a76f8299db9bbc5bd34bdfc02a8678e4",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/34f4da30a76f8299db9bbc5bd34bdfc02a8678e4"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTW7dCRC1aQ7uu5UhlAAAhswQAD9jToEE7SFlNIlyraT4c/XB\nnxWVe7CwbKfonJEhBOyhp5NzsxeAxB/qwTdOggGn0HGiukvhLoohBzSmsiaUxP1W\nAf5mnCxsml0aVJXGGTleEGMyUR/rnncYesaWSIF7iaec1Dk+SMOtApm/nALTRKYn\nLrpGh0yODoVZ2z8DMnsDEJYruP8rWt+90BQqxETpgQHhdCGo3WvqLkkoX4hMILMk\nE0V1z5PzW91ac5PPRZHXJ4leIhixEyjRPLZMWqvLmgK/iX4RFKZ4QJEUbixPRuZu\nRWnkuBRTM8rMuzVY9tvQNGuJWlCLqs3VY4xywCO+tas9oPXQp0tWHrS/wpHBpOFs\nfdef2wtQnXZAmKkcmfz0G1MqW985Zm5AmuQrmvsqhqMQlELhFEbS9EY1bQz4uw1b\nrsEZR2Leou4ejNFKZXCqFvZ8co0MvHTgjP9+agcwtV5p25bEBCDj73eFruqtX8+j\nV2drMdc1nJZZz9wYXgZIOOHIumYA/IwbutOPQqStAPJeB+Wf1Jb0y8usam0ZRr4F\niD9TY/dyH2+YO0fZmHwGr2lm0+2QmmI5MP/Tj0fpdpSdT7+qh+KFNipCqE7t7zL6\n8eHqQQzO3Kr+k5PmXQy6tXVdEJu5f3OKDIcudE+r1BpgoOVE3a+tzFmCBRHGEt6T\nQRIJI40pWV9gNMEJ0/oI\n=qvfc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 34f4da30a76f8299db9bbc5bd34bdfc02a8678e4\nparent 4c7cc0f01e9ad67a160525feca9991906225451e\nauthor Adil Farooq <mdadilfarooq@gmail.com> 1783459549 +0530\ncommitter GitHub <noreply@github.com> 1783459549 -0700\n\nFix TruncatePathLocal to use robot_base_frame from parameter file (#6242)\n\n* fix(nav2_behavior_tree): TruncatePathLocal respects robot_base_frame parameter\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>\n\n* Re-trigger CI\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>\n\n---------\n\nSigned-off-by: fishOmlette <mdadilfarooq@gmail.com>",
+        "verified_at": "2026-07-07T21:25:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a920d3ceef0c2741e1c863ef39749d25aaf1ff4e/comments",
+    "author": {
+      "login": "fishOmlette",
+      "id": 105870875,
+      "node_id": "U_kgDOBk92Gw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105870875?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fishOmlette",
+      "html_url": "https://github.com/fishOmlette",
+      "followers_url": "https://api.github.com/users/fishOmlette/followers",
+      "following_url": "https://api.github.com/users/fishOmlette/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fishOmlette/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fishOmlette/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fishOmlette/subscriptions",
+      "organizations_url": "https://api.github.com/users/fishOmlette/orgs",
+      "repos_url": "https://api.github.com/users/fishOmlette/repos",
+      "events_url": "https://api.github.com/users/fishOmlette/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fishOmlette/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4c7cc0f01e9ad67a160525feca9991906225451e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4c7cc0f01e9ad67a160525feca9991906225451e",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/4c7cc0f01e9ad67a160525feca9991906225451e"
+      }
+    ]
+  },
+  {
+    "sha": "4c7cc0f01e9ad67a160525feca9991906225451e",
+    "node_id": "C_kwDOCBF7SNoAKDRjN2NjMGYwMWU5YWQ2N2ExNjA1MjVmZWNhOTk5MTkwNjIyNTQ1MWU",
+    "commit": {
+      "author": {
+        "name": "Dhruv Tyagi",
+        "email": "72576161+dhruvtya@users.noreply.github.com",
+        "date": "2026-07-06T20:00:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-06T20:00:28Z"
+      },
+      "message": "Lookahead for Speed Limit Filter (#6150)\n\n* lookahead base logic implementation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* early exit moved to member constant\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* minor cleanup\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* unit tests\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* minor fixes from review\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* lookahead path frame transformation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* inverted decel sign\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Holding lookahead distance to avoid oscillations\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* tests for invalid params\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* removed path sample resolution\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* lookahead holding reset on zone entrance with multiple zone edgecase handling\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* moved path transformation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* using util for closest segment to robot search\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* removed redundant variables and path assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* cleaned up lookahead functions\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/speed_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* fixed transformed path assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* relocated lookahead robot pose assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Switched index and distance check\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* changed function signature and double max value\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n---------\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "0585572fd5f4128399ee6152b7834fc6a032b89e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/0585572fd5f4128399ee6152b7834fc6a032b89e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/4c7cc0f01e9ad67a160525feca9991906225451e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqTAlcCRC1aQ7uu5UhlAAAOAoQAFjgvdrA57snYSWKCNUjTaAf\nZx63a7jw+Bv3329wfKhgKJAt8fLW0zKaXAl8l+n0I4q/FJYk4blenkUusfp2KXNs\nczWYaw/zWXpsQR6cXpBBnMq+4TqLE07y49gF41GDaEmNsZkILB0qgWicTDWvIoD/\n7+fcbw05Ugygqe3bZr6z+CXzheMpvkmUmqp/59teNTYhircWMNXFKUpfO6w6Hrwq\n2Nlgd4Xi/zdowiQO8u72BDVCJB5gEd1V4wNOxZ+lORKMfoWVmG6zIG4/CWIvAm6t\naw2VTkx6K6C4WO2Cya3HN2h5LgbiKJYgi5kOzGAOH9WpVooqgmXcKatsu2tfKCkv\n+SueRjKXbFXcH8ZyRXlg/UnstRw0MzUh5z0KpIZflKEWUYkbW3IgeM9A1vpvlpHi\nNwdfmwKxzgKyCTND9o9k/GUeGLyJ+I+aIgjXBu65fPbHjVhvlMDsdvbX//iCCzti\ng03eqPpQB4O1ZgQm+rHedOt4Xds1kTMyAxbCODtP/Ql/4jFHyzvgYyutYeAELhmr\nq2QtsLCoYslTLZ487i+mAW/BsHNvmyqSsAVwg0OL+rmN4VDtKY1hOOvD34i4LjnV\nBbvKn/kimVTwfJE4fcrUEAfBFJzuBreYm2ZVqk90VaVWWAhX7FAWo53F/Hu1CRiV\nsuZvsBhjCesGm9DdBISJ\n=HWoy\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0585572fd5f4128399ee6152b7834fc6a032b89e\nparent 5d6a36af75a667caeec2216fa02302d142632adc\nauthor Dhruv Tyagi <72576161+dhruvtya@users.noreply.github.com> 1783368028 -0700\ncommitter GitHub <noreply@github.com> 1783368028 -0700\n\nLookahead for Speed Limit Filter (#6150)\n\n* lookahead base logic implementation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* early exit moved to member constant\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* minor cleanup\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* unit tests\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* minor fixes from review\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* lookahead path frame transformation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* inverted decel sign\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Holding lookahead distance to avoid oscillations\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* tests for invalid params\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* removed path sample resolution\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* lookahead holding reset on zone entrance with multiple zone edgecase handling\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* moved path transformation\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* using util for closest segment to robot search\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* removed redundant variables and path assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* cleaned up lookahead functions\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/speed_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* fixed transformed path assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* relocated lookahead robot pose assignment\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* Switched index and distance check\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n* changed function signature and double max value\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\n\n---------\n\nSigned-off-by: Dhruv Tyagi <dhruv.tya@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-06T20:00:29Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4c7cc0f01e9ad67a160525feca9991906225451e",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/4c7cc0f01e9ad67a160525feca9991906225451e",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4c7cc0f01e9ad67a160525feca9991906225451e/comments",
+    "author": {
+      "login": "dhruvtya",
+      "id": 72576161,
+      "node_id": "MDQ6VXNlcjcyNTc2MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72576161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dhruvtya",
+      "html_url": "https://github.com/dhruvtya",
+      "followers_url": "https://api.github.com/users/dhruvtya/followers",
+      "following_url": "https://api.github.com/users/dhruvtya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhruvtya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhruvtya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhruvtya/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhruvtya/orgs",
+      "repos_url": "https://api.github.com/users/dhruvtya/repos",
+      "events_url": "https://api.github.com/users/dhruvtya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhruvtya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5d6a36af75a667caeec2216fa02302d142632adc",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5d6a36af75a667caeec2216fa02302d142632adc",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/5d6a36af75a667caeec2216fa02302d142632adc"
+      }
+    ]
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "repos": {
+    "rclcpp": [
+      {
+        "sha": "d0312175",
+        "date": "2026-07-08T07:25:37Z",
+        "author": "Tomoya Fujita",
+        "message": "use C++ 20 in default. (#3187)",
+        "url": "https://github.com/ros2/rclcpp/commit/d0312175e380cf09bc975e844e42d3094b607bc7"
+      },
+      {
+        "sha": "569edb88",
+        "date": "2026-07-07T09:08:32Z",
+        "author": "Ivo Ivanov",
+        "message": "Bugfix/rclcpp action UUID rng race condition (#3183)",
+        "url": "https://github.com/ros2/rclcpp/commit/569edb884138c2e3de25cbfe462a6d4d09dde52a"
+      }
+    ],
+    "rclpy": [
+      {
+        "sha": "d0652deb",
+        "date": "2026-07-08T07:41:48Z",
+        "author": "eeshsaxena",
+        "message": "Fix incorrect parameter names in docstrings (#1685)",
+        "url": "https://github.com/ros2/rclpy/commit/d0652deb1f826170b04d4cdbfed72d542842dca4"
+      },
+      {
+        "sha": "aeb89463",
+        "date": "2026-07-07T16:48:39Z",
+        "author": "Tomoya Fujita",
+        "message": "use C++ 20 in default. (#1690)",
+        "url": "https://github.com/ros2/rclpy/commit/aeb894637d992a67960e231732366ee34ce444ca"
+      },
+      {
+        "sha": "db39f663",
+        "date": "2026-07-06T15:07:07Z",
+        "author": "longway",
+        "message": "Fix Exception subclass initialization in InvalidQoSProfileException (#1684)",
+        "url": "https://github.com/ros2/rclpy/commit/db39f6631e1d673a30f4f396b211c13ed5d092e4"
+      }
+    ],
+    "ros2cli": [],
+    "launch": [
+      {
+        "sha": "900d9945",
+        "date": "2026-07-09T08:33:38Z",
+        "author": "Tomoya Fujita",
+        "message": "use C++ 20 in default. (#980)",
+        "url": "https://github.com/ros2/launch/commit/900d994537a1123611605b3b7413f5f6fcd50c02"
+      }
+    ],
+    "rosbag2": [
+      {
+        "sha": "802ecdc6",
+        "date": "2026-07-07T08:20:31Z",
+        "author": "CY Chen",
+        "message": "Initialize topic endpoint info in rosbag2 test (#2446)",
+        "url": "https://github.com/ros2/rosbag2/commit/802ecdc6ce116fade30a2ffbaade287087d6cf51"
+      }
+    ],
+    "rmw": [
+      {
+        "sha": "033fa7e6",
+        "date": "2026-07-07T08:35:41Z",
+        "author": "Tomoya Fujita",
+        "message": "use C++ 20 in default. (#422)",
+        "url": "https://github.com/ros2/rmw/commit/033fa7e6aad000fffd3b6cc731e1c84455b59616"
+      }
+    ],
+    "ros2": []
+  },
+  "releases": [],
+  "categorized": {
+    "Regressions / fixes": [
+      {
+        "repo": "rclcpp",
+        "sha": "569edb88",
+        "date": "2026-07-07T09:08:32Z",
+        "author": "Ivo Ivanov",
+        "message": "Bugfix/rclcpp action UUID rng race condition (#3183)",
+        "url": "https://github.com/ros2/rclcpp/commit/569edb884138c2e3de25cbfe462a6d4d09dde52a"
+      },
+      {
+        "repo": "rclpy",
+        "sha": "d0652deb",
+        "date": "2026-07-08T07:41:48Z",
+        "author": "eeshsaxena",
+        "message": "Fix incorrect parameter names in docstrings (#1685)",
+        "url": "https://github.com/ros2/rclpy/commit/d0652deb1f826170b04d4cdbfed72d542842dca4"
+      },
+      {
+        "repo": "rclpy",
+        "sha": "db39f663",
+        "date": "2026-07-06T15:07:07Z",
+        "author": "longway",
+        "message": "Fix Exception subclass initialization in InvalidQoSProfileException (#1684)",
+        "url": "https://github.com/ros2/rclpy/commit/db39f6631e1d673a30f4f396b211c13ed5d092e4"
+      }
+    ]
+  }
+}
