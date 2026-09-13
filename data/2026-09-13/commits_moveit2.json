@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+    "node_id": "C_kwDOCi-gUdoAKDQzNDA0YTIxYWVhMzRhZTE3ZDA5YjZhM2Q5NDhkMWI1MmVmOGZlYzc",
+    "commit": {
+      "author": {
+        "name": "Dennis Lanov",
+        "email": "155569926+dlanov@users.noreply.github.com",
+        "date": "2026-09-10T08:18:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T08:18:34Z"
+      },
+      "message": "Fix logger node teardown before RMW shutdown (#3833)\n\nSigned-off-by: Dennis Lanov <dennis.lanov@gmail.com>",
+      "tree": {
+        "sha": "a94af6f89d0e9b72560238f21d822d7965e3d831",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/a94af6f89d0e9b72560238f21d822d7965e3d831"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqomfaCRC1aQ7uu5UhlAAAyhcQACEgXccxawE3CS7K/5uJFrVQ\nVH9Tr/Z6t4g2RzaKRly9n7nRxgJp0u389DstYsTAhZNtETMWXtTcVQZo+gNPe1Zm\nfsMud22X9o1T+V34B8BpndVmvTaEoMC8cPiT+Iec4R2gZrOIJ72R7cvWdfHCRGqa\nFfvFMGPEwLvm29BQRkpWyB8fco28hrhCSbHHsPjLHEJev1rGt8IqR953yAW9hH8X\nSdczo8Odtyftdts08y6J9R5aU0Hy1bY8QGDWPPIlTHZ3xKW1/tnMqsm9VV5Q6HXc\nFxSc+gluNXFOMG3wGAiHqr0T4+aw4mOb8MIoVvcCMaE94hm4UZJa9EztrLjCkGkk\nfvsfIgvfgC86angKLaai4kiUX16311qB84IPFSYswTqUwlOlQcHQMcVzl+oDjf3t\nNV/JCl9qY7ouNc+Or2c+mDbx6xXWoi0O7UW00oiYIl+JOaGU+s4rsuOazTrAW69N\ns8zVhlIsVTkNg4PdZmCz6Zbo6Z4eZIZTr9E4rlf7tyrkXrF74ifXJSZ1GPTUNZVu\nclDLj/GydO9jP63+q0fOPA11yiRroEcWV1DEEapm9WbwtFsPyaF9kHFsnUGB42pl\n9FsEYtzhYC1AXPl+ulvQIgP8VDmWHNzPHOHwYKoPoT57F5SZkT2kkapHo/lNIQj2\nXTgNMXozI/iXlRp6qkE3\n=AdTO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a94af6f89d0e9b72560238f21d822d7965e3d831\nparent 797bdeff95c75158bc3b969330456d131dcf27c1\nauthor Dennis Lanov <155569926+dlanov@users.noreply.github.com> 1789028314 -0500\ncommitter GitHub <noreply@github.com> 1789028314 +0200\n\nFix logger node teardown before RMW shutdown (#3833)\n\nSigned-off-by: Dennis Lanov <dennis.lanov@gmail.com>",
+        "verified_at": "2026-09-10T08:18:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+    "html_url": "https://github.com/moveit/moveit2/commit/43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/43404a21aea34ae17d09b6a3d948d1b52ef8fec7/comments",
+    "author": {
+      "login": "dlanov",
+      "id": 155569926,
+      "node_id": "U_kgDOCUXPBg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155569926?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dlanov",
+      "html_url": "https://github.com/dlanov",
+      "followers_url": "https://api.github.com/users/dlanov/followers",
+      "following_url": "https://api.github.com/users/dlanov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dlanov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dlanov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dlanov/subscriptions",
+      "organizations_url": "https://api.github.com/users/dlanov/orgs",
+      "repos_url": "https://api.github.com/users/dlanov/repos",
+      "events_url": "https://api.github.com/users/dlanov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dlanov/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "797bdeff95c75158bc3b969330456d131dcf27c1",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/797bdeff95c75158bc3b969330456d131dcf27c1",
+        "html_url": "https://github.com/moveit/moveit2/commit/797bdeff95c75158bc3b969330456d131dcf27c1"
+      }
+    ]
+  }
+]

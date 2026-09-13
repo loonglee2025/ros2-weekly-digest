@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "a3a97043ee93d92fe8d70ec56d183933169beb1c",
+    "node_id": "C_kwDOCBF7SNoAKGEzYTk3MDQzZWU5M2Q5MmZlOGQ3MGVjNTZkMTgzOTMzMTY5YmViMWM",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-21T21:31:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T21:31:08Z"
+      },
+      "message": "Revert \"MPPI: holonomic velocity limits constrained by ellipse instead of rec…\" (#6383)\n\nThis reverts commit 84441a2307b9cd996d14278cd840ebf4368296b7.",
+      "tree": {
+        "sha": "f3ed478de20adba20664e3cf5364616715f59462",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/f3ed478de20adba20664e3cf5364616715f59462"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a3a97043ee93d92fe8d70ec56d183933169beb1c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiMOcCRC1aQ7uu5UhlAAAnz4QAF2b3mMu+bGPmFqzsdFgKZNT\nI3KlGzqKu9Y5YFuOm9TXr6O4j1WUpMCPLs7xNmKN5A2760PvZnTfZO/dKAgu6pcy\nWi27JBHd6AaIXTOLHNurtVo/RdGKiS9zrQB/R4EcRV6ZKka2El0tusQMTxpbS+WN\no02WYMmG8PXKi8kSLB5XFspq1lq8ICG0RZTkHCygaq4DiMlplsGY0MDnphuxIGlV\nkfMP2l74o3T9GnODgE+V9jrwkNjUI94VVVjoV0hWrLVslbgSwWN0GXPxhbfM9kJz\nJsPd7d6bmiMSM2Rw8GgqB0IegNUhuzYUNcW7AAdTOO2UPQEgH0kZFY8lpstbmFKA\np9UXrYAqnCfWOiJ5AjCXt4DzqlSGYd8ioG3PTqrD7ZxObZZ2IowcPiiD6IpdbiT6\nxY6YJcsdidynWtqTVL6W8dF7m2qaM+d0ixztnEPIWMi07QseuZRyKU7zEg9/EtSH\nLBFIjZlvDhnXzkPWDjBFb8WCZ4BdzKAXM5UhVnBjQV3mTSFEo7PjDCo2DdcL8flN\n7Ct5lgtyy2Oxn3zWml6NAlB4lMvw4q5f2eTLbipWQX31GrbAvbHRNzVgFsfDfVrW\nKL2Y6saW6fScqKKjRQTXH6e9CaF3gobS/QVb2WFYExAfqjxsnQX8tlAcDyioF5C3\nTR78KIgEd5eVkac6m2B7\n=3/JR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f3ed478de20adba20664e3cf5364616715f59462\nparent 787a54aff3e8f80d77339083110df9dcf41ca7f5\nauthor Steve Macenski <stevenmacenski@gmail.com> 1787347868 -0700\ncommitter GitHub <noreply@github.com> 1787347868 -0700\n\nRevert \"MPPI: holonomic velocity limits constrained by ellipse instead of rec…\" (#6383)\n\nThis reverts commit 84441a2307b9cd996d14278cd840ebf4368296b7.",
+        "verified_at": "2026-08-21T21:31:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a3a97043ee93d92fe8d70ec56d183933169beb1c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a3a97043ee93d92fe8d70ec56d183933169beb1c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a3a97043ee93d92fe8d70ec56d183933169beb1c/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "787a54aff3e8f80d77339083110df9dcf41ca7f5",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/787a54aff3e8f80d77339083110df9dcf41ca7f5",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/787a54aff3e8f80d77339083110df9dcf41ca7f5"
+      }
+    ]
+  },
+  {
+    "sha": "787a54aff3e8f80d77339083110df9dcf41ca7f5",
+    "node_id": "C_kwDOCBF7SNoAKDc4N2E1NGFmZjNlOGY4MGQ3NzMzOTA4MzExMGRmOWRjZjQxY2E3ZjU",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-21T21:29:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T21:29:06Z"
+      },
+      "message": "Revert \"Validate retained path state against local costmap (#6311)\" (#6382)\n\nThis reverts commit b73a94ad7ad695db6d17e72caf9449ca9559b387.",
+      "tree": {
+        "sha": "b5155b9541a9fe3cfbbccd2530dbb18746ebc372",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/b5155b9541a9fe3cfbbccd2530dbb18746ebc372"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/787a54aff3e8f80d77339083110df9dcf41ca7f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiMMiCRC1aQ7uu5UhlAAAVRIQAEpN2QdQZODV4uD2EsMKwqSX\n/6bYZ3rguO9RHPmF0VG13dHzhOph1gcXr6kQhKD8RAEhqb2fD1FW3BfIjBNdNULp\n1fFFcBPyU+ipOFJ+wLmCCS5qpbPBOQEhKpCsPx9txG6yUQvlI0HVpb2hjw1838YA\nMqUDiTYEXjet7LnxK3S4TSWOGamHa4TS4HoHIjd12h+7ZawIEA9uLFR7yCKoEMYi\nkN6V8CYwB57tfZnFa5g9Mf3Pz4mPqvneFmiC5bvZ+T9dCREGwbfaDuEJDxljqRu7\nuA/QbBDfB9PaCB5Kk0S4zdC2e8p+YvblxNN2grn3pZtfoidgI3R/bBx10lCPKux0\nzDLe1cYIzHOVCTTKi1R1gbUtJm9C9M7YgtjB4C9AgkwyOU1Y5aJvbgynDsby3Ffw\nT2WBTOI9yDooS5fXTHEr3RRFmwYi5ILLoXP1U50saYbjL9TtQQX09ucvjpN32DPL\njUmPdvz/E9YtUeyHchgc31L/WKZ7ulmpGd4ibEtx3W9O3KKRyIoZRQdLj74xJ088\n2flQRqg/2zxs5LAYErOdq5qdxuNhEFeCGvRYifY4vkahO0tQY2MwOBH/JsWNamST\nSxz3VLqbhIzibcT1UaArI//bMUSBQjO1JT1KJW0Q4wV+nrfXSHtb/RYkk9bBtdwh\nXdmDjOUwfQkRQ334xR0q\n=YvQ9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b5155b9541a9fe3cfbbccd2530dbb18746ebc372\nparent 84441a2307b9cd996d14278cd840ebf4368296b7\nauthor Steve Macenski <stevenmacenski@gmail.com> 1787347746 -0700\ncommitter GitHub <noreply@github.com> 1787347746 -0700\n\nRevert \"Validate retained path state against local costmap (#6311)\" (#6382)\n\nThis reverts commit b73a94ad7ad695db6d17e72caf9449ca9559b387.",
+        "verified_at": "2026-08-21T21:29:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/787a54aff3e8f80d77339083110df9dcf41ca7f5",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/787a54aff3e8f80d77339083110df9dcf41ca7f5",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/787a54aff3e8f80d77339083110df9dcf41ca7f5/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "84441a2307b9cd996d14278cd840ebf4368296b7",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/84441a2307b9cd996d14278cd840ebf4368296b7",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/84441a2307b9cd996d14278cd840ebf4368296b7"
+      }
+    ]
+  },
+  {
+    "sha": "84441a2307b9cd996d14278cd840ebf4368296b7",
+    "node_id": "C_kwDOCBF7SNoAKDg0NDQxYTIzMDdiOWNkOTk2ZDE0Mjc4Y2Q4NDBlYmY0MzY4Mjk2Yjc",
+    "commit": {
+      "author": {
+        "name": "Marc Blöchlinger",
+        "email": "91188043+mbloechli@users.noreply.github.com",
+        "date": "2026-08-21T12:22:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T12:22:39Z"
+      },
+      "message": "MPPI: holonomic velocity limits constrained by ellipse instead of rectangle (#6344)\n\n* fix(mppi): constrain vel_max for omni model to velocity space defined by ellipse with spanned by vx_max, vx_min and vy_max\n* feat: apply acceleration limits without changing velocity heading\n* fix: only apply elliptic accel limiting when elliptic velocity space is chosen\n\n---------\n\nSigned-off-by: mbloechli <mbloechlinger@duatic.com>",
+      "tree": {
+        "sha": "783cb7bdf4b47d64a83ed1018bfbb6ab54c08400",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/783cb7bdf4b47d64a83ed1018bfbb6ab54c08400"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/84441a2307b9cd996d14278cd840ebf4368296b7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiEMPCRC1aQ7uu5UhlAAA0JMQAH7/Ozg8+rPWWmAStEGULEFD\ntu5Y4DR45loJPQqohR0M5mM8hcb5XDLGCskHiTWimig03QQg5hsY18YAopKhzi/G\ndcL1MZoko1SwEOfjWpH7sOjg6MsDXmXjR8WgI+eImW8ybsgWFN5IKly3t80GjXYX\naSaVRxHGqQQc6n3YBC7dpMqQq2u+B+i/+dyJBxXkD/YIfa9HwF/z54kKjSRnOIsR\nxeRPV9AakSbEEjbW1GVi5JSPNPyrV+oxmdtjwaOT0ruBhR71h4TKN4DqGkeI4CeS\nxf9zciHXZt/Rou8o+c3rgS6i4EV4w5kYog0T8xJRElFyeUFVpAHr+AJEdRsE4fod\nOFW4WGSTZqFdrdRg3xxBcNPtWXpXmWrZsKiE9AijQrSn1RXut+6Gc+30H1gOL2ip\nL6U/VkiyRsskqDQDqKhJIdZhcL5xDe3c3r3rTkZwyA8AFy/ll+MSGhBDmSaj3d5y\npKxG76nW1KDvmJARuGQ5U4rG3Vs9BSlS3HJfjGQrbtQr3Sx/CUqqWG2bAV4P4oa4\nDalRfhNo2bVLZTbUzHuYzOcoLzEUzoc0x16705YmYNP8/KmVbVU9t7tslwxsqjVe\nn1zM/Ab5eb/pPAIvOOAGBEzCrIuCzStBbTsfeI/Tpm29RE1/p3ZKMC59VIeHjxsv\nXDxLDhp83tRLDAx/neDp\n=Zwds\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 783cb7bdf4b47d64a83ed1018bfbb6ab54c08400\nparent 6703bdb946d56bd5cbd0cda7c0f6c215306b88fa\nauthor Marc Blöchlinger <91188043+mbloechli@users.noreply.github.com> 1787314959 +0200\ncommitter GitHub <noreply@github.com> 1787314959 +0200\n\nMPPI: holonomic velocity limits constrained by ellipse instead of rectangle (#6344)\n\n* fix(mppi): constrain vel_max for omni model to velocity space defined by ellipse with spanned by vx_max, vx_min and vy_max\n* feat: apply acceleration limits without changing velocity heading\n* fix: only apply elliptic accel limiting when elliptic velocity space is chosen\n\n---------\n\nSigned-off-by: mbloechli <mbloechlinger@duatic.com>",
+        "verified_at": "2026-08-21T12:22:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/84441a2307b9cd996d14278cd840ebf4368296b7",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/84441a2307b9cd996d14278cd840ebf4368296b7",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/84441a2307b9cd996d14278cd840ebf4368296b7/comments",
+    "author": {
+      "login": "mbloechli",
+      "id": 91188043,
+      "node_id": "MDQ6VXNlcjkxMTg4MDQz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91188043?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mbloechli",
+      "html_url": "https://github.com/mbloechli",
+      "followers_url": "https://api.github.com/users/mbloechli/followers",
+      "following_url": "https://api.github.com/users/mbloechli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mbloechli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mbloechli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mbloechli/subscriptions",
+      "organizations_url": "https://api.github.com/users/mbloechli/orgs",
+      "repos_url": "https://api.github.com/users/mbloechli/repos",
+      "events_url": "https://api.github.com/users/mbloechli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mbloechli/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa"
+      }
+    ]
+  },
+  {
+    "sha": "6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+    "node_id": "C_kwDOCBF7SNoAKDY3MDNiZGI5NDZkNTZiZDVjYmQwY2RhN2MwZjZjMjE1MzA2Yjg4ZmE",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-08-21T12:20:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T12:20:32Z"
+      },
+      "message": "AxisGoalChecker: derive path direction from the plan, not the goal pose (#6345)\n\n* Fix axis goal checker to use path end for distance checks and add test for skewed goals\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor AxisGoalChecker to use goal pose for direction checks and update fallback message\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add direction estimation distance parameter to AxisGoalChecker\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "5d2df34244d815eb37d8dd28dc5a7059eeab2ea0",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/5d2df34244d815eb37d8dd28dc5a7059eeab2ea0"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiEKQCRC1aQ7uu5UhlAAArR8QAIcf/6gAzRC4yO9zLyiSaTNQ\np8KXfpNeBz6nxFBvGSFaiytW/oR6lNT6/NLUcbYA3gPQRh0XKjNdZuNIoFu+5u7m\nyyyQ1HOxsKx7/S0vAxAo0zZYW+omD218FQ7c9P6449K5Di/Z3RAqvQVUc/DUPQwz\nZGNLVqPbEUAMLZSZt0fJCeloegbdTM4BlE2nnPgcrAOGzQ4xobB15brQyP4clEKC\nNczbGgTBBk5ue9iVlXUSE66RibQav8artPJtfuL9bNMohByzxiMcbmq8gLyHuvAP\n3I1V6lNu9cvvUXJL19Kxn1CkmUawdMGu0BaD/HMgiyb59nnoFKSdUqD5+y2dNpr8\n1MIuxUnIVE8A7ztqwPojU4WQwfctb0Mglg2DWdFwD3b5NproYzF65d5r0QH7yWpn\nHFsRYlkj++GVjzUcc5BbREy8N8JZO+hZXHAmpg8v2LihytwxdLK51CRwE9wqjWQz\n5jx7JLo+3/7nk4ubZF8/8c+uRz4VzisTJWI25W61h/gfFvrBkS/KX+04RZVAjs/f\n1CGluTzh2RgCzHOlNzqqLqtoU3uGhUH58rrFGUu0K1AUDidwlBcOZlDLKMwjyUby\nMEnWNatobcsMrOX/PdUtu2lMY5FGc1YLknfYadDMcC0a/slcXEWxk2KJdawSYnWg\n1ulXnM1f1zyhfyheh3NS\n=Sswx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5d2df34244d815eb37d8dd28dc5a7059eeab2ea0\nparent b73a94ad7ad695db6d17e72caf9449ca9559b387\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1787314832 +0200\ncommitter GitHub <noreply@github.com> 1787314832 +0200\n\nAxisGoalChecker: derive path direction from the plan, not the goal pose (#6345)\n\n* Fix axis goal checker to use path end for distance checks and add test for skewed goals\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor AxisGoalChecker to use goal pose for direction checks and update fallback message\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add direction estimation distance parameter to AxisGoalChecker\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-08-21T12:20:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6703bdb946d56bd5cbd0cda7c0f6c215306b88fa/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b73a94ad7ad695db6d17e72caf9449ca9559b387",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/b73a94ad7ad695db6d17e72caf9449ca9559b387",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/b73a94ad7ad695db6d17e72caf9449ca9559b387"
+      }
+    ]
+  },
+  {
+    "sha": "b73a94ad7ad695db6d17e72caf9449ca9559b387",
+    "node_id": "C_kwDOCBF7SNoAKGI3M2E5NGFkN2FkNjk1ZGI2ZDE3ZTcyY2FmOTQ0OWNhOTU1OWIzODc",
+    "commit": {
+      "author": {
+        "name": "Jeremy McKeehen",
+        "email": "peace@trippyogi.com",
+        "date": "2026-08-21T12:02:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T12:02:00Z"
+      },
+      "message": "Validate retained path state against local costmap (#6311)\n\nRebuild the #6235 retained-prune-state behavior on current main and treat an\nidentical reissued path as a resume candidate only. On the next\nfindPlanSegment() call, validate that candidate against the local costmap:\nresume when it is still inside, otherwise restore the unpruned path and\ncontinue with the normal bounded search. Preserve the #6318 end-of-path\nguard and keep ControllerServer reset semantics for cancel/success versus\nfailure retries.\n\nSigned-off-by: Jeremy <peace@trippyogi.com>",
+      "tree": {
+        "sha": "dfeeb8008b99cd314e56fcbcb80bf0f227b3dcd4",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/dfeeb8008b99cd314e56fcbcb80bf0f227b3dcd4"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/b73a94ad7ad695db6d17e72caf9449ca9559b387",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiD44CRC1aQ7uu5UhlAAAJYcQAIxAp2nMxGIHIwXQhT6ER5fw\nap+KvkhhBwahfsFZvuM0ypUFBAgJ1YgRs2yYQFBEbUw5PuOkeBDN9VJJrg43/9Vu\nOiEKl6u9z7mFxuntd15NLaGeXFIvhFR2nA3U/leKZPE4zRspVqKzlzX4leMhAa0O\nrQjxW/MNwVz0Z1NeKaLtuwgqNirwASwOon+S61TVvQMLJBS5R+7ws8DfXFH+lISl\nfNa24uc+S6zrmzd+e7mg1W/3rCqUNvnZ1OO9iwbLvUEUJ/sOPbKtg9+9S8Pl+uBv\nC6EaNFf8h9Nux5Z1erSG/U/9vo5XTxJqWY5KnMGFP9tjdXrnM2iX6Yso62OYAcA9\nhHbeYOEvONzl8TxOZkVSqQGS9+bi4p4AzJLxMolgmZUwnOZSiBIL0T5usziHYL2f\n6M0aYsPZi51TaBx6AyLLqE4L91z0xHUqTLQ9+7ZshbnDP7KZn5iYa3mlgMnuiIm/\nSoP6pitC17vgo1X/ZCGgxE7+bBFX/TpAFJa9uYm70u1ap/WSUHuOkANrMzDtFSjt\n0N4MJetpB3QJuaml4a+LxA20VV7ir6IhUc9W4/S19z6Q0zPbuB0Ao1oTXH5/qRE6\no6jtFq+e44IFu6YCTr/L0uUrjFpCW2XHgKWQrujlwrWYVPWhuinCqxt7mjNFL2EO\nnu9E0M7TtPhTe+BdxxYT\n=l+lk\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dfeeb8008b99cd314e56fcbcb80bf0f227b3dcd4\nparent 0ae2f59802b98c0cb2aa44214c276d7ab74479b4\nauthor Jeremy McKeehen <peace@trippyogi.com> 1787313720 -0700\ncommitter GitHub <noreply@github.com> 1787313720 +0200\n\nValidate retained path state against local costmap (#6311)\n\nRebuild the #6235 retained-prune-state behavior on current main and treat an\nidentical reissued path as a resume candidate only. On the next\nfindPlanSegment() call, validate that candidate against the local costmap:\nresume when it is still inside, otherwise restore the unpruned path and\ncontinue with the normal bounded search. Preserve the #6318 end-of-path\nguard and keep ControllerServer reset semantics for cancel/success versus\nfailure retries.\n\nSigned-off-by: Jeremy <peace@trippyogi.com>",
+        "verified_at": "2026-08-21T12:02:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/b73a94ad7ad695db6d17e72caf9449ca9559b387",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/b73a94ad7ad695db6d17e72caf9449ca9559b387",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/b73a94ad7ad695db6d17e72caf9449ca9559b387/comments",
+    "author": {
+      "login": "trippyogi",
+      "id": 43531035,
+      "node_id": "MDQ6VXNlcjQzNTMxMDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43531035?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/trippyogi",
+      "html_url": "https://github.com/trippyogi",
+      "followers_url": "https://api.github.com/users/trippyogi/followers",
+      "following_url": "https://api.github.com/users/trippyogi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/trippyogi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/trippyogi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/trippyogi/subscriptions",
+      "organizations_url": "https://api.github.com/users/trippyogi/orgs",
+      "repos_url": "https://api.github.com/users/trippyogi/repos",
+      "events_url": "https://api.github.com/users/trippyogi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/trippyogi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/0ae2f59802b98c0cb2aa44214c276d7ab74479b4"
+      }
+    ]
+  },
+  {
+    "sha": "0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+    "node_id": "C_kwDOCBF7SNoAKDBhZTJmNTk4MDJiOThjMGNiMmFhNDQyMTRjMjc2ZDdhYjc0NDc5YjQ",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-08-21T01:26:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T01:26:32Z"
+      },
+      "message": "Fix goal/plan TF-snapshot skew in the control loop (#6343)\n\n* Add updateTransformedPlan method to refresh the global plan for each cycle\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor updateTransformedPlan to updateTransformedPlanAndGoal for improved clarity and functionality\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor updateTransformedPlanAndGoal method and its test for improved clarity and error handling\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Update nav2_controller/src/controller_server.cpp\n\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>\nSigned-off-by: Tony Najjar <tony.najjar.1997@gmail.com>\n\n* Rename updateTransformedPlanAndGoal to transformedPlanAndGoal for consistency and clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\nSigned-off-by: Tony Najjar <tony.najjar.1997@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "d8ff2593ffff083f5d29c7f40c2f4fefb87769fa",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/d8ff2593ffff083f5d29c7f40c2f4fefb87769fa"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqh6lICRC1aQ7uu5UhlAAAapYQADMKbxYbOVqkOp/dYI1Mh/RR\noh0GSQf4zhu52EdLf1lNn25fWt689UF4kG3Apqrkt485D0tA387pfjHCQOdPLRnB\nHXovvolC8W/1nqqQCg5AdT0aLRTfOhA+AFmQfc0hJKM0HOwogmY3LBDscclwa6YK\nBXvgKDPwcVNJNp38+YuFd3KWVL6Co5i9x216Y54U+tp72Cwk2YuWd6YXgHc9VoAg\nbJmmE2AxLuZIknCXJbbmyxTh+uxzPmS2PkfA7BIuAdSzPOQKZ42OIU7PitYRTqHs\nbGQPWvYL6rGrUiNGqmPFvNi35VW7CcC4bCElc2hcbyh2lEZEZ7VKze7djmTqG9Mx\nvB9yXY1eYM2Qs2Vwu6l9WBCAYxvi1bsGLQjUvIBUEGCk6zTVDX1juokac7wys3G4\nbApLHsDOEAaKxER9Ms1AzSoLbMK4CTrG2vub5s+DHymXnB+wNx/Yjw9aGT/IfcHi\nBjhyVwt9JCXzblodMW64xY0CCQGnFIEfNscw5E8zzwEj/2wwxhdPTk7VQyDAjpwM\n+VdQAYirGTZD7JbUC41NAub9vk6N25CRzXrEw5Txk4p0WC/7DXvHm10ccj3x6Mag\nLI57OFCcte/pJGP3lDwqVsO9vbC1QPF3HEs8JusgqoWHJqoAgtnGrRCx/JVVYuZL\nsIoRDtcqhy4eHyliH2hS\n=6/wp\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d8ff2593ffff083f5d29c7f40c2f4fefb87769fa\nparent 5fd7de7a085fb0ae52dc060b4865e5029b5f0771\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1787275592 +0200\ncommitter GitHub <noreply@github.com> 1787275592 -0700\n\nFix goal/plan TF-snapshot skew in the control loop (#6343)\n\n* Add updateTransformedPlan method to refresh the global plan for each cycle\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor updateTransformedPlan to updateTransformedPlanAndGoal for improved clarity and functionality\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor updateTransformedPlanAndGoal method and its test for improved clarity and error handling\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Update nav2_controller/src/controller_server.cpp\n\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>\nSigned-off-by: Tony Najjar <tony.najjar.1997@gmail.com>\n\n* Rename updateTransformedPlanAndGoal to transformedPlanAndGoal for consistency and clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\nSigned-off-by: Tony Najjar <tony.najjar.1997@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-21T01:26:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/0ae2f59802b98c0cb2aa44214c276d7ab74479b4",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0ae2f59802b98c0cb2aa44214c276d7ab74479b4/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/5fd7de7a085fb0ae52dc060b4865e5029b5f0771"
+      }
+    ]
+  },
+  {
+    "sha": "5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+    "node_id": "C_kwDOCBF7SNoAKDVmZDdkZTdhMDg1ZmIwYWU1MmRjMDYwYjQ4NjVlNTAyOWI1ZjA3NzE",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-08-19T00:46:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-19T00:46:18Z"
+      },
+      "message": "Looking up transform only once when transforming paths (#6375)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+      "tree": {
+        "sha": "8fb698037e1c77438cd0cb39b6e57d5ba26f39ce",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/8fb698037e1c77438cd0cb39b6e57d5ba26f39ce"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhPzaCRC1aQ7uu5UhlAAACMEQAFHWugutwz6WhyDThHfR3nl4\nAO0e7VNm/7vPrpifgUMpMo7hmeNpDvp4Ig3c9NJheH5j2w+u2vaiOrWP9Vlopoat\nDlC1brwOVZbCB1BIiUjFIRSQVtD4Y3kQieAwBwN3+NvtREbTvsCt5c/bW2Xwu5El\ndQAUdj8JYVOiij+vDH5uSwR8uRxLqkuYislIv6QXOVcQZlm/qaXN2hSnXjukV0Q6\nB5xihPmhbWMFwy6GUZlrdiH1yM49VwFAY3AEhd+9r6zIdeEFF7o+exGgcxWB8GSU\nVJGrif3jhmBOwH9ihPCnkkjnEdvHBbyYKrdG9O/PH1PuXMbYQiOST836DbIXm2yG\nHP5q2j5RoJcJUxWumrhvhQf8L6Emy/SJj93AhOytGnNt5+B2OZUItTVCH65FlSLO\ngLOzBaz4imR1l5nfP1A61B27f0+znvPTYisATpuJOzBn3sKqlpLICcyFYIFGIfxa\ngXNmYxHn74aq28I6yrG2W4DXLQYTRYpUBYXGlyCVCvKTXo2pAzaBXVB0UZWrE/Hm\ngJ8hWj8iFHeo3VGXgLWWFoGgT7IP7N+3gP2irtT9EMk3mBEGFcQv32G/tDMQ6xgs\nJ+eZVzM7Pyh00Lb9LDmQXAPwUi+FxTEksB2Y9kkxsNiEM1ANKNqSHP1M82ZJpbXt\nrAXykwVPUrjvxykhRk7h\n=Y9mK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8fb698037e1c77438cd0cb39b6e57d5ba26f39ce\nparent 005e8af3489ef8140aa80b075bbf0a61bf98d44a\nauthor Marco Bassa <bassamarco91@gmail.com> 1787100378 +0200\ncommitter GitHub <noreply@github.com> 1787100378 -0700\n\nLooking up transform only once when transforming paths (#6375)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+        "verified_at": "2026-08-19T00:46:19Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/5fd7de7a085fb0ae52dc060b4865e5029b5f0771",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5fd7de7a085fb0ae52dc060b4865e5029b5f0771/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/005e8af3489ef8140aa80b075bbf0a61bf98d44a"
+      }
+    ]
+  },
+  {
+    "sha": "005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+    "node_id": "C_kwDOCBF7SNoAKDAwNWU4YWYzNDg5ZWY4MTQwYWE4MGIwNzViYmYwYTYxYmY5OGQ0NGE",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-08-18T16:29:12Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T16:29:12Z"
+      },
+      "message": "Fix issues when compiling with Eigen5 (#6299)\n\n* Fix Eigen GCC warnings in smoother and MPPI\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix as suggested\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Rename\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Rename\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Lint\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "bf9eab452b9bf1519c1a8185e01135126c396800",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/bf9eab452b9bf1519c1a8185e01135126c396800"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhIhYCRC1aQ7uu5UhlAAAsx0QAB8QfV4w7Y8MUcQZM9BDgYvq\nLBzZQYSQrIgyO3wY8ectLwPY99EYBJxUxMHJVn/fYiIejr1UX4FBqsN3uKlmMM8z\nde7JXgdBUYpK4WoufSRiSJzCZACyKUMlA8CFVHLi/bNqlexZY295EmnbifTuaIpJ\nlQkUpri0kFfgbZvTuU5P5brRmN7Si+sEn8UrrdT78T7PjkvBuPcAe0BFfbeSzK4g\nWFjaxURukk0Tztp7Lq9++3qa58pMtz/GlEvCwavO8/Kesax9EvL13Cc69x+gmVDG\nknAH7A79qr/fPOcXyWD3K3FA5yhtgqVoPnSi578xX+doKir0AQVwWrH5bA/z5bRE\ntZ69CwRdxOT9jb+0IcbJwEPgmsg3D7wQmi/fVv5a2pRrRwPWoeiYW13xE4WVEJcr\nBud3xRbXJrwPKfUCZoxzNdiIdmEv2RYWpD3e8Os9NplTJGeWedaj6bBKYlYmvUtm\n7LJVQWwl7zQM8PhakIxwaTr8jmh7bzqC2RPxnsjHfsaT9CeZMCE+kGPRzlK7dkwQ\n06Wx31UBuptKJmICis90/ZrEvmAWz4otJ1UBs3VYy9KMOQr0iPompwuR3xwuPxl9\nMCeDCkMknNM+Ea5H5O8WzRikegOnO79kLOMhuTcqCt9SSIqBptihqAexZ7UKMVKA\n+snefxvZpBG4IbdZ4xob\n=LL48\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bf9eab452b9bf1519c1a8185e01135126c396800\nparent 8b2d3a1c511f653d168a84d88d15b3544c1e9d04\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1787070552 +0700\ncommitter GitHub <noreply@github.com> 1787070552 -0700\n\nFix issues when compiling with Eigen5 (#6299)\n\n* Fix Eigen GCC warnings in smoother and MPPI\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix as suggested\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Rename\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Rename\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Lint\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-08-18T16:29:13Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/005e8af3489ef8140aa80b075bbf0a61bf98d44a",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/005e8af3489ef8140aa80b075bbf0a61bf98d44a/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/8b2d3a1c511f653d168a84d88d15b3544c1e9d04"
+      }
+    ]
+  },
+  {
+    "sha": "8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+    "node_id": "C_kwDOCBF7SNoAKDhiMmQzYTFjNTExZjY1M2QxNjhhODRkODhkMTViMzU0NGMxZTlkMDQ",
+    "commit": {
+      "author": {
+        "name": "marcos daniel santana",
+        "email": "85710388+marcospontoexe@users.noreply.github.com",
+        "date": "2026-08-17T20:34:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-17T20:34:27Z"
+      },
+      "message": "opennav_following: remove unused robot pose lookup in approachObject() (#6367)\n\nThe comment says \"If the object is behind the robot, we reverse the\ncontrol\", but nothing reverses anything: computeVelocityCommand() is\ncalled with backward hardcoded to false, and robot_pose is never read\nafter being filled in.\n\nIt does not work as an implicit TF validation either. target_pose was\njust transformed into base_frame on the lines above, so this resolves to\na base_frame -> base_frame lookup, i.e. identity -- it would yield a zero\npose even if something did read it, and it succeeds regardless of the\nstate of the rest of the TF tree.\n\nRemoving the block only; whether the reversing behaviour the comment\ndescribes should actually be implemented is left as a separate question.\n\nSigned-off-by: marcos daniel santana <Marcos.Daniel1990@hotmail.com>",
+      "tree": {
+        "sha": "ed7c2fdc69fc3accd6b55e675027c7d2bd20f305",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/ed7c2fdc69fc3accd6b55e675027c7d2bd20f305"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqg3BTCRC1aQ7uu5UhlAAArjoQAK0gYcPfxDgUnOwyqRjQX7oQ\nLdLJBozDfUqQ1Eb7cnDpDpeyYthHf2iG7EdF+1+FDQ21sk6AMcCnbibNBq9sz5gS\nNpy547GKveCuny+TBZsDM6BMHy+RHG0aoiNkufByLc+wtezVjP/Au8sXNU9irRC3\ndJAjUOMeRmbYqwmAj6RfO1bIjo1a+L6Oi3+uSULo+W7qlKJ+r9TVvz/7DCYwbcCZ\nu//JsZ9DatERU9Go1UFvCOjIDzK6cka64FOPRb3AWupXdyFh1Dcy4AREynx7rqT8\neMbdCbb4umctsRM/dVZIKgu9RDYVSTExrjgWeQpJut1htHPuOKkBb9JyExfyROB2\nOJ3/ES5DFSwnfOhhbrCX0o7LhTurt8pWTeB8TzobmmZUfH0Xhp8XTlvU/vhJlCpW\n5xBqeYEBuqTt2x26LAqGkv4GFSdSn0+sow46qsx7CzttZhCiSEEE5D1NyroDXGGX\nCF8qpmO4xZqdAD4REmYsDeNTy2wGUh62H6apKtHF6KoL5+n2wMyqva5ZcjusX3AJ\nZQDi9bIslfV+55fq8FDvH4twNRcysdSFAs0MJ86Vt1LKkqNyWAb+atuDHJraHULd\ncqU5YCUlAHhkBlI+9o2Ead3maczKT/vLufFBxmuDKfEaHrrz1pXkBDKQM0yiKBOL\nR1pSMQN2hdC0NsJhvn+r\n=aOes\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ed7c2fdc69fc3accd6b55e675027c7d2bd20f305\nparent 3997672771093df79c9f47eac0e0b2563efc29ce\nauthor marcos daniel santana <85710388+marcospontoexe@users.noreply.github.com> 1786998867 -0300\ncommitter GitHub <noreply@github.com> 1786998867 -0700\n\nopennav_following: remove unused robot pose lookup in approachObject() (#6367)\n\nThe comment says \"If the object is behind the robot, we reverse the\ncontrol\", but nothing reverses anything: computeVelocityCommand() is\ncalled with backward hardcoded to false, and robot_pose is never read\nafter being filled in.\n\nIt does not work as an implicit TF validation either. target_pose was\njust transformed into base_frame on the lines above, so this resolves to\na base_frame -> base_frame lookup, i.e. identity -- it would yield a zero\npose even if something did read it, and it succeeds regardless of the\nstate of the rest of the TF tree.\n\nRemoving the block only; whether the reversing behaviour the comment\ndescribes should actually be implemented is left as a separate question.\n\nSigned-off-by: marcos daniel santana <Marcos.Daniel1990@hotmail.com>",
+        "verified_at": "2026-08-17T20:34:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/8b2d3a1c511f653d168a84d88d15b3544c1e9d04",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8b2d3a1c511f653d168a84d88d15b3544c1e9d04/comments",
+    "author": {
+      "login": "marcospontoexe",
+      "id": 85710388,
+      "node_id": "MDQ6VXNlcjg1NzEwMzg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85710388?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/marcospontoexe",
+      "html_url": "https://github.com/marcospontoexe",
+      "followers_url": "https://api.github.com/users/marcospontoexe/followers",
+      "following_url": "https://api.github.com/users/marcospontoexe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/marcospontoexe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/marcospontoexe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/marcospontoexe/subscriptions",
+      "organizations_url": "https://api.github.com/users/marcospontoexe/orgs",
+      "repos_url": "https://api.github.com/users/marcospontoexe/repos",
+      "events_url": "https://api.github.com/users/marcospontoexe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/marcospontoexe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3997672771093df79c9f47eac0e0b2563efc29ce",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3997672771093df79c9f47eac0e0b2563efc29ce",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/3997672771093df79c9f47eac0e0b2563efc29ce"
+      }
+    ]
+  },
+  {
+    "sha": "3997672771093df79c9f47eac0e0b2563efc29ce",
+    "node_id": "C_kwDOCBF7SNoAKDM5OTc2NzI3NzEwOTNkZjc5YzlmNDdlYWMwZTBiMjU2M2VmYzI5Y2U",
+    "commit": {
+      "author": {
+        "name": "marcos daniel santana",
+        "email": "85710388+marcospontoexe@users.noreply.github.com",
+        "date": "2026-08-17T19:18:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-17T19:18:26Z"
+      },
+      "message": "Fix rotateToObject() using stale/empty state for its first TF lookup (#6359)\n\nTwo related bugs in opennav_following's search-by-rotating recovery path,\nfound while porting/testing this package on Jazzy (real robot + Gazebo):\n\n- object_pose.header.frame_id is still empty on the very first lost-detection\n  event (no detection has ever arrived yet), so the initial getCurrentPose()\n  lookup always failed and aborted the goal instead of rotating to search.\n  Fall back to params_->fixed_frame when empty.\n\n- getRefinedPose()/getTrackingPose() blocks internally for up to\n  detection_timeout waiting for a detection, without touching\n  iteration_start_time_. By the time control reaches rotateToObject() right\n  after that wait times out, iteration_start_time_ can be tens of seconds\n  stale, making the first TF lookup ask for a time already evicted from the\n  tf2 buffer cache (\"extrapolation into the past\"). Refresh it before using\n  it.\n\nBoth fixes already validated on a Jazzy backport of this same code\n(marcospontoexe/opennav_following@0b394d2) and on a real robot + Gazebo.\n\nSigned-off-by: marcos daniel santana <Marcos.Daniel1990@hotmail.com>",
+      "tree": {
+        "sha": "6cd241664ae3e70f2e08b0f360bbe8a23f2f6e52",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/6cd241664ae3e70f2e08b0f360bbe8a23f2f6e52"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/3997672771093df79c9f47eac0e0b2563efc29ce",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqg16CCRC1aQ7uu5UhlAAAtIEQACAfePStgE4Ccdv2DU9AM5LQ\nz3c4RdPbdnyvTRfmcwouZ1dr1lcPEoSAlTz7KEM8LvWQdu8U22mjrWwgjM4cSGNH\ni24RW7LXGIhH7gctTQp7/iECO4XgpvKBRRFAA7TspNmjRK7mQfIUzrqfihwUMuOc\nWBPuL6X82FXTRKZLKzY+YXk8leOXpBUoNFxaSL2gLa/XdiXJKIzyMqm/SLqm8arZ\nxceti20ActtkdviUxzEwnPH80eg9w3C6Mg4A/a36890N6RrVxqifsRcYjZQWSVAV\nTXyZLWdGjS1InKkl9OrSBix7h97hYhsGXJM1ONltw6qI9Ym405Fpa1nvvTX3KXzs\ntIAHqtlTRTqfRhjOadRoUSwuiOroqnHrwU2AGjDo50i1k1xI8To/m114tYnD9uIw\n3rCCqAydbbgdfEeOZQcOPfTQk4+wfsqgd1zPVmF49Tvfnf0Nb3u5ygdxz0jRMUBA\n2M5ol7eQgJg0KGBnrtoEeJqCbQkEDJtfXZvExp97fTJwqo2EBpAH6oFSzWIHJrIP\nXH3gW9VSmorOR3wJKJhnoW/ANsAlHOTiWFHKhnNUmIkV/56hgjkxmk6gOp+vPUDk\nCXaeoRNm+NA4nl2rTHi4/1w7nTYIp510hvTOsHGeEYzWcHc6J/XuF5z7NV52xO6k\nEmGUz1WkV1Wf+hpXLRWK\n=G2KK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6cd241664ae3e70f2e08b0f360bbe8a23f2f6e52\nparent af4233c67cafffe7e40c45197c833116fcbb8c1c\nauthor marcos daniel santana <85710388+marcospontoexe@users.noreply.github.com> 1786994306 -0300\ncommitter GitHub <noreply@github.com> 1786994306 -0700\n\nFix rotateToObject() using stale/empty state for its first TF lookup (#6359)\n\nTwo related bugs in opennav_following's search-by-rotating recovery path,\nfound while porting/testing this package on Jazzy (real robot + Gazebo):\n\n- object_pose.header.frame_id is still empty on the very first lost-detection\n  event (no detection has ever arrived yet), so the initial getCurrentPose()\n  lookup always failed and aborted the goal instead of rotating to search.\n  Fall back to params_->fixed_frame when empty.\n\n- getRefinedPose()/getTrackingPose() blocks internally for up to\n  detection_timeout waiting for a detection, without touching\n  iteration_start_time_. By the time control reaches rotateToObject() right\n  after that wait times out, iteration_start_time_ can be tens of seconds\n  stale, making the first TF lookup ask for a time already evicted from the\n  tf2 buffer cache (\"extrapolation into the past\"). Refresh it before using\n  it.\n\nBoth fixes already validated on a Jazzy backport of this same code\n(marcospontoexe/opennav_following@0b394d2) and on a real robot + Gazebo.\n\nSigned-off-by: marcos daniel santana <Marcos.Daniel1990@hotmail.com>",
+        "verified_at": "2026-08-17T19:18:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3997672771093df79c9f47eac0e0b2563efc29ce",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/3997672771093df79c9f47eac0e0b2563efc29ce",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3997672771093df79c9f47eac0e0b2563efc29ce/comments",
+    "author": {
+      "login": "marcospontoexe",
+      "id": 85710388,
+      "node_id": "MDQ6VXNlcjg1NzEwMzg4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85710388?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/marcospontoexe",
+      "html_url": "https://github.com/marcospontoexe",
+      "followers_url": "https://api.github.com/users/marcospontoexe/followers",
+      "following_url": "https://api.github.com/users/marcospontoexe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/marcospontoexe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/marcospontoexe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/marcospontoexe/subscriptions",
+      "organizations_url": "https://api.github.com/users/marcospontoexe/orgs",
+      "repos_url": "https://api.github.com/users/marcospontoexe/repos",
+      "events_url": "https://api.github.com/users/marcospontoexe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/marcospontoexe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "af4233c67cafffe7e40c45197c833116fcbb8c1c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/af4233c67cafffe7e40c45197c833116fcbb8c1c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/af4233c67cafffe7e40c45197c833116fcbb8c1c"
+      }
+    ]
+  }
+]

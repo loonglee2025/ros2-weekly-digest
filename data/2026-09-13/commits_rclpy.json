@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "4aa20852f129a74cfd075e75e5ae122205ecb37e",
+    "node_id": "C_kwDOAsXFmdoAKDRhYTIwODUyZjEyOWE3NGNmZDA3NWU3NWU1YWUxMjIyMDVlY2IzN2U",
+    "commit": {
+      "author": {
+        "name": "Puja Chaudhury",
+        "email": "61319491+catplotlib@users.noreply.github.com",
+        "date": "2026-09-08T10:29:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-08T10:29:03Z"
+      },
+      "message": "Fix EventsExecutor segfault when a task raises an exception (#1718)\n\nnodes_ is a pybind11::set, which is not subscriptable. nodes_[0] compiles\nbecause object_api::operator[] accepts a py::handle and the literal 0\nconverts to a null handle, so pybind builds py::str(nullptr) and the\nprocess dies in strlen(). The line only runs when a task raises and\nexactly one node is registered, which is why normal use never reaches it.\n\nTake the element through py::list(nodes_), as the file already does when\niterating nodes_ elsewhere.\n\nThree tests in test_executor.py were excluded from EventsExecutor because\nof this crash; re-enable them.\n\nSigned-off-by: Puja <catplotlib@gmail.com>",
+      "tree": {
+        "sha": "c119737235d004e68b481fc2b7675c79ea8b9766",
+        "url": "https://api.github.com/repos/ros2/rclpy/git/trees/c119737235d004e68b481fc2b7675c79ea8b9766"
+      },
+      "url": "https://api.github.com/repos/ros2/rclpy/git/commits/4aa20852f129a74cfd075e75e5ae122205ecb37e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqn+NvCRC1aQ7uu5UhlAAAa7oQAF0eQNTl2F8cuAyYoneeB2uR\n/cWAdztLoCgexXJMfg3S8pXYVOOyUaUNUo5aOEqMZ+kPjf1v0Hl9cFu115MTalps\nd8DlAaBZc3N9nKJw+wB9zow9UzY/db+Rg8Zm606WxpUCO0iSKErPEiTNNR+Uri5/\nIOusxTVzbJCceJA3tEDIlR77ZE7JCBVV+EJhy0M10crJTmqs8OqDLLzxzoRUiTQU\nnTMFqtZlnHqrGy4k/d5ppUJKU1bLfe4a0mecXNzT3GQOPs2JnJ92/NP/RRkj59dd\nJOrJm8VE5zAH871qV5JVHILMuQs8tKRqjhqBH4ZzGeE+FHqCU0zMyYb4FOdPS8mo\nLeYzSsegDbUU3NTBgAgTFYZWdZxkjkYFPQJ40eIWFYBQyE0aPGxuKWZRe6t1fsNH\ndjCnhc98p4jShYlHmOxsVDcktTGHzJYphp7XaPhLzI4BuxUb9YEDTuWHylgqDrE3\n0Pg5f7knPuP4JQ4dnVe5sbG7xUXbxSQb8CkWyutaqii2A1LETnoc0aX//kTzjJN2\nW94uaFUPgoVErlw7IxrrlGt4+MIMJ7kJU8Yr1h0nl79y7+RDQkWZPRAqqc980nk3\nzfz3t2DvHRhFvVMI53TRRLzm1Zqa/GPqjE/eWN7PAJ2R0iNXf/QwSh95WA64Nbfd\ni2WG8uX/cShrHdHu1Nle\n=B0co\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c119737235d004e68b481fc2b7675c79ea8b9766\nparent 9b610762456656a6e09a3405f45f66482b1b0afd\nauthor Puja Chaudhury <61319491+catplotlib@users.noreply.github.com> 1788863343 -0700\ncommitter GitHub <noreply@github.com> 1788863343 +0200\n\nFix EventsExecutor segfault when a task raises an exception (#1718)\n\nnodes_ is a pybind11::set, which is not subscriptable. nodes_[0] compiles\nbecause object_api::operator[] accepts a py::handle and the literal 0\nconverts to a null handle, so pybind builds py::str(nullptr) and the\nprocess dies in strlen(). The line only runs when a task raises and\nexactly one node is registered, which is why normal use never reaches it.\n\nTake the element through py::list(nodes_), as the file already does when\niterating nodes_ elsewhere.\n\nThree tests in test_executor.py were excluded from EventsExecutor because\nof this crash; re-enable them.\n\nSigned-off-by: Puja <catplotlib@gmail.com>",
+        "verified_at": "2026-09-08T10:29:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclpy/commits/4aa20852f129a74cfd075e75e5ae122205ecb37e",
+    "html_url": "https://github.com/ros2/rclpy/commit/4aa20852f129a74cfd075e75e5ae122205ecb37e",
+    "comments_url": "https://api.github.com/repos/ros2/rclpy/commits/4aa20852f129a74cfd075e75e5ae122205ecb37e/comments",
+    "author": {
+      "login": "catplotlib",
+      "id": 61319491,
+      "node_id": "MDQ6VXNlcjYxMzE5NDkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61319491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/catplotlib",
+      "html_url": "https://github.com/catplotlib",
+      "followers_url": "https://api.github.com/users/catplotlib/followers",
+      "following_url": "https://api.github.com/users/catplotlib/following{/other_user}",
+      "gists_url": "https://api.github.com/users/catplotlib/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/catplotlib/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/catplotlib/subscriptions",
+      "organizations_url": "https://api.github.com/users/catplotlib/orgs",
+      "repos_url": "https://api.github.com/users/catplotlib/repos",
+      "events_url": "https://api.github.com/users/catplotlib/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/catplotlib/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9b610762456656a6e09a3405f45f66482b1b0afd",
+        "url": "https://api.github.com/repos/ros2/rclpy/commits/9b610762456656a6e09a3405f45f66482b1b0afd",
+        "html_url": "https://github.com/ros2/rclpy/commit/9b610762456656a6e09a3405f45f66482b1b0afd"
+      }
+    ]
+  }
+]

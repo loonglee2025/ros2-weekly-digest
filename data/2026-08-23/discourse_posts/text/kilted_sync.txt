@@ -1,0 +1,11 @@
+##### TITLE: Preparing for Kilted sync 2026-08-21
+created: 2026-08-19T22:03:31.474Z
+REPLIES: 1
+
+--- [2026-08-19] cottsay ---
+There have been several new and updated packages in Kilted since it was released, and it’s time to sync those new features and fixes to the main apt and dnf repositories. 
+ There are currently 0 regressions and 471 packages to release. 
+ We will start holding rosdistro PRs for the sync on 2026-08-20T07:00:00Z , with a plan to do the sync on 2026-08-21T07:00:00Z .
+
+--- [2026-08-21] cottsay ---
+This sync is complete .

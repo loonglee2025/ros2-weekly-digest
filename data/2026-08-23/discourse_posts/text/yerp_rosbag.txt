@@ -1,0 +1,264 @@
+##### TITLE: YERP + rosbag2 snapshot: can we capture why a ROS perception latency spike happened?
+created: 2026-07-27T12:44:24.391Z
+REPLIES: 4
+
+--- [2026-07-27] zc_Liu ---
+[Update] Thanks to the great feedback in the comments regarding rosbag2 snapshot , I have updated the original post to clarify how YERP and rosbag2 snapshot work perfectly together as a trigger-and-capture pair! 
+ Hi everyone, Recently I have been thinking about a very practical debugging problem in ROS / ROS2 perception pipelines, especially for AMRs and mobile robots. When a robot behaves strangely in the field, the usual workflow is often: 
+
+ rosbag record everything. 
+ Bring the massive data back. 
+ Replay it and try to find what happened. 
+
+ Of course, rosbag2 is powerful. I am also aware of rosbag2 snapshot mode , which can keep recent messages in memory and dump a raw topic window when triggered. That is actually very close to the architecture I have in mind. I do not want to replace rosbag2 or its snapshot mode. Instead, I want to explore a lightweight layer above it: an event-triggered Runtime Evidence Layer for ROS perception pipelines. 
+ I call the current prototype YERP — originally “YOLO Edge Runtime Profiler”.(Project repo: https://github.com/ZC502/yolo-edge-runtime-profiler )* 
+ The core idea 
+ In my view, the layering could be: 
+
+ rosbag2 snapshot : captures the raw ROS topic window. 
+
+ YERP / EvidenceFlow : decides when the snapshot is worth triggering, records why it was triggered, and adds structured perception-runtime evidence. 
+
+ So the question is not: Can YERP replace rosbag2? The question is: Can YERP act as the lightweight anomaly detector / evidence sidecar layer that triggers rosbag2 snapshot at the exact right moment? 
+ For example, a robot may run normally most of the time, but occasionally: 
+
+ average FPS looks fine, but p95 / p99 latency spikes 
+ the local planner receives perception results too late 
+ a detection frame creates too many candidates 
+ postprocess suddenly dominates runtime 
+ the issue is hard to reproduce later 
+
+ In that case, raw topic replay is useful, but we also need to know: 
+
+ Why was this moment captured? 
+ Which frame was involved? 
+ Which perception stage became slow? (preprocess, inference, postprocess, callback delay, queue delay, or message age?) 
+ Did output pressure increase? Was there a box-count or candidate-count spike? 
+
+ That is the role I am exploring for YERP. 
+ Current prototype status 
+ The current YERP Vision prototype has already been tested in a standalone YOLO / edge CV pipeline. It can monitor fields such as preprocess_ms , inference_ms , postprocess_ms , p50/p95/p99 latency , box count , and confidence entropy . 
+ When a runtime pressure event is triggered, it saves local evidence ( image.jpg , metadata.json , etc.). 
+ jpg 1920×1080 299 KB 
+ In one test case, a normal-looking YOLO frame was captured not because it was manually labeled as a “ [bad frame] ”, but because the runtime trace showed pressure: 
+
+[CODE]{
+ "state": "RED",
+ "dominant_cause": "POSTPROCESS_DOMINANT",
+ "selection_reason": "runtime_pressure",
+ "metrics": {
+ "box_count": 18,
+ "class_count": 4,
+ "confidence_entropy": 2.51,
+ "preprocess_ms": 1.20,
+ "inference_ms": 3.95,
+ "postprocess_ms": 2.02,
+ "postprocess_ratio": "28.15%"
+ }
+}
+[/CODE]
+
+ The important point is not that the image “looks abnormal”. The important point is: this input frame created measurable runtime pressure, so it became worth saving as evidence. 
+ Community Momentum 
+ This concept is already gaining cross-community traction: 
+
+ I have introduced this EvidenceFlow approach in the Ultralytics GitHub Discussions , where the team is currently gathering feedback. 
+
+ I’ve also initiated an open co-testing discussion within the MindSpore Lite community , and developers there are exploring collaboration for edge NPU inference. 
+
+ Now, I want to bring this discussion to the ROS ecosystem, which is arguably where field debugging is the most painful. 
+ EvidenceFlow Schema v0.1 Draft 
+ Instead of exposing all internal YERP logic, I am thinking about a simple structured sidecar format. A ROS / ROS2 runtime pressure event could look like this: 
+
+[CODE]{
+ "schema_version": "0.1",
+ "record_type": "runtime_pressure_event",
+
+ "sample": {
+ "sample_id": "frame_1048",
+ "input_ref": "/camera/front/image_raw",
+ "timestamp": "2026-07-27T19:32:18.104Z"
+ },
+
+ "environment": {
+ "runtime": "ros2",
+ "backend": "yolo_edge_runtime",
+ "mode": "event_only",
+ "device": "amr_edge_board"
+ },
+
+ "trigger": {
+ "state": "RED",
+ "reason": "latency_p99_spike",
+ "observed_ms": 51.7,
+ "threshold_ms": 30.0,
+ "dominant_cause": "POSTPROCESS_DOMINANT"
+ },
+
+ "stage_ms": {
+ "preprocess": 2.1,
+ "inference": 15.4,
+ "postprocess": 34.2,
+ "total": 51.7
+ },
+
+ "ros_metadata": {
+ "topic": "/camera/front/image_raw",
+ "node": "/perception/yolo_detector",
+ "callback_delay_ms": null,
+ "queue_delay_ms": null,
+ "message_age_ms": null,
+ "dropped_messages": null
+ },
+
+ "output_metadata": {
+ "box_count": 145,
+ "candidate_count": 312,
+ "confidence_entropy": 2.8,
+ "class_entropy": 1.4
+ },
+
+ "hardware_metadata": {
+ "cpu_usage": null,
+ "gpu_usage": null,
+ "npu_usage": null,
+ "memory_spike_mb": 12,
+ "temperature_c": null
+ },
+
+ "snapshot": {
+ "rosbag2_snapshot_triggered": true,
+ "window_sec": 5
+ },
+
+ "privacy": {
+ "local_first": true,
+ "image_saved": true,
+ "upload_performed": false
+ }
+}
+[/CODE]
+
+ The goal is not to force every ROS project to use these exact fields, but to discuss what a useful runtime evidence record should contain. 
+ Runtime Overhead 
+ A natural concern is: Will such a probe slow down the robot? 
+Absolutely valid. A probe should not become the new bottleneck. The design separates the workload: 
+
+ Fast path (Main inference loop): read existing timestamps, update a fixed-size rolling window, check trigger conditions. No file IO, no large tensor copies, no image saving. 
+
+ Slow path (Background worker): after a trigger, write JSON / image in a background worker, and optionally call rosbag2 snapshot service . Uses a bounded queue and drops evidence if full to avoid blocking inference. 
+
+ For production ROS / ROS2 systems, the default modes would likely be shadow_mode (observe only) or (write only when triggered). 
+ How I imagine the rosbag2 integration 
+
+ Observe : YERP observes perception timing and output metadata. 
+
+ Detect : YERP detects a runtime pressure event (p99 spike, queue delay, output pressure, etc.). 
+
+ Log : YERP writes a small EvidenceFlow JSON sidecar. 
+
+ Trigger : If raw replay is needed, YERP calls rosbag2 snapshot service. 
+
+ Result : raw bag window + structured reason for capture + perception-stage timing + output metadata . 
+
+ In short: rosbag2 snapshot tells us what raw ROS messages were around the event. YERP / EvidenceFlow tells us why this event was worth capturing. 
+ Questions for the ROS community 
+ I would really appreciate feedback from people who debug ROS / ROS2 robots in the field. 
+
+ Does this EvidenceFlow schema cover the information you would want when debugging ROS perception latency? 
+
+ For ROS2, should such an adapter start at the image topic level, diagnostics level, or executor / callback timing level? 
+
+ For AMR / mobile robot scenarios, which fields matter most? ( frame latency , message age , queue delay , callback delay , TF wait time , etc.) 
+
+ How do you currently trigger rosbag2 snapshots in real robots? (Manual trigger? Diagnostics threshold? Topic frequency monitoring? Custom anomaly detector? Lifecycle event? Nav2 state?) 
+
+ Would a small structured JSON sidecar make snapshot bags easier to triage later? 
+
+ Boundary 
+ To avoid misunderstanding: 
+
+ YERP is not a replacement for rosbag2. 
+
+ YERP is not a replacement for tracing or profilers. 
+
+ YERP does not identify the final root cause by itself. 
+
+ YERP tries to capture the input frame and runtime metadata that make a case worth investigating . 
+
+ My current goal is to turn field debugging from “record everything and search later” into “capture structured evidence when runtime pressure actually happens” . 
+ I am sharing this as an early prototype and schema draft. Comments, criticism, field stories, and suggestions are very welcome! 
+ If you find this “Runtime Evidence Layer” concept valuable for your edge AI ROS deployments, or if you are interested in co-designing the ROS2 adapter together, feel free to drop a comment below, open an issue on GitHub, or reach out to me directly!
+
+--- [2026-07-27] JM_ROS ---
+Are you aware of rosbag2 snapshot mode ? This is usually the go-to solution for this problem either coupled with a manual trigger or an anamoly detector (which is basically what you are presenting here)
+
+--- [2026-07-28] zc_Liu ---
+Thanks for pointing this out. Yes, rosbag2 snapshot mode is exactly the kind of raw-data capture backend I would like YERP to work with, not replace. I see the layering more like this: 
+
+ rosbag2 snapshot: captures a bounded raw topic window after a trigger. 
+ YERP / EvidenceFlow: decides when the trigger is meaningful, records why it was triggered, and adds structured runtime evidence around the internal perception pipeline. 
+
+ So I completely agree with your point: rosbag2 snapshot mode plus an anomaly detector is the exact right pattern. The part I am trying to explore is that anomaly detector / evidence sidecar layer. 
+ For example, rosbag2 snapshot can capture the raw ROS messages around an incident, but it usually does not know what happened inside the perception callback: 
+
+ preprocess_ms / inference_ms / postprocess_ms 
+ callback delay / queue delay / message age 
+ box count / candidate count / confidence entropy 
+ p99 latency spike / postprocess-dominant frame 
+
+ That is where I think YERP / EvidenceFlow can sit. A possible integration could be: 
+
+ Observe : YERP observes lightweight timing and output metadata inside or near the perception node. 
+
+ Detect : If it detects a runtime pressure event (e.g., p99 latency spike, postprocess spike, queue delay, unusually high candidate count). 
+
+ Log Evidence : YERP writes a small structured JSON sidecar detailing why the event was triggered, which node was involved, stage timing, and output metadata. 
+
+ Trigger Backend : If raw topic replay is needed, YERP also calls the rosbag2 snapshot service to dump the recent topic window. 
+
+ So the relationship I have in mind is: 
+
+ EvidenceFlow JSON tells us: Why this event is worth looking at. 
+ rosbag2 snapshot tells us: What raw ROS messages were around that event. 
+
+ In that sense, YERP could be a lightweight trigger and indexing layer for it. This is also why I am interested in the schema design. If YERP triggers a snapshot, the small JSON sidecar could make the resulting bag much easier to triage later: 
+
+[CODE]{
+ "trigger": {
+ "reason": "latency_p99_spike",
+ "observed_ms": 51.7,
+ "dominant_cause": "POSTPROCESS_DOMINANT"
+ },
+ "ros_metadata": {
+ "topic": "/camera/front/image_raw",
+ "node": "/perception/yolo_detector",
+ "queue_delay_ms": 12.4,
+ "message_age_ms": 38.6
+ },
+ "stage_ms": {
+ "preprocess": 2.1,
+ "inference": 15.4,
+ "postprocess": 34.2,
+ "total": 51.7
+ },
+ "snapshot": {
+ "rosbag2_snapshot_triggered": true,
+ "window_sec": 5
+ }
+}
+[/CODE]
+
+ Then instead of having only a heavy bag file that needs to be replayed and inspected manually, we would have: raw bag window + structured reason for capture + perception-stage timing + output-pressure metadata + optional keyframe 
+ I would be very interested to hear how people currently trigger rosbag2 snapshots in production systems. Do you usually use manual triggers, diagnostics thresholds, topic frequency monitoring, lifecycle events, or custom anomaly detector nodes? 
+ My current thinking is that YERP could start as a small event detector / EvidenceFlow node, and optionally call rosbag2 snapshot when raw topic replay is needed.
+
+--- [2026-08-13] Saketh ---
+Answering your question 1, the field I’d add is a capture manifest, the actual sequence number range per topic that landed in the snapshot. rosbag2 snapshot’s window is a RAM ring buffer, so what you get depends on when the trigger call lands relative to the publish stream, not just wall clock. 
+ Two identical triggers can come back with slightly different windows and nothing in the output says so. Your schema already has null slots circling this (queue_delay_ms, dropped_messages), a per-topic seq range would make the capture itself checkable after the fact. I build replay tooling off recordings, so what exactly landed in the bag is the part I care about. Have you hit that mismatch on real hardware yet?
+
+--- [2026-08-22] zc_Liu ---
+Thanks, this is a very good point. I was thinking mostly in terms of the requested snapshot window, but for replay the more important thing is the actual per-topic message range that landed in the bag. 
+ I haven’t validated this mismatch systematically on real ROS hardware yet, so I don’t want to overclaim there. But I agree that a capture manifest — per-topic first/last sequence or recorder-side index, message count, and ideally first/last timestamp — would make the snapshot itself auditable instead of inferring its contents from the trigger time alone. 
+ I’m shifting most of my current work toward LLM deployment/quantization diagnostics, so I probably won’t implement the ROS adapter immediately, but I’ll add this explicitly to the EvidenceFlow schema notes. It’s exactly the kind of field that matters for deterministic replay tooling. 
+ Thanks for catching that.

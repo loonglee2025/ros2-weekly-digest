@@ -1,0 +1,740 @@
+[
+  {
+    "sha": "d64b616421e82427bbd67414a125986b60594a52",
+    "node_id": "C_kwDOCBF7SNoAKGQ2NGI2MTY0MjFlODI0MjdiYmQ2NzQxNGExMjU5ODZiNjA1OTRhNTI",
+    "commit": {
+      "author": {
+        "name": "DylanDeCoeyer-Quimesis",
+        "email": "102609575+DylanDeCoeyer-Quimesis@users.noreply.github.com",
+        "date": "2026-07-31T22:52:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-31T22:52:42Z"
+      },
+      "message": "Report bt action request error (#6289)\n\n* nav2_msgs: add generic action request error codes\n\nAction result definitions used action-specific values for request\nfailures, and several actions lacked the shared request or timeout\nconstants. This prevented BtActionNode from reporting consistent\ndiagnostics.\n\nThis commit reserves values 1 and 2 for rejected and unsent goals\nacross Nav2 actions and defines the missing timeout values.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* nav2_behavior_tree: report generic action request errors\n\nAction nodes returned failure without consistently writing diagnostic\nerror codes when a goal was rejected, could not be sent, or timed out.\nThe implementation and tests also evolved across several corrective\ncommits.\n\nThis commit centralizes request-failure reporting and optional error\ncode fallback in BtActionNode. It updates action nodes to use the shared\nports and covers rejected goals, send-goal failures, timeouts, and\naction-specific error codes.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* opennav_docking_bt: use generic action request errors\n\nDocking action nodes duplicated the common request-failure handling\nand error-port declarations from BtActionNode.\n\nThis commit delegates those responsibilities to the generic\nBtActionNode implementation.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* opennav_docking: stop NodeThread before destroying server\n\nThe test reset the docking server node while its NodeThread was still\nactive. The executor could then access node resources during teardown,\ncausing a shutdown race and preventing the XML result from being\nwritten.\n\nThis commit leaves node lifetime management to scope teardown, so the\nNodeThread destructor cancels and joins its executor before the server\nnode is destroyed.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n---------\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>",
+      "tree": {
+        "sha": "e95f94b4767eaa823bcdf4a9155b0b4e70cff08d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e95f94b4767eaa823bcdf4a9155b0b4e70cff08d"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/d64b616421e82427bbd67414a125986b60594a52",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqbSc6CRC1aQ7uu5UhlAAAbW4QAHxMOYwjnt/GRkTAMKHBlKz5\n1SmL5mCq8AdIL+QIs0IDagrk75KfsXPHgCI5Pve0yKL7IUwFDfMB0xHG5+4i2epJ\n12Ra6/NKAgMnM44MV4DIlO82Zm5GTz4EvzlDePg2c23ZZuzuPfuvkkpZe/uCyUXU\nWe8W8rOH9drWjxFibrTnjjoUa+ZR5CQqoxFW7t82jgJIXqYlUO4PleNeS0qjIXou\n6cK0lT1s3U2JEjxUk5+mkBfOkCXGEXj5Sz1OgVZaQYwJzrba/pxfMOVSSSpKxrGh\nc5AKWX914XdfYeRvATSNKr9gCVofSdJTrU/foxQxoZQswHPjvn3e/syDMFZmfMvn\nHH2sB7I5QrEu79vcJ4S2kovLntECg5y2sw4LLg8kspdfS4BZMKOyd1BRQH90SzPw\nOtNjCvbPXd2U2l/does8NTCl/nB4fmKpoS2EJV9Pu/VboUYVCmlj6OdlHlcWB5G/\nyxqSkS75F7tVO9sKnIwxzJvFI4q/v1bqlITUd98mCSptBg0Jwr6q6O3O4AH6npCL\nakYiF/cJeMLvqtfShIMgDhpMd+OLb9P9A5lvMySqrC/J7bu0mwkLJZGrWg55Fhqg\nF1EYNmic3ClQoqNzGmboHIl3lb/hOccOYKyyKHsqGpl0vT+4g0aRHf+kvFrNjtuF\n9LRrTBSwvP8PVqypnaWp\n=2Gdo\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e95f94b4767eaa823bcdf4a9155b0b4e70cff08d\nparent 33f2b7c9839c274dbac1faa77e147682ecce8515\nauthor DylanDeCoeyer-Quimesis <102609575+DylanDeCoeyer-Quimesis@users.noreply.github.com> 1785538362 +0200\ncommitter GitHub <noreply@github.com> 1785538362 -0700\n\nReport bt action request error (#6289)\n\n* nav2_msgs: add generic action request error codes\n\nAction result definitions used action-specific values for request\nfailures, and several actions lacked the shared request or timeout\nconstants. This prevented BtActionNode from reporting consistent\ndiagnostics.\n\nThis commit reserves values 1 and 2 for rejected and unsent goals\nacross Nav2 actions and defines the missing timeout values.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* nav2_behavior_tree: report generic action request errors\n\nAction nodes returned failure without consistently writing diagnostic\nerror codes when a goal was rejected, could not be sent, or timed out.\nThe implementation and tests also evolved across several corrective\ncommits.\n\nThis commit centralizes request-failure reporting and optional error\ncode fallback in BtActionNode. It updates action nodes to use the shared\nports and covers rejected goals, send-goal failures, timeouts, and\naction-specific error codes.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* opennav_docking_bt: use generic action request errors\n\nDocking action nodes duplicated the common request-failure handling\nand error-port declarations from BtActionNode.\n\nThis commit delegates those responsibilities to the generic\nBtActionNode implementation.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n* opennav_docking: stop NodeThread before destroying server\n\nThe test reset the docking server node while its NodeThread was still\nactive. The executor could then access node resources during teardown,\ncausing a shutdown race and preventing the XML result from being\nwritten.\n\nThis commit leaves node lifetime management to scope teardown, so the\nNodeThread destructor cancels and joins its executor before the server\nnode is destroyed.\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>\n\n---------\n\nSigned-off-by: Dylan De Coeyer <dylan.decoeyer@quimesis.be>",
+        "verified_at": "2026-07-31T22:52:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d64b616421e82427bbd67414a125986b60594a52",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/d64b616421e82427bbd67414a125986b60594a52",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d64b616421e82427bbd67414a125986b60594a52/comments",
+    "author": {
+      "login": "DylanDeCoeyer-Quimesis",
+      "id": 102609575,
+      "node_id": "U_kgDOBh2ypw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102609575?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DylanDeCoeyer-Quimesis",
+      "html_url": "https://github.com/DylanDeCoeyer-Quimesis",
+      "followers_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/followers",
+      "following_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/subscriptions",
+      "organizations_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/orgs",
+      "repos_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/repos",
+      "events_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DylanDeCoeyer-Quimesis/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "33f2b7c9839c274dbac1faa77e147682ecce8515",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/33f2b7c9839c274dbac1faa77e147682ecce8515",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/33f2b7c9839c274dbac1faa77e147682ecce8515"
+      }
+    ]
+  },
+  {
+    "sha": "33f2b7c9839c274dbac1faa77e147682ecce8515",
+    "node_id": "C_kwDOCBF7SNoAKDMzZjJiN2M5ODM5YzI3NGRiYWMxZmFhNzdlMTQ3NjgyZWNjZTg1MTU",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-07-31T22:50:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-31T22:50:17Z"
+      },
+      "message": "Adding dynamic add/remove services to the collision monitor exclusion zones (#6304)\n\n* Adding dynamic services to the exclusion zones\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* bust cache for new msg types\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Fix unit tests\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* whoops - CI was failing bc I didn't commit the new files!\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "e9b5131c5fe0a4d896cbb365a03c72639ddba50b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e9b5131c5fe0a4d896cbb365a03c72639ddba50b"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/33f2b7c9839c274dbac1faa77e147682ecce8515",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqbSapCRC1aQ7uu5UhlAAAIvwQAEbLLUDX/PNE9yWvzx0HSHIC\njbveFxelNqvr8rKOGdidCbIZQaS8ruzZyuIJfCrrTQJB45SadrzdVtTgvojNe9yW\nGdF+g8RM1G16EH+cOyAmyvDwu0cciN0mt57X7fzoVNMbnBBbTzfv0iwE9sdfyjxi\n57sZskT+uLXKeGm022P8/VFzjp+uI/t7q5S56Nk0N/77AOfCL8/072MrL6mA/Ruq\nsFduYvkffeWFUVPRaCYETkcrcrNs1wF4L8BGYC8cr1Sei7Bqe6k41m0gEqbPWDfP\n4SjppEVTTJIvYjJ4o6IYbY4qy4ZxXVfoaP3agFZ2tM7kR1r10DHparUsZOGTjnBT\nxPmbhBpaG6LgW83uBpBP3v1v3htlmYzMYjP6MZQe1ytyXdIAF1yMw3PBCcy38dN5\nDNkSJYMlFEWrCZ0oUQ5WjNhCFiswwFYNJ72V9NPDBx6n33iC2gqejJMsh8GHjzan\n5dG0pNT6eZ2G/xLlONzuZVjRDMtwxhGaO42QFBjJTdq0AC+pfJi4WZPKY9LSGQgX\nF6j7wwH8qgeZrnwGQ39lExxaXjhBCifz++dlz87ElF92hmXAfbLFjQoJ9uE/aaso\nKoVS0v1V6irqKSyXvx9JR873iXeegC6VUtR2AMfNpWs3xr/crNQdt7r5D+Rm6HiL\n78lollMe/cGs3rUK5qAS\n=9lxQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e9b5131c5fe0a4d896cbb365a03c72639ddba50b\nparent d60092ad9f69bc31a6dba4fbaf9acd19f416386a\nauthor Steve Macenski <stevenmacenski@gmail.com> 1785538217 -0700\ncommitter GitHub <noreply@github.com> 1785538217 -0700\n\nAdding dynamic add/remove services to the collision monitor exclusion zones (#6304)\n\n* Adding dynamic services to the exclusion zones\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* bust cache for new msg types\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Fix unit tests\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* whoops - CI was failing bc I didn't commit the new files!\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-31T22:50:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/33f2b7c9839c274dbac1faa77e147682ecce8515",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/33f2b7c9839c274dbac1faa77e147682ecce8515",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/33f2b7c9839c274dbac1faa77e147682ecce8515/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/d60092ad9f69bc31a6dba4fbaf9acd19f416386a"
+      }
+    ]
+  },
+  {
+    "sha": "d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+    "node_id": "C_kwDOCBF7SNoAKGQ2MDA5MmFkOWY2OWJjMzFhNmRiYTRmYmFmOWFjZDE5ZjQxNjM4NmE",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-07-30T23:32:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-30T23:32:29Z"
+      },
+      "message": "🛠️ Bump docker/login-action from 4 to 4.5.2 (#6303)\n\nBumps [docker/login-action](https://github.com/docker/login-action) from 4 to 4.5.2.\n- [Release notes](https://github.com/docker/login-action/releases)\n- [Commits](https://github.com/docker/login-action/compare/v4...v4.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: docker/login-action\n  dependency-version: 4.5.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "35b27ea29ed93ffa76e6662f5614ebd4172cd8ce",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/35b27ea29ed93ffa76e6662f5614ebd4172cd8ce"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqa98NCRC1aQ7uu5UhlAAANHYQAKN8ZRp1zqW+efT76z/i7AUZ\n7AXlzZpPg4g0Gv50mAd0iujEL2HIbFILxBA0IpE7SmLAay0uAbBZdHftZ10x8MOX\n5HYdmXbwitJBIoROGAqm5A7PrLJUlU0PRh1Q9PgTeYnwKL8nRQpIQ3maIq/my+kd\nvd/ovE9vrmh7C8aOCxl1mjbJ9d+F7T6+tBzRuuECeAUgYvGDvQanuTbreIgo3vZo\nW2/I5DdsIJelv+b8OoIJ7UXUPK9urQmIkdOW9qmEGKrJsTTNgNcnFWRDiG4R4Y0c\nAj7cC4XYjf+UaewJc/2979JmoedP56klexYQZu8N7G/ChaZ1W5a02lmAYpvUwkPM\n8GrLGxvgFmlFdrDCc0HkddcGfOPf8oDzwvGu6Ar9I92/z6TvO+su8hTD+0Bzc3Na\nfJgCv7tG0LJde/o0PYpXWuNoYFZB6zAJKpsXTLzNhj/T+76YIctBTYAQH5Bb2iVR\nxCq/+aHOfvl5kjp8HKla77aY76pXnC3C/Z24gUuYCQGqjznhi8B8s9vmwvG82u6C\nRdFusYJ9atTk5sf/c4dQF2lqbfs/RFwDpyJ/UlqHn4pzFkzeK3+GakFy/TsfR8dC\nth0DAdx//awtTzG8UJNBaP/cDSB7pll0PwtBmCYDnQAI6ZjXXFvHfjH2cAsmODuN\n0N54z8mM5vkDYw9x6Wd8\n=HEa7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 35b27ea29ed93ffa76e6662f5614ebd4172cd8ce\nparent 7619206d7e69735255847a3d4ba13bb9ef680984\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1785454349 -0700\ncommitter GitHub <noreply@github.com> 1785454349 -0700\n\n🛠️ Bump docker/login-action from 4 to 4.5.2 (#6303)\n\nBumps [docker/login-action](https://github.com/docker/login-action) from 4 to 4.5.2.\n- [Release notes](https://github.com/docker/login-action/releases)\n- [Commits](https://github.com/docker/login-action/compare/v4...v4.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: docker/login-action\n  dependency-version: 4.5.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2026-07-30T23:32:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/d60092ad9f69bc31a6dba4fbaf9acd19f416386a",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d60092ad9f69bc31a6dba4fbaf9acd19f416386a/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7619206d7e69735255847a3d4ba13bb9ef680984",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7619206d7e69735255847a3d4ba13bb9ef680984",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/7619206d7e69735255847a3d4ba13bb9ef680984"
+      }
+    ]
+  },
+  {
+    "sha": "7619206d7e69735255847a3d4ba13bb9ef680984",
+    "node_id": "C_kwDOCBF7SNoAKDc2MTkyMDZkN2U2OTczNTI1NTg0N2EzZDRiYTEzYmI5ZWY2ODA5ODQ",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-07-30T20:57:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-30T20:57:01Z"
+      },
+      "message": "Add exclusion zone functionality to collision monitor (#6233)\n\n* Add exclusion zone functionality to collision monitor\n\n- Introduced ExclusionZone class to mask out source points within defined zones.\n- Updated Source class to integrate exclusion zones and apply filtering during data retrieval.\n- Modified getData methods across various sources to use getDataImpl for improved clarity.\n- Enhanced activation and deactivation of exclusion zone visualization in CollisionMonitor.\n- Added configuration for exclusion zones in the Source class.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* code sharing\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add collision detector part\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* adress PR comments\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* base_shift_correction_ for exclusion zone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add docs\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add frame hold timeout feature and related tests for exclusion zone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add srouces exclusion zones test\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* update README to clarify exclusion zone use cases and behaviors\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* refactor: update collision detector and monitor parameters to include exclusion zones\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* docs: clarify exclusion zones description in README\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* refactor: change configure methods to return bool for success indication\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Update nav2_collision_monitor/src/collision_detector_node.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_collision_monitor/src/collision_detector_node.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Refactor ExclusionZone to use nav2::TransformBuffer instead of tf2_ros::Buffer\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor exclusion zone tests to use nav2::TransformBuffer and related factories\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Remove unused publishPolygons method and update visualization publishing logic\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add dynamic radius and height band update tests for ExclusionZone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "5843e3aa3aedd25bc37d6d6e9f509ced084d04a7",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/5843e3aa3aedd25bc37d6d6e9f509ced084d04a7"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/7619206d7e69735255847a3d4ba13bb9ef680984",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqa7qdCRC1aQ7uu5UhlAAA488QACLeUZIHeBBCd//kDzc7flQi\nkhjEjhCUhZqCyDV+1crG+zeLmdiI4N+JfBndxVEzOCa4TSXrWA+aSYpUohs9S/yv\nCUdOkHiKXXb/cW4pMUBmyxnNCsugSaIiXxWYwc4fdSB5D/9n/Bg/msJaE/+o7fux\nzI6LWuH2MtNMFAayFSP0nxK5vqXxna+MjaEOxo/e/vn9hRs0Nvf1UyEHKpKaJnNj\np7dG/DddMUxTlMqp6BoVAoTSYqYE2XTGsU2sBuTccGzlfovXeEP06m12ZYbVtj3T\nr00HEWwUpra0LXlsdQpCPwxc+xQYN+UHNu7Cuy0YzAP8OUzxPFeoAsDnrB28zTC2\nbQbE1TdEcuyvRRLm2lxubscKXVf9jAHwSp/zGnsj31zknj5DsaHbWpJ56U8pnf0J\nFUcUIz8cv8dLFSKYPpoAx7q3fzLZJtSKbuxHqVhrvveNaYd9Eqiw6Nngm/D0nqrI\nlqKfGIq0OktGs5hCFffwxIZyD1UQyOSXhDAIQlI0/4HJLaPh5n8V5/QxsOgjIaXl\nePpehXpSgnD7Ug+witOtQk+KMKe2wavb4NKtOerUGl2iRMOnd6PPbPiGYOD8sowk\njDN85MEoTrtZozDVBR5Q8X2HCTgMC1YCj0+xn56Z9bz3l2bBvluOrDl087IfCbse\nvjyVoal0R0DJGEbqCIF4\n=1t5T\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5843e3aa3aedd25bc37d6d6e9f509ced084d04a7\nparent 2f6e54f73c4c27004663e7afc55a2f1bd2ebd038\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1785445021 +0200\ncommitter GitHub <noreply@github.com> 1785445021 -0700\n\nAdd exclusion zone functionality to collision monitor (#6233)\n\n* Add exclusion zone functionality to collision monitor\n\n- Introduced ExclusionZone class to mask out source points within defined zones.\n- Updated Source class to integrate exclusion zones and apply filtering during data retrieval.\n- Modified getData methods across various sources to use getDataImpl for improved clarity.\n- Enhanced activation and deactivation of exclusion zone visualization in CollisionMonitor.\n- Added configuration for exclusion zones in the Source class.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* code sharing\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add collision detector part\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* adress PR comments\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* base_shift_correction_ for exclusion zone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add docs\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add frame hold timeout feature and related tests for exclusion zone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* add srouces exclusion zones test\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* update README to clarify exclusion zone use cases and behaviors\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* refactor: update collision detector and monitor parameters to include exclusion zones\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* docs: clarify exclusion zones description in README\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* refactor: change configure methods to return bool for success indication\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Update nav2_collision_monitor/src/collision_detector_node.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_collision_monitor/src/collision_detector_node.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Refactor ExclusionZone to use nav2::TransformBuffer instead of tf2_ros::Buffer\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor exclusion zone tests to use nav2::TransformBuffer and related factories\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Remove unused publishPolygons method and update visualization publishing logic\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add dynamic radius and height band update tests for ExclusionZone\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-30T20:57:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7619206d7e69735255847a3d4ba13bb9ef680984",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/7619206d7e69735255847a3d4ba13bb9ef680984",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7619206d7e69735255847a3d4ba13bb9ef680984/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038"
+      }
+    ]
+  },
+  {
+    "sha": "2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+    "node_id": "C_kwDOCBF7SNoAKDJmNmU1NGY3M2M0YzI3MDA0NjYzZTdhZmM1NWEyZjFiZDJlYmQwMzg",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-07-27T23:24:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T23:24:14Z"
+      },
+      "message": "Add merge queue configuration to mergify.yml\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "049996cd85b408b571b2aaf202acadf3a2d2fb0e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/049996cd85b408b571b2aaf202acadf3a2d2fb0e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZ+ieCRC1aQ7uu5UhlAAAGJUQABXmZgldR5UhOItPFo48Tnkd\nrgCSCKjA2hMKOrku6Y4NkE76oL8sQtqiDwtRwtcMr6w2O+2Stjnh8tSvz+byOnmB\nICuV/LBBfh2I9oaeuvrH+WE3SsGxWP0DiIgOtTJilyIPcJuyZwmv55b8NHhM9u4M\nUXOQcwWM/hpYza2T/3ZsG6H5SepASusgVm391zk/pHWahh4EFPKfwMyQQ3SRzMMO\npi6pgn6QJkk76u7azNl1cDq7x+x41M85GR60bvO4Gb6YTUsYcvyfMlL/shgPBCsD\n1RVx69H2kubKmkzqd689+CoUhoNWsJ4zf3kudxubidA6VNMjRyPTm+ismVUCbuqO\nCPJAKjhITs9yyDKtZXjpARgxkDEOU5Yjy0LoUk4x2ouOaZAfuhvk5OxtNKxi8M2g\n2hFmlxZmhXwRqOzscksEL0jHhFdh8VCTaI0z6dSf7LCmwNxqaMWpWUcMA5rtQBxr\ngTl58Mh8M3srUs5EgoQ/GstDL/feuIYhROlQX5plYGeVmMvW2s1BcQvGDtPzwuJi\n0BFDGNbEnat6x54QY97A1q3ztccm+eNoTBgMeOMoGDS/8wAx+xWRGiMI9+bzdBAL\nho3brw+yCgGZgpQyjY1CkkpioNGu2utQzimW08zjdUKU+Amxsz2Rmk52WnE03rYY\nwDwjbkLlJlfItMr/lkbL\n=7N/+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 049996cd85b408b571b2aaf202acadf3a2d2fb0e\nparent d6520554d39e02b2e6c719bf01cbacf65c1a11d8\nauthor Steve Macenski <stevenmacenski@gmail.com> 1785194654 -0700\ncommitter GitHub <noreply@github.com> 1785194654 -0700\n\nAdd merge queue configuration to mergify.yml\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-27T23:24:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/2f6e54f73c4c27004663e7afc55a2f1bd2ebd038/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/d6520554d39e02b2e6c719bf01cbacf65c1a11d8"
+      }
+    ]
+  },
+  {
+    "sha": "d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+    "node_id": "C_kwDOCBF7SNoAKGQ2NTIwNTU0ZDM5ZTAyYjJlNmM3MTliZjAxY2JhY2Y2NWMxYTExZDg",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-07-27T19:57:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T19:57:00Z"
+      },
+      "message": "Lyrical branch off process   (#6293)\n\n* Adding a temp lyrical build job to test things work now fine\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add test runs\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* use testing repo\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Updates for lyrical release\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* remove temp lyrical job\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "f61207b6dfc3b97b9ef3bd63845854550ae0f6bf",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/f61207b6dfc3b97b9ef3bd63845854550ae0f6bf"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZ7gMCRC1aQ7uu5UhlAAAaCgQADu0wqYiC04hjC6PuM/+YjHT\nd4vik3vFFCVbpJGOoxhGC3UeAcJW1FLsqOQbkR0Zegowg724AbdXXSYpUWsd5gn+\niQtBOA2guIxNlt4Z7cCWJL3BFHrToeaBBO+a5Uobe+YYx9bZ69KnmQLlH0w85Ffx\nJyDfvDTAMDj4/5+IT+Q7N6Ccxn+tYn1K6iy/5olb2myXQ/TAkg4/SAcPEjX22PSk\nW1bV1azKRhNl9OjiHFSIEeTvkgcn3M8kJ0n1yidU22kyqxwJfBdfObZ4FLUEu1eL\nL1m39EaZzujDTMcPywdxlnDhIpGsJoHMD7O2UreU4So/PvF9K9lK4YakkJ/hBwhn\nQD9qXu9Ro5gUcod2d7/PKf+qg64xbhgbPLHRs1FlMVg1e7zL9q/5RpYD775db6Eu\nHqQ3Kwc3nfWG3hYxIoJzS/Aqxh+/SguC6z16SrSGsbmnH4y0XfShLehS4M6EJkK6\nJIu3Inq9GPTmdl3JWa0XXGtKEtZH0RSE1OOmEwPDT42gi7sohoGW0510GmYFzu4f\nKex8MPGG6JNDL3EhRPgvCk/73t+iU1BPRIbkZONTA9tHnZayXN8x7gv9I+oFS+My\ng2Wy9z6Qa+1YIpgfT5c9+GbdCiiA4pjTQZsIAuMCxVDhdoL27fDR92PfhCGLPKYW\nQFR1/lAkb4SpGoKF1H5x\n=FpeB\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f61207b6dfc3b97b9ef3bd63845854550ae0f6bf\nparent 1a7bab77c51701031e55754643e262692ffe2e34\nauthor Steve Macenski <stevenmacenski@gmail.com> 1785182220 -0700\ncommitter GitHub <noreply@github.com> 1785182220 -0700\n\nLyrical branch off process   (#6293)\n\n* Adding a temp lyrical build job to test things work now fine\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add test runs\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* use testing repo\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Updates for lyrical release\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* remove temp lyrical job\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-27T19:57:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/d6520554d39e02b2e6c719bf01cbacf65c1a11d8",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/d6520554d39e02b2e6c719bf01cbacf65c1a11d8/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1a7bab77c51701031e55754643e262692ffe2e34",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1a7bab77c51701031e55754643e262692ffe2e34",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/1a7bab77c51701031e55754643e262692ffe2e34"
+      }
+    ]
+  },
+  {
+    "sha": "1a7bab77c51701031e55754643e262692ffe2e34",
+    "node_id": "C_kwDOCBF7SNoAKDFhN2JhYjc3YzUxNzAxMDMxZTU1NzU0NjQzZTI2MjY5MmZmZTJlMzQ",
+    "commit": {
+      "author": {
+        "name": "Ramon Wijnands",
+        "email": "ramon.wijnands@nobleo.nl",
+        "date": "2026-07-27T19:06:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T19:06:38Z"
+      },
+      "message": "modeToStr should be inline (#6283)\n\nThis function is defined in the header so it should be marked `inline`.\nOtherwise when you include the header in multiple translation units, the\nlinker will give a duplicate symbol error.\n\nSigned-off-by: Ramon Wijnands <ramon.wijnands@nobleo.nl>",
+      "tree": {
+        "sha": "f338d2ecc06bcaddf31e3be9eea89e1e35e75bf1",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/f338d2ecc06bcaddf31e3be9eea89e1e35e75bf1"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/1a7bab77c51701031e55754643e262692ffe2e34",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZ6w+CRC1aQ7uu5UhlAAAlmEQAFmSm/ccVrn5jUVeh5+xUxMT\nEdjwispmXF7i7xWnjlBuE9zZDEYGr4btasrGCL5jcGsGmgU6Wbl8IdV4n6lFRi58\nvvSB7TkRu5bl+56+ZaSlISn9goh/NkTybQjpzbWEmSww0c4zFSXSWx0/yYRfoUY4\nCSlcTHehzt81c22PXoNyNq9XCofO4cg/4Yk2wbWxQtDWB6nB8Ofaa+uQHRoiEzuT\ncGIpokejlOoxAKmJiVI7SXSfUOeOeFofMdmDeGBIf0rM4WrU6xTfIqzDgZ0AV3bk\nqc4bF3LHhHW9RChGgLeJwsn07lm33X29TkrmdlFlZa7JqCVw4EZNgWk2w6NjPYA0\nECzCvQ5edTYXS349gx5lGBqWT/F4Z6xdcpzH6HF9nDCofCOoDSh9aSa8KNgSJsyy\nAMWMqxtVZwl5WYP4cQ8tbNlys5Oloxln/1OVISpV39nzpCkOSgNkpBZJ829Gm8M9\noA2yp9ZsBCO21NF/4UsqgYa15syswKOdyicnKYEDsvuxKojfwfZH4OaQXwQ3swQP\nVcc9WSW/Qi1eJQDOKcs6cKlba10nFE6oDOf7Az2wls624I46aEYFWML1mbykR8B9\n2gJE3u57nGQ8gJRA2KYYm2vIkNxBNOd9BZRJ2Pw4BtwuMFAZU8CegSSn1YuJH1TK\npYIqveDnpa6WnrRCF6E4\n=CJhu\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f338d2ecc06bcaddf31e3be9eea89e1e35e75bf1\nparent 18c87b15a6cc3d9013253147bbcc4173f70a949d\nauthor Ramon Wijnands <ramon.wijnands@nobleo.nl> 1785179198 +0200\ncommitter GitHub <noreply@github.com> 1785179198 -0700\n\nmodeToStr should be inline (#6283)\n\nThis function is defined in the header so it should be marked `inline`.\nOtherwise when you include the header in multiple translation units, the\nlinker will give a duplicate symbol error.\n\nSigned-off-by: Ramon Wijnands <ramon.wijnands@nobleo.nl>",
+        "verified_at": "2026-07-27T19:06:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1a7bab77c51701031e55754643e262692ffe2e34",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/1a7bab77c51701031e55754643e262692ffe2e34",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1a7bab77c51701031e55754643e262692ffe2e34/comments",
+    "author": {
+      "login": "Rayman",
+      "id": 91969,
+      "node_id": "MDQ6VXNlcjkxOTY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91969?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Rayman",
+      "html_url": "https://github.com/Rayman",
+      "followers_url": "https://api.github.com/users/Rayman/followers",
+      "following_url": "https://api.github.com/users/Rayman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Rayman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Rayman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Rayman/subscriptions",
+      "organizations_url": "https://api.github.com/users/Rayman/orgs",
+      "repos_url": "https://api.github.com/users/Rayman/repos",
+      "events_url": "https://api.github.com/users/Rayman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Rayman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "18c87b15a6cc3d9013253147bbcc4173f70a949d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/18c87b15a6cc3d9013253147bbcc4173f70a949d",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/18c87b15a6cc3d9013253147bbcc4173f70a949d"
+      }
+    ]
+  },
+  {
+    "sha": "18c87b15a6cc3d9013253147bbcc4173f70a949d",
+    "node_id": "C_kwDOCBF7SNoAKDE4Yzg3YjE1YTZjYzNkOTAxMzI1MzE0N2JiY2M0MTczZjcwYTk0OWQ",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-07-27T17:34:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T17:34:31Z"
+      },
+      "message": "Unpin BT.CPP (#6291)\n\n* Unpin btcpp\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Remove kilted.repos\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update underlay.jazzy.repos\n\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "5a52476f003eda23e604371e3b3b2295d308d52e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/5a52476f003eda23e604371e3b3b2295d308d52e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/18c87b15a6cc3d9013253147bbcc4173f70a949d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZ5anCRC1aQ7uu5UhlAAAiD0QAAl91qLt/NO/AkWwfu3sZ6WQ\nksc2tDMJ0lrppO6PgXhSmBndsMJKd3GfPsOpMcVsOvTh7K7qfc/uxXN7wre/j5GN\nl6wGegmLPS6em2Lx3GOronDjRWQ/RQ9sSpnxKh0CYTaiDqLQeTcqeI+AU4u0Eri3\nt5XwcMhuksDT8/YoBQ3hUDoQVnzFUqmSAFCdpiWAaWNYuUc8H+Y2eCkDKWIX7upd\nwsV7YMHOrkdPUpoTkKLBQPg2CbpeiTozYD4TYqDSMydCdPETAlLOTnkVeh3WT4UX\nVLLTcCJDni9wI5Eoew4imOwXzXDsmZ2LjGzLrB5/g3LvUoiQPl2UtWt8p6EhMJ+C\nrlQiQHdqIncKnH/lAeKh30PfdeaOdFlwoZeBtohSEvn9iKvsVXIQtrlDvHHuNVVs\neHzp1j+/b9Zypwdn+DEFT5zpnAKm4926Q+Os08j0HU/dtt6FqFhOOYCYyhMbATC0\nB5iQbZmElZm0bprtQBtpXAPLoPBMDhk3BT1OK+Pxij6Oj5Nbrql41lzZDCoKb3kr\n2MdwHz79GlG4L22CODeOUBzSdoGHDJ6Qr8OEav1vB36dSTljYc1JdYA0mPeu3k6h\n0ik19ioAdFwbXdlCrBaDM6k5Le4WWCGEkQ4SLHLYARJaIlNoUwDP32ckQBHL2Hf1\neK59gu8qY7hYvE6WVeF6\n=20H8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5a52476f003eda23e604371e3b3b2295d308d52e\nparent 768facc1ab986cfaada890affbd304527788869c\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1785173671 +0700\ncommitter GitHub <noreply@github.com> 1785173671 -0700\n\nUnpin BT.CPP (#6291)\n\n* Unpin btcpp\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Remove kilted.repos\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update underlay.jazzy.repos\n\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-07-27T17:34:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/18c87b15a6cc3d9013253147bbcc4173f70a949d",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/18c87b15a6cc3d9013253147bbcc4173f70a949d",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/18c87b15a6cc3d9013253147bbcc4173f70a949d/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "768facc1ab986cfaada890affbd304527788869c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/768facc1ab986cfaada890affbd304527788869c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/768facc1ab986cfaada890affbd304527788869c"
+      }
+    ]
+  },
+  {
+    "sha": "768facc1ab986cfaada890affbd304527788869c",
+    "node_id": "C_kwDOCBF7SNoAKDc2OGZhY2MxYWI5ODZjZmFhZGE4OTBhZmZiZDMwNDUyNzc4ODg2OWM",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-07-27T17:30:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-27T17:30:26Z"
+      },
+      "message": "Adding RL lifecycle node bringup for test_gps_waypoint_follower (#6290)\n\n* Adding RL lifecycle node bringup\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add support for Jazzy\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* navsat transform is not a lifecycle node\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Remove bond timeout for non-Nav2 lifecycle node\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "c6e153b1f4445a5f04b36d9fb6d592e78954777e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/c6e153b1f4445a5f04b36d9fb6d592e78954777e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/768facc1ab986cfaada890affbd304527788869c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZ5WyCRC1aQ7uu5UhlAAAj34QAHwXR+lNgZ/LHzFdW024CaWv\nzyj/itKBZnCmdND79BlNSrI3UOwdZ0baa8VXkYmx8ivgin7IWloQODIV4yJlBB+E\n03MM/0R98Tn1CildyPhx1IEGMVtGrSJ0sfMrS1oXAsNPmLg+DLhDmsq8pCqAvF0h\nYgdePFUVnpD2JZie/Hj9nUVpchnuccnZ7hrulYpUqEriGvEQYRAadaLYKvTYZMVF\nmgjuyOcMPVv3uekK66mMfEbWBTgs/wgzPzFdFz/9M2hlSizSMVxnMU0WV+QBThc6\nNeZC5ZOCebwtIYqDKTy4D+mgZiNs7TDRTZxkT9TNsjumvag7fyLtRyQmut1gF3Ke\naONegNe9sVi9Al9HlMu2hXSJW2kjWJiZvPBqDkZ6XvDLTRRCQWrzblxBGqkVbvi2\nEkF8p+/JpkC0wlu33nt+45hmbOndIANK7tHRa/fkwr6anwtaHsmZcdcLqwF6zTkC\nlS1gQdTMoO6+NGLVxWMWaHmizIp8sR8vdRRU5x4n6nUrWp0CEOfzIR24gwLjo7Da\nWTHGBzErJ0pYju+8VzhW1CuoX+GQH0IhZFFUVUpiEK58m++2t/efTSKh0GcMqvQs\nsU1SPYKRkKwIItaXNmpltaYr4Ah+lmdxGKPQkxhxi06MtZUGaTWlM8VFwOhWQR5f\nBFuFk2J4VGALE0fFr+z9\n=UyAd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c6e153b1f4445a5f04b36d9fb6d592e78954777e\nparent 6037e4b0b5501a88bd8238d7e63f36eda588fe58\nauthor Steve Macenski <stevenmacenski@gmail.com> 1785173426 -0700\ncommitter GitHub <noreply@github.com> 1785173426 -0700\n\nAdding RL lifecycle node bringup for test_gps_waypoint_follower (#6290)\n\n* Adding RL lifecycle node bringup\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add support for Jazzy\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* navsat transform is not a lifecycle node\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Remove bond timeout for non-Nav2 lifecycle node\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-07-27T17:30:27Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/768facc1ab986cfaada890affbd304527788869c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/768facc1ab986cfaada890affbd304527788869c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/768facc1ab986cfaada890affbd304527788869c/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6037e4b0b5501a88bd8238d7e63f36eda588fe58",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6037e4b0b5501a88bd8238d7e63f36eda588fe58",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/6037e4b0b5501a88bd8238d7e63f36eda588fe58"
+      }
+    ]
+  }
+]

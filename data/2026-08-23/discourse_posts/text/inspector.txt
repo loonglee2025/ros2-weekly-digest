@@ -1,0 +1,144 @@
+##### TITLE: ROS 2 Inspector — Static Architecture Analysis and Visualization for ROS 2 Workspaces
+created: 2026-08-19T15:33:32.913Z
+REPLIES: 4
+
+--- [2026-08-19] aminebensaid66 ---
+Hi everyone, 
+ I’ve been working on an open-source project called ROS 2 Inspector , aimed at making it easier to understand the architecture of an unfamiliar or large ROS 2 workspace before running it. 
+ The idea came from a problem I’ve repeatedly found interesting in ROS 2 projects: 
+ When documentation is incomplete or outdated, understanding a workspace often means combining source-code inspection, launch-file analysis, grep/search, runtime tools such as rqt_graph , and a lot of manual exploration. 
+ ROS 2 Inspector tries to automate part of that first architectural pass . 
+ For example: 
+ ros2inspector scan . 
+ This scans the workspace from source and produces a compact summary of the discovered ROS 2 packages together with health signals that can help identify areas worth reviewing more closely. 
+ The output can be exported as: 
+
+ table 
+ JSON 
+ YAML 
+
+ For a more visual exploration: 
+ ros2inspector viz 
+ This generates a self-contained interactive visualization of the discovered ROS 2 architecture , allowing you to explore nodes, topics, services, actions, and their relationships. 
+ There are also commands for inspecting nodes and connections, generating dependency and communication graphs, auditing connectivity, and validating architectural policies. 
+ Some examples: 
+ ros2inspector nodes --show-connections 
+ ros2inspector graph comms --format mermaid 
+ ros2inspector audit 
+ ros2inspector validate --policy ros2inspector_policy.yaml 
+ The analyzer currently handles supported patterns in Python, C++, ROS interfaces, and launch files. 
+ One important point: ROS 2 Inspector is based on static analysis. 
+ It is not intended to replace runtime tools. 
+ Dynamic names, plugins, conditional behavior, runtime remappings, DDS/network behavior, and other aspects of the effective ROS 2 topology can only be fully understood with runtime evidence. 
+ I see the two approaches as complementary: 
+ Static analysis: 
+What architecture can we infer from the workspace before launching it? 
+ Runtime inspection: 
+What architecture actually exists when the system is running? 
+ The project is still in its early releases , so there is a lot of room for improvement, optimization, and broader ROS 2 pattern support. 
+ That is also why I’d really like feedback from people working with real ROS 2 systems. 
+ In particular: 
+ What information would you want to see when opening an unfamiliar ROS 2 workspace for the first time? 
+ And for the visualization: 
+ What would make an architecture graph genuinely useful on a large ROS 2 system rather than just becoming another unreadable graph? 
+ If you have a non-confidential ROS 2 workspace, I’d also be very interested in cases where the analyzer misses something, interprets something incorrectly, or where you think runtime/static information should be connected differently. 
+ GitHub: 
+
+ github.com 
+
+ GitHub - aminebensaid66/ros2_inspector 
+
+ Contribute to aminebensaid66/ros2_inspector development by creating an account on GitHub. 
+
+ Website / documentation: 
+
+ ros2-inspector-theta.vercel.app 
+
+ ROS2 Inspector 
+
+ Static ROS2 architecture analysis with evidence and policy checks. 
+
+ LinkedIn post: 
+
+ LinkedIn 
+
+ ROS2 Inspector v0.1.0 Alpha Released | Amine Bensaid posted on the topic |... 
+
+ Today, I’m open-sourcing ROS2 Inspector v0.1.0 Alpha.
+Understanding a large ROS 2 workspace often means digging through package manifests, source files, launch files, and runtime tools just to answer a few basic questions:
+• What packages and nodes... 
+
+ Thanks, and I’d be very interested to hear how others approach this problem.
+
+--- [2026-08-19] mjcarroll ---
+I would highly recommend getting connected with the ROSGraph working group ( @emersonknapp is the chair) where they are thinking about ways to add determinism to how ROS graphs are declared, launched, executed, and validated.
+
+--- [2026-08-21] solonovamax ---
+I would like to caution you: 
+ that C++ parser is likely to fall apart upon first contact with any reasonably complex codebase (the only real C++ parser is a compiler, and even then that’s not always the case ) 
+and parsing templates, well, good luck. 
+ what if the topic name is created by joining strings together? or what about topic remapping? or node name remapping? or inheritting from an external type that inherits from rclcpp::Node ? 
+ and that’s without even getting into any complex C++ language features. 
+ what does this code do when it encounters something like 
+
+[CODE]template<type T>
+class MyNode : public rclcpp::Node {
+public:
+ MyNode() : Node("my_node") {
+ publisher = this->create_publisher<T>("my_topic", 10);
+ }
+
+ rclcpp::Publisher<T>::SharedPtr publisher;
+}
+
+int main() {
+ auto my_node = MyNode<std_msgs::msg::String>();
+}
+[/CODE]
+
+ I could come up with a dozen more ways that any reasonably large ros codebase would cause this to explode 
+static analysis will literally never catch all of these things, you just have to read the code & run it 
+ and also, for f in root.rglob("*"): is quite funny. I have a ros project which pulls in a bunch of external repositories using cmake’s FetchContent. one of those repositories is maplibre. the repository is like 7 gigabytes. you do not want to just recursively glob everything.
+
+--- [2026-08-21] aminebensaid66 ---
+Thanks for the detailed feedback — these are fair points, and exactly the kind of edge cases we want to start testing against. 
+ This is currently v0.1.0, an alpha/first release , so ROS 2 Inspector is not intended to claim complete semantic understanding of arbitrary C++ codebases yet. 
+ A small clarification: the C++ side is not based on regex parsing. It currently uses tree-sitter-cpp to build a syntax tree, then extracts ROS 2 constructs such as publishers, subscriptions, services, clients, actions, and directly inherited rclcpp::Node classes. 
+ That said, I agree with the larger point: parsing C++ syntax and understanding C++ semantics are very different problems. 
+ Things like indirect inheritance, templates whose concrete types are only known at instantiation, aliases, macros, generated names, helper/wrapper APIs, component composition, etc. can absolutely defeat a source-only heuristic approach. 
+ For example, with: 
+
+[CODE]template<typename T>
+class MyNode : public rclcpp::Node {
+public:
+ MyNode() : Node("my_node") {
+ publisher = this->create_publisher<T>("my_topic", 10);
+ }
+};
+
+[/CODE]
+
+ Tree-sitter can parse the structure, but the current analyzer does not yet trace MyNode<std_msgs::msg::String> back to the template parameter and resolve T semantically. That is one of the cases we want to improve. 
+ Topic remapping is already partially supported through ROS 2 launch files, including namespaces and literal remapping rules, but this is also not complete. Dynamic launch substitutions, command-line ROS arguments, node-name remapping, more complex deployment configurations, etc. need more work. 
+ The recursive traversal point is also valid. Workspace discovery already excludes normal build , install , log , .git , virtual environments, etc., but some package-level analysis still recursively walks package contents. Vendored or generated source trees can therefore become expensive, so improving traversal/pruning is high on the optimization list. 
+ The long-term direction is not to pretend static analysis can recover every possible runtime configuration. Instead, I want the tool to distinguish clearly between: 
+
+ things known statically with high confidence, 
+
+ things inferred heuristically, 
+
+ unresolved/dynamic constructs, 
+
+ and eventually runtime-observed information. 
+
+ For the next releases I’m looking at better C++ semantic resolution, stronger handling of dynamic constructs, configurable scan exclusions, more adversarial/real-world test workspaces, and potentially an optional Clang/compile-database backend for deeper C++ analysis. 
+ So yes — there are definitely cases today where v0.1.0 will miss information. That’s expected for the alpha release, and feedback/examples like these are useful because they help define exactly where the next iterations should improve. 
+ If you have a public ROS 2 workspace that you think is particularly good at breaking this kind of analysis, I’d genuinely be interested in adding it, or a reduced version of it, to the test set.
+
+--- [2026-08-21] solonovamax ---
+aminebensaid66: 
+
+ A small clarification: the C++ side is not based on regex parsing. It currently uses tree-sitter-cpp to build a syntax tree, then extracts ROS 2 constructs such as publishers, subscriptions, services, clients, actions, and directly inherited rclcpp::Node classes. 
+
+ I never claimed it was. it will still fall apart upon first contact with anything reasonably complex. the only good C++ parser is a compiler. unless you are using clang, you are likely not parsing it correctly. 
+ the best thing to do is to just run it and open up rqt

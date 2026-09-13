@@ -1,0 +1,396 @@
+##### TITLE: Has a CPU shared-memory backend for rosidl::Buffer been explored?
+created: 2026-08-08T14:30:45.601Z
+REPLIES: 10
+
+--- [2026-08-08] Daisuke_Kato ---
+I have been looking into rosidl::Buffer and the current buffer backend support, particularly for large variable-length payloads such as images and point clouds. 
+ One idea I am interested in is a CPU shared-memory backend for rosidl::Buffer . 
+ I realize that this overlaps to some extent with functionality that already exists at lower layers. For example, some middleware / RMW implementations already provide shared-memory transport or other zero-copy optimizations. Depending on the implementation, moving data through shared memory may therefore already be possible without introducing a dedicated Buffer backend. 
+ What I am trying to understand is whether there is still a useful role for shared memory at the rosidl::Buffer layer. 
+ My interest is specifically in large variable-length fields where avoiding copies of the payload itself is useful. Rather than treating shared memory only as a transport optimization for a serialized message, a Buffer backend could potentially make the payload storage itself shared and let a buffer-aware RMW transport a descriptor or reference when appropriate. 
+ Conceptually: 
+
+[CODE]ROS message
+ metadata
+ rosidl::Buffer<uint8_t>
+ |
+ +-- CPU shared-memory backend
+ |
+ +-- shared payload storage
+[/CODE]
+
+ This seems potentially complementary to transport-level shared memory rather than necessarily a replacement for it. On the other hand, I can also imagine that the overlap with middleware-native SHM mechanisms may be a reason why such a backend has not been pursued. 
+ In particular, I would be interested in hearing: 
+
+ Has anyone already explored a CPU shared-memory backend for rosidl::Buffer ? 
+ Is sharing the backing storage of large variable-length payloads considered an intended use of the Buffer backend abstraction? 
+
+ Before prototyping something in this direction, I wanted to check whether there is already related work or design discussion that I have missed. I previously explored a similar problem for CUDA IPC in this discussion , so I would especially like to avoid independently reimplementing something that is already being worked on elsewhere. 
+ Related links 
+
+ ROS PMC minutes for July 21, 2026 
+
+ “Qualcomm is working on a buffer implementation, which would be the first non-NVIDIA one” 
+
+ ros2_cuda_ipc: Zero-copy GPU data sharing between ROS 2 processes - #9 by ZhenshengLee
+
+--- [2026-08-09] peci1 ---
+Have you answered to the correct topic? I don’t see how is your answer relevant to this one…
+
+--- [2026-08-11] Daisuke_Kato ---
+While working on this feature, I noticed that pub/sub message delivery time increases roughly in proportion to the buffer size, even though the payload size is expected to remain constant when using specialized buffer backends. 
+ I looked into it a bit and found that std::vector<uint8_t>(buffer_size) zero-initializes the entire buffer, effectively calling memset for buffer_size bytes. Since the buffer does not need to be initialized in this context, I submitted a patch to avoid both the extra memory allocation and the zero-initialization. 
+
+ github.com/ros2/rmw_fastrtps 
+
+ Reuse FastBuffer managed buffer for each endpoint. (#904) 
+
+ rolling ← dskkato:dskkato/reduce_extra_heap_allocations 
+
+ オープン 08:24AM - 11 Aug 26 UTC 
+
+ dskkato
+
+ +12 
+ -6 
+
+ ## Description
+
+Previously, heap allocation happend for each endpoint with std … ::vector<uint8_t>. This introduced extra memset via its constructor.
+
+For recent ROS 2, where rosidl::Buffer was introduced, sometimes the actual payload size and message size may not match because only buffer descriptors may be sent. In such a case, now `get_serialized_size()` seems to be unreliable, and hard to pre-allocate the buffer in that path.
+
+Fixes #903
+
+### Is this user-facing behavior change?
+
+Possibly yes.
+
+Previously, it is guaranteed that the heap allocation only happens once per endpoint, through externally managed buffer (allocated with `std::vector<uint8_t>`). Now the number of allocations depends on combinations of buffer's strategies, and Cdr's usage. So, in small message cases, this patch will introduce an extra overhead of buffer reallocation.
+
+For rosidl::Buffer usage, this patch will dramatically reduce extra allocation and zero-initialization when only the optimized message paths exist. 
+
+### Did you use Generative AI?
+
+I used CodeX to investigate the cause analysis, and FastBuffer/Cdr behavior.
+
+### Additional Information
+
+This patch is trying to resolve two issues at same time:
+
+1. Reducing extra memory allocation when publishing rosidl::Buffer via optimized buf (carries only a descriptor) 
+2. Removing extra memset caused by `std::vector<uint8_t>` constructor.
+
+What I originally found is the second point, so if we wish more conservative way, it is possible to reserve the `fast_buffer` as previouslly. Still, I believe it is better to reuse that buffer accross endpoints, in my perspective...
+
+Since this is my first PR to `rmw_fastrtps` repository, let me know if I missed anything.
+
+--- [2026-08-11] tfoote ---
+Thanks for the patch, that sounds like a good detail to clean up. 
+ This sounds like a reasonable use case to extend this capability. It is partially redundant with the embedded shared memory transports provided by some of the middlewares, but this likely gives more control and potentially consistency but has tradeoffs such as limited QoS support. 
+ If this makes sense for your use cases it would be great to see an implementation. I don’t think that anyone else has been working on it.
+
+--- [2026-08-12] Daisuke_Kato ---
+I’m experimenting the shm backended buffer, combined with rmw_fastrtps patches. To be honest, I’ve not read the whole code yet, and experimet results are a little bit messy, so it may take more time. 
+
+ github.com/dskkato/memfd_buffer_backend 
+
+ Add memfd buffer backend implementation (#1) 
+
+ develop ← memfd-buffer-backend 
+
+ オープン 10:59PM - 11 Aug 26 UTC 
+
+ dskkato
+
+ +3282 
+ -12
+
+--- [2026-08-15] Daisuke_Kato ---
+My first implementation is now complete, and I believe anyone using Linux with ROS 2 Lyrical or later should be able to try it. The backend plugin is memfd according to memfd_create used to create sharable memory with a file descriptor. 
+ Benchmark results 
+ I compared the latency of several backend and transport combinations using sensor_msgs/Image . 
+
+ rosidl::Buffer backend
+
+ default CPU 
+ this memfd backend 
+
+ transport setting
+
+ inter-process 
+ intra-process 
+
+ This gives four configurations: 
+
+ Inter CPU — normal DDS communication 
+ Inter SHM — the path introduced and optimized by this implementation 
+ Intra CPU — the ordinary optimized intra-process path 
+ Intra SHM — the ordinary optimized intra-process path plus the buffer backend overhead 
+
+ Latency was measured: 
+
+ from immediately before publish() 
+ to immediately after reading the first byte of the buffer 
+
+ Here is the results of that combinations with various Payload from 64 B to 16 MiB. 
+ Here are the results for payload sizes ranging from 64 B to 16 MiB. The values are median / p99 latency in microseconds. 
+
+ Payload 
+ Inter CPU 
+ Inter SHM 
+ Intra CPU 
+ Intra SHM 
+
+ 64 B 
+ 636.3 / 726.9 
+ 951.4 / 1,091.2 
+ 144.5 / 179.9 
+ 114.8 / 173.8 
+
+ 1 KiB 
+ 641.5 / 719.7 
+ 942.3 / 1,060.1 
+ 120.4 / 174.2 
+ 115.7 / 162.4 
+
+ 4 KiB 
+ 667.8 / 753.0 
+ 927.2 / 1,045.0 
+ 118.4 / 166.0 
+ 121.5 / 169.3 
+
+ 16 KiB 
+ 677.1 / 758.9 
+ 921.5 / 1,057.8 
+ 123.4 / 176.0 
+ 118.3 / 167.6 
+
+ 64 KiB 
+ 687.6 / 776.9 
+ 958.8 / 1,107.0 
+ 124.6 / 174.8 
+ 123.1 / 168.2 
+
+ 256 KiB 
+ 1,009.1 / 1,153.5 
+ 1,033.0 / 1,128.8 
+ 113.8 / 138.6 
+ 116.1 / 136.5 
+
+ 1 MiB 
+ 11,700.0 / 13,774.4 
+ 1,172.9 / 1,298.2 
+ 118.4 / 128.7 
+ 119.8 / 132.9 
+
+ 4 MiB 
+ 15,407.8 / 16,025.3 
+ 1,700.0 / 1,822.6 
+ 108.2 / 117.2 
+ 131.3 / 152.5 
+
+ 16 MiB 
+ 14,879.5 / 16,019.0 
+ 2,289.5 / 2,718.5 
+ 37.1 / 78.9 
+ 112.7 / 127.5 
+
+ baseline-path-latency 1960×1149 139 KB 
+ When comparing the Inter CPU and Inter SHM results at small payload sizes, you may notice that Inter SHM has an additional overhead of about 300 microseconds. I suspect that this overhead mainly comes from creating the buffer descriptor from the buffer. 
+ The Intra CPU and Intra SHM results support this interpretation: there is almost no difference between them, suggesting that using the SHM-backed buffer itself introduces very little overhead. 
+ The latency of Inter SHM starts to increase above 256 KiB, even though the descriptor size remains almost constant. This was surprising, but I found that the increase came from the rmw_fastrtps_cpp implementation, and I submitted a patch to address it: 
+
+ github.com/ros2/rmw_fastrtps 
+
+ Reuse FastBuffer managed buffer for each endpoint. (#904) 
+
+ rolling ← dskkato:dskkato/reduce_extra_heap_allocations 
+
+ オープン 08:24AM - 11 Aug 26 UTC 
+
+ dskkato
+
+ +12 
+ -6 
+
+ ## Description
+
+Previously, heap allocation happend for each endpoint with std … ::vector<uint8_t>. This introduced extra memset via its constructor.
+
+For recent ROS 2, where rosidl::Buffer was introduced, sometimes the actual payload size and message size may not match because only buffer descriptors may be sent. In such a case, now `get_serialized_size()` seems to be unreliable, and hard to pre-allocate the buffer in that path.
+
+Fixes #903
+
+### Is this user-facing behavior change?
+
+Possibly yes.
+
+Previously, it is guaranteed that the heap allocation only happens once per endpoint, through externally managed buffer (allocated with `std::vector<uint8_t>`). Now the number of allocations depends on combinations of buffer's strategies, and Cdr's usage. So, in small message cases, this patch will introduce an extra overhead of buffer reallocation.
+
+For rosidl::Buffer usage, this patch will dramatically reduce extra allocation and zero-initialization when only the optimized message paths exist. 
+
+### Did you use Generative AI?
+
+I used CodeX to investigate the cause analysis, and FastBuffer/Cdr behavior.
+
+### Additional Information
+
+This patch is trying to resolve two issues at same time:
+
+1. Reducing extra memory allocation when publishing rosidl::Buffer via optimized buf (carries only a descriptor) 
+2. Removing extra memset caused by `std::vector<uint8_t>` constructor.
+
+What I originally found is the second point, so if we wish more conservative way, it is possible to reserve the `fast_buffer` as previouslly. Still, I believe it is better to reuse that buffer accross endpoints, in my perspective...
+
+Since this is my first PR to `rmw_fastrtps` repository, let me know if I missed anything. 
+
+ In my environment, the crossover point between Inter CPU and Inter SHM was around 256 KiB. 
+
+ After applying the patch 
+ Here are the results after applying the patch. In this case, the latency of Inter SHM remains almost constant. 
+ This is expected behavior: with a memfd -backed buffer, the payload itself does not need to be serialized, and the descriptor size is almost constant regardless of the payload size. 
+
+ Payload 
+ Inter CPU 
+ Inter SHM 
+ Intra CPU 
+ Intra SHM 
+
+ 64 B 
+ 680.1 / 754.4 
+ 944.0 / 1,073.8 
+ 120.7 / 174.7 
+ 118.2 / 160.4 
+
+ 1 KiB 
+ 633.8 / 741.7 
+ 942.1 / 1,059.1 
+ 121.1 / 171.6 
+ 116.1 / 151.6 
+
+ 4 KiB 
+ 666.1 / 752.3 
+ 956.8 / 1,071.7 
+ 115.9 / 169.6 
+ 118.5 / 167.1 
+
+ 16 KiB 
+ 701.8 / 792.3 
+ 936.0 / 1,044.9 
+ 153.8 / 190.3 
+ 116.7 / 150.6 
+
+ 64 KiB 
+ 682.0 / 786.6 
+ 925.1 / 1,091.9 
+ 115.3 / 177.4 
+ 114.2 / 139.0 
+
+ 256 KiB 
+ 1,076.0 / 1,139.8 
+ 937.4 / 1,054.9 
+ 114.6 / 136.5 
+ 117.1 / 129.8 
+
+ 1 MiB 
+ 13,005.8 / 13,638.0 
+ 935.6 / 1,050.5 
+ 117.3 / 130.2 
+ 120.9 / 133.2 
+
+ 4 MiB 
+ 15,374.4 / 16,209.4 
+ 915.6 / 1,049.2 
+ 113.4 / 140.0 
+ 133.7 / 155.0 
+
+ 16 MiB 
+ 14,786.7 / 15,270.8 
+ 727.6 / 805.7 
+ 41.6 / 79.6 
+ 113.3 / 124.8 
+
+ lazy-path-latency 1960×1149 151 KB 
+
+ Additional notes 
+ You may also notice that Inter CPU, i.e. ordinary Fast DDS message passing, shows a significant latency increase around 1 MiB. 
+ To investigate this, I compared the latency distributions of Inter CPU and Inter SHM. One notable difference is that the Inter CPU latency has a much wider, bimodal distribution. 
+ I have not yet investigated the exact cause in detail, but it may be related to the DDS configuration. For example, fragmentation of the DDS payload may occur for larger messages. If so, the behavior might be improved or stabilized by tuning the Fast DDS communication parameters. 
+ In contrast, Inter SHM is much more stable. I believe this is because only a small descriptor is sent through DDS, rather than the actual payload. Since the descriptor is small enough to avoid the behavior seen with large DDS payloads, the pub/sub latency remains stable regardless of the actual payload size. 
+ 1m-baseline-inter-latency-distribution 1870×1207 89.1 KB 
+ What’s next? 
+ The implementation is almost complete, so I do not currently have a specific roadmap for this plugin. 
+ However, if you try it and find any issues, I would be very happy to investigate them. Feedback is always welcome.
+
+--- [2026-08-15] mjcarroll ---
+Amazing, thanks for the effort here, I’m excited to see where this is headed! 
+ CC: @JM_ROS @skye.galaxy @alsora from a client library perspective
+
+--- [2026-08-15] peci1 ---
+This is awesome! Thanks for the implementation and tests! 
+ Do you have an explanation for the latency drop at 16 MiB for Intra CPU?
+
+--- [2026-08-15] Daisuke_Kato ---
+My guess is that this is a benchmark artifact rather than a real 16 MiB optimization. 
+ Since the drop appears only with the CPU backend, I suspect some size-dependent behavior in the normal buffer allocation/lifecycle, possibly in the allocator or below rclcpp / rmw . Repeating the same simple benchmark may also make allocation and memory reuse unusually favorable. I haven’t verified which effect is dominant yet.
+
+--- [2026-08-22] Daisuke_Kato ---
+I noticed that rmw_zenoh also added rosidl::Buffer support to lyrical branch, and the change was released in September. 
+The latency trend for memfd-based inter-process communication looks almost identical to rmw_fastrtps , so I think rmw_zenoh is ready to try, not only with memfd but also with the CUDAbackend. 
+
+ Payload 
+ fastrtps lazy 
+ zenoh 
+ Zenoh p50 change 
+
+ 64 B 
+ 944.0 / 1,073.8 
+ 949.7 / 1,077.0 
+ +0.6% 
+
+ 1 KiB 
+ 942.1 / 1,059.1 
+ 951.7 / 1,127.9 
+ +1.0% 
+
+ 4 KiB 
+ 956.8 / 1,071.7 
+ 953.6 / 1,070.5 
+ -0.3% 
+
+ 16 KiB 
+ 936.0 / 1,044.9 
+ 948.7 / 1,060.0 
+ +1.4% 
+
+ 64 KiB 
+ 925.1 / 1,091.9 
+ 950.7 / 1,132.9 
+ +2.8% 
+
+ 256 KiB 
+ 937.4 / 1,054.9 
+ 962.2 / 1,071.4 
+ +2.6% 
+
+ 1 MiB 
+ 935.6 / 1,050.5 
+ 971.4 / 1,102.7 
+ +3.8% 
+
+ 4 MiB 
+ 915.6 / 1,049.2 
+ 917.1 / 1,057.0 
+ +0.2% 
+
+ 16 MiB 
+ 727.6 / 805.7 
+ 768.0 / 860.5 
+ +5.6% 
+
+ inter-process-backend-latency 2160×936 148 KB 
+ https://github.com/ros2/rmw_zenoh/blob/rolling/rmw_zenoh_cpp/CHANGELOG.rst
+
+--- [2026-08-22] Daisuke_Kato ---
+The Lyrical release notes still say “ support in Zenoh is coming ”, although support has now been released for Lyrical. It might be borth updating the documentation. I’m not sure which repository the doc is, but I can submit a PR if that would be helpful.

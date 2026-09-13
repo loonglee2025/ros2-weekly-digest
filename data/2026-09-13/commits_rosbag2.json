@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "7096f29d2bb46ae01003f490b584e1a771154dc0",
+    "node_id": "C_kwDOB5aMANoAKDcwOTZmMjlkMmJiNDZhZTAxMDAzZjQ5MGI1ODRlMWE3NzExNTRkYzA",
+    "commit": {
+      "author": {
+        "name": "Christophe Bedard",
+        "email": "bedard.christophe@gmail.com",
+        "date": "2026-09-13T17:58:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-13T17:58:08Z"
+      },
+      "message": "0.35.0 (#2495)\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+      "tree": {
+        "sha": "3dfdf9eac75846db484dd44960cff8c96c6639a0",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/3dfdf9eac75846db484dd44960cff8c96c6639a0"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/7096f29d2bb46ae01003f490b584e1a771154dc0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqpuQwCRC1aQ7uu5UhlAAAgMEQAG6wYqOjcHVcZ/ZuPgPrnhCw\npL0/ZjEbwUHTHik1pXTJ9pExMcn2E4M1aHs5PjgtciwFRQGAst3GK5JobJ4/7xkP\nJxE4KmOjk7pnNeJlkkZnTal4vAU5Yy4HKoiGSh6s81SqhuhkiosUKWnOSP4N1w/U\nu6d0GZ6pPLQDXWLgTyCdwuzqcDK0D8LcXnvd828AbgyG9kxp3q4e8G9+lFxhUOJG\nyvs8PxSsIJXoQyGn/MwqjgWXuwgiyH3wDb421WPtZlgGBZK6+9vx7O2f4z14BbbT\nehLcNpL1kBcRbhG4WC3SDToJ5FSxPuTA+wZuFOMEvA8ZqufgGYf+rPQqanAbFMUN\neIlv4Fl1IGxCHZLpO0vlEhFb8V9//zVvjV9Xx3qr+GHA/MRQYxzlU0Ax5OHMaX0B\nANWKr1T+7F7hdQt+EIC0Lcxz62/gecpSgGx9T/AmkHZDelp8sg279WMRQSW6AGHq\ni4leG6IyOEKutpjzC1HL8PU3z9QVi2SDfuQvaS7OdQPmPbvVO/qJjCC3qjC1PzY9\ngBNxLc3YgOXhByAE4hTfNN4ctCVijUwKOnvUeNz2WNxLMDkaleHa0W4yp1Ow5edA\n30ytrSEQYEM0C3T9NIzJh8lQLo6TY8stVUMw4ZxF+27VTdRY9TTCZCplovaLBxPa\n6CM/7ZYed29+NHPPneYg\n=kNKD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3dfdf9eac75846db484dd44960cff8c96c6639a0\nparent 08780f9e28ca429e1f25f671f52e02a57574626c\nauthor Christophe Bedard <bedard.christophe@gmail.com> 1789322288 -0700\ncommitter GitHub <noreply@github.com> 1789322288 -0700\n\n0.35.0 (#2495)\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+        "verified_at": "2026-09-13T17:58:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/7096f29d2bb46ae01003f490b584e1a771154dc0",
+    "html_url": "https://github.com/ros2/rosbag2/commit/7096f29d2bb46ae01003f490b584e1a771154dc0",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/7096f29d2bb46ae01003f490b584e1a771154dc0/comments",
+    "author": {
+      "login": "christophebedard",
+      "id": 3717345,
+      "node_id": "MDQ6VXNlcjM3MTczNDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3717345?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christophebedard",
+      "html_url": "https://github.com/christophebedard",
+      "followers_url": "https://api.github.com/users/christophebedard/followers",
+      "following_url": "https://api.github.com/users/christophebedard/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christophebedard/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christophebedard/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christophebedard/subscriptions",
+      "organizations_url": "https://api.github.com/users/christophebedard/orgs",
+      "repos_url": "https://api.github.com/users/christophebedard/repos",
+      "events_url": "https://api.github.com/users/christophebedard/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christophebedard/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "08780f9e28ca429e1f25f671f52e02a57574626c",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/08780f9e28ca429e1f25f671f52e02a57574626c",
+        "html_url": "https://github.com/ros2/rosbag2/commit/08780f9e28ca429e1f25f671f52e02a57574626c"
+      }
+    ]
+  },
+  {
+    "sha": "08780f9e28ca429e1f25f671f52e02a57574626c",
+    "node_id": "C_kwDOB5aMANoAKDA4NzgwZjllMjhjYTQyOWUxZjI1ZjY3MWY1MmUwMmE1NzU3NDYyNmM",
+    "commit": {
+      "author": {
+        "name": "Chris Lalancette",
+        "email": "clalancette@gmail.com",
+        "date": "2026-09-11T09:02:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-11T09:02:34Z"
+      },
+      "message": "Support playing bags with topics in mixed serialization formats. (#2476)\n\n* Support playing bags with topics in mixed serialization formats.\n\nPrior to this commit, \"ros2 bag play\" would refuse to open a bag\nwhere some topics had a different serialization format.  While it\nis completely reasonable for it to refuse to play *topics* it\ncan't decode, if the user selects only topics that it can decode,\nit should be able to play the bag.\n\nWith this commit, that restriction is lifted.  If all topics\nselected can be decoded, then the bag is played.  If any topics\nare selected that cannot be decoded, it prints an error listing\nthe offending topics and suggests excluding them via --topics,\n--exclude-topics, or --exclude-regex.\n\nNote that this removes two protected virtual methods from\nSequentialReader: check_topics_serialization_formats(), which used to\nthrow on bags with mixed serialization formats, and\ncheck_converter_serialization_format(), which despite its name only\nset up the converter and is now inlined into open().  This could be\nconsidered an API/ABI break, but I didn't find any in-tree users\nof these APIs so I think it is relatively safe.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Ensure the Reader doesn't return topics in the wrong encoding.\n\nWe add two different ways to do that:\n1.  read_next() now does a \"finalize_message\", which checks that\nthe encoding for the topic we are about to return is what we\nexpect, or there is a valid converter installed.  If neither\nof those is the case, it throws an exception.\n2.  Add in the serialization_format to\nrosbag2_storage::SerializeBagMessage so all readers can know\nexactly what they are getting.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Fix rosbag2_storage_mcap test to set serialization_format.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Make skipping of undecodeable topics automatic.\n\nThat is, make it so that if a bag contains both decodeable\nand undecodeable topics, we automatically skip the undecodeable\nones and just play back the decodeable ones by default,\nwith a warning.  This makes things nicer for the end-user.\n\nIf there are *no* decodeable topics, we throw an error.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+      "tree": {
+        "sha": "c9ad4f921b97d598587b013246c4bae065f764a5",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/c9ad4f921b97d598587b013246c4bae065f764a5"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/08780f9e28ca429e1f25f671f52e02a57574626c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqo8OqCRC1aQ7uu5UhlAAAVB8QAAwF/gMopswTEUciTL+XYBp/\npg9TujGXJ/j3hEkdEH1b03UoOQr/EpGgRv4eolQfQLlFXFiU6+fDFiAYHgS8j7Jn\nRsLH+42P9tiO+8Wl7RzjMruHA+lGtZNL0xRqplEF6pgYNbjpDtK0+0CRd/FY4Rk3\nyX/s3L2Ioml+QK+qjWcStp4qsbPzUbhB0yvNtj0l/nvTvOZ68RNO+l1Z6VeOAs5g\nij+58qSxdpELndI2RECoibxZawJuv5L/UrOUxHQqG/i8m4W7/P8lb6gl2vdoxP7F\ncOeJnzQ37iAPCOKpjAMw+SPipAHAdOAnjnwPs0xldKK1MC1DiKJeE/DIp4mjdtzF\nytCE9wNutgR4KYntIqZPF1dDOB8SE5j5PB2swGZBZcGefeEzAaMhA6tl4I1iPp7W\nXjo0CekZecHIevvJp/1fW3in9k9MRekSbR5p6MV+VzZkPkecYlDpJP7v+5jtT79N\nM81Z/61XB5+n0c/8QIVBfMV6RzWL6SoJBRfp9X5Oc+U4NLpf2+5LUpsXapqDs3bi\nj6sAyGYwAkB3+7D0qEhQ8TTOqwoAfvasd5jnk2cGuI5o4AtSpPwxZR8vDyDy7Bch\nNSQTsPpphXU97dqTMJ5CbKEqp4n2TeZwPl2GvEEUNl9flY4Ebu7ITZhb58iu+GJ/\nXtGN1Qgi/5llNN80udPG\n=kk72\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c9ad4f921b97d598587b013246c4bae065f764a5\nparent 0580af8a26da42443a2df678e5d1346abc1a9046\nauthor Chris Lalancette <clalancette@gmail.com> 1789117354 -0400\ncommitter GitHub <noreply@github.com> 1789117354 +0900\n\nSupport playing bags with topics in mixed serialization formats. (#2476)\n\n* Support playing bags with topics in mixed serialization formats.\n\nPrior to this commit, \"ros2 bag play\" would refuse to open a bag\nwhere some topics had a different serialization format.  While it\nis completely reasonable for it to refuse to play *topics* it\ncan't decode, if the user selects only topics that it can decode,\nit should be able to play the bag.\n\nWith this commit, that restriction is lifted.  If all topics\nselected can be decoded, then the bag is played.  If any topics\nare selected that cannot be decoded, it prints an error listing\nthe offending topics and suggests excluding them via --topics,\n--exclude-topics, or --exclude-regex.\n\nNote that this removes two protected virtual methods from\nSequentialReader: check_topics_serialization_formats(), which used to\nthrow on bags with mixed serialization formats, and\ncheck_converter_serialization_format(), which despite its name only\nset up the converter and is now inlined into open().  This could be\nconsidered an API/ABI break, but I didn't find any in-tree users\nof these APIs so I think it is relatively safe.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Ensure the Reader doesn't return topics in the wrong encoding.\n\nWe add two different ways to do that:\n1.  read_next() now does a \"finalize_message\", which checks that\nthe encoding for the topic we are about to return is what we\nexpect, or there is a valid converter installed.  If neither\nof those is the case, it throws an exception.\n2.  Add in the serialization_format to\nrosbag2_storage::SerializeBagMessage so all readers can know\nexactly what they are getting.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Fix rosbag2_storage_mcap test to set serialization_format.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Make skipping of undecodeable topics automatic.\n\nThat is, make it so that if a bag contains both decodeable\nand undecodeable topics, we automatically skip the undecodeable\nones and just play back the decodeable ones by default,\nwith a warning.  This makes things nicer for the end-user.\n\nIf there are *no* decodeable topics, we throw an error.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+        "verified_at": "2026-09-11T09:02:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/08780f9e28ca429e1f25f671f52e02a57574626c",
+    "html_url": "https://github.com/ros2/rosbag2/commit/08780f9e28ca429e1f25f671f52e02a57574626c",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/08780f9e28ca429e1f25f671f52e02a57574626c/comments",
+    "author": {
+      "login": "clalancette",
+      "id": 163000,
+      "node_id": "MDQ6VXNlcjE2MzAwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/163000?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clalancette",
+      "html_url": "https://github.com/clalancette",
+      "followers_url": "https://api.github.com/users/clalancette/followers",
+      "following_url": "https://api.github.com/users/clalancette/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clalancette/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clalancette/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clalancette/subscriptions",
+      "organizations_url": "https://api.github.com/users/clalancette/orgs",
+      "repos_url": "https://api.github.com/users/clalancette/repos",
+      "events_url": "https://api.github.com/users/clalancette/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clalancette/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0580af8a26da42443a2df678e5d1346abc1a9046",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/0580af8a26da42443a2df678e5d1346abc1a9046",
+        "html_url": "https://github.com/ros2/rosbag2/commit/0580af8a26da42443a2df678e5d1346abc1a9046"
+      }
+    ]
+  },
+  {
+    "sha": "0580af8a26da42443a2df678e5d1346abc1a9046",
+    "node_id": "C_kwDOB5aMANoAKDA1ODBhZjhhMjZkYTQyNDQzYTJkZjY3OGU1ZDEzNDZhYmMxYTkwNDY",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernández Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-09-07T12:41:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-07T12:41:32Z"
+      },
+      "message": "More granular includes (#2487)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "0ae45a2e096d6bc637e870f8bf6ad1e7d137d82d",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/0ae45a2e096d6bc637e870f8bf6ad1e7d137d82d"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/0580af8a26da42443a2df678e5d1346abc1a9046",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqnrD8CRC1aQ7uu5UhlAAAr30QACCxXr0UyI+O/OUSc6IYy69h\n3mJxFHyz13c8GbnY8OH+B8YJJJ/vqDvPFEM+yv3XGcNcxDOOUFEcLdAgfVHC5+BF\nQ/sx/MleiTR+gTebe/Su+7Ev7SEKEWlawkQN7ndIUi0mftmnMw995bUsSOt2pp67\nHe1uVUfOWin5W6pZ1H9jufJnjk0t7YAo0b4wdTsKtLb4cjakM+pqe4km666XR5r0\nv3YXE1TM67rvobfDfPbBIHIi0XUQRz7+UFlN2iJpmcFJGXPRpQhb+F62GCHcURPo\nfUNFZf7s7pA9REczBA00dSU49CBExC6nQG5HA1v8EQhqUNUsbI0lzIBE0C9ULNLf\n05SmBHda5fALrdcrO/Oltf+GgDXuewyBQLpsJAJBE+gqNzTqtDRfA3ph3QYN+pG1\ni/w5RI1haci2q1r1Wp9wgtcL8sZTc7ePNd0DvQGwkX27VPc4JNxoOpe3BkdKBs98\nf0iz8CEfXI2p8N3hN8fQoWB6eBzDSpgF7P7tOnd7ajqcQiMQEH98TWNECP7qL+HU\nwAAdCcAu3+cLBT7ig0IQlvLQoyr0tOxfsukvRHbaonyjsTtBmsZrN4Tj4dOQOueN\nCBLE94dmviHsfjcApoPoRF6wgunPLxMUdoKZL82lymxCRdugP1ya86+6TIGi4bwN\nitKfjfJRhkrQ5UcF8oKW\n=ebFa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0ae45a2e096d6bc637e870f8bf6ad1e7d137d82d\nparent 96eddfa7f5ea42ac75c4a882893d89ac969532f9\nauthor Alejandro Hernández Cordero <ahcorde@gmail.com> 1788784892 +0200\ncommitter GitHub <noreply@github.com> 1788784892 +0200\n\nMore granular includes (#2487)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+        "verified_at": "2026-09-07T12:41:32Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/0580af8a26da42443a2df678e5d1346abc1a9046",
+    "html_url": "https://github.com/ros2/rosbag2/commit/0580af8a26da42443a2df678e5d1346abc1a9046",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/0580af8a26da42443a2df678e5d1346abc1a9046/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "96eddfa7f5ea42ac75c4a882893d89ac969532f9",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/96eddfa7f5ea42ac75c4a882893d89ac969532f9",
+        "html_url": "https://github.com/ros2/rosbag2/commit/96eddfa7f5ea42ac75c4a882893d89ac969532f9"
+      }
+    ]
+  }
+]

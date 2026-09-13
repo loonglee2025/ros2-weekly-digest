@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "357048e862cd3180154739a6d70515bd7f1b21fe",
+    "node_id": "C_kwDOB5aMANoAKDM1NzA0OGU4NjJjZDMxODAxNTQ3MzlhNmQ3MDUxNWJkN2YxYjIxZmU",
+    "commit": {
+      "author": {
+        "name": "Skyler Medeiros",
+        "email": "skye.galaxy@proton.me",
+        "date": "2026-08-22T00:06:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-22T00:06:01Z"
+      },
+      "message": "Replace the `rosbag2_py` recorder executor with the `EventsCBGExecutor` (#2472)\n\n* use CBG Events Executor in single-threaded mode\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\n\n* add latency benchmarks with increasing frequency\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\n\n---------\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\nCo-authored-by: Skyler Medeiros <skye@polymathrobotics.com>",
+      "tree": {
+        "sha": "f62b6d9aaae25bbb26418cc9b5496e07362b3e5c",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/f62b6d9aaae25bbb26418cc9b5496e07362b3e5c"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/357048e862cd3180154739a6d70515bd7f1b21fe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiOfpCRC1aQ7uu5UhlAAAemsQADxv4D9Zdu8Ux5NhBupJJejT\n9+W5O08Ni44SjKpWYupXZ99DCdjBNa+DyeMQOdT38YcIuwMvEFn6IdOBNA9LX6lC\n3bJBHDiNCugFOmYsijdsM1VodxcAnZOEEMR89u9+rY5T19GBLUqLHceYJKT3IKYO\nXzNP3IpELv3r+yqLOMenKsNI0YmxvNVIIHhCIvGbV0Af963EAdGkqfgX0aOoL8tL\nE1wZA3zWrQ8d1BTecodVPEjAzGI22TJ1BLabzMbklLwITZ9QShYHiEn7qj95lrPI\nqMMIprKGIuyiOR33vLc1/Q4VJBAy+h14Vx0z8lhi5f/rgIDFPmjW5u36dblJcGxT\n5VRxpqhg7KE/OxllWDiihpEXTIwtW002KaWAy5bAcTywsFoXvMfoPz8T6z/o5av2\nSWfZAxgAXRSkeIKUQUkR8UtopqhHgzQ+zequuOd6hMa/BlqIFUFTBbwzQD80+b4B\ne+mve9aqjmLj/bf5axLQOva785AmXXc/Pr04EMRtPUP0CNhRjPEnGUkcRARKQHRm\nbegqTkxdU5uuU/uMhq5EDyz7K5fj3Xmizg9/TkaTjihd8YI6tkmBzanY6lK/dt1j\nClEjbXN7qCfeZoT/ydWTzFpW9U4CFb+FcwTunKx7FBVzsUYPWWcjMGTQDfq6lNsA\n2xiWBoz/pKEH2DAlkeIQ\n=74Nb\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f62b6d9aaae25bbb26418cc9b5496e07362b3e5c\nparent ae42fb9efca51d6c1aae6a54e97cce6877d35be6\nauthor Skyler Medeiros <skye.galaxy@proton.me> 1787357161 -0700\ncommitter GitHub <noreply@github.com> 1787357161 +0900\n\nReplace the `rosbag2_py` recorder executor with the `EventsCBGExecutor` (#2472)\n\n* use CBG Events Executor in single-threaded mode\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\n\n* add latency benchmarks with increasing frequency\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\n\n---------\n\nSigned-off-by: Skyler Medeiros <skye@polymathrobotics.com>\nCo-authored-by: Skyler Medeiros <skye@polymathrobotics.com>",
+        "verified_at": "2026-08-22T00:06:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/357048e862cd3180154739a6d70515bd7f1b21fe",
+    "html_url": "https://github.com/ros2/rosbag2/commit/357048e862cd3180154739a6d70515bd7f1b21fe",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/357048e862cd3180154739a6d70515bd7f1b21fe/comments",
+    "author": {
+      "login": "skyegalaxy",
+      "id": 10948065,
+      "node_id": "MDQ6VXNlcjEwOTQ4MDY1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10948065?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/skyegalaxy",
+      "html_url": "https://github.com/skyegalaxy",
+      "followers_url": "https://api.github.com/users/skyegalaxy/followers",
+      "following_url": "https://api.github.com/users/skyegalaxy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/skyegalaxy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/skyegalaxy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/skyegalaxy/subscriptions",
+      "organizations_url": "https://api.github.com/users/skyegalaxy/orgs",
+      "repos_url": "https://api.github.com/users/skyegalaxy/repos",
+      "events_url": "https://api.github.com/users/skyegalaxy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/skyegalaxy/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+        "html_url": "https://github.com/ros2/rosbag2/commit/ae42fb9efca51d6c1aae6a54e97cce6877d35be6"
+      }
+    ]
+  }
+]

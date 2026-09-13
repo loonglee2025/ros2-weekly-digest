@@ -1,0 +1,32 @@
+Title: Bagel 2.0: ask your rosbags questions in plain English, reduce them to the seconds that matter (open source)
+
+URL Source: http://discourse.ros.org/t/bagel-2-0-ask-your-rosbags-questions-in-plain-english-reduce-them-to-the-seconds-that-matter-open-source/57482
+
+Published Time: 2026-08-18T05:16:34+00:00
+
+Markdown Content:
+A little over a year ago [@shouheng](http://discourse.ros.org/u/shouheng) and I launched Bagel here.
+
+We’ll we’re back with Bagel 2.0 ![Image 1: :bagel:](https://emoji.discourse-cdn.com/noto/bagel.png?v=15)! And we’d love this community’s eyes on it.
+
+**For those of you that are unfamilar:**
+
+Bagel lets you talk to your robotics data instead of writing one-off scripts. Point Claude (or any MCP client, including fully local models via Ollama) at a bag and ask: “what was the peak z-deceleration?”, “summarize this bag”, "find every hard brake and cut ±10s snippets.
+
+Answers are not LLM guesses. Bagel writes your topic messages to Arrow and runs DuckDB SQL over them, and it shows you the query so you can audit it. In testing we tried to bait it into confirming a pothole that wasn’t in the data. It checked the z-axis, told us the data was flat, and explained why. A tool that says no when the answer is no was a hard requirement for us.
+
+**As for what’s new:**
+
+The part I’m most excited about is the data reduction pipeline. One sentence (“keep 10 seconds around every deceleration below −10 m/s²”) becomes a detector. It previews exactly what it would keep before writing a byte, then runs on one bag, across a fleet, or standing on the robot so only event windows are ever written. Verified down to the message level: kept windows are byte-identical to the source, nothing outside them survives.
+
+We also made it a point to integrate with tools in the ecosystem in this release and will make this an ongoing focus
+
+Formats: ROS 1/2 bags, MCAP (any profile), ROS text logs, PX4, ArduPilot, Betaflight, CAN/MF4, live MQTT, and Copper (copper-rs) logs via their MCAP export. Exports to Rerun, Lichtblick, PlotJuggler, and LeRobot datasets.
+
+Everything runs in Docker locally. No cloud, no telemetry. Apache-2.0.
+
+Give us a star, file an issue, or fork it and go on your own journey and we’ll support you the best we can.
+
+Repo: [GitHub - Extelligence-ai/bagel: Query robotics, drone, and IoT data in plain English through an MCP server, with an intelligent edge data reduction pipeline that keeps only the data that matters. · GitHub](https://github.com/Extelligence-ai/bagel)
+
+Would love feedback, especially on what formats or workflows you’d want next. As always we appreciate your support and feedback!

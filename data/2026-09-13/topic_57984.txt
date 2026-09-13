@@ -1,0 +1,118 @@
+Title: New ROS PMC Members - ROS / ROS Announcements and News - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/57984
+
+Published Time: 2026-09-09T15:26:03+00:00
+
+Markdown Content:
+- [x] 
+*   [Open Source Robotics Foundation](https://openrobotics.org/)
+*   [ROS](https://ros.org/)
+    *   [Project homepage](https://ros.org/)
+    *   [Documentation](https://docs.ros.org/)
+    *   [Getting help and support](https://docs.ros.org/en/jazzy/Contact.html#support)
+    *   [ROS Packages Index](https://index.ros.org/)
+    *   [Media and trademarks](https://www.ros.org/blog/media)
+
+*   [ros-controls](https://control.ros.org/)
+    *   [Project homepage](https://control.ros.org/)
+    *   [Documentation](https://control.ros.org/)
+
+*   [Gazebo](https://gazebosim.org/)
+    *   [Project homepage](https://gazebosim.org/)
+    *   [Documentation](https://gazebosim.org/docs/latest/)
+    *   [Fuel models database](https://app.gazebosim.org/dashboard)
+
+*   [Open-RMF](https://open-rmf.org/)
+    *   [Project homepage](https://open-rmf.org/)
+    *   [Documentation](https://osrf.github.io/ros2multirobotbook/)
+
+*   [Infrastructure](https://infrastructure.openrobotics.org/)
+*   [Community](https://openrobotics.zulipchat.com/)
+    *   [Chat Server](https://openrobotics.zulipchat.com/)
+    *   [Submit a related event](https://docs.google.com/forms/d/e/1FAIpQLSdIhzm7-DnAlBIUSsU6lITnV6SHpl1Oo8otnhUKp3pUqUAhSA/viewform?usp=dialog)
+    *   [Official events calendar](https://calendar.google.com/calendar/embed?src=agf3kajirket8khktupm9go748%40group.calendar.google.com)
+    *   [Community events calendar](https://calendar.google.com/calendar/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0%40group.calendar.google.com)
+
+*   [Service Status](https://status.openrobotics.org/)
+
+[Skip to main content](http://discourse.ros.org/t/57984#main-container)
+
+[![Image 1: Open Robotics Discourse](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b98914132076b3a570a1e6d77ebf9e752704b7b.svg)](http://discourse.ros.org/)
+
+Sign Up Log In
+*    ​ 
+
+*   [Topics](http://discourse.ros.org/latest "All topics")
+*    More 
+
+ Categories 
+
+*   [![Image 2: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15) ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+*   [![Image 3: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15) Projects](http://discourse.ros.org/c/projects/10)
+*   [![Image 4: person_in_suit_levitating](https://emoji.discourse-cdn.com/noto/person_in_suit_levitating.png?v=15) Jobs](http://discourse.ros.org/c/jobs/15)
+*   [Site Feedback](http://discourse.ros.org/c/site-feedback/3)
+*   [All categories](http://discourse.ros.org/categories)
+
+ Tags 
+
+*   [gazebo](http://discourse.ros.org/tag/gazebo/67)
+*   [infrastructure](http://discourse.ros.org/tag/infrastructure/379)
+*   [open-rmf](http://discourse.ros.org/tag/open-rmf/346)
+*   [ros](http://discourse.ros.org/tag/ros/118)
+*   [All tags](http://discourse.ros.org/tags)
+
+ ​ 
+
+# [New ROS PMC Members](http://discourse.ros.org/t/new-ros-pmc-members/57984)
+
+[![Image 5: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS](http://discourse.ros.org/c/ros/111)[![Image 6: rolled_up_newspaper](https://emoji.discourse-cdn.com/noto/rolled_up_newspaper.png?v=15)ROS Announcements and News](http://discourse.ros.org/c/ros/ros-announcements-news/112)
+
+You have selected **0** posts.
+
+[select all](http://discourse.ros.org/t/57984)
+
+[cancel selecting](http://discourse.ros.org/t/57984)
+
+## post by mjcarroll 4 days ago
+
+[![Image 7](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/mjcarroll/48/658_2.png)](http://discourse.ros.org/u/mjcarroll)
+
+[mjcarroll](http://discourse.ros.org/u/mjcarroll) OSRA TGC Member 
+
+[4d](http://discourse.ros.org/t/new-ros-pmc-members/57984 "Post date")
+
+I am happy to announce that as of the [ROS PMC Meeting on September 8th](https://discourse.openrobotics.org/t/ros-pmc-minutes-for-september-8-2026/57957), the ROS PMC is adding three additional members to the project management committee per the [ROS Project Charter](https://osralliance.org/wp-content/uploads/2024/03/ros_project_charter.pdf).
+
+Please join me in welcoming:
+
+[@skye.galaxy](http://discourse.ros.org/u/skye.galaxy) of [Polymath Robotics](https://www.polymathrobotics.com/) - Skyler has heavily involved in the Client Libraries working group, most recently working on landing the CBG events executor in Lyrical, benchmarking it, and moving it towards the default in future distributions. Look for her presentation at ROSCon 2026!
+
+[@JM_ROS](http://discourse.ros.org/u/jm_ros) of [Cellumation](https://cellumation.com/) - Janosch has also been heavily involved in the Client Libraries working group, contributing not only the new events executor implementation as well as performance improvements across the stack. Look for his presentation at ROSCon 2026!
+
+[@Andrew_Symington](http://discourse.ros.org/u/andrew_symington) of [Intrinsic](https://www.intrinsic.ai/) - Andrew has worked on implementing the ROS Central Registry set of bazel build rules for the ROS ecosystem. Look for his presentation at ROSCon 2026!
+
+Thank you for all of your contributions so far, and I’m excited to see what you do as PMC members!
+
+![Image 8: heart](https://emoji.discourse-cdn.com/noto/heart.png?v=15)![Image 9: confetti_ball](https://emoji.discourse-cdn.com/noto/confetti_ball.png?v=15) 12 
+
+ ​ 
+
+ ​ 
+
+*   [ROS News for the Week of September 7th, 2026](https://discourse.openrobotics.org/t/ros-news-for-the-week-of-september-7th-2026/58046)
+
+101 views 5 links 
+
+Reply
+
+### Related topics
+
+Topic list, column headers with buttons are sortable.
+| Topic | Replies | Views | Activity |
+| --- | --- | --- | --- |
+| [ROS PMC Minutes for August 18th, 2026](http://discourse.ros.org/t/ros-pmc-minutes-for-august-18th-2026/57664) [![Image 10: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](http://discourse.ros.org/c/ros/ros-pmc/113) | [0](http://discourse.ros.org/t/ros-pmc-minutes-for-august-18th-2026/57664/1) | 122 | [19d](http://discourse.ros.org/t/ros-pmc-minutes-for-august-18th-2026/57664/1) |
+| [ROS PMC Minutes for September 8, 2026](http://discourse.ros.org/t/ros-pmc-minutes-for-september-8-2026/57957) [![Image 11: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](http://discourse.ros.org/c/ros/ros-pmc/113) * [pmc](http://discourse.ros.org/tag/pmc/456), * [minutes](http://discourse.ros.org/tag/minutes/280) | [1](http://discourse.ros.org/t/ros-pmc-minutes-for-september-8-2026/57957/1) | 102 | [5d](http://discourse.ros.org/t/ros-pmc-minutes-for-september-8-2026/57957/2) |
+| [ROS PMC Minutes for September 1st, 2026](http://discourse.ros.org/t/ros-pmc-minutes-for-september-1st-2026/57808) [![Image 12: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](http://discourse.ros.org/c/ros/ros-pmc/113) | [0](http://discourse.ros.org/t/ros-pmc-minutes-for-september-1st-2026/57808/1) | 130 | [12d](http://discourse.ros.org/t/ros-pmc-minutes-for-september-1st-2026/57808/1) |
+| [ROS PMC Minutes for August 25th, 2026](http://discourse.ros.org/t/ros-pmc-minutes-for-august-25th-2026/57793) [![Image 13: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](http://discourse.ros.org/c/ros/ros-pmc/113) | [0](http://discourse.ros.org/t/ros-pmc-minutes-for-august-25th-2026/57793/1) | 82 | [13d](http://discourse.ros.org/t/ros-pmc-minutes-for-august-25th-2026/57793/1) |
+| [ROS PMC Minutes for July 21, 2026](http://discourse.ros.org/t/ros-pmc-minutes-for-july-21-2026/56999) [![Image 14: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](http://discourse.ros.org/c/ros/ros-pmc/113) * [ros](http://discourse.ros.org/tag/ros/118), * [pmc](http://discourse.ros.org/tag/pmc/456), * [minutes](http://discourse.ros.org/tag/minutes/280) | [0](http://discourse.ros.org/t/ros-pmc-minutes-for-july-21-2026/56999/1) | 85 | [Jul 27](http://discourse.ros.org/t/ros-pmc-minutes-for-july-21-2026/56999/1) |

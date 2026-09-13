@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "64491410c681fe76ed04ce5d193a20b796a1b984",
+    "node_id": "C_kwDOAsXFmdoAKDY0NDkxNDEwYzY4MWZlNzZlZDA0Y2U1ZDE5M2EyMGI3OTZhMWI5ODQ",
+    "commit": {
+      "author": {
+        "name": "Tomoya Fujita",
+        "email": "fujita.tomoya@triorb.co.jp",
+        "date": "2026-08-22T06:21:02Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-22T06:21:02Z"
+      },
+      "message": "Use perf_counter() rather than monotonic() for consistency. (#1712)\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+      "tree": {
+        "sha": "bff665be0b40b0e5a48d670d9ead1c6b0b565226",
+        "url": "https://api.github.com/repos/ros2/rclpy/git/trees/bff665be0b40b0e5a48d670d9ead1c6b0b565226"
+      },
+      "url": "https://api.github.com/repos/ros2/rclpy/git/commits/64491410c681fe76ed04ce5d193a20b796a1b984",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiT/OCRC1aQ7uu5UhlAAA+/kQAHDjIhRhxCl1e6q/Ts9igqR0\nnJw1hdNpJT/+uqfAj/G4atQB1m0bbh7oQMRqLfPI1kHKXIctXhbYdX5v5ZWgV3GM\nDqqSYR1GH4ovtJTWaNkNAvsCVxjWnY55RmvdL7irxmn4Kkloa9l8tXUNzP3kLx68\nc7wK3IeXlH0z3oZLlLxodfhLLo9k4m5V3g9QJmEq9N2IaUXat4eMKlY0xqOJsuBH\ns5epBIClbQdfucdhXIWAdKQeKIOYNTwm36CLLL3vpMLu99Ao+x+zJe0WQh93nwmp\nJgVT9yTJr+lfJDbo8pCE+xTJdoGBFNQBRz/HVy6ppyOT/4Sc/c8bcU3uhiqAeL1B\njSl3XEcTv/iM3Yk7r46wApNmvIzknw5LkrZqaKIEfirk8PYjbOTV0/QiutmMzuPI\nED+VY5hMttWvW1aIwIFnE0GYW+04Zs9X1Ioy6MZGOKCS3a7hVIkBrw0WDSR3zj27\nO4KQgBbdcbtfe9nWcNo0GVziDV6UhvUERIX7JgirqUiAhX6fwlZMxIg4TDzqYtMy\nRkpDy58DiL61hC3M29t2SBQJhyEfeGKlNZmu4om5IXl85spCzCbu6uH8suhv1dFD\ngf+b8KCY3tO27UnteZssolZVRTxkGTrMdZgbP1rOcOlpwFgmnvixRLVCTKiQYHEr\ny4XvrCkM0nJYf7OpLHEB\n=JqrR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bff665be0b40b0e5a48d670d9ead1c6b0b565226\nparent 4eea19f5c65c87e1acfd164edea809635c023cd0\nauthor Tomoya Fujita <fujita.tomoya@triorb.co.jp> 1787379662 +0900\ncommitter GitHub <noreply@github.com> 1787379662 +0900\n\nUse perf_counter() rather than monotonic() for consistency. (#1712)\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+        "verified_at": "2026-08-22T06:21:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclpy/commits/64491410c681fe76ed04ce5d193a20b796a1b984",
+    "html_url": "https://github.com/ros2/rclpy/commit/64491410c681fe76ed04ce5d193a20b796a1b984",
+    "comments_url": "https://api.github.com/repos/ros2/rclpy/commits/64491410c681fe76ed04ce5d193a20b796a1b984/comments",
+    "author": {
+      "login": "fujitatomoya",
+      "id": 43395114,
+      "node_id": "MDQ6VXNlcjQzMzk1MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43395114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fujitatomoya",
+      "html_url": "https://github.com/fujitatomoya",
+      "followers_url": "https://api.github.com/users/fujitatomoya/followers",
+      "following_url": "https://api.github.com/users/fujitatomoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fujitatomoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fujitatomoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fujitatomoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/fujitatomoya/orgs",
+      "repos_url": "https://api.github.com/users/fujitatomoya/repos",
+      "events_url": "https://api.github.com/users/fujitatomoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fujitatomoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4eea19f5c65c87e1acfd164edea809635c023cd0",
+        "url": "https://api.github.com/repos/ros2/rclpy/commits/4eea19f5c65c87e1acfd164edea809635c023cd0",
+        "html_url": "https://github.com/ros2/rclpy/commit/4eea19f5c65c87e1acfd164edea809635c023cd0"
+      }
+    ]
+  },
+  {
+    "sha": "4eea19f5c65c87e1acfd164edea809635c023cd0",
+    "node_id": "C_kwDOAsXFmdoAKDRlZWExOWY1YzY1Yzg3ZTFhY2ZkMTY0ZWRlYTgwOTYzNWMwMjNjZDA",
+    "commit": {
+      "author": {
+        "name": "Emerson Knapp",
+        "email": "537409+emersonknapp@users.noreply.github.com",
+        "date": "2026-08-21T07:48:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T07:48:17Z"
+      },
+      "message": "fix: node lingering after destroy (#1711)\n\nSigned-off-by: Emerson Knapp <emerson.b.knapp@gmail.com>",
+      "tree": {
+        "sha": "b59adc28195d8ebdb72440713fb1cd6618a13894",
+        "url": "https://api.github.com/repos/ros2/rclpy/git/trees/b59adc28195d8ebdb72440713fb1cd6618a13894"
+      },
+      "url": "https://api.github.com/repos/ros2/rclpy/git/commits/4eea19f5c65c87e1acfd164edea809635c023cd0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiALBCRC1aQ7uu5UhlAAAw9kQABzWeu5LMIcEaDF6Sk8pvh0V\n80tgt/hi69HKVGxmqXlHCUdEw5ZBxC8EpphMQo6J1cNlnTlcNbWoUztpsPPm2xMf\n7+NYmgNVMjUwyn8haWI1obum6fhleDm6llCNd4WNmXDTnG6+1sDkIzTS9rGoe2y/\nTNUOc6FmJpotNPDdj/d2rIcVutvZHVAUpoYU8hoR2LpEducRrT7LiLsRJ3XBHdgQ\nTgdMzocluIkECNqap76VCxfajeX5f4iI4N5w2J5O6X71Alj2qt0hS+NKr0ZuyhLG\nMIESbbgHKaUbcytIaPFYB9gcbR/AFH0tPkcFaDQoCXnlqjGcB9YLzUzoBb+H+ZUP\nvKleisQ7Jg6gg39nJMZXh3k+oXv4aUaJ9XLWX2Uinh7L2hIn9MANA+4elAGPSPOz\nlE6mLh5rE85ip4ieyg9j4wQcLvyz9H4nCbKRhYHlo+UERYpnt8Y3xSngRc6LMBVI\nJyFfLyvKvs94A9ANWRwBoAIUdHgY5JcBUWBG3AWzeLOgn7hZIccLi3CJjGvtrQxH\nGwwI2Xa6hNzfrRxLMMoRGCSg5Sf4nw0vmhRLrGUrWJzKjgUjCmoNrzfHfvbNtGJ3\nw4ghZngQFZXRrBdGuPA/IAetONqDOAhkKH3p56WlQtLLzTzX58hVAzMdEup9Vhi8\ne9n8+VmssJerVWxRpSHV\n=YyyG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b59adc28195d8ebdb72440713fb1cd6618a13894\nparent fb4701b97e17073e188ccbea6346a2145d849365\nauthor Emerson Knapp <537409+emersonknapp@users.noreply.github.com> 1787298497 -0700\ncommitter GitHub <noreply@github.com> 1787298497 +0200\n\nfix: node lingering after destroy (#1711)\n\nSigned-off-by: Emerson Knapp <emerson.b.knapp@gmail.com>",
+        "verified_at": "2026-08-21T07:48:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclpy/commits/4eea19f5c65c87e1acfd164edea809635c023cd0",
+    "html_url": "https://github.com/ros2/rclpy/commit/4eea19f5c65c87e1acfd164edea809635c023cd0",
+    "comments_url": "https://api.github.com/repos/ros2/rclpy/commits/4eea19f5c65c87e1acfd164edea809635c023cd0/comments",
+    "author": {
+      "login": "emersonknapp",
+      "id": 537409,
+      "node_id": "MDQ6VXNlcjUzNzQwOQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/537409?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emersonknapp",
+      "html_url": "https://github.com/emersonknapp",
+      "followers_url": "https://api.github.com/users/emersonknapp/followers",
+      "following_url": "https://api.github.com/users/emersonknapp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emersonknapp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emersonknapp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emersonknapp/subscriptions",
+      "organizations_url": "https://api.github.com/users/emersonknapp/orgs",
+      "repos_url": "https://api.github.com/users/emersonknapp/repos",
+      "events_url": "https://api.github.com/users/emersonknapp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emersonknapp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fb4701b97e17073e188ccbea6346a2145d849365",
+        "url": "https://api.github.com/repos/ros2/rclpy/commits/fb4701b97e17073e188ccbea6346a2145d849365",
+        "html_url": "https://github.com/ros2/rclpy/commit/fb4701b97e17073e188ccbea6346a2145d849365"
+      }
+    ]
+  }
+]

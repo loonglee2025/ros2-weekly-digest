@@ -1,0 +1,166 @@
+[
+ {
+  "sha": "61aebc6362f495e377ac27178343c8f074e7eaf5",
+  "node_id": "C_kwDOAUvaeNoAKDYxYWViYzYzNjJmNDk1ZTM3N2FjMjcxNzgzNDNjOGYwNzRlN2VhZjU",
+  "commit": {
+   "author": {
+    "name": "William Woodall",
+    "email": "ahcorde@gmail.com",
+    "date": "2026-08-27T08:29:27Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-27T08:29:27Z"
+   },
+   "message": "rosidl_parser: add in-process memoization for parse_idl_file and parse_idl_string (#985)\n\nSigned-off-by: Tamaki Nishino <otamachan@gmail.com>\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: Tamaki Nishino <otamachan@gmail.com>",
+   "tree": {
+    "sha": "8b86ce187442377e3281ba108bc22d3989a672df",
+    "url": "https://api.github.com/repos/ros2/rosidl/git/trees/8b86ce187442377e3281ba108bc22d3989a672df"
+   },
+   "url": "https://api.github.com/repos/ros2/rosidl/git/commits/61aebc6362f495e377ac27178343c8f074e7eaf5",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqj/VnCRC1aQ7uu5UhlAAAwiIQAJQcODgXpfftC84AsEgUYQ5s\nXDQPZtp7w+wXibkb23TJGcDPZrDUj+gpFpEszAftzPcv3FEY4oAZVynscHhi9Upy\n2CdGoenTvRQB++UvoBFzQMS0hfE31OAOx3HidFRL5d44B8SEyEE3CYr2tbRKnzRj\nHSxicBmCfYlka6MQVL3Ggt/pNXW5530i4Il4vixgbGCGZvlQzdF4LBD2rt1Xu6Gt\nxT9Lv/9/DehwiX/at8yQBgomkTP7jPUrWWlePFk30r6qxqwtTPJmsKcfVRYFP1KH\n1mXJd8yCFbbZpp1UkGv5MRHGhNd4YAkQHE6V4M8JwTQ9TnhWgOTUe77Gmdjn2Zhf\ncTfwWbNM33AYJCw37UeHzrx6AxXtKzjgSOpCleGx4rtLfxdgy4kHuB+rsSFnBvpE\n1qS418YWGfhCnD949oMXOUmpaeZsoE6dEL96mVQ3xOrf566VFIwqv1ZovYY+K7LI\nT/HOrohr1LMWoAruIVT5KogRx+A7z2xr5DIjOXXIPKPa0y82/pGhN173SB+zyWsK\nuCasLtf0SeoFaiGpGNUhzaayB7wCp63gybBQclLIQ9N5s6PswkP1rcGvFfzSU1Eg\n3RIx8e8kha8A6CaVMuu0FHc8IMFyWhEuXWADtgNTiD2OKkkBSADp7NBjZ3WZWIxm\nQ24OaydrPL7cpxkhRy52\n=7y1W\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 8b86ce187442377e3281ba108bc22d3989a672df\nparent d7b239addb75a20de65165ad44719b603debffad\nauthor William Woodall <ahcorde@gmail.com> 1787819367 +0000\ncommitter GitHub <noreply@github.com> 1787819367 +0200\n\nrosidl_parser: add in-process memoization for parse_idl_file and parse_idl_string (#985)\n\nSigned-off-by: Tamaki Nishino <otamachan@gmail.com>\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: Tamaki Nishino <otamachan@gmail.com>",
+    "verified_at": "2026-08-27T08:29:28Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/rosidl/commits/61aebc6362f495e377ac27178343c8f074e7eaf5",
+  "html_url": "https://github.com/ros2/rosidl/commit/61aebc6362f495e377ac27178343c8f074e7eaf5",
+  "comments_url": "https://api.github.com/repos/ros2/rosidl/commits/61aebc6362f495e377ac27178343c8f074e7eaf5/comments",
+  "author": {
+   "login": "ahcorde",
+   "id": 1933907,
+   "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/ahcorde",
+   "html_url": "https://github.com/ahcorde",
+   "followers_url": "https://api.github.com/users/ahcorde/followers",
+   "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+   "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+   "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+   "repos_url": "https://api.github.com/users/ahcorde/repos",
+   "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "d7b239addb75a20de65165ad44719b603debffad",
+    "url": "https://api.github.com/repos/ros2/rosidl/commits/d7b239addb75a20de65165ad44719b603debffad",
+    "html_url": "https://github.com/ros2/rosidl/commit/d7b239addb75a20de65165ad44719b603debffad"
+   }
+  ]
+ },
+ {
+  "sha": "d7b239addb75a20de65165ad44719b603debffad",
+  "node_id": "C_kwDOAUvaeNoAKGQ3YjIzOWFkZGI3NWEyMGRlNjUxNjVhZDQ0NzE5YjYwM2RlYmZmYWQ",
+  "commit": {
+   "author": {
+    "name": "Michael Carroll",
+    "email": "mjcarroll.oss@gmail.com",
+    "date": "2026-08-25T08:06:08Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-25T08:06:08Z"
+   },
+   "message": "Skip redundant find_package(Python3) in generator extensions (#984)\n\nEvery rosidl generator extension calls find_package(Python3 REQUIRED\nCOMPONENTS Interpreter) unconditionally.  Because ament_execute_extensions\nincludes each extension into the same scope, a single interface package\nruns that search once per registered generator -- 13 times for a default\nrolling workspace.\n\nCMake does not memoize this.  Each repeat re-enters FindPython/Support.cmake\nand re-interrogates the interpreter to confirm the cached value is still\nvalid: version, -V, sys.copyright, sysconfig paths, EXT_SUFFIX, SOSABI, and\n(WIN32 only) ABIFLAGS.  That is roughly seven interpreter launches per call.\nOn Linux the launches are cheap enough to hide; on Windows CreateProcess for\npython.exe costs ~60ms locally and far more on a CI runner, so the repeats\ndominate configure time.\n\nGuard each call on the imported target, exactly as ament_cmake_core's\npython.cmake already does.  Imported targets are directory scoped, so the\ntarget created by the first search is visible to every later extension and\nto functions called from that directory.\n\nMeasured on builtin_interfaces (two messages), Windows 11, CMake 4.2, with\nall four rosidl repos patched:\n\n  find_package(Python3) calls   13   ->  3\n  python.exe spawns             92   -> 22\n  cmake configure (median of 5) 17.6s -> 13.1s\n\nThe generated build.ninja is byte identical before and after, as are the\nPython3_* cache entries.\n\nThe three remaining calls are the initial search in ament_cmake_core, one\nin rosidl_generator_py which additionally needs the Development and NumPy\ncomponents, and one in the ros2-rust generator's add_subdirectory scope.\n\nCompanion changes are needed in rosidl_typesupport, rosidl_typesupport_fastrtps\nand rosidl_python for the full effect.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+   "tree": {
+    "sha": "e010b9b857f0d73e796356fbea1d0129d673fade",
+    "url": "https://api.github.com/repos/ros2/rosidl/git/trees/e010b9b857f0d73e796356fbea1d0129d673fade"
+   },
+   "url": "https://api.github.com/repos/ros2/rosidl/git/commits/d7b239addb75a20de65165ad44719b603debffad",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjUzwCRC1aQ7uu5UhlAAAghoQAFEgyv3rYZmvtziWhCVztRuv\n2l41CsgySvU9LW01k1LoVjf5I3tvZnt3PyV+CyD86wXYp8PZUwLwPuk+aUlSDKzL\n/Fq1VZI+QN6XVTl2DCcnLln0ogsKj3/6GKM19gloFlaqcUKCENnpw5pScChVckqj\nokRS8ujy1DjAbztjTfmmHJSUP+vVZdhBPQWgcsXkjwopMlzT8pPlZT64TWf/ufJ9\n/dFMMdY3ekMk34UkcNRBTs2U5FVOaMUh8/6ityFdEouTeLhR4ffdmswLSn8u2xkO\n8JZyd35NMbPd0IfuFU78TVSpJzb2WsGwkrEXyo3sI6ftb6f/JCJpVrs6SyLT0N/O\nrMhNdZY8od2aEGPiwVBENw4E8HnIbTA5WhZbB8rw7VWa/i8xos9/RF6CqSDpm19N\nhxxMESKpchPw+/fOhXZ8bZlXJdxEQ/dsq7n8zejBJn4hsp35J9D8YDy3eIN/+FcJ\nCjVjKJTUhBjbni3g6i9xvsAeP+ZfPpEECd67hBXNgsEyXp2bvMJOhjw7vzPbzNin\ntj+d98hyE2I++7h6Sis6fsH/mqD8GnacU576kC3nq0SwMFTIeX+ycLABkf4UWBRX\nq1qVMLFEHMOrmyJ4wJa+EMYE4oxgWulecc6u/zBEgp8vJO82IOnIXM19nt3cBeC0\nLpJ2OVCleXeY0VtnI3zg\n=xXcz\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree e010b9b857f0d73e796356fbea1d0129d673fade\nparent 8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1787645168 -0700\ncommitter GitHub <noreply@github.com> 1787645168 +0200\n\nSkip redundant find_package(Python3) in generator extensions (#984)\n\nEvery rosidl generator extension calls find_package(Python3 REQUIRED\nCOMPONENTS Interpreter) unconditionally.  Because ament_execute_extensions\nincludes each extension into the same scope, a single interface package\nruns that search once per registered generator -- 13 times for a default\nrolling workspace.\n\nCMake does not memoize this.  Each repeat re-enters FindPython/Support.cmake\nand re-interrogates the interpreter to confirm the cached value is still\nvalid: version, -V, sys.copyright, sysconfig paths, EXT_SUFFIX, SOSABI, and\n(WIN32 only) ABIFLAGS.  That is roughly seven interpreter launches per call.\nOn Linux the launches are cheap enough to hide; on Windows CreateProcess for\npython.exe costs ~60ms locally and far more on a CI runner, so the repeats\ndominate configure time.\n\nGuard each call on the imported target, exactly as ament_cmake_core's\npython.cmake already does.  Imported targets are directory scoped, so the\ntarget created by the first search is visible to every later extension and\nto functions called from that directory.\n\nMeasured on builtin_interfaces (two messages), Windows 11, CMake 4.2, with\nall four rosidl repos patched:\n\n  find_package(Python3) calls   13   ->  3\n  python.exe spawns             92   -> 22\n  cmake configure (median of 5) 17.6s -> 13.1s\n\nThe generated build.ninja is byte identical before and after, as are the\nPython3_* cache entries.\n\nThe three remaining calls are the initial search in ament_cmake_core, one\nin rosidl_generator_py which additionally needs the Development and NumPy\ncomponents, and one in the ros2-rust generator's add_subdirectory scope.\n\nCompanion changes are needed in rosidl_typesupport, rosidl_typesupport_fastrtps\nand rosidl_python for the full effect.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+    "verified_at": "2026-08-25T08:06:08Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/rosidl/commits/d7b239addb75a20de65165ad44719b603debffad",
+  "html_url": "https://github.com/ros2/rosidl/commit/d7b239addb75a20de65165ad44719b603debffad",
+  "comments_url": "https://api.github.com/repos/ros2/rosidl/commits/d7b239addb75a20de65165ad44719b603debffad/comments",
+  "author": {
+   "login": "mjcarroll",
+   "id": 279701,
+   "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/mjcarroll",
+   "html_url": "https://github.com/mjcarroll",
+   "followers_url": "https://api.github.com/users/mjcarroll/followers",
+   "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+   "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+   "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+   "repos_url": "https://api.github.com/users/mjcarroll/repos",
+   "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+    "url": "https://api.github.com/repos/ros2/rosidl/commits/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+    "html_url": "https://github.com/ros2/rosidl/commit/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce"
+   }
+  ]
+ }
+]

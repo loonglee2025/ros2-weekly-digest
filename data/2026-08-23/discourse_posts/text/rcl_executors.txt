@@ -1,0 +1,419 @@
+##### TITLE: Proposal: `rcl_executors` - a unified, canonical reference executor package for all client libraries
+created: 2026-07-29T23:26:27.268Z
+REPLIES: 19
+
+--- [2026-07-29] skye.galaxy ---
+Motivation 
+ Since the Lyrical release, the client library working group has been considering various approaches to reduce the amount of bloat in rclcpp and rclpy , remove or re-implement half-baked features, make behavior more consistent and performant across the different client library implementations, and foster more code reuse. I want to propose a concretely scoped step in the direction of “Less is More” with what seems like a fairly obvious candidate for de-duplication. 
+ Currently, between rclcpp and rclpy, there are 7 different executor implementations: 
+
+ rclcpp::executors::SingleThreadedExecutor 
+ rclcpp::executors::MultiThreadedExecutor 
+ rclcpp::executors::EventsCBGExecutor (newly introduced for Lyrical Luth) 
+ rclcpp::experimental::executors::EventsExecutor (already deprecated and slated for removal in Makoa Mata-Mata) 
+ rclpy.executors.SingleThreadedExecutor 
+ rclpy.executors.MultiThreadedExecutor 
+ rclpy.experimental.EventsExecutor 
+
+ This isn’t even counting the new asyncio features introduced in rclpy , or rclrs ’s own executor which has no timer support and none of the parallelism refinements introduced in the C++ version like multiple threads and callback groups. Each EventsExecutor shares the same fundamental architecture and includes its own timer_manager implementation. rclpy ’s events executor is a pybind layer over its own roughly 1,500 lines of C++ that shares zero code with rclcpp . 
+ Having this many executors in the codebase has the potential to cause confusion for users of the client libraries who may not have the context or bandwidth to pay attention to which ones are actively being maintained, as well as for new contributors as to which executor has which feature or implementation detail, or what’s worth opening a pull request against to fix vs what’s been deprecated. 
+ Additionally, there has been extensive discussion among the maintainers about deprecating the traditional polling based executors and promoting the new EventsCBGExecutor to the default in ROS, (the one that’s instantiated when you call rclcpp::spin() ). I wanted to use this post as an opportunity to expand on that idea in a way not directly coupled to rclcpp . At the time of writing there is at least one change regarding unbounded growth of the events queue we’d like to add to the new executor before it becomes the default, but even once that’s implemented, promoting to the default for just rclcpp feels incomplete and like we would be leaving the other client libraries behind. 
+ Proposed Changes 
+
+ Decouple wait-sets from the Executor base class entirely. 
+ Close out what remaining gaps exist in the EventsCBGExecutor to promote it to the default executor. (this is also an area where we would really appreciate feedback from the community!) 
+ Bring the waitable API for python up to parity with C++, by adding set_on_ready_callback , clear_on_ready_callback , take_data_by_entity_id , etc. These were added to the rclcpp waitable to support the EventsExecutor when it was being developed (alongside the rmw listener callback APIs implemented by FastDDS/CycloneDDS/Zenoh/Connext) but no such changes made it into rclpy . As a result, the python events executor can’t directly query a waitable for callbacks and has to do a bunch of complicated handling of a wait-set object instead to achieve the same result. 
+ De-duplicate all of the core client library executor implementations into a new C++ package, rcl_executors . Core rcl remains a pure C package so as not to introduce C++ into embedded contexts, like rclc / micro-ros . 
+ Move the EventsCBGExecutor into rcl_executors . 
+ Client libraries can use rcl_executors::EventsCBGExecutor :
+
+ rclpy becomes responsible for only pybind ing the EventsCBGExecutor instead of having its own implementation. 
+ rclcpp::executors::EventsCBGExecutor simply aliases rcl_executors::EventsCBGExecutor . 
+ the potential still exists for more language-idiomatic or alternate implementations, like asyncio , rclc ’s executor, etc, to be implemented if desired. 
+
+ rclcpp::spin() , rclpy.spin() , etc instantiates an rcl_executors::EventsCBGExecutor and spin s it 
+ Deprecate (in m-turtle) and remove (by n-turtle) the polling / wait-set based implementations ( SingleThreadedExecutor , MultiThreadedExecutor ) from rclcpp and rclpy . 
+
+ Risks / Open Questions 
+
+ Existing references in user client library code to the old executors. As part of this proposal, to ease migration we could keep those symbols aliased for compatibility, i.e. class SingleThreadedExecutor : public EventsCBGExecutor (with 1 thread) etc, but this carries potential issues for users implicitly dependent on the behavior of whichever variant of re-implemented executor logic they’re using, specifically the ordering of ready entities. 
+ Support for custom, user-defined Waitable s may break by switching to a fully events-driven system under the hood 
+ For other client library implementations besides rclcpp / rclpy , what is the most ergonomic way to expose this proposed C++ executor implementation as a pure C API?
+
+--- [2026-07-29] Katherine_Scott ---
+
+
+--- [2026-07-30] scastro ---
+This is awesome! 
+
+ rclpy becomes responsible for only pybind ing the EventsCBGExecutor instead of having its own implementation. 
+
+ This in particular is going to be huge for getting rclpy performance out of where it is right now. But of course you meant nanobind ing, right? 
+ I’m half being facetious, but also seriously bringing up the idea that with such sweeping changes, nanobind should be considered as the official upgrade from pybind11 from the same author. I’ve been using it extensively for the past year and happy to offer guidance here.
+
+--- [2026-07-30] gbiggs ---
+This: 
+
+ skye.galaxy: 
+
+ De-duplicate all of the core client library executor implementations into a new C++ package, rcl_executors . Core rcl remains a pure C package so as not to introduce C++ into embedded contexts, like rclc / micro-ros . 
+
+ is very important, I think. There should never be a dependency from one client library to another. 
+ However consideration needs to be given to how the functionality of rcl_executors can be provided to embedded contexts. 
+
+ skye.galaxy: 
+
+ Deprecate (in m-turtle) and remove (by n-turtle) the polling / wait-set based implementations ( SingleThreadedExecutor , MultiThreadedExecutor ) from rclcpp and rclpy . 
+
+ Do we have any data, one way or the other, about how often these executors are intentionally used? They may not be the most efficient, but there may be use cases where they are better. Like someone using custom waitables, for example. 
+
+ skye.galaxy: 
+
+ Existing references in user client library code to the old executors. As part of this proposal, to ease migration we could keep those symbols aliased for compatibility, i.e. class SingleThreadedExecutor : public EventsCBGExecutor (with 1 thread) etc, but this carries potential issues for users implicitly dependent on the behavior of whichever variant of re-implemented executor logic they’re using, specifically the ordering of ready entities. 
+
+ This is a change in behaviour. That should be made explicit through requiring users to modify their code. 
+
+ scastro: 
+
+ nanobind should be considered as the official upgrade from pybind11 from the same author 
+
+ The Python community seems to go through binding libraries almost as fast as it goes through packaging schemes.
+
+--- [2026-07-30] scastro ---
+gbiggs: 
+
+ The Python community seems to go through binding libraries almost as fast as it goes through packaging schemes. 
+
+ Luckily coding assistants make it really easy to port to newer libraries / packaging schemes / project management tools. It’s been one of the many tedious continuous improvement things I’m delighted to be able to automate instead of leave for an indeterminate future time… 
+ (with proper regression testing, of course!)
+
+--- [2026-07-30] scastro ---
+But what I was getting to is: if we’re going to be making big changes anyway, it might be worth considering given there is pretty good motivation to upgrade the bindings library
+
+--- [2026-07-30] 2lian ---
+In my opinion, after working a lot with pyhton asyncio and not the ros executors, I think executors and scheduling should be delegated to the language and not handled by ROS. Here are all my points against ROS having a complex executor: 
+
+ It’s already here: Most languages already handle asynchronous operations in multiple ways. There’s been huge improvement in recent years. Threading, Asyncio in Python, Libuv, async/await in C++ and Rust … 
+ ROS will always be behind: Not using native tooling will make ROS always “behind” the latest language features. For example, we can see ‘fibers’ using Uring and such systems coming in many languages – once it’s here in Python, I’ll need to wait for ROS to (maybe) implement it and be a few years behind. 
+ It’s a lot of work: An executor is very complex to do right, with structured concurency, error propagation, task management, lifetime management … Currently, the ros executor has none of that, but (for Python, since py3.11) everything is available in asyncio . Would be much easier to use the language capabilities directly, and I guess it’s the same for other languages. 
+ It’s not compatible with other event sources: It is very hard to use multiple ‘event sources’ with ROS. So if I wanna have my robot react to ROS messages (ROS callbacks), Keyboard presses (sdl2 callbacks), MQTT telemetry (MQTT callbacks) in one application, it is genuinely a mess of event loops fighting and blocking each-other. Or also, switching to ROS or going away from ROS is very hard because I have to redo the scheduling of my whole application from zero. I mean that’s the whole reason behind my library ( afor )[ GitHub - 2lian/asyncio-for-robotics: Asyncio interface for ROS 2, Zenoh, and other robotics IO systems. · GitHub ] . 
+ It’s not compatible with other tools: the community of a language can make numerous async tooling, but that won’t be available in ROS. Notably, testing ROS applications is very hard because I’ve to spin up the executor and somehow inject messages into it, see when/if they come out. Async testing is however available in most languages (at least python has many pytest plugins) but those tools are not usable with ROS. (again that’s why I use/created afor in pyhton) 
+ it’s not faster: At least for Python we’ve discussed and measured about 6x latency improvements by using asyncio directly. And I got 4x less CPU usage. Maybe async/await and other tools are badly viewed in robotics because they come from web development that accepts +200ms of latency. On contrary, after trying I was very surprised with huge performance improvement. 
+ Custom systems are bad for LLM: That’s a harsh reality, but LLM are trained much more on native language tooling and don’t know how to use the ROS executor system. LLM always conclude that we should use the Multithreaded executor for better perf, and use thread locks, which absolutely destroys performance in python. Then it goes in circle arguing with me. I haven’t observed this using asyncio. 
+
+ In short: IMO the ROS executor should be minimal and delegate to the language and application. In python I think asyncio is the obvious solution. 
+ One last thing: I think and discussed with colleagues that agree that, executor QoS should be separated from RMW QoS. It is confusing to have network message delivery queue be affected by the application’s processing speed. Let’s say you want to reduce network load by using best effort, then this can easily lead to messages arriving in the executor but not being processed because the event loop is busy. So you just wasted a valuable successful network message delivery, because the executor didn’t queue it up. (again my afor lib, separates executor from transport QoS). 
+ PS: I talk a lot about afor but that’s just to say that I’ve experience in this, and give examples.
+
+--- [2026-07-30] gbiggs ---
+2lian: 
+
+ ROS will always be behind: Not using native tooling will make ROS always “behind” the latest language features. For example, we can see ‘fibers’ using Uring and such systems coming in many languages – once it’s here in Python, I’ll need to wait for ROS to (maybe) implement it and be a few years behind. 
+
+ ROS will only ever be as far behind as contributions received. If you want ROS to support something sooner, contribute it! 
+
+ 2lian: 
+
+ It’s a lot of work: An executor is very complex to do right, with structured concurency, error propagation, task management, lifetime management … Currently, the ros executor has none of that, but (for Python, since py3.11) everything is available in asyncio . Would be much easier to use the language capabilities directly, and I guess it’s the same for other languages. 
+
+ This is the original design reason for each ROS client library implementing its executors itself, rather than having a centralised set: It allows for each client library’s executor(s) to be relatively thin wrappers around what the language provides (such as wrapping asyncio in Python) to map it to the ROS node concepts. The primary reason the existing executors don’t wrap present-day concepts is because no one has stepped forward to bring them up to date. 
+
+ 2lian: 
+
+ It’s not compatible with other event sources: It is very hard to use multiple ‘event sources’ with ROS. So if I wanna have my robot react to ROS messages (ROS callbacks), Keyboard presses (sdl2 callbacks), MQTT telemetry (MQTT callbacks) in one application, it is genuinely a mess of event loops fighting and blocking each-other. 
+
+ Many frameworks like ROS have an inbuilt event loop - anyone who’s used Qt knows the fun of trying to make it work with other event loop-based libraries. The solution is not to abandon executors, but to make it possible to use ROS with a non-event-loop-based approach when desired. One solution is a manually-triggered executor (which you could even call from asyncio ), another is just to ensure your executor is running in a separate thread from your main thread. Either way, something needs to run the code that checks for timers and data being available, and then call the appropriate callbacks. 
+
+ 2lian: 
+
+ it’s not faster: At least for Python we’ve discussed and measured about 6x latency improvements by using asyncio directly. And I got 4x less CPU usage. Maybe async/await and other tools are badly viewed in robotics because they come from web development that accepts +200ms of latency. On contrary, after trying I was very surprised with huge performance improvement. 
+
+ This is one use case where using asyncio as directly as possible is fine. There are others where the use of an executor may make sense - like a hard real-time capable executor. The ROS concept and abstraction around execution allows for making these different capabilities available in a single client library through a same or similar API, making switching them out based on system integration needs easier. 
+
+ 2lian: 
+
+ Custom systems are bad for LLM: That’s a harsh reality, but LLM are trained much more on native language tooling and don’t know how to use the ROS executor system. LLM always conclude that we should use the Multithreaded executor for better perf, and use thread locks, which absolutely destroys performance in python. Then it goes in circle arguing with me. I haven’t observed this using asyncio. 
+
+ I don’t think “LLMs produce the wrong code” is an argument against the architecture of the framework. At best, it’s an argument for improving our documentation. 
+
+ 2lian: 
+
+ I think and discussed with colleagues that agree that, executor QoS should be separated from RMW QoS. It is confusing to have network message delivery queue be affected by the application’s processing speed. Let’s say you want to reduce network load by using best effort, then this can easily lead to messages arriving in the executor but not being processed because the event loop is busy. So you just wasted a valuable successful network message delivery, because the executor didn’t queue it up. 
+
+ If you think this is an improvement worth adopting in ROS, then rather than just thinking it to yourself or discussing it with just your colleagues, I encourage you to propose and drive this change throughout ROS . There is nothing on our side stopping you from doing so, and we would really love to see you do so. 
+ ROS is built by everyone. If you think something is not right, contribute an improvement .
+
+--- [2026-07-30] solonovamax ---
+skye.galaxy: 
+
+ Since the Lyrical release, the client library working group has been considering various approaches to reduce the amount of bloat in rclcpp 
+
+ unrelated to the topic at hand of executors, but the number one thing I’d like to suggest for that is to please use forward declarations, PIMPL, etc. 
+because currently the build times when using rclcpp are… quite bad. 
+
+ skye.galaxy: 
+
+ De-duplicate all of the core client library executor implementations into a new C++ package, rcl_executors . Core rcl remains a pure C package so as not to introduce C++ into embedded contexts, like rclc / micro-ros . 
+
+ given that executors are still relevant in contexts where you’d want to avoid C++, would it perhaps be beneficial to have some shared package, say, rcl_executors_base , which is in C, thus simplifying some of the code for executors in rclc or micro-ros? 
+though I don’t know how useful something like that might be. 
+
+ skye.galaxy: 
+
+ Existing references in user client library code to the old executors. As part of this proposal, to ease migration we could keep those symbols aliased for compatibility, i.e. class SingleThreadedExecutor : public EventsCBGExecutor (with 1 thread) etc, but this carries potential issues for users implicitly dependent on the behavior of whichever variant of re-implemented executor logic they’re using, specifically the ordering of ready entities. 
+
+ would it be better to have a typealias rather than sub-class it? it wouldn’t be ABI-compatible, but that doesn’t really matter than much in a major bump 
+
+ 2lian: 
+
+ ROS will always be behind: Not using native tooling will make ROS always “behind” the latest language features. For example, we can see ‘fibers’ using Uring and such systems coming in many languages – once it’s here in Python, I’ll need to wait for ROS to (maybe) implement it and be a few years behind. 
+
+ on that note, I’d love to see support for C++ coroutines in rclcpp & ROS in general 
+I’ve been messing around with them a bit, and I haven’t been that displeased with them (though the fact they were not a core language feature definitely does show)
+
+--- [2026-07-30] gbiggs ---
+solonovamax: 
+
+ I’d love to see support for C++ coroutines in rclcpp & ROS in general 
+I’ve been messing around with them a bit, and I haven’t been that displeased with them (though the fact they were not a core language feature definitely does show) 
+
+ I’d love to see you contribute support - or at least drive the contribution of it. ROS is far more likely to gain support if you step up and contribute it.
+
+--- [2026-07-30] solonovamax ---
+gbiggs: 
+
+ I’d love to see you contribute support - or at least drive the contribution of it. ROS is far more likely to gain support if you step up and contribute it. 
+
+ I’m currently not familiar enough with C++ (and especially larger C++ codebases) to the point where I’d be comfortable contributing something like this 
+in a language like kotlin or java where I have substantially more experience, sure, but I feel that at the moment I’m not nearly familiar enough with C++ for that
+
+--- [2026-07-30] 2lian ---
+gbiggs: 
+
+ ROS is built by everyone. If you think something is not right, contribute an improvement . 
+
+ Yes I know sorry for “complaining” a lot a not contributing haha. I’ve had my own work and couldn’t invest time into such things until now. 
+ I don’t wanna give excuses as why I don’t contribute but here are a few reasons why I didn’t until now: 
+
+ Contributions I make to ROS stay within ROS. I would prefer to contribute to the wider python community. 
+ My tools and robots are built on python first, then communicate with ROS/Zenoh/Telemetry or are tested headlessly by inputting stuff into the asyncio event loop. So ROS contributions don’t have a huge return on investment. 
+ As @solonovamax said. The ROS codebase is huge with many intricate executors spanning multiple language, it is not easy to dive in. rclpy users and I have a lot of experience with Python. If ROS had asyncio from the start or had a much more minimal executor using python tooling, I think rclpy would be much more approachable and we’d see more contribution. That point is directly related to this discussion. 
+
+ gbiggs: 
+
+ This is the original design reason for each ROS client library implementing its executors itself, rather than having a centralised set: It allows for each client library’s executor(s) to be relatively thin wrappers around what the language provides (such as wrapping asyncio in Python) to map it to the ROS node concepts. The primary reason the existing executors don’t wrap present-day concepts is because no one has stepped forward to bring them up to date. 
+
+ That’s a very good point I think everyone agrees on, and would solve many problems. It just wasn’t clear to me (and maybe became blurry through the years of development). I’ll look into rclpy with this in mind, especially the AsyncNode that I wanna contribute to. I am honestly not sure if other executors than AsyncNode should still exist in the coming years (maybe the MultiThreadedExecutor for callback_groups support). 
+ One question: Why do we need the executor and don’t directly use the RMW scheduling model? Or at least give the user the possibility to do that? Like, I would like DDS/Zenoh to execute my callback directly, without ever starting the ROS executor. Is there any reason for this not being available? (maybe I should contribute and make this available)
+
+--- [2026-07-31] gbiggs ---
+solonovamax: 
+
+ I’m currently not familiar enough with C++ (and especially larger C++ codebases) to the point where I’d be comfortable contributing something like this 
+
+ Since I first typed PEEK and POKE on a Commodore 64, the way I’ve gained familiarity with a language is to dive in and do something. If you dive into this, you’ll quickly learn what you need to know - it’s mostly just syntax, the concepts are similar across languages. If you also send in draft PRs, you’ll also get feedback from others in the community who might know C++ better. All of this lets you gain that familiarity you desire much faster - and as a bonus, ROS gains support for C++ coroutines.
+
+--- [2026-07-31] gbiggs ---
+2lian: 
+
+ Why do we need the executor and don’t directly use the RMW scheduling model? Or at least give the user the possibility to do that? Like, I would like DDS/Zenoh to execute my callback directly, without ever starting the ROS executor. Is there any reason for this not being available? 
+
+ It’s separation of concerns. Communication is separated from computation in the ROS architecture.
+
+--- [2026-07-31] 2lian ---
+gbiggs: 
+
+ It’s separation of concerns. Communication is separated from computation in the ROS architecture. 
+
+ If it is separated, shouldn’t the user be able to use those tools separately? 
+ But I found that it should actually be possible, just by using: 
+
+ rclpy/rclpy/rclpy/impl/_rclpy_pybind11.pyi at a1d9c5a5a31a5b7cc217b36080a3544067c66a1e · ros2/rclpy · GitHub 
+
+ rclpy/rclpy/rclpy/impl/_rclpy_pybind11.pyi at a1d9c5a5a31a5b7cc217b36080a3544067c66a1e · ros2/rclpy · GitHub 
+
+ It’s just that I have never seen anyone talk about those functions. I have read so many discussions about “how to use asyncio with ROS” or “how to do this and that with the executor”, but I have never seen these direct bindings mentioned. With those, we should be able to avoid the executor entirely and implement our own execution model depending on our needs. That’s actually what AsyncNode is doing. I should have found that earlier in my life, haha. 
+ Maybe I am the weird one here for not wanting an executor? I feel like the docs and discussions only talk about SingleThreadedExecutor , MultiThreadedExecutor , custom executors, and now AsyncNode . But IMO, directly using those bindings is also a valid form of execution and might belong somewhere in the docs . 
+ Sure, you can mess it up, but you can also absolutely mess up the normal executor. I also wouldn’t expect beginners to dive into this. It could simply be documented as a lower-level option for people who want to handle scheduling themselves.
+
+--- [2026-07-31] peci1 ---
+gbiggs: 
+
+ ROS gains support for C++ coroutines. 
+
+ If anyone wants inspiration, my colleagues and students have already played with this: 
+
+ github.com/ctu-mrs/mrs_lib 
+
+ Add coroutines and awaitable service (#90) 
+
+ ros2 ← pum1k:feat/coro-callbacks 
+
+ opened 05:07PM - 27 Feb 26 UTC 
+
+ pum1k
+
+ +1683 
+ -1 
+
+ # Description
+This PR adds C++20 coroutines support. It contains the following … parts:
+- Coroutine library support (task type, awaiting, ...)
+- Awaitable service calls to `ServiceClientHandler`
+- Support for adding coroutine based callback to timers (both `ROSTimer` and `ThreadTimer`)
+
+## `mrs_lib::Task<T>`
+This is the task type that is returned by coroutines. It is immovable to force immediate awaiting.
+
+The task does not use symmetric transfer to schedule continuations because there is currently unfixed bug in gcc that can cause stack overflows (https://gcc.gnu.org/bugzilla/show_bug.cgi?id=100897). To overcome this issue, the continuations are scheduled by a simple thread-local scheduler.
+
+## Awaitable services
+`ServiceClientHandler` got a new method called `callAwaitable`. This returns object that can be `co_await`ed by the calling coroutine to call the service and suspend. After the service is completed, the coroutine is woken up to continue its execution.
+
+## Coroutine callbacks for timers
+This patch adds support for creating coroutine callbacks only in timers, other callbacks will be added in the future. The constructor for creating these callbacks currently allows only methods taking no arguments and binds the `this` pointer internally - either form raw pointer or shared pointer. 
+
+ github.com/ctu-mrs/mrs_lib 
+
+ Update coroutines library - namespace, cancellation and refactoring (#110) 
+
+ ros2 ← pum1k:feat/coro-cancellation 
+
+ opened 07:13PM - 09 Jun 26 UTC 
+
+ pum1k
+
+ +947 
+ -154 
+
+ Stacked on top of https://github.com/ctu-mrs/mrs_lib/pull/104. Please merge that … one first.
+
+### Description
+
+- refactor: moved coroutines to `mrs_lib::coro` namespace
+ - mrs_lib::Task is exporting with `using` directive since it will likely be used much more than any other coroutine code
+- refactor: moved `ResultStorage` to separate file
+- feat: add queue to thread local continuation scheduler
+ - this allows starting coroutines from other coroutines (used in some WIP utility functions)
+- feat: added `ScopeCleanup` utility class for running any code at the end of its lifetime
+- feat: added better cancellation for coroutines
+ - start_task can be given a stop_token to cancel the coroutine
+ - awaitables can use this to wake up and cancel suspended tasks
+ - this was not yet implemented in the `ServiceAwaitable` 
+
+ But their work is not (as almost always) not upstreamable…
+
+--- [2026-07-31] gbiggs ---
+2lian: 
+
+ Maybe I am the weird one here for not wanting an executor? I feel like the docs and discussions only talk about SingleThreadedExecutor , MultiThreadedExecutor , custom executors, and now AsyncNode . But IMO, directly using those bindings is also a valid form of execution and might belong somewhere in the docs . 
+
+ I don’t think you’re weird. Not using one of the existing executors is a valid use case. Something needs to run the stuff that handles comms, handles timers, calls the callbacks, etc. By default, that’s one of the existing executors - but as you’ve discovered they do it via APIs that anyone can use, if they want to do things differently. 
+ There are two reasons the documentation doesn’t cover this: 
+
+ It’s not the “smooth path”, from the point of view of ROS, and documentation covers that first , leading to… 
+ No one has contributed documentation on working without an executor. 
+
+ If you would like to contribute a tutorial on how to use aspects of the ROS framework without an executor, as part of an event loop provided by a different library, or whathaveyou, then please do. Then, no one else will have to go through what you did and everyone benefits.
+
+--- [2026-07-31] solonovamax ---
+gbiggs: 
+
+ Since I first typed PEEK and POKE on a Commodore 64, the way I’ve gained familiarity with a language is to dive in and do something. If you dive into this, you’ll quickly learn what you need to know - it’s mostly just syntax, the concepts are similar across languages. If you also send in draft PRs, you’ll also get feedback from others in the community who might know C++ better. All of this lets you gain that familiarity you desire much faster - and as a bonus, ROS gains support for C++ coroutines. 
+
+ I do definitely want to contribute more to ROS in general, I just want to start smaller rather than going for something larger like this out of the gate, yk?
+
+--- [2026-07-31] skye.galaxy ---
+wowie this post blew up. Thanks everybody for the feedback! I just wanted to keep it simple and talk about the potential for some code path deduplication but I think we’re perhaps scratching around some deeper issues that are worth diving into. 
+ First I would like to correct a previous statement about rclrs not having yet implemented timers, as support actually landed in october of 2025 and I had missed it. I played around with rclrs a while ago during one of my (f)unemployment stints, but am admittedly not nearly as familiar or in-the-loop on it as I am with rclcpp , so my reference was out of date 
+
+ gbiggs: 
+
+ Do we have any data, one way or the other, about how often these executors are intentionally used? They may not be the most efficient, but there may be use cases where they are better. Like someone using custom waitables, for example. 
+
+ For the average desktop ROS user, my vibes-based intuition is that the tendency is to not even think about the executor or its spin mechanisms unless one needs to. I’ve seen linkedin content that recommends to “just reach for the MultiThreadedExecutor as a fix” for their nodes having lock issues (like calling a synchronous service from a callback) or just drop the node on another SingleThreadedExecutor with spin() running in its own std::thread and forget about it. Heck, even the first version of the agnocast Callback Isolated Executor just had a std::vector of SingleThreadedExecutor s for their thread isolation. 
+ My slightly-more-research-backed assertion is that custom waitables is mostly only a thing someone’s working on if they’re putting their own custom features or secret sauce on top of ROS, e.g. looking at github search results for custom waitables use in rclcpp and rclpy (and ignoring forks / vendors / research projects), we mostly have a handful of projects like issac_ros_nitros (which, IIRC, has been superseded by the rosidl::Buffer work in Lyrical), the irobot-ros/events-executor prototype before it was in the core, Polymath’s own livekit_ros2_bridge , etc. And if they’re compiling against jazzy rclcpp or newer, I’m fairly certain the custom waitables must implement the events API anyway as well as the DDS / wait-set based ones because set_on_ready_callback , clear_on_ready_callback and take_data_by_entity_id are pure virtual . 
+ So I suppose part of what I’m proposing here is in the direction of further decoupling of DDS / wait-set concepts from ROS’s API. This was already starting to some degree with the advent of rmw_zenoh , but even with the non-DDS based middleware, because it’s still gotta support rmw_wait (which maps natively onto waiting on a wait-set in the DDS rmws) it seemingly has to recreate a lot of that machinery itself just to bolt onto the wait-set/polling approach used by default in the classic executors / rclcpp::spin() . Meanwhile, every tier 1 rmw easily supports event callback trampolines now, DDS or not. 
+
+ 2lian: 
+
+ executor QoS should be separated from RMW QoS 
+
+ I agree with this point, in that I don’t think we’ve really had much of a concept of “Executor QoS” vs just “a bunch of different executor implementations with their own policies”. We have a minimal rclcpp::ExecutorOptions , with only one field that’s actually really used ( rclcpp::Context ). and so all of the example code in specifying a single threaded EventsCBGExecutor just fills in a blank ExecutorOptions . I feel like a goal for a properly fleshed out rcl_executor_options_t would involve allowing users to tune the knobs they care about (execution order, dispatch) without re-implementing an entire execution pipeline themselves. 
+
+ gbiggs: 
+
+ However consideration needs to be given to how the functionality of rcl_executors can be provided to embedded contexts. 
+
+ solonovamax: 
+
+ given that executors are still relevant in contexts where you’d want to avoid C++, would it perhaps be beneficial to have some shared package, say, rcl_executors_base , which is in C, thus simplifying some of the code for executors in rclc or micro-ros? 
+
+ For making parts of this proposed refactor useful in embedded contexts, it could make sense to have, similar to how rmw is setup, a C API for the scheduling piece that has its own implementation under the hood. rcl_executors_base could define a more semantically meaningful rcl_executor_options_t as well as registration functions like 
+
+[CODE]// would also define rcl_executor_add_timer / rcl_executor_add_client / rcl_executor_add_service / rcl_executor_add_event / rcl_executor_add_guard_condition
+
+rcl_ret_t rcl_executor_add_subscription(
+ rcl_executor_t * executor, rcl_subscription_t * subscription,
+ rcl_callback_group_t * group,
+ void * type_erased_sub, rcl_executor_entity_id_t * out_id);
+
+rcl_ret_t rcl_executor_add_callback_group(
+ rcl_executor_t * executor, rcl_callback_group_type_t type,
+ rcl_callback_group_t * out_group);
+[/CODE]
+
+ and then in the spin loop, 
+
+[CODE]rcl_ret_t rcl_executor_take_next(
+ rcl_executor_t * executor, rcl_duration_value_t timeout,
+ rcl_executor_event_t * out_ready_event);
+
+rcl_ret_t rcl_executor_mark_executed(
+ rcl_executor_t * executor, const rcl_executor_event_t * event);
+[/CODE]
+
+ Behind the hood, this could be implemented by a pure C library with fixed allocation size and rclc style scheduling and dispatch, or with a C++ implementation like the one we just added to rclcpp . 
+
+ 2lian: 
+
+ One question: Why do we need the executor and don’t directly use the RMW scheduling model? Or at least give the user the possibility to do that? Like, I would like DDS/Zenoh to execute my callback directly 
+
+ The events system / rmw callback trampoline mechanisms that all the newer executors have been driving actually originated from questions like this! The events queue is about as close as you can get to that while having a spin mechanism and callback group controlled parallelism. 
+
+ 2lian: 
+
+ I am honestly not sure if other executors than AsyncNode should still exist in the coming years (maybe the MultiThreadedExecutor for callback_groups support). 
+
+ Full disclosure, a lot of my background and experience has been on C++ with some, but increasingly less, python in my own workflows. For folks who are really excited to own rclpy maintenance, I’d be totally fine leaning into AsyncNode as the sole language-idiomatic execution paradigm, actually. If it’s faster than nanobind ing to an events queue based executor, great! Get rid of the python wait set executors and its events executor that, again, has to bolt on a bunch of extra machinery around wait-sets, and don’t even bother to bring in the new one! But you’re never gonna get me to say that C++ land doesn’t need an executor. As easy as it is for a ROS user to mess up the executor if they don’t know what they’re doing, it’s way easier to mess up rolling your own primitives in C or C++. 
+ ROS can be a lot of things to a lot of users, novice and advanced (which is part of why there’s so much code to keep track of) but I think one of the things that keeps it approachable is ROS having a spinner abstraction you can count on to invoke your callbacks for you, and don’t need to hand-roll every time you wanna write a node. That we’ve really started to focus on optimizing that layer in the last few years doesn’t take away from how useful that is. 
+ Ultimately where I want to get to is somewhere in the ballpark of “a few executors with configurable policies, which all share some common mechanisms, and are all in the same place” which I argue is better than the “a whole bunch of executors all over the place all doing their own thing, which is sometimes a fully duplicated architecture or lacking common functionality” 
+
+ gbiggs: 
+
+ ROS is built by everyone. If you think something is not right, contribute an improvement . 
+
+ Maybe in about 5 to 10 years, the work we’re doing today leads to less immediate dismissals of “ros 2 is bad, I have decided it is somehow less effort to just have my entire engineering team roll our own bespoke robotics middleware that looks sorta like ros but is good and works actually”. It’s always easier to complain than it is to suggest a solution, which is why this response took me a few days to think about
+
+--- [2026-08-01] skye.galaxy ---
+solonovamax: 
+
+ on that note, I’d love to see support for C++ coroutines in rclcpp & ROS in general 
+I’ve been messing around with them a bit, and I haven’t been that displeased with them (though the fact they were not a core language feature definitely does show) 
+
+ peci1: 
+
+ If anyone wants inspiration, my colleagues and students have already played with this: 
+ Add coroutines and awaitable service by pum1k · Pull Request #90 · ctu-mrs/mrs_lib · GitHub 
+
+ I’ve heard similarly from others that the coroutines were a bit half-baked, but if folks are finding utility out of them, they are a feature we could theoretically think seriously about implementing now that ROS targets C++20 since Lyrical. 
+
+ solonovamax: 
+
+ I do definitely want to contribute more to ROS in general, I just want to start smaller rather than going for something larger like this out of the gate, yk? 
+
+ solonovamax: 
+
+ I’m currently not familiar enough with C++ (and especially larger C++ codebases) to the point where I’d be comfortable contributing something like this 
+
+ You will absolutely learn a lot about these topics very quickly if you start regularly hanging out at the client library working group meetings That would also be a great forum to talk about / present proposals for new features like coroutine support. It was how we got talking about AsyncNode and it made it into lyrical!

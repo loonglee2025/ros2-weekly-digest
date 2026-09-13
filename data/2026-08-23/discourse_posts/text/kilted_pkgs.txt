@@ -1,0 +1,594 @@
+##### TITLE: New packages for Kilted Kaiju 2026-08-21
+created: 2026-08-21T22:35:37.927Z
+REPLIES: 0
+
+--- [2026-08-21] cottsay ---
+This sync brings 39 new packages to Kilted and updates 451 others. Thanks very much to the many developers that were a part of this effort, including the 85 maintainers listed below. 
+ ros/rosdistro tag: kilted/2026-08-21 
+ Added Packages [39]: 
+
+ ros-kilted-easynav-costmap-localizer : 0.4.1-1 
+ ros-kilted-easynav-regulated-pp-controller : 0.4.1-1 
+ ros-kilted-easynav-simple-localizer : 0.4.1-1 
+ ros-kilted-etsi-its-ivim-ts-coding : 3.5.0-1 
+ ros-kilted-etsi-its-ivim-ts-conversion : 3.5.0-1 
+ ros-kilted-etsi-its-ivim-ts-msgs : 3.5.0-1 
+ ros-kilted-jsk-common-msgs : 5.0.1-3 
+ ros-kilted-jsk-footstep-msgs : 5.0.1-3 
+ ros-kilted-jsk-gui-msgs: 5.0.1-3 
+ ros-kilted-jsk-hark-msgs : 5.0.1-3 
+ ros-kilted-magnetometer-broadcaster : 5.17.0-1 
+ ros-kilted-mola-academic-datasets : 3.0.0-3 
+ ros-kilted-mola-input-euroc-dataset : 3.0.0-3 
+ ros-kilted-mola-input-kitti-dataset : 3.0.0-3 
+ ros-kilted-mola-input-kitti360-dataset : 3.0.0-3 
+ ros-kilted-mola-input-mulran-dataset : 3.0.0-3 
+ ros-kilted-mola-input-paris-luco-dataset : 3.0.0-3 
+ ros-kilted-mola-lidar-odometry : 3.1.0-1 
+ ros-kilted-mp2p-icp-core : 2.12.0-1 
+ ros-kilted-mp2p-icp-viz : 2.12.0-1 
+ ros-kilted-mujoco-3d-lidar : 0.1.0-2 
+ ros-kilted-nanoflann-vendor : 1.12.1-1 
+ ros-kilted-nao-meshes : 2.1.2-1 
+ ros-kilted-naoqi-bridge-msgs : 2.1.1-1 
+ ros-kilted-naoqi-libqi : 3.0.3-1 
+ ros-kilted-ndcurves : 2.3.0-1 
+ ros-kilted-onnxruntime-vendor : 0.1.0-2 
+ ros-kilted-pepper-meshes : 3.0.0-1 
+ ros-kilted-posedetection-msgs : 5.0.1-3 
+ ros-kilted-roboplan-example-models : 0.6.0-1 
+ ros-kilted-roboplan-ros-cpp : 0.6.0-1 
+ ros-kilted-roboplan-ros-py : 0.6.0-1 
+ ros-kilted-roboplan-ros-visualization : 0.6.0-1 
+ ros-kilted-roboplan-toppra : 0.6.0-1 
+ ros-kilted-ros-snapd-interfaces : 0.0.1-1 
+ ros-kilted-rosbag-timing-inspector : 1.0.1-1 
+ ros-kilted-rtabmap-costmap-plugins : 0.23.7-1 
+ ros-kilted-speech-recognition-msgs : 5.0.1-3 
+ ros-kilted-unbag : 1.3.1-1 
+
+ Updated Packages [451]: 
+
+ ros-kilted-ackermann-steering-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-actionlib-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-admittance-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-battery-state-broadcaster : 1.2.0-1 → 5.17.0-1 
+ ros-kilted-bicycle-steering-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-camera-calibration : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-chained-filter-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-clips-vendor : 6.4.3-1 → 6.4.4-1 
+ ros-kilted-common-interfaces : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-compressed-depth-image-transport : 5.1.2-1 → 5.1.3-1 
+ ros-kilted-compressed-image-transport : 5.1.2-1 → 5.1.3-1 
+ ros-kilted-control-msgs : 6.9.0-1 → 6.10.0-1 
+ ros-kilted-control-toolbox : 5.10.0-1 → 5.10.1-1 
+ ros-kilted-controller-interface : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-controller-manager : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-controller-manager-msgs : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-depth-image-proc : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-depthai : 3.7.1-3 → 3.9.0-1 
+ ros-kilted-diagnostic-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-diff-drive-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-easynav : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-bonxai-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-common : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-controller : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-core : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-costmap-common : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-costmap-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-costmap-planner : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-fusion-localizer : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-gps-localizer : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-interfaces : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-localizer : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-maps-manager : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-mpc-controller : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-mppi-controller : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-navmap-localizer : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-navmap-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-navmap-planner : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-octomap-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-planner : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-routes-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-sensors : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-serest-controller : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-simple-common : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-simple-controller : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-simple-maps-manager : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-simple-planner : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-easynav-support-py : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-system : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-tools : 0.3.2-1 → 0.4.1-1 
+ ros-kilted-easynav-vff-controller : 0.3.1-1 → 0.4.1-1 
+ ros-kilted-effort-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-etsi-its-cam-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cam-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cam-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cam-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cam-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cam-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-conversion-srvs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cpm-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cpm-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-cpm-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-denm-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mapem-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mapem-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mapem-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mcm-uulm-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mcm-uulm-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-mcm-uulm-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-messages : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-msgs-utils : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-primitives-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-rviz-plugins : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-spatem-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-spatem-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-spatem-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-vam-ts-coding : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-vam-ts-conversion : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-etsi-its-vam-ts-msgs : 3.4.0-1 → 3.5.0-1 
+ ros-kilted-examples-tf2-py : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-fastdds : 3.2.4-1 → 3.2.5-1 
+ ros-kilted-fkie-message-filters : 3.3.1-1 → 3.4.0-1 
+ ros-kilted-force-torque-sensor-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-forward-command-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-foxglove-bridge : 3.4.1-1 → 3.4.3-1 
+ ros-kilted-foxglove-msgs : 3.4.1-1 → 3.4.3-1 
+ ros-kilted-fuse : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-constraints : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-core : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-doc : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-graphs : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-loss : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-models : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-msgs : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-optimizers : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-publishers : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-tutorials : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-variables : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-fuse-viz : 1.2.6-1 → 1.2.7-1 
+ ros-kilted-generate-parameter-library : 0.7.4-1 → 0.7.6-1 
+ ros-kilted-generate-parameter-library-py : 0.7.4-1 → 0.7.6-1 
+ ros-kilted-geometric-shapes : 2.3.3-1 → 2.3.4-1 
+ ros-kilted-geometry-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-geometry2 : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-gpio-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-gps-msgs : 2.1.2-1 → 3.1.1-1 
+ ros-kilted-gps-sensor-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-gps-tools : 2.1.2-1 → 3.1.1-1 
+ ros-kilted-gps-umd : 2.1.2-1 → 3.1.1-1 
+ ros-kilted-gpsd-client : 2.1.2-1 → 3.1.1-1 
+ ros-kilted-graph-msgs : 0.2.0-6 → 0.2.1-1 
+ ros-kilted-gz-cmake-vendor : 0.3.3-1 → 0.3.4-1 
+ ros-kilted-gz-msgs-vendor : 0.2.4-1 → 0.2.5-1 
+ ros-kilted-gz-physics-vendor : 0.2.3-1 → 0.2.4-1 
+ ros-kilted-gz-sim-vendor : 0.2.3-1 → 0.2.4-1 
+ ros-kilted-gz-tools-vendor : 0.1.3-1 → 0.1.4-1 
+ ros-kilted-gz-transport-vendor : 0.2.4-1 → 0.2.5-1 
+ ros-kilted-hardware-interface : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-hardware-interface-testing : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-image-pipeline : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-image-proc : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-image-publisher : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-image-rotate : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-image-transport-plugins : 5.1.2-1 → 5.1.3-1 
+ ros-kilted-image-view : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-imu-sensor-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-joint-limits : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-joint-state-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-joint-state-publisher : 2.4.1-1 → 2.4.3-1 
+ ros-kilted-joint-state-publisher-gui : 2.4.1-1 → 2.4.3-1 
+ ros-kilted-joint-trajectory-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-jrl-cmakemodules : 1.1.2-1 → 2.2.4-1 
+ ros-kilted-kitti-metrics-eval : 2.8.0-1 → 3.0.0-3 
+ ros-kilted-launch : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-launch-pytest : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-launch-ros : 0.28.5-1 → 0.28.6-1 
+ ros-kilted-launch-testing : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-launch-testing-ament-cmake : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-launch-testing-ros : 0.28.5-1 → 0.28.6-1 
+ ros-kilted-launch-xml : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-launch-yaml : 3.8.7-1 → 3.8.8-1 
+ ros-kilted-libmavconn : 2.14.0-1 → 2.15.0-1 
+ ros-kilted-librealsense2 : 2.58.2-1 → 2.58.3-1 
+ ros-kilted-magic-enum : 0.9.7-1 → 0.9.8-1 
+ ros-kilted-mapviz : 2.6.5-1 → 4.0.2-1 
+ ros-kilted-mapviz-interfaces : 2.6.5-1 → 4.0.2-1 
+ ros-kilted-mapviz-plugins : 2.6.5-1 → 4.0.2-1 
+ ros-kilted-mavlink : 2026.6.6-1 → 2026.8.8-1 
+ ros-kilted-mavros : 2.14.0-1 → 2.15.0-1 
+ ros-kilted-mavros-examples : 2.14.0-1 → 2.15.0-1 
+ ros-kilted-mavros-extras : 2.14.0-1 → 2.15.0-1 
+ ros-kilted-mavros-msgs : 2.14.0-1 → 2.15.0-1 
+ ros-kilted-mecanum-drive-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-message-filters : 7.1.10-1 → 7.1.11-1 
+ ros-kilted-message-tf-frame-transformer : 1.1.3-1 → 1.1.3-2 
+ ros-kilted-metavision-driver : 3.0.0-1 → 3.0.2-1 
+ ros-kilted-mobile-robot-simulator : 2.0.0-1 → 2.0.1-1 
+ ros-kilted-mola : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-bridge-ros2 : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-demos : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-imu-preintegration : 1.16.0-1 → 1.17.1-1 
+ ros-kilted-mola-input-lidar-bin-dataset : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-input-rawlog : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-input-rosbag1 : 0.2.0-1 → 0.4.0-1 
+ ros-kilted-mola-input-rosbag2 : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-input-video : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-kernel : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-launcher : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-metric-maps : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-msgs : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-pose-list : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-relocalization : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-traj-tools : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-viz : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-viz-imgui : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-mola-yaml : 2.9.0-1 → 3.0.0-1 
+ ros-kilted-motion-primitives-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-moveit-visual-tools : 4.1.2-2 → 4.2.0-1 
+ ros-kilted-mp2p-icp : 2.10.3-1 → 2.12.0-1 
+ ros-kilted-mqtt-client : 2.4.1-2 → 2.5.0-1 
+ ros-kilted-mqtt-client-interfaces : 2.4.1-2 → 2.5.0-1 
+ ros-kilted-mrpt-apps : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-apps-cli : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-apps-gui : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-bayes : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-common : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-comms : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-config : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-containers : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-core : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-data : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-examples-cpp : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-expr : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-graphs : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-graphslam : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-gui : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-hwdrivers : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-img : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-imgui : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-io : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-kinematics : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-libapps : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libapps-cli : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-libapps-gui : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-libbase : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libgui : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libhwdrivers : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libmaps : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libmath : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libnav : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libobs : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libopengl : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libposes : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libslam : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-libtclap : 2.15.18-1 → 2.15.21-1 
+ ros-kilted-mrpt-maps : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-math : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-nav : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-obs : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-opengl : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-path-planning : 1.0.0-1 → 1.0.1-1 
+ ros-kilted-mrpt-poses : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-random : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-rtti : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-serialization : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-slam : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-system : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-tfest : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-topography : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-typemeta : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mrpt-viz : 3.0.4-1 → 3.1.3-1 
+ ros-kilted-mujoco-ros2-control : 0.0.3-1 → 0.1.0-2 
+ ros-kilted-mujoco-ros2-control-demos : 0.0.3-1 → 0.1.0-2 
+ ros-kilted-mujoco-ros2-control-msgs : 0.0.3-1 → 0.1.0-2 
+ ros-kilted-mujoco-ros2-control-plugins : 0.0.3-1 → 0.1.0-2 
+ ros-kilted-mujoco-vendor : 0.0.8-2 → 0.0.9-1 
+ ros-kilted-multires-image : 2.6.5-1 → 4.0.2-1 
+ ros-kilted-mvsim : 1.3.0-1 → 1.4.0-1 
+ ros-kilted-nanoflann : 1.10.1-1 → 1.11.0-1 
+ ros-kilted-nav-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-ntrip-client-node : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-omni-wheel-drive-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-ortools-vendor : 9.9.0-10 → 9.9.1-4 
+ ros-kilted-pal-statistics : 2.7.0-1 → 2.8.2-1 
+ ros-kilted-pal-statistics-msgs : 2.7.0-1 → 2.8.2-1 
+ ros-kilted-parallel-gripper-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-parameter-traits : 0.7.4-1 → 0.7.6-1 
+ ros-kilted-pcl-conversions : 2.8.0-1 → 2.10.0-1 
+ ros-kilted-pcl-ros : 2.8.0-1 → 2.10.0-1 
+ ros-kilted-perception-pcl : 2.8.0-1 → 2.10.0-1 
+ ros-kilted-pick-ik : 1.1.1-2 → 1.1.2-1 
+ ros-kilted-pid-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-pinocchio : 4.0.0-2 → 4.1.0-1 
+ ros-kilted-point-cloud-transport : 5.1.7-1 → 5.1.8-1 
+ ros-kilted-point-cloud-transport-py : 5.1.7-1 → 5.1.8-1 
+ ros-kilted-pose-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-position-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-protobuf-comm : 0.9.3-1 → 0.9.4-1 
+ ros-kilted-py-trees : 2.4.0-1 → 2.5.0-1 
+ ros-kilted-py-trees-js : 0.6.6-2 → 0.6.7-1 
+ ros-kilted-py-trees-ros : 2.4.0-1 → 2.5.0-1 
+ ros-kilted-py-trees-ros-interfaces : 2.1.1-2 → 2.1.2-1 
+ ros-kilted-py-trees-ros-tutorials : 2.4.0-1 → 2.5.0-1 
+ ros-kilted-py-trees-ros-viewer : 0.2.5-2 → 0.3.0-1 
+ ros-kilted-range-sensor-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-rcl : 10.1.4-1 → 10.1.5-1 
+ ros-kilted-rcl-action : 10.1.4-1 → 10.1.5-1 
+ ros-kilted-rcl-lifecycle : 10.1.4-1 → 10.1.5-1 
+ ros-kilted-rcl-yaml-param-parser : 10.1.4-1 → 10.1.5-1 
+ ros-kilted-rclcpp : 29.5.8-1 → 29.5.10-1 
+ ros-kilted-rclcpp-action : 29.5.8-1 → 29.5.10-1 
+ ros-kilted-rclcpp-components : 29.5.8-1 → 29.5.10-1 
+ ros-kilted-rclcpp-lifecycle : 29.5.8-1 → 29.5.10-1 
+ ros-kilted-rclpy : 9.1.5-1 → 9.1.6-1 
+ ros-kilted-rcpputils : 2.13.5-1 → 2.13.6-1 
+ ros-kilted-rcutils : 6.9.10-1 → 6.9.11-1 
+ ros-kilted-realsense2-camera : 4.58.2-1 → 4.58.3-1 
+ ros-kilted-realsense2-camera-msgs : 4.58.2-1 → 4.58.3-1 
+ ros-kilted-realsense2-description : 4.58.2-1 → 4.58.3-1 
+ ros-kilted-rig-reconfigure : 1.6.0-1 → 1.6.1-1 
+ ros-kilted-rko-lio : 0.3.0-1 → 0.3.2-1 
+ ros-kilted-rmw-desert : 3.0.1-1 → 3.0.2-1 
+ ros-kilted-rmw-fastrtps-cpp : 9.3.4-1 → 9.3.5-1 
+ ros-kilted-rmw-fastrtps-dynamic-cpp : 9.3.4-1 → 9.3.5-1 
+ ros-kilted-rmw-fastrtps-shared-cpp : 9.3.4-1 → 9.3.5-1 
+ ros-kilted-rmw-zenoh-cpp : 0.6.6-1 → 0.6.7-1 
+ ros-kilted-roboplan : 0.4.0-1 → 0.6.0-1 
+ ros-kilted-roboplan-rrt : 0.4.0-1 → 0.6.0-1 
+ ros-kilted-roboplan-simple-ik : 0.4.0-1 → 0.6.0-1 
+ ros-kilted-ros2-control : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-ros2-control-test-assets : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-ros2-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-ros2-controllers-test-nodes : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-ros2action : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2cli : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2cli-test-interfaces : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2component : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2controlcli : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-ros2doctor : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2interface : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2launch : 0.28.5-1 → 0.28.6-1 
+ ros-kilted-ros2lifecycle : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2lifecycle-test-fixtures : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2multicast : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2node : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2param : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2pkg : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2run : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2service : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-ros2topic : 0.38.3-2 → 0.38.4-1 
+ ros-kilted-rosapi : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosapi-msgs : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosbridge-library : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosbridge-msgs : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosbridge-server : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosbridge-suite : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosbridge-test-msgs : 3.3.0-1 → 3.3.1-1 
+ ros-kilted-rosidl-adapter : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-cli : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-cmake : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-generator-c : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-generator-cpp : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-generator-rs : 0.4.12-1 → 0.5.0-1 
+ ros-kilted-rosidl-generator-type-description : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-parser : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-pycommon : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-runtime-c : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-runtime-cpp : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-typesupport-interface : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-typesupport-introspection-c : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rosidl-typesupport-introspection-cpp : 4.9.6-1 → 4.9.8-1 
+ ros-kilted-rqt-controller-manager : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-rqt-joint-trajectory-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-rqt-msg : 1.6.1-1 → 1.6.2-1 
+ ros-kilted-rqt-tf-tree : 1.1.0-1 → 1.1.1-1 
+ ros-kilted-rtabmap : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-conversions : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-demos : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-examples : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-launch : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-msgs : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-odom : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-python : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-ros : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-rviz-plugins : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-slam : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-sync : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-util : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rtabmap-viz : 0.22.1-1 → 0.23.7-1 
+ ros-kilted-rttest : 0.18.3-1 → 0.18.4-1 
+ ros-kilted-rviz-2d-overlay-msgs : 1.4.1-1 → 1.4.2-1 
+ ros-kilted-rviz-2d-overlay-plugins : 1.4.1-1 → 1.4.2-1 
+ ros-kilted-rviz-assimp-vendor : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-common : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-default-plugins : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-ogre-vendor : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-rendering : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-rendering-tests : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-resource-interfaces : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-satellite : 4.3.0-1 → 4.3.1-1 
+ ros-kilted-rviz-visual-testing-framework : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-rviz-visual-tools : 4.1.4-4 → 4.2.0-1 
+ ros-kilted-rviz2 : 15.0.13-1 → 15.0.14-1 
+ ros-kilted-sbg-driver : 3.3.2-1 → 3.4.0-1 
+ ros-kilted-sensor-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-sensor-msgs-py : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-septentrio-gnss-driver : 1.4.6-1 → 1.4.8-1 
+ ros-kilted-shape-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-sick-safetyscanners-base : 1.0.3-2 → 1.0.4-1 
+ ros-kilted-sick-safetyscanners2 : 1.0.4-2 → 1.0.5-1 
+ ros-kilted-sick-safetyscanners2-interfaces : 1.0.0-2 → 1.0.1-1 
+ ros-kilted-srdfdom : 2.0.8-1 → 2.0.9-1 
+ ros-kilted-state-interfaces-broadcaster : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-std-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-std-srvs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-steering-controllers-library : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-stereo-image-proc : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-stereo-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-swri-cli-tools : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-console : 2.1.3-1 → 2.3.0-1 
+ ros-kilted-swri-console-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-dbw-interface : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-geometry-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-image-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-math-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-opencv-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-route-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-serial-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-swri-transform-util : 3.9.0-1 → 3.9.1-1 
+ ros-kilted-test-interface-files : 0.13.0-2 → 0.13.1-1 
+ ros-kilted-tf2 : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-bullet : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-eigen : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-eigen-kdl : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-geometry-msgs : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-kdl : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-msgs : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-py : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-ros : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-ros-py : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-sensor-msgs : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-tf2-tools : 0.41.7-1 → 0.41.9-1 
+ ros-kilted-theora-image-transport : 5.1.2-1 → 5.1.3-1 
+ ros-kilted-tile-map : 2.6.5-1 → 4.0.2-1 
+ ros-kilted-tlsf : 0.10.1-2 → 0.10.2-1 
+ ros-kilted-tlsf-cpp : 0.18.3-1 → 0.18.4-1 
+ ros-kilted-toppra : 0.6.8-1 → 0.6.9-1 
+ ros-kilted-tracetools-image-pipeline : 6.0.12-1 → 6.0.13-1 
+ ros-kilted-trajectory-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-transmission-interface : 5.14.2-1 → 5.17.0-1 
+ ros-kilted-tricycle-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-tricycle-steering-controller : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-ublox-dgnss : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-ublox-dgnss-node : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-ublox-nav-sat-fix-hp-node : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-ublox-ubx-interfaces : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-ublox-ubx-msgs : 0.7.4-1 → 0.7.5-1 
+ ros-kilted-unique-identifier-msgs : 2.7.0-2 → 2.7.1-1 
+ ros-kilted-ur : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-ur-calibration : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-ur-client-library : 2.12.0-1 → 2.14.1-1 
+ ros-kilted-ur-controllers : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-ur-dashboard-msgs : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-ur-moveit-config : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-ur-msgs : 2.5.0-1 → 2.6.0-1 
+ ros-kilted-ur-robot-driver : 4.6.0-1 → 4.8.0-1 
+ ros-kilted-velocity-controllers : 5.15.1-1 → 5.17.0-1 
+ ros-kilted-visualization-msgs : 5.5.2-1 → 5.5.3-1 
+ ros-kilted-warehouse-ros : 2.0.5-2 → 2.0.8-1 
+ ros-kilted-warehouse-ros-sqlite : 1.0.5-2 → 1.0.9-1 
+ ros-kilted-yasmin : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-cli : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-demos : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-editor : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-factory : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-msgs : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-pcl : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-plugins-manager : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-ros : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-yasmin-viewer : 5.0.0-1 → 6.1.1-1 
+ ros-kilted-zenoh-cpp-vendor : 0.6.6-1 → 0.6.7-1 
+ ros-kilted-zenoh-security-tools : 0.6.6-1 → 0.6.7-1 
+ ros-kilted-zstd-image-transport : 5.1.2-1 → 5.1.3-1 
+
+ Removed Packages [0]: 
+
+ (none) 
+
+ Thanks to all ROS maintainers who make packages available to the ROS community. The above list of packages was made possible by the work of the following maintainers: 
+
+ Aarav Gupta 
+ Addisu Z. Taddese 
+ Aditya Pande 
+ Alejandro Hernanadez 
+ Alejandro Hernández 
+ Alejandro Hernandez Cordero 
+ Aljaž Sebastjan Ahtik 
+ Audrow Nash 
+ Bence Magyar 
+ Bernd Pfrommer 
+ Błażej Sowa 
+ bmagyar 
+ Brandon Ong 
+ Chris Lalancette 
+ Christian Eichmann 
+ Daniel Stonier 
+ Dave Coleman 
+ Davide Costa 
+ Dharini Dutia 
+ Emerson Knapp 
+ Enrique Fernandez 
+ Esteve Fernandez 
+ Felix Exner 
+ Foxglove 
+ Francisco Martín Rico 
+ G.A. vd. Hoorn 
+ Geoffrey Biggs 
+ Geoff Sokoll 
+ Gonzalo Mier 
+ Guilhem Saurel 
+ Haroon Rasheed 
+ Hung Pham 
+ Isaac I.Y. Saito 
+ Ivan Paunovic 
+ Jean-Pierre Busch 
+ Jodi Graf 
+ Jordan Palacios 
+ Jose Luis Blanco-Claraco 
+ Jose-Luis Blanco-Claraco 
+ Jose Miguel Guerrero Hernandez 
+ Juan S. Cely G. 
+ Julia Jia 
+ Justin Carpentier 
+ KazutoMurase 
+ Kei Okada 
+ Kenji Brameld 
+ Lennart Reiher 
+ LibRealSense ROS Team 
+ Lukas Ostendorf 
+ Maik Knof 
+ Mathieu Labbe 
+ Meher Malladi 
+ Miguel Ángel de Miguel 
+ Miguel Ángel González Santamarta 
+ Mike Lautman 
+ MoveIt Release Team 
+ Nathan Dunkelberger 
+ Neargye 
+ Nick Hortovanyi 
+ Paul Bovbel 
+ Raul Sanchez Mateos 
+ Ryohei Ueda 
+ Sai Kishor Kothakota 
+ SBG Systems 
+ Sebastian Castro 
+ Shane Loretz 
+ Shohei Fujii 
+ Southwest Research Institute 
+ Stephen Williams 
+ Tarik Viehmann 
+ Team Spatzenhirn 
+ Tibor Dome 
+ Tim Clephas 
+ Timo Röhling 
+ Tom Moore 
+ Tully Foote 
+ Tyler Weaver 
+ Ubuntu Robotics 
+ Víctor Mayoral-Vilches 
+ Victor Paleologue 
+ Victor Paléologue 
+ Vincent Rabaud 
+ Vladimir Ermakov 
+ Yadunund 
+ Yuki Furuta

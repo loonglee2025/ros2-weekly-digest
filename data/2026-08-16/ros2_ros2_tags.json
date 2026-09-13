@@ -1,0 +1,302 @@
+[
+  {
+    "name": "typed-ast-archives",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/typed-ast-archives",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/typed-ast-archives",
+    "commit": {
+      "sha": "3648fb3998eebf42cb7bd376f77e0df49046b491",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/3648fb3998eebf42cb7bd376f77e0df49046b491"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3R5cGVkLWFzdC1hcmNoaXZlcw=="
+  },
+  {
+    "name": "release-rolling-nightlies",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-rolling-nightlies",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-rolling-nightlies",
+    "commit": {
+      "sha": "0be188e4b093c718eafb409e8535f7c47b9a48c7",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/0be188e4b093c718eafb409e8535f7c47b9a48c7"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2Utcm9sbGluZy1uaWdodGxpZXM="
+  },
+  {
+    "name": "release-lyrical-beta-20260430",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-beta-20260430",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-beta-20260430",
+    "commit": {
+      "sha": "0f0be89aacc0c819595d9e877661bb1e29b35538",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/0f0be89aacc0c819595d9e877661bb1e29b35538"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC1iZXRhLTIwMjYwNDMw"
+  },
+  {
+    "name": "release-lyrical-beta-20260429",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-beta-20260429",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-beta-20260429",
+    "commit": {
+      "sha": "58ff30817ac94ed1f6536b53012e2167c2c51c7d",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/58ff30817ac94ed1f6536b53012e2167c2c51c7d"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC1iZXRhLTIwMjYwNDI5"
+  },
+  {
+    "name": "release-lyrical-beta-20260429-1",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-beta-20260429-1",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-beta-20260429-1",
+    "commit": {
+      "sha": "7cdbc6ddf916e931a165d975b72bd631d90d0cd2",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/7cdbc6ddf916e931a165d975b72bd631d90d0cd2"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC1iZXRhLTIwMjYwNDI5LTE="
+  },
+  {
+    "name": "release-lyrical-20260807",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-20260807",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-20260807",
+    "commit": {
+      "sha": "8b631e62aadee50d564c7388bb24c34da9433b81",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/8b631e62aadee50d564c7388bb24c34da9433b81"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC0yMDI2MDgwNw=="
+  },
+  {
+    "name": "release-lyrical-20260623",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-20260623",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-20260623",
+    "commit": {
+      "sha": "5281e3bb364f735ee8ac09a42451fc199f0ade7c",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/5281e3bb364f735ee8ac09a42451fc199f0ade7c"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC0yMDI2MDYyMw=="
+  },
+  {
+    "name": "release-lyrical-20260522",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-lyrical-20260522",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-lyrical-20260522",
+    "commit": {
+      "sha": "fc6770a33f7fca892d74ebc5d6a8afcbbde5f50e",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/fc6770a33f7fca892d74ebc5d6a8afcbbde5f50e"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbHlyaWNhbC0yMDI2MDUyMg=="
+  },
+  {
+    "name": "release-latest",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-latest",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-latest",
+    "commit": {
+      "sha": "5a7323fd3dfdc66c45c9c2d841a2d412764f5184",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/5a7323fd3dfdc66c45c9c2d841a2d412764f5184"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtbGF0ZXN0"
+  },
+  {
+    "name": "release-kilted-beta-20250430",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-kilted-beta-20250430",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-kilted-beta-20250430",
+    "commit": {
+      "sha": "5cdb74bcf9398583be168b650a0c00498bfec862",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/5cdb74bcf9398583be168b650a0c00498bfec862"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2Uta2lsdGVkLWJldGEtMjAyNTA0MzA="
+  },
+  {
+    "name": "release-kilted-beta2-20250507",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-kilted-beta2-20250507",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-kilted-beta2-20250507",
+    "commit": {
+      "sha": "cbe850ea4ca60cbeddc65cd30d27088fac6ae8d6",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/cbe850ea4ca60cbeddc65cd30d27088fac6ae8d6"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2Uta2lsdGVkLWJldGEyLTIwMjUwNTA3"
+  },
+  {
+    "name": "release-kilted-20250728",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-kilted-20250728",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-kilted-20250728",
+    "commit": {
+      "sha": "99a021fa6f7c2b2b76b7af6f7c08248d6a0cc835",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/99a021fa6f7c2b2b76b7af6f7c08248d6a0cc835"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2Uta2lsdGVkLTIwMjUwNzI4"
+  },
+  {
+    "name": "release-kilted-20250523",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-kilted-20250523",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-kilted-20250523",
+    "commit": {
+      "sha": "83368e830120ade8f1102f4b28d96dbd53ea302b",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/83368e830120ade8f1102f4b28d96dbd53ea302b"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2Uta2lsdGVkLTIwMjUwNTIz"
+  },
+  {
+    "name": "release-jazzy-beta-20240430",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-beta-20240430",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-beta-20240430",
+    "commit": {
+      "sha": "056b3e0bb830fb281fd84835adb4c7d6584612d5",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/056b3e0bb830fb281fd84835adb4c7d6584612d5"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktYmV0YS0yMDI0MDQzMA=="
+  },
+  {
+    "name": "release-jazzy-20260618",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20260618",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20260618",
+    "commit": {
+      "sha": "a38203a7da336eb123122bc241f53e78d2a0284f",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/a38203a7da336eb123122bc241f53e78d2a0284f"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNjA2MTg="
+  },
+  {
+    "name": "release-jazzy-20260128",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20260128",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20260128",
+    "commit": {
+      "sha": "e6936ad04a488f0f0902ae7a1a79ca20d9b53e29",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/e6936ad04a488f0f0902ae7a1a79ca20d9b53e29"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNjAxMjg="
+  },
+  {
+    "name": "release-jazzy-20250820",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20250820",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20250820",
+    "commit": {
+      "sha": "dd456ce1ab7abc71c80b166210af76944ab03815",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/dd456ce1ab7abc71c80b166210af76944ab03815"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNTA4MjA="
+  },
+  {
+    "name": "release-jazzy-20250430",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20250430",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20250430",
+    "commit": {
+      "sha": "a4270e084e8207ca72f3cd6a4ffee853c7d9a4a3",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/a4270e084e8207ca72f3cd6a4ffee853c7d9a4a3"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNTA0MzA="
+  },
+  {
+    "name": "release-jazzy-20250407",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20250407",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20250407",
+    "commit": {
+      "sha": "bbb8a02348071f388f0727cc774d4c4d72de904b",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/bbb8a02348071f388f0727cc774d4c4d72de904b"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNTA0MDc="
+  },
+  {
+    "name": "release-jazzy-20241223",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20241223",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20241223",
+    "commit": {
+      "sha": "c3b8e7684316eafb2cd4fa3c17f5d87363acaddb",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/c3b8e7684316eafb2cd4fa3c17f5d87363acaddb"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNDEyMjM="
+  },
+  {
+    "name": "release-jazzy-20240919",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20240919",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20240919",
+    "commit": {
+      "sha": "364153ba97807924b72f3f8e12c2033bf79bf444",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/364153ba97807924b72f3f8e12c2033bf79bf444"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNDA5MTk="
+  },
+  {
+    "name": "release-jazzy-20240705",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20240705",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20240705",
+    "commit": {
+      "sha": "a964556303a322b91de47e954824c18e627a4bda",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/a964556303a322b91de47e954824c18e627a4bda"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNDA3MDU="
+  },
+  {
+    "name": "release-jazzy-20240523",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-jazzy-20240523",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-jazzy-20240523",
+    "commit": {
+      "sha": "2ad28e6d2cc31a074c587e11fd0b835217c8142c",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/2ad28e6d2cc31a074c587e11fd0b835217c8142c"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtamF6enktMjAyNDA1MjM="
+  },
+  {
+    "name": "release-iron-beta-20230502",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-beta-20230502",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-beta-20230502",
+    "commit": {
+      "sha": "29e3896d0cb048c7db6d7f2bbbe47a88c9078be1",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/29e3896d0cb048c7db6d7f2bbbe47a88c9078be1"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi1iZXRhLTIwMjMwNTAy"
+  },
+  {
+    "name": "release-iron-20241204",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20241204",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20241204",
+    "commit": {
+      "sha": "85f8120ed02848f13cd6e82989d54f01eb7afb28",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/85f8120ed02848f13cd6e82989d54f01eb7afb28"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDI0MTIwNA=="
+  },
+  {
+    "name": "release-iron-20240712",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20240712",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20240712",
+    "commit": {
+      "sha": "399f2a7012e50df23cc9c3c70505c353f8921cd4",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/399f2a7012e50df23cc9c3c70505c353f8921cd4"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDI0MDcxMg=="
+  },
+  {
+    "name": "release-iron-20240423",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20240423",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20240423",
+    "commit": {
+      "sha": "72f3163c6bff189a3515cdee2f70303c912e79cf",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/72f3163c6bff189a3515cdee2f70303c912e79cf"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDI0MDQyMw=="
+  },
+  {
+    "name": "release-iron-20240209",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20240209",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20240209",
+    "commit": {
+      "sha": "d6f612fb5b69af2ba997945be299f0474cf46209",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/d6f612fb5b69af2ba997945be299f0474cf46209"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDI0MDIwOQ=="
+  },
+  {
+    "name": "release-iron-20231120",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20231120",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20231120",
+    "commit": {
+      "sha": "d7829505df93798fd6ae595e831dae17e182d5d9",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/d7829505df93798fd6ae595e831dae17e182d5d9"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDIzMTEyMA=="
+  },
+  {
+    "name": "release-iron-20230912",
+    "zipball_url": "https://api.github.com/repos/ros2/ros2/zipball/refs/tags/release-iron-20230912",
+    "tarball_url": "https://api.github.com/repos/ros2/ros2/tarball/refs/tags/release-iron-20230912",
+    "commit": {
+      "sha": "9e88cad7e2fa63ad418cbda88e18db86992a43c3",
+      "url": "https://api.github.com/repos/ros2/ros2/commits/9e88cad7e2fa63ad418cbda88e18db86992a43c3"
+    },
+    "node_id": "MDM6UmVmMzEyODU5NDI6cmVmcy90YWdzL3JlbGVhc2UtaXJvbi0yMDIzMDkxMg=="
+  }
+]

@@ -1,0 +1,84 @@
+[
+ {
+  "sha": "c9417b117e8a7e877f09745461117a275a6c6e29",
+  "node_id": "C_kwDOAsXFmdoAKGM5NDE3YjExN2U4YTdlODc3ZjA5NzQ1NDYxMTE3YTI3NWE2YzZlMjk",
+  "commit": {
+   "author": {
+    "name": "hugogo1998",
+    "email": "295481948+hugogo1998@users.noreply.github.com",
+    "date": "2026-08-24T10:45:11Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T10:45:11Z"
+   },
+   "message": "Fix future-wait callback accumulation on every spin path (#1702)\n\nEvery call to future.add_done_callback() appends unconditionally, and\nevery wait path here (spin_until_future_complete's internal loop and\nboth spin_once_until_future_complete implementations) called it fresh\non each spin. A single wait that takes N spins to complete registers\nN callbacks; when the future completes, each becomes its own Task,\nO(N) memory and work that grows without bound the longer a caller\nwaits.\n\nRegister one stable wake-on-done callback per Executor instance and\nadd it to a future at most once (checking future._callbacks first),\nvia a new _add_wake_on_done() helper used by all three call sites:\nspin_until_future_complete, and both SingleThreadedExecutor's and\nMultiThreadedExecutor's spin_once_until_future_complete. This covers\nevery way a caller waits on a future, including looping\nspin_once_until_future_complete directly, not just the internal loop\ninside spin_until_future_complete.\n\nSigned-off-by: agentperfopt <295481948+agentperfopt@users.noreply.github.com>\nSigned-off-by: hugogo1998 <295481948+hugogo1998@users.noreply.github.com>\nCo-authored-by: agentperfopt <295481948+agentperfopt@users.noreply.github.com>",
+   "tree": {
+    "sha": "6a8efbf746e153737e142c6cc6f74f642f3e8324",
+    "url": "https://api.github.com/repos/ros2/rclpy/git/trees/6a8efbf746e153737e142c6cc6f74f642f3e8324"
+   },
+   "url": "https://api.github.com/repos/ros2/rclpy/git/commits/c9417b117e8a7e877f09745461117a275a6c6e29",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjCC3CRC1aQ7uu5UhlAAASlcQAIsFiwXj+GoxX16GInQpcGEm\nBdAkfoSwjtvTkZPslf9AXmyuUWs2sP/el4kT0f9sYKz3OyJDddO9sBeZ/6QbUgo8\ncTN+zqAvTyvOmZViG+3CBHabzUkgf8uTr2Co7g2K1j33O9svNqInT1PNYG7PuCEZ\nS+SIm49tFj92L5TK18O4QrGPJDxod3HjUC99rBw60QXTKmbdglHk/tB/694xXhDo\nUX0tlFV5Iv47+43jHr1jHxQUKGOQ0QkB4CYFDcV7014+BYyuSHeixwy3sPC5HBSh\ndVPRCE2pOhm8qye2sPSbTmcl2+QM4fwUEuzRXC4/RyAB3M/Q0AOTPd98XxITVXI7\nsIVzdtqu7Y64A+WWTGSzQkG4de+LNCPePYcfWxo3f+qbDot/aLtfIJWFnhzTj2zm\nBi3tK2JYsjeP4qvp1A9jOYmCu4TxcSM7lT0AxbNzVkGdEs6wg4fSIj38JSu0W52l\n6FaqZLcKsDjtg+X8x/n5duqgKisd/c4tZ4zzbBRNIiQgaVfsiEwnxVmI3KdkYBeQ\nKl+D/1Qss9TQjFB2wd0k6xzs4nvc0Z2siDkJsLDYv5khW5GlApiF6FfZV6gPsFTe\nv/LKuN4UTz3RPOMMFwwzKBpLRCAJyaq8hoVzfk5KFuoZo+SiAKRAKBQ6K7m5jlka\n2zIGaHcMtWIljdwVWd+P\n=T0vy\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 6a8efbf746e153737e142c6cc6f74f642f3e8324\nparent 64491410c681fe76ed04ce5d193a20b796a1b984\nauthor hugogo1998 <295481948+hugogo1998@users.noreply.github.com> 1787568311 -0400\ncommitter GitHub <noreply@github.com> 1787568311 +0200\n\nFix future-wait callback accumulation on every spin path (#1702)\n\nEvery call to future.add_done_callback() appends unconditionally, and\nevery wait path here (spin_until_future_complete's internal loop and\nboth spin_once_until_future_complete implementations) called it fresh\non each spin. A single wait that takes N spins to complete registers\nN callbacks; when the future completes, each becomes its own Task,\nO(N) memory and work that grows without bound the longer a caller\nwaits.\n\nRegister one stable wake-on-done callback per Executor instance and\nadd it to a future at most once (checking future._callbacks first),\nvia a new _add_wake_on_done() helper used by all three call sites:\nspin_until_future_complete, and both SingleThreadedExecutor's and\nMultiThreadedExecutor's spin_once_until_future_complete. This covers\nevery way a caller waits on a future, including looping\nspin_once_until_future_complete directly, not just the internal loop\ninside spin_until_future_complete.\n\nSigned-off-by: agentperfopt <295481948+agentperfopt@users.noreply.github.com>\nSigned-off-by: hugogo1998 <295481948+hugogo1998@users.noreply.github.com>\nCo-authored-by: agentperfopt <295481948+agentperfopt@users.noreply.github.com>",
+    "verified_at": "2026-08-24T10:45:11Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/rclpy/commits/c9417b117e8a7e877f09745461117a275a6c6e29",
+  "html_url": "https://github.com/ros2/rclpy/commit/c9417b117e8a7e877f09745461117a275a6c6e29",
+  "comments_url": "https://api.github.com/repos/ros2/rclpy/commits/c9417b117e8a7e877f09745461117a275a6c6e29/comments",
+  "author": {
+   "login": "hugogo1998",
+   "id": 295481948,
+   "node_id": "U_kgDOEZyyXA",
+   "avatar_url": "https://avatars.githubusercontent.com/u/295481948?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/hugogo1998",
+   "html_url": "https://github.com/hugogo1998",
+   "followers_url": "https://api.github.com/users/hugogo1998/followers",
+   "following_url": "https://api.github.com/users/hugogo1998/following{/other_user}",
+   "gists_url": "https://api.github.com/users/hugogo1998/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/hugogo1998/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/hugogo1998/subscriptions",
+   "organizations_url": "https://api.github.com/users/hugogo1998/orgs",
+   "repos_url": "https://api.github.com/users/hugogo1998/repos",
+   "events_url": "https://api.github.com/users/hugogo1998/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/hugogo1998/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "64491410c681fe76ed04ce5d193a20b796a1b984",
+    "url": "https://api.github.com/repos/ros2/rclpy/commits/64491410c681fe76ed04ce5d193a20b796a1b984",
+    "html_url": "https://github.com/ros2/rclpy/commit/64491410c681fe76ed04ce5d193a20b796a1b984"
+   }
+  ]
+ }
+]

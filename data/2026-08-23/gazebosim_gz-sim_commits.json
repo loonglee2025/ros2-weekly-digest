@@ -1,0 +1,494 @@
+[
+  {
+    "sha": "c90378b7c5ca46f3419abc546d485b2248aa4675",
+    "node_id": "C_kwDOD0AxsdoAKGM5MDM3OGI3YzVjYTQ2ZjM0MTlhYmM1NDZkNDg1YjIyNDhhYTQ2NzU",
+    "commit": {
+      "author": {
+        "name": "Carlos Agüero",
+        "email": "caguero@honurobotics.com",
+        "date": "2026-08-21T14:02:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T14:02:01Z"
+      },
+      "message": "Use SetComponentData in Link velocity setters (#3746)\n\nGenerated-By: Claude Opus 4.8 (1M context)\n\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>",
+      "tree": {
+        "sha": "57ecbb2c35022451add74bc5e3b5e3f6ecef9f10",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/57ecbb2c35022451add74bc5e3b5e3f6ecef9f10"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/c90378b7c5ca46f3419abc546d485b2248aa4675",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiFpZCRC1aQ7uu5UhlAAA9V4QAGKZOtI+wEKUXxYKlt1GYp/k\ny9J29EcMr2C80eWLZOPMcmg866E8G6jBEWNDiC2HX97ooxNlTup4OQAYvyGwCyH7\nlfHXXXIi5XwSh8SYXwbPDV4QtW2i+250clNFXTXQs6ARnCC69tfbiIK0gkbuZdnk\nPzbGbgba4BihoFE49uyqsUXbMcABwDcG3y9vugD4cfyO5Su7zkd4R3FgCnuFLNXa\nCJSSRHvOonJeY3yBQWH7aLeq6qgbptw+f9HsZs4lhQbz9HTNcaecM2J3rNGXCoZG\nasgyFE55/ds0BTIla6glxBk7as0JIwluXXsb9srKexReEKgIxuOJo9Q6rlFijrE1\nu1CaCt0P+FnPjvs/7Y/VqBWbNArxa0RUJXq7lMU8RkIqvZcSIbi2FdmqaEOJFATB\nHNbaWpFnfYwg1cIeNaNhimZZu1zRP5asSzFebxDeJCGcUoGeVxIqwZRCWwHSaIu5\no0sP0EmBkfUmHhlFRvkyCHVUaFDXLJJMS0UZyn3UFYKgxYCioDJ4ihiOeG1nmc1d\nOlKud7Wotvydz1kHlyzoem2SuFLeewSLv7rGT/lzL1h9wpcvaOFmIYhaD7e9aQv9\nBSNw8KDBHImRvlkYOoT9KAWEeKa3YfUGzfzZXSWyuUaLfffLj9pw/t2ukBPTVt3y\n1qF7DZed03SIhI8Gjzla\n=ECOU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 57ecbb2c35022451add74bc5e3b5e3f6ecef9f10\nparent 748d64f5e5b5f8f771680e01319e2d4d37cb9af0\nauthor Carlos Agüero <caguero@honurobotics.com> 1787320921 +0200\ncommitter GitHub <noreply@github.com> 1787320921 +0200\n\nUse SetComponentData in Link velocity setters (#3746)\n\nGenerated-By: Claude Opus 4.8 (1M context)\n\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>",
+        "verified_at": "2026-08-21T14:02:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/c90378b7c5ca46f3419abc546d485b2248aa4675",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/c90378b7c5ca46f3419abc546d485b2248aa4675",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/c90378b7c5ca46f3419abc546d485b2248aa4675/comments",
+    "author": {
+      "login": "caguero",
+      "id": 1440739,
+      "node_id": "MDQ6VXNlcjE0NDA3Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1440739?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/caguero",
+      "html_url": "https://github.com/caguero",
+      "followers_url": "https://api.github.com/users/caguero/followers",
+      "following_url": "https://api.github.com/users/caguero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caguero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caguero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caguero/subscriptions",
+      "organizations_url": "https://api.github.com/users/caguero/orgs",
+      "repos_url": "https://api.github.com/users/caguero/repos",
+      "events_url": "https://api.github.com/users/caguero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caguero/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/748d64f5e5b5f8f771680e01319e2d4d37cb9af0"
+      }
+    ]
+  },
+  {
+    "sha": "748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+    "node_id": "C_kwDOD0AxsdoAKDc0OGQ2NGY1ZTViNWY4Zjc3MTY4MGUwMTMxOWUyZDRkMzdjYjlhZjA",
+    "commit": {
+      "author": {
+        "name": "Carlos Agüero",
+        "email": "caguero@honurobotics.com",
+        "date": "2026-08-20T08:51:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-20T08:51:36Z"
+      },
+      "message": "Fix graded buoyancy for rotated collision shapes (#3880)\n\nAssisted-by: Claude Fable 5 <noreply@anthropic.com>\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>",
+      "tree": {
+        "sha": "2c3a5319f76b56cfe83d53564b82176116b8b3f0",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/2c3a5319f76b56cfe83d53564b82176116b8b3f0"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhsAYCRC1aQ7uu5UhlAAAmVkQAFTYCr/bTK3an8EzoArwx3GE\naYXn0nPQRhxZHTF7QcHoKu1F5FSOwRow2yDQBLmvpV2bA5eIsoAYNkFCjGbWLRm7\n536NgO2Z+Msn5N1VxDeeuGH3kffghsVPBd9pfgBf6KAvj+cIE1ka/LXakXe2g2kr\ntXVwbjqcIrdKhQeNxR1EITyiBl3FsSDbn/h3sb5kIQi+uUeoJ+00RYiggRfu5kJc\np8U3vJILiUcNHoJglO5vBoieqZMwbA+25iLfz80JAJ91DakJJijPvpgY9Jl/qzJb\n2j/vY+l8VfsWhPT/PcouDleIsFncd/Cw5y78MaQ2c2J303j9OTK09lmQvXnf6R0D\n3w4AwGX8qN6n5cENFbhosvn71C1GCs+g8u5E1aLKXCyd/29g1dgcAnet/cSVWntb\nnkh4ZL8srIvVMEwUowf5A4sy2mHiLi+QNebYOecZrlkqwhjWEb6f3m97Jnqu8bDX\nXi8L46T4XBmp5+1DdHZl2zqzkW73le1cx89sztxzy8El6auId3px+3Rh392L6E7K\n13ZTqkuKe40pyWEyHXywJ6Nnbq4OVNoPTA33dMjsTzK9c8OOFkkjQgsmxU2+7Rnh\nhb2Hi9uwq+Z3Uq9wYbHNXD+fqMc3X1YPRRcwCTfn28rhIoL8CnuIUcuibxtasKpP\nxT91z2z7VWf06o4BT915\n=3Fiv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2c3a5319f76b56cfe83d53564b82176116b8b3f0\nparent 2242d9cebd2f7f01cc0038fcb3bec012e1a52366\nauthor Carlos Agüero <caguero@honurobotics.com> 1787215896 +0200\ncommitter GitHub <noreply@github.com> 1787215896 +0200\n\nFix graded buoyancy for rotated collision shapes (#3880)\n\nAssisted-by: Claude Fable 5 <noreply@anthropic.com>\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>",
+        "verified_at": "2026-08-20T08:51:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/748d64f5e5b5f8f771680e01319e2d4d37cb9af0",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/748d64f5e5b5f8f771680e01319e2d4d37cb9af0/comments",
+    "author": {
+      "login": "caguero",
+      "id": 1440739,
+      "node_id": "MDQ6VXNlcjE0NDA3Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1440739?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/caguero",
+      "html_url": "https://github.com/caguero",
+      "followers_url": "https://api.github.com/users/caguero/followers",
+      "following_url": "https://api.github.com/users/caguero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caguero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caguero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caguero/subscriptions",
+      "organizations_url": "https://api.github.com/users/caguero/orgs",
+      "repos_url": "https://api.github.com/users/caguero/repos",
+      "events_url": "https://api.github.com/users/caguero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caguero/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/2242d9cebd2f7f01cc0038fcb3bec012e1a52366"
+      }
+    ]
+  },
+  {
+    "sha": "2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+    "node_id": "C_kwDOD0AxsdoAKDIyNDJkOWNlYmQyZjdmMDFjYzAwMzhmY2IzYmVjMDEyZTFhNTIzNjY",
+    "commit": {
+      "author": {
+        "name": "Janosch Machowinski",
+        "email": "jmachowinski@users.noreply.github.com",
+        "date": "2026-08-20T06:35:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-20T06:35:59Z"
+      },
+      "message": "Get clock cpu load (#3816)\n\nSigned-off-by: Janosch Machowinski <J.Machowinski@cellumation.com>",
+      "tree": {
+        "sha": "a74d9ed06191a06b4863cbaf4e300ff825c5c6cf",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/a74d9ed06191a06b4863cbaf4e300ff825c5c6cf"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhqBPCRC1aQ7uu5UhlAAAk3EQAFg7RdPaFRBzwp96T9M5OEYS\nZx9xDDKit7EQegjKxphMbL55yixY9D+mEhLU1A0IDV2sihaelBbmB8CGil8XOfGh\n8ygqboyvCrE8iy+zFBXHZ55W7ImfoyJmg1WacOoggQYouHfDFhJ55vY6Asbd9H5b\niMos3DV/VCjGd8Btsr9EBFH4zBaFjSZ/piR6PPEcAifZKOEU1vW53nj6clfL3dST\nTqZClne8wqtcvwYVZdaUXKrSLJ3Zhj6ngYKuY3iB/jjaUht4FvgMA3a1shfY17Kb\nSceZeQuUpARiXM9KMIcZEdZE/YVXgMv1wqa00qrmaJsoH48VcEwiUZUPk2jPfTJg\n5lhKz6ePSYDzcPxPHVZmlOfPyA0y4XFNGg48cQu1X7QCdN4T04UTacXGxuaxH6oo\nFS8UXnpzowS9ZPrk0S6EvYV3lLYT3X/TJ2FRW4626pt6XmQQbVrfzbFhkYtp3kx1\nbGX1kImw7gJ6Xw0uAvl/IMovaR6x7WqWWNVybbGeAj4kUKGs4n4mnNwTBersuw/r\nN3U2u+V/OnYgH9z4LzUHGoW2Ff99kmS6XlqJikKSNABdegSQUcycnlGBrKM0biWs\n7rZ0b6HhcYVW7c/QCPqHbD2sxxJkDM5eH3d7fJ9odqSWQ4PemhIEd6sYhxUvpbcl\nr9rM2WxWHXqI2E1m0c4L\n=rkmT\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a74d9ed06191a06b4863cbaf4e300ff825c5c6cf\nparent 85fa3b1341f2324005de62a221eb928e90366aca\nauthor Janosch Machowinski <jmachowinski@users.noreply.github.com> 1787207759 +0200\ncommitter GitHub <noreply@github.com> 1787207759 +0800\n\nGet clock cpu load (#3816)\n\nSigned-off-by: Janosch Machowinski <J.Machowinski@cellumation.com>",
+        "verified_at": "2026-08-20T06:36:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/2242d9cebd2f7f01cc0038fcb3bec012e1a52366",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/2242d9cebd2f7f01cc0038fcb3bec012e1a52366/comments",
+    "author": {
+      "login": "jmachowinski",
+      "id": 7935404,
+      "node_id": "MDQ6VXNlcjc5MzU0MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7935404?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jmachowinski",
+      "html_url": "https://github.com/jmachowinski",
+      "followers_url": "https://api.github.com/users/jmachowinski/followers",
+      "following_url": "https://api.github.com/users/jmachowinski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jmachowinski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jmachowinski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jmachowinski/subscriptions",
+      "organizations_url": "https://api.github.com/users/jmachowinski/orgs",
+      "repos_url": "https://api.github.com/users/jmachowinski/repos",
+      "events_url": "https://api.github.com/users/jmachowinski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jmachowinski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "85fa3b1341f2324005de62a221eb928e90366aca",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/85fa3b1341f2324005de62a221eb928e90366aca",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/85fa3b1341f2324005de62a221eb928e90366aca"
+      }
+    ]
+  },
+  {
+    "sha": "85fa3b1341f2324005de62a221eb928e90366aca",
+    "node_id": "C_kwDOD0AxsdoAKDg1ZmEzYjEzNDFmMjMyNDAwNWRlNjJhMjIxZWI5MjhlOTAzNjZhY2E",
+    "commit": {
+      "author": {
+        "name": "Jiayi Cai",
+        "email": "126311933+C88-YQ@users.noreply.github.com",
+        "date": "2026-08-18T15:11:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T15:11:55Z"
+      },
+      "message": "Display namespace in gui (#3872)\n\nSigned-off-by: C88-YQ <1409947012@qq.com>",
+      "tree": {
+        "sha": "7273d1e31c2ffe5f147f1a33e913bcda9a4295a3",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/7273d1e31c2ffe5f147f1a33e913bcda9a4295a3"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/85fa3b1341f2324005de62a221eb928e90366aca",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhHY7CRC1aQ7uu5UhlAAAEcMQACAM0qk4gx4VEceYD+ehFEAJ\nlsXZ29xquwz577JXREvLWq9iob9ZqLul+tfW0RiVB02e8RNTbiZLZuu1mMzjF7OP\n0pf3QeJnmuTbj3TXsINr8Bs9xF1kdYg0Bojf6rOBMNAgErpf8TQNvPz+o/afvwZ3\nZbjhDlMTHbfLpgre0ar7CFhrHMVWopWpf780J3z5dZMnjpcGeXUWa6jn+yZmIhnS\nYGVtCTMJbLYfOvyQ+88ivlYVxuW7XqITw29ZU6TYfAYxOjU75gO7dssonZ3RpBAu\nueeQZnWmKUWkMxircmvhBAIZ6Y+2oOeBtRztnVgdJW+AtTmJPG9TMHykSo5+KnSc\nT6+Ftei7TgStJzwLP51nWSFCMu09fg9yR0O7zD5/UKdD9XxknBTzrAklZWGTIad9\nSFZp5RZ+6bQbWZToyk9UBnxUs/OahvVkV9UFi0Vj4hRXC+UYZHeU+KjkyNDEqi/8\nsMKXyOV0EbU1Uruy0CBA880nYyMzO3fSJbbkhFvVUnVl+X0v7GAeKQMML0EbiI2a\n2ELbDaP4XAQGhLHMr5Q2hC2UbTf8kh/VIXn5bt69bc9NPuXlQpM08Vr/GVJcMdSd\n/oRxuF1n7A+AxVNgQPSZPeaAdjuMkWMi7mxEOMbFSUpOTNVItaZVfuo4CYy187HN\n6gNN1iTi9eoMdDpPVNh4\n=MTpw\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7273d1e31c2ffe5f147f1a33e913bcda9a4295a3\nparent efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e\nauthor Jiayi Cai <126311933+C88-YQ@users.noreply.github.com> 1787065915 +0800\ncommitter GitHub <noreply@github.com> 1787065915 -0500\n\nDisplay namespace in gui (#3872)\n\nSigned-off-by: C88-YQ <1409947012@qq.com>",
+        "verified_at": "2026-08-18T15:12:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/85fa3b1341f2324005de62a221eb928e90366aca",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/85fa3b1341f2324005de62a221eb928e90366aca",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/85fa3b1341f2324005de62a221eb928e90366aca/comments",
+    "author": {
+      "login": "C88-YQ",
+      "id": 126311933,
+      "node_id": "U_kgDOB4dd_Q",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126311933?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/C88-YQ",
+      "html_url": "https://github.com/C88-YQ",
+      "followers_url": "https://api.github.com/users/C88-YQ/followers",
+      "following_url": "https://api.github.com/users/C88-YQ/following{/other_user}",
+      "gists_url": "https://api.github.com/users/C88-YQ/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/C88-YQ/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/C88-YQ/subscriptions",
+      "organizations_url": "https://api.github.com/users/C88-YQ/orgs",
+      "repos_url": "https://api.github.com/users/C88-YQ/repos",
+      "events_url": "https://api.github.com/users/C88-YQ/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/C88-YQ/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e"
+      }
+    ]
+  },
+  {
+    "sha": "efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+    "node_id": "C_kwDOD0AxsdoAKGVmYjhiMmMwNWNkYTBhNmFmMDM5YzQzMWYxYjFhMzA2ZGJkN2JiM2U",
+    "commit": {
+      "author": {
+        "name": "cheriehu",
+        "email": "94511514+cheriehu@users.noreply.github.com",
+        "date": "2026-08-18T07:46:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T07:46:48Z"
+      },
+      "message": "Benchmark for world with moving robots and sensors (#3846)\n\nAssisted by: Gemini 3.1 Pro\nSigned-off-by: Cherie Hu <cheriehu@intrinsic.ai>\nCo-authored-by: Luca Della Vedova <lucadv@intrinsic.ai>",
+      "tree": {
+        "sha": "083fc150cef55976b8cd7d035ea2f463233ec339",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/083fc150cef55976b8cd7d035ea2f463233ec339"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhA3oCRC1aQ7uu5UhlAAA1skQAGPtpyzQRWPYban6OFcRozRi\n/VUcRMwEcqfNT/eerUjsneNDy0F6rE6zyIwBNlRaJBLhWIOpCnBnP0GQ77aPnQTK\nqLe5z5NmeRtgmw37vUCK13wpXTVIPfdspJZLnHqXCkRw7b5O0Rcq/8kqpKljXewy\nISrcZMHC5JM/vFWy8Uvz9MWo74RVwbQjFshK/+yd4JjqHq1R2w679s5FqcvWvgAh\n8TpIBYQvLNp9H5QfNNqnwm2pU7AJ4ZfdY2P6uq5Q0qaUtNysvrl4BJpcirvZRLRp\njj01078nviVBbroktARnFCimZzrKRpOJJNWtTRdBpy7Dv5F9/2zXDZBri/gpjXdM\n50JYFDe9WVgajd/1K2c7qowPbbKCbdOU+Ul8eZg1My7/cEd2vq/fKnoK8x5zAAOY\nS1kMWB7K7uQDGVkl03TazGl3UiCK48iNc5y+pO519J+mMOhNCovkfWMEsh0DXjg3\nmurTxE4wfYIc6rMRrj8p3NMK+obwXQrlk8wjmBybL0qE8L8wh4t4FjUhOuPaGsR+\n+BE8t+VEyp7gDer+Lu5ku5+z5KjGMCMq214G94AZ4RS2LtARXIa6gNDuzRF/CgWM\nUsr/IIzoTL55/lrjbxB2kX4HSPuJqTTaQHStRnGS6cdkCzGYVKVPpqSfq5PeMfzB\n17vP+sX2aGztdAA3edJZ\n=td7p\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 083fc150cef55976b8cd7d035ea2f463233ec339\nparent e668c7a98779084c47aea5974a690b31601ea169\nauthor cheriehu <94511514+cheriehu@users.noreply.github.com> 1787039208 +0800\ncommitter GitHub <noreply@github.com> 1787039208 -0700\n\nBenchmark for world with moving robots and sensors (#3846)\n\nAssisted by: Gemini 3.1 Pro\nSigned-off-by: Cherie Hu <cheriehu@intrinsic.ai>\nCo-authored-by: Luca Della Vedova <lucadv@intrinsic.ai>",
+        "verified_at": "2026-08-18T07:46:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/efb8b2c05cda0a6af039c431f1b1a306dbd7bb3e/comments",
+    "author": {
+      "login": "cheriehu",
+      "id": 94511514,
+      "node_id": "U_kgDOBaIhmg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94511514?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cheriehu",
+      "html_url": "https://github.com/cheriehu",
+      "followers_url": "https://api.github.com/users/cheriehu/followers",
+      "following_url": "https://api.github.com/users/cheriehu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cheriehu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cheriehu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cheriehu/subscriptions",
+      "organizations_url": "https://api.github.com/users/cheriehu/orgs",
+      "repos_url": "https://api.github.com/users/cheriehu/repos",
+      "events_url": "https://api.github.com/users/cheriehu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cheriehu/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e668c7a98779084c47aea5974a690b31601ea169",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/e668c7a98779084c47aea5974a690b31601ea169",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/e668c7a98779084c47aea5974a690b31601ea169"
+      }
+    ]
+  },
+  {
+    "sha": "e668c7a98779084c47aea5974a690b31601ea169",
+    "node_id": "C_kwDOD0AxsdoAKGU2NjhjN2E5ODc3OTA4NGM0N2FlYTU5NzRhNjkwYjMxNjAxZWExNjk",
+    "commit": {
+      "author": {
+        "name": "Carlos Agüero",
+        "email": "caguero@honurobotics.com",
+        "date": "2026-08-17T12:08:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-17T12:08:06Z"
+      },
+      "message": "Capture this explicitly in the component inspector editor callbacks (#3879)\n\nAssisted-by: Claude Opus 5\n\nSigned-off-by: Carlos Aguero <caguero@honurobotics.com>",
+      "tree": {
+        "sha": "177aeb6a9b2da9eb79ba7a3e54db7393a15eb86c",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/177aeb6a9b2da9eb79ba7a3e54db7393a15eb86c"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/e668c7a98779084c47aea5974a690b31601ea169",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgvmmCRC1aQ7uu5UhlAAA0RQQACaY+bxtARjiOwEXPA2aLPad\nHEb/bgCLk8DXSfPMX+4JEIF3caOjJFDjt/WBpwfS9UHluBkeZVAUwpnLQmoNUryG\n6yHvmEUrhvO2/sbhRTGD1mPjxClVI0wVy0vA+S3Y3kRkBYTqu4FCAAVe3L+SuzbP\nsxgsgiOAnxGktsAiSSc5ryB1egQxheIKtnnhoQ3defnM8IsWtu9h/EOJT8TDrymV\nICvxDayWnhqJJnqlRWiNU7FQ/9AzobvV6vt1BnF+uqRnxb+paPqOeuhrLyMvme47\nb38uFytgkQ7ypsIWPIS2kXoAchAar04+wSUXxxHS2fjhpsSGHsIq8QQ47MeAWZRR\n/UcsGtxKD8ROfj0SjTmQ84j620Qk2JOoOCfOdjn5pZAAyUNeDid6zyKRmxZoYs8g\nfRZXfvaeRSUw9S2PV/0454HOimvx1/iFLC+8izhQnix4IajrMf4JfoZQ41869e5y\nKgihu29OhqVS1TjDJK+27jMwVF+3d2VeAtHo4+ccnkSDxULcFkVpPRMPQCZyikai\nla0yrTMKVEd6h60hokE2DfD97rWHxIg9KROcVr9K9jpaF5bavvMue6bE6CLKG6OA\nmvGTV5Du3ohM95/b3mn7st8UQwnvRI0tT5PTEP8SdKzEBLfqKnOZz7AV3BW4Wyvv\nZroXgy4ZHXzEN+iFrHUF\n=HJ5M\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 177aeb6a9b2da9eb79ba7a3e54db7393a15eb86c\nparent dfcb28792cfc344be76d8122b22c7cd0abf552f3\nauthor Carlos Agüero <caguero@honurobotics.com> 1786968486 +0200\ncommitter GitHub <noreply@github.com> 1786968486 +0200\n\nCapture this explicitly in the component inspector editor callbacks (#3879)\n\nAssisted-by: Claude Opus 5\n\nSigned-off-by: Carlos Aguero <caguero@honurobotics.com>",
+        "verified_at": "2026-08-17T12:08:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/e668c7a98779084c47aea5974a690b31601ea169",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/e668c7a98779084c47aea5974a690b31601ea169",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/e668c7a98779084c47aea5974a690b31601ea169/comments",
+    "author": {
+      "login": "caguero",
+      "id": 1440739,
+      "node_id": "MDQ6VXNlcjE0NDA3Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1440739?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/caguero",
+      "html_url": "https://github.com/caguero",
+      "followers_url": "https://api.github.com/users/caguero/followers",
+      "following_url": "https://api.github.com/users/caguero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caguero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caguero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caguero/subscriptions",
+      "organizations_url": "https://api.github.com/users/caguero/orgs",
+      "repos_url": "https://api.github.com/users/caguero/repos",
+      "events_url": "https://api.github.com/users/caguero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caguero/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/dfcb28792cfc344be76d8122b22c7cd0abf552f3"
+      }
+    ]
+  }
+]

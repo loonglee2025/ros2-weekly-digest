@@ -1,0 +1,84 @@
+[
+ {
+  "sha": "85ccfb5abf190aaaf89af0c68df671550267e353",
+  "node_id": "C_kwDOAdpq29oAKDg1Y2NmYjVhYmYxOTBhYWFmODlhZjBjNjhkZjY3MTU1MDI2N2UzNTM",
+  "commit": {
+   "author": {
+    "name": "Maurice Alexander Purnawan",
+    "email": "mauricepurnawan@gmail.com",
+    "date": "2026-08-28T15:56:47Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-28T15:56:47Z"
+   },
+   "message": "Fix deprecated atomic initialization (#1332)\n\nUse direct C11 initialization for the unique instance ID and retain the Windows-compatible initializer.\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+   "tree": {
+    "sha": "1a0212c5764d7514a4da74c972b104b39a358800",
+    "url": "https://api.github.com/repos/ros2/rcl/git/trees/1a0212c5764d7514a4da74c972b104b39a358800"
+   },
+   "url": "https://api.github.com/repos/ros2/rcl/git/commits/85ccfb5abf190aaaf89af0c68df671550267e353",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqka+/CRC1aQ7uu5UhlAAA5oMQAD5486oZTO/f/SrucGHYSfQW\nwc/4bLdjSvR++HoBOuyzpDWBYiLdJp0Hq27GXcFFuQa4KGHycV2bZVzdTtrWdjpl\nM4le4ZIH38Ad6dFmvTPZEVywBDfWr+vgkrneP4eTrZJQbfM+chAA6PrUPCixYMgR\nPqQkNr7IhyhuaeBbBZJeHppyGOIpEA4Ayvy/nSA7qiuzwZSagVw0AlS7BhY6bhyK\nq84NvDXg0HcGSDwBPj6+hOn+eMtCbu+4K9XpMtZ4gg6QOugFllztaDsz37ZGUuPS\nCvGH2L0psTycK4E5/YQyknKwGqEVE9jBPEVu+sDdn8YkvKdCzDprVGrhxs+C+pA8\nz7KStt6jWURbiWRHzwIBKZln71mKongQPA/TUvJyZpFB1G/elmizeIgZ+hRlbR2Y\nm6wpj9hHT0/9N8fggUaKKhY9LWZKuzv2V+bOGMGQkaPIOXbgdUtp1tfdfy2WBWSB\nzFnADDbV+VIydGcnueth5cQFJGsJbmMp+jfcFmf6Cdq3VS2csQd6B1vm+Mr1e5fn\nkoAKpG1T+woHR9P51qq4o5aE2p3QDDL3ad2JXqrjdzcTe2HHEGgiOB7kKw81WQtu\nNepui+vL0Mh/jKUsTXPJQ8oe0bjQEsUiPndJanWX5nhaUkMxgJA5gWz4Z+H8J1zV\ng2v5gwBAyU8R/AZr1o70\n=W9yL\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 1a0212c5764d7514a4da74c972b104b39a358800\nparent db3d1c8ea6eb22235494cfc03249155e35c47511\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1787932607 +0700\ncommitter GitHub <noreply@github.com> 1787932607 +0200\n\nFix deprecated atomic initialization (#1332)\n\nUse direct C11 initialization for the unique instance ID and retain the Windows-compatible initializer.\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+    "verified_at": "2026-08-28T15:56:48Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/rcl/commits/85ccfb5abf190aaaf89af0c68df671550267e353",
+  "html_url": "https://github.com/ros2/rcl/commit/85ccfb5abf190aaaf89af0c68df671550267e353",
+  "comments_url": "https://api.github.com/repos/ros2/rcl/commits/85ccfb5abf190aaaf89af0c68df671550267e353/comments",
+  "author": {
+   "login": "mini-1235",
+   "id": 58433591,
+   "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+   "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/mini-1235",
+   "html_url": "https://github.com/mini-1235",
+   "followers_url": "https://api.github.com/users/mini-1235/followers",
+   "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+   "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+   "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+   "repos_url": "https://api.github.com/users/mini-1235/repos",
+   "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "db3d1c8ea6eb22235494cfc03249155e35c47511",
+    "url": "https://api.github.com/repos/ros2/rcl/commits/db3d1c8ea6eb22235494cfc03249155e35c47511",
+    "html_url": "https://github.com/ros2/rcl/commit/db3d1c8ea6eb22235494cfc03249155e35c47511"
+   }
+  ]
+ }
+]

@@ -1,0 +1,95 @@
+Title: Page Not Found - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/tag/ros-news
+
+Warning: Target URL returned error 404: Not Found
+
+Markdown Content:
+- [x] 
+*   [Open Source Robotics Foundation](https://openrobotics.org/)
+*   [ROS](https://ros.org/)
+    *   [Project homepage](https://ros.org/)
+    *   [Documentation](https://docs.ros.org/)
+    *   [Getting help and support](https://docs.ros.org/en/jazzy/Contact.html#support)
+    *   [ROS Packages Index](https://index.ros.org/)
+    *   [Media and trademarks](https://www.ros.org/blog/media)
+
+*   [ros-controls](https://control.ros.org/)
+    *   [Project homepage](https://control.ros.org/)
+    *   [Documentation](https://control.ros.org/)
+
+*   [Gazebo](https://gazebosim.org/)
+    *   [Project homepage](https://gazebosim.org/)
+    *   [Documentation](https://gazebosim.org/docs/latest/)
+    *   [Fuel models database](https://app.gazebosim.org/dashboard)
+
+*   [Open-RMF](https://open-rmf.org/)
+    *   [Project homepage](https://open-rmf.org/)
+    *   [Documentation](https://osrf.github.io/ros2multirobotbook/)
+
+*   [Infrastructure](https://infrastructure.openrobotics.org/)
+*   [Community](https://openrobotics.zulipchat.com/)
+    *   [Chat Server](https://openrobotics.zulipchat.com/)
+    *   [Submit a related event](https://docs.google.com/forms/d/e/1FAIpQLSdIhzm7-DnAlBIUSsU6lITnV6SHpl1Oo8otnhUKp3pUqUAhSA/viewform?usp=dialog)
+    *   [Official events calendar](https://calendar.google.com/calendar/embed?src=agf3kajirket8khktupm9go748%40group.calendar.google.com)
+    *   [Community events calendar](https://calendar.google.com/calendar/embed?src=c_3fc5c4d6ece9d80d49f136c1dcd54d7f44e1acefdbe87228c92ff268e85e2ea0%40group.calendar.google.com)
+
+*   [Service Status](https://status.openrobotics.org/)
+
+[![Image 1: Open Robotics Discourse](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/7/b/7b98914132076b3a570a1e6d77ebf9e752704b7b.svg)](http://discourse.ros.org/)
+
+[Sign Up](http://discourse.ros.org/signup)[Log In](http://discourse.ros.org/login)
+
+# Oops! That page doesn’t exist or is private.
+
+[Take me home](https://discourse.openrobotics.org/)
+
+Try searching instead? Search
+
+## Popular topics
+
+[Ros2_pulse: per-topic rates and node liveness, including intra-process, on stock binaries](http://discourse.ros.org/t/ros2-pulse-per-topic-rates-and-node-liveness-including-intra-process-on-stock-binaries/57637)[![Image 2: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[A one-command installer for the apt-based ROS 2 path](http://discourse.ros.org/t/a-one-command-installer-for-the-apt-based-ros-2-path/57843)[![Image 3: light_bulb](https://emoji.discourse-cdn.com/noto/light_bulb.png?v=15)ROS Ideas](http://discourse.ros.org/c/ros/ros-ideas/114)
+
+[Never miss a backport again — automatic ABI checking for ROS 2 core repos (prototype ready)](http://discourse.ros.org/t/never-miss-a-backport-again-automatic-abi-checking-for-ros-2-core-repos-prototype-ready/57477)[![Image 4: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Request for Creation of a ROS Philippines Local User Group](http://discourse.ros.org/t/request-for-creation-of-a-ros-philippines-local-user-group/57502)[Site Feedback](http://discourse.ros.org/c/site-feedback/3)
+
+[ROS Keeps Evolving via Physical AI SIG](http://discourse.ros.org/t/ros-keeps-evolving-via-physical-ai-sig/57495)[![Image 5: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Nav2 Lyrical Release & Key Features!](http://discourse.ros.org/t/nav2-lyrical-release-key-features/57666)[![Image 6: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[New ROS PMC Members](http://discourse.ros.org/t/new-ros-pmc-members/57984)[![Image 7: rolled_up_newspaper](https://emoji.discourse-cdn.com/noto/rolled_up_newspaper.png?v=15)ROS Announcements and News](http://discourse.ros.org/c/ros/ros-announcements-news/112)
+
+[[GSoC 2026] Add Support for Mixin Composition in Colcon-Mixin — Progress Update](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408)[![Image 8: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)Infrastructure General](http://discourse.ros.org/c/infrastructure-project/infra-general/92)
+
+[New CLI tool: fastdds_transport_viz — predict & measure per-topic DDS transport in ROS 2](http://discourse.ros.org/t/new-cli-tool-fastdds-transport-viz-predict-measure-per-topic-dds-transport-in-ros-2/57900)[![Image 9: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Bimo, an open-source bipedal robotics kit with sim-to-real transfer](http://discourse.ros.org/t/bimo-an-open-source-bipedal-robotics-kit-with-sim-to-real-transfer/57846)[![Image 10: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[More…](http://discourse.ros.org/top)
+
+## Recent topics
+
+[Debug, Visualize and Teleoperate anything ROS2 with Phantom Bridge](http://discourse.ros.org/t/debug-visualize-and-teleoperate-anything-ros2-with-phantom-bridge/58088)[![Image 11: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Ros2-apt-source bumped to v 1.3.0](http://discourse.ros.org/t/ros2-apt-source-bumped-to-v-1-3-0/58084)[![Image 12: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Update on QERRA-HSR (Physical Safety Layer), testing & refinements:](http://discourse.ros.org/t/update-on-qerra-hsr-physical-safety-layer-testing-refinements/58060)[![Image 13: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[How should place-originated spatial constraints participate in task planning and assignment in next-generation Open-RMF?](http://discourse.ros.org/t/how-should-place-originated-spatial-constraints-participate-in-task-planning-and-assignment-in-next-generation-open-rmf/58049)[![Image 14: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[ROS News for the Week of September 7th, 2026](http://discourse.ros.org/t/ros-news-for-the-week-of-september-7th-2026/58046)[![Image 15: megaphone](https://emoji.discourse-cdn.com/noto/megaphone.png?v=15)Community News](http://discourse.ros.org/c/community-news/122)
+
+[[Announcement] Gazebo Event Camera Plugin for ROS 2 Jazzy + Gazebo Harmonic](http://discourse.ros.org/t/announcement-gazebo-event-camera-plugin-for-ros-2-jazzy-gazebo-harmonic/58040)[![Image 16: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)Gazebo General](http://discourse.ros.org/c/gazebo/gazebo-general/97)
+
+[[GSoC 2026] Physical AI Inference and Trajectory Upscaling for ros2_control](http://discourse.ros.org/t/gsoc-2026-physical-ai-inference-and-trajectory-upscaling-for-ros2-control/58037)[![Image 17: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[Has anyone written a custom I²C transport for micro-ROS (or any MCU ROS stack)?](http://discourse.ros.org/t/has-anyone-written-a-custom-i-c-transport-for-micro-ros-or-any-mcu-ros-stack/58035)[![Image 18: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png)ROS General](http://discourse.ros.org/c/ros/ros-general/8)
+
+[Ros2-project-gen — one command scaffolds a complete, ready-to-build ROS 2 project like create-react-app-style](http://discourse.ros.org/t/ros2-project-gen-one-command-scaffolds-a-complete-ready-to-build-ros-2-project-like-create-react-app-style/58034)[![Image 19: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](http://discourse.ros.org/c/projects/10)
+
+[New Packages for Jazzy Jalisco 2026-09-11](http://discourse.ros.org/t/new-packages-for-jazzy-jalisco-2026-09-11/58027)[![Image 20: rolled_up_newspaper](https://emoji.discourse-cdn.com/noto/rolled_up_newspaper.png?v=15)ROS Announcements and News](http://discourse.ros.org/c/ros/ros-announcements-news/112)
+
+[More…](http://discourse.ros.org/latest)

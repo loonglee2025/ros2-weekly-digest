@@ -1,0 +1,110 @@
+##### TITLE: ROS News for the Week of August 17th, 2026
+created: 2026-08-21T19:50:57.174Z
+REPLIES: 1
+
+--- [2026-08-21] Katherine_Scott ---
+ROS News for the Week of August 17th, 2026 
+
+ Ticket Sales Begin May 11th (4) 1085×899 207 KB 
+ Waterloo Robotics Tour 1200×1200 333 KB 
+ HACKATHON (1) 1200×1200 377 KB 
+
+ We’re down to the wire on regular price ROSCon Global tickets! The last day to purchase regular price tickets is Monday, August 24th. Next week we’re planning to release registration information for after parties, hackathons, tours, receptions, and after hours events at ROSCon. 
+
+ ROSBTBSept26 1600×900 228 KB 
+
+ 1786123961068 800×800 76.5 KB 
+ trossen (1) 1200×1200 194 KB 
+
+ In the lead up to ROSCon we have a bunch of fantastic events lined up in the Bay Area and online. Next Tuesday in San Francisco we’re holding a Trossen X ROS Industry Night , on Wednesday we have our August Gazebo Community Meeting on Gym-Gazebo-Sim, a basic toolkit for using Gymnasium API in Gazebo , and the Ruggedized agricultural technology and robotics conference will be held in Salinas on Wednesday and Thursday (I’ll be there giving a talk). The following week we’re holding a ROS By-The-Bay meetup at Bosch in Sunnyvale. 
+
+The cat is out of the bag on the OSRA’s new Special Interest Group on Physical AI (SIG PAI). This week the SIG released a fantastic demo repo on Github that shows you how to integrate LeRobot, ROS, and multiple robotic simulators. The SIG PAI also laid out their roadmap for the next few years and how you can get involved. 
+
+ 2026-08-17-poster 1350×1687 442 KB 
+ @mikeferguson has a great write up on his Weaponized Plastic Fighting League project. He’s taking the show on the road with a competition planned for Austin, Texas in October. 
+ Events 
+
+ 2026-08-25 Marine Robotics August Meeting - Project Showcase 
+ 2026-08-25 Trossen X ROS Industry Night in SF 
+ 2026-08-26 August Gazebo Community Meeting: Gym-Gazebo-Sim, a basic toolkit for using Gymnasium API in Gazebo 
+ 2026-08-26 → 2026-08-27 Ruggedize Agricultural Technology & Robotics Conference 
+ 2026-08-31 ROS OE Community Meeting #62 
+ 2026-09-03 ROS By-The-Bay September Meetup at Bosch w.s.g. 6thSense & Bob Nugman 
+ 2026-09-04 Open Ocean Software Community Day UK 
+ 2026-09-06 Roboracer VTC 2026 
+ 2026-09-08 ROS Meet Up Stockholm @ Nordic Tech Week 
+ 2026-09-17 ROS Meetup Barcelona 8th Edition 
+ 2026-10-24 Weaponized Plastic Fighting League in Austin 
+ 2026-11-05 International Conference on Humanoid Robotics, Innovation & Leadership 
+
+ ROSCons 
+
+ 2026-09-22 => 2026-09-24 Global ROSCon 2026 in Toronto - Three days remain for regular tickets. 
+ 2026-10-21 => 2026-10-23 ROSCon UK in Edinburg - registration now open 
+ 2026-10-23 => 2026-10-26 ROScon Singapore - applications open 
+ 2026-10-27 => 2026-10-28 ROSCon Spain in Valencia - reg open! 
+ 2026-11-03 ROSCon Italy in Bologna 
+ 2026-11-25 => 2026-11-26 ROSCon Belgium in Nivelles - reg is open! 
+ 2026-12-03 => 2026-12-04 ROScon Turkey in Istanbul - CFP opens soon 
+
+ News 
+
+ ROSCon Global: regular price ticket sales end Monday + official after-hours events! 
+ Request for Creation of a ROS Philippines Local User Group 
+ This Week at Open Robotics Headquarters (2026-08-10) 
+ Gazebo PMC Meeting Minutes 2026-08-17 
+ ROS PMC Minutes for August 11, 2026 
+ Weekly Robotics #372 
+ OpenCV AI Competition 2026 
+ Sanjuksha Nirgude: Women in Robotics lead shares lessons on autonomy 
+ Arctic Iceberg Drones Turn Sheer Ice Into Landing Pads 
+ How Persona AI Makes Humanoids Pay Off In Welding 
+ ATDev gives update on its journey building autonomous wheelchairs 
+ Five years of operation shape Diligent Robotics rollout of Moxi 2.0 
+ Gravis Robotics raises $200M for autonomous construction 
+ How Generalist uses human demonstration data for robot learning 
+ Neros Technologies raises $250M to deploy its defense drones by the end of 2026 
+ Robot Videos: Unitree Humanoid, Bio-Inspired Bots, More 
+ Zipline will make 1M delivers a day for Uber Eats 
+
+ ROS 
+
+ Never miss a backport again — automatic ABI checking for ROS 2 core repos (prototype ready) 
+ ROS Keeps Evolving via Physical AI SIG 
+ Embodied Passive Aeroacoustic Perception Enables Relative Sensing and Pursuit Between Aerial Robots 
+ ros-central-registry: ROS packages as Bazel modules 
+ Add Support for Mixin Composition in Colcon-Mixin 
+ Announcing FastSwarmSim: Lightweight Multi-UAV ROS 2 Simulation with Lock-Step Time 
+ Two Years of Weaponized Plastic · Robot & Chisel 
+ Foxglove has agents now 
+ Roboto Agents: agentic triage, root cause analysis, and data curation for rosbags and MCAP 
+ robcraft: Lightweight robotics simulator for ROS 2 
+ Preparing for Kilted sync 2026-08-21 
+ New Packages for Lyrical 2026-08-19 
+ ROS 2 Inspector — Static Architecture Analysis and Visualization for ROS 2 Workspaces 
+ NXS – ROS 2 topics for GMSL2/3 cameras and CAN-FD/serial sensors 
+ Now Open Source! HM-LD1 dToF Lidar Officially Supports ROS 1 & ROS 2 
+ Making a degraded-network matrix a required CI gate, and what did not reproduce 
+ VirtuLayer - A GUI for Nav2 Virtual Layer Plugin 
+ Scheduled Buildfarm Downtime: Jenkins version upgrade of ci.ros2.org 
+ Bagel 2.0: ask your rosbags questions in plain English, reduce them to the seconds that matter 
+ Mppi_controller_cuda — CUDA-accelerated MPPI local planner for ROS 2 
+ Async behavior refactor to OnStateOrthogonal Allocation rollout to nav2z, px4 and moveit2z 
+ Add navmap_tools : GIS-based world/NavMap generator by fmrico 
+ gazebo_maptiles · GitHub 
+ OpenRobOps + ROS Ecosystem 
+ Multi-robot, Multi-Sensor, Multi-Environment Event Dataset 
+ ROS Japan Developer Kaigi(会議) 
+ dynamixel_hardware: ros2_control packages for ROBOTIS Dynamixel 
+ reBot Arm B601-DM Web Simulator and ROS2/MuJoCo Developer Guide 
+
+ Jobs 
+
+ Seegrid Senior Engineering Lead - Autonomy 
+ PickNik Robotics Software Engineer (work on space stuff ) 
+
+ Got a minute? 
+ Want to get involved with ROS 2? Come to our weekly Waffle meeting where we’ll assign you a pull request that needs a review! The next meeting is 2026-08-27T16:30:00Z . Can’t make it? Check out our Waffle (baffle) Board to quickly find open pull requests that need reviewing. 
+ Yes, you can review ROS pull requests even if you aren’t a regular contributor! You don’t need to be a ROS expert! We just really need
+
+--- [2026-08-21] Katherine_Scott ---

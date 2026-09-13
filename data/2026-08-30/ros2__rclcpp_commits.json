@@ -1,0 +1,84 @@
+[
+ {
+  "sha": "90a1e565ee6870c13b21f6c1a58fbc9f7dfcde9d",
+  "node_id": "C_kwDOAVrxtdoAKDkwYTFlNTY1ZWU2ODcwYzEzYjIxZjZjMWE1OGZiYzlmN2RmY2RlOWQ",
+  "commit": {
+   "author": {
+    "name": "Alejandro Hern\u00e1ndez Cordero",
+    "email": "ahcorde@gmail.com",
+    "date": "2026-08-25T17:19:43Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-25T17:19:43Z"
+   },
+   "message": "cleanup headers (#3238)\n\nSigned-off-by: Alejandro Hern\u00e1ndez Cordero <ahcorde@gmail.com>",
+   "tree": {
+    "sha": "df76a8ab0914d8ccebe88478aaed6df30a35cbb8",
+    "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/df76a8ab0914d8ccebe88478aaed6df30a35cbb8"
+   },
+   "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/90a1e565ee6870c13b21f6c1a58fbc9f7dfcde9d",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjc6vCRC1aQ7uu5UhlAAAqvgQAIhXOaYbjA9HgCZvJ9n+CXNZ\n7PJzI90gN8c9YxEXBbBacuOWW6B/2a63HZ6Y982TWu0mNaJ2SIpEDziVB11kJOHv\nK+rWia/onZUUWZ3AAn8YyYxC/XkvPeO00MlySWZlwmxbvKOxWNPw1e6H4Cysa1E+\nEDHFk8U8GFoRQCMrpozBy+mBne8JsoDBTZQW2bWBVEJScglY9AkYz2bedZQCQA8Z\ngz8FDUEld7FY42Vva55CULiwCPxd9kfCSBJ8rN0nO2YFhtgMaiMiTDpABLlCTyA3\nsZ/2I1dwHwlrqfqZmhEczzN/Dv9xc3VUxxJA5xvuoxoI4UpDHMQgrIoa5NYybJOd\ntcrh7G0CflzhZ/8XfCtsr3a3/mUvPI5Y1KcRy2p/P0LDGSAYBUo0JZh7Wg3aCncI\n0Q+sdMCYtPeKh3tNnFB7RNrMlKLwMCX6VBopa9eJls4m6mIw2omAXpfGeeoEb5FX\n1LYm7k+TmLpGjjtD11UBrdkleY/1sTdn3FQZjF/cIc58culqkgIGxlrjjPNpC5SC\nfS0tTAL+dk9KxUztR7NcvfrlvZIL84k5ro46fv6Uoxuc8doZG8X050hicwt+jSeq\nZdeHPuTQV4Ne+VOGDegBC8ngx2LTObLb4+2DABQDHdA9qPpP8Z6HNfEZykPTGZDc\ndmRtBwbPsELlRQbGfbM9\n=9NNp\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree df76a8ab0914d8ccebe88478aaed6df30a35cbb8\nparent 4528e3caef150eba5f2641fd290fd85796dbdc1a\nauthor Alejandro Hern\u00e1ndez Cordero <ahcorde@gmail.com> 1787678383 +0200\ncommitter GitHub <noreply@github.com> 1787678383 +0200\n\ncleanup headers (#3238)\n\nSigned-off-by: Alejandro Hern\u00e1ndez Cordero <ahcorde@gmail.com>",
+    "verified_at": "2026-08-25T17:19:43Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/rclcpp/commits/90a1e565ee6870c13b21f6c1a58fbc9f7dfcde9d",
+  "html_url": "https://github.com/ros2/rclcpp/commit/90a1e565ee6870c13b21f6c1a58fbc9f7dfcde9d",
+  "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/90a1e565ee6870c13b21f6c1a58fbc9f7dfcde9d/comments",
+  "author": {
+   "login": "ahcorde",
+   "id": 1933907,
+   "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/ahcorde",
+   "html_url": "https://github.com/ahcorde",
+   "followers_url": "https://api.github.com/users/ahcorde/followers",
+   "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+   "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+   "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+   "repos_url": "https://api.github.com/users/ahcorde/repos",
+   "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "4528e3caef150eba5f2641fd290fd85796dbdc1a",
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/4528e3caef150eba5f2641fd290fd85796dbdc1a",
+    "html_url": "https://github.com/ros2/rclcpp/commit/4528e3caef150eba5f2641fd290fd85796dbdc1a"
+   }
+  ]
+ }
+]

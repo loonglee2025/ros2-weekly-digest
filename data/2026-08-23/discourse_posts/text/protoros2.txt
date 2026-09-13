@@ -1,0 +1,128 @@
+##### TITLE: Announcing protoros2: use protobuf in ros2 without compromise
+created: 2026-08-04T07:11:37.967Z
+REPLIES: 5
+
+--- [2026-08-04] ZhenshengLee ---
+Hi ROS Community! 
+ For years, there has been a strong and consistent demand for seamless Protobuf serialization in ROS/ROS 2. While there are excellent existing tools in the community, integrating them cleanly into a high-performance, production-ready pipeline often comes with friction. 
+ Today, we’re excited to introduce protoros2 — a middleware wrapper and orchestration engine designed to provide zero-intrusive protobuf support for ROS 2. ZhenshengLee/protoros2: use protobuf in ros2 without compromise 
+ (The name is heavily inspired by the awesome flatros2 GitHub - Ekumen-OS/flatros2 · GitHub project!) 
+ What does protoros2 do? 
+ protoros2 does not reinvent the wheel. Instead, it acts as a non-intrusive “Tri-State Orchestration Engine” that elegantly binds third-party Open-Source foundations into a unified architecture. It allows you to use Protobuf in your stack without compromise. 
+ It provides an out-of-the-box EnterpriseNode wrapper that offers multi-channel communication: 
+ • Proto Channel (Zero-Intrusive Fast-Path): Transparently inspects the underlying RMW serialization format at runtime. If the RMW supports Protobuf natively, it routes messages directly via rclcpp::SerializedMessage. If not, it gracefully falls back to standard CDR via rclcpp::TypeAdapter. 
+• Flat Channel (Performance Bonus): An optional bypass channel optimized for ultra-low latency IPC (powered by Iceoryx shared memory), fully adapted to the ROS 2 executor ecosystem. 
+ Key Features & Use Cases 
+ We designed protoros2 to be flexible enough to accommodate different team workflows, supporting multiple “Single Source of Truth” (SSOT) architectures seamlessly: 
+ • Use Case A: Standard ROS 2 .msg as SSOT 
+Write your standard .msg files as usual. protoros2 works seamlessly with standard RMWs (CDR only) or native Protobuf RMWs without altering your application logic. In fallback modes, it can even handle simultaneous CDR and Protobuf topic ecosystems flawlessly. 
+• Use Case B: AI/Robotics .proto as SSOT 
+For AI-first teams, define your data structures natively in .proto. protoros2 can either co-exist with a generated mirror IDL or operate purely on .proto, bypassing .msg entirely for a direct, zero-overhead binding. 
+• Native ROS 2 Executor Support: 
+Whether you prefer standard Callback Push, WaitSets, CallbackGroups (Mutually Exclusive/Reentrant), Polling Subscribers, or Intra-Process Comm—protoros2 natively integrates these paradigms out of the box. 
+• MLOps Ecosystem Ready: 
+Full compatibility with mcap format and rosbag2 plugins. Data scientists can consume protobuf bags directly with native python bindings. 
+ Enterprise Security Built-in 
+ To ensure consistency in large-scale deployments, protoros2 utilizes strict C++ access controls to safely encapsulate the raw rclcpp::Node. It intercepts and disables risky dynamic ROS 2 configurations (like parameter services and QoS overriding) at compile time, guaranteeing predictable behavior on the vehicle edge without sacrificing the standard ROS 2 developer experience. 
+ Acknowledgement 
+ This work stands on the shoulders of giants. We want to express our deepest gratitude to the following incredible projects and their contributors, without which protoros2 would not have been possible: 
+ • rosidl_typesupport_protobuf https://github.com/eclipse-ecal/rosidl_typesupport_protobuf: For providing the robust C++ TypeSupport handle and TypeAdapter generation engine. 
+• proto2ros https://github.com/rai-opensource/proto2ros: For the brilliant AST parser bridging .proto definitions to synthetic IDL .msg. 
+• ros-central-registry https://github.com/intrinsic-opensource/ros-central-registry/blob/main/examples: For the excellent Bazel + ROS 2 integration examples and Protobuf C++ references.
+
+--- [2026-08-07] sokstherobot ---
+This is neat — the serialization question gets more interesting the moment the data leaves the robot. On-LAN, CDR is fine and the cost is noise. Over a constrained or lossy WAN link (warehouse Wi-Fi, cellular, a VPN back to cloud), wire-size and schema evolution start to matter a lot, and protobuf’s story there is stronger. Is protoros2 aimed mainly at cross-language/interop ergonomics, or also at the wire-efficiency angle for off-robot links? And how are you handling the mismatch with the ROS 2 type system at the boundary?
+
+--- [2026-08-10] ZhenshengLee ---
+Thanks for your reply! 
+
+ sokstherobot: 
+
+ protobuf’s story there is stronger 
+
+ you are right about protobuf, we summarize the core advantages of Protobuf in our production pipeline as a four-win scenario: it saves compute and bandwidth resources on the vehicle edge, eliminates massive data conversion times in the cloud, lowers the development friction for our engineers, and collectively drives down overall infrastructure costs. 
+
+ sokstherobot: 
+
+ Is protoros2 aimed mainly at cross-language/interop ergonomics, or also at the wire-efficiency angle for off-robot links? 
+
+ To answer your first question regarding our aims: It is primarily driven by this off-robot wire-efficiency and MLOps ecosystem integration, though cross-language ergonomics is a nice side-effect.(our current runtime orchestration is heavily focused on C++ for vehicle-edge performance. For Python, we currently only support offline MLOps parsing, e.g., extracting protobufs 
+directly from .mcap bags, rather than native ROS 2 Python nodes) 
+While middleware protocols like Zenoh are fantastic for reducing network-level protocol overhead, Protobuf tackles the massive payload overhead. Both are essential for offloading complex tracking arrays or sensor data to the cloud via cellular/Wi-Fi bottlenecks. 
+
+ sokstherobot: 
+
+ And how are you handling the mismatch with the ROS 2 type system at the boundary? 
+
+ we actually tackle this in two dimensions: Compile-Time (Semantic mismatch) and Runtime (Coexistence mismatch). 
+
+ Compile-Time: Handling Schema & Semantic Mismatch 
+We avoid writing any manual conversion code. Instead, we leverage toolchains depending on your chosen “Single Source of Truth” (SSOT): 
+
+ • If .msg is the SSOT (Use Case A): We rely on rosidl_typesupport_protobuf to map ROS 2 primitives and dynamic arrays into their exact Protobuf equivalents under the hood during the interface generation phase. 
+• If .proto is the SSOT (Use Case B): This is where concepts like optional or repeated clash with ROS 2. Here, we use the AST parser from proto2ros. At compile-time, it parses the .proto files and synthetically generates a mirrored ROS 2 .msg IDL, automatically applying mapping rules to bridge the semantic gap before generating standard C++ structs. 
+
+ Runtime Boundary: Coexisting with Legacy Nodes 
+You might also wonder: “How does a legacy ROS 2 node using standard .msg and CDR coexist with our new .proto nodes?” 
+
+ To be clear: A node speaking pure CDR and a node speaking pure Protobuf cannot communicate directly with each other on the same topic. The wire formats are fundamentally different. 
+ However, we handle this ecosystem boundary via Simultaneous Coexistence & Graceful Fallback at the RMW layer. As demonstrated in ucA.3 of our README, our customized RMW (rmw_ecal_proto_cpp) automatically falls back to standard CDR if a message type hasn’t been compiled with Protobuf TypeSupport. This allows you to run legacy CDR topics (e.g., /chatter) and Protobuf topics (e.g., /proto_msg_topic) simultaneously on the same robot, within the same node graph, and even record them into the exact same .mcap bag file seamlessly! 
+
+[CODE]export RMW_IMPLEMENTATION=rmw_ecal_proto_cpp
+# 1. rclcpp with prebuilt binary with cdr typesupport only (fallback to cdr)
+# example_interface/msg/String.msg has not been compiled with rosidl_typesupport_protobuf, thus dont have protobuf typesupport
+ros2 run demo_nodes_cpp talker
+ros2 run demo_nodes_cpp listener
+# 2. rclcpp with protobuf typesupport
+ros2 run protoros2_example example_proto_publisher
+ros2 run protoros2_example example_proto_subscriber
+# 3. rclpy
+ros2 topic list
+ros2 topic echo /chatter
+ros2 topic echo /proto_msg_topic
+# 4. rosbag2 record & info (simultaneous cdr + protobuf topics)
+ros2 bag record -o proto_msg_rmw_ecal_both --topics /chatter /proto_msg_topic
+ros2 bag info ./proto_msg_rmw_ecal_both/
+# 5. bagreader
+ros2 run protoros2_example rosbag2_reader.py ./proto_msg_rmw_ecal_both/
+# 6. mlops
+mcap info ./proto_msg_rmw_ecal_both/0_*.mcap
+ros2 run protoros2_example mcap_ros2_reader.py ./proto_msg_rmw_ecal_both/0_*.mcap
+ros2 run protoros2_example mcap_proto_reader.py ./proto_msg_rmw_ecal_both/0_*.mcap
+[/CODE]
+
+ Because serialization formats are completely decoupled from application binaries, bridging the boundary requires zero application code changes. 
+ If you simply recompile the underlying .msg package (e.g., std_msgs) with our rosidl_typesupport_protobuf injected and source it in your workspace, your legacy, pre-compiled binary nodes will dynamically dlopen the new Protobuf typesupport at runtime. Under our rmw_ecal_proto_cpp, those legacy nodes instantly upgrade to native Protobuf communication. 
+
+[CODE]export RMW_IMPLEMENTATION=rmw_ecal_proto_cpp
+# 1. demo_nodes_cpp is a legacy pre-compiled binary, BUT...
+# example_interface/msg/String.msg HAS BEEN compiled with rosidl_typesupport_protobuf
+# Thus, the nodes dynamically load Protobuf typesupport at runtime!
+ros2 run demo_nodes_cpp talker
+ros2 run demo_nodes_cpp listener
+# 4. rosbag2 record & info (will be protobuf)
+ros2 bag record -o proto_msg_rmw_ecal_both --topics /chatter
+[/CODE]
+
+ PS: 
+the brilliant foundation for much of this dynamic typesupport magic has actually already been laid out by Google/Intrinsic in the ros-central-registry. 
+However, their work is heavily integrated into a Bazel ecosystem. What we’ve done with protoros2 is taking that brilliance, porting the heavy lifting into a native CMake/colcon ecosystem, and wrapping it with an out-of-the-box EnterpriseNode orchestration engine (including the Iceoryx FlatChannel bypass) so the broader ROS 2 community can actually deploy it in production right now.
+
+--- [2026-08-10] sokstherobot ---
+That coexistence story is the part that makes migration realistic: legacy CDR nodes and protobuf nodes sharing one robot and landing in a unified mcap bag. Most teams can’t flag-day their whole graph. The four-win framing matches what I’ve seen on constrained links, where the bandwidth line item gets noticed first but the cloud-side conversion cost is the quiet one. Thanks for the thorough answer. Watching the project.
+
+--- [2026-08-12] brettpac ---
+This looks really cool @ZhenshengLee , 
+ Question: When .proto is the SSOT and proto2ros synthesizes the mirrored .msg IDL, how do you handle the proto schema evolution downstream? If a field gets added or an optional / oneof is introduced upstream, does the regenerated IDL stay compatible with already-running CDR-fallback nodes, or is there a versioning/pinning step in your pipeline to keep the edge and cloud sides in sync? Curious what that workflow looks like in practice.
+
+--- [2026-08-21] twallis-cpr ---
+Is the intention to bridge these protobuf messages to devices that do not natively “speak ROS” like embedded systems? That’s something we’ve been working on at Clearpath Robotics. We ended up creating a protobuf-based system of our own called Proton, which bridges protobuf data and ROS 2 messages in a peer-to-peer network 
+
+ github.com 
+
+ GitHub - clearpathrobotics/proton: Proton communication protocol 
+
+ Proton communication protocol 
+
+ EDIT: on a second reading through your project, I realized that I mistook the purpose of your project. Proton and protoros2 could be complimentary to each other. Proton skips RMW between MCU and PC altogether, and the (unreleased version) proton_ros2 package uses pluginlib to create generic protobuf-based publishers/subscribers using rcl’s serialization API. That could hook into protoros2. 
+ proton_ros2 maps the proton data definitions to ROS 2 message fields (and vice versa) so we don’t end up with .proto versions of every message in the network, but there could be a very easy protobuf translation layer between Bundle.proto to the protoros2 versions of messages. Very interesting.

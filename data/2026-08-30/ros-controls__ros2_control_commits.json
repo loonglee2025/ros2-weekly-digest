@@ -1,0 +1,166 @@
+[
+ {
+  "sha": "a3f21c141e69481e522129fd7cfb38009fd91d27",
+  "node_id": "C_kwDOBiM5UdoAKGEzZjIxYzE0MWU2OTQ4MWU1MjIxMjlmZDdjZmIzODAwOWZkOTFkMjc",
+  "commit": {
+   "author": {
+    "name": "Peter Mitrano (AR)",
+    "email": "peter.mitrano@agile-robots.com",
+    "date": "2026-08-29T17:01:49Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-29T17:01:49Z"
+   },
+   "message": "Fix a few typos (#3567)",
+   "tree": {
+    "sha": "1eb1a529860632876a89039b4e4368bdd352127a",
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/git/trees/1eb1a529860632876a89039b4e4368bdd352127a"
+   },
+   "url": "https://api.github.com/repos/ros-controls/ros2_control/git/commits/a3f21c141e69481e522129fd7cfb38009fd91d27",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqkxB9CRC1aQ7uu5UhlAAAeOQQADMP+7kSHXDNpPv442j4mYXq\n1FkFfsTyEfW6NLjhK44rRVNvhdAsqsdwbycAHBOmyWQkEly8wcQ+kHBYtxsmgs+v\nSlhDUuZKlTTCvnfAOHQFDXTZcDBr04UZmcMOJG5IP40qS7IrK7SAD4ugGxDCl13G\nZQzgAkFjy81LYDce1OgycXKHaSefcYK64oAvqCKratucUxJCRqhpj98N3Ff/UWDW\n+mVYimJk5KF27bOmUxbPZuaYfvCJCX6DM8gXff+TkPnVP1i085dtNmVD7Ef6hxeI\nmgl+2qMQYw6q0wSNnFDRhS8jxtZ9pBGZ+BzdPb9G8S1mp+J6B+f0VMcnZl2+d2pT\n7HdFHRVyO09hw1T5DseVj0pnBHb3VdbUxKWt0BRmHjqZLwLowNoIKYFSpRwKd8W1\nUiQedi47VgPRGbwBPUpvuS2g0g3ZEHc8cOSQUQ6xH8AvWKvkqfiAFor70bBfWSUH\n8wSW8RngT3HaLc3gZoTP0Uv9EMuE+jTwQbbcKSV9NvukMj0YY80S6X57eP+8y0Qn\ngHffHuqqX13V5T9lFGFlzLI4675PNCyemc9QR0u9ntB6BDnTLCn8uXR+WHS9pDio\nccPOxlJGFz9qolZyIab9wspwUufxhxFwG+3jovCJC391OQ3qf9FSUMh5V8xL3bcH\nbXaryaejZ0BBoaoAa4AA\n=8hvv\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 1eb1a529860632876a89039b4e4368bdd352127a\nparent ffcf444a69a5bdae7b19d09fc7e45e0224386231\nauthor Peter Mitrano (AR) <peter.mitrano@agile-robots.com> 1788022909 +0200\ncommitter GitHub <noreply@github.com> 1788022909 +0100\n\nFix a few typos (#3567)",
+    "verified_at": "2026-08-29T17:01:49Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/a3f21c141e69481e522129fd7cfb38009fd91d27",
+  "html_url": "https://github.com/ros-controls/ros2_control/commit/a3f21c141e69481e522129fd7cfb38009fd91d27",
+  "comments_url": "https://api.github.com/repos/ros-controls/ros2_control/commits/a3f21c141e69481e522129fd7cfb38009fd91d27/comments",
+  "author": {
+   "login": "peter-mitrano-ar",
+   "id": 219827538,
+   "node_id": "U_kgDODRpNUg",
+   "avatar_url": "https://avatars.githubusercontent.com/u/219827538?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/peter-mitrano-ar",
+   "html_url": "https://github.com/peter-mitrano-ar",
+   "followers_url": "https://api.github.com/users/peter-mitrano-ar/followers",
+   "following_url": "https://api.github.com/users/peter-mitrano-ar/following{/other_user}",
+   "gists_url": "https://api.github.com/users/peter-mitrano-ar/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/peter-mitrano-ar/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/peter-mitrano-ar/subscriptions",
+   "organizations_url": "https://api.github.com/users/peter-mitrano-ar/orgs",
+   "repos_url": "https://api.github.com/users/peter-mitrano-ar/repos",
+   "events_url": "https://api.github.com/users/peter-mitrano-ar/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/peter-mitrano-ar/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+    "html_url": "https://github.com/ros-controls/ros2_control/commit/ffcf444a69a5bdae7b19d09fc7e45e0224386231"
+   }
+  ]
+ },
+ {
+  "sha": "ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+  "node_id": "C_kwDOBiM5UdoAKGZmY2Y0NDRhNjlhNWJkYWU3YjE5ZDA5ZmM3ZTQ1ZTAyMjQzODYyMzE",
+  "commit": {
+   "author": {
+    "name": "Dr. Denis",
+    "email": "denis.stogl@b-robotized.com",
+    "date": "2026-08-24T08:26:01Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T08:26:01Z"
+   },
+   "message": "Publish controller_manager activity on cleanup_controller (#3561)\n\nCo-authored-by: Maxwell <maxwell@b-robotized.ai>",
+   "tree": {
+    "sha": "a3e6917c1cd69f2fe69495ab546b9d0677a6f31f",
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/git/trees/a3e6917c1cd69f2fe69495ab546b9d0677a6f31f"
+   },
+   "url": "https://api.github.com/repos/ros-controls/ros2_control/git/commits/ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjAAZCRC1aQ7uu5UhlAAAYdsQAKyjnjGEfVQPIccn/s4xjeoF\nde6YU1oMOg2Ts1XuHWBWV/8wGufUIVQNwG7hycwAoAP8DnHlB2onbXTVTdL7cxM0\n5nBba5kAh3xiJX6/c+iknqZVTMRdUq4KOfnuQlLMt0NC/CzTO560JuBmHGsF/+b1\nYIaMQ/xRCsJk5/4yH0OCsf/b+bAiYA/dMY234nWsj77f3HZ8OJT8ns/HKlq/yoXM\nSQGwqoAx4Jrse+Pr8nSOK8PhEGuSrJ6xMF0K5awpFRJ0rz+E9nupUaAMGTKSr6m7\nmOnWvtBYJy2MDrcqxlf3FAO0+UoUODMhNxG4xMz5Zd6aC10fwn7uQDxZtpJP1X8I\nh+GWqVnPcRakQ+yQHHUK31QRLLQZE7DvnyhPfSV7AjmsWSINSJ2j6QIWD0m002tW\nIw2NCMkqEZF7kFIk2pbpLm2hkPj8YDkITpU8/Jb/QHjeoDcXs+mHIL6RP3XOZpbx\nr5WZNe1VDsNXWOqNu/3XJDyogKQYdiZXnvEMZxbl64nSfVAvtGKvcANW3gyZu0t5\nhvOMdMco0tKdhq9+mhtZ2CQmayYT2ZfOgTMDDJnhI3X6YcGTm97ypdNtcPVO+aeI\n6mJmUX6p904APdCUfXkobNTHZnYutsEiVnu3jdo2t4mS+j5J7WQwk4jcQqkNh19O\nOETqNwvCZGPAEAIDTwLQ\n=FEia\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree a3e6917c1cd69f2fe69495ab546b9d0677a6f31f\nparent 45dc561a2bfedc562119e4c5ce0542135bd0267b\nauthor Dr. Denis <denis.stogl@b-robotized.com> 1787559961 +0200\ncommitter GitHub <noreply@github.com> 1787559961 +0200\n\nPublish controller_manager activity on cleanup_controller (#3561)\n\nCo-authored-by: Maxwell <maxwell@b-robotized.ai>",
+    "verified_at": "2026-08-24T08:26:01Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+  "html_url": "https://github.com/ros-controls/ros2_control/commit/ffcf444a69a5bdae7b19d09fc7e45e0224386231",
+  "comments_url": "https://api.github.com/repos/ros-controls/ros2_control/commits/ffcf444a69a5bdae7b19d09fc7e45e0224386231/comments",
+  "author": {
+   "login": "destogl",
+   "id": 1918204,
+   "node_id": "MDQ6VXNlcjE5MTgyMDQ=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/1918204?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/destogl",
+   "html_url": "https://github.com/destogl",
+   "followers_url": "https://api.github.com/users/destogl/followers",
+   "following_url": "https://api.github.com/users/destogl/following{/other_user}",
+   "gists_url": "https://api.github.com/users/destogl/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/destogl/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/destogl/subscriptions",
+   "organizations_url": "https://api.github.com/users/destogl/orgs",
+   "repos_url": "https://api.github.com/users/destogl/repos",
+   "events_url": "https://api.github.com/users/destogl/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/destogl/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "45dc561a2bfedc562119e4c5ce0542135bd0267b",
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/45dc561a2bfedc562119e4c5ce0542135bd0267b",
+    "html_url": "https://github.com/ros-controls/ros2_control/commit/45dc561a2bfedc562119e4c5ce0542135bd0267b"
+   }
+  ]
+ }
+]

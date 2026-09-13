@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+    "node_id": "C_kwDOAe-vztoAKDJmZDg0ZTMyMGI3ZjRhNGVjYTBkNDc1NDM0MWEwYjhkZDcyZjVhZjQ",
+    "commit": {
+      "author": {
+        "name": "Lidang Jiang",
+        "email": "119769478+Lidang-Jiang@users.noreply.github.com",
+        "date": "2026-08-21T14:20:00Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T14:20:00Z"
+      },
+      "message": "fix: parse respawn_max_retries YAML strings (#969)\n\nSigned-off-by: Lidang Jiang <lidangjiang@gmail.com>",
+      "tree": {
+        "sha": "5d33e390f904a64ebdc2e08220459e99b2b106dc",
+        "url": "https://api.github.com/repos/ros2/launch/git/trees/5d33e390f904a64ebdc2e08220459e99b2b106dc"
+      },
+      "url": "https://api.github.com/repos/ros2/launch/git/commits/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiF6QCRC1aQ7uu5UhlAAAZqAQADBy+mUBMUv1aeqa9G1HH5+Z\nYCVs4H2t1HvXunmZSDvDbvdVP1Zo00FREU2xgClXUhD0u/gnyHZdcxwfpiPJz+vM\n921Y7Z1MDpu/qKzEg6AK9/hrBcl9FQQb0QjZnDWEQD6uuCSKBEMtdiDPLq5OUsCm\nm1uEjhBb4QuhKfoGTqkucBQuQ4R8V2flInfw1IBtmI+/in9ckwEwszGrySnsxkmV\nM5OBbHN0lQHvHGtdqZmVx/ltVHdchXY5PTzaXIEkLXfABtCPTYd0j4+QMCgSUyiu\n1wyyKLwP/FuXIazbV1GGbVMfd4eD4ozRs4+zYPYkgFwt3nCNN8vjbNCqjGZLrDvp\nV+nz8ic6FKWPVx/jBk5/RoPh/4ryDnH4y04KviM9NiYfLqZFxvIptNz33Q9CoEiu\n9YRgAnOqjRo8YRxc6dVehHdpgM1+/FS7DHVikn/S5wxgL/2A/iem3Ky0yDLurQrF\nw+S/0bVX4/2SUilRCGkFmuo5WruvTzy9NL0TOKKkYxvV2DK3g5t7exc77tUqoNG1\nLyXSjoyHBzg/+5qhRZYDbMQVT6My4QwQT0qWy9Gt1e8DJBr+L5fVV9H8peBwD+Q5\nDIWwKpaWGrnggD5XluqbuINT/vuzXu2nHoGBCnUWLNPVBrtdVSJQxGTA6rSOZnya\nxED9Ah5nljFyi3GoA/V5\n=VaiU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5d33e390f904a64ebdc2e08220459e99b2b106dc\nparent 02e510c5a54ac7476890cb79a9951190e52766de\nauthor Lidang Jiang <119769478+Lidang-Jiang@users.noreply.github.com> 1787322000 +0800\ncommitter GitHub <noreply@github.com> 1787322000 +0200\n\nfix: parse respawn_max_retries YAML strings (#969)\n\nSigned-off-by: Lidang Jiang <lidangjiang@gmail.com>",
+        "verified_at": "2026-08-21T14:20:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/launch/commits/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+    "html_url": "https://github.com/ros2/launch/commit/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+    "comments_url": "https://api.github.com/repos/ros2/launch/commits/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4/comments",
+    "author": {
+      "login": "Lidang-Jiang",
+      "id": 119769478,
+      "node_id": "U_kgDOByOJhg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119769478?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lidang-Jiang",
+      "html_url": "https://github.com/Lidang-Jiang",
+      "followers_url": "https://api.github.com/users/Lidang-Jiang/followers",
+      "following_url": "https://api.github.com/users/Lidang-Jiang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lidang-Jiang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lidang-Jiang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lidang-Jiang/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lidang-Jiang/orgs",
+      "repos_url": "https://api.github.com/users/Lidang-Jiang/repos",
+      "events_url": "https://api.github.com/users/Lidang-Jiang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lidang-Jiang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "02e510c5a54ac7476890cb79a9951190e52766de",
+        "url": "https://api.github.com/repos/ros2/launch/commits/02e510c5a54ac7476890cb79a9951190e52766de",
+        "html_url": "https://github.com/ros2/launch/commit/02e510c5a54ac7476890cb79a9951190e52766de"
+      }
+    ]
+  },
+  {
+    "sha": "02e510c5a54ac7476890cb79a9951190e52766de",
+    "node_id": "C_kwDOAe-vztoAKDAyZTUxMGM1YTU0YWM3NDc2ODkwY2I3OWE5OTUxMTkwZTUyNzY2ZGU",
+    "commit": {
+      "author": {
+        "name": "William Woodall",
+        "email": "william@osrfoundation.org",
+        "date": "2026-08-21T07:46:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-21T07:46:07Z"
+      },
+      "message": "Fix LaunchService._is_idle() to consider active background tasks (#996)\n\nConsiders non-internal active asyncio tasks in `LaunchService._is_idle()`\nto ensure background tasks (such as asynchronous process execution) have a\nchance to complete and be managed during shutdown, rather than terminating\nprematurely and leaving orphaned child processes.\n\nFixes #747\nReuses test case from #901\n\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: MegaIng <26136419+MegaIng@users.noreply.github.com>",
+      "tree": {
+        "sha": "7c77ed6d08502f92cc91d9191975d29f4d786647",
+        "url": "https://api.github.com/repos/ros2/launch/git/trees/7c77ed6d08502f92cc91d9191975d29f4d786647"
+      },
+      "url": "https://api.github.com/repos/ros2/launch/git/commits/02e510c5a54ac7476890cb79a9951190e52766de",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqiAI/CRC1aQ7uu5UhlAAA2TYQAFFa9D8q6NRs0Qml2KNDTPuE\nbCdIuxBeaDpd2Sc4SQZWG00yEhiSY603L4y5KEsFvLSVzaQwLpWvtFsDZ0zZWhgf\na6qC/ZUb7EXuh7Wz7z16sD9RBPMHA07zDQIsht2DUTR2wLgFKoRcP8NhR2KfqQdB\n6IDVxmwhEij8Ny2pBpA/nkVRxhEHnuGeQASGS8gLMPV1vh56DDJ9kW5dFEDVOZGY\nMDJFAg6udiUKFUtoPnd+OxHr2/6oBoYkQyhZ2xiUm6s54f4l7h9gf5lob7lIFBiJ\n5ANcG/aB1uxZhwdcB5BEFaKUqcNubsJyt8vIGJdaOQnEhvaqAv4X7P4VPIpcGJNI\n0ymjvBkdiu0tLsCikd3ug1td57MXZwRqkpMqGS23qRmHMh8jmxfD6o+DqIKg5Vvo\nO/NsswJpjjsGUtvtyH4aXqggSf+PVuHeq2EMvr3N7E66gYQ4MjbRFwjKNr3kd9Az\n3ai50wIzOkzq61vm2/dZhdBSDrfmqrVuXSe7Hsro5h/gmOKE13l1npuEp98dHrQh\noK3dDHtxbDqNZyVrqYpt/eNfZhhX/7GnonIP+bznUVOBq7aYpkYw4CnNJjdCZa0M\nKa4AvoYno7P7ekNUD5IEUitm+BA66slXfb6hpsxWvJmIMNHzN5NnmeqRV3flnCod\nYTEvwTqxU3VTT4fxhwav\n=Rm35\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7c77ed6d08502f92cc91d9191975d29f4d786647\nparent 900d994537a1123611605b3b7413f5f6fcd50c02\nauthor William Woodall <william@osrfoundation.org> 1787298367 -0700\ncommitter GitHub <noreply@github.com> 1787298367 +0200\n\nFix LaunchService._is_idle() to consider active background tasks (#996)\n\nConsiders non-internal active asyncio tasks in `LaunchService._is_idle()`\nto ensure background tasks (such as asynchronous process execution) have a\nchance to complete and be managed during shutdown, rather than terminating\nprematurely and leaving orphaned child processes.\n\nFixes #747\nReuses test case from #901\n\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: MegaIng <26136419+MegaIng@users.noreply.github.com>",
+        "verified_at": "2026-08-21T07:46:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/launch/commits/02e510c5a54ac7476890cb79a9951190e52766de",
+    "html_url": "https://github.com/ros2/launch/commit/02e510c5a54ac7476890cb79a9951190e52766de",
+    "comments_url": "https://api.github.com/repos/ros2/launch/commits/02e510c5a54ac7476890cb79a9951190e52766de/comments",
+    "author": {
+      "login": "wjwwood",
+      "id": 100427,
+      "node_id": "MDQ6VXNlcjEwMDQyNw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100427?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wjwwood",
+      "html_url": "https://github.com/wjwwood",
+      "followers_url": "https://api.github.com/users/wjwwood/followers",
+      "following_url": "https://api.github.com/users/wjwwood/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wjwwood/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wjwwood/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wjwwood/subscriptions",
+      "organizations_url": "https://api.github.com/users/wjwwood/orgs",
+      "repos_url": "https://api.github.com/users/wjwwood/repos",
+      "events_url": "https://api.github.com/users/wjwwood/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wjwwood/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "900d994537a1123611605b3b7413f5f6fcd50c02",
+        "url": "https://api.github.com/repos/ros2/launch/commits/900d994537a1123611605b3b7413f5f6fcd50c02",
+        "html_url": "https://github.com/ros2/launch/commit/900d994537a1123611605b3b7413f5f6fcd50c02"
+      }
+    ]
+  }
+]

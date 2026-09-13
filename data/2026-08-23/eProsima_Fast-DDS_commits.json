@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+    "node_id": "C_kwDOATWz_9oAKDJiYWQ5YmNjYTNjMDg0NjY3MTkyMGVlZjBmZTEwZDRkNWFlNjhmZmQ",
+    "commit": {
+      "author": {
+        "name": "Zakaria Talbi Lalmi",
+        "email": "129870492+ZakariaTalbi@users.noreply.github.com",
+        "date": "2026-08-20T07:18:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-20T07:18:18Z"
+      },
+      "message": "Fix minor dataraces (#6422)\n\n* Protected ReaderLocator local_reader_ access with writer mutex.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix pthread_cond lifetime race in sample_lost_waitset tests.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Make CustomPayloadPool counters thread-safe.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix participant_matched_ data race in PubSubWriter.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix vptr race in reception_timestamp_for_resent_samples.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Converted deadline counters to atomic in PubSub Writer/Reader.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Secure access for get_id()\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fiz tzset_internal data race in PermissionsParser\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on MonitorServiceConsumer\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on DDSBboxTestsMonitorService: get_cb_count_of\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on PubSubReader mock, return by value instead of reference\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data races in MockReceiverResource by making shared fields atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data races in ChainingTransportTests by making flag variables atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on done flag in flush log tests\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on MockMessageReceiver callback by adding mutex protection\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix Semaphore lifetime race in UDP tests by clearing callback after wait\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on TestCondition::trigger_value by replacing volatile with atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Applied reviewers suggestions\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Applied second round of reviews\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n---------\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>",
+      "tree": {
+        "sha": "dd36d0f4a27c5aa5a71715216c1a0ecb9f194ce8",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/dd36d0f4a27c5aa5a71715216c1a0ecb9f194ce8"
+      },
+      "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhqo6CRC1aQ7uu5UhlAAApLUQABRa+Zu+1K9jsHgEUuC4kZPY\nJUoBo0SQ3XJ6pa8/9iKLbO/e74CB3VUjSJM8uZjBPQV92II1MGhxcmGPEJYh0J10\nPA7tRP8Hs53ReNCaO7CI7WPlIyP8p0AKdFHpjQWF6bWjha0KBEjoa7qdhl35ZZct\nrEYEc+VgUqlFmd1JEoO6h6IYsdwJ9B/T2NzPLEzbAU7Yk+uKXOjet51hbrYfUS7A\nygPi5oNT5MJArbJKUTDHlL5uFXmWITShljjAl+vxiEggFUTLrpuKBHJGWBNthQ6p\nK5DEvZQl5cgdCVQSTlQctSKQRzMZC4aj8PHhjxwP8QtBadv989htI6u7+zFIPQTl\n/3EuYk1PbPPmv9uWUl2rriIDuEnnuBJXooYuE1Zna7O8CGybQoDeP5kjAYJPZSRV\nonoUvE8TlH9QpWS0z/nL2turaHURyzZgacHjHH/Nrn31Z3ifzTNPYbYcBrvy1r1J\nMTwz+8EkqFkNjjT8fdXa5gNhbODi95UtjC+I3v2TzjcwShxRalDsyvyVzyaosGD2\nZPktHvYS3S4XVyahozN424ALCVKBaT99Sen2Wfkr8Z5mJdPFdS27Bv6aasX0sQNO\n+hp7D+BmAHv38pGdvfzN5zLgNwW85QmRQ30iRRylZKecYGBJ55opx3UXkhtGR0RC\ncYW3gJrHTEbP9BbofSCL\n=cALz\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dd36d0f4a27c5aa5a71715216c1a0ecb9f194ce8\nparent d79fed2abb8b6a58ac750e7d6670d741465f083b\nauthor Zakaria Talbi Lalmi <129870492+ZakariaTalbi@users.noreply.github.com> 1787210298 +0200\ncommitter GitHub <noreply@github.com> 1787210298 +0200\n\nFix minor dataraces (#6422)\n\n* Protected ReaderLocator local_reader_ access with writer mutex.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix pthread_cond lifetime race in sample_lost_waitset tests.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Make CustomPayloadPool counters thread-safe.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix participant_matched_ data race in PubSubWriter.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix vptr race in reception_timestamp_for_resent_samples.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Converted deadline counters to atomic in PubSub Writer/Reader.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Secure access for get_id()\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fiz tzset_internal data race in PermissionsParser\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on MonitorServiceConsumer\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on DDSBboxTestsMonitorService: get_cb_count_of\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on PubSubReader mock, return by value instead of reference\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data races in MockReceiverResource by making shared fields atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data races in ChainingTransportTests by making flag variables atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on done flag in flush log tests\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on MockMessageReceiver callback by adding mutex protection\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix Semaphore lifetime race in UDP tests by clearing callback after wait\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Fix data race on TestCondition::trigger_value by replacing volatile with atomic\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Applied reviewers suggestions\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n* Applied second round of reviews\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\n\n---------\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>",
+        "verified_at": "2026-08-20T07:18:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+    "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd/comments",
+    "author": {
+      "login": "ZakariaTalbi",
+      "id": 129870492,
+      "node_id": "U_kgDOB72qnA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129870492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ZakariaTalbi",
+      "html_url": "https://github.com/ZakariaTalbi",
+      "followers_url": "https://api.github.com/users/ZakariaTalbi/followers",
+      "following_url": "https://api.github.com/users/ZakariaTalbi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ZakariaTalbi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ZakariaTalbi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ZakariaTalbi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ZakariaTalbi/orgs",
+      "repos_url": "https://api.github.com/users/ZakariaTalbi/repos",
+      "events_url": "https://api.github.com/users/ZakariaTalbi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ZakariaTalbi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d79fed2abb8b6a58ac750e7d6670d741465f083b",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/d79fed2abb8b6a58ac750e7d6670d741465f083b",
+        "html_url": "https://github.com/eProsima/Fast-DDS/commit/d79fed2abb8b6a58ac750e7d6670d741465f083b"
+      }
+    ]
+  }
+]

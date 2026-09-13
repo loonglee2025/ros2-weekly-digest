@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "2e44ada201f03875ecf7b691ef2130ac79e0427c",
+    "node_id": "C_kwDOAe-vztoAKDJlNDRhZGEyMDFmMDM4NzVlY2Y3YjY5MWVmMjEzMGFjNzllMDQyN2M",
+    "commit": {
+      "author": {
+        "name": "Michael Carroll",
+        "email": "mjcarroll.oss@gmail.com",
+        "date": "2026-09-07T13:59:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-07T13:59:20Z"
+      },
+      "message": "Sandbox environment variables in launch_xml/launch_yaml tests (#1001)\n\nLaunchContext.environment is os.environ itself, so a test that executes\nReplaceEnvironmentVariables leaves the process environment cleared for every\ntest that runs after it. pytest 9 collects test/<pkg>/ before test/, which put\ntest_rep_env.py ahead of test_xmllint.py and broke it on the Windows nightly\nstarting with build 3910. Add an autouse fixture that restores os.environ after\neach test so the suite no longer depends on collection order.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+      "tree": {
+        "sha": "b7e4d29dd7caec66476860332f471b7a28b02bd7",
+        "url": "https://api.github.com/repos/ros2/launch/git/trees/b7e4d29dd7caec66476860332f471b7a28b02bd7"
+      },
+      "url": "https://api.github.com/repos/ros2/launch/git/commits/2e44ada201f03875ecf7b691ef2130ac79e0427c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqnsM4CRC1aQ7uu5UhlAAA9uMQABhNo84bMPCWG5mF0IqKKqr4\npMWn8TI5xxiTS3mE3sP+0GFl0XaCDtUXs3pbbIZLzWaOOKJI9ulDTQTxd4ugYUir\nX8l5WisNivrQzhA0WkSFYZZgSOOlWl20ID26vqJogVDeqNFQPM5SaZ4N9VQe5BDL\nWWgGGaXkyccjJBCmOGa2dHG8acrbGEfkKrF7+DlvIyndJMTMuD9CIN6aGTOLdrnX\nv90K6zsQw0jG8truTGdd1iVj9GsI26Zz4tgFMieol7LTf2xeb4vJkp6DAjdGINfy\nyEM1H/HxPuez97/bZMjViefkIJoPsDCWFKk21RAQDr83WNRTg9xuCDpChEojy/oh\nWVHIA2PuWFNCM2P55IuJSML/tzFIpYF6XLt1Z4vf1k+bOu3RpEW0TcF9WeLeoV0L\noERK8PAbO7zLgjlwV0W18E7nWr89Dx9Vnrth0+3Y6li8pfOr/u3fTz9huZUm1Zox\nn4zGSWbW0rHzi3q2gxRO0/YisCRUFYXRF2bZg76UcPrF5z6h4r2euHNV+9MHRdx2\n/fVuHhWTGyqJFR2CTNfoSGw0pLu5agAPm51pYybIWKIJ+kOf8Oo8Ugen2qDNOKJ1\ntsFb/6O4jnlBTwwrjDMPnxoGG5R/BCo71kJ8VX7TDjsNo6t7uYzkZ1BD1wOGZXPf\nutjf5p+Plv6d1LZ0yjKQ\n=HmnE\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b7e4d29dd7caec66476860332f471b7a28b02bd7\nparent 479a98d7115cd3ba091b1eea44643a5202528364\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1788789560 -0500\ncommitter GitHub <noreply@github.com> 1788789560 +0200\n\nSandbox environment variables in launch_xml/launch_yaml tests (#1001)\n\nLaunchContext.environment is os.environ itself, so a test that executes\nReplaceEnvironmentVariables leaves the process environment cleared for every\ntest that runs after it. pytest 9 collects test/<pkg>/ before test/, which put\ntest_rep_env.py ahead of test_xmllint.py and broke it on the Windows nightly\nstarting with build 3910. Add an autouse fixture that restores os.environ after\neach test so the suite no longer depends on collection order.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+        "verified_at": "2026-09-07T13:59:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/launch/commits/2e44ada201f03875ecf7b691ef2130ac79e0427c",
+    "html_url": "https://github.com/ros2/launch/commit/2e44ada201f03875ecf7b691ef2130ac79e0427c",
+    "comments_url": "https://api.github.com/repos/ros2/launch/commits/2e44ada201f03875ecf7b691ef2130ac79e0427c/comments",
+    "author": {
+      "login": "mjcarroll",
+      "id": 279701,
+      "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjcarroll",
+      "html_url": "https://github.com/mjcarroll",
+      "followers_url": "https://api.github.com/users/mjcarroll/followers",
+      "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+      "repos_url": "https://api.github.com/users/mjcarroll/repos",
+      "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "479a98d7115cd3ba091b1eea44643a5202528364",
+        "url": "https://api.github.com/repos/ros2/launch/commits/479a98d7115cd3ba091b1eea44643a5202528364",
+        "html_url": "https://github.com/ros2/launch/commit/479a98d7115cd3ba091b1eea44643a5202528364"
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+Title: How do you simulate latency? - Gazebo / Gazebo General - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/how-do-you-simulate-latency/57337
+
+Published Time: 2026-08-12T07:53:07+00:00
+
+Markdown Content:
+read  4 min
+
+## post by peci1 on Aug 12
+
+Did someone already do something regarding simulating latency (or even jitter) in sensor data and control commands?
+
+I think the obvious approach when you work with ROS is to implement something like topic_tools/delay and plug it behind the bridge. However, that seems to massively increase the number of topics, making it very error-prone to pick the right one…
+
+I can imagine a similar mechanism on the gz-transport side, that would at least help with the number of ROS topics. But isn’t there something even closer to the simulation?
+
+read  4 min
+
+## post by Marc_Wester on Aug 12
+
+Are you talking about modeling latency for RL training? If so, we don’t use ROS for that, we have our latencies baked into the model inputs and outputs.
+
+## post by peci1 on Aug 12
+
+Not necessarily RL training. I’m talking about CI pipelines, PID tuning and general use.
+
+So your model basically has a queue for each input/output?
+
+## post by Saketh 5 days ago
+
+Whichever mechanism you end up with, one thing I’d really push for is to seed the jitter and log the actual delay injected per message, not just the distribution you asked for. I build replay tooling for robot fleets and this one bit me hard.
+
+Unseeded injected noise gives you failures you can see but can’t get back. The way I ended up doing it is that every injected fault gets recorded as part of the run itself, so when some cursed interleaving trips CI, that exact run replays instead of turning into a flaky ghost.
+
+Doesn’t answer your topology question, sorry, but whichever way you delay things, making the injection part of the record pays off the first time something actually breaks.
+
+## post by sokstherobot 5 days ago
+
+For CI and PID tuning specifically, I have had better luck putting the delay below the middleware rather than inside the graph. A netem qdisc on the interface, or on a veth pair if you only want to shape one direction, gives you delay, jitter with a distribution, reordering and loss in one place, and it never touches your topic list. That is closer to the wire than a delay node, which for a lot of these questions is the same as closer to the simulation.
+
+The reason I moved off delay nodes is not only the topic explosion. A delay node holds an already-delivered message and republishes it later, so what you get is a shifted timestamp. It does not reproduce what the transport does under those conditions. DDS reliability is a heartbeat and NACK conversation, and once you add real latency and loss, retransmit timing, history depth and missed deadlines start driving behavior. Those are usually the things that bite in the field, and a delay node hides all of them.
+
+One caveat that surprises people the first time: netem shapes wall clock. If your control loop runs on /clock and the sim is not real-time, your shaped 100 ms is 100 ms of wall clock, not of sim time. For PID tuning that is usually what you want, but only if you run the sim real-time locked. Worth deciding up front which clock the tuning should be honest to.
+
+Saketh’s point above is the one I would not skip. netem loss and jitter are pseudorandom, so a bare profile gives you a distribution, not a repeatable run, which is useless as a CI gate. Newer kernels let you pin the netem seed, and I keep two profiles: a fixed-delay, zero-jitter, pinned-seed one that gates the build, and a nastier randomized one that runs nightly and is allowed to fail loudly. Recording the injected fault into the run itself, the way he describes, is the more robust version of that, and the two compose: shape at the qdisc, record what you shaped.
+
+For context, I work on remote operations for ROS 2 fleets across links I do not control, so degraded-link behavior is most of what I stare at.
+
+## post by peci1 4 days ago
+
+Thanks a lot for the great ideas! I assume these techniques do not play well with intraprocess comms, right? I usually like to run the most demanding nodes in the same container as Gazebo bridge and enable intraprocess for that…
+
+## post by sokstherobot 4 days ago
+
+## post by peci1 4 days ago
+
+## post by sokstherobot 4 days ago
+
+## post by peci1 4 days ago
+
+## post by JM_ROS 4 days ago
+
+## post by peci1 4 days ago

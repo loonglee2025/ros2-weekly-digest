@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "b48b3a3d93d492f730ac3d1ca3580df0a6ac80eb",
+    "node_id": "C_kwDOAVrxtdoAKGI0OGIzYTNkOTNkNDkyZjczMGFjM2QxY2EzNTgwZGYwYTZhYzgwZWI",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-08-15T15:02:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T15:02:10Z"
+      },
+      "message": "Support generic subscription callbacks in LifecycleNode (#3227)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "4486bddcaa9e3952941019bfe8aa84a2cd9f4e9d",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/4486bddcaa9e3952941019bfe8aa84a2cd9f4e9d"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/b48b3a3d93d492f730ac3d1ca3580df0a6ac80eb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgH9yCRC1aQ7uu5UhlAAASWAQADQaX+x6rJG6niHjv6sN8qrh\nJp7yngcd3K3yMNUs/ynW74sZZDOy3JYL9fuwzp5f/sz035ktjOurCiH/WpQbFS2m\noItu+cF0YZp/4UJUccwM+Fr7dfJN/s7caoY6HUJqvyaU5k2/H0TktipYNGj+ojU8\nz8HASZRCTWIohCVKtnQycw06fgnlv2t0468oN4etwU5m5psSpvdmRel+q61+/cBL\ntQqvg+hYxUAulLxTC4QuRa86C3I34dIgEVMbZNtZKFQwANLDni45jdkKDSlMFjs5\nHd6MFe4wyIqvobfRKkLqWlEoUd2f0BZr90mUbZXhmpqoJWMnJN6kZ/FMezxXC49r\nfUBrsxnYGqURYJi5QzX9IlqGWPDipryFzlyXsOuLY36FUbtCEaCS1D2JKilxMrwP\nj2+6jdIjjfHkDhzUbsCPFZcB3la1dKFVOkWtckK8WmZe34N2wgEoILvIMZd3Q6+E\nQumVcr0O8uvdBHYFVzW84O+XxB22NPJbjTnYS4XZHKIWDGCg7AGYl8wlG0bEHpVe\nHVYpJp0h+nI00NPkiLIEOCcAVeBqkgBqBXLa0S0yGQ0K/OliTm6vE9919VzKnLv0\n61MP33MSMZfOUAVQcDp/Gxd06WPj/46yv4446hDCKQisuaMUZbhY0X5exz9iIo2u\nt/4uo2XdWyNVvDYs9hym\n=uSPf\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4486bddcaa9e3952941019bfe8aa84a2cd9f4e9d\nparent 329abd884470b2693da0127604eb3cf1066c4112\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1786806130 +0700\ncommitter GitHub <noreply@github.com> 1786806130 -0500\n\nSupport generic subscription callbacks in LifecycleNode (#3227)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-08-15T15:02:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/b48b3a3d93d492f730ac3d1ca3580df0a6ac80eb",
+    "html_url": "https://github.com/ros2/rclcpp/commit/b48b3a3d93d492f730ac3d1ca3580df0a6ac80eb",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/b48b3a3d93d492f730ac3d1ca3580df0a6ac80eb/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "329abd884470b2693da0127604eb3cf1066c4112",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/329abd884470b2693da0127604eb3cf1066c4112",
+        "html_url": "https://github.com/ros2/rclcpp/commit/329abd884470b2693da0127604eb3cf1066c4112"
+      }
+    ]
+  },
+  {
+    "sha": "329abd884470b2693da0127604eb3cf1066c4112",
+    "node_id": "C_kwDOAVrxtdoAKDMyOWFiZDg4NDQ3MGIyNjkzZGEwMTI3NjA0ZWIzY2YxMDY2YzQxMTI",
+    "commit": {
+      "author": {
+        "name": "Michal Sojka",
+        "email": "michal.sojka@cvut.cz",
+        "date": "2026-08-15T14:52:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T14:52:40Z"
+      },
+      "message": "rclcpp_components: Fix compilation with clang (#3229)\n\nThis fixes the following error reported by clang:\n\n    /ros/rclcpp/rclcpp_components/src/component_container.cpp:204:50: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]\n      204 |   RCUTILS_LOG_DEBUG_NAMED(\"component_container\", debug_msg.c_str());\n          |                                                  ^~~~~~~~~~~~~~~~~\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:352:55: note: expanded from macro 'RCUTILS_LOG_DEBUG_NAMED'\n      352 |   RCUTILS_LOG_NAMED(RCUTILS_LOG_SEVERITY_DEBUG, name, __VA_ARGS__)\n          |                                                       ^~~~~~~~~~~\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:56:73: note: expanded from macro 'RCUTILS_LOG_NAMED'\n       56 |       rcutils_log_internal(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n          |                                                                         ^~~~~~~~~~~\n    /home/wsh/src/ros/rclcpp/rclcpp_components/src/component_container.cpp:204:50: note: treat the string as an argument to avoid this\n      204 |   RCUTILS_LOG_DEBUG_NAMED(\"component_container\", debug_msg.c_str());\n          |                                                  ^\n          |                                                  \"%s\",\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:352:55: note: expanded from macro 'RCUTILS_LOG_DEBUG_NAMED'\n      352 |   RCUTILS_LOG_NAMED(RCUTILS_LOG_SEVERITY_DEBUG, name, __VA_ARGS__)\n          |                                                       ^\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:56:73: note: expanded from macro 'RCUTILS_LOG_NAMED'\n       56 |       rcutils_log_internal(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n          |                                                                         ^\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+      "tree": {
+        "sha": "a49498b3f9a1b2e459b28ee59585d85a9a54c677",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/a49498b3f9a1b2e459b28ee59585d85a9a54c677"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/329abd884470b2693da0127604eb3cf1066c4112",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgH04CRC1aQ7uu5UhlAAANvUQAHiyAKWb54ZifKwFmBCYqR0f\nIn+oOCScMGuRm6524tOxWQQi4nlGINgU2bMlVy/vynkA6UgiZso5NQOEOjwyWzhx\n/Y+cnEutGRdEtiFwQXvjQn/NdeV0Piv9/Ex4myidjbeL7xMt8hLz1JQdpT/CKzZj\neL77eQHI/ieFj3i8vBUb/54TGio2SvLqSQzd5hQC78GLxWsiKOiMmcaNeyXAyE9c\n5A3XjEGC2fTg3Xa0y/mSvvB4ANDtkHHNyWo7+OqfS7IQ3wOnnO62pjt0+vOKTqvV\nkvYqDYoracuK3cWji8u762PtAWhJZFt5MxX3iz5tbXQHHFkq7wN2TpS473pbKLnZ\nnZGfuZyd/k/o1pHAdpnls7K8hpcwYX92aOgUmu4VEI0CRP2aylkgPK4MWbZ2kVG5\n9+XWsgIejjb4rKAAF3Z+iXB+mLK5OtyKFSv7+5yxQPmrkSHPhC5zWElgCQ3djCXT\nPDmYziQIaPD7GqmV0+MKTYsCjGzzIQ5IL6CZsk4Hd0imLm5QvGFuBl/DHBjmQLN1\n5SZGW3+quyViTVOqwzAcijUEgXE6bfHwzrX8knI6GCJaZJLgF54BTorjmz9opf+O\nkac59S9/svXuAJXMXEpEKuBnGl1JbCLlPmjkWWu4cH7gRMetsMALhCYCdbznTgHh\necGRDq6D90ILw9xZExJT\n=7r2Q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a49498b3f9a1b2e459b28ee59585d85a9a54c677\nparent 7e50a8e5d114e0243140df08d684915dd9e53300\nauthor Michal Sojka <michal.sojka@cvut.cz> 1786805560 +0200\ncommitter GitHub <noreply@github.com> 1786805560 -0500\n\nrclcpp_components: Fix compilation with clang (#3229)\n\nThis fixes the following error reported by clang:\n\n    /ros/rclcpp/rclcpp_components/src/component_container.cpp:204:50: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]\n      204 |   RCUTILS_LOG_DEBUG_NAMED(\"component_container\", debug_msg.c_str());\n          |                                                  ^~~~~~~~~~~~~~~~~\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:352:55: note: expanded from macro 'RCUTILS_LOG_DEBUG_NAMED'\n      352 |   RCUTILS_LOG_NAMED(RCUTILS_LOG_SEVERITY_DEBUG, name, __VA_ARGS__)\n          |                                                       ^~~~~~~~~~~\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:56:73: note: expanded from macro 'RCUTILS_LOG_NAMED'\n       56 |       rcutils_log_internal(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n          |                                                                         ^~~~~~~~~~~\n    /home/wsh/src/ros/rclcpp/rclcpp_components/src/component_container.cpp:204:50: note: treat the string as an argument to avoid this\n      204 |   RCUTILS_LOG_DEBUG_NAMED(\"component_container\", debug_msg.c_str());\n          |                                                  ^\n          |                                                  \"%s\",\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:352:55: note: expanded from macro 'RCUTILS_LOG_DEBUG_NAMED'\n      352 |   RCUTILS_LOG_NAMED(RCUTILS_LOG_SEVERITY_DEBUG, name, __VA_ARGS__)\n          |                                                       ^\n    /nix/store/2xvm1s7bkzj40vswqm9ihlfmq7bxb291-ros-env/include/rcutils/rcutils/logging_macros.h:56:73: note: expanded from macro 'RCUTILS_LOG_NAMED'\n       56 |       rcutils_log_internal(&__rcutils_logging_location, severity, name, __VA_ARGS__); \\\n          |                                                                         ^\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+        "verified_at": "2026-08-15T14:52:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/329abd884470b2693da0127604eb3cf1066c4112",
+    "html_url": "https://github.com/ros2/rclcpp/commit/329abd884470b2693da0127604eb3cf1066c4112",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/329abd884470b2693da0127604eb3cf1066c4112/comments",
+    "author": {
+      "login": "wentasah",
+      "id": 140542,
+      "node_id": "MDQ6VXNlcjE0MDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140542?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wentasah",
+      "html_url": "https://github.com/wentasah",
+      "followers_url": "https://api.github.com/users/wentasah/followers",
+      "following_url": "https://api.github.com/users/wentasah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wentasah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wentasah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wentasah/subscriptions",
+      "organizations_url": "https://api.github.com/users/wentasah/orgs",
+      "repos_url": "https://api.github.com/users/wentasah/repos",
+      "events_url": "https://api.github.com/users/wentasah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wentasah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7e50a8e5d114e0243140df08d684915dd9e53300",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/7e50a8e5d114e0243140df08d684915dd9e53300",
+        "html_url": "https://github.com/ros2/rclcpp/commit/7e50a8e5d114e0243140df08d684915dd9e53300"
+      }
+    ]
+  },
+  {
+    "sha": "7e50a8e5d114e0243140df08d684915dd9e53300",
+    "node_id": "C_kwDOAVrxtdoAKDdlNTBhOGU1ZDExNGUwMjQzMTQwZGYwOGQ2ODQ5MTVkZDllNTMzMDA",
+    "commit": {
+      "author": {
+        "name": "Nathan Wiebe Neufeldt",
+        "email": "wn.nathan@gmail.com",
+        "date": "2026-08-15T14:51:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T14:51:38Z"
+      },
+      "message": "Add RCLCPP_*_FORMAT logging macros  (#2263)\n\nSimilar to the RCLCPP_*_STREAM family of macros, which enable the use of C++'s stream-based output, these new logging macros allow users to conveniently invoke the new C++20 std::format() function for generating formatted text.\n\nSigned-off-by: Nathan Wiebe Neufeldt <wn.nathan@gmail.com>",
+      "tree": {
+        "sha": "058408d02986bfdc823766c8991abaa50cdaea49",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/058408d02986bfdc823766c8991abaa50cdaea49"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/7e50a8e5d114e0243140df08d684915dd9e53300",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqgHz6CRC1aQ7uu5UhlAAA9ssQAEFjVOAX1zO8UdWy0/smXanh\nap/bRZdio1bCxyIfGqEkO/JNPYzXS4qm+nSU/ADd5hK1lBz/+7hSSLml7d7W13GC\nfkYx5WS7vL5wCbczl7hOAezpCcoeHho1p+IzHdvQ5dMudOzh1Bq3usHgVYhVi7It\n2IZuM3NStH4RhGlXkFuxy3JMKXYw/FVKfG7RaUzZcwikd4qHVXEVYQxmC0g6ODdj\nd5zWkCXaJmO0qBAilMyjasvctejq7npya2a+HEPGwlDCwXMwKmT6Uh0gWbsFhwKU\nnVjrAzk21Tp6YzHBF7+2299qhK0v+EZGeP5ldjkJ+SBX49HgfvXcey2vMLT+UuGA\nqUvpPWN2SrXUxblZdIalwfEcN2of1/Hq0plr8ycNhltKG5j1BkAbl/FpxjTi2wGX\nqanrxeSjRGjSsO3x9cFD6tHO6MvagJ/83gzPuR8771CKreixTb/zQP21tIHT//xK\nqMjQfZ7O09SoP8+yAiFJ6FBRvnlWAZ9mdXn8+HkSZdSq5lGFsQU+ugPYhKI4Iu5A\nWBIYXCN4sa4K43mM55wermSJv15g5HQYFMyIaKTkKHS4VZ53h9CqFx0mVD1DfDZz\n3aegkhWj6tfbGzh4U5Im4dPCaLNHckfUW5Q2p+Kajj12XM9ztg5cN7s0SLY/Dvn6\nmjvcM0+pjlmrNg7sSeJz\n=nEY/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 058408d02986bfdc823766c8991abaa50cdaea49\nparent 81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d\nauthor Nathan Wiebe Neufeldt <wn.nathan@gmail.com> 1786805498 -0400\ncommitter GitHub <noreply@github.com> 1786805498 -0500\n\nAdd RCLCPP_*_FORMAT logging macros  (#2263)\n\nSimilar to the RCLCPP_*_STREAM family of macros, which enable the use of C++'s stream-based output, these new logging macros allow users to conveniently invoke the new C++20 std::format() function for generating formatted text.\n\nSigned-off-by: Nathan Wiebe Neufeldt <wn.nathan@gmail.com>",
+        "verified_at": "2026-08-15T14:51:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/7e50a8e5d114e0243140df08d684915dd9e53300",
+    "html_url": "https://github.com/ros2/rclcpp/commit/7e50a8e5d114e0243140df08d684915dd9e53300",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/7e50a8e5d114e0243140df08d684915dd9e53300/comments",
+    "author": {
+      "login": "nwn",
+      "id": 5771789,
+      "node_id": "MDQ6VXNlcjU3NzE3ODk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5771789?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nwn",
+      "html_url": "https://github.com/nwn",
+      "followers_url": "https://api.github.com/users/nwn/followers",
+      "following_url": "https://api.github.com/users/nwn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nwn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nwn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nwn/subscriptions",
+      "organizations_url": "https://api.github.com/users/nwn/orgs",
+      "repos_url": "https://api.github.com/users/nwn/repos",
+      "events_url": "https://api.github.com/users/nwn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nwn/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+        "html_url": "https://github.com/ros2/rclcpp/commit/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d"
+      }
+    ]
+  },
+  {
+    "sha": "81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+    "node_id": "C_kwDOAVrxtdoAKDgxZWMzZTMwYmY2YWU3OWM5MDNjYzJmYzVkYWEzMGVjNWY1MzA0MWQ",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar@dexory.com",
+        "date": "2026-08-13T16:17:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-13T16:17:48Z"
+      },
+      "message": "Fix race condition when creating isolated component container (#3223)\n\n* Refactor thread management in ComponentManagerIsolated to handle thread_num parameter dynamically\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add test for isolated multi-threaded component manager with auto thread resolution\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "93683d641fc4d05b28c244b812a7de26e62654b6",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/93683d641fc4d05b28c244b812a7de26e62654b6"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfe4sCRC1aQ7uu5UhlAAAF+gQAKsve5wXb37mvYzamfaP38E4\nPu6/t4igf/nKqz7TTMxCv7x9yIdGvlj4CrcGweNtHJTFS4OQnpi6qsxdAa4azAAE\nJ4H4yKSzQ7y2UdNn1bDy2xHSHVU5hUsp6c4o7OeZa7t4eHzfjnXT3K6FIqXE47Gf\n3FHAy5O8iz35G7F35wPcP0ihekToPYe43T9Tg3LKf6UMzQ6V6Cb2JoVWSx8E7v/+\n9CCXwfTcmsi+C1mLrZ5BThOr0Hvc4V0I7kadnDNjSCR5qyp0hzHWDXtYXDIDmE2e\nggI13lChFhfc8vx1JWRlXydVaHjLbk8W2Iw2q5tNP9f/DXFFfiHt4Thh5nEyRdbc\ny8lloXxIxrc8FXGpZzucJT93gPAM6AC5EJvLxcD5Z4FLH74yyLWsLbvydmwwirWS\nQmUpctuuB8m6Awv2WeqZyzRqxBZNMuqUy2Cs/nDftX9aIxAy/Z6wALCaEd7Tjq8H\ns1F7XUzR+ODNvYUXU2IsfgBWhaM6x9YAI50bJovrh3KYj5mlsLGSOpqTyxFKfrfr\nSQdJ5+RlRsPQNZicQif+lv2G9ZWrGxc5/56/WCAxu0p1wmy7yfmeQDkVp5mYfOTa\nVskPk/d8PQzZz80snMivBf6cfOSnYfdNiRjuIHgB8XUwEzByf9Qoet5PN69afA8P\nPhsz0InqTVtYf0jwgh5s\n=aXrO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 93683d641fc4d05b28c244b812a7de26e62654b6\nparent 05edf7daa6bddc5eb6228c230c72ebfa4bbf511c\nauthor Tony Najjar <tony.najjar@dexory.com> 1786637868 +0200\ncommitter GitHub <noreply@github.com> 1786637868 -0700\n\nFix race condition when creating isolated component container (#3223)\n\n* Refactor thread management in ComponentManagerIsolated to handle thread_num parameter dynamically\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add test for isolated multi-threaded component manager with auto thread resolution\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-08-13T16:18:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+    "html_url": "https://github.com/ros2/rclcpp/commit/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/81ec3e30bf6ae79c903cc2fc5daa30ec5f53041d/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+        "html_url": "https://github.com/ros2/rclcpp/commit/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c"
+      }
+    ]
+  },
+  {
+    "sha": "05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+    "node_id": "C_kwDOAVrxtdoAKDA1ZWRmN2RhYTZiZGRjNWViNjIyOGMyMzBjNzJlYmZhNGJiZjUxMWM",
+    "commit": {
+      "author": {
+        "name": "Tomoya Fujita",
+        "email": "fujita.tomoya@triorb.co.jp",
+        "date": "2026-08-12T01:59:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-12T01:59:22Z"
+      },
+      "message": "fix: prevent double-shutdown in rclcpp::Context (#3220)\n\n* fix: prevent double-shutdown in rclcpp::Context\n\nThe signal handler thread (deferred_signal_handler) and the main thread\nmay both call Context::shutdown() during Ctrl-C, causing a double-free\nor heap corruption in the underlying rcl_context_t and glibc.\n\nAdd an atomic flag is_shutting_down_ to ensure only the first call to\nshutdown() proceeds; subsequent calls return immediately.\n\nSteps to reproduce:\n1. Launch any ROS 2 node with shutdown_on_signal=true\n2. Press Ctrl-C\n3. Observe SIGABRT in rclcpp::Context::shutdown() called from\n   rclcpp::SignalHandler::deferred_signal_handler()\n\nGDB backtrace from core dump:\n  Thread 1: raise() -> abort()\n    -> rclcpp::Context::shutdown()\n    -> rclcpp::SignalHandler::deferred_signal_handler()\n\nSigned-off-by: fishitiny <fishitiny@users.noreply.github.com>\n(cherry picked from commit 599f3b8d7b12829933c7fe05c33f70e428808cfd)\n\nAdaptation for rolling: reset is_shutting_down_ in Context::init() so\nthat shutdown() works again after the context is re-initialized.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n* add reentrant and concurrent shutdown tests for rclcpp::Context.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\nCo-authored-by: fishitiny <fishitiny@users.noreply.github.com>",
+      "tree": {
+        "sha": "94287a3804f49eefbb4dfbd2b51289d71ec5b0be",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/94287a3804f49eefbb4dfbd2b51289d71ec5b0be"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqe9N6CRC1aQ7uu5UhlAAAgfEQAKfBJmO3qU++eQ/R09DjlSRB\nJxofuS0wZo99Ivt95fGWI5RM+NQtqos8XnTIUWIBotUCHzlaE99pE5v/xo6Dbj6D\nye84LBEkTKWkuWwNwcNoCwxJXniQMVlwrIMRT5SnJKCA+q8dqBFGoBnbWKs51ZU4\njlBy+MHmlDk0M24ND7Qwg708m8ft7nq73THN4mpUV1SNJ5sVkC/wpCOJ+wvXcVm1\ne7llJ6CGi7j3UNpbuLJbNDyPB544gG6wvRcclDtILUadbkNDvpN7AEq9+vT/W1dJ\nFaUY6dwEabJOqgraC9PR/bkvQ4TSBm2G5F3SQ/cPv4UXhrMomn018siPXninBnqp\n/LjLG+ipcpBPvOPRbWDTo2N4Mgk43V/udhoGOYSo20O0RCf9BCVutMvIJeCRDJSF\nBSNN4ows1fi6MvKikAGlc7h6JzscdDwDsoVfTYCX/CYUXIV/98RwU6JFOVT2jPFl\nFVDxoMZ+WC9L6ZS71OeZJASvlEewPUprN1T6rYjuAUTOsbw/GLiiKAJv5mAXwU/L\nm6UJOXymfhhqUoJbPE1nxhoS8WPbNlgfDKUcnNUCdN9Y05hnKNaLESpjTHgmDyNF\n5eHbiYOhTFMpRJKbUfGKmlgD1jxAlb3/cw75jf7TqqDInpdrgI9ssATXIg/EKfpN\n6DGpcm34DHGbnTNnDXC5\n=QQFS\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 94287a3804f49eefbb4dfbd2b51289d71ec5b0be\nparent d1a7896a2a412073312ba3e12719402a9808dea3\nauthor Tomoya Fujita <fujita.tomoya@triorb.co.jp> 1786499962 +0900\ncommitter GitHub <noreply@github.com> 1786499962 +0900\n\nfix: prevent double-shutdown in rclcpp::Context (#3220)\n\n* fix: prevent double-shutdown in rclcpp::Context\n\nThe signal handler thread (deferred_signal_handler) and the main thread\nmay both call Context::shutdown() during Ctrl-C, causing a double-free\nor heap corruption in the underlying rcl_context_t and glibc.\n\nAdd an atomic flag is_shutting_down_ to ensure only the first call to\nshutdown() proceeds; subsequent calls return immediately.\n\nSteps to reproduce:\n1. Launch any ROS 2 node with shutdown_on_signal=true\n2. Press Ctrl-C\n3. Observe SIGABRT in rclcpp::Context::shutdown() called from\n   rclcpp::SignalHandler::deferred_signal_handler()\n\nGDB backtrace from core dump:\n  Thread 1: raise() -> abort()\n    -> rclcpp::Context::shutdown()\n    -> rclcpp::SignalHandler::deferred_signal_handler()\n\nSigned-off-by: fishitiny <fishitiny@users.noreply.github.com>\n(cherry picked from commit 599f3b8d7b12829933c7fe05c33f70e428808cfd)\n\nAdaptation for rolling: reset is_shutting_down_ in Context::init() so\nthat shutdown() works again after the context is re-initialized.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n* add reentrant and concurrent shutdown tests for rclcpp::Context.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\nCo-authored-by: fishitiny <fishitiny@users.noreply.github.com>",
+        "verified_at": "2026-08-12T01:59:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+    "html_url": "https://github.com/ros2/rclcpp/commit/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/05edf7daa6bddc5eb6228c230c72ebfa4bbf511c/comments",
+    "author": {
+      "login": "fujitatomoya",
+      "id": 43395114,
+      "node_id": "MDQ6VXNlcjQzMzk1MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43395114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fujitatomoya",
+      "html_url": "https://github.com/fujitatomoya",
+      "followers_url": "https://api.github.com/users/fujitatomoya/followers",
+      "following_url": "https://api.github.com/users/fujitatomoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fujitatomoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fujitatomoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fujitatomoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/fujitatomoya/orgs",
+      "repos_url": "https://api.github.com/users/fujitatomoya/repos",
+      "events_url": "https://api.github.com/users/fujitatomoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fujitatomoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d1a7896a2a412073312ba3e12719402a9808dea3",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/d1a7896a2a412073312ba3e12719402a9808dea3",
+        "html_url": "https://github.com/ros2/rclcpp/commit/d1a7896a2a412073312ba3e12719402a9808dea3"
+      }
+    ]
+  }
+]

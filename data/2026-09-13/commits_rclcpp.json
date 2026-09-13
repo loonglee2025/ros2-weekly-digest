@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "e47c08484b44549aa2348880e94303bf6a3a807f",
+    "node_id": "C_kwDOAVrxtdoAKGU0N2MwODQ4NGI0NDU0OWFhMjM0ODg4MGU5NDMwM2JmNmEzYTgwN2Y",
+    "commit": {
+      "author": {
+        "name": "Tomoya Fujita",
+        "email": "fujita.tomoya@triorb.co.jp",
+        "date": "2026-09-11T05:13:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-11T05:13:42Z"
+      },
+      "message": "enable ABI compatibility action check. (#3262)\n\n* enable ABI compatibility action check.\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n* adjust the build mode into source build, since this requires core changes.\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n* chore: retrigger CI\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>",
+      "tree": {
+        "sha": "066ffa638d7631205f006f9e066bbd18fe285e42",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/066ffa638d7631205f006f9e066bbd18fe285e42"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/e47c08484b44549aa2348880e94303bf6a3a807f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqo44GCRC1aQ7uu5UhlAAA/VIQAAgFCwE0ovaFEX22DDwoq9OI\nsCxq4+yXCey/Ha5BabzKbifNRxJLkZ8jciP1/ru4lrPdo+D18Q0qps2CYjO5jOQu\nUsAk+SIz1Uo6pkeHyzmRymFQNh5hfa+/LQCfKL90EXsK8tNfUCYBxCy8Qkx2anwd\ngumUScULM5IsHC+cyGMzqJw6Vzxb8dtLububY1Qp9JSNFyD0dwIVntj9ctDFXsp/\nCidb10RRbJ2hNM8YKgZoyZWzHJx3ec23fhOcJ+8DpwxJuFACWXA+R4tdwPz+BhCO\nigPORNMPSFJ8o4CDoQZPt07AUUedtPMYHdsbSBI7vhQUyySb1TEvzC1413+E4n/0\nNl5d0RybmuJc1v4Ybfb3qRjkMs/kcWyl3F5JLOAwuI2Rg7FEnc33VSI5yftTsxDk\nuDR5F/MWE9exPHx/4Sh3+/zdYrsQSnBQjt/63nbuWX0Ts2jidrQqJ+rarIv8G88D\nBcLeAetP132XTJtDfJvoOXBlDBiJK9F+dSQ7SIRV33uRaUV7pQX6Hoo0r5o7ND2d\neeVthiHs9PGS+hff2ly92sGnBikGyE5NFLhqP9yLl1B5NO77H5N+n1tHi2VrObTN\nvwTKBOxzrgGywb8g8mfhLB+vPinn0HRoUqD44NQL6o8V3wfwi55sWm4c6PZxgB7F\no4JqF/ryR6acUpus/3KX\n=fSkj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 066ffa638d7631205f006f9e066bbd18fe285e42\nparent 2e5a8b9ea68d03ebd24627a91abc8f105fe81661\nauthor Tomoya Fujita <fujita.tomoya@triorb.co.jp> 1789103622 +0900\ncommitter GitHub <noreply@github.com> 1789103622 +0900\n\nenable ABI compatibility action check. (#3262)\n\n* enable ABI compatibility action check.\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n* adjust the build mode into source build, since this requires core changes.\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n* chore: retrigger CI\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya.Fujita <fujita.tomoya@triorb.co.jp>",
+        "verified_at": "2026-09-11T05:13:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/e47c08484b44549aa2348880e94303bf6a3a807f",
+    "html_url": "https://github.com/ros2/rclcpp/commit/e47c08484b44549aa2348880e94303bf6a3a807f",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/e47c08484b44549aa2348880e94303bf6a3a807f/comments",
+    "author": {
+      "login": "fujitatomoya",
+      "id": 43395114,
+      "node_id": "MDQ6VXNlcjQzMzk1MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43395114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fujitatomoya",
+      "html_url": "https://github.com/fujitatomoya",
+      "followers_url": "https://api.github.com/users/fujitatomoya/followers",
+      "following_url": "https://api.github.com/users/fujitatomoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fujitatomoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fujitatomoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fujitatomoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/fujitatomoya/orgs",
+      "repos_url": "https://api.github.com/users/fujitatomoya/repos",
+      "events_url": "https://api.github.com/users/fujitatomoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fujitatomoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+        "html_url": "https://github.com/ros2/rclcpp/commit/2e5a8b9ea68d03ebd24627a91abc8f105fe81661"
+      }
+    ]
+  },
+  {
+    "sha": "2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+    "node_id": "C_kwDOAVrxtdoAKDJlNWE4YjllYTY4ZDAzZWJkMjQ2MjdhOTFhYmM4ZjEwNWZlODE2NjE",
+    "commit": {
+      "author": {
+        "name": "Bas Zalmstra",
+        "email": "4995967+baszalmstra@users.noreply.github.com",
+        "date": "2026-09-10T08:13:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T08:13:36Z"
+      },
+      "message": "Don't let malformed set_parameters requests crash the node (#3256)\n\nThe set_parameters and set_parameters_atomically service handlers only\ncaught ParameterNotDeclaredException. A request carrying a parameter with\nan empty name (InvalidParametersException) or an unknown value type\n(UnknownTypeError, thrown by Parameter::from_parameter_msg) let the\nexception escape the service callback, unwind through the executor's\nspin(), and terminate the node -- an unauthenticated remote DoS on any\nnode exposing the default parameter services.\n\nBroaden both handlers to catch std::exception and return an unsuccessful\nSetParametersResult instead. In the atomic handler, move the\nfrom_parameter_msg conversion inside the try so an unknown type raised\nduring conversion is handled too.\n\nAdds regression tests covering empty name (typed client) and unknown\ntype (raw client) for both services.\n\nSigned-off-by: Bas Zalmstra <4995967+baszalmstra@users.noreply.github.com>\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>\nCo-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "2596cf59e98f88925c3ead1f9ff43c561447bf0c",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/2596cf59e98f88925c3ead1f9ff43c561447bf0c"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqomawCRC1aQ7uu5UhlAAA1JUQALFdSaJXlknfkoD2N++niT1x\nK4I5janLuY0frthbrQEldOX9lWSCOL2X4XfTjjJ1D2tziClRw4VOm4ZaSrODCEU0\nnHKeXS+TgEyQm25kxRm9ki5b4YDzv9mzAC3LfYxFOuQyZyrmSv8fzr9Vz8gvduCW\nxZhDqNrG5DmfmQ3QF1qjTbl2LrBDyctnXQBhh0c+3iWhaZ7Wj9RWVondT5P3ugUu\nodejEQwfslEBcfEvhazZQ8SU08MepdgMDZ3HA6q4LKTcoQ8XTf759uyxVbu6POXh\nX9k69nR09u1MllE6fJx/jpF6z1ydAKcKMjVuiXSsJuKqlNXaIY/zHZkYVSonqs2b\nMAo5IOOzNSdVWmKZppiA1bvAejvXCInipOPX39LsfyQ5slRHiA5o7g59niIlKxZU\n3Urefgf2qDLkhIDasBdvRTggpb1HYF+ArR5NN5gD/aYEw+ADRsK36XFrlHpxcQns\nAP+RyxvHkGh4GsKi/iuWrNWHqUhCPiC5g/LUqUmNa1FmD4IzaE918rMybck+HLyX\nPeUuTil2GzhxLuBmna594j1Uw2egiNWxfUueSTXbiS6Ld+OZ9o/qbJagDgOt04RF\nk/U5tTxrDKmLHmVqTaBSOpbSbuFOs5RJXis0l1MskwXfdz9HwIn979lBUTPeMx90\n59p/21bWlShrJZyZBQ03\n=2u2d\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2596cf59e98f88925c3ead1f9ff43c561447bf0c\nparent c36e550282d41fc151872470b6958507784baa4c\nauthor Bas Zalmstra <4995967+baszalmstra@users.noreply.github.com> 1789028016 +0200\ncommitter GitHub <noreply@github.com> 1789028016 +0200\n\nDon't let malformed set_parameters requests crash the node (#3256)\n\nThe set_parameters and set_parameters_atomically service handlers only\ncaught ParameterNotDeclaredException. A request carrying a parameter with\nan empty name (InvalidParametersException) or an unknown value type\n(UnknownTypeError, thrown by Parameter::from_parameter_msg) let the\nexception escape the service callback, unwind through the executor's\nspin(), and terminate the node -- an unauthenticated remote DoS on any\nnode exposing the default parameter services.\n\nBroaden both handlers to catch std::exception and return an unsuccessful\nSetParametersResult instead. In the atomic handler, move the\nfrom_parameter_msg conversion inside the try so an unknown type raised\nduring conversion is handled too.\n\nAdds regression tests covering empty name (typed client) and unknown\ntype (raw client) for both services.\n\nSigned-off-by: Bas Zalmstra <4995967+baszalmstra@users.noreply.github.com>\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>\nCo-authored-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+        "verified_at": "2026-09-10T08:13:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+    "html_url": "https://github.com/ros2/rclcpp/commit/2e5a8b9ea68d03ebd24627a91abc8f105fe81661",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/2e5a8b9ea68d03ebd24627a91abc8f105fe81661/comments",
+    "author": {
+      "login": "baszalmstra",
+      "id": 4995967,
+      "node_id": "MDQ6VXNlcjQ5OTU5Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4995967?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/baszalmstra",
+      "html_url": "https://github.com/baszalmstra",
+      "followers_url": "https://api.github.com/users/baszalmstra/followers",
+      "following_url": "https://api.github.com/users/baszalmstra/following{/other_user}",
+      "gists_url": "https://api.github.com/users/baszalmstra/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/baszalmstra/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/baszalmstra/subscriptions",
+      "organizations_url": "https://api.github.com/users/baszalmstra/orgs",
+      "repos_url": "https://api.github.com/users/baszalmstra/repos",
+      "events_url": "https://api.github.com/users/baszalmstra/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/baszalmstra/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c36e550282d41fc151872470b6958507784baa4c",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/c36e550282d41fc151872470b6958507784baa4c",
+        "html_url": "https://github.com/ros2/rclcpp/commit/c36e550282d41fc151872470b6958507784baa4c"
+      }
+    ]
+  },
+  {
+    "sha": "c36e550282d41fc151872470b6958507784baa4c",
+    "node_id": "C_kwDOAVrxtdoAKGMzNmU1NTAyODJkNDFmYzE1MTg3MjQ3MGI2OTU4NTA3Nzg0YmFhNGM",
+    "commit": {
+      "author": {
+        "name": "Janosch Machowinski",
+        "email": "jmachowinski@users.noreply.github.com",
+        "date": "2026-09-08T01:05:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-08T01:05:37Z"
+      },
+      "message": "fix: Improved thread usage under congestion (#3258)\n\nSigned-off-by: Janosch Machowinski <J.Machowinski@cellumation.com>\nCo-authored-by: Janosch Machowinski <J.Machowinski@cellumation.com>",
+      "tree": {
+        "sha": "19b5657a713b3d59fa0f4d935f7056e5ab8282ae",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/19b5657a713b3d59fa0f4d935f7056e5ab8282ae"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/c36e550282d41fc151872470b6958507784baa4c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqn19hCRC1aQ7uu5UhlAAA5agQAF6B424Q148WOhI7AGeb0gHO\nsbYrqqan6x37cs6LcGsT1QtctIk33ylTmotRzsHNG/0gw1XHQrVColKVtJVz1VFb\no9dmFEizxhDeGm//SxkQP5Vj/gN+4wHVRzw279W/wHdGGvaajP20nTnkB7xENryJ\n+kRnvuYgfVGPpSszq+K472lgDVZM3+VN1GU/TcQSyS/1FqJhfT6BA/xRTRvEA0kr\nUCAI88q9OS7PemwDS8/QbnronQOLFd4Eqm1uYRjYrSkkVBUakcCRx42jFJnSqK1o\nERhMQN3ha6Pg9chER4XRLq/gRAbqtXok1VZ/7tbV7tlOsJtGmIn++wIh5bw9W1Yf\nxdRSIBSr0yBwl+ksCmJbegi54emwh0SMbUH5bMp5nplcDRUvWl8xIarx/c7BPznF\n+C/eAiHvoe6g5m2RyPIorlharr/f8puHgsquo37bcO4NBcAW4mRY65Yd1a5ypFfS\n3r+P0UABSoelF8u18f5BOjmzcDeirNrGsHtgZoNTMm/SFGoEM62ULi2gz+45AEix\nSxMEhFYEtETeqjvsN2TowzyXPi5gKTi1ocO8yd8eppfH9kgGcHUgrzx8GZemvAb0\ndiXzXPweGxusNgsnOF2TiStBdQxlW5Zv+NvCQpu/4kzlfAhK8CyxI56Adbyoql9Q\nklHZAweseG6c8DGd+Eqb\n=/9T0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 19b5657a713b3d59fa0f4d935f7056e5ab8282ae\nparent d0c60dcf6fbaf66f141616ee86c80f11ed28ee97\nauthor Janosch Machowinski <jmachowinski@users.noreply.github.com> 1788829537 +0200\ncommitter GitHub <noreply@github.com> 1788829537 +0900\n\nfix: Improved thread usage under congestion (#3258)\n\nSigned-off-by: Janosch Machowinski <J.Machowinski@cellumation.com>\nCo-authored-by: Janosch Machowinski <J.Machowinski@cellumation.com>",
+        "verified_at": "2026-09-08T01:05:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/c36e550282d41fc151872470b6958507784baa4c",
+    "html_url": "https://github.com/ros2/rclcpp/commit/c36e550282d41fc151872470b6958507784baa4c",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/c36e550282d41fc151872470b6958507784baa4c/comments",
+    "author": {
+      "login": "jmachowinski",
+      "id": 7935404,
+      "node_id": "MDQ6VXNlcjc5MzU0MDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7935404?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jmachowinski",
+      "html_url": "https://github.com/jmachowinski",
+      "followers_url": "https://api.github.com/users/jmachowinski/followers",
+      "following_url": "https://api.github.com/users/jmachowinski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jmachowinski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jmachowinski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jmachowinski/subscriptions",
+      "organizations_url": "https://api.github.com/users/jmachowinski/orgs",
+      "repos_url": "https://api.github.com/users/jmachowinski/repos",
+      "events_url": "https://api.github.com/users/jmachowinski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jmachowinski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+        "html_url": "https://github.com/ros2/rclcpp/commit/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97"
+      }
+    ]
+  },
+  {
+    "sha": "d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+    "node_id": "C_kwDOAVrxtdoAKGQwYzYwZGNmNmZiYWY2NmYxNDE2MTZlZTg2YzgwZjExZWQyOGVlOTc",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernández Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-09-07T12:41:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-07T12:41:34Z"
+      },
+      "message": "rclcpp components tests: Granular includes and include what you use (#3251)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "cf40e64c73581c428fd0b6e59f56a2dbc9b84e7b",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/cf40e64c73581c428fd0b6e59f56a2dbc9b84e7b"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqnrD+CRC1aQ7uu5UhlAAAgfsQAEOXQOa7aA73NYIQ4AA0SkIV\n/1M3I5/PVjRbBfPKsg2vfvIviTBr882gCuM2ByIljFOLu4vPz6Wx5RzbrtmLVFO8\nhYSoV8VUbvikE/zIJ8RqiBAwt4q//LjyCdCcJqzcN9yYBGxl85pebP8uCeJR+J7J\nGuHRhPRpzh70ApF4Zta6NvdYi+srB852qC27iUs0L40CvEto5GfSitdx+a15G8GJ\nIt4V4AN33+aoLPCpe/M0S/ManX957P78eHadsELN8DiWbJSk1n98eh+8ll6+M0gd\nbJlhIqdm6NZ5H1xItkbTz+9CdVrM4A50tQU8aktcIvtbT2mqcU2G6BeuN2IWNbVo\nNV7iriq+TTNKwpouj4k+eM1xNax0W9k/onNOdojYuRXmB5OpIVGwusaARpWfG/CX\nczjyl6m1AP4BywyTwp81ENwbxYl7oAcGPmgooQpzJdati5Kr+/N8UCvl/KCe9LKF\nPZrncVukwC5thqlNGPog9c5TsSsZND1KE1w1WcUsGeX+jvsReASxPiw5dqLATOBG\ngeUQG10XRGYaq0/yhhzXzCdaiYsrtteiyo3UclPpXbtN9y1YxZHJ1vw6JEj8eHlg\n2pHIZFBXcBls6+yXGWSQtMwY+2D3fP1iE4Mrz+c/zMVJqGJv6TF6os42fpn1CPVO\nfkcEO4NCz5rKa6xeLZCp\n=dWeK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cf40e64c73581c428fd0b6e59f56a2dbc9b84e7b\nparent 26d08f283f34e05810c497e11243e12db54b9ae6\nauthor Alejandro Hernández Cordero <ahcorde@gmail.com> 1788784894 +0200\ncommitter GitHub <noreply@github.com> 1788784894 +0200\n\nrclcpp components tests: Granular includes and include what you use (#3251)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+        "verified_at": "2026-09-07T12:41:35Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+    "html_url": "https://github.com/ros2/rclcpp/commit/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/d0c60dcf6fbaf66f141616ee86c80f11ed28ee97/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "26d08f283f34e05810c497e11243e12db54b9ae6",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/26d08f283f34e05810c497e11243e12db54b9ae6",
+        "html_url": "https://github.com/ros2/rclcpp/commit/26d08f283f34e05810c497e11243e12db54b9ae6"
+      }
+    ]
+  }
+]

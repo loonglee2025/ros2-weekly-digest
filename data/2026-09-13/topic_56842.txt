@@ -1,0 +1,75 @@
+Title: Rethinking Rolling Syncs - ROS / ROS Announcements and News - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/56842
+
+Published Time: 2026-07-21T15:57:57+00:00
+
+Markdown Content:
+Lyrical Luth has shipped and Rolling is back to being the active development target for M Turtle (May 2027) and the cycles after it. We want to change how packages move from Rolling into the main distribution mirror.
+
+## [](http://discourse.ros.org/t/56842#p-115887-current-process-1)Current process
+
+Getting a package from the build farm’s testing repository into the main apt archive requires someone on the release team to manually trigger a sync. A few consequences of that:
+
+*   Syncs happen in batches, whenever someone has time to run and announce them.
+*   A single regression in a candidate batch can hold back every other package in that batch, including ones that are fine.
+*   Timing is unpredictable. A maintainer releases a package, then waits for someone to decide it’s sync day.
+
+This process works but doesn’t scale well, and it ties release velocity to release team bandwidth instead of the actual state of the packages.
+
+## [](http://discourse.ros.org/t/56842#p-115887-alternative-we-considered-and-rejected-no-sync-to-main-2)Alternative we considered and rejected: no sync to main
+
+One option was to stop syncing Rolling to main altogether and leave Rolling packages on the testing mirror permanently. That removes the manual-sync problem entirely, since there’s nothing to schedule.
+
+We’re not doing this because it breaks co-installation. Kilted and Lyrical live on the main mirror. If Rolling only lived on testing, there would be no supported way to install Rolling packages alongside a Kilted or Lyrical install on the same system. That mixed setup is a real workflow for people testing a Rolling-only package on top of a stable base, so we want to keep it working.
+
+## [](http://discourse.ros.org/t/56842#p-115887-what-were-proposing-3)What we’re proposing
+
+Sync becomes automatic once a candidate batch of packages clears a readiness threshold, instead of a person deciding sync day. Two factors will determine that threshold:
+
+1.   Batch size. A larger, well-tested batch of ready packages clears a lower bar than a single isolated package change.
+2.   Position in the dependency graph. A leaf package with few or no reverse dependencies is lower risk to sync than a package that hundreds of other packages depend on. Packages higher up the dependency graph need more validation and longer soak time before an automatic sync fires.
+
+Most day-to-day package updates should reach main faster and on a more predictable schedule than today. Packages with wide downstream impact still get more scrutiny than they do under the current one-size-fits-all manual gate.
+
+## [](http://discourse.ros.org/t/56842#p-115887-the-threshold-changes-over-time-4)The threshold changes over time
+
+The threshold is not fixed. As we approach the M Turtle release (May 2027), we plan to raise it: larger validation batches, stricter dependency-graph requirements, similar to how Rolling already gets more conservative ahead of a stable release under REP 2002. After M Turtle ships and Rolling resets for the next cycle, the threshold comes back down.
+
+Rough sequence:
+
+*   Now through early next year: relaxed thresholds, frequent automatic syncs.
+*   Approaching the M Turtle release: thresholds tighten to protect the stabilization period.
+*   After M Turtle ships: thresholds relax again for the next cycle.
+
+We’ll publish the actual numeric thresholds and any changes to them on the release schedule ahead of time.
+
+## [](http://discourse.ros.org/t/56842#p-115887-what-isnt-changing-5)What isn’t changing
+
+*   Stable distributions (Humble, Jazzy, Kilted) are unaffected. This is scoped entirely to Rolling.
+*   The release process for maintainers is unaffected. You still release into Rolling via bloom the same way you do today. What changes is what happens after your package lands in the testing repo, not how it gets there.
+
+## [](http://discourse.ros.org/t/56842#p-115887-open-questions-6)Open questions
+
+*   What’s the right starting batch size and dependency-graph cutoff? We have starting numbers in mind but want feedback before locking them in.
+*   Should there be a manual override or expedite path for urgent fixes that shouldn’t have to wait for a batch to fill?
+
+* * *
+
+## [](http://discourse.ros.org/t/56842#p-115887-faq-7)FAQ
+
+**Why not just leave Rolling on the testing mirror and skip main syncs entirely?** It breaks co-installation. You’d lose the ability to install Rolling packages alongside a Kilted or Lyrical install on the same system. See the section above.
+
+**Does this affect Humble, Jazzy, or Kilted?** No. This only changes how packages move from Rolling to main. Stable distributions keep their existing patch release process.
+
+**How is “readiness” measured?** Build farm test results and each package’s position in the dependency graph. We’re not introducing a new quality metric.
+
+**Who sets the threshold, and can I see it?** The release team owns the thresholds. We’ll publish them, and any changes to them, on the release schedule rather than adjusting them without notice.
+
+**What happens if a bad package gets synced automatically?** Automation changes when a sync happens, not whether we can pull a package back out of main after the fact. That stays the same.
+
+**Will this make Rolling less stable to build against?** It should do the opposite. Packages with wide downstream impact get a higher bar than the current manual gate applies to everything, while low-risk leaf packages stop waiting on unrelated issues.
+
+**Can I opt my package out of automatic syncing?** No. This isn’t specific to automation. If something your package depends on changes and syncs, your package needs to be rebuilt against it whether or not you’d have preferred to wait. Manual syncs work the same way today.
+
+**When does this start, and when does the threshold tighten for M Turtle?** This will be up to the M-turtle ROS Boss and release team, but we anticipate January of next year.

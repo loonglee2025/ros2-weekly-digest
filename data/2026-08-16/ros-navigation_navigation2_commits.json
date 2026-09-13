@@ -1,0 +1,1068 @@
+[
+  {
+    "sha": "af4233c67cafffe7e40c45197c833116fcbb8c1c",
+    "node_id": "C_kwDOCBF7SNoAKGFmNDIzM2M2N2NhZmZmZTdlNDBjNDUxOTdjODMzMTE2ZmNiYjhjMWM",
+    "commit": {
+      "author": {
+        "name": "Tetsu",
+        "email": "73672219+ty-knowgic@users.noreply.github.com",
+        "date": "2026-08-15T02:01:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-15T02:01:56Z"
+      },
+      "message": "Match velocity_smoother acceleration limits with MPPI defaults (#6362)\n\nSigned-off-by: Tetsu <tetsuy@knowgictech.com>\nSigned-off-by: Tetsu Yamaguchi <tetsuy@knowgictech.com>",
+      "tree": {
+        "sha": "36cc9b8a4d505b5aaa1a13c303166a421a3a41c6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/36cc9b8a4d505b5aaa1a13c303166a421a3a41c6"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/af4233c67cafffe7e40c45197c833116fcbb8c1c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqf8iUCRC1aQ7uu5UhlAAAYTAQAFFAIN5yYXJDcIi6itkO/FTv\nId0b1fCxlJlPkIEEf8ujmHL/4xwSPZAYc2Nh/+hauWXRqzYYMe6sUwZOY6OnO9s1\nA8OZLbzHSdkgn9tVosGgt88/Ls0l2Eu25HS8E07Rwh0UO1f9xl2+SDuot4UrBwPy\nEhpxMObZYE86FYJoOWjbenCFtGpQXayUmE3kjc90dx0xK5SyNZn4Em8tr/Jw/KAB\nu58GR+h0ljqXf88NyM34v7MgbMPCS8wzMiuuwzVMnqOipX6wCy7/jZWZIiYtBD55\n/J1uEagqzk4Xa2JvSib4J1ZL9K3hN/K0rkJRv6UAclnyZXTYqYocmm/b+D5UI3TH\nU+K73gluCP7B46ljh90lQpkS+2zHt91AbO2PYaDz4prWqWJdCEBsFqR3cLEg5CIE\nZJ+JLhmzK/HUiy7FByTlJ31fvx5fc84hzxuaV648ho8F8wRfiOL7Cvvuy7IJQAFg\nsKTYA/9TB3nNntPODZYjLg2e3sauQOEo7lpxA9mkYybO85Ns+abLDwBY0oM25aH9\nTPwMR08D11eFdVo8t0AbTuUnckJbu4JaRgXOeb0exsKJJZ40mxVyjbK6oRnCLkqi\nXe0Uumro6V+CPsvYltntQaIOq7ZqoToXoTKXoBF3okUPxlqWzdgM3YODcIyL7Jb3\n5FRznQxem/oWyEiWnlbV\n=pY4q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 36cc9b8a4d505b5aaa1a13c303166a421a3a41c6\nparent 67b237404d31417c533cb141b6c9d1bf02dae0b8\nauthor Tetsu <73672219+ty-knowgic@users.noreply.github.com> 1786759316 -0400\ncommitter GitHub <noreply@github.com> 1786759316 -0700\n\nMatch velocity_smoother acceleration limits with MPPI defaults (#6362)\n\nSigned-off-by: Tetsu <tetsuy@knowgictech.com>\nSigned-off-by: Tetsu Yamaguchi <tetsuy@knowgictech.com>",
+        "verified_at": "2026-08-15T02:01:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/af4233c67cafffe7e40c45197c833116fcbb8c1c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/af4233c67cafffe7e40c45197c833116fcbb8c1c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/af4233c67cafffe7e40c45197c833116fcbb8c1c/comments",
+    "author": {
+      "login": "ty-knowgic",
+      "id": 73672219,
+      "node_id": "MDQ6VXNlcjczNjcyMjE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73672219?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ty-knowgic",
+      "html_url": "https://github.com/ty-knowgic",
+      "followers_url": "https://api.github.com/users/ty-knowgic/followers",
+      "following_url": "https://api.github.com/users/ty-knowgic/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ty-knowgic/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ty-knowgic/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ty-knowgic/subscriptions",
+      "organizations_url": "https://api.github.com/users/ty-knowgic/orgs",
+      "repos_url": "https://api.github.com/users/ty-knowgic/repos",
+      "events_url": "https://api.github.com/users/ty-knowgic/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ty-knowgic/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "67b237404d31417c533cb141b6c9d1bf02dae0b8",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/67b237404d31417c533cb141b6c9d1bf02dae0b8",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/67b237404d31417c533cb141b6c9d1bf02dae0b8"
+      }
+    ]
+  },
+  {
+    "sha": "67b237404d31417c533cb141b6c9d1bf02dae0b8",
+    "node_id": "C_kwDOCBF7SNoAKDY3YjIzNzQwNGQzMTQxN2M1MzNjYjE0MWI2YzlkMWJmMDJkYWUwYjg",
+    "commit": {
+      "author": {
+        "name": "Okan Demir",
+        "email": "okan.demir.phd@gmail.com",
+        "date": "2026-08-14T21:16:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-14T21:16:51Z"
+      },
+      "message": "Fixes null dock object access cases in dock database (#6355)\n\n* Fixes null dock object access cases in dock database\n\n  - stashDockData deletes `dock` leaving `dock->plugin` dangling.\n  - an unknown dock type yields a null plugin\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>\n\n* Refactored changes for clarity of code and error messages\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>\n\n---------\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>",
+      "tree": {
+        "sha": "311a7e9f4ffa10d7a2fd8996e051c499b60cf0a8",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/311a7e9f4ffa10d7a2fd8996e051c499b60cf0a8"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/67b237404d31417c533cb141b6c9d1bf02dae0b8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqf4XDCRC1aQ7uu5UhlAAAymcQALEfrnDeEQH4fiCjH1YMsVKz\n9PqbQHE5cemUDn+TO2HPwRHbDc7bfofRO5QBw2H4MZfRi7E4vDhWWsRLZLzVddAa\n30cEWr+4rLjnDjk2BYHlfYoJucXgum33qY4/z1jLvdHHL0uVOwX2kOqSdZj44Jsx\n4a9UP5XoyTxjOqQWyRf3JhaBV8XdWPx8MtsLdq/oecPXuShavZBVLjSZKbN7yYDu\nuVs1tDeaOhb7BUi/I1Nr78qa3nKtUagTIrXDLK6UU2FDJE+HID5zoK62sieBUjIl\neR0ujLSI3KSlMfd2Kr5Gjqc3GDhQAUdjjFigHQmOyS0vIw0kv93HrCoMxS4fo8H9\nvoSs9Pky6e+VK+VddFG7/45u9dyxKAyszIs53vvNOdve/fFyYqO7mEQasPusXPCu\nXibjAcjWmSL/mByhmTGSJV9X5NEwqzBU185Zibe0829zvmE4qq/d11wWWnhVP2Vl\nD+fmCMxBCeHj+yZNyGLyx0eDTuH2j+ZnmzOs0M4PDgq4NFvCPZIEOh7z3LuAp5Aw\nraDUDawNw8Nc7HJJ6NXhBMEwle3PGAAG+9CCnzPD1705397zlARFvFN/iZxh+uiA\n5DRpxLKoj7YKEwrgA0CSnSDb3fGDU8LrswM8wOtyR46TG+4Iwy7XQjrBRzTUOh42\nN7Qa8wDQmnSNNd471t8D\n=lQdU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 311a7e9f4ffa10d7a2fd8996e051c499b60cf0a8\nparent 6dbf4549ae1914188916b06dcc19dd3a8115d0a5\nauthor Okan Demir <okan.demir.phd@gmail.com> 1786742211 +0300\ncommitter GitHub <noreply@github.com> 1786742211 -0700\n\nFixes null dock object access cases in dock database (#6355)\n\n* Fixes null dock object access cases in dock database\n\n  - stashDockData deletes `dock` leaving `dock->plugin` dangling.\n  - an unknown dock type yields a null plugin\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>\n\n* Refactored changes for clarity of code and error messages\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>\n\n---------\n\nSigned-off-by: Okan Demir <okan.demir.phd@gmail.com>",
+        "verified_at": "2026-08-14T21:16:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/67b237404d31417c533cb141b6c9d1bf02dae0b8",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/67b237404d31417c533cb141b6c9d1bf02dae0b8",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/67b237404d31417c533cb141b6c9d1bf02dae0b8/comments",
+    "author": {
+      "login": "odemirs",
+      "id": 212567190,
+      "node_id": "U_kgDODKuElg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/212567190?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/odemirs",
+      "html_url": "https://github.com/odemirs",
+      "followers_url": "https://api.github.com/users/odemirs/followers",
+      "following_url": "https://api.github.com/users/odemirs/following{/other_user}",
+      "gists_url": "https://api.github.com/users/odemirs/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/odemirs/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/odemirs/subscriptions",
+      "organizations_url": "https://api.github.com/users/odemirs/orgs",
+      "repos_url": "https://api.github.com/users/odemirs/repos",
+      "events_url": "https://api.github.com/users/odemirs/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/odemirs/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/6dbf4549ae1914188916b06dcc19dd3a8115d0a5"
+      }
+    ]
+  },
+  {
+    "sha": "6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+    "node_id": "C_kwDOCBF7SNoAKDZkYmY0NTQ5YWUxOTE0MTg4OTE2YjA2ZGNjMTlkZDNhODExNWQwYTU",
+    "commit": {
+      "author": {
+        "name": "Wolf Vollprecht",
+        "email": "w.vollprecht@gmail.com",
+        "date": "2026-08-13T19:36:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-13T19:36:52Z"
+      },
+      "message": "Use portable atomic shared pointer operations (#6328)\n\nSigned-off-by: Wolf Vollprecht <w.vollprecht@gmail.com>",
+      "tree": {
+        "sha": "4e4bc0eecc98a55baafa473511e8ad855fba0739",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/4e4bc0eecc98a55baafa473511e8ad855fba0739"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfhzUCRC1aQ7uu5UhlAAAyEcQAFqbWUEwY9IhRHpTZ1cw/LvA\nBhyywtnBVCrAIMUY20QcT7Bq+f96a+qth300sDCKmfQ3jh7iPyI42rcP+5rKPRzB\nUnQXqJCMBdb1veYzizTAX7NrZSqHEOcPfmD4eitVT7Ja86lnhPhBH1TCUZ+scSJ4\nYC5XvslvLYqWCsxB4rRuA388ofJxmny9qvm7ppv7ntA/ZE50tNPZ6oLsD+FXRHg1\nKvoXyox5vMK39X8pcVu4PCUYlO1RBGhlh8W+PKuvlTB7zzPtUfJn83Dng57CjlxA\nPLP6SKr66n/EXICoejKi0c1lXNVhDFvSe1wdTeTCGMdWzDMFqjyf15PLj//nJBF+\nAmhL+XYJs0plHCXlbpSyGGHNjXue5HSiCJ1ujVHbziwUt2ZbhzWI+Prox6yewLh5\nRP5rJppK4g0wXhd744IREsZVUWWYlu+oA1BdFzJofMEseNOsitvyw3Qb18YxK9cB\ncEEsS55XGNXpn3TdnQ3/EAHhdNONRlRU9thm6PIGMiQHehZsKXp2VKVTbOwMe5d2\nT6ncpqfgRv6S5PshqKCuNiBtBasJ/VNpEOUiYJ1zQOuc5Pc54/VxSlYPp0bf0ICo\nJ83I05p+HQZxofTRFCHK28K7x4ipnsAG4ZzVrFGlvLPDi9Tr0MnRstIFVFugIzJH\nRbakT7w18Ru5B61aYQkG\n=yJvX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4e4bc0eecc98a55baafa473511e8ad855fba0739\nparent fa783f05bf8106de8e8ae00f49d88ca46d9692dc\nauthor Wolf Vollprecht <w.vollprecht@gmail.com> 1786649812 +0200\ncommitter GitHub <noreply@github.com> 1786649812 -0700\n\nUse portable atomic shared pointer operations (#6328)\n\nSigned-off-by: Wolf Vollprecht <w.vollprecht@gmail.com>",
+        "verified_at": "2026-08-13T19:36:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/6dbf4549ae1914188916b06dcc19dd3a8115d0a5",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/6dbf4549ae1914188916b06dcc19dd3a8115d0a5/comments",
+    "author": {
+      "login": "wolfv",
+      "id": 885054,
+      "node_id": "MDQ6VXNlcjg4NTA1NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/885054?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wolfv",
+      "html_url": "https://github.com/wolfv",
+      "followers_url": "https://api.github.com/users/wolfv/followers",
+      "following_url": "https://api.github.com/users/wolfv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wolfv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wolfv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wolfv/subscriptions",
+      "organizations_url": "https://api.github.com/users/wolfv/orgs",
+      "repos_url": "https://api.github.com/users/wolfv/repos",
+      "events_url": "https://api.github.com/users/wolfv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wolfv/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/fa783f05bf8106de8e8ae00f49d88ca46d9692dc"
+      }
+    ]
+  },
+  {
+    "sha": "fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+    "node_id": "C_kwDOCBF7SNoAKGZhNzgzZjA1YmY4MTA2ZGU4ZThhZTAwZjQ5ZDg4Y2E0NmQ5NjkyZGM",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-13T19:26:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-13T19:26:48Z"
+      },
+      "message": "Update build status badges in README\n\nUpdated build status badges for nav2 packages.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "62a6068fa54992072b71e894b04c1cc78f6486bd",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/62a6068fa54992072b71e894b04c1cc78f6486bd"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfhp4CRC1aQ7uu5UhlAAAHRUQAFi2SLpTsnGCZbve+8DhXKUC\noE0699n4n87Sew19RAexO4W8GREsWqpWAF7vvtfH4iKnmW0pVwejtkEO9WQan3v8\nLWFSlbiKRry7+uo7m7rtgtU7j4c0ZiD73bQpsSSe/P+N18udAMSpFZXiM9EdM2u1\nJKEr+W/18ljxlJO2muSpIiMYiZ3bmNh0s45R7Ui/TwAnWWusLZ+NPCwLk8bUBeeP\nr6s187Mh1kfez//UMOH2z6du1FCRgebC+HSQad0kAHrgUf8UW1p4IwxongD3PH5f\nX4ZWfkJ5P16ilknCzIknXmZgS8V2jN1tK7bMvZ3DBvU3EkcdRKGOplllJ5yWvoZ8\ndzWx8+TkS06+VG7kOvhK03fn0fy9IVSoqPz44+edBch5OuArTy2f0gnJdspJ/t2v\nXoLp2d6hMxYrWEr36vRupJzD3G4Brz14HDY6EVs+k65FjvXRV5QgR0ZChQn5VTeQ\nLUyInZ5/dBps62CU4KRVtNy0M7+nvtUSqGQ54+JbkqwsDmoEWlBpZSvalJ/wEJVZ\ncZ7gsquhSyFnVCF04xoG0TLFSQohnd1mi0fGEu3zkej+DPP0dw93eY1aXPEs+hAe\nRiWzrZ/DcEbWN/xUbNeOGokoqXse28+ToA+ejfGdyfYqX0gpt07gCG8PitDpmVGv\nUV88pjO3yT48glFN3JD1\n=vvk3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 62a6068fa54992072b71e894b04c1cc78f6486bd\nparent 075b29611a7d21ff4f1c74077a17c672e708001c\nauthor Steve Macenski <stevenmacenski@gmail.com> 1786649208 -0700\ncommitter GitHub <noreply@github.com> 1786649208 -0700\n\nUpdate build status badges in README\n\nUpdated build status badges for nav2 packages.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-13T19:26:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/fa783f05bf8106de8e8ae00f49d88ca46d9692dc",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fa783f05bf8106de8e8ae00f49d88ca46d9692dc/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "075b29611a7d21ff4f1c74077a17c672e708001c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/075b29611a7d21ff4f1c74077a17c672e708001c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/075b29611a7d21ff4f1c74077a17c672e708001c"
+      }
+    ]
+  },
+  {
+    "sha": "075b29611a7d21ff4f1c74077a17c672e708001c",
+    "node_id": "C_kwDOCBF7SNoAKDA3NWIyOTYxMWE3ZDIxZmY0ZjFjNzQwNzdhMTdjNjcyZTcwODAwMWM",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-13T16:11:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-13T16:11:49Z"
+      },
+      "message": "Update lyrical readme binaries table (#6353)\n\n* Update lyrical readme table\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Adding updates for robustness of generator\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "a3d63f74ca2284c18532f4b5373c5e40d3c918b3",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/a3d63f74ca2284c18532f4b5373c5e40d3c918b3"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/075b29611a7d21ff4f1c74077a17c672e708001c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfezFCRC1aQ7uu5UhlAAABDwQAHYIWIxiDHp82q+pBj+IkhnE\nqtlBUOCMkE9p0rlPWAG75t50CJasU6SVURwrm3KtMXIeeQNl+bwkU/2AQeTb49I2\n81pk6hUcFlRgPhGnuiUK4bb3W/I+EU9stN+zXLPWyU5pCuDG255J1Cxa0WaRJW6s\nfstZiEVdys3vRsajYVOJhL3CnqUXiPGEuwCGISh37uCsFIV9tbPp6/h4rgFnFrTh\nSbvIVLuEDJI07qNUf+xhxsGSmZ9XGVtnAQa0wze/fiyOrCxv194OpsXhTS+IP9gf\na+EJHqtNwmA4s3R0hDsi5sQWXE/n5CZ5nUHXfMX96xdCB1toVAIDdNkcLlalvgvp\n/y4rWcydXIsLTPbWxjZEH4s+DLp35ymzr+ieeVaEu1ewHj6kdV5j+A3JGHUpjZ95\nKewKKhGGC/T5k+MdkaJCrRy6Z2Kztk63wPA5/M+NNtjzt0iU4yQj5Nwseyq4NxNu\nt2eaI5hmBtof5ANiiBrfI8AG4pAguJnZEDEsZ1pWUDPOL9j8TckEuVjxR4Yw9100\ndXdJRSV11kz2tGgL8cOw/tr8h46qvqSRRwLKnElpSBq9UpebYp1jGD40qnhEoVoo\nj5nIeVLXv9o1bgIBR1L0cjSyfDSVU9pBfpf7o9jCy4tI6PEk9xndKfLFBe8w/KT4\n4mgtyrOXZo5ULaKNByu5\n=1PUe\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a3d63f74ca2284c18532f4b5373c5e40d3c918b3\nparent 4bbf6c86445d74071248646c7e4a13cbab9bfd39\nauthor Steve Macenski <stevenmacenski@gmail.com> 1786637509 -0700\ncommitter GitHub <noreply@github.com> 1786637509 -0700\n\nUpdate lyrical readme binaries table (#6353)\n\n* Update lyrical readme table\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Adding updates for robustness of generator\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-13T16:11:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/075b29611a7d21ff4f1c74077a17c672e708001c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/075b29611a7d21ff4f1c74077a17c672e708001c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/075b29611a7d21ff4f1c74077a17c672e708001c/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/4bbf6c86445d74071248646c7e4a13cbab9bfd39"
+      }
+    ]
+  },
+  {
+    "sha": "4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+    "node_id": "C_kwDOCBF7SNoAKDRiYmY2Yzg2NDQ1ZDc0MDcxMjQ4NjQ2YzdlNGExM2NiYWI5YmZkMzk",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-13T01:37:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-13T01:37:07Z"
+      },
+      "message": "Fix CI issues introduced by new action server callback (#6350)\n\n* Fix 2/3 CI issues\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add preemption fix\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Wait for cancelation to be complete before shutting down action tests\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "97da7582e0584569703fec40055252771452c5df",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/97da7582e0584569703fec40055252771452c5df"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfR/DCRC1aQ7uu5UhlAAAKG0QAGI+bVRPJ9QhpBWkvMQ1ZZVB\nJSEI4MU5fTK4wwWxf4QHmZJ4sxgZKROxCmWC/SJlTdPdfh8Pob8Qi5oS/KJKapa+\njaWT8aqg7wV5aMq/kVvIlMp+biDIBzwRlVFNM5i/fTgr+7azC+Ild6QHsiTiiIFq\nePvhRCBcLxDfOrh3mqI8G+jhdSSHbd7qS3DTG598HHjCaKmrqpgxJGjxqLeJN6Ev\n8RhlaBFyVfX69MEXe+9ARy1fSdfK7Ix2AfKUxr/WrMDRLSGmPTXpbrgcRU560RMz\nlxLd7FZxX6oYMVm4SJhmXDuvqMpCMpBh18qVHNQaPnCdozn6X2n52bmN1OmVS5M8\nYoT4b5UfbJ2WjN/zL4lFlKk6+mewlFEsICSkRMR8Mx4oHG6Dcb7ca/GZWQsZU0Qq\n0EGwOXvQfN5HiPGpdXbh/SHWRHC3CGfBJISpRVP5Xh/cx1Ymi+gaTXSWFAcTZJhT\nfC/7KGhDhLclz5WKXW6DL1ENF7qFQdCOdClHFvPuLUr/yRAEA+ZmIcP6Ek0cjtVm\nwv0YyjDgvCWOxZDQL8Pzo8co3gM4hHmGtal9pwbT0XgJqD/GLjoot8HfR5KaQ0iO\nvPKgpIDI+/ZDi8/Y6DS4knoVQbYnsmiChuB0JJlvZh2irJD2IlJcC7n0EXfgccle\nyLMC5JGN32gfYp61KppU\n=bI7v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 97da7582e0584569703fec40055252771452c5df\nparent 1e8afb17e2e09df443b1870ce0f4ecdee32207fd\nauthor Steve Macenski <stevenmacenski@gmail.com> 1786585027 -0700\ncommitter GitHub <noreply@github.com> 1786585027 -0700\n\nFix CI issues introduced by new action server callback (#6350)\n\n* Fix 2/3 CI issues\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Add preemption fix\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n* Wait for cancelation to be complete before shutting down action tests\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-13T01:37:13Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/4bbf6c86445d74071248646c7e4a13cbab9bfd39",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/4bbf6c86445d74071248646c7e4a13cbab9bfd39/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/1e8afb17e2e09df443b1870ce0f4ecdee32207fd"
+      }
+    ]
+  },
+  {
+    "sha": "1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+    "node_id": "C_kwDOCBF7SNoAKDFlOGFmYjE3ZTJlMDlkZjQ0M2IxODcwY2UwZjRlY2RlZTMyMjA3ZmQ",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-08-11T22:44:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-11T22:44:53Z"
+      },
+      "message": "Adding build export depends for ROS buildfarm binary creation (#6338)\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "0fb9e4751cfee58b096a12b15c109be6085ba968",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/0fb9e4751cfee58b096a12b15c109be6085ba968"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqe6XlCRC1aQ7uu5UhlAAAKL8QACUsSO0DV2NwBM9PRDP+cIsW\nGUtz1dPopAGVtzSuen857rqj8Oq0WlH9nMLD37YpPlMoOO5+MLJMqqxSszRZ84Dg\nIkBkrUevJcuImqllD0cv+PT8rtdRsZKrN686E1TGy42ILThq2/5bmCJ7awYXvaua\n/ArYMpoNg1opwu3iS+9IVG3AI16GzZvSWJgq2yT7NDHJSAFW8pTOB08Mj0C/8KTT\ndVRilyeZeW2QKtK0f1jDQ8w1eGQEaQqcKSw0sg/ULVqFF63+wYRhNyFCu7Ea0M5X\nq5nfEDvFcuXJisPECSOs5SI60p3I3u9O6xWTJf6AmHUEIjK0O/QKzApWTz8h5/76\nXr1MNW1bLz2nP11HP+Uixt2+eYeduS4sMuP4Pott/x6vC4+WFfAGmnxsECGMScMx\nmwRydaHzQBpr2iyOR6haDSQnSksCgO5NWgOfE+xTAsq1RFTjyzBx+sqJ/ylHJNay\n45geqf39NzJZUhrPUSpZiM+ETnpFnX1ta7Ihyqf4YW7NhjHf56FSgmr2iwt6nq45\nykrfFyzoQIcXla4GA4Glj0ymr+B/19MG5ssZaxpXi3Is5ct18F/0141+DXetmc8C\nxl4si+UcQDA2yV+J24BYSRzozogQ+OP9gA7lOCm3ob64tNtQObCDHwRuuIFoIauw\nI5NqN7uhsostA7C5STnP\n=7m/6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0fb9e4751cfee58b096a12b15c109be6085ba968\nparent 8a4c76f93a5b1f8c565ef653acc8bb897470499c\nauthor Steve Macenski <stevenmacenski@gmail.com> 1786488293 -0700\ncommitter GitHub <noreply@github.com> 1786488293 -0700\n\nAdding build export depends for ROS buildfarm binary creation (#6338)\n\nSigned-off-by: SteveMacenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-11T22:44:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/1e8afb17e2e09df443b1870ce0f4ecdee32207fd",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/1e8afb17e2e09df443b1870ce0f4ecdee32207fd/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/8a4c76f93a5b1f8c565ef653acc8bb897470499c"
+      }
+    ]
+  },
+  {
+    "sha": "8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+    "node_id": "C_kwDOCBF7SNoAKDhhNGM3NmY5M2E1YjFmOGM1NjVlZjY1M2FjYzhiYjg5NzQ3MDQ5OWM",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-08-11T17:35:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-11T17:35:20Z"
+      },
+      "message": "Fix lifecycle service client shutdown (#6335)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+      "tree": {
+        "sha": "e4589eec44cd63695319a9c95f4cdc7f88b9daad",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e4589eec44cd63695319a9c95f4cdc7f88b9daad"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqe11YCRC1aQ7uu5UhlAAAtc0QAFwOSy4efeT7oxYW8W/naFng\n1O5fMQC6pJvxZU8ld5DZDA8xHQz6g28TThgQT6emo3P6c/46/dST46U/0KF6KBCs\nZp9D3eHa4ZiZoYw2XVu5dNavBrcH4S5JTnG3OzNR3FoWd/yq5YBctrWWnKTKM32H\n8nhujWF2k5uK3yF8JKUwtW4rCg55g6bMCtoPqQHIyqUvIFfHMAHe0aHiGtzgFE7Q\nDffOc4YY7MTKbLh/owL5MJSxSESdJJ2rRmnaP1Ta7/e89c3zJeSQBZR87oIMPwUU\nWqqevDrdPlSqPv7Oq43Fis2xgztm3D+BU5GuLYRhBIenniVKRi+ZGXWJ6STot5+E\ntgDzvoOXTeZy2Hm8NOgSzbF+HT1F9l/aPd7l3AKFYHDpXZprZqm6KOnDZpi7K8ez\nVSECxjvStwNzFTNS3NurWlS1idn0AwkOuP0q8EThXVfIVsttLaUj2ovjvWV9gh5H\nN16dkeLxGx11SBRvjb7VjPH1I93zmsnDKsCa70dPFPXJwj+AVVx07U5PJpkfE5hi\nkIbtS9zE0uK5aSJ5zNmdUHcNow20pOtV5amcDl6aWcifpE/Fm3D8opb57She1FUg\nKHCtG8HodQoHX3JXfQCskXe6VqIB3Ijz45rusxxk3gtyBwyK5pm/VFf8FQPQjTbF\n7x+CEYODewMGOK1CHjFe\n=bCaj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e4589eec44cd63695319a9c95f4cdc7f88b9daad\nparent ea95cc394348ba184ea862d70cf98a0e0883a1ff\nauthor Marco Bassa <bassamarco91@gmail.com> 1786469720 +0200\ncommitter GitHub <noreply@github.com> 1786469720 -0700\n\nFix lifecycle service client shutdown (#6335)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+        "verified_at": "2026-08-11T17:35:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/8a4c76f93a5b1f8c565ef653acc8bb897470499c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/8a4c76f93a5b1f8c565ef653acc8bb897470499c/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/ea95cc394348ba184ea862d70cf98a0e0883a1ff"
+      }
+    ]
+  },
+  {
+    "sha": "ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+    "node_id": "C_kwDOCBF7SNoAKGVhOTVjYzM5NDM0OGJhMTg0ZWE4NjJkNzBjZjk4YTBlMDg4M2ExZmY",
+    "commit": {
+      "author": {
+        "name": "Akihiko Komada",
+        "email": "aki1770@gmail.com",
+        "date": "2026-08-10T23:06:04Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T23:06:04Z"
+      },
+      "message": "[costmap_filters] Add ZoneParameterFilter — config-driven per-zone parameter overrides (#6104)\n\n* WIP: ZoneParameterFilter — plugin scaffold + test scaffold (slice 1, ~80%)\n\nSlice 1 of nav2#6080 implementation per the source-read milestone-1\nartifact at outputs/sprint_131/nav2_6080_source_read.md.\n\nArchitecture per Steve Macenski's 2026-04-13 design guidance:\n- Mask values 0..255; value 0 = reset to nominal defaults\n- Each non-zero state mapped via YAML config to a list of ROS\n  parameters (any reachable nav2 parameter on any node)\n- No custom enums; raw int + config-driven semantics\n- Async parameter setting via per-target-node AsyncParametersClient\n  (Steve's preferred pattern from PR #3796 first review)\n- Optional state-transition event publication\n- Configurable warn|throw policies for unknown-state and\n  param-set-failure\n\nPR #3796 burn-pattern guards baked in:\n- No wait_for_service in hot path (issue 2): service_is_ready()\n  predicate; skip-with-throttled-warn on not-ready\n- No empty-string sentinels (issue 4): std::map presence checks\n- Future lifetime managed (issue 5): pending_futures_ vector\n  drained at top of every process() call; never destruct mid-flight\n- Per-node async client (Steve's first review point): one\n  AsyncParametersClient per target node, batched parameter sets\n\nFiles added:\n- nav2_costmap_2d/include/nav2_costmap_2d/costmap_filters/\n    zone_parameter_filter.hpp\n- nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n- nav2_costmap_2d/test/unit/zone_parameter_filter_test.cpp\n\nFiles edited:\n- filter_values.hpp: added ZONE_PARAMETER_FILTER = 4 constant\n- costmap_plugins.xml: registered new plugin in filters library\n- CMakeLists.txt: added zone_parameter_filter.cpp to filters target\n- test/unit/CMakeLists.txt: added zone_parameter_filter_test target\n\nConfidence assessment for slice 1 target (80% today):\n- Architectural skeleton complete and follows nav2 conventions\n- Source-read evidence cited for every #3796 fix\n- All cross-file wiring (XML, CMake, header, impl) in place\n- Test scaffold exercises the type-constant and construction paths\n- 5/11 test cases from §5 implementation plan present (or as\n  documented placeholders); remaining 6 deferred to slice 2 (95%)\n- Build verification deferred: no ROS 2 env on this machine; CI\n  build is the next gate\n\nSlice 2 (95% target tomorrow) needs:\n- colcon build green on humble + jazzy\n- Remaining 6 unit tests with full ROS 2 mock harness\n- AsyncParametersClient mock for param-mutation assertions\n- Coverage measurement (lcov ≥90% per #3796 retrospective)\n- File-level review of PR #3796 diff (read summary, not the diff\n  itself yet)\n\nNot for PR open — feature branch only. Per D-VGC148, all PR\nprose is Komada-authored at PR-open time. Per the commit-or-close\nclause to Steve, PR open is committed by 2026-05-16.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): uncrustify lint nits (Path C build verification round 1)\n\nThree style fixes per ament_uncrustify on rolling:\n\n1. plugins/costmap_filters/zone_parameter_filter.cpp:60-61 — split a\n   140-char declare_or_get_parameter call across two lines.\n2. plugins/costmap_filters/zone_parameter_filter.cpp:138-140 — same\n   for an RCLCPP_ERROR call.\n3. test/unit/zone_parameter_filter_test.cpp:72,89 — convert\n   single-line destructors to multi-line bodies (matches binary_filter_test\n   pattern).\n\nVerification context: Path C source-build in ros:rolling docker\ncontainer compiled the package cleanly and ran 4/4 of our new\ngtest cases. The 3 failures in the 399-test suite were all\nuncrustify diffs on these lines — zero correctness regressions.\nThis commit closes the lint gates.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* test(zone_parameter_filter): add TestZpf lifecycle fixture + first real test (slice 2a)\n\nAdds a gtest fixture mirroring binary_filter_test.cpp's TestNode pattern,\nadapted for ZoneParameterFilter's parameter-mutation semantics:\n\n- TargetNode helper — minimal rclcpp::Node with declared parameters that\n  ZPF will mutate via AsyncParametersClient\n- TestZpf fixture — LifecycleNode host + separate executors + helpers for\n  filter creation, process() invocation, and predicate-based wait\n- State1AppliesParameterToTargetNode — first real lifecycle test:\n  state_ids=[1] + state_1.zpf_target_node.speed=0.5 fed via\n  parameter_overrides; mask filled with 1; pose at center cell;\n  process() triggers state 0→1 transition; async set_parameters\n  propagates to target node within 1.5s timeout; asserts speed=0.5,\n  inflation untouched\n\nVerified on rolling (docker nav2:dev): 5/5 tests pass in 150ms total\n(4 scaffold + 1 new lifecycle), zero build warnings, zero test failures.\n\nSlice 2a complete; remaining slice-2b items per scaffold TODO list:\nstate_zero_resets, unknown_state_warn/throw, state_event_published,\nservice_not_ready_in_hot_path_does_not_block, etc.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* test(zone_parameter_filter): add 3 lifecycle cases + #3796 regression test (slice 2b)\n\nExtends TestZpf fixture with StateEventSubscriber + rePublishMask helper,\nplus three live cases covering distinct ZPF code paths:\n\n- UnknownStateWarnLogsAndKeepsPrevious — exercises on_unknown_state=\"warn\"\n  policy: a mask value not in the configured state map must log a\n  throttled warn and leave all target parameters unchanged.\n\n- StateEventPublishedOnTransition — exercises optional state_event_pub_:\n  when state_event_topic is configured, every transition publishes a\n  UInt8 carrying the new state value. Verified via a separate\n  StateEventSubscriber on the same in-process executor.\n\n- ServiceNotReadyInHotPathDoesNotBlock — REGRESSION TEST FOR PR #3796\n  review item 2 (Steve Macenski + Alexey Merzlyakov, 2023-09 to\n  2023-12). When a target node's parameter service is not ready, ZPF\n  must NOT call wait_for_service in process(); it must log a throttled\n  warn via service_is_ready() and return promptly. Test routes a\n  state-1 override at a nonexistent_node and asserts process() returns\n  in <500ms (a wait_for_service regression would hang for seconds).\n\nPlus one documented-failure case kept under DISABLED_ prefix:\n\n- DISABLED_State0ResetsToNominalDefaults — surfaces a v0.1 limitation\n  in zone_parameter_filter.cpp:383 where nominal_defaults_ stores an\n  empty ParameterValue instead of the target's pre-override value.\n  resetToNominal() therefore pushes NOT_SET and silently no-ops.\n  Proper fix (slice 2c) is to synchronously fetch nominal values at\n  initializeFilter() time via spin_until_future_complete with short\n  timeout — permitted blocking outside the hot path.\n\nCosmetic: InfoPublisher now passes multiplier=1.0 (was 0.0) to silence\nthe \"base/multiplier are unused; expected defaults (0.0, 1.0)\" warning\nemitted by ZPF on filter-info receipt.\n\nVerified on rolling (nav2:dev container, incremental build 22s):\n8/8 enabled tests pass in 611ms total. 1 disabled documented as design\nintent pending slice 2c fix.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): YAML-declared nominal_defaults for state-0 reset (slice 2c)\n\nSlice 2b's State0ResetsToNominalDefaults test surfaced a real v0.1 bug:\napplyState() inserted an empty `ParameterValue` (NOT_SET type) as a\nnominal-default sentinel, then resetToNominal() pushed that empty value\nback to the target on state-0 transition — silent no-op, override never\nrestored. Steve Macenski's #6080 design pointer specifically called out\nstate-0 reset semantics, so leaving this broken was not an option.\n\nInitial fix candidate was async get-before-set: fire get_parameters then\nset_parameters on the same AsyncParametersClient, relying on FIFO to\ncapture the pre-override value in the get response. Discarded after\ninspection: get_parameters and set_parameters use SEPARATE underlying\nservices::Client instances, so server-side processing order between them\nis not guaranteed. A late get response would capture the OVERRIDDEN\nvalue, not the nominal — a worse failure mode than the silent no-op.\n\nAdopted: declarative YAML nominal_defaults. Schema:\n\n  <plugin>.nominal_defaults.<target_node>.<param_path>: <value>\n\nParsed at loadStateConfig() time (configure phase, blocking permitted).\nRace-free, deterministic, zero runtime cost. Matches Steve's \"config-\ndriven\" preference verbatim.\n\nQuality-of-life: warn at config-load time for any state-N parameter that\nhas no matching nominal_defaults entry — such params will not be\nrestored by state-0 reset, and a v1 user almost certainly wants symmetric\ncoverage.\n\nTest re-enabled (DISABLED_State0ResetsToNominalDefaults → enabled),\nextended to provide the explicit nominal_defaults override. All 9\nTestZpf cases pass on rolling (nav2:dev, incremental build 58s):\n\n  State1AppliesParameterToTargetNode      ✅ 162ms\n  State0ResetsToNominalDefaults           ✅ 268ms (slice 2c verified)\n  UnknownStateWarnLogsAndKeepsPrevious    ✅ 327ms\n  StateEventPublishedOnTransition         ✅ 149ms\n  ServiceNotReadyInHotPathDoesNotBlock    ✅ 130ms\n\n  Total: 9/9 in 1038ms, 0 disabled, 0 failures.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): apply CI lint feedback (codespell + uncrustify)\n\nPR #6104 lint workflow surfaced two issues:\n\n- codespell (in pre-commit): flagged \"lets\" in a comment on\n  loadStateConfig (the colon-separator routing comment) as\n  potentially \"let's\". The original word was correct (\"permits\"\n  meaning), but rewording to \"routes\" preserves the same intent\n  while avoiding the false-positive trigger.\n\n- ament_uncrustify: brace-block indentation inside the createFilter\n  argument list across all 5 TestZpf cases. Auto-reformatted via\n  ament_uncrustify --reformat; 11/11 line shifts.\n\nNo functional change. Local verification on rolling (nav2:dev):\nament_uncrustify clean across all 3 ZPF files; 9/9 tests pass in\n965ms.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): explicit target_nodes + 4 audit-driven tests\n\nAddresses findings from a 4-agent swarm audit on PR #6104 (synthesis at\nsky/outputs/nav2_6104_pr_audit/synthesis.md):\n\n- F-4 schema: introduce a required `target_nodes: [a, b, ...]` YAML\n  parameter and replace first-dot-split parsing with longest-prefix-match\n  against the explicit list. The original first-dot-split happens to be\n  correct for typical nav2 usage (ROS doesn't allow dots in node names),\n  but the explicit list is unambiguous, self-documenting, catches typos\n  at config-load, and future-proofs against schema drift.\n\n- F-9 ResetFilterDeactivates: verify resetFilter() clears\n  filter_info_received_ and filter_mask_ so isActive() returns false.\n  Mirrors binary_filter_test.cpp::testResetFilter.\n\n- F-10 UnknownMaskCellLeavesStateUnchanged: mask filled with\n  OCC_GRID_UNKNOWN (-1); verify process() leaves current_state_ + the\n  target's parameter untouched. Guards the negative-mask-data branch\n  in process().\n\n- F-11 RobotOutsideMaskResetsToState0: drive into state 1, then call\n  process() with a pose far outside mask bounds. Verify the state\n  auto-resets to 0 and nominal_defaults are restored. Guards the\n  worldToMap()-failure branch in process().\n\n- F-4 regression test (LongestPrefixMatchForOverlappingTargetNodes):\n  with target_nodes = [\"zpf\", \"zpf_target_node\"] and an override\n  state_1.zpf_target_node.speed=0.7, verify the longer prefix wins so\n  the parameter actually lands on the live target node. A regression\n  to naive shortest-prefix would route to the bogus \"zpf\" service\n  and the value would never land.\n\nVerified on rolling (nav2:dev): 13/13 tests pass in 1365ms. Local\nament_uncrustify + ament_cpplint clean.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: always throw on unknown mask state\n\nRemoves the on_unknown_state parameter and the paired UnknownStatePolicy\nenum. The hot path now throws std::runtime_error unconditionally when the\nmask emits a state value not in the configured state_ids/state_<N> map.\n\nThis makes configuration / data-integrity faults fail-safe at the\nlifecycle layer rather than continuing with stale parameters. ZPF mutates\nparameters on other nodes with safety-relevant downstream effects (speed\ncaps, inflation radius, controller limits); silently keeping the previous\nstate when the mask says \"I don't know what zone I'm in\" is strictly worse\nthan surfacing the fault to the lifecycle layer where the integrator can\nreact.\n\nThe throw fires at the state_param_map_.find(new_state) miss point, BEFORE\nany per-node iteration begins, so no partial-state leak is possible.\nTest 8 inverted from UnknownStateWarnLogsAndKeepsPrevious to\nUnknownStateThrows (EXPECT_THROW std::runtime_error + post-throw assertion\nthat the target speed is unchanged at the nominal default).\n\nAddresses the unknown_state half of Steve Macenski's review comment on\nzone_parameter_filter.cpp:95 (\"Always throw, this is a critical issue\nthe robot should stop for\"). The on_param_set_failure half is treated\nseparately per the prior reply on the PR.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: scrub TMI comments\n\nSteve Macenski review on PR #6104: top-level \"There's a lot of AI generated\nTMI comments throughout the code that should be removed or reduced\", plus\ninline pins on hpp:101, cpp:78, costmap_plugins.xml:40.\n\nRemoved comments that:\n- Restated what the surrounding code or variable name already says\n  (decorative section dividers, \"subscription wiring\" headers, \"lazily\n  build per-node async client\" before the lazy lookup, etc.)\n- Cited prior reviews back at the reviewer (#3796 references, \"Steve's\n  preference\", \"Per #3796 review item N\")\n- Cited foreign-PR context the reader doesn't need (the future-lifetime\n  rationale moves to commit-message context, not header docstring)\n- Stated marketing-style framing (\"Schema is also self-documenting and\n  catches typos at config-load\")\n\nTrimmed (kept the WHY-non-obvious in one line):\n- kNodeParamSep colon-separator rationale (1 line)\n- matchTargetNode longest-prefix-first WHY (2 lines)\n- length-descending sort rationale (1 line)\n- declarative YAML nominals reasoning (1 line; the auto-capture race is\n  non-obvious and survives the upcoming refactor)\n- state-N override without nominal warning rationale (1 line)\n- retain-across-resets rationale (1 line)\n- target_nodes explicit-list necessity (3 lines, still load-bearing for\n  the dot-grammar boundary problem)\n\ncostmap_plugins.xml:40 description trimmed to one sentence matching the\nshape of the other filter entries (no SpeedFilter cross-reference, no\nissue link).\n\nClass doxygen on ZoneParameterFilter.hpp simplified — dropped the\n@ref SpeedFilter comparison and the issue link.\n\n3 files changed, 20 insertions(+), 92 deletions(-).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: default state_event_topic to \"zone_filter_state\"\n\nSteve Macenski review on PR #6104, comment #3150003597 on\nzone_parameter_filter.cpp:80: \"Set a reasonable default\".\n\n- Default state_event_topic from \"\" to \"zone_filter_state\".\n- Drop the empty-string skip-guard at the publisher creation site;\n  always create the publisher.\n\nMatches the speed_filter / keepout_filter / binary_filter idiom — sensible\ndefault-named topic, published unconditionally, user can rename via the\nparameter.\n\nNegligible bandwidth cost (~one std_msgs/UInt8 per state transition,\nwhich is a rare event).\n\nCompanion docs change in PR #907 (L114) follows in a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: flip on_param_set_failure default to throw\n\nSteve Macenski review on PR #6104, comment on docs PR #907 line 136:\n\"I question if this should not always throw, since that puts the\napplication in an undefined state.\"\n\nPer the PR #6104 reply: keeping the parameter, default-flipping to\nthrow. The other filters in costmap_filters/ handle transient RPC / tf2\nfaults uniformly with throttled-warn-and-continue (speed_filter\nunknown-mask path; keepout_filter tf2 transform-exception path;\nbinary_filter unknown-mask path), so collapsing all such transient\nclasses to a stack-killing exception introduces a second-order failure\nmode where a single network blip takes the nav stack down. The\nconfigurable escape preserves the existing nav2 convention for\noperators who need transient-class fault discrimination.\n\nThe default flip alone honors the safety direction in the review.\n\nTests: no existing test depends on the warn default for this parameter.\n\nCompanion docs change in PR #907 (L136) follows in a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: header restructure (protected + doxygen)\n\nSteve Macenski review on PR #6104, comment #3149982423 on\nzone_parameter_filter.hpp:79: \"Change to protected and put all methods\nbefore all variables in Nav2 styling. All methods must have doxygen\nas well.\"\n\n- private: → protected: (visibility per ask).\n- All 7 helper methods (filterInfoCallback, maskCallback, loadStateConfig,\n  applyState, resetToNominal, issueAsyncSetParameters, drainPendingFutures)\n  now carry @brief doxygen blocks.\n- Method-before-variable ordering preserved (was already correct\n  post-Theme-B scrub).\n\nMatches the speed_filter / keepout_filter / binary_filter header layout\nshape Steve referenced.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: init-time param clients + drop readiness probe\n\nSteve Macenski review on PR #6104:\n- Comment #3150018176 on cpp:529: \"Should we not make these on\n  initialization so we don't own the discovery at runtime and building\n  for is service ready? If we parse the states, we should be able to\n  create our param clients at startup...\"\n- Comment #3150018587 on cpp:536: \"PS this will block indefinitely\"\n\nC.3 + C.4 changes (Steve's two comments resolve to one architectural\nmove):\n\n- loadStateConfig() now enumerates the union of all target_nodes\n  referenced by state_param_map_ + nominal_defaults_ and builds one\n  AsyncParametersClient per node at init time. Failures are surfaced\n  through drainPendingFutures + param_set_failure_policy_ rather than\n  through a runtime readiness probe.\n- issueAsyncSetParameters() simplified: no lazy construction, no\n  service_is_ready() probe. A missing client is now a programmer-error\n  (the loadStateConfig enumeration should cover every target_node any\n  state mutates), logged as RCLCPP_ERROR + early return.\n- service_is_ready() probe removed entirely. Steve's \"PS this will\n  block indefinitely\" reads correctly under the user-facing meaning\n  (silent indefinite skip when target never comes up); the C.3\n  redesign converts that silent-skip into a surfaceable failure.\n\nMatches the speed_filter / binary_filter init-time-resource pattern.\nAsyncParametersClient construction is local-only — registers topics +\nservice clients locally, does not require the remote service to be\nreachable at construction time. Set_parameters becomes\nfire-and-forget-with-future-drain.\n\nOut of scope for this PR (carved out per AAA-disciplined Komada\njudgment): runtime mutation of the state map (\"dynamic parameter\nchanges of the states\" hint Steve raised) is v0.2 scope.\n\nTest impact: Test 10 (ServiceNotReadyInHotPathDoesNotBlock) still\npasses the existing assertions (process() under 500ms, no exception\nthrown). Will be renamed + re-asserted in the Theme E test-coverage\ncommit to match the new init-time-clients reality.\n\nCompanion docs change in PR #907 (L94 nominal_defaults framing) follows\nin a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: replace colon-encoded keys with structured StateParamEntry\n\nSteve Macenski review on PR #6104:\n- Top-level: \"Some parts of this seem dramatically overcomplicated.\"\n- Inline #3149997318 on cpp:56: \"What is going on here & does it need\n  to be this way? Seems like this and the function where its used are\n  overcomplicated and convoluted\"\n\nTheme D — split into two distinct items:\n\nD-1: matchTargetNode kept. The longest-prefix-first match is genuinely\nneeded because ROS 2 parameter names admit dots, so a flat YAML override\nkey like `state_1.local_costmap.inflation_layer.inflation_radius` is\nambiguous between targeting `local_costmap` (param `inflation_layer\n.inflation_radius`) or `local_costmap.inflation_layer` (param\n`inflation_radius`). The user-declared `target_nodes:` list resolves\nthis. Light style polish (one renamed local for readability).\n\nD-2: replaced colon-encoded `Parameter` keys with a structured\n`StateParamEntry { std::string target_node; rclcpp::Parameter param; }`.\nRemoves:\n- The `kNodeParamSep` constant (no separator needed).\n- The \"<target_node>:<param_name>\" encoding in loadStateConfig.\n- The colon-parsing in applyState (was rebuilding the same data).\n- The colon-parsing in resetToNominal.\n- The defensive RCLCPP_ERROR branch for \"stored parameter name missing\n  separator\" — was structurally unreachable since we controlled the\n  encoding.\n\nstate_param_map_ type: `std::map<uint8_t, std::vector<rclcpp::Parameter>>`\n→ `std::map<uint8_t, std::vector<StateParamEntry>>`.\n\nnominal_defaults_ type: `std::map<std::string, rclcpp::Parameter>`\n(colon-keyed) → `std::map<std::string, std::vector<rclcpp::Parameter>>`\n(keyed by target_node, values are bare-named Parameters). resetToNominal\nnow iterates the map directly — no per-node batching required, the\ndata shape already groups by node.\n\nInit-time client enumeration loop (Theme C.3) simplified accordingly:\ntarget_nodes drop straight out of the StateParamEntry / nominal_defaults\nkeys, no string-parsing.\n\nNet change: -14 lines across .cpp/.hpp; cognitive complexity reduced\nmaterially; one class of bugs gone (a colon character appearing in a\ntarget_node name would have broken the prior encoding silently).\n\nTests: external behavior unchanged, all existing assertions pass.\nTest 14 (LongestPrefixMatchForOverlappingTargetNodes) only inspects the\ntarget node's actual parameter value, not the storage shape, so no\ntest edit needed.\n\nTheme E (test coverage commit) will add a regression guard against\nfuture colon-encoding reintroduction.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: expand test coverage 13 → 30 cases\n\nSteve Macenski review on PR #6104, top-level: \"Also check the code\ncoverage metrics, there's enough missing that needs to be added.\"\n\nTest 10 reworked: was ServiceNotReadyInHotPathDoesNotBlock (asserted\nthe deleted service_is_ready() probe). Renamed to\nProcessHotPathReturnsPromptlyEvenWithUnreachableTargets and re-commented\nto match the post-Theme-C.3 reality: clients are built at init\nregardless of remote-service availability; set_parameters becomes\nfire-and-forget-with-future-drain; process() returns promptly even when\nthe target service never appears. Same assertion, accurate framing.\n\n17 new TEST_F cases targeting the warn / error / edge branches the\nprior happy-path tests did not exercise:\n\n- 15 InfoRePublishUpdatesMaskSubscription\n- 16 MaskRePublishUpdatesFilterMask\n- 17 BaseMultiplierNonDefaultDoesNotCrash\n- 18 EmptyStateIdsLoadsButDoesNothing\n- 19 EmptyTargetNodesLoadsButDoesNothing\n- 20 InvalidStateIdInListIsSkipped\n- 21 OverrideUnmatchedToTargetNodesIsWarnedAndSkipped\n- 22 StateDeclaredWithNoParamsDoesNotCrash\n- 23 NominalDefaultsUnmatchedToTargetNodesIsWarned\n- 24 StateNWithoutNominalCounterpartWarnsAtConfig\n- 25 TransformPoseFailureOrOutOfRangeReturnsCleanly\n- 26 OnParamSetFailureWarnPolicyParsedCorrectly\n- 27 OnParamSetFailureInvalidValueDefaultsToThrow\n- 28 ResetToNominalNoOpWhenNoneConfigured\n- 29 MultipleStateTransitionsInSequence\n- 30 MultipleParamsInOneStateOnSameNode\n- 31 NestedNamespaceTargetNodeRoutesCorrectly\n  (Theme D-2 regression guard against future stringly-typed separator\n  schemes; the structured StateParamEntry storage means no colon-encoded\n  key can leak back in)\n\nTotal: 30 test cases (13 prior + 17 new). Estimated coverage delta\n+25–30 percentage points; final ~85–90% (subject to gcovr verification\nin the next colcon test run).\n\nThe on_param_set_failure throw / warn behavioral tests (engineering a\nreal RPC failure on a remote target) were deferred — they require a\ntarget node fixture that fails set_parameters deterministically (e.g.\nread-only parameter, parameter callback rejection), which is ~hour of\nfixture work for marginal coverage delta over the parsing tests\n(Tests 26 + 27). If the next review cycle requires the behavioral\ncoverage, those tests get added; the substrate (init-time clients,\ndrainPendingFutures, throw/warn branches) is in the production code\nand exercises through Tests 10 + 22.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter resets N-only params on N→M\n\nCross-state transitions previously left params touched by state N but not\nM at N's value until state-0 reset, leaking N's overrides into M's\nbehavior. applyState now computes the param-set difference and resets to\nnominal_defaults before applying M's overrides, preserving the invariant\nthat all params equal state-0 defaults except those specifically set in\nthe active state.\n\nCloses #6104 review thread 3211251415 + review summary item 1.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: simplify exception flow + scope-prune\n\nSimplifies drainPendingFutures so the future.get() try/catch flows the\nexception directly under the configured failure policy rather than\nthrowing-and-catching internally. Applies the matchTargetNode rewrite\nfrom the review thread (starts_with + size guard). Adds an inline\ncomment near the override scan stating the routing-only validation\nscope so a future reader does not infer cross-target param-existence\nchecks that this node neither performs nor needs to.\n\nCloses #6104 review threads 3211313270 + 3211335331 + 3211355759.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: trim redundant comments + rename\n\nRenames drainPendingFutures to checkPendingParameterUpdates so callers\nread intent rather than implementation, drops the \"Futures / drain\"\ndocstring wording, removes inline comments that restated what the code\nor surrounding log already shows, and adds a one-line note above the\nparameter-overrides scan stating its intent so a future reader does\nnot have to infer it from the loop body.\n\nCloses #6104 review threads 3211272912 + 3211274789 + 3211317251 +\n3211319835 + 3211328905 + 3211330028 + 3211332786.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: remove TODO dev-note from test file\n\nPer @SteveMacenski review (#6104 thread 3221447903): the Tests 3-5\nheader + 11-case-matrix TODO list is not test code and does not\nbelong in the test file.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: compress test suite 30 -> 16\n\nPer @SteveMacenski review summary on PR #6104 (#4266595670):\n\"These tests need to be compressed and make sure they cover all the\nactive lines of code in this file. This seems extreme\"\n\nSibling baseline: BinaryFilter has 10 TEST_Fs, SpeedFilter has 9. ZPF\nlanded at 30 cases / 1298 lines, ~3x sibling density. This commit\ntrims to 16 cases / 688 lines while preserving branch coverage and\nadding two previously-missing branches.\n\nNet: 1 TEST + 15 TEST_F, -787 / +156 lines.\n\nDropped 13 cases:\n- Test 3 (FilterInfoTypeCheckRejectsWrongType): STALE - only re-asserted\n  a constant inequality; the wrong-type branch in filterInfoCallback\n  was never reached. Replaced by WrongFilterInfoTypeIsRejected which\n  publishes BINARY_FILTER info and asserts isActive() stays false.\n- Test 4 (MaskHelperConstructsExpectedShape): fixture self-test, not\n  production code.\n- Test 17 (BaseMultiplierNonDefaultDoesNotCrash): warn-only branch\n  with no observable behavior.\n- Test 21 (OverrideUnmatchedToTargetNodes): unmatched-node warn path,\n  now covered by the merged EmptyAndInvalidConfigEdges case.\n- Test 23 (NominalDefaultsUnmatchedToTargetNodes): symmetric warn-only\n  path, no observable behavior.\n- Test 24 (StateNWithoutNominalCounterpartWarns): same gap as Test 35;\n  Test 35 (merged into ParamWithoutNominalDefaultsPersists) is the\n  canonical assertion.\n- Test 25 (TransformPoseFailureOrOutOfRange): weak duplicate of\n  Test 13 (RobotOutsideMaskResetsToState0).\n- Test 28 (ResetToNominalNoOpWhenNoneConfigured): subsumed by Test 7\n  + the empty-config edge cases.\n- Test 29 (MultipleStateTransitionsInSequence): cyclic transitions\n  add nothing past the in-both + N-only-reset coverage.\n- Test 30 (MultipleParamsInOneStateOnSameNode): per-node batching is\n  exercised by every multi-param test.\n- Test 31 (NestedNamespaceTargetNodeRoutesCorrectly): STALE - comment\n  admitted ROS rejects colons; test degenerated to a Test 6 duplicate.\n- Test 34 (CyclicTransitionABAReturnsToAValue): same mechanics as\n  Test 32 with one extra hop.\n- Test 36 (CrossStateTransitionInflationLeakDoesNotPersist): identical\n  mechanics to Test 32 with controller-class flavor names.\n\nMerged 8 cases into 5 survivors:\n- 15 + 16     -> InfoAndMaskRePublishUpdateSubscriptions\n- 18 + 19 + 20 + 22 -> EmptyAndInvalidConfigEdgesDoNotCrash\n- 26 + 27     -> OnParamSetFailurePolicyParsing\n- 33 + 32     -> CrossStateTransitionResetsParamTouchedByNOnly\n- 37 + 35     -> ParamWithoutNominalDefaultsPersistsAcrossTransitions\n\nAdded two cases targeting branches the prior 30 did not cover:\n- WrongFilterInfoTypeIsRejected: publishes BINARY_FILTER info on the\n  ZPF info topic; asserts filterInfoCallback rejects it and isActive()\n  never flips. Mirrors binary_filter_test::testIncorrectFilterType.\n- OnParamSetFailureThrowsByDefaultAndWarnSwallows: routes state_1 to\n  a read-only parameter on TargetNode (declared via ParameterDescriptor\n  with read_only=true); set_parameters returns successful=false and\n  checkPendingParameterUpdates applies the policy. Asserts default\n  policy throws on the failure and \"warn\" policy swallows it.\n\nActive branches now covered (was uncovered before):\n- filterInfoCallback wrong-type rejection (B.2)\n- checkPendingParameterUpdates failure path under both kThrow + kWarn (H)\n\nFolded Test 1 + Test 2 (constant uniqueness + default-constructed\ninactive) into a single non-fixture TEST. Folded Test 11\n(ResetFilterDeactivates) into Test 3's teardown assertion.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: fix lint findings on test compression\n\nCI failures on 0828ff9:\n- ament_uncrustify: inner brace-list of OnParamSetFailurePolicyParsing\n  used 8-space indent instead of 6.\n- codespell: \"waitFor\" matched the \"wait for\" rule with\n  write-changes=true and the hook rewrote the helper to \"wait for\",\n  breaking compilation. Renamed to waitForCond throughout (codespell-\n  safe; dictionary doesn't carry the compound).\n\nAlso refactored two brace-block EXPECT_THROW / EXPECT_NO_THROW\nstatement bodies in OnParamSetFailureThrowsByDefaultAndWarnSwallows\nto lambdas — the brace-block-as-statement form is unconventional\nand friendlier to formatters as a lambda call.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: avoid codespell lets-let's misfire\n\ncodespell 2.4.1 (used by nav2 pre-commit cache) rewrites \"lets\" to\n\"let's\" via the informal rule, even where \"lets\" is the correct\nverb form. The comment on createFilter() tripped this in CI. Rephrase\nto \"allows ... to inject\" so codespell stays quiet without an\nignore-words entry that the maintainers would have to maintain.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: read declared configuration\n\nPer review feedback: replace get_parameter_overrides() scraping with\nexplicit declared parameters. The state, target node, parameter, and\nvalue are all declared configuration now — introspectable via\n'ros2 param get' and type-validated at load.\n\n- New schema: <filter>.states (names) -> <name>.{id, overrides} ->\n  <override>.{node, parameter, value} (dynamic-typed value), plus\n  <filter>.nominal_defaults for the state-0 reset baseline.\n- Remove matchTargetNode()/longest-prefix routing and the length sort:\n  with node and parameter explicit there is nothing to disambiguate.\n- Remove the on_param_set_failure policy: a failed set always throws\n  (a failed parameter set on a safety parameter is a stop condition).\n- Rewrite the unit tests to the declared schema (16 tests; the\n  longest-prefix test becomes explicit two-node routing, and the\n  policy-parsing test now proves a leftover policy override neither\n  breaks config-load nor softens the always-throw).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: fix uncrustify continuation indent\n\nWhitespace-only (verified: 'git diff -w' empty); ament_uncrustify now\nreports no divergence on all three files.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: address review round 3\n\n- Rename the per-state key 'overrides' to 'setpoints' in the parameter\n  schema and the log strings (reviewer preference). This renames this\n  PR's own key <state>.overrides -> <state>.setpoints; nothing in docs\n  or YAML referenced the old name, so it is code and tests only.\n- Use 'auto' for all three node_.lock() sites.\n- Drop the dead 'found' flag and its '(void)found' silencer in\n  applyState(); the loop already breaks on the match and the gap case\n  is handled by the preceding continue.\n\nThe comment rewrites requested in the same review round are not in this\ncommit and follow separately.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: clarify comments + guard state/map divergence\n\n- read_entry: rewrite the block comment to explain why `value` alone is\n  declared dynamic_typing (one override path carries a parameter of any\n  type), instead of narrating what the code already shows.\n- state-reset loop: rewrite the `continue` comment (no nominal default ->\n  the param keeps state N's value; already warned at config-load); drop the\n  stray \"Test 24\" reference.\n- checkPendingParameterUpdates: rewrite to the safety rationale -- a failed\n  safety-zone parameter set is rethrown, never logged-and-swallowed.\n- applyState: add an RCLCPP_ERROR when current_state_ is not in\n  state_param_map_ (a tracked-state/map divergence that should never happen),\n  matching the existing 'should have been built at config-load' error.\n\nzone_parameter_filter suite: 16/16 passing (built against nav2 rolling).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: tighten remaining comments + fix two inaccurate ones\n\nFollow-up cleanup of the rest of the file's comments to the same why-only standard,\nand correction of two that were wrong:\n- the reset/apply comment claimed issueAsyncSetParameters preserves submission order\n  on a per-node future queue; no such queue exists — it push_backs into a single flat\n  pending_futures_ used only for completion polling. The only ordering guarantee is\n  that the reset loop runs before the apply loop.\n- resetFilter's retained-maps comment named only nominal_defaults_ and param_clients_;\n  state_param_map_ also persists across resets.\n\nAlso trimmed the read_entry / client-construction / checkPendingParameterUpdates blocks\nto their load-bearing rationale and dropped section-marker comments that restated the\ncode. Comments only; no behavior change. zone_parameter_filter suite: 16/16.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* fix: declare reset_per_node map in ZoneParameterFilter::applyState\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Fix -Werror=null-dereference in ZoneParameterFilter on GCC 15\n\nThe nav2 CI image refreshed on 2026-08-07 and now ships GCC 15.2, whose\ninliner rejects checkPendingParameterUpdates():\n\n  error: potential null pointer dereference [-Werror=null-dereference]\n    inlined from 'std::vector<_Tp, _Alloc>::operator=(const vector&)'\n      at /usr/include/c++/15/bits/vector.tcc:250:21,\n    inlined from 'ZoneParameterFilter::checkPendingParameterUpdates()'\n      at zone_parameter_filter.cpp:484:25\n\npending_futures_ holds std::shared_future, and shared_future::get()\nreturns a const reference rather than a value, so `results = it->get()`\nwas a full copy-assignment of the result vector. GCC 15 follows the\ninlined vector::operator= chain down into SetParametersResult_ and\ncannot prove the internal pointer is non-null.\n\nBind the results by const reference instead of copying them. The shared\nfuture is copied out of the container before the entry is erased, so the\nshared state -- and therefore the value the reference refers to -- stays\nalive for the rest of the iteration. Erasing before get() also removes\nthe need for the catch-and-rethrow: the entry is already gone, so a\nservice-side exception still surfaces exactly once.\n\nBehaviour is unchanged: an entry is erased exactly once, a failed\nset_parameters still throws, and the not-yet-ready path is untouched.\n\nVerified in ghcr.io/ros-navigation/navigation2:main (GCC 15.2): the\npackage fails to build with colcon exit 2 before this change and builds\nclean with exit 0 after it; zone_parameter_filter_test passes 16/16.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Align ZoneParameterFilter test with current nav2 conventions\n\nTwo small drifts this branch had picked up against main:\n\n- Link std_msgs::std_msgs directly. After #6136 replaced the rest,\n  ${std_msgs_TARGETS} here was the only remaining use in the repo, and\n  binary_filter_test seven lines above already links the target\n  directly. Linkage is unchanged.\n\n- Build the test's transform buffer with nav2::create_transform_buffer\n  rather than constructing tf2_ros::Buffer by hand, matching the speed,\n  keepout and binary filter tests after #6281. This also gives the test\n  the timer interface the factory installs. Two includes left unused by\n  the change are dropped.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n---------\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "749c0dd79b3421fd4a0693ca82b59e3267b0debf",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/749c0dd79b3421fd4a0693ca82b59e3267b0debf"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqellcCRC1aQ7uu5UhlAAA0mcQABV9ZMi9z9MJAv/OUSdHOhI3\nVj17FHD9hS/JigQQ6ytUk8SybVml0tN2/qWKvrZEhXDfSOPUpI0lEb5sQI8a/UEX\nJJQ8rnV+bhnqJ/+0U6vPUASLe/VOhAxFal76VWJsKHzqhBJunAwnSHLgAS+6MPFk\nlc+YToe5cyKrPVcI0C7Soq0sYJEYZTSbWf0Qk5klUkgDLkV0vOLhSSSvnGWSvcaL\nTL72/vwP0mBnq0laAHyRMEZtSy+fezFMMUg9Jgg9bbQC4yA6VnuHCle3AOkp9WD3\nhn4GGDRhIOOdFNWTUs3atCpQiVSc4rnvrmmnpbml9krtc/HmwYeENJFKOeQgo1ZP\nMkZIDptEZNv52Y9EOtIQgiSGMOuxR7nUhvIU9NVC2IYcxWK/lOamVPJnrd+PfJeT\nM9xN/rqZtMJIJANiKZSygKHTF4ux3tdHOQtd0DH6PDUXL96Cdi5Xq0o5olg0Tlc2\nCOXLHrjo93xJ64rOyovgehQ0NqBL2XFC1f9ZfUpblBtnkLIJ1lLG8G5B6oQAe9Er\noc6azY/2+zm2hQRhjH5AKdXzx1tlSrY5A9aMcsJDjHhdj36f66VkoYfGpLnvBdtG\nP/Mn4ACZ0yUFSMfh4eOZy33jXXTXx8zf8JU+KiD6keEL4MJrlstZ50tgRVEfyuyL\nbjuqReeafIvXzO/65Z8R\n=Xrsj\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 749c0dd79b3421fd4a0693ca82b59e3267b0debf\nparent 64c4b9dce56531b97718822fe7626aca62e1346f\nauthor Akihiko Komada <aki1770@gmail.com> 1786403164 +0900\ncommitter GitHub <noreply@github.com> 1786403164 -0700\n\n[costmap_filters] Add ZoneParameterFilter — config-driven per-zone parameter overrides (#6104)\n\n* WIP: ZoneParameterFilter — plugin scaffold + test scaffold (slice 1, ~80%)\n\nSlice 1 of nav2#6080 implementation per the source-read milestone-1\nartifact at outputs/sprint_131/nav2_6080_source_read.md.\n\nArchitecture per Steve Macenski's 2026-04-13 design guidance:\n- Mask values 0..255; value 0 = reset to nominal defaults\n- Each non-zero state mapped via YAML config to a list of ROS\n  parameters (any reachable nav2 parameter on any node)\n- No custom enums; raw int + config-driven semantics\n- Async parameter setting via per-target-node AsyncParametersClient\n  (Steve's preferred pattern from PR #3796 first review)\n- Optional state-transition event publication\n- Configurable warn|throw policies for unknown-state and\n  param-set-failure\n\nPR #3796 burn-pattern guards baked in:\n- No wait_for_service in hot path (issue 2): service_is_ready()\n  predicate; skip-with-throttled-warn on not-ready\n- No empty-string sentinels (issue 4): std::map presence checks\n- Future lifetime managed (issue 5): pending_futures_ vector\n  drained at top of every process() call; never destruct mid-flight\n- Per-node async client (Steve's first review point): one\n  AsyncParametersClient per target node, batched parameter sets\n\nFiles added:\n- nav2_costmap_2d/include/nav2_costmap_2d/costmap_filters/\n    zone_parameter_filter.hpp\n- nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n- nav2_costmap_2d/test/unit/zone_parameter_filter_test.cpp\n\nFiles edited:\n- filter_values.hpp: added ZONE_PARAMETER_FILTER = 4 constant\n- costmap_plugins.xml: registered new plugin in filters library\n- CMakeLists.txt: added zone_parameter_filter.cpp to filters target\n- test/unit/CMakeLists.txt: added zone_parameter_filter_test target\n\nConfidence assessment for slice 1 target (80% today):\n- Architectural skeleton complete and follows nav2 conventions\n- Source-read evidence cited for every #3796 fix\n- All cross-file wiring (XML, CMake, header, impl) in place\n- Test scaffold exercises the type-constant and construction paths\n- 5/11 test cases from §5 implementation plan present (or as\n  documented placeholders); remaining 6 deferred to slice 2 (95%)\n- Build verification deferred: no ROS 2 env on this machine; CI\n  build is the next gate\n\nSlice 2 (95% target tomorrow) needs:\n- colcon build green on humble + jazzy\n- Remaining 6 unit tests with full ROS 2 mock harness\n- AsyncParametersClient mock for param-mutation assertions\n- Coverage measurement (lcov ≥90% per #3796 retrospective)\n- File-level review of PR #3796 diff (read summary, not the diff\n  itself yet)\n\nNot for PR open — feature branch only. Per D-VGC148, all PR\nprose is Komada-authored at PR-open time. Per the commit-or-close\nclause to Steve, PR open is committed by 2026-05-16.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): uncrustify lint nits (Path C build verification round 1)\n\nThree style fixes per ament_uncrustify on rolling:\n\n1. plugins/costmap_filters/zone_parameter_filter.cpp:60-61 — split a\n   140-char declare_or_get_parameter call across two lines.\n2. plugins/costmap_filters/zone_parameter_filter.cpp:138-140 — same\n   for an RCLCPP_ERROR call.\n3. test/unit/zone_parameter_filter_test.cpp:72,89 — convert\n   single-line destructors to multi-line bodies (matches binary_filter_test\n   pattern).\n\nVerification context: Path C source-build in ros:rolling docker\ncontainer compiled the package cleanly and ran 4/4 of our new\ngtest cases. The 3 failures in the 399-test suite were all\nuncrustify diffs on these lines — zero correctness regressions.\nThis commit closes the lint gates.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* test(zone_parameter_filter): add TestZpf lifecycle fixture + first real test (slice 2a)\n\nAdds a gtest fixture mirroring binary_filter_test.cpp's TestNode pattern,\nadapted for ZoneParameterFilter's parameter-mutation semantics:\n\n- TargetNode helper — minimal rclcpp::Node with declared parameters that\n  ZPF will mutate via AsyncParametersClient\n- TestZpf fixture — LifecycleNode host + separate executors + helpers for\n  filter creation, process() invocation, and predicate-based wait\n- State1AppliesParameterToTargetNode — first real lifecycle test:\n  state_ids=[1] + state_1.zpf_target_node.speed=0.5 fed via\n  parameter_overrides; mask filled with 1; pose at center cell;\n  process() triggers state 0→1 transition; async set_parameters\n  propagates to target node within 1.5s timeout; asserts speed=0.5,\n  inflation untouched\n\nVerified on rolling (docker nav2:dev): 5/5 tests pass in 150ms total\n(4 scaffold + 1 new lifecycle), zero build warnings, zero test failures.\n\nSlice 2a complete; remaining slice-2b items per scaffold TODO list:\nstate_zero_resets, unknown_state_warn/throw, state_event_published,\nservice_not_ready_in_hot_path_does_not_block, etc.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* test(zone_parameter_filter): add 3 lifecycle cases + #3796 regression test (slice 2b)\n\nExtends TestZpf fixture with StateEventSubscriber + rePublishMask helper,\nplus three live cases covering distinct ZPF code paths:\n\n- UnknownStateWarnLogsAndKeepsPrevious — exercises on_unknown_state=\"warn\"\n  policy: a mask value not in the configured state map must log a\n  throttled warn and leave all target parameters unchanged.\n\n- StateEventPublishedOnTransition — exercises optional state_event_pub_:\n  when state_event_topic is configured, every transition publishes a\n  UInt8 carrying the new state value. Verified via a separate\n  StateEventSubscriber on the same in-process executor.\n\n- ServiceNotReadyInHotPathDoesNotBlock — REGRESSION TEST FOR PR #3796\n  review item 2 (Steve Macenski + Alexey Merzlyakov, 2023-09 to\n  2023-12). When a target node's parameter service is not ready, ZPF\n  must NOT call wait_for_service in process(); it must log a throttled\n  warn via service_is_ready() and return promptly. Test routes a\n  state-1 override at a nonexistent_node and asserts process() returns\n  in <500ms (a wait_for_service regression would hang for seconds).\n\nPlus one documented-failure case kept under DISABLED_ prefix:\n\n- DISABLED_State0ResetsToNominalDefaults — surfaces a v0.1 limitation\n  in zone_parameter_filter.cpp:383 where nominal_defaults_ stores an\n  empty ParameterValue instead of the target's pre-override value.\n  resetToNominal() therefore pushes NOT_SET and silently no-ops.\n  Proper fix (slice 2c) is to synchronously fetch nominal values at\n  initializeFilter() time via spin_until_future_complete with short\n  timeout — permitted blocking outside the hot path.\n\nCosmetic: InfoPublisher now passes multiplier=1.0 (was 0.0) to silence\nthe \"base/multiplier are unused; expected defaults (0.0, 1.0)\" warning\nemitted by ZPF on filter-info receipt.\n\nVerified on rolling (nav2:dev container, incremental build 22s):\n8/8 enabled tests pass in 611ms total. 1 disabled documented as design\nintent pending slice 2c fix.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): YAML-declared nominal_defaults for state-0 reset (slice 2c)\n\nSlice 2b's State0ResetsToNominalDefaults test surfaced a real v0.1 bug:\napplyState() inserted an empty `ParameterValue` (NOT_SET type) as a\nnominal-default sentinel, then resetToNominal() pushed that empty value\nback to the target on state-0 transition — silent no-op, override never\nrestored. Steve Macenski's #6080 design pointer specifically called out\nstate-0 reset semantics, so leaving this broken was not an option.\n\nInitial fix candidate was async get-before-set: fire get_parameters then\nset_parameters on the same AsyncParametersClient, relying on FIFO to\ncapture the pre-override value in the get response. Discarded after\ninspection: get_parameters and set_parameters use SEPARATE underlying\nservices::Client instances, so server-side processing order between them\nis not guaranteed. A late get response would capture the OVERRIDDEN\nvalue, not the nominal — a worse failure mode than the silent no-op.\n\nAdopted: declarative YAML nominal_defaults. Schema:\n\n  <plugin>.nominal_defaults.<target_node>.<param_path>: <value>\n\nParsed at loadStateConfig() time (configure phase, blocking permitted).\nRace-free, deterministic, zero runtime cost. Matches Steve's \"config-\ndriven\" preference verbatim.\n\nQuality-of-life: warn at config-load time for any state-N parameter that\nhas no matching nominal_defaults entry — such params will not be\nrestored by state-0 reset, and a v1 user almost certainly wants symmetric\ncoverage.\n\nTest re-enabled (DISABLED_State0ResetsToNominalDefaults → enabled),\nextended to provide the explicit nominal_defaults override. All 9\nTestZpf cases pass on rolling (nav2:dev, incremental build 58s):\n\n  State1AppliesParameterToTargetNode      ✅ 162ms\n  State0ResetsToNominalDefaults           ✅ 268ms (slice 2c verified)\n  UnknownStateWarnLogsAndKeepsPrevious    ✅ 327ms\n  StateEventPublishedOnTransition         ✅ 149ms\n  ServiceNotReadyInHotPathDoesNotBlock    ✅ 130ms\n\n  Total: 9/9 in 1038ms, 0 disabled, 0 failures.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): apply CI lint feedback (codespell + uncrustify)\n\nPR #6104 lint workflow surfaced two issues:\n\n- codespell (in pre-commit): flagged \"lets\" in a comment on\n  loadStateConfig (the colon-separator routing comment) as\n  potentially \"let's\". The original word was correct (\"permits\"\n  meaning), but rewording to \"routes\" preserves the same intent\n  while avoiding the false-positive trigger.\n\n- ament_uncrustify: brace-block indentation inside the createFilter\n  argument list across all 5 TestZpf cases. Auto-reformatted via\n  ament_uncrustify --reformat; 11/11 line shifts.\n\nNo functional change. Local verification on rolling (nav2:dev):\nament_uncrustify clean across all 3 ZPF files; 9/9 tests pass in\n965ms.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* fix(zone_parameter_filter): explicit target_nodes + 4 audit-driven tests\n\nAddresses findings from a 4-agent swarm audit on PR #6104 (synthesis at\nsky/outputs/nav2_6104_pr_audit/synthesis.md):\n\n- F-4 schema: introduce a required `target_nodes: [a, b, ...]` YAML\n  parameter and replace first-dot-split parsing with longest-prefix-match\n  against the explicit list. The original first-dot-split happens to be\n  correct for typical nav2 usage (ROS doesn't allow dots in node names),\n  but the explicit list is unambiguous, self-documenting, catches typos\n  at config-load, and future-proofs against schema drift.\n\n- F-9 ResetFilterDeactivates: verify resetFilter() clears\n  filter_info_received_ and filter_mask_ so isActive() returns false.\n  Mirrors binary_filter_test.cpp::testResetFilter.\n\n- F-10 UnknownMaskCellLeavesStateUnchanged: mask filled with\n  OCC_GRID_UNKNOWN (-1); verify process() leaves current_state_ + the\n  target's parameter untouched. Guards the negative-mask-data branch\n  in process().\n\n- F-11 RobotOutsideMaskResetsToState0: drive into state 1, then call\n  process() with a pose far outside mask bounds. Verify the state\n  auto-resets to 0 and nominal_defaults are restored. Guards the\n  worldToMap()-failure branch in process().\n\n- F-4 regression test (LongestPrefixMatchForOverlappingTargetNodes):\n  with target_nodes = [\"zpf\", \"zpf_target_node\"] and an override\n  state_1.zpf_target_node.speed=0.7, verify the longer prefix wins so\n  the parameter actually lands on the live target node. A regression\n  to naive shortest-prefix would route to the bogus \"zpf\" service\n  and the value would never land.\n\nVerified on rolling (nav2:dev): 13/13 tests pass in 1365ms. Local\nament_uncrustify + ament_cpplint clean.\n\nCo-Authored-By: Claude and aki1770-del <aki1770@gmail.com>\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: always throw on unknown mask state\n\nRemoves the on_unknown_state parameter and the paired UnknownStatePolicy\nenum. The hot path now throws std::runtime_error unconditionally when the\nmask emits a state value not in the configured state_ids/state_<N> map.\n\nThis makes configuration / data-integrity faults fail-safe at the\nlifecycle layer rather than continuing with stale parameters. ZPF mutates\nparameters on other nodes with safety-relevant downstream effects (speed\ncaps, inflation radius, controller limits); silently keeping the previous\nstate when the mask says \"I don't know what zone I'm in\" is strictly worse\nthan surfacing the fault to the lifecycle layer where the integrator can\nreact.\n\nThe throw fires at the state_param_map_.find(new_state) miss point, BEFORE\nany per-node iteration begins, so no partial-state leak is possible.\nTest 8 inverted from UnknownStateWarnLogsAndKeepsPrevious to\nUnknownStateThrows (EXPECT_THROW std::runtime_error + post-throw assertion\nthat the target speed is unchanged at the nominal default).\n\nAddresses the unknown_state half of Steve Macenski's review comment on\nzone_parameter_filter.cpp:95 (\"Always throw, this is a critical issue\nthe robot should stop for\"). The on_param_set_failure half is treated\nseparately per the prior reply on the PR.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: scrub TMI comments\n\nSteve Macenski review on PR #6104: top-level \"There's a lot of AI generated\nTMI comments throughout the code that should be removed or reduced\", plus\ninline pins on hpp:101, cpp:78, costmap_plugins.xml:40.\n\nRemoved comments that:\n- Restated what the surrounding code or variable name already says\n  (decorative section dividers, \"subscription wiring\" headers, \"lazily\n  build per-node async client\" before the lazy lookup, etc.)\n- Cited prior reviews back at the reviewer (#3796 references, \"Steve's\n  preference\", \"Per #3796 review item N\")\n- Cited foreign-PR context the reader doesn't need (the future-lifetime\n  rationale moves to commit-message context, not header docstring)\n- Stated marketing-style framing (\"Schema is also self-documenting and\n  catches typos at config-load\")\n\nTrimmed (kept the WHY-non-obvious in one line):\n- kNodeParamSep colon-separator rationale (1 line)\n- matchTargetNode longest-prefix-first WHY (2 lines)\n- length-descending sort rationale (1 line)\n- declarative YAML nominals reasoning (1 line; the auto-capture race is\n  non-obvious and survives the upcoming refactor)\n- state-N override without nominal warning rationale (1 line)\n- retain-across-resets rationale (1 line)\n- target_nodes explicit-list necessity (3 lines, still load-bearing for\n  the dot-grammar boundary problem)\n\ncostmap_plugins.xml:40 description trimmed to one sentence matching the\nshape of the other filter entries (no SpeedFilter cross-reference, no\nissue link).\n\nClass doxygen on ZoneParameterFilter.hpp simplified — dropped the\n@ref SpeedFilter comparison and the issue link.\n\n3 files changed, 20 insertions(+), 92 deletions(-).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: default state_event_topic to \"zone_filter_state\"\n\nSteve Macenski review on PR #6104, comment #3150003597 on\nzone_parameter_filter.cpp:80: \"Set a reasonable default\".\n\n- Default state_event_topic from \"\" to \"zone_filter_state\".\n- Drop the empty-string skip-guard at the publisher creation site;\n  always create the publisher.\n\nMatches the speed_filter / keepout_filter / binary_filter idiom — sensible\ndefault-named topic, published unconditionally, user can rename via the\nparameter.\n\nNegligible bandwidth cost (~one std_msgs/UInt8 per state transition,\nwhich is a rare event).\n\nCompanion docs change in PR #907 (L114) follows in a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: flip on_param_set_failure default to throw\n\nSteve Macenski review on PR #6104, comment on docs PR #907 line 136:\n\"I question if this should not always throw, since that puts the\napplication in an undefined state.\"\n\nPer the PR #6104 reply: keeping the parameter, default-flipping to\nthrow. The other filters in costmap_filters/ handle transient RPC / tf2\nfaults uniformly with throttled-warn-and-continue (speed_filter\nunknown-mask path; keepout_filter tf2 transform-exception path;\nbinary_filter unknown-mask path), so collapsing all such transient\nclasses to a stack-killing exception introduces a second-order failure\nmode where a single network blip takes the nav stack down. The\nconfigurable escape preserves the existing nav2 convention for\noperators who need transient-class fault discrimination.\n\nThe default flip alone honors the safety direction in the review.\n\nTests: no existing test depends on the warn default for this parameter.\n\nCompanion docs change in PR #907 (L136) follows in a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: header restructure (protected + doxygen)\n\nSteve Macenski review on PR #6104, comment #3149982423 on\nzone_parameter_filter.hpp:79: \"Change to protected and put all methods\nbefore all variables in Nav2 styling. All methods must have doxygen\nas well.\"\n\n- private: → protected: (visibility per ask).\n- All 7 helper methods (filterInfoCallback, maskCallback, loadStateConfig,\n  applyState, resetToNominal, issueAsyncSetParameters, drainPendingFutures)\n  now carry @brief doxygen blocks.\n- Method-before-variable ordering preserved (was already correct\n  post-Theme-B scrub).\n\nMatches the speed_filter / keepout_filter / binary_filter header layout\nshape Steve referenced.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: init-time param clients + drop readiness probe\n\nSteve Macenski review on PR #6104:\n- Comment #3150018176 on cpp:529: \"Should we not make these on\n  initialization so we don't own the discovery at runtime and building\n  for is service ready? If we parse the states, we should be able to\n  create our param clients at startup...\"\n- Comment #3150018587 on cpp:536: \"PS this will block indefinitely\"\n\nC.3 + C.4 changes (Steve's two comments resolve to one architectural\nmove):\n\n- loadStateConfig() now enumerates the union of all target_nodes\n  referenced by state_param_map_ + nominal_defaults_ and builds one\n  AsyncParametersClient per node at init time. Failures are surfaced\n  through drainPendingFutures + param_set_failure_policy_ rather than\n  through a runtime readiness probe.\n- issueAsyncSetParameters() simplified: no lazy construction, no\n  service_is_ready() probe. A missing client is now a programmer-error\n  (the loadStateConfig enumeration should cover every target_node any\n  state mutates), logged as RCLCPP_ERROR + early return.\n- service_is_ready() probe removed entirely. Steve's \"PS this will\n  block indefinitely\" reads correctly under the user-facing meaning\n  (silent indefinite skip when target never comes up); the C.3\n  redesign converts that silent-skip into a surfaceable failure.\n\nMatches the speed_filter / binary_filter init-time-resource pattern.\nAsyncParametersClient construction is local-only — registers topics +\nservice clients locally, does not require the remote service to be\nreachable at construction time. Set_parameters becomes\nfire-and-forget-with-future-drain.\n\nOut of scope for this PR (carved out per AAA-disciplined Komada\njudgment): runtime mutation of the state map (\"dynamic parameter\nchanges of the states\" hint Steve raised) is v0.2 scope.\n\nTest impact: Test 10 (ServiceNotReadyInHotPathDoesNotBlock) still\npasses the existing assertions (process() under 500ms, no exception\nthrown). Will be renamed + re-asserted in the Theme E test-coverage\ncommit to match the new init-time-clients reality.\n\nCompanion docs change in PR #907 (L94 nominal_defaults framing) follows\nin a paired commit.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: replace colon-encoded keys with structured StateParamEntry\n\nSteve Macenski review on PR #6104:\n- Top-level: \"Some parts of this seem dramatically overcomplicated.\"\n- Inline #3149997318 on cpp:56: \"What is going on here & does it need\n  to be this way? Seems like this and the function where its used are\n  overcomplicated and convoluted\"\n\nTheme D — split into two distinct items:\n\nD-1: matchTargetNode kept. The longest-prefix-first match is genuinely\nneeded because ROS 2 parameter names admit dots, so a flat YAML override\nkey like `state_1.local_costmap.inflation_layer.inflation_radius` is\nambiguous between targeting `local_costmap` (param `inflation_layer\n.inflation_radius`) or `local_costmap.inflation_layer` (param\n`inflation_radius`). The user-declared `target_nodes:` list resolves\nthis. Light style polish (one renamed local for readability).\n\nD-2: replaced colon-encoded `Parameter` keys with a structured\n`StateParamEntry { std::string target_node; rclcpp::Parameter param; }`.\nRemoves:\n- The `kNodeParamSep` constant (no separator needed).\n- The \"<target_node>:<param_name>\" encoding in loadStateConfig.\n- The colon-parsing in applyState (was rebuilding the same data).\n- The colon-parsing in resetToNominal.\n- The defensive RCLCPP_ERROR branch for \"stored parameter name missing\n  separator\" — was structurally unreachable since we controlled the\n  encoding.\n\nstate_param_map_ type: `std::map<uint8_t, std::vector<rclcpp::Parameter>>`\n→ `std::map<uint8_t, std::vector<StateParamEntry>>`.\n\nnominal_defaults_ type: `std::map<std::string, rclcpp::Parameter>`\n(colon-keyed) → `std::map<std::string, std::vector<rclcpp::Parameter>>`\n(keyed by target_node, values are bare-named Parameters). resetToNominal\nnow iterates the map directly — no per-node batching required, the\ndata shape already groups by node.\n\nInit-time client enumeration loop (Theme C.3) simplified accordingly:\ntarget_nodes drop straight out of the StateParamEntry / nominal_defaults\nkeys, no string-parsing.\n\nNet change: -14 lines across .cpp/.hpp; cognitive complexity reduced\nmaterially; one class of bugs gone (a colon character appearing in a\ntarget_node name would have broken the prior encoding silently).\n\nTests: external behavior unchanged, all existing assertions pass.\nTest 14 (LongestPrefixMatchForOverlappingTargetNodes) only inspects the\ntarget node's actual parameter value, not the storage shape, so no\ntest edit needed.\n\nTheme E (test coverage commit) will add a regression guard against\nfuture colon-encoding reintroduction.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: expand test coverage 13 → 30 cases\n\nSteve Macenski review on PR #6104, top-level: \"Also check the code\ncoverage metrics, there's enough missing that needs to be added.\"\n\nTest 10 reworked: was ServiceNotReadyInHotPathDoesNotBlock (asserted\nthe deleted service_is_ready() probe). Renamed to\nProcessHotPathReturnsPromptlyEvenWithUnreachableTargets and re-commented\nto match the post-Theme-C.3 reality: clients are built at init\nregardless of remote-service availability; set_parameters becomes\nfire-and-forget-with-future-drain; process() returns promptly even when\nthe target service never appears. Same assertion, accurate framing.\n\n17 new TEST_F cases targeting the warn / error / edge branches the\nprior happy-path tests did not exercise:\n\n- 15 InfoRePublishUpdatesMaskSubscription\n- 16 MaskRePublishUpdatesFilterMask\n- 17 BaseMultiplierNonDefaultDoesNotCrash\n- 18 EmptyStateIdsLoadsButDoesNothing\n- 19 EmptyTargetNodesLoadsButDoesNothing\n- 20 InvalidStateIdInListIsSkipped\n- 21 OverrideUnmatchedToTargetNodesIsWarnedAndSkipped\n- 22 StateDeclaredWithNoParamsDoesNotCrash\n- 23 NominalDefaultsUnmatchedToTargetNodesIsWarned\n- 24 StateNWithoutNominalCounterpartWarnsAtConfig\n- 25 TransformPoseFailureOrOutOfRangeReturnsCleanly\n- 26 OnParamSetFailureWarnPolicyParsedCorrectly\n- 27 OnParamSetFailureInvalidValueDefaultsToThrow\n- 28 ResetToNominalNoOpWhenNoneConfigured\n- 29 MultipleStateTransitionsInSequence\n- 30 MultipleParamsInOneStateOnSameNode\n- 31 NestedNamespaceTargetNodeRoutesCorrectly\n  (Theme D-2 regression guard against future stringly-typed separator\n  schemes; the structured StateParamEntry storage means no colon-encoded\n  key can leak back in)\n\nTotal: 30 test cases (13 prior + 17 new). Estimated coverage delta\n+25–30 percentage points; final ~85–90% (subject to gcovr verification\nin the next colcon test run).\n\nThe on_param_set_failure throw / warn behavioral tests (engineering a\nreal RPC failure on a remote target) were deferred — they require a\ntarget node fixture that fails set_parameters deterministically (e.g.\nread-only parameter, parameter callback rejection), which is ~hour of\nfixture work for marginal coverage delta over the parsing tests\n(Tests 26 + 27). If the next review cycle requires the behavioral\ncoverage, those tests get added; the substrate (init-time clients,\ndrainPendingFutures, throw/warn branches) is in the production code\nand exercises through Tests 10 + 22.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter resets N-only params on N→M\n\nCross-state transitions previously left params touched by state N but not\nM at N's value until state-0 reset, leaking N's overrides into M's\nbehavior. applyState now computes the param-set difference and resets to\nnominal_defaults before applying M's overrides, preserving the invariant\nthat all params equal state-0 defaults except those specifically set in\nthe active state.\n\nCloses #6104 review thread 3211251415 + review summary item 1.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: simplify exception flow + scope-prune\n\nSimplifies drainPendingFutures so the future.get() try/catch flows the\nexception directly under the configured failure policy rather than\nthrowing-and-catching internally. Applies the matchTargetNode rewrite\nfrom the review thread (starts_with + size guard). Adds an inline\ncomment near the override scan stating the routing-only validation\nscope so a future reader does not infer cross-target param-existence\nchecks that this node neither performs nor needs to.\n\nCloses #6104 review threads 3211313270 + 3211335331 + 3211355759.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: trim redundant comments + rename\n\nRenames drainPendingFutures to checkPendingParameterUpdates so callers\nread intent rather than implementation, drops the \"Futures / drain\"\ndocstring wording, removes inline comments that restated what the code\nor surrounding log already shows, and adds a one-line note above the\nparameter-overrides scan stating its intent so a future reader does\nnot have to infer it from the loop body.\n\nCloses #6104 review threads 3211272912 + 3211274789 + 3211317251 +\n3211319835 + 3211328905 + 3211330028 + 3211332786.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: remove TODO dev-note from test file\n\nPer @SteveMacenski review (#6104 thread 3221447903): the Tests 3-5\nheader + 11-case-matrix TODO list is not test code and does not\nbelong in the test file.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: compress test suite 30 -> 16\n\nPer @SteveMacenski review summary on PR #6104 (#4266595670):\n\"These tests need to be compressed and make sure they cover all the\nactive lines of code in this file. This seems extreme\"\n\nSibling baseline: BinaryFilter has 10 TEST_Fs, SpeedFilter has 9. ZPF\nlanded at 30 cases / 1298 lines, ~3x sibling density. This commit\ntrims to 16 cases / 688 lines while preserving branch coverage and\nadding two previously-missing branches.\n\nNet: 1 TEST + 15 TEST_F, -787 / +156 lines.\n\nDropped 13 cases:\n- Test 3 (FilterInfoTypeCheckRejectsWrongType): STALE - only re-asserted\n  a constant inequality; the wrong-type branch in filterInfoCallback\n  was never reached. Replaced by WrongFilterInfoTypeIsRejected which\n  publishes BINARY_FILTER info and asserts isActive() stays false.\n- Test 4 (MaskHelperConstructsExpectedShape): fixture self-test, not\n  production code.\n- Test 17 (BaseMultiplierNonDefaultDoesNotCrash): warn-only branch\n  with no observable behavior.\n- Test 21 (OverrideUnmatchedToTargetNodes): unmatched-node warn path,\n  now covered by the merged EmptyAndInvalidConfigEdges case.\n- Test 23 (NominalDefaultsUnmatchedToTargetNodes): symmetric warn-only\n  path, no observable behavior.\n- Test 24 (StateNWithoutNominalCounterpartWarns): same gap as Test 35;\n  Test 35 (merged into ParamWithoutNominalDefaultsPersists) is the\n  canonical assertion.\n- Test 25 (TransformPoseFailureOrOutOfRange): weak duplicate of\n  Test 13 (RobotOutsideMaskResetsToState0).\n- Test 28 (ResetToNominalNoOpWhenNoneConfigured): subsumed by Test 7\n  + the empty-config edge cases.\n- Test 29 (MultipleStateTransitionsInSequence): cyclic transitions\n  add nothing past the in-both + N-only-reset coverage.\n- Test 30 (MultipleParamsInOneStateOnSameNode): per-node batching is\n  exercised by every multi-param test.\n- Test 31 (NestedNamespaceTargetNodeRoutesCorrectly): STALE - comment\n  admitted ROS rejects colons; test degenerated to a Test 6 duplicate.\n- Test 34 (CyclicTransitionABAReturnsToAValue): same mechanics as\n  Test 32 with one extra hop.\n- Test 36 (CrossStateTransitionInflationLeakDoesNotPersist): identical\n  mechanics to Test 32 with controller-class flavor names.\n\nMerged 8 cases into 5 survivors:\n- 15 + 16     -> InfoAndMaskRePublishUpdateSubscriptions\n- 18 + 19 + 20 + 22 -> EmptyAndInvalidConfigEdgesDoNotCrash\n- 26 + 27     -> OnParamSetFailurePolicyParsing\n- 33 + 32     -> CrossStateTransitionResetsParamTouchedByNOnly\n- 37 + 35     -> ParamWithoutNominalDefaultsPersistsAcrossTransitions\n\nAdded two cases targeting branches the prior 30 did not cover:\n- WrongFilterInfoTypeIsRejected: publishes BINARY_FILTER info on the\n  ZPF info topic; asserts filterInfoCallback rejects it and isActive()\n  never flips. Mirrors binary_filter_test::testIncorrectFilterType.\n- OnParamSetFailureThrowsByDefaultAndWarnSwallows: routes state_1 to\n  a read-only parameter on TargetNode (declared via ParameterDescriptor\n  with read_only=true); set_parameters returns successful=false and\n  checkPendingParameterUpdates applies the policy. Asserts default\n  policy throws on the failure and \"warn\" policy swallows it.\n\nActive branches now covered (was uncovered before):\n- filterInfoCallback wrong-type rejection (B.2)\n- checkPendingParameterUpdates failure path under both kThrow + kWarn (H)\n\nFolded Test 1 + Test 2 (constant uniqueness + default-constructed\ninactive) into a single non-fixture TEST. Folded Test 11\n(ResetFilterDeactivates) into Test 3's teardown assertion.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: fix lint findings on test compression\n\nCI failures on 0828ff9:\n- ament_uncrustify: inner brace-list of OnParamSetFailurePolicyParsing\n  used 8-space indent instead of 6.\n- codespell: \"waitFor\" matched the \"wait for\" rule with\n  write-changes=true and the hook rewrote the helper to \"wait for\",\n  breaking compilation. Renamed to waitForCond throughout (codespell-\n  safe; dictionary doesn't carry the compound).\n\nAlso refactored two brace-block EXPECT_THROW / EXPECT_NO_THROW\nstatement bodies in OnParamSetFailureThrowsByDefaultAndWarnSwallows\nto lambdas — the brace-block-as-statement form is unconventional\nand friendlier to formatters as a lambda call.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: avoid codespell lets-let's misfire\n\ncodespell 2.4.1 (used by nav2 pre-commit cache) rewrites \"lets\" to\n\"let's\" via the informal rule, even where \"lets\" is the correct\nverb form. The comment on createFilter() tripped this in CI. Rephrase\nto \"allows ... to inject\" so codespell stays quiet without an\nignore-words entry that the maintainers would have to maintain.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: read declared configuration\n\nPer review feedback: replace get_parameter_overrides() scraping with\nexplicit declared parameters. The state, target node, parameter, and\nvalue are all declared configuration now — introspectable via\n'ros2 param get' and type-validated at load.\n\n- New schema: <filter>.states (names) -> <name>.{id, overrides} ->\n  <override>.{node, parameter, value} (dynamic-typed value), plus\n  <filter>.nominal_defaults for the state-0 reset baseline.\n- Remove matchTargetNode()/longest-prefix routing and the length sort:\n  with node and parameter explicit there is nothing to disambiguate.\n- Remove the on_param_set_failure policy: a failed set always throws\n  (a failed parameter set on a safety parameter is a stop condition).\n- Rewrite the unit tests to the declared schema (16 tests; the\n  longest-prefix test becomes explicit two-node routing, and the\n  policy-parsing test now proves a leftover policy override neither\n  breaks config-load nor softens the always-throw).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: fix uncrustify continuation indent\n\nWhitespace-only (verified: 'git diff -w' empty); ament_uncrustify now\nreports no divergence on all three files.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: address review round 3\n\n- Rename the per-state key 'overrides' to 'setpoints' in the parameter\n  schema and the log strings (reviewer preference). This renames this\n  PR's own key <state>.overrides -> <state>.setpoints; nothing in docs\n  or YAML referenced the old name, so it is code and tests only.\n- Use 'auto' for all three node_.lock() sites.\n- Drop the dead 'found' flag and its '(void)found' silencer in\n  applyState(); the loop already breaks on the match and the gap case\n  is handled by the preceding continue.\n\nThe comment rewrites requested in the same review round are not in this\ncommit and follow separately.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: clarify comments + guard state/map divergence\n\n- read_entry: rewrite the block comment to explain why `value` alone is\n  declared dynamic_typing (one override path carries a parameter of any\n  type), instead of narrating what the code already shows.\n- state-reset loop: rewrite the `continue` comment (no nominal default ->\n  the param keeps state N's value; already warned at config-load); drop the\n  stray \"Test 24\" reference.\n- checkPendingParameterUpdates: rewrite to the safety rationale -- a failed\n  safety-zone parameter set is rethrown, never logged-and-swallowed.\n- applyState: add an RCLCPP_ERROR when current_state_ is not in\n  state_param_map_ (a tracked-state/map divergence that should never happen),\n  matching the existing 'should have been built at config-load' error.\n\nzone_parameter_filter suite: 16/16 passing (built against nav2 rolling).\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* [costmap_filters] ZoneParameterFilter: tighten remaining comments + fix two inaccurate ones\n\nFollow-up cleanup of the rest of the file's comments to the same why-only standard,\nand correction of two that were wrong:\n- the reset/apply comment claimed issueAsyncSetParameters preserves submission order\n  on a per-node future queue; no such queue exists — it push_backs into a single flat\n  pending_futures_ used only for completion polling. The only ordering guarantee is\n  that the reset loop runs before the apply loop.\n- resetFilter's retained-maps comment named only nominal_defaults_ and param_clients_;\n  state_param_map_ also persists across resets.\n\nAlso trimmed the read_entry / client-construction / checkPendingParameterUpdates blocks\nto their load-bearing rationale and dropped section-marker comments that restated the\ncode. Comments only; no behavior change. zone_parameter_filter suite: 16/16.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_costmap_2d/plugins/costmap_filters/zone_parameter_filter.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* fix: declare reset_per_node map in ZoneParameterFilter::applyState\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Fix -Werror=null-dereference in ZoneParameterFilter on GCC 15\n\nThe nav2 CI image refreshed on 2026-08-07 and now ships GCC 15.2, whose\ninliner rejects checkPendingParameterUpdates():\n\n  error: potential null pointer dereference [-Werror=null-dereference]\n    inlined from 'std::vector<_Tp, _Alloc>::operator=(const vector&)'\n      at /usr/include/c++/15/bits/vector.tcc:250:21,\n    inlined from 'ZoneParameterFilter::checkPendingParameterUpdates()'\n      at zone_parameter_filter.cpp:484:25\n\npending_futures_ holds std::shared_future, and shared_future::get()\nreturns a const reference rather than a value, so `results = it->get()`\nwas a full copy-assignment of the result vector. GCC 15 follows the\ninlined vector::operator= chain down into SetParametersResult_ and\ncannot prove the internal pointer is non-null.\n\nBind the results by const reference instead of copying them. The shared\nfuture is copied out of the container before the entry is erased, so the\nshared state -- and therefore the value the reference refers to -- stays\nalive for the rest of the iteration. Erasing before get() also removes\nthe need for the catch-and-rethrow: the entry is already gone, so a\nservice-side exception still surfaces exactly once.\n\nBehaviour is unchanged: an entry is erased exactly once, a failed\nset_parameters still throws, and the not-yet-ready path is untouched.\n\nVerified in ghcr.io/ros-navigation/navigation2:main (GCC 15.2): the\npackage fails to build with colcon exit 2 before this change and builds\nclean with exit 0 after it; zone_parameter_filter_test passes 16/16.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n* Align ZoneParameterFilter test with current nav2 conventions\n\nTwo small drifts this branch had picked up against main:\n\n- Link std_msgs::std_msgs directly. After #6136 replaced the rest,\n  ${std_msgs_TARGETS} here was the only remaining use in the repo, and\n  binary_filter_test seven lines above already links the target\n  directly. Linkage is unchanged.\n\n- Build the test's transform buffer with nav2::create_transform_buffer\n  rather than constructing tf2_ros::Buffer by hand, matching the speed,\n  keepout and binary filter tests after #6281. This also gives the test\n  the timer interface the factory installs. Two includes left unused by\n  the change are dropped.\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\n\n---------\n\nSigned-off-by: Akihiko Komada <aki1770@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-08-10T23:06:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/ea95cc394348ba184ea862d70cf98a0e0883a1ff",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ea95cc394348ba184ea862d70cf98a0e0883a1ff/comments",
+    "author": {
+      "login": "aki1770-del",
+      "id": 251929114,
+      "node_id": "U_kgDODwQiGg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/251929114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aki1770-del",
+      "html_url": "https://github.com/aki1770-del",
+      "followers_url": "https://api.github.com/users/aki1770-del/followers",
+      "following_url": "https://api.github.com/users/aki1770-del/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aki1770-del/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aki1770-del/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aki1770-del/subscriptions",
+      "organizations_url": "https://api.github.com/users/aki1770-del/orgs",
+      "repos_url": "https://api.github.com/users/aki1770-del/repos",
+      "events_url": "https://api.github.com/users/aki1770-del/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aki1770-del/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "64c4b9dce56531b97718822fe7626aca62e1346f",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/64c4b9dce56531b97718822fe7626aca62e1346f",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/64c4b9dce56531b97718822fe7626aca62e1346f"
+      }
+    ]
+  },
+  {
+    "sha": "64c4b9dce56531b97718822fe7626aca62e1346f",
+    "node_id": "C_kwDOCBF7SNoAKDY0YzRiOWRjZTU2NTMxYjk3NzE4ODIyZmU3NjI2YWNhNjJlMTM0NmY",
+    "commit": {
+      "author": {
+        "name": "Michal Sojka",
+        "email": "michal.sojka@cvut.cz",
+        "date": "2026-08-10T21:39:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T21:39:55Z"
+      },
+      "message": "nav2_util: Export angles to dependent packages (#6323)\n\nDependent packages that include path_utils.hpp need to have\nangles/angles.h available. Add build_export_depend to package.xml to\nensure that.\n\nWithout this change, we experience the following nav2_behavior_tree\nbuild failure in nix-ros-overlay, which builds packages in a sandbox\ncontaining only declared dependencies:\n\n    CMake Error at /nix/store/vk9cd94x553a4vvq4b8yxj2y1hlj7yzf-ros-lyrical-nav2-util-1.5.0-r1/share/nav2_util/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):\n      By not providing \"Findangles.cmake\" in CMAKE_MODULE_PATH this project has\n      asked CMake to find a package configuration file provided by \"angles\", but\n      CMake did not find one.\n\n      Could not find a package configuration file provided by \"angles\" with any\n      of the following names:\n\n        angles.cps\n        anglesConfig.cmake\n        angles-config.cmake\n\n      Add the installation prefix of \"angles\" to CMAKE_PREFIX_PATH or set\n      \"angles_DIR\" to a directory containing one of the above files.  If \"angles\"\n      provides a separate development package or SDK, be sure it has been\n      installed.\n    Call Stack (most recent call first):\n      /nix/store/vk9cd94x553a4vvq4b8yxj2y1hlj7yzf-ros-lyrical-nav2-util-1.5.0-r1/share/nav2_util/cmake/nav2_utilConfig.cmake:41 (include)\n      CMakeLists.txt:11 (find_package)\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+      "tree": {
+        "sha": "698e04c91dfe954b03448bbbe65247a1f770bbe6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/698e04c91dfe954b03448bbbe65247a1f770bbe6"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/64c4b9dce56531b97718822fe7626aca62e1346f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqekUrCRC1aQ7uu5UhlAAAcpAQADvqEdT+7bo4c4Btqz5SR4mF\nYYFB7KpufUWqiIwdTxACchfbm9FiSNerWp2Z4EOHEz958ZRkczXa0n5sXOmcEyP3\nPUUctxdxb+v9L5cNhkYF0EUG626FWDfc1X5x0IzxuMLBM4CnfWkgJxHIH3OoztAm\n/0RqUOhm2w5KdKY3nItyKBH0oZRKv5WoiEesI+Nk2IhImTx2HKE8j0sB7cuNe/sq\n4VrIkDe0z/vIBaHb9v6GhlvI1dirSoxrs5FlcmAwElnGRiKQqkAVrwDxmrQ17HYy\nDj14HWa1tDMvgtzStlbGpWyaHI9/EUJxNn5xb+7wsoTKaxNrDNe/SB9xAmlIEj2/\nH0lWKkk62CfPWLrr1VUPPtsynHaEWaj9mygKIr/2CQqRkQcOUGuNbg/j1zyU8V3Z\nvea7XCB6b7y+bhIyVoGNb2f15ftXIxioEaV/DVgae6d5qbleNz/OTriYDFiEfQeH\nIeKsEPOzPrVjgqEEdvJ09HZFb08kjuC+V8Sw1Gnvo5lLB0bl1kvFaWLaIYaZ+NmK\nwrltZbWAjh9HE4KT7wz00N/xsIYa3118wFxOceokaM80lFoXT6f/6h4x6kOv7yBc\nnBWTMrcMBE9aAEZ5B4UYR2UCFOqOtj58oU5Pvc3PJd2fuRnXwWhqk1BW/I8vrWoQ\nfCUyTNSoNAowfjEDpPiZ\n=ont/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 698e04c91dfe954b03448bbbe65247a1f770bbe6\nparent bf4a08073c476d4876b64039bd03914e164471d0\nauthor Michal Sojka <michal.sojka@cvut.cz> 1786397995 +0200\ncommitter GitHub <noreply@github.com> 1786397995 -0700\n\nnav2_util: Export angles to dependent packages (#6323)\n\nDependent packages that include path_utils.hpp need to have\nangles/angles.h available. Add build_export_depend to package.xml to\nensure that.\n\nWithout this change, we experience the following nav2_behavior_tree\nbuild failure in nix-ros-overlay, which builds packages in a sandbox\ncontaining only declared dependencies:\n\n    CMake Error at /nix/store/vk9cd94x553a4vvq4b8yxj2y1hlj7yzf-ros-lyrical-nav2-util-1.5.0-r1/share/nav2_util/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):\n      By not providing \"Findangles.cmake\" in CMAKE_MODULE_PATH this project has\n      asked CMake to find a package configuration file provided by \"angles\", but\n      CMake did not find one.\n\n      Could not find a package configuration file provided by \"angles\" with any\n      of the following names:\n\n        angles.cps\n        anglesConfig.cmake\n        angles-config.cmake\n\n      Add the installation prefix of \"angles\" to CMAKE_PREFIX_PATH or set\n      \"angles_DIR\" to a directory containing one of the above files.  If \"angles\"\n      provides a separate development package or SDK, be sure it has been\n      installed.\n    Call Stack (most recent call first):\n      /nix/store/vk9cd94x553a4vvq4b8yxj2y1hlj7yzf-ros-lyrical-nav2-util-1.5.0-r1/share/nav2_util/cmake/nav2_utilConfig.cmake:41 (include)\n      CMakeLists.txt:11 (find_package)\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+        "verified_at": "2026-08-10T21:39:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/64c4b9dce56531b97718822fe7626aca62e1346f",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/64c4b9dce56531b97718822fe7626aca62e1346f",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/64c4b9dce56531b97718822fe7626aca62e1346f/comments",
+    "author": {
+      "login": "wentasah",
+      "id": 140542,
+      "node_id": "MDQ6VXNlcjE0MDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140542?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wentasah",
+      "html_url": "https://github.com/wentasah",
+      "followers_url": "https://api.github.com/users/wentasah/followers",
+      "following_url": "https://api.github.com/users/wentasah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wentasah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wentasah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wentasah/subscriptions",
+      "organizations_url": "https://api.github.com/users/wentasah/orgs",
+      "repos_url": "https://api.github.com/users/wentasah/repos",
+      "events_url": "https://api.github.com/users/wentasah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wentasah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bf4a08073c476d4876b64039bd03914e164471d0",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/bf4a08073c476d4876b64039bd03914e164471d0",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/bf4a08073c476d4876b64039bd03914e164471d0"
+      }
+    ]
+  },
+  {
+    "sha": "bf4a08073c476d4876b64039bd03914e164471d0",
+    "node_id": "C_kwDOCBF7SNoAKGJmNGEwODA3M2M0NzZkNDg3NmI2NDAzOWJkMDM5MTRlMTY0NDcxZDA",
+    "commit": {
+      "author": {
+        "name": "Wolf Vollprecht",
+        "email": "w.vollprecht@gmail.com",
+        "date": "2026-08-10T21:29:16Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T21:29:16Z"
+      },
+      "message": "Make warnings-as-errors configurable (#6326)\n\nSigned-off-by: Wolf Vollprecht <w.vollprecht@gmail.com>",
+      "tree": {
+        "sha": "5d69bca4e1f1b5cc311232e8abf75f5b0588c881",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/5d69bca4e1f1b5cc311232e8abf75f5b0588c881"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/bf4a08073c476d4876b64039bd03914e164471d0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqekKsCRC1aQ7uu5UhlAAANmIQAHc0OhwuHp/DblqzOd4yNFDz\nBf5vichvhgdboSGw+6lrMVj5qX4eAyQDWTiY0wCaxTsOTKN1Y02NV0bpHyK1ztNF\nuzymw5gRVGjXBybyhZPwE0KMIXhMAZUuG0FaEkka8r9VKTCZ3uCTfWEoRhxvZLaf\nN0rwQ2e6eHqeNlfO42YlzjIZSnInqGfoCBDLhOrkhHs7nAyvo5LlmacMKMCuh28Q\nmTRXVN6AB4uWIjFGmaef+KL3KSZyOXZbqrTAl9YRU/uGaR4pGN9bSbGZCsJPsF3H\naYHAJtEJehBcCE3dG7yOYxp0JLFvjXT53DnxNE1qskzHV65k7tEr3boujSDfzlH3\nnWFkP3UgYuDdGsrgdlHIRkPHfD/PXQ69t+sZgKNA06MZ8OfSMnbECzhIR7BNlNiV\nqGDxZ+aFiBjvM6eeYOl4LZeDL25+SwIKPG9jVw6z4fJzGdlJqbErSaKFGvaHt4hn\ndX4gE97TpbXl2mCLSFX6525jT+PntsxSV9F9Cc+Pza+Hbb+XEptQo8C1ESrlaKbK\n/YonD2RyTYlWE7SJgzYregsBAWKbBXa733XtvCfQRwhu8LJUK1fslVUuafYuAYir\nTbbGG3aXBFQtiC29HcsTSDyTLfSYNjWD2sZjYD5rzjOCIa5tc6yOi41jSY9DEp89\nUtjy+aKROc7qTNIkgJwz\n=GDbd\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5d69bca4e1f1b5cc311232e8abf75f5b0588c881\nparent 704bcc7142b03a9456d4ac42516935abfff19146\nauthor Wolf Vollprecht <w.vollprecht@gmail.com> 1786397356 +0200\ncommitter GitHub <noreply@github.com> 1786397356 -0700\n\nMake warnings-as-errors configurable (#6326)\n\nSigned-off-by: Wolf Vollprecht <w.vollprecht@gmail.com>",
+        "verified_at": "2026-08-10T21:29:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/bf4a08073c476d4876b64039bd03914e164471d0",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/bf4a08073c476d4876b64039bd03914e164471d0",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/bf4a08073c476d4876b64039bd03914e164471d0/comments",
+    "author": {
+      "login": "wolfv",
+      "id": 885054,
+      "node_id": "MDQ6VXNlcjg4NTA1NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/885054?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wolfv",
+      "html_url": "https://github.com/wolfv",
+      "followers_url": "https://api.github.com/users/wolfv/followers",
+      "following_url": "https://api.github.com/users/wolfv/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wolfv/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wolfv/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wolfv/subscriptions",
+      "organizations_url": "https://api.github.com/users/wolfv/orgs",
+      "repos_url": "https://api.github.com/users/wolfv/repos",
+      "events_url": "https://api.github.com/users/wolfv/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wolfv/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "704bcc7142b03a9456d4ac42516935abfff19146",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/704bcc7142b03a9456d4ac42516935abfff19146",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/704bcc7142b03a9456d4ac42516935abfff19146"
+      }
+    ]
+  },
+  {
+    "sha": "704bcc7142b03a9456d4ac42516935abfff19146",
+    "node_id": "C_kwDOCBF7SNoAKDcwNGJjYzcxNDJiMDNhOTQ1NmQ0YWM0MjUxNjkzNWFiZmZmMTkxNDY",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-08-10T21:28:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T21:28:22Z"
+      },
+      "message": "Fix costmap publication for late subscribers (#6324)\n\n* Fix costmap publication for late subscribers\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Adding regression test for late costmap subscription\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+      "tree": {
+        "sha": "843ebe0036753b167c779886eade39c9d5be173e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/843ebe0036753b167c779886eade39c9d5be173e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/704bcc7142b03a9456d4ac42516935abfff19146",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqekJ2CRC1aQ7uu5UhlAAAzV4QAJN3YlXkWOBkkEDhmQF3ezYE\nsRKKrK/CRWLpSTRx/Ao++Q1rehpdQ6dR1BSXszflzhUHdtSzDILbsW1uEPXrUmPw\nB1Fo0gvHn/9TNNJz4LyRtmV9MUr5SN5lFc8lD7T6N+AwW2eRtdR+H/+F1UxKpK/1\nKHtMReaYFMJ5pairWCy8mjmmPZSAju/coHIEhtwXoByXziefrStniMDkfHhTsM9f\nrRvmIbffuxcxltqoIZsc/v3AtidZjezL4J+uV7eOqdbtYCQOqFaAb3n0iNjHrWK+\nyCRnKiriWlmf4Ii4Gn2gj1dUW/yN/1o38YZrG3sWIu/8EnkxZkv0Skanl0nvOdQS\nvZw3O3/FWxtHXeJA2+OokIFHGxTwgY+nLLEyZxlPs8WAG4P8UayOhOH6CCLoY5FX\ns/wSh0AWGgCwOvuhp5iqqf2kT9GXlc7WLQuHe5ymZfvtCcrvPXeWOqlgTfMWpCw4\nuJpxKcu+KSPeOdcSrIW1OaGJ6DgUKFGpTIvb3B+8QoSIuVdU67S4rfWRUmM09C2Y\nKSke5LwmM8oXnAyez/YMG/IxrC5swkty1OdD1msbcYa8cHU3m0L3Jg/oHuEvK8tw\nXrtjKZlaGWiCCp5RjqTUYb+og2iFf9/lRx3Z+Ci2sJmiwYrXkmDnp0rdcPt6QYGU\n/Zk8zBdHwvPcgi9xNFgp\n=KiwR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 843ebe0036753b167c779886eade39c9d5be173e\nparent 70fd2f5e6bb4697b5095053d6951d25678f87030\nauthor Marco Bassa <bassamarco91@gmail.com> 1786397302 +0200\ncommitter GitHub <noreply@github.com> 1786397302 -0700\n\nFix costmap publication for late subscribers (#6324)\n\n* Fix costmap publication for late subscribers\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Adding regression test for late costmap subscription\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+        "verified_at": "2026-08-10T21:28:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/704bcc7142b03a9456d4ac42516935abfff19146",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/704bcc7142b03a9456d4ac42516935abfff19146",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/704bcc7142b03a9456d4ac42516935abfff19146/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "70fd2f5e6bb4697b5095053d6951d25678f87030",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/70fd2f5e6bb4697b5095053d6951d25678f87030",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/70fd2f5e6bb4697b5095053d6951d25678f87030"
+      }
+    ]
+  },
+  {
+    "sha": "70fd2f5e6bb4697b5095053d6951d25678f87030",
+    "node_id": "C_kwDOCBF7SNoAKDcwZmQyZjVlNmJiNDY5N2I1MDk1MDUzZDY5NTFkMjU2NzhmODcwMzA",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-08-10T21:27:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-10T21:27:09Z"
+      },
+      "message": "Fix path handler with small pose search distance (#6318)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+      "tree": {
+        "sha": "f9dcadb7b418d4f5499cebbc77a010d693fa7ea1",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/f9dcadb7b418d4f5499cebbc77a010d693fa7ea1"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/70fd2f5e6bb4697b5095053d6951d25678f87030",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqekItCRC1aQ7uu5UhlAAAIK8QAEKKUHDkH1tRqCTGi/hIVdVn\nOlKMw6wMVpJo4Fl3kMq/Z95GL5/Q1eGFwy6j+NelwwjxDjhggG1EWfDo9+ao2NXs\nbbZobcS4THMTh4At3VLW+/p7WuPgapPrmxndWPf+sWOjwwuiCHvCL0thCCzoSARG\nA4L466Wb4gRPPt7c+lmRAX/Sfg0GszAno1+QgpQEJeutwOGHLoRluvdEM8USj6tT\nrDf0vC+5aFSjEO59zHoqvyYgRYRMt1o2EXjysGgG6k7ExOWuxGD4jJ9M5XluF02q\n66Xb6cAL7oySuFTqSLzG7cmWP6aq3QJRopZEh33wC680rBj4ULPkSDWpN4Mo3+mr\n3Fhige4n7B8I9uYlYFRrsoNahIR0RFRuaJkSfVGSP9dcaYk1j5B2a93ng/J2venf\nFvBHeRE54vy3FKi6Bsaw5R9yzYA7KO4Ed9s2l4zj62O5QwsYlOrXy5Pqh/pRRtMG\n6bymp+A3YH9EgkB21vGuhGcjj5o21QwCVdC3qIzI2cBh8EyQUzJf/Pb3FWZYZlow\novmMmn+PIFUvodIXV0PKbfhHoxb0Fh6Bw1RRdPduj0K93kiWRXgoxcKe5pGD6am3\nBFtTsk2yPFLx9NkrGyowS8PinfyeI9IWVlCAoNvyCcx7BJocAkV+WOqlK6QEnYhT\nyFEcUs1sfvCV3fOqNgtn\n=SduC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f9dcadb7b418d4f5499cebbc77a010d693fa7ea1\nparent 538e76858d7940b427d2dd987a9f943a6f332335\nauthor Marco Bassa <bassamarco91@gmail.com> 1786397229 +0200\ncommitter GitHub <noreply@github.com> 1786397229 -0700\n\nFix path handler with small pose search distance (#6318)\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+        "verified_at": "2026-08-10T21:27:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/70fd2f5e6bb4697b5095053d6951d25678f87030",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/70fd2f5e6bb4697b5095053d6951d25678f87030",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/70fd2f5e6bb4697b5095053d6951d25678f87030/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "538e76858d7940b427d2dd987a9f943a6f332335",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/538e76858d7940b427d2dd987a9f943a6f332335",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/538e76858d7940b427d2dd987a9f943a6f332335"
+      }
+    ]
+  }
+]

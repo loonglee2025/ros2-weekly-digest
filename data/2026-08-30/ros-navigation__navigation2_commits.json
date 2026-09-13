@@ -1,0 +1,740 @@
+[
+ {
+  "sha": "13ead3a21d5860a9d924ca46ce36888ed6ce362e",
+  "node_id": "C_kwDOCBF7SNoAKDEzZWFkM2EyMWQ1ODYwYTlkOTI0Y2E0NmNlMzY4ODhlZDZjZTM2MmU",
+  "commit": {
+   "author": {
+    "name": "Nikolaos Drosinos",
+    "email": "nikolaos.drosinos@ocado.com",
+    "date": "2026-08-28T20:12:31Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-28T20:12:31Z"
+   },
+   "message": "feat: return to dock staging pose on failure (#6403)\n\n* feat: return to dock staging pose on failure\n\n* if all docking retries have failed, then return to the dock staging\n  pose before reporting failure\n* swallow any new exceptions that may occur, in order to report the\n  original docking failure reason\n\nFixes #6399\n\nSigned-off-by: Nikolaos Drosinos <nikolaos.drosinos@ocado.com>\n\n* fixup: address review comments\n\n* return to staging pose in case of docking failure only if a positive\n  value has been specified for docking_server.max_retries parameter\n* don't handle resetApproach() failure (i.e., cancelled, preempted, or\n  shutting down); just fallthrough and let the general case handle it\n\n* Update nav2_docking/opennav_docking/src/docking_server.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Nikolaos Drosinos <nikolaos.drosinos@ocado.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+   "tree": {
+    "sha": "11c7856046c6b7f634e877c9bb2333abd1211ebd",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/11c7856046c6b7f634e877c9bb2333abd1211ebd"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/13ead3a21d5860a9d924ca46ce36888ed6ce362e",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqkeuvCRC1aQ7uu5UhlAAAECUQAF+Q2LibF4W2OlPjvfxGiAlH\nCWtPEO0HZbyLxj4DDkdkX4atHm3WyVYwTdfRGxefmdvuRxvuKkkkXzrVEN3jKBfi\nAfUlfPro0M9jtJzVoxgq+3huZnUxToDCocdvvC7uVN5H1ra0oePnUA39JVjsaVVO\nHk4ptrCmMSAqjLObAJXAz1Wi0wkict0JLUMUvAzyE+as9vct6eiG0U9AQL6CFP0X\nEg9eKbQgw1/wG+3oX+IVEEbSuSX/vRJkhkQjv5ZHY3VboKURSt0TICRKdsTQ7jrz\n4mLGmpgjPBDlfNIglvyReztGdT8e3fY6aBT8cFsl4/F5Y4HzKJwHglYi/IjcgrPa\nWhtRM4DTuTvyrSepB1jDMlaA4HAvRUMJ8HR7LHelNPofR+fCIbS/LC2oV405oQmH\nUb29l8d9O48LHtH+bYcZJQ9oqS1jkrFCS4Nj0o56/zBVis9HNae//Xa/0Hf21++0\nWrOw63uIXCoRGOJrxxm04kzpNEcsyIKZhxGmUkzDLeXXM8tcTBM6mJmdkzTqnMQH\nhGiRA3151F4mKaLI073ClkGSCTyX7h0+Me3JddR5tYjGrDnxJ0IRd7klj5/Ailko\nx+DhZLXQA6nImPtRm7lYL7iDQ+KYfF3ZFBpr3MPaqzhC8xmqWHPiMKHYc1gHkRE0\nKFbnof3Var96jazIC0yF\n=nGtm\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 11c7856046c6b7f634e877c9bb2333abd1211ebd\nparent a0634ab2a081e33b3aaa921c028262eea979e5ba\nauthor Nikolaos Drosinos <nikolaos.drosinos@ocado.com> 1787947951 +0300\ncommitter GitHub <noreply@github.com> 1787947951 -0700\n\nfeat: return to dock staging pose on failure (#6403)\n\n* feat: return to dock staging pose on failure\n\n* if all docking retries have failed, then return to the dock staging\n  pose before reporting failure\n* swallow any new exceptions that may occur, in order to report the\n  original docking failure reason\n\nFixes #6399\n\nSigned-off-by: Nikolaos Drosinos <nikolaos.drosinos@ocado.com>\n\n* fixup: address review comments\n\n* return to staging pose in case of docking failure only if a positive\n  value has been specified for docking_server.max_retries parameter\n* don't handle resetApproach() failure (i.e., cancelled, preempted, or\n  shutting down); just fallthrough and let the general case handle it\n\n* Update nav2_docking/opennav_docking/src/docking_server.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Nikolaos Drosinos <nikolaos.drosinos@ocado.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+    "verified_at": "2026-08-28T20:12:31Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/13ead3a21d5860a9d924ca46ce36888ed6ce362e",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/13ead3a21d5860a9d924ca46ce36888ed6ce362e",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/13ead3a21d5860a9d924ca46ce36888ed6ce362e/comments",
+  "author": {
+   "login": "nikolaos-drosinos",
+   "id": 241738555,
+   "node_id": "U_kgDODmijOw",
+   "avatar_url": "https://avatars.githubusercontent.com/u/241738555?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/nikolaos-drosinos",
+   "html_url": "https://github.com/nikolaos-drosinos",
+   "followers_url": "https://api.github.com/users/nikolaos-drosinos/followers",
+   "following_url": "https://api.github.com/users/nikolaos-drosinos/following{/other_user}",
+   "gists_url": "https://api.github.com/users/nikolaos-drosinos/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/nikolaos-drosinos/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/nikolaos-drosinos/subscriptions",
+   "organizations_url": "https://api.github.com/users/nikolaos-drosinos/orgs",
+   "repos_url": "https://api.github.com/users/nikolaos-drosinos/repos",
+   "events_url": "https://api.github.com/users/nikolaos-drosinos/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/nikolaos-drosinos/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "a0634ab2a081e33b3aaa921c028262eea979e5ba",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a0634ab2a081e33b3aaa921c028262eea979e5ba",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a0634ab2a081e33b3aaa921c028262eea979e5ba"
+   }
+  ]
+ },
+ {
+  "sha": "a0634ab2a081e33b3aaa921c028262eea979e5ba",
+  "node_id": "C_kwDOCBF7SNoAKGEwNjM0YWIyYTA4MWUzM2IzYWFhOTIxYzAyODI2MmVlYTk3OWU1YmE",
+  "commit": {
+   "author": {
+    "name": "Marc Bl\u00f6chlinger",
+    "email": "91188043+mbloechli@users.noreply.github.com",
+    "date": "2026-08-28T19:13:35Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-28T19:13:35Z"
+   },
+   "message": "fix(nav2_mppi_controller): run correct motion model in benchmarks (#6412)\n\nSigned-off-by: mbloechli <mbloechlinger@duatic.com>",
+   "tree": {
+    "sha": "ad548b79733d9be72c0f589a7238f5fcad77bb45",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/ad548b79733d9be72c0f589a7238f5fcad77bb45"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a0634ab2a081e33b3aaa921c028262eea979e5ba",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqkd3fCRC1aQ7uu5UhlAAAwlYQAAkUUPPMjdNz2F5iuPsRMbcn\niUFBuFh49Z9MVwrtehxPSlb7p2JDDl8qUHJ4PsQ9cackJNu7SlW5A5Nb+g1W3p/J\nfHLAijDrIt5zCKSKOp1h+09IP+z4cAANPktZzf6+zCy6TIm64g8tDynpO8FcPzxj\nabL4e9223JC/snBA8TodetxldCaaxo6UB8jVCQEfp5IN3pO7t3QFczZIhxZt7BPW\nOJ5VLxAx4nZcEHI0wbAAoBd3OGYDRAhNf0Q4msIZ63qEGUMHX26irTpJKtmnB5o4\nbk7KWN5f0IGURmXhbhWREoCqSyViEMeRjph0tDgHgEL54l5UAS4F5KKyzqEnd/FI\nqOcyx8dqS1erMqyAMxgt5HgkoRuVNC65cc+d7y4YXBon6atHwiSsikhYaNAc6Md8\nC7mud0TgoCqvF1CUD8ZKlSg91eYPegBr4ZB/gKVszSQ1cZqbw6+xqzIrgJEO67tP\n4yVMRPMFS3l3GskuFia1Z8lQkQSCoUO+sHlmXA1CkjocgETTF5pu34WKdhLZvOjV\nskttA/HgC82/DVDypcHBgGUo4hd0EQ4sqGAgUlZ1wOygRY4nEDG2AnMzxFlghHFM\n0rr6mAppWKPzGQDl7yxwbZ4tvNxVXR81Nv48F1//slIaZQ3PWdoqW9HO/PoRbBlx\nCQ+GbHiCahTwm5Ic0BU3\n=2TGB\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree ad548b79733d9be72c0f589a7238f5fcad77bb45\nparent a143bcf9860273421f1918e525fc617af947c009\nauthor Marc Bl\u00f6chlinger <91188043+mbloechli@users.noreply.github.com> 1787944415 +0200\ncommitter GitHub <noreply@github.com> 1787944415 -0700\n\nfix(nav2_mppi_controller): run correct motion model in benchmarks (#6412)\n\nSigned-off-by: mbloechli <mbloechlinger@duatic.com>",
+    "verified_at": "2026-08-28T19:13:36Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a0634ab2a081e33b3aaa921c028262eea979e5ba",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/a0634ab2a081e33b3aaa921c028262eea979e5ba",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a0634ab2a081e33b3aaa921c028262eea979e5ba/comments",
+  "author": {
+   "login": "mbloechli",
+   "id": 91188043,
+   "node_id": "MDQ6VXNlcjkxMTg4MDQz",
+   "avatar_url": "https://avatars.githubusercontent.com/u/91188043?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/mbloechli",
+   "html_url": "https://github.com/mbloechli",
+   "followers_url": "https://api.github.com/users/mbloechli/followers",
+   "following_url": "https://api.github.com/users/mbloechli/following{/other_user}",
+   "gists_url": "https://api.github.com/users/mbloechli/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/mbloechli/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/mbloechli/subscriptions",
+   "organizations_url": "https://api.github.com/users/mbloechli/orgs",
+   "repos_url": "https://api.github.com/users/mbloechli/repos",
+   "events_url": "https://api.github.com/users/mbloechli/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/mbloechli/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "a143bcf9860273421f1918e525fc617af947c009",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a143bcf9860273421f1918e525fc617af947c009",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a143bcf9860273421f1918e525fc617af947c009"
+   }
+  ]
+ },
+ {
+  "sha": "a143bcf9860273421f1918e525fc617af947c009",
+  "node_id": "C_kwDOCBF7SNoAKGExNDNiY2Y5ODYwMjczNDIxZjE5MThlNTI1ZmM2MTdhZjk0N2MwMDk",
+  "commit": {
+   "author": {
+    "name": "Jo\u00e3o Turra",
+    "email": "63259730+jp-turra@users.noreply.github.com",
+    "date": "2026-08-26T20:54:11Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-26T20:54:11Z"
+   },
+   "message": "fix: handle single-pose path concatenation correctly (#6404) (#6407)\n\nSigned-off-by: Jo\u00e3o Pedro Verona Turra <joao.t06@hotmail.com>",
+   "tree": {
+    "sha": "b59a0b003c9d1c3682d511bfb0c2097ea9276c5d",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/b59a0b003c9d1c3682d511bfb0c2097ea9276c5d"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a143bcf9860273421f1918e525fc617af947c009",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqj1JzCRC1aQ7uu5UhlAAAj4wQABNRM3iWvKJoTmIonDeX0AUl\nBDUy/QFE0TWZNDallyONKncnN0GrwEK1v7vkmtPMrdjdIXa1IDvVQh6Yh1smJv2z\nAUvU2yA6uILE4cIlweX8R2sH0vHoeza0jWhnb6meEtMOrBWRtSesyMN15DBO9zyi\nTJqALfMr3vCe1yCwP9abeZwgFyD3gHyDMzUwH3mEVXxhuQ8Lp9ZafeFtpiDjaXwA\n3JcI6RWkzjnvU6jkS5SFjmHWfPPtGm2DiuLqQdh+Z/w91amxNKdXe53DmjF6IRie\nE78b441JZdT4B2Sa/nootpSu9usyHL9xxA+CakpgyewvusbOVYlhFQYoxXH6B9bm\nEGl+Pobkq/rc4DMjMyiLtxoNVioRV6ZXS12BNdff/4O9/+s/Z+JXUeK/xuhSKKq6\n2kZDwBPJwDF+l3lka1fbfiGKJVOizQtGdVPBjFphz7fhu9jiK2gp3dpiTZxELpVB\nucz55R9BW4hzYI4td4qOmtTRf84zbeI+6GXi2WWwqowjhzZuO04LAHSGAxlC7M0s\nNLNmE7/JJwkXER5bALDfASUfFq3jhLcZLZiOel9KGVi9728xkcJqMg82U2CLfdUT\ndWSc+0Rv9j1v8PByikMrC6WTA5k6QHVnPh+OjoTuDxKVE7QqXgMM2O3YydtmA9hY\nFKG/FeTnjbV4w9+Z69+R\n=J3Yq\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree b59a0b003c9d1c3682d511bfb0c2097ea9276c5d\nparent fbc79a1f5fa9b69cb73005e0a7aa94886372a58e\nauthor Jo\u00e3o Turra <63259730+jp-turra@users.noreply.github.com> 1787777651 -0300\ncommitter GitHub <noreply@github.com> 1787777651 -0700\n\nfix: handle single-pose path concatenation correctly (#6404) (#6407)\n\nSigned-off-by: Jo\u00e3o Pedro Verona Turra <joao.t06@hotmail.com>",
+    "verified_at": "2026-08-26T20:54:12Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a143bcf9860273421f1918e525fc617af947c009",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/a143bcf9860273421f1918e525fc617af947c009",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a143bcf9860273421f1918e525fc617af947c009/comments",
+  "author": {
+   "login": "jp-turra",
+   "id": 63259730,
+   "node_id": "MDQ6VXNlcjYzMjU5NzMw",
+   "avatar_url": "https://avatars.githubusercontent.com/u/63259730?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/jp-turra",
+   "html_url": "https://github.com/jp-turra",
+   "followers_url": "https://api.github.com/users/jp-turra/followers",
+   "following_url": "https://api.github.com/users/jp-turra/following{/other_user}",
+   "gists_url": "https://api.github.com/users/jp-turra/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/jp-turra/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/jp-turra/subscriptions",
+   "organizations_url": "https://api.github.com/users/jp-turra/orgs",
+   "repos_url": "https://api.github.com/users/jp-turra/repos",
+   "events_url": "https://api.github.com/users/jp-turra/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/jp-turra/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e"
+   }
+  ]
+ },
+ {
+  "sha": "fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+  "node_id": "C_kwDOCBF7SNoAKGZiYzc5YTFmNWZhOWI2OWNiNzMwMDVlMGE3YWE5NDg4NjM3MmE1OGU",
+  "commit": {
+   "author": {
+    "name": "\u77e5\u8bb8",
+    "email": "liuyishui.cc@gmail.com",
+    "date": "2026-08-26T16:49:44Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-26T16:49:44Z"
+   },
+   "message": "Fix Theta* skipping expansion of the last popped open-set node (#6401)\n\nThe previous loop expanded curr before popping the next node, so the\nlast remaining open node was never expanded or checked as the goal.\n\nSigned-off-by: Grices <liuyishui.cc@gmail.com>",
+   "tree": {
+    "sha": "c8cacc6f2cc67da140085972d38bb9e7dbf0a476",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/c8cacc6f2cc67da140085972d38bb9e7dbf0a476"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjxkoCRC1aQ7uu5UhlAAAZsMQADxzHdTW1nQgdY3PKD5SOyr/\n6DxAAmV3renef0Gh1VIMPq1BGhDo7LhMdb2JfYkn1yAtNwHpwjWJTOFt77hUEhyw\nUaCKRAhHsuJAxE4X3scpSLHPBkjyNuY9Cw9PtNNcMh1MizVRl/tqk/EAPkp5W692\nUWojHsmgm2n1mYGypnflyDYzgW/CuuHH5E48+JFlJ3q1gZQPu1LJckCT7xySGok+\n0vWH21fYsrAKA1Gup1t1aGHItv00GzPg7sVcRv+Ui/LjlgfuTO2UG2xumqUtthN+\nZo6zbSRX9IJlSHOOQ3PDHQUM55+i4yu7b0QOiRrfyxej/88x8C3D8smzNS+Z12dy\nuyg7xquq9/79OaNvmClRuFyd/roFDfTaztGJuAss9mGPhKdwBGy9YKSB+FFgB+t7\nZBEW3o842pbmPtM2+8xhHMm+WpGXedb8LMD2JFJS7VDIgxETNZcnzGzlYTxcj2fV\nTBtq76Sp2KdRL2M0lDMF+yb2e17sO1EsdLLWVOoNV4Zs6K9v696M4WqUm9UR0kDw\n5wgpouifC/5eoO5i/8+sImXyJYWcyqJ569CQ596j51SM1UdZjayxmDDVgVVAdfZu\n1sMT7O7l38UdSSnQ5VEBxdOxKSl522oASHkgULCW/5JhZKnIWhXR1eir5oV8pdCF\nQT/05fbnJ9m2u8feUJvV\n=Tud+\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree c8cacc6f2cc67da140085972d38bb9e7dbf0a476\nparent 24c1f015164ba329c589399e41a425688f94db1c\nauthor \u77e5\u8bb8 <liuyishui.cc@gmail.com> 1787762984 +0800\ncommitter GitHub <noreply@github.com> 1787762984 -0700\n\nFix Theta* skipping expansion of the last popped open-set node (#6401)\n\nThe previous loop expanded curr before popping the next node, so the\nlast remaining open node was never expanded or checked as the goal.\n\nSigned-off-by: Grices <liuyishui.cc@gmail.com>",
+    "verified_at": "2026-08-26T16:49:45Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/fbc79a1f5fa9b69cb73005e0a7aa94886372a58e/comments",
+  "author": {
+   "login": "Grices",
+   "id": 62926280,
+   "node_id": "MDQ6VXNlcjYyOTI2Mjgw",
+   "avatar_url": "https://avatars.githubusercontent.com/u/62926280?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/Grices",
+   "html_url": "https://github.com/Grices",
+   "followers_url": "https://api.github.com/users/Grices/followers",
+   "following_url": "https://api.github.com/users/Grices/following{/other_user}",
+   "gists_url": "https://api.github.com/users/Grices/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/Grices/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/Grices/subscriptions",
+   "organizations_url": "https://api.github.com/users/Grices/orgs",
+   "repos_url": "https://api.github.com/users/Grices/repos",
+   "events_url": "https://api.github.com/users/Grices/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/Grices/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "24c1f015164ba329c589399e41a425688f94db1c",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24c1f015164ba329c589399e41a425688f94db1c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/24c1f015164ba329c589399e41a425688f94db1c"
+   }
+  ]
+ },
+ {
+  "sha": "24c1f015164ba329c589399e41a425688f94db1c",
+  "node_id": "C_kwDOCBF7SNoAKDI0YzFmMDE1MTY0YmEzMjljNTg5Mzk5ZTQxYTQyNTY4OGY5NGRiMWM",
+  "commit": {
+   "author": {
+    "name": "Prajwal Thakur",
+    "email": "prajwalthakur98@gmail.com",
+    "date": "2026-08-25T16:12:04Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-25T16:12:04Z"
+   },
+   "message": "Fixed future prediction of speed and pose (#6260)\n\n* Fixed prediction of future speed and pose\n\nSigned-off-by: prajwalthakur <prajwalthakur98@gmail.com>\n\n* Update nav2_mppi_controller/src/optimizer.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_mppi_controller/src/optimizer.cpp\n---------\n\nSigned-off-by: prajwalthakur <prajwalthakur98@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+   "tree": {
+    "sha": "b1d31bd2db16b31db2432bb23b1805f4fc271215",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/b1d31bd2db16b31db2432bb23b1805f4fc271215"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/24c1f015164ba329c589399e41a425688f94db1c",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjb7UCRC1aQ7uu5UhlAAAURoQAAN/gA8w9btgs9an2cf4m5OA\nIyW9RaBe5M/xaqSqmK7yMCG0ofXfsXUM8BbAAsLiaYu8KruntT5Cz09d98zVNpmy\nJOto3oL/+T7chxsq/RGntqR14NsDdh95of3axiknWlSCecm/HkY3yukG0+J2uWvg\nZ5sYx861o4UXDMhrkD5zoPd3jS2UFO/47tvGQsltusYy7gX49SmGvuADvLpQvY1f\nsscr6gRDYyhtkxmaJF2TEx/j5TzfvXwfu/G+2gfxij4GVWnP3oQkVK1RHrh3jtRi\nRpRBQc48DFWJfD+qgSMB6TnU7LqsD5IlRlyrQykkVJB+CGnqhFOLxykyAQSic2mJ\no63z0NnL/uo0H1FxJvZe83UPDwQ9feHqsLWMQqB60rWzRUnhonSzquxlKnMHiaQ7\nUegCbQoKhHA33z4eXqfz5r+qV2tOOEP/FCPYyRGIo/Wu+cUlmiR46V66dfXxria/\nuAVKRpFv99CQpzJwiQmiiZyTDq3gFTEY5hp5Z3mRrA5dR0ZXEILPTjXiA+ZNNvxk\nLYg9RkXPKMfwejm7wX/nXX0L8vzS0qDEBEqXr+ILK+TcniyULSgUdae3ViY9qvv8\nYQpubtzpT4gARuYOosCQDyeFAVoz/YGEyr4cNlMX3Mv8pnVlfTcyFkppjTZKqK56\ngLXzmkN5YNgTuFVDJv3Z\n=QlSQ\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree b1d31bd2db16b31db2432bb23b1805f4fc271215\nparent f95a96a8a01ffb8ab29903b99b212df90c0a4ffa\nauthor Prajwal Thakur <prajwalthakur98@gmail.com> 1787674324 +0530\ncommitter GitHub <noreply@github.com> 1787674324 +0200\n\nFixed future prediction of speed and pose (#6260)\n\n* Fixed prediction of future speed and pose\n\nSigned-off-by: prajwalthakur <prajwalthakur98@gmail.com>\n\n* Update nav2_mppi_controller/src/optimizer.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_mppi_controller/src/optimizer.cpp\n---------\n\nSigned-off-by: prajwalthakur <prajwalthakur98@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+    "verified_at": "2026-08-25T16:12:04Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24c1f015164ba329c589399e41a425688f94db1c",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/24c1f015164ba329c589399e41a425688f94db1c",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24c1f015164ba329c589399e41a425688f94db1c/comments",
+  "author": {
+   "login": "prajwalthakur",
+   "id": 42039745,
+   "node_id": "MDQ6VXNlcjQyMDM5NzQ1",
+   "avatar_url": "https://avatars.githubusercontent.com/u/42039745?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/prajwalthakur",
+   "html_url": "https://github.com/prajwalthakur",
+   "followers_url": "https://api.github.com/users/prajwalthakur/followers",
+   "following_url": "https://api.github.com/users/prajwalthakur/following{/other_user}",
+   "gists_url": "https://api.github.com/users/prajwalthakur/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/prajwalthakur/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/prajwalthakur/subscriptions",
+   "organizations_url": "https://api.github.com/users/prajwalthakur/orgs",
+   "repos_url": "https://api.github.com/users/prajwalthakur/repos",
+   "events_url": "https://api.github.com/users/prajwalthakur/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/prajwalthakur/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa"
+   }
+  ]
+ },
+ {
+  "sha": "f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+  "node_id": "C_kwDOCBF7SNoAKGY5NWE5NmE4YTAxZmZiOGFiMjk5MDNiOTliMjEyZGY5MGMwYTRmZmE",
+  "commit": {
+   "author": {
+    "name": "lawliet",
+    "email": "lawliet206@163.com",
+    "date": "2026-08-24T20:51:23Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T20:51:23Z"
+   },
+   "message": "Fix pose topic subscription leak when following ends via static object timeout (#6384)\n\nThe follow_object action releases its dynamic pose topic subscription on\nevery terminal exit path except one: when the action succeeds because the\nobject has been static for longer than static_object_timeout. In that case\nthe subscription stays alive while the server is idle, receiving messages\nuntil the next goal starts or the node shuts down.\n\nAlso release the subscription in on_cleanup() for consistency with the\nother managed resources there.\n\nAdd a unit test that drives the action through the static object timeout\nsuccess path and asserts the subscriber count for the topic drops back\nto zero once the action has succeeded.\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+   "tree": {
+    "sha": "11e4d0229c9ca0db7063dfa1a6ab51c762b85b36",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/11e4d0229c9ca0db7063dfa1a6ab51c762b85b36"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjK7LCRC1aQ7uu5UhlAAAyNcQAAFa6jwW/JGpWin1KCA1masr\nqYDGXazvpVlBIW0cBzZuW4H2FYZeQNrXV/ERtLDIoFXuLK3PYDCn8t8L9vMHZmZ5\nI1Wl+Pk2tz9bXWK0LUEgR/7LZBNQuAb3KkvHEAi0DU3RyJA5gttmtfA/uOSthyS3\nzERgtqVRqUCRqzJlyftelMUurOsE2Wf3vs/NxpiMak9eYokccnUpcumwUHghx6Ox\nDgJG/APTZydB19J/tij3+AqiMkLBKwMqv3gS4t/1Lmpt4BBeJnMQGKuY5xuE6YGC\nyWiVh/vCo5o4pq9//x1XWGn2WEu0cYoNIY8N4B5iWJXRh/K7XKXdmxFWCeRhl2ql\ns381BZBWSMCyjgG9uLTWTug54aPEObc7ewp1jnqaSEeJkoTJFS1U5N6HPd6q1s82\n4R4F/NMVl8WWHfxGrg9lyzPOjleD/8YqX6zkXOP3rMuwrqeuOT8Q5qoWTzYpvQFg\nP2s033c9+XlNvmXfqENTatptevOjYIEGEX7I5Xv3BIdWyfvKRkadHS38J47TiFKq\nhR2U/cb0/7TdChgJo8new8E72/nOyKWbp/Vw9s5UR789T0cMSNXyLNbtWOJFKleD\nV0EV2XJrzQsaZuvdhPSfSL7xLsAoqVAeFrKsWWJm4YBRzUoaCIv2A1cArl1V9y2h\n75DF3pAtzX/GEWnV66dP\n=m2D0\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 11e4d0229c9ca0db7063dfa1a6ab51c762b85b36\nparent cf6747734e2939d60bc6248fabf91a4b901df897\nauthor lawliet <lawliet206@163.com> 1787604683 +0800\ncommitter GitHub <noreply@github.com> 1787604683 -0700\n\nFix pose topic subscription leak when following ends via static object timeout (#6384)\n\nThe follow_object action releases its dynamic pose topic subscription on\nevery terminal exit path except one: when the action succeeds because the\nobject has been static for longer than static_object_timeout. In that case\nthe subscription stays alive while the server is idle, receiving messages\nuntil the next goal starts or the node shuts down.\n\nAlso release the subscription in on_cleanup() for consistency with the\nother managed resources there.\n\nAdd a unit test that drives the action through the static object timeout\nsuccess path and asserts the subscriber count for the topic drops back\nto zero once the action has succeeded.\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+    "verified_at": "2026-08-24T20:51:23Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f95a96a8a01ffb8ab29903b99b212df90c0a4ffa/comments",
+  "author": {
+   "login": "lawliet206",
+   "id": 283920616,
+   "node_id": "U_kgDOEOxI6A",
+   "avatar_url": "https://avatars.githubusercontent.com/u/283920616?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/lawliet206",
+   "html_url": "https://github.com/lawliet206",
+   "followers_url": "https://api.github.com/users/lawliet206/followers",
+   "following_url": "https://api.github.com/users/lawliet206/following{/other_user}",
+   "gists_url": "https://api.github.com/users/lawliet206/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/lawliet206/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/lawliet206/subscriptions",
+   "organizations_url": "https://api.github.com/users/lawliet206/orgs",
+   "repos_url": "https://api.github.com/users/lawliet206/repos",
+   "events_url": "https://api.github.com/users/lawliet206/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/lawliet206/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "cf6747734e2939d60bc6248fabf91a4b901df897",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cf6747734e2939d60bc6248fabf91a4b901df897",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/cf6747734e2939d60bc6248fabf91a4b901df897"
+   }
+  ]
+ },
+ {
+  "sha": "cf6747734e2939d60bc6248fabf91a4b901df897",
+  "node_id": "C_kwDOCBF7SNoAKGNmNjc0NzczNGUyOTM5ZDYwYmM2MjQ4ZmFiZjkxYTRiOTAxZGY4OTc",
+  "commit": {
+   "author": {
+    "name": "lawliet",
+    "email": "lawliet206@163.com",
+    "date": "2026-08-24T20:26:45Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T20:26:45Z"
+   },
+   "message": "Guard getPoseAtDistance against undefined projection at zero distance (#6385)\n\n* Guard getPoseAtDistance against undefined projection at zero distance\n\nWhen the robot pose coincides with the tracked object pose,\nstd::hypot(dx, dy) evaluates to exactly 0 and the backwards projection\ndivides by it, producing NaN coordinates that would propagate into the\ncontrol command. Return the tracked pose unchanged in that case and add\na unit test covering the scenario.\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n* Apply review feedback: use 1e-6 epsilon threshold, drop comment and log\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n---------\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+   "tree": {
+    "sha": "ad42944acc7cf9061a0962308f244079468ee613",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/ad42944acc7cf9061a0962308f244079468ee613"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/cf6747734e2939d60bc6248fabf91a4b901df897",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjKkFCRC1aQ7uu5UhlAAAnkAQAIpyjcE3KJcTUdC1NRZ81/8F\nIYmkCutE1EXgFA54u4PW9IaKq7p+aHuxtr9umUrfHqb8hNO2IL3Xfc7K6EsigDSS\n3rFdSBwcWhK0tt7Bi3VYad/K75vK9N0RSnG3ZfGK+QLMEE2VOlOe3NvQWTNimVAc\n1sOHmhU8aJ3fzL3CYnTcBw75hvDfKmjSL7Ding2WBGSiIQcIWr4Cak2p4SggVdiH\nU5CY0y0g6iOdjSPcJuXghtTQYZB/KUyXWf1EqUdF1UTllLzQ9YRG9rdw4aR5HlB7\naJ+FStgNO775E9TFXit6T0HyEbb+4XTeqm1WoLhboqONPRYOJvp9gyIuij7PoM5W\ndKPf9sQLKSyyvaF0nl0uQjj+Qv3ux6lDYEQS4Nyy6V1SGRVK/In2drCwWQwBoA7L\nXrxXX1t3Yi4ni8w/f3bjpOQrkkys+wqh+WspKa88VaRTcQ4sR1OKne2TIwOwKlug\ngSKI2L/JR9bslM6BSle/7fD6nha32TvxxMdNL1yZLxi8OXnlsU2uNxYPkUSeH5zw\nlBVsB6r3IhlaKx/YErdPRoD9BWWY5EulW7pjSw8RLz49c+eXUz2ZuCbqukAZdDqU\nswgvgPhjua//EEgJm7+u8q77JHLP3A8Pay3+WCXw83BSe6TJ1vJzGjq/crKyz4GJ\nR3iO/cPndgiA15tDXwIh\n=tGk2\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree ad42944acc7cf9061a0962308f244079468ee613\nparent 874e58b33e986e9b92f9b3031d79907e7ee25ede\nauthor lawliet <lawliet206@163.com> 1787603205 +0800\ncommitter GitHub <noreply@github.com> 1787603205 -0700\n\nGuard getPoseAtDistance against undefined projection at zero distance (#6385)\n\n* Guard getPoseAtDistance against undefined projection at zero distance\n\nWhen the robot pose coincides with the tracked object pose,\nstd::hypot(dx, dy) evaluates to exactly 0 and the backwards projection\ndivides by it, producing NaN coordinates that would propagate into the\ncontrol command. Return the tracked pose unchanged in that case and add\na unit test covering the scenario.\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n* Apply review feedback: use 1e-6 epsilon threshold, drop comment and log\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n---------\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+    "verified_at": "2026-08-24T20:26:45Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cf6747734e2939d60bc6248fabf91a4b901df897",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/cf6747734e2939d60bc6248fabf91a4b901df897",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cf6747734e2939d60bc6248fabf91a4b901df897/comments",
+  "author": {
+   "login": "lawliet206",
+   "id": 283920616,
+   "node_id": "U_kgDOEOxI6A",
+   "avatar_url": "https://avatars.githubusercontent.com/u/283920616?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/lawliet206",
+   "html_url": "https://github.com/lawliet206",
+   "followers_url": "https://api.github.com/users/lawliet206/followers",
+   "following_url": "https://api.github.com/users/lawliet206/following{/other_user}",
+   "gists_url": "https://api.github.com/users/lawliet206/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/lawliet206/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/lawliet206/subscriptions",
+   "organizations_url": "https://api.github.com/users/lawliet206/orgs",
+   "repos_url": "https://api.github.com/users/lawliet206/repos",
+   "events_url": "https://api.github.com/users/lawliet206/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/lawliet206/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "874e58b33e986e9b92f9b3031d79907e7ee25ede",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/874e58b33e986e9b92f9b3031d79907e7ee25ede",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/874e58b33e986e9b92f9b3031d79907e7ee25ede"
+   }
+  ]
+ },
+ {
+  "sha": "874e58b33e986e9b92f9b3031d79907e7ee25ede",
+  "node_id": "C_kwDOCBF7SNoAKDg3NGU1OGIzM2U5ODZlOWI5MmY5YjMwMzFkNzk5MDdlN2VlMjVlZGU",
+  "commit": {
+   "author": {
+    "name": "lawliet",
+    "email": "lawliet206@163.com",
+    "date": "2026-08-24T20:26:33Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T20:26:33Z"
+   },
+   "message": "Make follow_object reinit-lock handling exception-safe (#6386)\n\n* Make follow_object reinit-lock handling exception-safe\n\nfollowObject() holds the parameter-handler reinit mutex through a\nstd::lock_guard for the whole action, but temporarily released it around\ncreate_subscription() with raw mutex_.unlock()/lock() calls. If\ncreate_subscription() throws (e.g. an invalid goal-provided topic name),\nthe manual re-lock is skipped and the lock_guard destructor then unlocks\na mutex this thread no longer owns, which is undefined behavior.\n\nSwitch to std::unique_lock and use its ownership-aware unlock()/lock()\nso every exit path stays correct. No behavior change in the normal path.\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n* Remove unneeded comments in followObject\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n---------\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+   "tree": {
+    "sha": "f55e0a03515d8e2e2a13310a1badf5fa7f596c2e",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/f55e0a03515d8e2e2a13310a1badf5fa7f596c2e"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/874e58b33e986e9b92f9b3031d79907e7ee25ede",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjKj5CRC1aQ7uu5UhlAAA8noQAK2Y/z/XdQX9JjhBZCosSOAR\nefBNrBKG6U/pOdZI8dZMasU4byX9CD8QXq/Pk23jW1Xakpm29ApvY/r7zsbdLi4m\neNg9GvCMtIeo5ynpvgPWbXSFkD4zlyOcYym8Z4B61NstRWNvxh/f6X+46CGV58bu\nkX5dQMctHQxYPO2/2kdyCL2hg0Cfk4hSvCy072uxt4NW7hbeQYESYcPyLN5aUyI1\nUCOzwVVXAzw57N0bTikh0UwxgNGSKJ1fppdZ0l7kWGYJWkVsvTzMb00guYFUssJU\nAjd+IPNVTDaOBNR8xKG5BBGkrgEjUJpTW5FVC/2wjXQ/rO99c0R+ztIWLi33y3xD\nCrm/CWeL9ixR7GV0qyvWPpzhkWSd8ZX1Hf8uOap6qoXQyb5hbUdJuOgUkQZVeXag\nxkYhpMarNHYn5gt9hm9SK8jdt3ngRJLdB4fC8h1ajtpaED8CAzc2iPT6b3ct878v\n6hvqoMVxkL9dN/Sq2NbR2oG0vJF2PYGPcpReZU9TZkBi0hG/etkGcglz4GuY6OFk\nocqok2crDNTXNu8BDiNlrSXP/tNWGXnWiCU4BgoQ7l2GVOcFFc8vxwDEfm6maH2i\nL7wXH/D3Nlox1VKyRk89PUQUOphLvWp0EA0KnrpQG03K+fGAr43OD05gDeRXHbKv\nVLnkOMN96SMPaFBPAmCz\n=cy96\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree f55e0a03515d8e2e2a13310a1badf5fa7f596c2e\nparent 0f2777630471d03c65d73914c4b4a82224687a2c\nauthor lawliet <lawliet206@163.com> 1787603193 +0800\ncommitter GitHub <noreply@github.com> 1787603193 -0700\n\nMake follow_object reinit-lock handling exception-safe (#6386)\n\n* Make follow_object reinit-lock handling exception-safe\n\nfollowObject() holds the parameter-handler reinit mutex through a\nstd::lock_guard for the whole action, but temporarily released it around\ncreate_subscription() with raw mutex_.unlock()/lock() calls. If\ncreate_subscription() throws (e.g. an invalid goal-provided topic name),\nthe manual re-lock is skipped and the lock_guard destructor then unlocks\na mutex this thread no longer owns, which is undefined behavior.\n\nSwitch to std::unique_lock and use its ownership-aware unlock()/lock()\nso every exit path stays correct. No behavior change in the normal path.\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n* Remove unneeded comments in followObject\n\nSigned-off-by: lawliet <lawliet206@163.com>\n\n---------\n\nSigned-off-by: lawliet <lawliet206@163.com>",
+    "verified_at": "2026-08-24T20:26:34Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/874e58b33e986e9b92f9b3031d79907e7ee25ede",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/874e58b33e986e9b92f9b3031d79907e7ee25ede",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/874e58b33e986e9b92f9b3031d79907e7ee25ede/comments",
+  "author": {
+   "login": "lawliet206",
+   "id": 283920616,
+   "node_id": "U_kgDOEOxI6A",
+   "avatar_url": "https://avatars.githubusercontent.com/u/283920616?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/lawliet206",
+   "html_url": "https://github.com/lawliet206",
+   "followers_url": "https://api.github.com/users/lawliet206/followers",
+   "following_url": "https://api.github.com/users/lawliet206/following{/other_user}",
+   "gists_url": "https://api.github.com/users/lawliet206/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/lawliet206/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/lawliet206/subscriptions",
+   "organizations_url": "https://api.github.com/users/lawliet206/orgs",
+   "repos_url": "https://api.github.com/users/lawliet206/repos",
+   "events_url": "https://api.github.com/users/lawliet206/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/lawliet206/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "0f2777630471d03c65d73914c4b4a82224687a2c",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0f2777630471d03c65d73914c4b4a82224687a2c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/0f2777630471d03c65d73914c4b4a82224687a2c"
+   }
+  ]
+ },
+ {
+  "sha": "0f2777630471d03c65d73914c4b4a82224687a2c",
+  "node_id": "C_kwDOCBF7SNoAKDBmMjc3NzYzMDQ3MWQwM2M2NWQ3MzkxNGM0YjRhODIyMjQ2ODdhMmM",
+  "commit": {
+   "author": {
+    "name": "Marco Bassa",
+    "email": "bassamarco91@gmail.com",
+    "date": "2026-08-24T20:25:27Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T20:25:27Z"
+   },
+   "message": "Cancel all action goals on BT goal response timeout (#6373)\n\n* Cancel all action goals on BT goal response timeout\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Explicitally logging that all goals are being canceled on goal set failure\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Fixing cpplint\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+   "tree": {
+    "sha": "a361414ae885d3478958705a1cf78f14a01e0a82",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/a361414ae885d3478958705a1cf78f14a01e0a82"
+   },
+   "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/0f2777630471d03c65d73914c4b4a82224687a2c",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjKi3CRC1aQ7uu5UhlAAA/UgQAGbif5PuQB1gJeMiiJbVBMGV\nxPzXE3o7jSRlB06qt0WyuvqxQRdnCiUxx8+W1RwMkImXgMcVGE+s4uydlYjIsX0x\nGkbbzruhj76Nhjaq82VZTBpeMgt/WojHKtY901nTYCUJFu8E/Gw+Dlnu36UHwBne\nT0rUefqA/x+3lcn36XJHaEZMLAvbJgDh7t/1iw8GMA/wirg10Ebc1ZBEeSaHtyHx\n0SAt5Q1wM5RN6/ZBViEhebKkmccjcqiENdNjfAbd15icx1bwilgtCdRmczLJ0O0i\nQf3gAE+J3wdQ3U/z+Se3so+RB5nT9i1LFGDg95JxhNsiEqrqwdaVeDVO0cBcxobr\nZfdOcVuT9AY5omY6Rbw1Ybcf35F+KAQDT5EK7MvdyrUTWGpuMi9RXYoVTcpjakgr\nGPbJx92oDCokI+zKoNgmaIxytFI422xqFxFoBCXPAr7402kz37aTDoRogsptykfu\nn6LcCxSwXGGIr6fCJl1nGKftb1q7ohkAH0w14//RCSGLn1arY7qq855D1NRFaZaB\n/5Kqy1fcBpq725F6DO4tCCFFxjbDl2BfBjL5qO9JnNR8BouViFDwGXRZtwNQJZcY\nZNQ0ktn5e/6LiNsnSr4czx20iZKhsTdEam9P72rdR939fifVuuxSc9d1hVV9rKpI\njiJ+sMeYwoTq94/u4eL9\n=zX28\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree a361414ae885d3478958705a1cf78f14a01e0a82\nparent a3a97043ee93d92fe8d70ec56d183933169beb1c\nauthor Marco Bassa <bassamarco91@gmail.com> 1787603127 +0200\ncommitter GitHub <noreply@github.com> 1787603127 -0700\n\nCancel all action goals on BT goal response timeout (#6373)\n\n* Cancel all action goals on BT goal response timeout\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Explicitally logging that all goals are being canceled on goal set failure\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Fixing cpplint\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+    "verified_at": "2026-08-24T20:25:27Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0f2777630471d03c65d73914c4b4a82224687a2c",
+  "html_url": "https://github.com/ros-navigation/navigation2/commit/0f2777630471d03c65d73914c4b4a82224687a2c",
+  "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0f2777630471d03c65d73914c4b4a82224687a2c/comments",
+  "author": {
+   "login": "nirwester",
+   "id": 9111641,
+   "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/nirwester",
+   "html_url": "https://github.com/nirwester",
+   "followers_url": "https://api.github.com/users/nirwester/followers",
+   "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+   "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+   "organizations_url": "https://api.github.com/users/nirwester/orgs",
+   "repos_url": "https://api.github.com/users/nirwester/repos",
+   "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/nirwester/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "a3a97043ee93d92fe8d70ec56d183933169beb1c",
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a3a97043ee93d92fe8d70ec56d183933169beb1c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a3a97043ee93d92fe8d70ec56d183933169beb1c"
+   }
+  ]
+ }
+]

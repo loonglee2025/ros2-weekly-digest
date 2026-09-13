@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "4052b56d53bdcb562653935255d118f203398b22",
+    "node_id": "C_kwDOBiM5UdoAKDQwNTJiNTZkNTNiZGNiNTYyNjUzOTM1MjU1ZDExOGYyMDMzOThiMjI",
+    "commit": {
+      "author": {
+        "name": "Bence Magyar",
+        "email": "bence.magyar.robotics@gmail.com",
+        "date": "2026-08-10T21:33:35Z"
+      },
+      "committer": {
+        "name": "Bence Magyar",
+        "email": "bence.magyar.robotics@gmail.com",
+        "date": "2026-08-10T21:33:35Z"
+      },
+      "message": "6.9.0",
+      "tree": {
+        "sha": "962914cd65c49b06d907baaf67e7801121d36d52",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/git/trees/962914cd65c49b06d907baaf67e7801121d36d52"
+      },
+      "url": "https://api.github.com/repos/ros-controls/ros2_control/git/commits/4052b56d53bdcb562653935255d118f203398b22",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/4052b56d53bdcb562653935255d118f203398b22",
+    "html_url": "https://github.com/ros-controls/ros2_control/commit/4052b56d53bdcb562653935255d118f203398b22",
+    "comments_url": "https://api.github.com/repos/ros-controls/ros2_control/commits/4052b56d53bdcb562653935255d118f203398b22/comments",
+    "author": {
+      "login": "bmagyar",
+      "id": 3524577,
+      "node_id": "MDQ6VXNlcjM1MjQ1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3524577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bmagyar",
+      "html_url": "https://github.com/bmagyar",
+      "followers_url": "https://api.github.com/users/bmagyar/followers",
+      "following_url": "https://api.github.com/users/bmagyar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bmagyar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bmagyar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bmagyar/subscriptions",
+      "organizations_url": "https://api.github.com/users/bmagyar/orgs",
+      "repos_url": "https://api.github.com/users/bmagyar/repos",
+      "events_url": "https://api.github.com/users/bmagyar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bmagyar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "bmagyar",
+      "id": 3524577,
+      "node_id": "MDQ6VXNlcjM1MjQ1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3524577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bmagyar",
+      "html_url": "https://github.com/bmagyar",
+      "followers_url": "https://api.github.com/users/bmagyar/followers",
+      "following_url": "https://api.github.com/users/bmagyar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bmagyar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bmagyar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bmagyar/subscriptions",
+      "organizations_url": "https://api.github.com/users/bmagyar/orgs",
+      "repos_url": "https://api.github.com/users/bmagyar/repos",
+      "events_url": "https://api.github.com/users/bmagyar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bmagyar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "31c07c0cca1888a5545b7c185d5e6b121284a79a",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/31c07c0cca1888a5545b7c185d5e6b121284a79a",
+        "html_url": "https://github.com/ros-controls/ros2_control/commit/31c07c0cca1888a5545b7c185d5e6b121284a79a"
+      }
+    ]
+  },
+  {
+    "sha": "31c07c0cca1888a5545b7c185d5e6b121284a79a",
+    "node_id": "C_kwDOBiM5UdoAKDMxYzA3YzBjY2ExODg4YTU1NDViN2MxODVkNWU2YjEyMTI4NGE3OWE",
+    "commit": {
+      "author": {
+        "name": "Bence Magyar",
+        "email": "bence.magyar.robotics@gmail.com",
+        "date": "2026-08-10T21:33:15Z"
+      },
+      "committer": {
+        "name": "Bence Magyar",
+        "email": "bence.magyar.robotics@gmail.com",
+        "date": "2026-08-10T21:33:15Z"
+      },
+      "message": "Update changelogs",
+      "tree": {
+        "sha": "b5e55bb329cf38b5b40da6d0f6369c612136ff7d",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/git/trees/b5e55bb329cf38b5b40da6d0f6369c612136ff7d"
+      },
+      "url": "https://api.github.com/repos/ros-controls/ros2_control/git/commits/31c07c0cca1888a5545b7c185d5e6b121284a79a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/31c07c0cca1888a5545b7c185d5e6b121284a79a",
+    "html_url": "https://github.com/ros-controls/ros2_control/commit/31c07c0cca1888a5545b7c185d5e6b121284a79a",
+    "comments_url": "https://api.github.com/repos/ros-controls/ros2_control/commits/31c07c0cca1888a5545b7c185d5e6b121284a79a/comments",
+    "author": {
+      "login": "bmagyar",
+      "id": 3524577,
+      "node_id": "MDQ6VXNlcjM1MjQ1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3524577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bmagyar",
+      "html_url": "https://github.com/bmagyar",
+      "followers_url": "https://api.github.com/users/bmagyar/followers",
+      "following_url": "https://api.github.com/users/bmagyar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bmagyar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bmagyar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bmagyar/subscriptions",
+      "organizations_url": "https://api.github.com/users/bmagyar/orgs",
+      "repos_url": "https://api.github.com/users/bmagyar/repos",
+      "events_url": "https://api.github.com/users/bmagyar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bmagyar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "bmagyar",
+      "id": 3524577,
+      "node_id": "MDQ6VXNlcjM1MjQ1Nzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3524577?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bmagyar",
+      "html_url": "https://github.com/bmagyar",
+      "followers_url": "https://api.github.com/users/bmagyar/followers",
+      "following_url": "https://api.github.com/users/bmagyar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bmagyar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bmagyar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bmagyar/subscriptions",
+      "organizations_url": "https://api.github.com/users/bmagyar/orgs",
+      "repos_url": "https://api.github.com/users/bmagyar/repos",
+      "events_url": "https://api.github.com/users/bmagyar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bmagyar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2249d889877eba40bf6f60f7afbfdc433d19b1db",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/2249d889877eba40bf6f60f7afbfdc433d19b1db",
+        "html_url": "https://github.com/ros-controls/ros2_control/commit/2249d889877eba40bf6f60f7afbfdc433d19b1db"
+      }
+    ]
+  }
+]

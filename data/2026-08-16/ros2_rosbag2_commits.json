@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+    "node_id": "C_kwDOB5aMANoAKGFlNDJmYjllZmNhNTFkNmMxYWFlNmE1NGU5N2NjZTY4NzdkMzViZTY",
+    "commit": {
+      "author": {
+        "name": "Chris Lalancette",
+        "email": "clalancette@gmail.com",
+        "date": "2026-08-14T12:23:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-14T12:23:50Z"
+      },
+      "message": "Make the topic filter match the first message. (#2468)\n\nPreviously the ReadersManager pre-read one message from each reader in\nits constructor.  There are 2 problems with that:\n\n1.  This happens before any filter could be set via set_filter(), so\nthe first message from each bag bypassed the topic filter.  The problem\nwas latent because the player always did a seek back to the beginning\nbefore playback, but a naive user of the API could run into it.\n\n2.  The pre-read could misalign the next-message cache with the reader\nindices when a reader had no messages, silently dropping messages from\nother bags.\n\nFix both of these issues by filling the cache lazily on first access\ninstead, with one index-aligned slot per reader.\n\n(this fix is a prerequisite to a follow-up patch that I'm going to\nopen for mixed serialization formats)\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+      "tree": {
+        "sha": "d5413da470ad0e91e6a6f3db6ed0fca6a918eaa4",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/d5413da470ad0e91e6a6f3db6ed0fca6a918eaa4"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfwjWCRC1aQ7uu5UhlAAArfQQAF9o7QH03OgfLA0Pnu+YKbt4\n7y4LUOBjoQey93nNBgBduDAxWSp7nHl2R8eo38ZFp/+pWUhf+Z2wzpxYpKhJnedB\nBvXkftJmVzOaZ8l0kWkHWd15XsySdw+BOEpQ/lETkPe4sHh7E4sUXqtyc4rmeUbt\nEsMthvymiFMPHLaLeWfHKFEzUAxbmlqUADSAy5tsGSNtx6jGb57kA0183JCB6psY\nuDi4MNQaAo6VO4j7Kg84q72aHS7i/1mu+ZcjEIHf4dXnyHWkjVKP08MUdGwh9VY/\n3eJa7lc0YBOOlrJoDtqpMkJO2AHlt4Dc1RaHolIA4bS0BTkODwoy+oAHIgRd7R7N\nRioxR3/yJFt400CBg9vBleQ5W0y6tadXHQP4tXIABK870UWCidztuoDahguA0hC/\nWzMeptmjW2E9K5CmXRjtiWomcuTFlS4FWLPj8sMCGfsvDsKAJ6Vot0lcgKN/e4Ck\nNHWW7x/4q/UQyeFK15mw7OWBmZNWgkRY1pKYbOnj/mRC4go4CzMs+LnJhbl8WEKs\n9BQPZaJaGOeAJvFLsiWtuy7PI5lp7cVAbYAaWNTiKcUUrOJZLHMZ5M6NsMPljFqQ\nWB9MOEjhwdj6JgsnBM2u+lr8EjzO5GIgFauxg90B56xJFMjw3+iW78QfgFoNvEL6\nxG8LKEEV4isAvxiXQnZd\n=pwSR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d5413da470ad0e91e6a6f3db6ed0fca6a918eaa4\nparent cd96726cce4d8cf221d53a65c912b0c044c9fabf\nauthor Chris Lalancette <clalancette@gmail.com> 1786710230 -0400\ncommitter GitHub <noreply@github.com> 1786710230 -0400\n\nMake the topic filter match the first message. (#2468)\n\nPreviously the ReadersManager pre-read one message from each reader in\nits constructor.  There are 2 problems with that:\n\n1.  This happens before any filter could be set via set_filter(), so\nthe first message from each bag bypassed the topic filter.  The problem\nwas latent because the player always did a seek back to the beginning\nbefore playback, but a naive user of the API could run into it.\n\n2.  The pre-read could misalign the next-message cache with the reader\nindices when a reader had no messages, silently dropping messages from\nother bags.\n\nFix both of these issues by filling the cache lazily on first access\ninstead, with one index-aligned slot per reader.\n\n(this fix is a prerequisite to a follow-up patch that I'm going to\nopen for mixed serialization formats)\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+        "verified_at": "2026-08-14T14:45:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+    "html_url": "https://github.com/ros2/rosbag2/commit/ae42fb9efca51d6c1aae6a54e97cce6877d35be6",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/ae42fb9efca51d6c1aae6a54e97cce6877d35be6/comments",
+    "author": {
+      "login": "clalancette",
+      "id": 163000,
+      "node_id": "MDQ6VXNlcjE2MzAwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/163000?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clalancette",
+      "html_url": "https://github.com/clalancette",
+      "followers_url": "https://api.github.com/users/clalancette/followers",
+      "following_url": "https://api.github.com/users/clalancette/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clalancette/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clalancette/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clalancette/subscriptions",
+      "organizations_url": "https://api.github.com/users/clalancette/orgs",
+      "repos_url": "https://api.github.com/users/clalancette/repos",
+      "events_url": "https://api.github.com/users/clalancette/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clalancette/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+        "html_url": "https://github.com/ros2/rosbag2/commit/cd96726cce4d8cf221d53a65c912b0c044c9fabf"
+      }
+    ]
+  },
+  {
+    "sha": "cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+    "node_id": "C_kwDOB5aMANoAKGNkOTY3MjZjY2U0ZDhjZjIyMWQ1M2E2NWM5MTJiMGMwNDRjOWZhYmY",
+    "commit": {
+      "author": {
+        "name": "Chris Lalancette",
+        "email": "clalancette@gmail.com",
+        "date": "2026-08-14T12:23:34Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-14T12:23:34Z"
+      },
+      "message": "Cleanup the tests (#2469)\n\n* Remove printouts from the test plugin.\n\nThe main reason to do this is that, during development,\nthe test plugin gets installed as a \"regular\" plugin.\nThus when you run any \"ros2 bag\" commands, the plugin\ngets loaded and prints out spurious messages.\n\nThe real fix is to not install the test plugin alongside\nproduction plugins, but that is a larger fix.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Don't install test plugins into the \"production\" location.\n\nInstead utilize pluginlib_enable_plugin_testing() to install\nto the build directory, and then inject the path into the\ntests so they get found properly.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+      "tree": {
+        "sha": "5c539ba42b00e7548e97e64266d9d10667a5bdb1",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/5c539ba42b00e7548e97e64266d9d10667a5bdb1"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfwjGCRC1aQ7uu5UhlAAA2R4QAJfzFG6IsULcdSomPfV58EH6\n0/yzhJqLpRXurNzVX2BZMS5TLnWJ9j6YHy4Urt7m/sAMqas76DVHo7D5XqOeqepx\n3g2AQneMdPNWjkBcpM/pbJroPdodzhoVx4dibWcIvMeWHL82/YU4ozXPsmc0GmcO\nhLKXUkSmFlwBHzTIRAAjYyraP5dN2zXiuXTCpHxR8f43D6llQzMji2OAuG4tnzix\nNgnhfjvs4qNq0Tp9CR/w8teImk3zT/+LMw7ERguuIvIcdsAcg0IMj1WzgrSoDrLC\nlML3qd7YrJqlVOBgqHCqJilrI35+l6H4Zmzc6OaE7G/L9TeL5jBJXGO6R8vux1z+\nYEAsfz9liWobIqgdnEpKTvpdrFLbugQIPNriRWYNjVJyX5QQLQ72/lHGGOOP61t3\nsQef6I2dShaBYHw2R3bFkNclybmlhY8lejkDqNI7YqelP8CldS9YZKELfRVo8gK3\nPUe0UBgxKFCpzvPWP2BDe33rclx1bjvVjOdHFe3TUdfWI0CdzTJvfWIm2OKFa6gl\nk1mMds4zHdPYM9Yh6CUlYoSUvl6Koq/D5NowZ45FhnciY9zlSDhjWbc1xQ6ato+a\nNS5Em17uueG7MYkpo16HTKct3nkuiuKifKzdx4TBVrfzBvB8jmTNbgDKVz+LGLAU\n9Da69awtMxZd7ddvbzpn\n=X99v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5c539ba42b00e7548e97e64266d9d10667a5bdb1\nparent 4dddf35d297a9c3ddd1da6589c90dac55706747e\nauthor Chris Lalancette <clalancette@gmail.com> 1786710214 -0400\ncommitter GitHub <noreply@github.com> 1786710214 -0400\n\nCleanup the tests (#2469)\n\n* Remove printouts from the test plugin.\n\nThe main reason to do this is that, during development,\nthe test plugin gets installed as a \"regular\" plugin.\nThus when you run any \"ros2 bag\" commands, the plugin\ngets loaded and prints out spurious messages.\n\nThe real fix is to not install the test plugin alongside\nproduction plugins, but that is a larger fix.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n* Don't install test plugins into the \"production\" location.\n\nInstead utilize pluginlib_enable_plugin_testing() to install\nto the build directory, and then inject the path into the\ntests so they get found properly.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>",
+        "verified_at": "2026-08-14T14:45:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+    "html_url": "https://github.com/ros2/rosbag2/commit/cd96726cce4d8cf221d53a65c912b0c044c9fabf",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/cd96726cce4d8cf221d53a65c912b0c044c9fabf/comments",
+    "author": {
+      "login": "clalancette",
+      "id": 163000,
+      "node_id": "MDQ6VXNlcjE2MzAwMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/163000?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clalancette",
+      "html_url": "https://github.com/clalancette",
+      "followers_url": "https://api.github.com/users/clalancette/followers",
+      "following_url": "https://api.github.com/users/clalancette/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clalancette/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clalancette/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clalancette/subscriptions",
+      "organizations_url": "https://api.github.com/users/clalancette/orgs",
+      "repos_url": "https://api.github.com/users/clalancette/repos",
+      "events_url": "https://api.github.com/users/clalancette/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clalancette/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4dddf35d297a9c3ddd1da6589c90dac55706747e",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/4dddf35d297a9c3ddd1da6589c90dac55706747e",
+        "html_url": "https://github.com/ros2/rosbag2/commit/4dddf35d297a9c3ddd1da6589c90dac55706747e"
+      }
+    ]
+  }
+]

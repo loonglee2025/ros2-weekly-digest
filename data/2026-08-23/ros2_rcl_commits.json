@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "db3d1c8ea6eb22235494cfc03249155e35c47511",
+    "node_id": "C_kwDOAdpq29oAKGRiM2QxYzhlYTZlYjIyMjM1NDk0Y2ZjMDMyNDkxNTVlMzVjNDc1MTE",
+    "commit": {
+      "author": {
+        "name": "Michal Sojka",
+        "email": "michal.sojka@cvut.cz",
+        "date": "2026-08-20T13:32:25Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-20T13:32:25Z"
+      },
+      "message": "rcl_yaml_param_parser: Fix build on MacOS (#1327)\n\nApple's <locale.h> doesn't declare locale_t, newlocale, uselocale,\nLC_NUMERIC_MASK; they live in <xlocale.h>.\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+      "tree": {
+        "sha": "5d3bd9b9c626e7a5e647a3ff1850a0fa673609b4",
+        "url": "https://api.github.com/repos/ros2/rcl/git/trees/5d3bd9b9c626e7a5e647a3ff1850a0fa673609b4"
+      },
+      "url": "https://api.github.com/repos/ros2/rcl/git/commits/db3d1c8ea6eb22235494cfc03249155e35c47511",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhwHpCRC1aQ7uu5UhlAAApNgQAGVGQ6ChU+afMQQF9hP1b3Fs\nJz0Ky3eBS0gnn7gzoy6eBqt2cfW+ZEcSIcG7lgCDFNgQlLa0sFJUqu2+xk4L2Xze\nQ97lgo1zAljnvBK4EHB4MviqGH3jeMIoT63qOfaoGUCwAKrxBm/Z0P9CrXXiQ3N7\nJHIPurcZFpjw218gU8wGzKdZEeU7dA9KFuTBgBkQT3ahMruTlBZK6UL8BgKNEV/M\nrvrdJuDH3gtSxc+/uShAUkTLQgjfp9Ou1GigHfoS0SWsEP1mVPSFhNfGdoT95huX\noW2yICNH3C7l5fmGQUxqpY0n1b3+E3r+gYwXShwVLV5TVDADBvdIijfFOCZV4EYP\nJ+A1MgNRN6EJj/es0l0BBMqA2HNdu5hwjl+JuX2Wk/c7//DG4hA0uTy/JtB2o13z\nr6y0EDnkGLpeqt58/dR7gjYvtocZRGT17S+kFmSSglsQAy7/PclrWaZZ/++ojCpF\nKatxraBjEFpD5VoRExc1iaSIkHNPpmqC+6V5fCaz7kq4pmIujREX3VZeiJJ/95+r\nbPLkjMKlYvEW47khXC6/oAhMKJ0GYNWS1MRtl/jQZaj0mLmm+F4BkHYznhdUb37g\nWjpeKAtXsUlwuvhf0DiuW0Wki+opf9Iqt5I8Ab+G4nztMrMXZeOh7cEfBGEvh2rf\ndBK1kjZWmGHaCdjeR5cv\n=sJtl\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5d3bd9b9c626e7a5e647a3ff1850a0fa673609b4\nparent 8f6b3720079ed8371e1e9688bae9bb247ffde5af\nauthor Michal Sojka <michal.sojka@cvut.cz> 1787232745 +0200\ncommitter GitHub <noreply@github.com> 1787232745 +0200\n\nrcl_yaml_param_parser: Fix build on MacOS (#1327)\n\nApple's <locale.h> doesn't declare locale_t, newlocale, uselocale,\nLC_NUMERIC_MASK; they live in <xlocale.h>.\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+        "verified_at": "2026-08-20T13:32:25Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rcl/commits/db3d1c8ea6eb22235494cfc03249155e35c47511",
+    "html_url": "https://github.com/ros2/rcl/commit/db3d1c8ea6eb22235494cfc03249155e35c47511",
+    "comments_url": "https://api.github.com/repos/ros2/rcl/commits/db3d1c8ea6eb22235494cfc03249155e35c47511/comments",
+    "author": {
+      "login": "wentasah",
+      "id": 140542,
+      "node_id": "MDQ6VXNlcjE0MDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140542?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wentasah",
+      "html_url": "https://github.com/wentasah",
+      "followers_url": "https://api.github.com/users/wentasah/followers",
+      "following_url": "https://api.github.com/users/wentasah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wentasah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wentasah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wentasah/subscriptions",
+      "organizations_url": "https://api.github.com/users/wentasah/orgs",
+      "repos_url": "https://api.github.com/users/wentasah/repos",
+      "events_url": "https://api.github.com/users/wentasah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wentasah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8f6b3720079ed8371e1e9688bae9bb247ffde5af",
+        "url": "https://api.github.com/repos/ros2/rcl/commits/8f6b3720079ed8371e1e9688bae9bb247ffde5af",
+        "html_url": "https://github.com/ros2/rcl/commit/8f6b3720079ed8371e1e9688bae9bb247ffde5af"
+      }
+    ]
+  }
+]

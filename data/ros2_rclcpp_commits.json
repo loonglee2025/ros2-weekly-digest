@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "1ee87c560b764145c0b25e55c079169cde253a26",
+    "node_id": "C_kwDOAVrxtdoAKDFlZTg3YzU2MGI3NjQxNDVjMGIyNWU1NWMwNzkxNjljZGUyNTNhMjY",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernández Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-31T06:55:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-31T06:55:30Z"
+      },
+      "message": "Move get_log_directory to improve compilation time (#3214)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "387c4fbfba1507160ba15a060f68690c0c8fec28",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/387c4fbfba1507160ba15a060f68690c0c8fec28"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/1ee87c560b764145c0b25e55c079169cde253a26",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqbEbiCRC1aQ7uu5UhlAAAYG8QAD/TRZqP/6AlFrzi6t4M1imJ\nXIG1zhcE3nyS503A275snNwEqRrqNpC4zL8w8ib2I4heuLlWhRKq36cOwZM0gy2c\nDOuM9NTblQT77cMVu7/0Erax6ggKHGHthwpfiA0WorP16NBZvy3DcfFwMPBgBNLI\nGi0oQpCIQbIRwvylnR6DhR+hKcJ/y5SbtPylV0C/BIbgr4zwgND2gKPgjvG7tOUq\nU3AbX6moz6cJhbCUo7GOb6uBz+liIFZZfQwlL+NSDtfcz9nb5EiOcpPqD7/KCmCj\nV1Vt1vhqK/MBm19hbxI5e21PZuxsfLZ9785HzgI42pWts4g1wd1DfBNiUAnRxSx9\n/Yicv86ulicr3PBFp4j5wSFvFvrgj27OUT8n4rTDnqajjveaL8k4ENqDcBACHuGj\na2gaqhZSPuy1Xx2TBBRbOmDJRyxXYiMw4Zbsz3v6F1wMpX4C4V4Yyys9/CvwO874\nORuoyY7WMIXQHukMqB8vLMG1Y1KOwHNvyPigNQMzCTD6chGKs5gJMiy4/UVyHpfD\n5zfljdMLPfmP6u7hEYNrKSon/Y9tUrnJtlWgOI1o3aeICg16FPgyKSbPRtb4A0zX\n2r7bXdHbobiVU/eprzMNEIKCb1K8qUlfzou+KFXlFaFogiQE80U4FsN2iAkz3h9k\n212BI1Q0cmLVNPW6Rtiu\n=r4Z+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 387c4fbfba1507160ba15a060f68690c0c8fec28\nparent a67972f3efeb8e185e302498a57d10371a82c9fd\nauthor Alejandro Hernández Cordero <ahcorde@gmail.com> 1785480930 +0200\ncommitter GitHub <noreply@github.com> 1785480930 +0200\n\nMove get_log_directory to improve compilation time (#3214)\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+        "verified_at": "2026-07-31T06:55:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/1ee87c560b764145c0b25e55c079169cde253a26",
+    "html_url": "https://github.com/ros2/rclcpp/commit/1ee87c560b764145c0b25e55c079169cde253a26",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/1ee87c560b764145c0b25e55c079169cde253a26/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a67972f3efeb8e185e302498a57d10371a82c9fd",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/a67972f3efeb8e185e302498a57d10371a82c9fd",
+        "html_url": "https://github.com/ros2/rclcpp/commit/a67972f3efeb8e185e302498a57d10371a82c9fd"
+      }
+    ]
+  },
+  {
+    "sha": "a67972f3efeb8e185e302498a57d10371a82c9fd",
+    "node_id": "C_kwDOAVrxtdoAKGE2Nzk3MmYzZWZlYjhlMTg1ZTMwMjQ5OGE1N2QxMDM3MWE4MmM5ZmQ",
+    "commit": {
+      "author": {
+        "name": "Tomoya Fujita",
+        "email": "fujita.tomoya@triorb.co.jp",
+        "date": "2026-07-31T01:05:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-07-31T01:05:48Z"
+      },
+      "message": "honor cancel() issued before spin_until_future_complete(). (#3174)\n\n* honor cancel() issued before spin_until_future_complete().\n\nSigned-off-by: Tomoya Fujita <tomoya.fujita825@gmail.com>\n\n* is_spinning() returns false immediately after cancel() even though the executor is still executing work.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya Fujita <tomoya.fujita825@gmail.com>\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+      "tree": {
+        "sha": "272818ed6a5070d6d63d9d04b3e625a192d5a690",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/272818ed6a5070d6d63d9d04b3e625a192d5a690"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/a67972f3efeb8e185e302498a57d10371a82c9fd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqa/TsCRC1aQ7uu5UhlAAARGIQAHU6Vx1u1+ylzWHVRGS5zxlv\nXjug4bS6QNuVeDsy1EYFISaS5EQGp0t8iQJUEmEwKSe48nmGSTstQ+XDnm1TOqEj\nuhVMg+QkkofNXpCbcXXH9DTwLTT2BQzWXQlPLI7dK4IyYdAoXq3rgS70WKetL4b7\nZLLj2pBLF0TbCjRUanptQPX1CT7kMiWs6IoN77zHEtuGWs3XMpAbGCdt7VvgOwYp\naa9YivT5XKSzQR9eKh8XHve+AzHRyqvd6NfkQxHZXhWZnA1VOHfIkCpWqMcrnZor\nGRL3ejI/CS4w/3ig7e4Jri5Me6uhtfgqlZRtNfFvKJtR92YjmoNM9UTeC5n4FIli\n2emjdWKnzq8RrHQseXtctFE1bIdW0NpQfxQa6vF4UCZFaq6sthDVYsNhLwIlPIQz\nIS+OrV8sn5AYIuD0lLNkCDhuUg3QMRhwXJU/LNvyAkxGmAtNN4jRXO7JaYma0YSd\nVjB4Rv+AKLzoFrN/nAcuVvcg/SoMgHqh0jPSqTJRahEyr8aAQP7lL58QyoeF2VKW\njFvaCEYQ05Ny4BYm1ZCnXbwHGExEsDcCOye9pU43jInwPhEJNClEur+Qx6ZX0WvU\nXNiyIh60/IAGjVx+wm5+NtJM1b3bV+LH4jeNk6wJ6ez+kRXl/fLuOe1jKxmWGODH\nNpGpqHgIvZCoZmd8aC8s\n=TEsc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 272818ed6a5070d6d63d9d04b3e625a192d5a690\nparent 5b3afd95f7873187e75ba6e33a60fbddd2fd4a15\nauthor Tomoya Fujita <fujita.tomoya@triorb.co.jp> 1785459948 +0900\ncommitter GitHub <noreply@github.com> 1785459948 +0900\n\nhonor cancel() issued before spin_until_future_complete(). (#3174)\n\n* honor cancel() issued before spin_until_future_complete().\n\nSigned-off-by: Tomoya Fujita <tomoya.fujita825@gmail.com>\n\n* is_spinning() returns false immediately after cancel() even though the executor is still executing work.\n\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>\n\n---------\n\nSigned-off-by: Tomoya Fujita <tomoya.fujita825@gmail.com>\nSigned-off-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+        "verified_at": "2026-07-31T01:05:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/a67972f3efeb8e185e302498a57d10371a82c9fd",
+    "html_url": "https://github.com/ros2/rclcpp/commit/a67972f3efeb8e185e302498a57d10371a82c9fd",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/a67972f3efeb8e185e302498a57d10371a82c9fd/comments",
+    "author": {
+      "login": "fujitatomoya",
+      "id": 43395114,
+      "node_id": "MDQ6VXNlcjQzMzk1MTE0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43395114?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fujitatomoya",
+      "html_url": "https://github.com/fujitatomoya",
+      "followers_url": "https://api.github.com/users/fujitatomoya/followers",
+      "following_url": "https://api.github.com/users/fujitatomoya/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fujitatomoya/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fujitatomoya/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fujitatomoya/subscriptions",
+      "organizations_url": "https://api.github.com/users/fujitatomoya/orgs",
+      "repos_url": "https://api.github.com/users/fujitatomoya/repos",
+      "events_url": "https://api.github.com/users/fujitatomoya/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fujitatomoya/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+        "html_url": "https://github.com/ros2/rclcpp/commit/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15"
+      }
+    ]
+  },
+  {
+    "sha": "5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+    "node_id": "C_kwDOAVrxtdoAKDViM2FmZDk1Zjc4NzMxODdlNzViYTZlMzNhNjBmYmRkZDJmZDRhMTU",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:51:01Z"
+      },
+      "committer": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:51:01Z"
+      },
+      "message": "33.0.4",
+      "tree": {
+        "sha": "d7a85f07a68aedb4fa3d8bab3842e594d3434d6c",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/d7a85f07a68aedb4fa3d8bab3842e594d3434d6c"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+    "html_url": "https://github.com/ros2/rclcpp/commit/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/5b3afd95f7873187e75ba6e33a60fbddd2fd4a15/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b31e743366f867fadab97ec26ae7044287f43608",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/b31e743366f867fadab97ec26ae7044287f43608",
+        "html_url": "https://github.com/ros2/rclcpp/commit/b31e743366f867fadab97ec26ae7044287f43608"
+      }
+    ]
+  },
+  {
+    "sha": "b31e743366f867fadab97ec26ae7044287f43608",
+    "node_id": "C_kwDOAVrxtdoAKGIzMWU3NDMzNjZmODY3ZmFkYWI5N2VjMjZhZTcwNDQyODdmNDM2MDg",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:48:43Z"
+      },
+      "committer": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:48:43Z"
+      },
+      "message": "33.0.3",
+      "tree": {
+        "sha": "7b09e02fc4569eeee850155b03b6a75962e6cd9a",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/7b09e02fc4569eeee850155b03b6a75962e6cd9a"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/b31e743366f867fadab97ec26ae7044287f43608",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/b31e743366f867fadab97ec26ae7044287f43608",
+    "html_url": "https://github.com/ros2/rclcpp/commit/b31e743366f867fadab97ec26ae7044287f43608",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/b31e743366f867fadab97ec26ae7044287f43608/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1ba3a1e01009c580bd828e59b24422449bad46f7",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/1ba3a1e01009c580bd828e59b24422449bad46f7",
+        "html_url": "https://github.com/ros2/rclcpp/commit/1ba3a1e01009c580bd828e59b24422449bad46f7"
+      }
+    ]
+  },
+  {
+    "sha": "1ba3a1e01009c580bd828e59b24422449bad46f7",
+    "node_id": "C_kwDOAVrxtdoAKDFiYTNhMWUwMTAwOWM1ODBiZDgyOGU1OWIyNDQyMjQ0OWJhZDQ2Zjc",
+    "commit": {
+      "author": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:48:40Z"
+      },
+      "committer": {
+        "name": "Alejandro Hernandez Cordero",
+        "email": "ahcorde@gmail.com",
+        "date": "2026-07-28T09:48:40Z"
+      },
+      "message": "Changelog\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>",
+      "tree": {
+        "sha": "42ee3845049fcd9ac93b3a2b88cf7b052dbb94a3",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/42ee3845049fcd9ac93b3a2b88cf7b052dbb94a3"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/1ba3a1e01009c580bd828e59b24422449bad46f7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCgAdFiEEpj2WZs9ysrG3GRdo2JW9m1AYO70FAmpoevgACgkQ2JW9m1AY\nO72U1gwAgcHyE1GVt9heNyHNgyKojv3mZiLqUt2v46p5q2VtYu1W3jItzQ/sMEiU\nyVIUEC9zbsFiyPBFCird5oqcWXwr8In7uWqx6mJLgfDa48enVh9Aow6wg021qHBh\nzpiEjJMfEXF9g2PLax9S2TQQNvbeDRdaZ2YMkPPnuIoEh+UuLoP9vyhii//l8+PI\nbqXYVxI7mEXoivq/dG3/pQhjRIOn2cf+rXtrMYbUpPqvuqoEcMaqaHl1rzCwJlZT\nIT9UrFX9+j2/JJS3MXLmH4OQ6HKAbb25Ant2ILlTxUlxm7DdtfpE+6KhnLO+xEDv\nR23XTyYXmjBtcFPytUssFY4OlzcY1iN5IxHqPiItXNKc64uKGx7sYl3Etgokkyle\nAU4LPh93jOkucdfW8PuA4K/bhEWZX1/W0++my0BIp+bX7WZXyfSFmhlkimhlNAbQ\n3+nYSoKM2WArZpEo27dCppfCoPP1dDAkCnL6SKTA9OsmJTKqKJ1WOeXpG6t5dqdH\nhOlfrwNe\n=CLC5\n-----END PGP SIGNATURE-----",
+        "payload": "tree 42ee3845049fcd9ac93b3a2b88cf7b052dbb94a3\nparent 43f54a5ca9b9d9308d1590f1016bdc3b2fb24b58\nauthor Alejandro Hernandez Cordero <ahcorde@gmail.com> 1785232120 +0200\ncommitter Alejandro Hernandez Cordero <ahcorde@gmail.com> 1785232120 +0200\n\nChangelog\n\nSigned-off-by: Alejandro Hernandez Cordero <ahcorde@gmail.com>\n",
+        "verified_at": "2026-07-28T09:48:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/1ba3a1e01009c580bd828e59b24422449bad46f7",
+    "html_url": "https://github.com/ros2/rclcpp/commit/1ba3a1e01009c580bd828e59b24422449bad46f7",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/1ba3a1e01009c580bd828e59b24422449bad46f7/comments",
+    "author": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ahcorde",
+      "id": 1933907,
+      "node_id": "MDQ6VXNlcjE5MzM5MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1933907?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahcorde",
+      "html_url": "https://github.com/ahcorde",
+      "followers_url": "https://api.github.com/users/ahcorde/followers",
+      "following_url": "https://api.github.com/users/ahcorde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahcorde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahcorde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahcorde/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahcorde/orgs",
+      "repos_url": "https://api.github.com/users/ahcorde/repos",
+      "events_url": "https://api.github.com/users/ahcorde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahcorde/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "43f54a5ca9b9d9308d1590f1016bdc3b2fb24b58",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/43f54a5ca9b9d9308d1590f1016bdc3b2fb24b58",
+        "html_url": "https://github.com/ros2/rclcpp/commit/43f54a5ca9b9d9308d1590f1016bdc3b2fb24b58"
+      }
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+Title: ROS PMC Minutes for August 11, 2026 - ROS / ROS PMC - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361
+
+Published Time: 2026-08-13T01:32:40+00:00
+
+Markdown Content:
+## post by mjcarroll on Aug 13
+
+The [ROS PMC](https://osralliance.org/staging/wp-content/uploads/2024/03/ros_project_charter.pdf) meeting for this week was on Tuesday, August 11, 2026. The notes from the meeting are available at [ROS PMC weekly meeting agenda](https://docs.google.com/document/d/1TGXYp33N00ZJtilsRzfClFXcSyMa4QKVNmA03Lx9D7w/edit?tab=t.0).
+
+## [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-ros-pmc-business-1)ROS PMC Business
+
+*   **Funding proposals update.** Discussion is ongoing and nothing has been decided yet. The working consensus favors directing most of the money toward CI infrastructure. Target is to have this settled before ROSCon so it can be announced there. 
+    *   Execution largely sits with the Infrastructure PMC and OSRF rather than this PMC, with ownership deliberately spread across several people to avoid single points of contract management.
+
+*   **Rolling sync policy** passed last week. Volunteers were still needed to implement the sync status flag; [@yadunund](http://discourse.ros.org/u/yadunund) volunteered to work with [@cottsay](http://discourse.ros.org/u/cottsay), who returns Monday. Scope is largely understood; it mostly needs doing.
+*   **ROSCon is roughly five weeks out.** Anyone who needs help getting presentations ready should ask. There is room for an informal design session during the week if there is interest.
+
+## [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-regular-business-2)Regular Business
+
+### [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-buildfarm-update-3)Buildfarm update
+
+The buildfarm builds and tests ROS packages across all supported distributions and platforms. This section covers new issues, current priorities, and infrastructure changes that affect maintainers.
+
+*   ![Image 1: :new_button:](https://emoji.discourse-cdn.com/noto/new_button.png?v=15) Issues 
+    *   `ros2topic` test failing, traced to Cyclone. A fix merged this morning; results will be checked tomorrow.
+    *   A long-standing failure that reproduces consistently and exclusively on Windows. Fast DDS has an open fix to check. [@mjcarroll](http://discourse.ros.org/u/mjcarroll) can also reproduce it.
+    *   Following the merge to ignore `rosidl` type support for Cyclone, tests that depend on that package now show regressions. Preferring a test regression over a build regression for now. Resolution is that these tests should run on introspection only; [@clalancette](http://discourse.ros.org/u/clalancette) will take a look.
+    *   An old, very flaky issue with no visible race, possibly pixi related. [@mjcarroll](http://discourse.ros.org/u/mjcarroll) will try to reproduce, having a fully instrumented `launch_ros` workspace on hand, though `class_loader` on Windows and DLL unloading make this a hard one.
+    *   TF2 warnings on Windows. A previous fix changed the output without resolving the warnings; the remaining case is slightly different.
+
+*   ![Image 2: :white_check_mark:](https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15)**Fast DDS shared memory fix.**[@MiguelCompany](http://discourse.ros.org/u/miguelcompany) opened a patch, and [@mjcarroll](http://discourse.ros.org/u/mjcarroll) confirmed it resolves the issue on his system. Because Fast DDS carries its own copy of boost interprocess, this can merge without waiting on upstream boost. 
+    *   **Backports wanted** anywhere Fast DDS shared memory is in play: Lyrical, Kilted, Humble.
+    *   Root cause traces back to the point in [Kimberly’s Discourse post](https://discourse.openrobotics.org/t/properly-close-windows-processes-discussion-about-implementation/57308): we SIGTERM everything on Windows, which leaves shared memory segments, sockets, and files in a bad state. A good deal of Windows flakiness likely shares this origin.
+    *   [@MiguelCompany](http://discourse.ros.org/u/miguelcompany) suggested a CI plugin that clears orphaned shared memory before or after each test run.
+
+*   ![Image 3: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15) Priorities 
+    *   PTAL [Buildfarm Issues Triage Sheet](https://docs.google.com/spreadsheets/d/1gX7Hw_aVsI4U05i2-NxCY66a4CmRy1Yyb6dokK5QtMg/edit?gid=0#gid=0).
+    *   **Core dumps from Windows CI.** Retrieving a core dump from the buildfarm would save hours of rebuilding workspaces to reproduce locally. Dumps can be pulled by those with machine access, but capture requires registry settings configured ahead of time, per binary in some cases, and it is unclear whether we do this routinely. [@mjcarroll](http://discourse.ros.org/u/mjcarroll) will follow up with [@claraberendsen](http://discourse.ros.org/u/claraberendsen) and write up his working process for getting stack traces on Windows. 
+        *   Note that pixi packages do not all ship debug symbols, which limits what stack traces can show outside code we vendor and build ourselves.
+
+### [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-waffle-note-taker-4)Waffle note-taker
+
+Waffle is a weekly meeting where maintainers triage incoming issues and pull requests that haven’t been otherwise acted upon. One person per week is assigned to be the “waffle note-taker” to both take notes in the meeting to keep the meeting as efficient as possible.
+
+*   Aug 13, 2026 
+    *   [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy)
+    *   [@andrew_symington](http://discourse.ros.org/u/andrew_symington) has a conflict and will join for part of it.
+
+The new process is working well. Waffle runs 30 minutes, moves quickly, and is making a real dent in the incoming issue queue. **Anyone is welcome to join on Thursdays.**[@Katherine_Scott![Image 4: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)](http://discourse.ros.org/u/katherine_scott) expects to bring between three and six new participants, so expect some new faces.
+
+### [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-rosdistro-assignmentshttpsgithubcomrosrosdistro-5)[Rosdistro assignments](https://github.com/ros/rosdistro)
+
+Rosdistro is a weekly assignment to monitor incoming issues and pull requests in [GitHub - ros/rosdistro](https://github.com/ros/rosdistro). Two people per week are assigned to be the rosdistro maintainers.
+
+*   Aug 11, 2026 - Aug 18, 2026 
+    *   [@sloretz](http://discourse.ros.org/u/sloretz)
+    *   [@emersonknapp](http://discourse.ros.org/u/emersonknapp)
+
+*   Outgoing rosdistro ([@clalancette](http://discourse.ros.org/u/clalancette)) 
+    *   ![Image 5: :white_check_mark:](https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15)`osqp_vendor` moved from TIER IV to MoveIt. Permissions sorted with help from [@cottsay](http://discourse.ros.org/u/cottsay), and releases merged into Rolling and Lyrical, so **MoveIt should now be unblocked.** The MoveIt repository is a fork; Kilted and earlier keep the existing version and no changes are planned there absent something major.
+    *   ![Image 6: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15)**Rosdistro is still in rough shape.** Roughly 11 rosdep PRs have a single approval and need a second reviewer to land.
+    *   Package naming decisions: 
+        *   `pybullet_fleet`: approved. Confusing at first glance since it is not from the PyBullet authors, but as [@sloretz](http://discourse.ros.org/u/sloretz) noted, enforcing someone else’s trademark is not our role, and a rename upstream would simply mean a new request.
+        *   `nanoflann_vendor`: approved, and the per-distribution `nanoflann` entries will be removed at the same time. Those entries are effectively dead because the rosdep key always takes precedence, so the only way to pick them up is a source workspace without running rosdep install.
+        *   `ndt_omp_ros2`: awaiting a response from the submitter. Unrelated to the ROS 1 `ndt_omp`.
+        *   `tobas_*`: approved. Flagged because roughly 24 to 25 packages come with it, which would be a meaningful buildfarm load if they move from source to binary releases. Precedent exists with MRPT, ECL, and Autoware, though large package sets do tend to be where problems concentrate.
+
+### [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-release-managementhttpsosrfzulipchatcomnarrowchannel526029-ros-pmctopicrelease20management20thread-6)[Release Management](https://osrf.zulipchat.com/#narrow/channel/526029-ROS-PMC/topic/Release.20Management.20Thread)
+
+Release Management tracks the status of upcoming releases, patches, and syncs across the active ROS distributions.
+
+## [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-working-group-updates-7)Working Group Updates
+
+*   Client Library Working Group ([@alsora](http://discourse.ros.org/u/alsora)) 
+    *   Last scheduled meeting: Aug 7, 2026, which did not take place as most participants were away.
+    *   **Next meeting: Aug 21, 2026**
+
+*   Accelerated Memory Transport Working Group ([@ahcorde](http://discourse.ros.org/u/ahcorde)) 
+    *   **Next meeting: Aug 19, 2026**
+
+*   ROSGraph Working Group ([@emersonknapp](http://discourse.ros.org/u/emersonknapp)) 
+    *   **Next meeting: Aug 18, 2026**
+
+## [](http://discourse.ros.org/t/ros-pmc-minutes-for-august-11-2026/57361#p-116771-agenda-8)Agenda
+
+*   [[@skye.galaxy](http://discourse.ros.org/u/skye.galaxy)] [Proposal: `rcl_executors`, a unified, canonical reference executor package for all client libraries](https://discourse.openrobotics.org/t/proposal-rcl-executors-a-unified-canonical-reference-executor-package-for-all-client-libraries/57057)
+    *   The pitch: fewer executors in more or less the same place, with a handful of configurable policies, rather than seven implementations of broadly similar logic scattered across client libraries. Shared code paths, one place to debug.
+    *   This does not eliminate language-idiomatic execution. The asyncio executor and anything Rust wants to do can stay where they are. The proposal provides a set of reference executors client libraries may use.
+    *   [@clalancette](http://discourse.ros.org/u/clalancette) noted this is what `rcl` set out to be, with mixed success, and cautioned against the package becoming a dumping ground for every executor. Sharing code between `rclcpp` and `rclpy` is worthwhile; wholesale relocation of `rclpy` executors is less appealing.
+    *   [@mjcarroll](http://discourse.ros.org/u/mjcarroll) framed it as less about `rcl` and more about consolidating C++ that already exists in both `rclcpp` and `rclpy`, since parts of the Python executor stack, including work done adding the events executor, are themselves written in C++.
+    *   [@sloretz](http://discourse.ros.org/u/sloretz) raised the historical `rcl` / `rclcpp` partition, which rested on threading models being language specific, and suggested framing the new package around an explicit assumption: `rcl` stays threading-model independent for cases like asyncio, while `rcl_executors` assumes a threading model and becomes the thing `rclcpp` and `rclpy` use. That gives a clear rule for what belongs where.
+    *   [@jmachowinski](http://discourse.ros.org/u/jmachowinski) argued the `rclpy` and `rclcpp` implementations already duplicate the same threading model almost exactly, and we should have one implementation with one set of bugs and missing features, binding Python to fire callbacks. The language-specific vision went unrealized for years; the asyncio executor is the first case genuinely exploiting it, and it should stay.
+    *   Part of the work is deciding which executors to keep. Polling and wait-set based versus event based could plausibly become an execution policy, with the scheduler piece (the part producing ready callbacks) as the shared layer.
+    *   **Discussion is active on the thread and more input is wanted**, ideally before Aug 21.
+
+*   [[@skye.galaxy](http://discourse.ros.org/u/skye.galaxy)] [[GSoC 2026] ROS 2 Client Library Performance Monitoring: Midterm Progress Update](https://discourse.openrobotics.org/t/gsoc-2026-ros-2-client-library-performance-monitoring-midterm-progress-update/57204)
+    *   Ammaar Ahmed’s midterm update is posted, mentored by [@KimMcG](http://discourse.ros.org/u/kimmcg) and [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy). **Please take a look and leave feedback.**
+    *   The underlying `ros2-performance` and benchmark container tooling is now maintained under the `ros2` GitHub namespace and is still being shaken out, so some results may reflect tooling rather than real regressions.
+    *   Longer term this gives developers something to consult for performance regressions, for instance around sync time.
+
+*   [[@Katherine_Scott![Image 7: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)](http://discourse.ros.org/u/katherine_scott)] **ROS and Gazebo hackathon at ROSCon, Friday September 25, 2026**
+    *   Confirmed space at the Google Toronto office, immediately next door to the ROSCon venue. Capacity up to 100 people across one large auditorium and two breakout rooms.
+    *   Plan is roughly 9:30 or 10:00 through 5:00 or 5:30. Merging pull requests, onboarding new contributors, and getting people involved.
+    *   **If you have not booked your ROSCon flights yet, plan to be there on Friday the 25th.** An announcement should follow later this week.
+
+*   [[@sloretz](http://discourse.ros.org/u/sloretz)] A CLI extension to the existing sync scripts is up as a pull request, used for the last Lyrical sync. **Feedback welcome from anyone doing ROS Boss duties.**
+
+read  4 min
+
+## post by sloretz 4 days ago

@@ -1,0 +1,90 @@
+Title: ROS News for the week of August 10th, 2026 - Community News - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415
+
+Published Time: 2026-08-14T18:56:50+00:00
+
+Markdown Content:
+## post by Katherine_Scott 3 days ago
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-ros-news-for-the-week-of-august-10th-2026-1)ROS News for the week of August 10th, 2026
+
+[![Image 1: Ticket Sales Begin May 11th (4)](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/4/0/400da9ffc0d50f2006b3df3d58fc696bc2fc1e98_2_452x374.jpeg)](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/4/0/400da9ffc0d50f2006b3df3d58fc696bc2fc1e98.jpeg "Ticket Sales Begin May 11th (4)")
+
+![Image 2: :police_car_light:](https://emoji.discourse-cdn.com/noto/police_car_light.png?v=15) Just ten days remain to purchase regular price tickets for [ROSCon Global in Toronto.](https://roscon.ros.org/2026/)![Image 3: :police_car_light:](https://emoji.discourse-cdn.com/noto/police_car_light.png?v=15)
+
+If you need corporate approval to travel to ROSCon it is now or never!
+
+[![Image 4: HPDQf28WYAAKv5a](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/8/1/81a177d36257020f847d65a424e9364b12a6ecb6_2_400x500.jpeg)](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/8/1/81a177d36257020f847d65a424e9364b12a6ecb6.jpeg "HPDQf28WYAAKv5a")
+
+![Image 5: GCMAug26 (1)](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/f/4/f4451a871de8bd32b790270ea46514b92b892a02.webp)
+
+Next week is [Foxglove’s Actuate conference](https://actuate.foxglove.dev/?utm_campaign=40976810-Actuate&utm_content=374017076&utm_medium=social&utm_source=linkedin&hss_channel=lcp-72660627) in San Francisco. There are also various meetups and events [affiliated with Actuate that are happening that week as well.](https://actuate.foxglove.dev/community/) The following week we have a [Trossen X ROS Industry Night](https://luma.com/98tk63hk) in San Francisco, our online [Gazebo Community Meeting on reinforcement learning](https://luma.com/1vzgflsv), and the [Ruggedize agricultural technology and robotics conference](https://ruggedize.ai/) in Salinas.
+
+![Image 6: kiwiseg](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/b/0/b03c51220503782e29a197a5e53e019707249cd3.webp)
+
+Our friends at [Robot.com](http://robot.com/) (formerly Kiwibot) have released [semantic_segmentation_layer, a Nav2 costmap layer for semantic segmentation](https://github.com/kiwicampus/semantic_segmentation_layer). If you are looking to add additional information to your Nav2 stack this looks like a really good production-ready solution.
+
+![Image 7: watti2](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/5/d53ccd8ee6a2f05893c99f08071a39009214c769.webp)
+
+[Watti](https://github.com/Nikolay-Tyulkin/Watti) is an animatronic lamp reminiscent of the Pixar lamp. The source code hasn’t been released yet but I’m told it runs ROS 2. What I find really interesting is that this work dovetails with the work of the [Input Inc.](https://input-inc.com/) who spoke at our ROS By-The-Bay meetup last night. Both groups are working on tools that make it much easier to build interactive robots and animitronic displays. _Perhaps we need a new animatronics community group?_
+
+[![Image 8: image](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/d/8/d88146df6ea16b785fbfe1153cca16376341f53f_2_517x250.png)](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/d/8/d88146df6ea16b785fbfe1153cca16376341f53f.png "image")
+
+I love parametric design. My CAD skills aren’t great, so I often build small 3D printing projects using [OpenSCAD](https://openscad.org/). This week I came across this awesome parametric 3D-printed robot gripper configurator called [Fingermod](https://fingermod.steph.ng/). It lets you choose from a variety of designs and configure them via a friendly web-ui. Maybe someone could vibe code a nice OpenSCAD to web-UI configurator tool to make building robot tools like this easier.
+
+![Image 9: feetech](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/3/0/306293fe7c3cf1ef6b991b69ac9b350651b9fa6b.webp)
+
+Have a cheap Feetech servo? [NORI MotorLab](https://github.com/Nori-Robotics/feetech-motorlab) is a browser-based workspace for testing and characterizing 12 V Feetech STS3215, STS3250, and STS3095 servos. MotorLab provides multi-servo telemetry, individual and bus-wide motion controls, live tuning, recording, encoder centering, EEPROM configuration, and a guarded motor-ID station.
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-events-2)Events
+
+*   [2026-08-18 → 2026-08-19 Foxglove Actuate 26](https://actuate.foxglove.dev/?utm_campaign=40976810-Actuate&utm_content=374017076&utm_medium=social&utm_source=linkedin&hss_channel=lcp-72660627)
+    *   [Various Meetups & Events Around Actuate 26](https://actuate.foxglove.dev/community/)
+
+*   [2026-08-20 => 2026-08-21 Scenic Workshop August 20-21 @ UC Santa Cruz](https://discourse.openrobotics.org/t/scenic-workshop-august-20-21-uc-santa-cruz/57198)
+*   [2026-08-25 Trossen X ROS Industry Night](https://luma.com/98tk63hk)
+*   [2026-08-26 Gazebo Community Meeting: Reinforcement Learning in Gazebo](https://luma.com/1vzgflsv)
+*   [2026-08-26 → 2026-08-27 Ruggedize Agricultural Technology & Robotics Conference](https://ruggedize.ai/)
+*   [2026-09-04 Open Ocean Software Community Day UK](https://discourse.openrobotics.org/t/announcement-open-ocean-software-community-day-uk-4-september-2026/56020)
+*   [2026-09-06 Roboracer VTC 2026](https://vtc2026-race.roboracer.ai/)
+*   [2026-09-08 ROS Meet Up Stockholm @ Nordic Tech Week](https://discourse.openrobotics.org/t/ros-meet-up-stockholm-nordic-tech-week-september-8th/57373)
+*   [2026-09-17 ROS Meetup Barcelona 8th Edition](https://discourse.openrobotics.org/t/ros-meetup-barcelona-8th-edition/56814)
+*   [2026-11-05 International Conference on Humanoid Robotics, Innovation & Leadership](https://discourse.openrobotics.org/t/international-conference-on-humanoid-robotics-innovation-leadership/53922)
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-roscons-3)ROSCons
+
+*   [2026-09-22 => 2026-09-24 Global ROSCon 2026 in Toronto](https://roscon.ros.org/2026/)
+*   [2026-10-21 => 2026-10-23 ROSCon UK in Edinburg](https://roscon.org.uk/2026/) - registration now open
+*   [2026-10-23 => 2026-10-26 ROScon Singapore](https://roscon.ros.org/sg/2026/) - applications open
+*   [2026-10-27 => 2026-10-28 ROSCon Spain in Valencia](https://roscon.org.es/roscon2026/ROSConES2026.html) - reg open!
+*   [2026-11-03 ROSCon Italy in Bologna](https://roscon.ros.org/it/2026/)
+*   [2026-11-25 => 2026-11-26 ROSCon Belgium in Nivelles](https://roscon.ros.org/be/2026/) - reg is open!
+*   [2026-12-03 => 2026-12-04 ROScon Turkey in Istanbul](https://roscon.ros.org/tr/2026/) - CFP opens soon
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-news-4)News
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-ros-5)ROS
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-jobs-6)Jobs
+
+*   [Seegrid Senior Engineering Lead - Autonomy](https://seegrid.com/careers/)
+*   [PickNik Robotics Software Engineer (work on space stuff ![Image 10: :rocket:](https://emoji.discourse-cdn.com/noto/rocket.png?v=15))](https://picknik.ai/careers/#open_positions)
+
+## [](http://discourse.ros.org/t/ros-news-for-the-week-of-august-10th-2026/57415#p-116844-got-a-minute-waffle-waffle-waffle-waffle-waffle-7)Got a minute? ![Image 11: :waffle:](https://emoji.discourse-cdn.com/noto/waffle.png?v=15)![Image 12: :waffle:](https://emoji.discourse-cdn.com/noto/waffle.png?v=15)![Image 13: :waffle:](https://emoji.discourse-cdn.com/noto/waffle.png?v=15)![Image 14: :waffle:](https://emoji.discourse-cdn.com/noto/waffle.png?v=15)![Image 15: :waffle:](https://emoji.discourse-cdn.com/noto/waffle.png?v=15)
+
+[Want to get involved with ROS 2?](https://discourse.openrobotics.org/t/want-to-get-involved-with-ros-2-come-to-waffle/57362) Come to our weekly Waffle meeting where we’ll assign you a pull request that needs a review! The next meeting is August 20, 2026 4:30 PM. Can’t make it? Check out our [Waffle (baffle) Board](https://asymingt.github.io/baffle_maker/) to quickly find open pull requests that need reviewing.
+
+Yes, you can review ROS pull requests even if you aren’t a regular contributor! You don’t need to be a ROS expert! We just really need a second set of eyes to catch any glaring mistakes before a pull request gets merged.
+
+![Image 16: heart](https://emoji.discourse-cdn.com/noto/heart.png?v=15)
+
+[![Image 17: Michael Carroll](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/mjcarroll/48/658_2.png)](http://discourse.ros.org/u/mjcarroll "mjcarroll")
+
+read  5 min
+
+## Pinned globally 3 days ago
+
+## post by mjcarroll 3 days ago
+
+## post by Katherine_Scott 3 days ago

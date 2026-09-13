@@ -1,0 +1,986 @@
+[
+  {
+    "sha": "f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+    "node_id": "C_kwDOCBF7SNoAKGYzMWM3ZjQ5YmY3YWZiOWUzMmY0NjUxZWY5MWZiNDZmNTYzNmM4OGM",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-13T13:56:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-13T13:56:30Z"
+      },
+      "message": "Refactor integration tests to manage RCLCPP lifecycle and improve resource cleanup (#6487)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "bcfb1395e5428df44ba49df79b04eaaf1575a1a6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/bcfb1395e5428df44ba49df79b04eaaf1575a1a6"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqpquOCRC1aQ7uu5UhlAAAfQkQADuRx6A0c2WDFWOofSm59LrD\ncfgPe6Bme7oABaaAD6zqelxnIgO5bAch3F5bfLCCHZb9qxVZZNhNTRlYrqvY7lJm\nOyQiymcw0UVjq8D5Xafa/YRP5sMOhs0U14qBnNU6OtrbZpDdoS1ckM7VALh7VLoH\nX7NW09nwLQ8kPPYEf7d7PM+jwENDjAoN/KwuviS5ghjiMirof3PZEmVc7Kh9FBM4\nrHrsNHkyAp4vwk+pc8r02xOg5knY8GI/6h35yFT+h4YCG6H+9CdNzs8IQ06BjPiT\n7f9PGoDNme+E3JsLt6hGmbyqL3pvGhablobhgt4wWGN5t7fdMjMHTM/5dj9f9CUS\nABuYh6kF6l2fPHj64BFdotan4r9QyZQg1A8Ky2GI/yEE4VoCuaRvi27LAdAcB2lB\n7esGeaeoGQNiyE+S0ybpEelHY52s0HLKIL0R9GCNeTeqGFMIB5iVY8ermiSlYFtJ\ng4xMOeB0+Hr4RZSKddTH00DzNY0AV1YnK+4AHLbzBry0/2I+f1N+X+r3fSt4WKZ+\nkl1ypP0B6twiqpfDupH9gnR/NKah6Fipdk94TnaSdv7zlFAAr1mHrsF6y66YDwXA\nz14Onx9b/k8UdcO54+MNuYkZ/v1Ftm3gUDtwzO2g1xX1IaV1VSqXNaOhDkW2TmI4\nr9V/+fBGTKr8FIfarC9b\n=rNbL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bcfb1395e5428df44ba49df79b04eaaf1575a1a6\nparent 86ebcea34c35a94244234b92dac0287719991200\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1789307790 +0200\ncommitter GitHub <noreply@github.com> 1789307790 +0200\n\nRefactor integration tests to manage RCLCPP lifecycle and improve resource cleanup (#6487)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-13T13:56:31Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86ebcea34c35a94244234b92dac0287719991200",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/86ebcea34c35a94244234b92dac0287719991200",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/86ebcea34c35a94244234b92dac0287719991200"
+      }
+    ]
+  },
+  {
+    "sha": "86ebcea34c35a94244234b92dac0287719991200",
+    "node_id": "C_kwDOCBF7SNoAKDg2ZWJjZWEzNGMzNWE5NDI0NDIzNGI5MmRhYzAyODc3MTk5OTEyMDA",
+    "commit": {
+      "author": {
+        "name": "Michal Sojka",
+        "email": "michal.sojka@cvut.cz",
+        "date": "2026-09-10T23:01:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T23:01:47Z"
+      },
+      "message": "nav2_common: Depend on osrf_pycommon system package in Lyrical+ (#6492)\n\nIn Lyrical, all core packages depend on system python3-osrf-pycommon\ninstead of ROS package osrf_pycommon (see https://github.com/ros2/launch/pull/817).\n\nDo the same here to avoid potential (but unlikely) conflict in\nversions of these packages. This is also useful for package managers\nlike Nix, which are more strict about dependency conflicts.\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+      "tree": {
+        "sha": "bdb1a5d6b54ba8d6fbd8abcec2fef39d5cf4402b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/bdb1a5d6b54ba8d6fbd8abcec2fef39d5cf4402b"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/86ebcea34c35a94244234b92dac0287719991200",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqozbbCRC1aQ7uu5UhlAAAJNgQAESFlOijulCu/8SBd4BtxkDb\nLYG8ept+jGUKkVXaqrS/y3eAZbIaysMaMtVKXdfP0lMcVYyJQ92GZvs/ANn6bru+\nUykyAKnoeGqhMHVG03MR48GHLBbI5LtfM9ZLrYOZWCGuIPXeky7DRPtoKlTqOxaI\nqj8yfoHUZ52M1hh81HZ2EUA7GNcYi2vk8g3mOijf4M3B55E0ZKP+K+BXtAEdcmqO\nsEIverJ9gy29u4Q/u+SWjapof4hweOdGJKxqiXtnaVYFVftaU0RvSHK9YDH7XQL5\naM8xC4LcpNRrVqbp4xzhodYTDso6STLEgeymx/yQU2kmiXho9Vdl0wcq0Unkd7Qt\nu/j8obJz5re8x89h5RkgSsbcAWlMamkv0wRUVROE2L1tugHlz62dvRFauizUsYx9\nefiAF/8m0oe/C35Agj4HKMZ4yUz1noFTM62pX7joSFWCoCsUS95C5HBSJ4Y+Xqd9\ndc52jpA1cFRybMYShbJNwG2CS7TCp/t61whJ/034yqUqgoBB2Db0WomgLZfU8xQH\nLQqtVv9h3R3PAbAkQ8F+jeCU/H6M1BcOcHCebiZsDK9mqtj+ZveHq/9N01HQw4Rl\nSt90TuzDCL12I451mdLIG0dj26ShQwWMxx6qBYJdwVKA/AkITbLp0ZshtLZfFKMi\n6QpF1TQRI4yMaWybcODx\n=CNYV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bdb1a5d6b54ba8d6fbd8abcec2fef39d5cf4402b\nparent c7cd230ecaeb304e703ea28e4bdb45177f183a71\nauthor Michal Sojka <michal.sojka@cvut.cz> 1789081307 +0200\ncommitter GitHub <noreply@github.com> 1789081307 -0700\n\nnav2_common: Depend on osrf_pycommon system package in Lyrical+ (#6492)\n\nIn Lyrical, all core packages depend on system python3-osrf-pycommon\ninstead of ROS package osrf_pycommon (see https://github.com/ros2/launch/pull/817).\n\nDo the same here to avoid potential (but unlikely) conflict in\nversions of these packages. This is also useful for package managers\nlike Nix, which are more strict about dependency conflicts.\n\nSigned-off-by: Michal Sojka <michal.sojka@cvut.cz>",
+        "verified_at": "2026-09-10T23:01:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/86ebcea34c35a94244234b92dac0287719991200",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/86ebcea34c35a94244234b92dac0287719991200",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/86ebcea34c35a94244234b92dac0287719991200/comments",
+    "author": {
+      "login": "wentasah",
+      "id": 140542,
+      "node_id": "MDQ6VXNlcjE0MDU0Mg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/140542?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wentasah",
+      "html_url": "https://github.com/wentasah",
+      "followers_url": "https://api.github.com/users/wentasah/followers",
+      "following_url": "https://api.github.com/users/wentasah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wentasah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wentasah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wentasah/subscriptions",
+      "organizations_url": "https://api.github.com/users/wentasah/orgs",
+      "repos_url": "https://api.github.com/users/wentasah/repos",
+      "events_url": "https://api.github.com/users/wentasah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wentasah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/c7cd230ecaeb304e703ea28e4bdb45177f183a71"
+      }
+    ]
+  },
+  {
+    "sha": "c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+    "node_id": "C_kwDOCBF7SNoAKGM3Y2QyMzBlY2FlYjMwNGU3MDNlYTI4ZTRiZGI0NTE3N2YxODNhNzE",
+    "commit": {
+      "author": {
+        "name": "althea28",
+        "email": "104351889+althea28@users.noreply.github.com",
+        "date": "2026-09-10T21:20:20Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T21:20:20Z"
+      },
+      "message": "Standardize boolean literals to lowercase (#6484)\n\nSigned-off-by: Althea Tan <altheatan@google.com>",
+      "tree": {
+        "sha": "67d77f287a7918c66ebd26824bdbaac6759ead6e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/67d77f287a7918c66ebd26824bdbaac6759ead6e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqox8UCRC1aQ7uu5UhlAAAe/AQAG3cxJ0kXTtsoL0Qq19V47oh\nyVltmvCnr+NAvUYXkxMoHyGtGQGLD8dPfrrnzjduJkSJHOScP6WQBAOkVGR3T+1Y\nbJvhpPKQ2yr5+S3J916D4bwyOZDP4xkbJapESoCe71uWlkHOBFKZCz7rBJxrM5F6\nyKR0484LmKtPnsanl8MbqSeYagiTNakd7CkOk1F8M7w/lxpmM724rTEE3chRALRC\nwQ8OmljsO9mSsVX4bHyr95i2cvROYIJBOlYRZCjZDHEaRwxuTT6uskmvwI8oYoks\n3ldLHXxQJDbT2aue9YN+2jpzaStq+cmBndN1VIb3RwvOnAD6GyO33PIYz17mgGB9\nj3QQ/0sM7Ozyx0wLpuDTaQCS6FCDDhGtELnKTMhb8GayG4QZGBBQOxM36JqCRVvt\nG+ZqtI+h/HchXRhhTlmnb7eCHmRGkHfwn1xJC0/Zw0XTmX2VZjfvPwyCnGeQL9L3\nHwSL+HNuAf6/p6UKiRNtDhYhPUMw2Y8pTbgaytFToZbmUGnc8xbKv0OF/2nP68GE\nht/g2GSrOpjswFx7UYgC8jMhLaIns8Y35ecWBJt6pbo2hRdn1ZeDjiVwestNAez7\ne6T922s01uIwFR90bvOEyCpNF4S4u55C/AS1JoCJUGElgxtRxnWUrsbHFtRjCR5X\nBDlYewE1Lhb6rTk+OVn8\n=E2DL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 67d77f287a7918c66ebd26824bdbaac6759ead6e\nparent ed346174554feb46d5d0b04a543188f83456ecd3\nauthor althea28 <104351889+althea28@users.noreply.github.com> 1789075220 +0800\ncommitter GitHub <noreply@github.com> 1789075220 -0700\n\nStandardize boolean literals to lowercase (#6484)\n\nSigned-off-by: Althea Tan <altheatan@google.com>",
+        "verified_at": "2026-09-10T21:20:20Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/c7cd230ecaeb304e703ea28e4bdb45177f183a71",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c7cd230ecaeb304e703ea28e4bdb45177f183a71/comments",
+    "author": {
+      "login": "althea28",
+      "id": 104351889,
+      "node_id": "U_kgDOBjhIkQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104351889?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/althea28",
+      "html_url": "https://github.com/althea28",
+      "followers_url": "https://api.github.com/users/althea28/followers",
+      "following_url": "https://api.github.com/users/althea28/following{/other_user}",
+      "gists_url": "https://api.github.com/users/althea28/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/althea28/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/althea28/subscriptions",
+      "organizations_url": "https://api.github.com/users/althea28/orgs",
+      "repos_url": "https://api.github.com/users/althea28/repos",
+      "events_url": "https://api.github.com/users/althea28/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/althea28/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed346174554feb46d5d0b04a543188f83456ecd3",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ed346174554feb46d5d0b04a543188f83456ecd3",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/ed346174554feb46d5d0b04a543188f83456ecd3"
+      }
+    ]
+  },
+  {
+    "sha": "ed346174554feb46d5d0b04a543188f83456ecd3",
+    "node_id": "C_kwDOCBF7SNoAKGVkMzQ2MTc0NTU0ZmViNDZkNWQwYjA0YTU0MzE4OGY4MzQ1NmVjZDM",
+    "commit": {
+      "author": {
+        "name": "str_cat",
+        "email": "154436494+WaWOscarQAQ@users.noreply.github.com",
+        "date": "2026-09-10T18:16:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T18:16:45Z"
+      },
+      "message": "Fix feasible path costmap access race (#6486)\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>",
+      "tree": {
+        "sha": "2ab006b034cf184be4d336e1a3adf0bde70911c9",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/2ab006b034cf184be4d336e1a3adf0bde70911c9"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/ed346174554feb46d5d0b04a543188f83456ecd3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqovQNCRC1aQ7uu5UhlAAA9l0QAJtE5uTpnQttisDsX3uIGi5/\nQ5JFGfb4+2cylcl86s2VyautQrirs1nOe6aNPSWLhM/Xrb5C9MtSL3fqipYkVeH7\nu4z4jHWgMo21J1ZK2LywuNTFGslg3nxmSFxkt5l8KaAn9+TPMzPl0P0a32P7BhcM\n+PwmfeG89WQ0iB9Qkf6ARwLJUzTyOjCEO2rXgv9LJPQfqkmanxboB1IPwNlZptdV\npwzsIfypvr0Mz6E8xQcT2fp6Ev7f4H9AoK15HC1pui4Wku6LPiRBuFr1wHdt/tH+\nPs+dYmXgD3LNcYFwA2Zvle861KNR5Kt1m2k8bb6Z+Yx6AOc+gCgKE2eyAN5zGddA\nztMEdpDykmgdDCsQ+k1A6oCE3P68ZTvfzNHpLNi8ny7cWEzfD+J+JZSCw1WXxBFp\n+oK+tMtpaKTxFgwY2qzn6mMosaJ/qfpLGaNW/zwRPsz9eJrQIFXwY0vLhC9753S3\nZW1ZraXgJvzrCYDIZomc6zIj/zG38xO7s3kRGaHk82aiyrxWb17vzUdwhfae/oyS\nTiX+44TIISFTFeDKO7Ne/OTUnkIw+I1AJzUINo7jKw3oV28LHw+qY26wiEoDmgb0\nOup0F5GIJdNKX0H1nL9KtbLuuOhG55RfenK+Egh0N8UdU+7FKRIphpX1y21mzfVq\n5kdKSliTw3n9fA0xiUTC\n=GLvx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2ab006b034cf184be4d336e1a3adf0bde70911c9\nparent 196fc177ba79e8cb3234af9b37e5158cae636efe\nauthor str_cat <154436494+WaWOscarQAQ@users.noreply.github.com> 1789064205 +0800\ncommitter GitHub <noreply@github.com> 1789064205 -0700\n\nFix feasible path costmap access race (#6486)\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>",
+        "verified_at": "2026-09-10T18:16:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ed346174554feb46d5d0b04a543188f83456ecd3",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/ed346174554feb46d5d0b04a543188f83456ecd3",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/ed346174554feb46d5d0b04a543188f83456ecd3/comments",
+    "author": {
+      "login": "WaWOscarQAQ",
+      "id": 154436494,
+      "node_id": "U_kgDOCTSDjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154436494?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WaWOscarQAQ",
+      "html_url": "https://github.com/WaWOscarQAQ",
+      "followers_url": "https://api.github.com/users/WaWOscarQAQ/followers",
+      "following_url": "https://api.github.com/users/WaWOscarQAQ/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WaWOscarQAQ/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WaWOscarQAQ/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WaWOscarQAQ/subscriptions",
+      "organizations_url": "https://api.github.com/users/WaWOscarQAQ/orgs",
+      "repos_url": "https://api.github.com/users/WaWOscarQAQ/repos",
+      "events_url": "https://api.github.com/users/WaWOscarQAQ/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WaWOscarQAQ/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "196fc177ba79e8cb3234af9b37e5158cae636efe",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/196fc177ba79e8cb3234af9b37e5158cae636efe",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/196fc177ba79e8cb3234af9b37e5158cae636efe"
+      }
+    ]
+  },
+  {
+    "sha": "196fc177ba79e8cb3234af9b37e5158cae636efe",
+    "node_id": "C_kwDOCBF7SNoAKDE5NmZjMTc3YmE3OWU4Y2IzMjM0YWY5YjM3ZTUxNThjYWU2MzZlZmU",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-09-10T18:10:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-10T18:10:28Z"
+      },
+      "message": "Remove citation section from README (#6490)\n\nRemoved the citation section from the README file, which included various references and BibTeX entries for papers related to the navigation framework and algorithms.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "dd2ded9456161b2f8381ee5793f4db512cc353c6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/dd2ded9456161b2f8381ee5793f4db512cc353c6"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/196fc177ba79e8cb3234af9b37e5158cae636efe",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqovKUCRC1aQ7uu5UhlAAAnGQQAHxZ+j/RubyfUeprn34/PAPO\nTPsIG/GdwKfZrdZ2VQlBvys0GeO7BRnyMPw/ugRr5tmxg51LuzbAOxy1RBQXxkCa\n3sIoKVmvRs7w9JjhPZ+BJYGiHSKkc7VtUZxdJ+Fwu07slGMglF4sIXQ1bKjBJxrv\nQjv8VjZ3S4P6CWqTge4Bbut5R9HYrOVc5o9BYmdpa/PO7aT2WVDupVMB/baoBjNH\nJafZYQYlpjZbK72qnXhuYdXviNgYNRnlZIsrcQB2LEeuC5bwZ0DVVs3s2CIeURCw\nNxb91wIB/ruprfquaPN7ghqmcJ2WtM+H81btr9JbG08mUdwa4K53sYU7TpSLZx+Q\nNx2u+i5Om7j9yhR+PKwMbgK5EK8fU0Tqj52yby04j+Cz2lnAACQSyr8/EIMIrncP\ncCXKSTBLAJq6VyxphZ1o29+ZE915gJL5DjlrEKRNfxGrzVl35DFNFhxoZmj3XzEa\nMmUyHrjzc+QmLpQoPokc0/s9rBehzDggvEokMPOgVOHyu6dBpi/uj6r07A6BLUPL\n+1FA9+2PFX+8I5dlGmjNFeSdInpCHjGa+vw1lXJ9mJ+sTbV+xPgJ4DafMVR6BIEV\n5LpuNqd2FZ4QwMTrngkN4V61ERRRryxo5IroLFGubl0FsVmnezKO51N1v+tKVbeb\nbuRVIhY96FngN0ZLi86l\n=RstB\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dd2ded9456161b2f8381ee5793f4db512cc353c6\nparent 5f1abdb45a348746764c73c9ec36a3ab432fc394\nauthor Steve Macenski <stevenmacenski@gmail.com> 1789063828 -0700\ncommitter GitHub <noreply@github.com> 1789063828 -0700\n\nRemove citation section from README (#6490)\n\nRemoved the citation section from the README file, which included various references and BibTeX entries for papers related to the navigation framework and algorithms.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-09-10T18:10:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/196fc177ba79e8cb3234af9b37e5158cae636efe",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/196fc177ba79e8cb3234af9b37e5158cae636efe",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/196fc177ba79e8cb3234af9b37e5158cae636efe/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5f1abdb45a348746764c73c9ec36a3ab432fc394",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5f1abdb45a348746764c73c9ec36a3ab432fc394",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/5f1abdb45a348746764c73c9ec36a3ab432fc394"
+      }
+    ]
+  },
+  {
+    "sha": "5f1abdb45a348746764c73c9ec36a3ab432fc394",
+    "node_id": "C_kwDOCBF7SNoAKDVmMWFiZGI0NWEzNDg3NDY3NjRjNzNjOWVjMzZhM2FiNDMyZmMzOTQ",
+    "commit": {
+      "author": {
+        "name": "Maharshi Kamleshkumar Barot",
+        "email": "mbarot@islander.tamucc.edu",
+        "date": "2026-09-09T21:21:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-09T21:21:40Z"
+      },
+      "message": "fix(nav2_behavior_tree): cancel goal when halted before acknowledgement (#6445)\n\nBtActionNode::halt() skipped cancellation while a goal was sent but the\naction server had not yet returned the goal handle (future_goal_handle_\npending, goal_handle_ still null), leaving the accepted goal orphaned on\nthe server. Wait briefly for the pending acknowledgement during halt(),\nbounded by server_timeout_, then reuse the existing per-goal cancellation\npath. Unlike the goal-response-timeout path this does not use\nasync_cancel_all_goals(), so unrelated goals are unaffected.\n\nAdds a deterministic regression test that halts a node while the goal\nacknowledgement is gated, then verifies the accepted goal is cancelled.\n\nFixes #6426\n\nSigned-off-by: Maharshi Kamleshkumar Barot <barotmaharshi393@gmail.com>\nCo-authored-by: Maharshi Kamleshkumar Barot <barotmaharshi393@gmail.com>",
+      "tree": {
+        "sha": "183c7dd3ddd58e74f7ea599db6082a2e87e3408b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/183c7dd3ddd58e74f7ea599db6082a2e87e3408b"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/5f1abdb45a348746764c73c9ec36a3ab432fc394",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoc3kCRC1aQ7uu5UhlAAAJWIQAAEsBqFFVbx7lsdjHRX/VmzK\n8Naeqq6XFTPbdeS6ocbMfYKc0uaK/PnbH1mv5utULENPQwTEXmfDU/eG9WnbiG92\nL07Ghn9wSxiR5QS+sVtOsFIjxIrxNwNttOkbDW5QovggSx/pV6y0Rz9Jy4CwJLLM\nmP//OS8mQScbyZb8JLgrR812QYxf931EY0ySOdQNCKUhH5O8qHTJqVFT9DzYjVSI\n6te65MObEZHhKFjz0zQbRtowV3/ZNlzM9+5Ma38TFuMEj9tRv4CHUUi4WwJIZrLL\nue67RnSV2cr1gEjR6dyeWjJtGZK2dYXmTz+eLBADKNGW2FO50WAzxzzCINkdEtXS\nKGU++XfgTydK6dGHMEeK/i1L7wJrGpGb5HW1e0N+GxxMEA4Uqq5/JNs3tG4FGhnW\nYqvBbFRE6K8mcPikHwBrq5x5r/v5yjhdeAiQrOQEb9pAF2ZPTszcTl4FkQZCN4pS\n7nHjCtcY6pT3/UAvRWm+XyrKRSAQ9XR6Iosih8C6qDnEagHGOk8fY/fPYkgFeBqE\n9pabFHstT/6cmLYB31+QwAYcNL5k8KlU8nXS9azME/6bTIbG+cDKYMLwna7Y6Y8M\nEMgsOqXmyA4sZwqfL6WMNcXhTNAMsqh0npR5ix0t1coBaAXU7UX/YF7c2V2LFu9b\nZHgGWIdbHfdjSRs1ljMm\n=t96J\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 183c7dd3ddd58e74f7ea599db6082a2e87e3408b\nparent 5e771b9f931c4636b73998bb61bb63fba892283d\nauthor Maharshi Kamleshkumar Barot <mbarot@islander.tamucc.edu> 1788988900 -0500\ncommitter GitHub <noreply@github.com> 1788988900 -0700\n\nfix(nav2_behavior_tree): cancel goal when halted before acknowledgement (#6445)\n\nBtActionNode::halt() skipped cancellation while a goal was sent but the\naction server had not yet returned the goal handle (future_goal_handle_\npending, goal_handle_ still null), leaving the accepted goal orphaned on\nthe server. Wait briefly for the pending acknowledgement during halt(),\nbounded by server_timeout_, then reuse the existing per-goal cancellation\npath. Unlike the goal-response-timeout path this does not use\nasync_cancel_all_goals(), so unrelated goals are unaffected.\n\nAdds a deterministic regression test that halts a node while the goal\nacknowledgement is gated, then verifies the accepted goal is cancelled.\n\nFixes #6426\n\nSigned-off-by: Maharshi Kamleshkumar Barot <barotmaharshi393@gmail.com>\nCo-authored-by: Maharshi Kamleshkumar Barot <barotmaharshi393@gmail.com>",
+        "verified_at": "2026-09-09T21:21:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5f1abdb45a348746764c73c9ec36a3ab432fc394",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/5f1abdb45a348746764c73c9ec36a3ab432fc394",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5f1abdb45a348746764c73c9ec36a3ab432fc394/comments",
+    "author": {
+      "login": "maharshi-coding",
+      "id": 261245761,
+      "node_id": "U_kgDOD5JLQQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/261245761?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/maharshi-coding",
+      "html_url": "https://github.com/maharshi-coding",
+      "followers_url": "https://api.github.com/users/maharshi-coding/followers",
+      "following_url": "https://api.github.com/users/maharshi-coding/following{/other_user}",
+      "gists_url": "https://api.github.com/users/maharshi-coding/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/maharshi-coding/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/maharshi-coding/subscriptions",
+      "organizations_url": "https://api.github.com/users/maharshi-coding/orgs",
+      "repos_url": "https://api.github.com/users/maharshi-coding/repos",
+      "events_url": "https://api.github.com/users/maharshi-coding/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/maharshi-coding/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5e771b9f931c4636b73998bb61bb63fba892283d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5e771b9f931c4636b73998bb61bb63fba892283d",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/5e771b9f931c4636b73998bb61bb63fba892283d"
+      }
+    ]
+  },
+  {
+    "sha": "5e771b9f931c4636b73998bb61bb63fba892283d",
+    "node_id": "C_kwDOCBF7SNoAKDVlNzcxYjlmOTMxYzQ2MzZiNzM5OThiYjYxYmI2M2ZiYTg5MjI4M2Q",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-09T15:59:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-09T15:59:36Z"
+      },
+      "message": "VO more efficient rasterization (#6465)\n\n* Implement shape filling and row span retrieval in vector object shapes\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add processRun function for efficient cell updates and enhance putFill method\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refine documentation and comments in vector object shapes and utilities for clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Implement processRun method for efficient cell updates and remove redundant declaration\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "53e31fb7e21055de26bb9ac47264bee3bb4ecb3f",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/53e31fb7e21055de26bb9ac47264bee3bb4ecb3f"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/5e771b9f931c4636b73998bb61bb63fba892283d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoYJoCRC1aQ7uu5UhlAAAFEAQAJfo/3cFceVqlY+V7KIAujkI\nCe4KMlWNAPlTuqvWXBHOGfK9Oh1R7113K4mtC10PpiA8smlkBB2ML36uhT9DJ8sm\nT8JiRuCPulX91XoLjiH/2bO7IQQI1/XThrBgYzu5slH2E6sK02s2Qid3NB+M/mT6\nJMaCnK6ihQLYqLzwxSsH5bawypEK3lPDztrY3npIzWtWgs02lSuNuUFzA6jXo5x0\ntncKO2wIO8SPw1VOpHeQW8o57aRiWDRKf/wOL8xUwdpkXH4u09jXxeUI1CcbDNOx\nvc05z1wUzeElWZUDaIFRBHoaQ1O7bUvzH9gH1ySIBKZkqntinE1ODTubIj2JPHm0\nUfFrQZGRY9D4HG4leApBbkH+k8+vbwj/N1Sj5F4U7CJefVI+Td65cTTDhisRPBNr\npvhgISaymdhC/PlB3Pxok1IwRCDVpVFQHNKy8TRmPh/y/PVputDB+sKPcZZEd7j4\nYdK7Ue4STCpm//PO5gQDG7/tfTeqY5j6oV3cbdfG/JJ/jZQydHnAmgbyV3qGnWNa\n/FTU5BOaiTyM2yIg4l0g6lPHnr2xKLSf+O//DiQ1LC+7gC/RL8hkkeebuUVPRHX2\nguMrhhfUTrWxSuV+8JvfIzYGTACweU0i3aC7qxsyKifFHqHLXEQzkqKy8jOJNF1Z\nyYhkBeEDxNQFn89KrKim\n=C13i\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 53e31fb7e21055de26bb9ac47264bee3bb4ecb3f\nparent 35b7371f02c1ac0e1b1fa534dc415e2c6e99923f\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1788969576 +0200\ncommitter GitHub <noreply@github.com> 1788969576 -0700\n\nVO more efficient rasterization (#6465)\n\n* Implement shape filling and row span retrieval in vector object shapes\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add processRun function for efficient cell updates and enhance putFill method\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refine documentation and comments in vector object shapes and utilities for clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Implement processRun method for efficient cell updates and remove redundant declaration\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-09T15:59:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5e771b9f931c4636b73998bb61bb63fba892283d",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/5e771b9f931c4636b73998bb61bb63fba892283d",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/5e771b9f931c4636b73998bb61bb63fba892283d/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f"
+      }
+    ]
+  },
+  {
+    "sha": "35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+    "node_id": "C_kwDOCBF7SNoAKDM1YjczNzFmMDJjMWFjMGUxYjFmYTUzNGRjNDE1ZTJjNmU5OTkyM2Y",
+    "commit": {
+      "author": {
+        "name": "JanKim27",
+        "email": "btreefuzz@gmail.com",
+        "date": "2026-09-09T15:57:32Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-09T15:57:32Z"
+      },
+      "message": "Fix concurrent access to Costmap2D::costmap_ (Bug 2 in #6429) (#6446)\n\n* Fix concurrent access to Costmap2D::costmap_\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Fix format\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Use costmap mutex instead of copying\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Protect additional costmap accesses with mutexes\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Use recursive mutex in CostmapSubscriber\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+      "tree": {
+        "sha": "1254f6502929d767ee70b92eb1250ef722b8ae4d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/1254f6502929d767ee70b92eb1250ef722b8ae4d"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoYHsCRC1aQ7uu5UhlAAAELcQAAfSRpWWWOSGbDaEMYeWvpYI\noB+I3b7B0PkWXzjT35WTYKFL0WntJZT6tDmR83ABF+qqtUd9zQrpjKYTmXnPW5Sb\ndkABgCr6C0uclqeGTS8deM7tBgUcmSNAx39MaHETTjcKMUWbmQaBITwDOPI7p5vf\nsoDbMURPzznyM/OJ1hvt0dqFQMyYxcV4YF54sHCayHEFQFypZmBqkuQWJPeCtYsA\n7YB64CDk4TsSYhbC58M5eB/pq7bNuM/B9/SKilZ54r4ac0QgtvimKP0A32E2Cefo\nmJUKDT2v8/Qx1LMRPW66h4wgJHOgB/E7DgGlRbv0wMPBKyGKwNyAbW7Iy94/bcSx\nTbqkodCkLXGVOVpSoHD5i8s11gDbfuj23ptwHxQ49pfYgK+oR+WkaHV1ePrv3M/o\ntg/ZhcGdxgXUxxmp5kplGQRPaZ6AjIRJ3Au35uUZfp5cYdlhYnE8sQdgxYCdUq8c\nClJPiXiQVNewaa1gnh7hIZvXQ9cyG7RgpK543pE6W63O/6Ovv457lW681B+a8q4G\n3ikbczT9eTpqxE3zUWFF7Q/W/hAfDOK+PN3nE9ABrvSRwwO+/uwSem9XPKS/wu8v\nwJb9m9LpUbBouegfMvp//fGC3Pp8vmMAGIM1Ki9nm8VSmG4fZvbNP9MZU4f/3UJW\nl/JCizQa9j4Vc3q8YoSU\n=5mnv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1254f6502929d767ee70b92eb1250ef722b8ae4d\nparent cd40c588d6ae7679a286b0b64e9f7687c9323670\nauthor JanKim27 <btreefuzz@gmail.com> 1788969452 +0900\ncommitter GitHub <noreply@github.com> 1788969452 -0700\n\nFix concurrent access to Costmap2D::costmap_ (Bug 2 in #6429) (#6446)\n\n* Fix concurrent access to Costmap2D::costmap_\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Fix format\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Use costmap mutex instead of copying\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Protect additional costmap accesses with mutexes\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Use recursive mutex in CostmapSubscriber\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+        "verified_at": "2026-09-09T15:57:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/35b7371f02c1ac0e1b1fa534dc415e2c6e99923f/comments",
+    "author": {
+      "login": "JanKim27",
+      "id": 320895706,
+      "node_id": "U_kgDOEyB62g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/320895706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JanKim27",
+      "html_url": "https://github.com/JanKim27",
+      "followers_url": "https://api.github.com/users/JanKim27/followers",
+      "following_url": "https://api.github.com/users/JanKim27/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JanKim27/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JanKim27/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JanKim27/subscriptions",
+      "organizations_url": "https://api.github.com/users/JanKim27/orgs",
+      "repos_url": "https://api.github.com/users/JanKim27/repos",
+      "events_url": "https://api.github.com/users/JanKim27/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JanKim27/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cd40c588d6ae7679a286b0b64e9f7687c9323670",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cd40c588d6ae7679a286b0b64e9f7687c9323670",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/cd40c588d6ae7679a286b0b64e9f7687c9323670"
+      }
+    ]
+  },
+  {
+    "sha": "cd40c588d6ae7679a286b0b64e9f7687c9323670",
+    "node_id": "C_kwDOCBF7SNoAKGNkNDBjNTg4ZDZhZTc2NzlhMjg2YjBiNjRlOWY3Njg3YzkzMjM2NzA",
+    "commit": {
+      "author": {
+        "name": "JanKim27",
+        "email": "btreefuzz@gmail.com",
+        "date": "2026-09-09T01:01:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-09T01:01:10Z"
+      },
+      "message": "Fix concurrent access to NavFn planner costmap (Bug3 in #6429) (#6447)\n\n* Fix concurrent access to NavFn planner costmap (Bug3)\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Remove redundant costmap lock in makePlan\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+      "tree": {
+        "sha": "4c2124c72df2d6abb0c528ed89c824aa7127374e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/4c2124c72df2d6abb0c528ed89c824aa7127374e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/cd40c588d6ae7679a286b0b64e9f7687c9323670",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoK/WCRC1aQ7uu5UhlAAARRQQAF9+T4svUhJM0HyGEd/N3YCo\n2PYqITTnS6raVsvnj3hNNlwfnhqdNsLiXM96u6zwIu1v5HroH8/+vfTmh7GMklXm\nwGZ89lAlEnVO9PMtX2h9t6mFhB0Rmnr7HgyoXfNYTeY0IeLwP5N+VWRdDDRrMC9N\n+wUiSLbOhf84vOq591/oysEEvOrXK9oeVGxtwhemwGZ3HUzne/8vldAvpkoXc1Om\nmC66TQQEy7beJPKm7sDvnJkG+EKg+cJLhP6cc3zwRqLMMATNDKmL5Jhrs4IQDAYe\nuR2wfqpHrzgK0iVTMOsse8R6LBetClXLJMdgKEVrfqqFXaX4F9Znmuld2A0/YwQd\n6DFVj7PEa5UJgrarSMDvlmqPIGp20IKM5/+kOFup/Ly+4uHuLXg5L3hhxb14Cnrj\nQjO7NgU1Ex+3ZLp9ZYJSTNiQ3qk264J8x1rU4eUBYyTBSSdu9/KMvfh5Z0wGS9Of\nFtEuDX643/74VTywrO8+rhYXykfJcXHX90dNf+KsCZ8360cmIPGnaES9r9MTlXDj\nTJr3FNFWYUjzPzepFPLVWH+mQOews+HL1tcOf4L8Oh/91m8vTP+eqgRl7ljOX2Hj\np2x4BUWwiRW9hfybSuh9WoXPx5CZWG0eGL2Cz0uJtt1QmO18gmuczUC0TErYecW+\nZMZLZL9NIG9rT1z4iJwk\n=EQbB\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4c2124c72df2d6abb0c528ed89c824aa7127374e\nparent 3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a\nauthor JanKim27 <btreefuzz@gmail.com> 1788915670 +0900\ncommitter GitHub <noreply@github.com> 1788915670 -0700\n\nFix concurrent access to NavFn planner costmap (Bug3 in #6429) (#6447)\n\n* Fix concurrent access to NavFn planner costmap (Bug3)\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Remove redundant costmap lock in makePlan\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+        "verified_at": "2026-09-09T01:01:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cd40c588d6ae7679a286b0b64e9f7687c9323670",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/cd40c588d6ae7679a286b0b64e9f7687c9323670",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/cd40c588d6ae7679a286b0b64e9f7687c9323670/comments",
+    "author": {
+      "login": "JanKim27",
+      "id": 320895706,
+      "node_id": "U_kgDOEyB62g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/320895706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JanKim27",
+      "html_url": "https://github.com/JanKim27",
+      "followers_url": "https://api.github.com/users/JanKim27/followers",
+      "following_url": "https://api.github.com/users/JanKim27/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JanKim27/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JanKim27/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JanKim27/subscriptions",
+      "organizations_url": "https://api.github.com/users/JanKim27/orgs",
+      "repos_url": "https://api.github.com/users/JanKim27/repos",
+      "events_url": "https://api.github.com/users/JanKim27/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JanKim27/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a"
+      }
+    ]
+  },
+  {
+    "sha": "3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+    "node_id": "C_kwDOCBF7SNoAKDNhOWI5Y2QwODJjNmMzYThiYTYzNTdlOGVhOWM0YThiNDc5Y2MyNmE",
+    "commit": {
+      "author": {
+        "name": "str_cat",
+        "email": "154436494+WaWOscarQAQ@users.noreply.github.com",
+        "date": "2026-09-08T20:16:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-08T20:16:49Z"
+      },
+      "message": "Lock costmap service response generation (#6472)\n\n* Lock costmap service response generation\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>\n\n* Update nav2_costmap_2d/src/costmap_2d_publisher.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "ad3eab06293889c8c2144358a7075d7c462e6929",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/ad3eab06293889c8c2144358a7075d7c462e6929"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoG0xCRC1aQ7uu5UhlAAA9LkQABfxWxmFtjTK3Q6P+a35EriY\nsSGEI8/3YRT9Lu6Ep0vk9TFWSp92v4IepFzkSB7Hq5+A8CMxZQvNhOrp5omF4+of\neSP+aNP2TczSnIn5gwF0j52nGDjHpEOrmzyQpBmNSpZmg6UwY/hPePTbWCUrLq0D\n9XmmXP13h9R2+4Wxma1tkuUtldrruPfeL9cltyioazBLjoVR+pRoX6LHRzhyqdhq\ndAuVHrEZ0u2LEqiT9xKTDmXuf2Aa+9arqM/2fIF3mSJ3UVRu2o2ZKbLIh1dFyfej\n86R5/GoJOjJfXVCzqkpSsyPkwWO5w5C+3ajG+w6M7TWVmZsl3d2zPgnHZM5ftoIL\nPkeRSaPjrVaGaRByFyw3HCgnYNfwu0/WziXRES4B0GxncQNdfWQaHicoO+yOe1my\nLwjR0OQ4hHAvhp+kL4tExfoovgbdbR3x0Au1UlZEW2tb2O3dXaR+m+I73vbmvJLo\nsKp2Q/odR6wCzvXqugv+tKvuH5cfpUkw8f9eRRlKxuafCBnZPG3CLQC8x3ZUNLJK\nHUBFF75mwTiWFJ4mboxqy1ukCCNrY1heP2kqZnVePlUcv4Pc3k0oEy6Kvoy2SHOP\nUUgimauLLKVbLfY2BGLdsRvCQxcNPU5CHdsSWRXZ69oUlCLd548zbJchthSLpWhU\nEkkvi4qNkUMMspJpz6CX\n=m4e7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree ad3eab06293889c8c2144358a7075d7c462e6929\nparent c6fcbfd03c67904168aeda81d9fa568ffffcc910\nauthor str_cat <154436494+WaWOscarQAQ@users.noreply.github.com> 1788898609 +0800\ncommitter GitHub <noreply@github.com> 1788898609 -0700\n\nLock costmap service response generation (#6472)\n\n* Lock costmap service response generation\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>\n\n* Update nav2_costmap_2d/src/costmap_2d_publisher.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-09-08T20:16:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/3a9b9cd082c6c3a8ba6357e8ea9c4a8b479cc26a/comments",
+    "author": {
+      "login": "WaWOscarQAQ",
+      "id": 154436494,
+      "node_id": "U_kgDOCTSDjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154436494?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WaWOscarQAQ",
+      "html_url": "https://github.com/WaWOscarQAQ",
+      "followers_url": "https://api.github.com/users/WaWOscarQAQ/followers",
+      "following_url": "https://api.github.com/users/WaWOscarQAQ/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WaWOscarQAQ/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WaWOscarQAQ/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WaWOscarQAQ/subscriptions",
+      "organizations_url": "https://api.github.com/users/WaWOscarQAQ/orgs",
+      "repos_url": "https://api.github.com/users/WaWOscarQAQ/repos",
+      "events_url": "https://api.github.com/users/WaWOscarQAQ/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WaWOscarQAQ/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/c6fcbfd03c67904168aeda81d9fa568ffffcc910"
+      }
+    ]
+  },
+  {
+    "sha": "c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+    "node_id": "C_kwDOCBF7SNoAKGM2ZmNiZmQwM2M2NzkwNDE2OGFlZGE4MWQ5ZmE1NjhmZmZmY2M5MTA",
+    "commit": {
+      "author": {
+        "name": "str_cat",
+        "email": "154436494+WaWOscarQAQ@users.noreply.github.com",
+        "date": "2026-09-08T19:56:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-08T19:56:45Z"
+      },
+      "message": "Fix costmap shutdown flag data race (#6471)\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>",
+      "tree": {
+        "sha": "e768f171f2dd6576f83c8557bb627f85db91541d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e768f171f2dd6576f83c8557bb627f85db91541d"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoGh9CRC1aQ7uu5UhlAAAL3EQAI/ss0OoP6/R/yfmy20V5WkJ\nO3zJPiBcGCMDmEfDQwxBQ5Q9hw+e81a4hieaboP3Ppfpfzh0XqCXiBJXp7dbo5p6\nLCKBiHw6lFmJOnS8IGwwOCjUA6T0ZJO0J0fvVrRRbiP7dvOFMqQ8MYtsxYMFYKj+\nPRWjRby9pFd97fDiM49sGsraLoio3A3JiEOL3711JmMeypX4LmgGKsPuOWSQUHfo\nyB4WicHifCmrypN8OOE1at6kEFZqtoGOma1+Tx1ry39wB0a0GoM/IBugv3Dxp3G/\nHzNTdpu+kddXEEbOxDsy12kihl0up+CQXZ1KevJHYm967kRWcMOfClXSaeI8nR08\n8fEn+VEx2yyM8Olr3/SEpy/GtkwnUqSymJjFnFm2n2XsAEqi+OR8BsEkK0KWhUMv\n/+pdwDi9CXrX5EsP2YYbOPSCMswKW1sg3ck2LhHHPq2Z9ZJOnOubB6BZPhDh5cxn\nqhcL1/LfQqvc+FlqVbP0RS4TFb0EL6mHgkbIx/L5VR5Z8SRJqJAMOrOuYGferXDX\nnm0gAh5VT5Aw/s5F6cvUcw0iIgQJuTWjy7PI3MMPg/DLLP5kSvqxkJfGTs88fM5f\n9WdHrNKKRNJzKhnWBRE2KwFYkrJ92Ihag1qkolEk1UnpKs+htR77D+AgP5F/YM5j\nOzOXE3XweGpxDQ5+0mS4\n=vXbb\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e768f171f2dd6576f83c8557bb627f85db91541d\nparent 45802a0d54e98f84bac9aa28d252ceaeeb97d34d\nauthor str_cat <154436494+WaWOscarQAQ@users.noreply.github.com> 1788897405 +0800\ncommitter GitHub <noreply@github.com> 1788897405 -0700\n\nFix costmap shutdown flag data race (#6471)\n\nSigned-off-by: Oscar Wang <oscarw051207@163.com>",
+        "verified_at": "2026-09-08T19:56:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/c6fcbfd03c67904168aeda81d9fa568ffffcc910",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c6fcbfd03c67904168aeda81d9fa568ffffcc910/comments",
+    "author": {
+      "login": "WaWOscarQAQ",
+      "id": 154436494,
+      "node_id": "U_kgDOCTSDjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154436494?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WaWOscarQAQ",
+      "html_url": "https://github.com/WaWOscarQAQ",
+      "followers_url": "https://api.github.com/users/WaWOscarQAQ/followers",
+      "following_url": "https://api.github.com/users/WaWOscarQAQ/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WaWOscarQAQ/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WaWOscarQAQ/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WaWOscarQAQ/subscriptions",
+      "organizations_url": "https://api.github.com/users/WaWOscarQAQ/orgs",
+      "repos_url": "https://api.github.com/users/WaWOscarQAQ/repos",
+      "events_url": "https://api.github.com/users/WaWOscarQAQ/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WaWOscarQAQ/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/45802a0d54e98f84bac9aa28d252ceaeeb97d34d"
+      }
+    ]
+  },
+  {
+    "sha": "45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+    "node_id": "C_kwDOCBF7SNoAKDQ1ODAyYTBkNTRlOThmODRiYWM5YWEyOGQyNTJjZWFlZWI5N2QzNGQ",
+    "commit": {
+      "author": {
+        "name": "Steve Macenski",
+        "email": "stevenmacenski@gmail.com",
+        "date": "2026-09-07T19:43:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-07T19:43:14Z"
+      },
+      "message": "Resolving reported tsan issues (#6467)\n\n* Resolving reported tsan issues\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Fix clearing logic\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_navfn_planner/src/navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_navfn_planner/src/navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Refactor navfn_planner.cpp to remove duplicate mx, my\n\nRemoved redundant variable declaration for mx and my.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Fix formatting issues in navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "e1fe0c7ce11871d2d42798f4032a65ceda0a2335",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e1fe0c7ce11871d2d42798f4032a65ceda0a2335"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqnxPSCRC1aQ7uu5UhlAAA0mYQAEIHaNmsibsKwBIIa/XvOPjj\nywiBlzhG5tC+YyDlbzCPCy7iqNLKNqWmxi8YaP6gB/p72JSvn1B3sZDqVpg/9AWm\n/b9pNJJ7tm8ZoSA80MqYfCAhDD5JcENgSPaZ+KCUFrHit/z8F1l2R3sSc1PsydKT\nWVnSSZeIH3gCLVFRyO5vYo5Li2j5LiH+NkiTuFHEKscFbQrToYP6vAf1sCX2S7FT\nO/0UJG9UCaq2CS8KeUevmnzjXRojXdSyIOd3W7wr3Dx4+9WvuAKoqcm79RF2DbEG\nDgGOuKyQptQ2WP2/y4Z4jfHH4Tnt6v1ir/+vloBv6OSzlgQYlWfqrI4RTJ2pqB3E\nOMIbSstG3ZmCuIkj4ESBaN68MbYzeFt6fYJDJX/YWqxhs2YmoTiN4ByecgRBi1Xf\nHO+gJWuuQ5u634QiSBLejW80CjJKT6V6cU15iabs7c8497kJemiNE/5fajdRvw30\n/aovrI3BezE1x2hmsgaMyqEphvvlhof+UANTiZzsJFFw20XtYJqTnkzGWx53zF8x\nowSR6+XKO02Xy+kUIZWIB+DRSaYwvEl4PTmR0IuIPSIfoAuJOs7fhYdbxMx8FDYy\nRIwjfWAHxI8BWWaCvQiAJacoog/lfr8E99h+NDUSElNhkDU4Kd8IFWLxxhP6ZwaQ\nM/n65SiW2IgNsj95Kidj\n=p4pG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e1fe0c7ce11871d2d42798f4032a65ceda0a2335\nparent 0e9904bb20dbb05473ea78315f3204501ceedb7c\nauthor Steve Macenski <stevenmacenski@gmail.com> 1788810194 -0700\ncommitter GitHub <noreply@github.com> 1788810194 -0700\n\nResolving reported tsan issues (#6467)\n\n* Resolving reported tsan issues\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Fix clearing logic\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_navfn_planner/src/navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Update nav2_navfn_planner/src/navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Refactor navfn_planner.cpp to remove duplicate mx, my\n\nRemoved redundant variable declaration for mx and my.\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Fix formatting issues in navfn_planner.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-09-07T19:43:15Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/45802a0d54e98f84bac9aa28d252ceaeeb97d34d",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/45802a0d54e98f84bac9aa28d252ceaeeb97d34d/comments",
+    "author": {
+      "login": "SteveMacenski",
+      "id": 14944147,
+      "node_id": "MDQ6VXNlcjE0OTQ0MTQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14944147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SteveMacenski",
+      "html_url": "https://github.com/SteveMacenski",
+      "followers_url": "https://api.github.com/users/SteveMacenski/followers",
+      "following_url": "https://api.github.com/users/SteveMacenski/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SteveMacenski/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SteveMacenski/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SteveMacenski/subscriptions",
+      "organizations_url": "https://api.github.com/users/SteveMacenski/orgs",
+      "repos_url": "https://api.github.com/users/SteveMacenski/repos",
+      "events_url": "https://api.github.com/users/SteveMacenski/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SteveMacenski/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0e9904bb20dbb05473ea78315f3204501ceedb7c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0e9904bb20dbb05473ea78315f3204501ceedb7c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/0e9904bb20dbb05473ea78315f3204501ceedb7c"
+      }
+    ]
+  }
+]

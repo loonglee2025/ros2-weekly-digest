@@ -1,0 +1,137 @@
+Title: ROS PMC Minutes for September 8, 2026 - ROS / ROS PMC - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/57957
+
+Published Time: 2026-09-08T18:56:32+00:00
+
+Markdown Content:
+## post by mjcarroll on Sep 8
+
+The [ROS PMC](https://osralliance.org/staging/wp-content/uploads/2024/03/ros_project_charter.pdf) meeting for this week was on Tuesday, September 8, 2026. The notes from the meeting are available at [ROS PMC weekly meeting agenda](https://docs.google.com/document/d/1TGXYp33N00ZJtilsRzfClFXcSyMa4QKVNmA03Lx9D7w/edit?tab=t.0).
+
+## [](http://discourse.ros.org/t/57957#p-117751-ros-pmc-business-1)ROS PMC Business
+
+*   **Vote results: welcome to our three new PMC members.**
+
+    *   [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy): **passes**
+    *   [@jmachowinski](http://discourse.ros.org/u/jmachowinski): **passes**
+    *   [@andrew_symington](http://discourse.ros.org/u/andrew_symington): **passes**
+    *   Please coordinate with your sponsors on what the role involves. You will be added to the requisite mailing lists so you can vote on what is coming up.
+
+*   ![Image 1: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15)**The votes to move [@nuclearsandwich](http://discourse.ros.org/u/nuclearsandwich) and [@audrow](http://discourse.ros.org/u/audrow) to emeritus status were invalid.** The ROS Project Charter contains no mechanism for removing a PMC member, which is an oversight rather than a deliberate omission. Resignation is not covered either, though it may appear in a higher-level OSRA document.
+
+    *   The path forward is an amendment to the charter, which the TGC must vote on, followed by a further PMC vote on the removals themselves. [@mjcarroll](http://discourse.ros.org/u/mjcarroll) will propose the amendment. The next TGC meeting is next week, and this is unlikely to be resolved before ROSCon.
+
+*   **Vote in progress: RHEL to Tier 1 on Rolling, Fedora to Tier 3.** This comes with support from Red Hat and largely affects M-turtle onward. **If you were a voting member when this went out, please vote.**
+
+    *   [@clalancette](http://discourse.ros.org/u/clalancette) asked about capacity, particularly for Fedora, given that [build.ros.org](http://build.ros.org/) already gets very busy.
+    *   [@cottsay](http://discourse.ros.org/u/cottsay) on RHEL: we have effectively met the Tier 1 criteria for around two years, so this formalizes and advertises costs we are already paying. The only workflow change is that ROS Bosses for distributions with RHEL at Tier 1 need to check they are not regressing RHEL when they sync. Over the last three years that has been a problem once or twice at most.
+    *   [@cottsay](http://discourse.ros.org/u/cottsay) on Fedora: the entire purpose of Tier 3 is integrating with official ROS workflows without adding burden to the PMC. Maintenance sits with the Fedora Robotics SIG, who are responsible for regressions. There are no CI requirements, since those apply at Tier 1 and 2. Fedora packages will be part of the Rolling syncs and will sync automatically. The PMC’s share is largely bookkeeping and documentation, such as responding to pull requests for installation instructions.
+    *   On infrastructure: Red Hat is funding additional resources that translate into more build workers, along with a larger primary Jenkins instance. The binding constraint is most likely memory rather than disk IOPS, given how many jobs we now maintain.
+
+*   **Committer pipeline for Red Hat platforms.** It would be good to have someone on the PMC with a vested interest in these distributions beyond [@cottsay](http://discourse.ros.org/u/cottsay). Leonardo Rossetti was proposed as a strong candidate and will likely be included in the upcoming committer vote.
+
+*   **REP 158 acceptance.** The review packet is assembled and will go out after this meeting to start the process. The proposal is well developed, has had substantial discussion on Discourse and GitHub, and no negative feedback has been raised.
+
+*   **Deferred:** forming a Bazel Working Group, now most likely after ROSCon.
+
+    *   [@yadunund](http://discourse.ros.org/u/yadunund) asked how the group would interact with the infrastructure team, given it touches how packages are built and shipped, and raised the concern that the ROS Central Registry might become the PMC-endorsed way to build ROS with Bazel.
+    *   [@mjcarroll](http://discourse.ros.org/u/mjcarroll) clarified that this is not the intent. Several organizations have invested in building ROS with Bazel, and the goal is to get those parties in one room rather than continuing to reinvent the wheel. A first iteration would focus on knowledge sharing, with a possible follow-on working group to select and implement a mechanism.
+    *   [@cottsay](http://discourse.ros.org/u/cottsay) noted it is not clear what infrastructure the group would need, since the registry is largely driven as a GitHub repository.
+
+## [](http://discourse.ros.org/t/57957#p-117751-regular-business-2)Regular Business
+
+### [](http://discourse.ros.org/t/57957#p-117751-buildfarm-update-3)Buildfarm update
+
+The buildfarm builds and tests ROS packages across all supported distributions and platforms. This section covers new issues, current priorities, and infrastructure changes that affect maintainers.
+
+*   ![Image 2: :new_button:](https://emoji.discourse-cdn.com/noto/new_button.png?v=15) Issues 
+    *   `rosbag2_performance_benchmarking` MSVC object-file section limit build regression on Windows packaging, missing the big object flag. Issue pending.
+    *   PTAL [Buildfarm Issues Dashboard](https://osrf.github.io/buildfarm-tools/dashboard/index.html) (21 open regressions).
+
+### [](http://discourse.ros.org/t/57957#p-117751-waffle-note-taker-4)Waffle note-taker
+
+Waffle is a weekly meeting where maintainers triage incoming issues and pull requests that haven’t been otherwise acted upon. One person per week is assigned to be the “waffle note-taker” to both take notes in the meeting to keep the meeting as efficient as possible. The first non-PMC/TGC member/committer to message the project lead on Zulip gets a free ROS shirt.
+
+*   Sep 10, 2026 
+    *   [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy)
+
+Last week ran smoothly. The board generated in time and the group got through the human-generated items before reaching the AI-clustered section.
+
+### [](http://discourse.ros.org/t/57957#p-117751-rosdistro-assignmentshttpsgithubcomrosrosdistro-5)[Rosdistro assignments](https://github.com/ros/rosdistro)
+
+Rosdistro is a weekly assignment to monitor incoming issues and pull requests in [GitHub - ros/rosdistro](https://github.com/ros/rosdistro). Two people per week are assigned to be the rosdistro maintainers.
+
+### [](http://discourse.ros.org/t/57957#p-117751-release-managementhttpsosrfzulipchatcomnarrowchannel526029-ros-pmctopicrelease20management20thread-6)[Release Management](https://osrf.zulipchat.com/#narrow/channel/526029-ROS-PMC/topic/Release.20Management.20Thread)
+
+Release Management tracks the status of upcoming releases, patches, and syncs across the active ROS distributions.
+
+*   [@christophebedard](http://discourse.ros.org/u/christophebedard) (Humble) 
+    *   Regressions on the buildfarm, one already fixed. Releases were created over the weekend for a patch release, and the sync hold may start shortly depending on how things look in a couple of days.
+
+*   [@yadunund](http://discourse.ros.org/u/yadunund) (Rolling) 
+    *   Automation PRs are still waiting on deployment to the test farm before they can go to production. [@cottsay](http://discourse.ros.org/u/cottsay) has reviewed the changes and they look fine. [@claraberendsen](http://discourse.ros.org/u/claraberendsen) is getting to the test farm deployment today. 
+        *   [ros_buildfarm#1151](https://github.com/ros-infrastructure/ros_buildfarm/pull/1151)
+        *   [ros_buildfarm_config#396](https://github.com/ros2/ros_buildfarm_config/pull/396)
+
+*   [@marcogg](http://discourse.ros.org/u/marcogg) (Jazzy) 
+    *   ![Image 3: :white_check_mark:](https://emoji.discourse-cdn.com/noto/white_check_mark.png?v=15)[Preparing for Jazzy Sync 2026-09-09](https://discourse.openrobotics.org/c/ros/release/16).
+
+*   [@cottsay](http://discourse.ros.org/u/cottsay) (Kilted) 
+    *   A sync before ROSCon, timing to be determined.
+
+*   [@sloretz](http://discourse.ros.org/u/sloretz) (Lyrical) 
+    *   A few regressions, with more appearing. Targeting a sync this week.
+
+**Note that ROSCon begins Monday, September 21.** The window for landing anything beforehand is closing quickly.
+
+## [](http://discourse.ros.org/t/57957#p-117751-working-group-updates-7)Working Group Updates
+
+*   **ROS Office Hours**
+    *   **Next meeting: Sep 11, 2026 (this Friday).** Come hang out and get things done.
+
+*   Client Library Working Group ([@alsora](http://discourse.ros.org/u/alsora)) 
+    *   **Next meeting: Sep 18, 2026** ([agenda](https://docs.google.com/document/d/1-tU2AKoHKLCVHPBz0QchYownmZZvYjHmVUQXT2WBMOw/edit?tab=t.0))
+
+*   Accelerated Memory Transport Working Group ([@ahcorde](http://discourse.ros.org/u/ahcorde)) 
+    *   **Next meeting: Sep 16, 2026**
+    *   **A new buffer backend for Qualcomm has merged. We need hardware to test it.**@nvcyc has verified that the RMW layer and the fallback path behave correctly, but nobody involved has Qualcomm hardware to confirm the accelerated path actually works. **If you have Qualcomm hardware, please get in touch.** This may be worth raising at ROSCon.
+
+*   ROSGraph Working Group ([@emersonknapp](http://discourse.ros.org/u/emersonknapp)) 
+    *   **Next meeting: Sep 15, 2026**
+
+*   SIG Physical AI 
+    *   **Next meeting: Sep 18, 2026.** Three new members welcomed.
+    *   **WG1:** Qualcomm’s `rosidl_buffer_backends` implementation merged, with Python Torch conversion pending. Zero-copy `rosidl` benchmarking in progress. The OpenUSD interop REP is moving to voting. HCDF is on hold until October. The 3D LiDAR and tactile messages remain stalled.
+    *   **WG2:** an open question about whether to stay on Rosetta for inference given its drift toward framework agnosticism, and whether to clarify its ROS commitment or invite the maintainers into the SIG. Progress is slow and not targeting ROSCon. A white paper will be published as a markdown PR to the website. The survey has been consolidated and will be released at ROSCon.
+    *   **WG3:**`intrinsic-inference`, a new standalone inference node, was presented and adoption will be discussed next meeting. A ROSCon talk has been submitted. A ros2_control architecture discussion is planned, and a compartmentalization workstream separating real-time from inference is likely to start.
+    *   **WG4:** App 1 is migrating to Lyrical with SO-101, App 2 is the AIC cable insertion demo, and App 3 is at hardware selection, weighing a humanoid (more ambitious, better marketing) against a mobile bimanual manipulator (safer, closer to current ROS capability). Vendor partnerships are being sought to inform that call.
+
+### [](http://discourse.ros.org/t/57957#p-117751-question-for-the-pmc-ci-for-hardware-accelerated-backends-8)![Image 4: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15) Question for the PMC: CI for hardware-accelerated backends
+
+[@yadunund](http://discourse.ros.org/u/yadunund) raised this on behalf of SIG WG1, which wants to exercise the buffer backends: what is our plan for validating them, given they live in the `ros2` organization?
+
+*   [@ahcorde](http://discourse.ros.org/u/ahcorde) clarified that there is no backend in the core. As with image transport and point cloud transport plugins, the core provides the mechanism and ships no official backend. You install or write your own.
+*   @nvcyc noted the buffer backend repository is not in `ros2.repos`, so it is not exercised by pull request or nightly CI. CI runs but has no access to the relevant hardware. The reviewable guarantee is that installing a backend without using it does not break your system. Using it presumes you have the hardware and the domain knowledge.
+*   [@yadunund](http://discourse.ros.org/u/yadunund) pushed on this: the repository vendors dependencies such as PyTorch and carries vendor-specific messages, so how does it scale? He suggested moving vendor implementations into vendor-managed organizations that can provide hardware CI, keeping only the core abstraction in `ros2`.
+*   @nvcyc acknowledged this is the first repository we have with several vendors each needing different hardware, and treated it as a learning process. His preference is to first demonstrate the buffer backend is useful and attract more vendors, then improve the infrastructure, potentially reorganizing the repository later. For now each maintainer is responsible for their own backend on their own hardware.
+*   **Outcome: no plan at present to provide CI runners for these architectures.** The PMC is not taking on backend implementations. That can be revisited if adoption grows, though as @nvcyc noted, making it official would mean these platforms appearing in the support matrix with requirements per distribution.
+*   **Ask:** evidence that Qualcomm has validated the backend on their own hardware would be well received.
+
+## [](http://discourse.ros.org/t/57957#p-117751-agenda-9)Agenda
+
+*   [[@tomoyafujita](http://discourse.ros.org/u/tomoyafujita)] [osra-policies-and-procedures#16](https://github.com/openrobotics/osra-policies-and-procedures/pull/16), requesting ROS PMC approval. 
+    *   Approved by [@mjcarroll](http://discourse.ros.org/u/mjcarroll). The repository requires GPG sign-off, so [@tomoyafujita](http://discourse.ros.org/u/tomoyafujita) needs to sign before it can merge.
+
+*   [[@mjcarroll](http://discourse.ros.org/u/mjcarroll)] **M-turtle roadmap**
+    *   Nothing is committed yet; the roadmap is normally socialized around ROSCon. **Input is wanted.**
+    *   The operating theme is **“less is more.”** We have built up no small amount of technical debt, and M-turtle is an opportunity to clean it up: faster builds, faster CI, and removing things that are not working for people, such as topic statistics. There are no obvious big-ticket features. The goal is a focused codebase that is pleasant to maintain and lets us build quickly on top of it.
+    *   **Executor deduplication** ([@skye.galaxy](http://discourse.ros.org/u/skye.galaxy)). Work on the deduplication proposal has identified several subsystems reasonably duplicated between `rclcpp` and `rclpy`. An open design question is whether to preserve the exact behavioral quirks of each, or accept something that is effectively `rclcpp` with Python bindings. A more concrete proposal is expected after ROSCon. A short release cycle is good grounds for a sweeping architectural change, and [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy) has volunteered to do much of the work.
+    *   **RViz without Ogre** ([@clalancette](http://discourse.ros.org/u/clalancette)). No concrete plans yet. [@ahcorde](http://discourse.ros.org/u/ahcorde) has looked at newer Ogre releases, though Ubuntu does not package Ogre upstream so the vendor package would remain. As a counterpoint, before investing heavily in re-architecting visualization it is worth looking at what already exists in the ecosystem.
+    *   **Declarative tooling and application-graph reasoning** ([@emersonknapp](http://discourse.ros.org/u/emersonknapp)). Integrating NoDL more fully into core workflows and tutorials, the ROS graph monitor, and topic statistics via a tracing-based prototype rather than an RMW shim. The observation behind all of it: most of what we produce as a community concerns writing a single node, and we still lack good tooling for reasoning about how nodes connect into something larger.
+    *   **Structured parameters** ([@jmachowinski](http://discourse.ros.org/u/jmachowinski)). [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy) suggested coordinating with the NoDL parameter schema, which declares a node’s parameters rather than building them imperatively.
+    *   **Linters should not be unit tests** ([@mjcarroll](http://discourse.ros.org/u/mjcarroll)). [@skye.galaxy](http://discourse.ros.org/u/skye.galaxy) reported that heavy use of pre-commit for auto-formatting and non-autofixable linting has worked very well elsewhere, and offered to help define a ROS standard while preserving the current formatting conventions for core packages. The historical objection was churn, but faster tools such as clang-format and ruff, decoupled from the build, would cut failed CI reruns and improve developer velocity. It also sets a floor for agent-generated contributions, which frequently arrive without having run the tests locally.dis
+
+read  5 min
+
+## post by scastro 5 days ago

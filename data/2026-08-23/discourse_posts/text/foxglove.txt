@@ -1,0 +1,43 @@
+##### TITLE: Foxglove has agents now
+created: 2026-08-18T17:15:01.127Z
+REPLIES: 3
+
+--- [2026-08-18] msadowski ---
+Hi! 
+ At Foxglove, we announced quite a few new features today and wanted to share them with the community. Here is what we’ve been cooking: 
+ Search Experience 
+ You can query all your recordings in Foxglove and quickly get to the data you need. The example query I always demo is: ` /mti/imu/linear_acceleration.x > 11 `. It gets more exciting as of Today, because you can combine the topic search with semantic search, and for example run the following query: ` visual("stairs") AND (/anymal/imu/linear_acceleration.x > 4 OR /anymal/imu/linear_acceleration.x < -4) ` gets me a good set of instances of my robot walking on stairs to work with: 
+ visual-acc-search 1920×1103 331 KB 
+ And, of course, if you click any of these results, you’ll see the exact moment and can start working with the data immediately. 
+ Learn more 
+ A/B Comparison 
+ You can now easily compare two or more runs in Foxglove. Load the bag files, align the time offsets, and visualize the two runs on the same timeline. Here is one example of running a UMBMark test and visualizing odometry before and after calibration: 
+ ab-umb-mark-demo 1920×1018 206 KB 
+ Video of the example above: https://youtu.be/wdSkFHLtZwU 
+ Learn more 
+ Agent Sidebar 
+ We have an agent sidebar now. You can ask the agent to create layouts for you, help you triage issues, write userscripts, create events, and more. 
+ new-chat-create-layout 1920×1101 298 KB 
+ We also have an MCP in the desktop app, so you can connect your agent of choice to Foxglove and ask it to do things for you. My favorite prompt so far was asking it to triage an issue and create a PDF report for my boss. 
+ Learn more 
+ Remote Access and BYOS 
+ This and the next feature are not agent-related, but I thought I would mention them since I have your attention. With Bring Your Own Server (BYOS), you use your own storage bucket with Foxglove (no longer need to keep two separate copies of your data). 
+ Remote Access enables a connection to your robot through an optimized WebRTC stream, where we optimize stream quality based on the available bandwidth. 
+Read more: 
+
+ Remote Access blog post 
+
+ BYOS blog post 
+
+ If you have any questions or feedback, don’t hesitate to let me know! If you happen to be at Actuate today or tomorrow, let me know, and let’s try to catch up!
+
+--- [2026-08-20] benaliabderahmane ---
+Hi @msadowski , nice release 
+A question on the agent side, I couldn’t find anything in the docs about data handling. What’s the retention policy for agent conversations and tool results, is there a zero-retention arrangement with the model provider, and is any of it used for training or eval?
+
+--- [2026-08-20] peci1 ---
+Sounds great! When does FG do the analysis for semantic search? Is it done somewhere in the cloud afrer you upload the bag?
+
+--- [2026-08-21] msadowski ---
+@benaliabderahmane Thanks for the question! No data is used for training or eval. As for the retention policy, I’ll check with the team and try to get back to you. 
+ @peci1 Yes, you can enable search for certain topic patterns in image/video data and tell us how far back we should look for the first ingestion; then we’ll analyze the new data as it arrives and create the vector store for the embeddings, making it searchable.

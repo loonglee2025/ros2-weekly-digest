@@ -1,0 +1,84 @@
+[
+ {
+  "sha": "183b1c5d05685ab3604d3de1df964a0c1600852e",
+  "node_id": "C_kwDOAe-vztoAKDE4M2IxYzVkMDU2ODVhYjM2MDRkM2RlMWRmOTY0YTBjMTYwMDg1MmU",
+  "commit": {
+   "author": {
+    "name": "Dylan Gallagher",
+    "email": "76841713+Dylan-Gallagher@users.noreply.github.com",
+    "date": "2026-08-25T08:04:53Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-25T08:04:53Z"
+   },
+   "message": "Add string strip substitution (#997)\n\nSigned-off-by: Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com>",
+   "tree": {
+    "sha": "0ddea2599b02279d41b072f65aa9c4a555ab5cc2",
+    "url": "https://api.github.com/repos/ros2/launch/git/trees/0ddea2599b02279d41b072f65aa9c4a555ab5cc2"
+   },
+   "url": "https://api.github.com/repos/ros2/launch/git/commits/183b1c5d05685ab3604d3de1df964a0c1600852e",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqjUylCRC1aQ7uu5UhlAAAzPMQAEhF5oAUMeWaMrx0YTMSCT3M\nyyBZijgUgTqTG1yteegXWp2CEzC2+L0hbCZk10zFSD1d9QgSgsdhi9LtUlsTfWKT\nQ0P5EqK52MkeZk9JyqzwjgiBBYpTo8+SqXPD3CD1DtPsQVvmmmkZT1AS3xlSg5gH\nnOIjK2uyLF7+gaAI4aUrCZFmZ65k3CMaDiMZWCqMlf0gmMnl0rHOPNmqtq9YOJRT\n1UhuMqnK02o38yJxw6PCglVvEp7ZM8XhnBm7FrXo7l2JEo4YwgMmQiQU1JNQFUz8\n1mo4D28UCHaPfslM+BemWbiAmsX9gDtOThojn/PQYhLmX/LrkOoK7vXwi/jV/XM0\nWCPsNs6GJo7k1Wtu/3JDgUchHDs9sO7lTcWd9bk856FvSIfW+fuRcizulqPEJqe8\nNtc05VDux+yizg1+5BBMxWB5/us/z0pS/f+IHyy/Z8z1NhfF2Jv4qt6bYypCA50/\nya/llKJ7Gb2ne6NGQBUhyN3osVT93aUIlxQLplryrsMa+aCPc0GwGceeezfCvmuz\nWI0m5iTmyp+uu8btxnyXbOV+Wbbu2toUOEIpSBTk9MFT9mLJs/aU90ne+VDWCsLf\nvXNkkCA/SCTuJNR8cUhi5QGNdiuBQjnrz7eOSMmXA4E9qIZiuhPy0KReXJ3xP+lu\nxFMO8rhSELYlr+Ps640q\n=9aTE\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 0ddea2599b02279d41b072f65aa9c4a555ab5cc2\nparent 2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4\nauthor Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com> 1787645093 +0100\ncommitter GitHub <noreply@github.com> 1787645093 +0200\n\nAdd string strip substitution (#997)\n\nSigned-off-by: Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com>",
+    "verified_at": "2026-08-25T08:04:53Z"
+   }
+  },
+  "url": "https://api.github.com/repos/ros2/launch/commits/183b1c5d05685ab3604d3de1df964a0c1600852e",
+  "html_url": "https://github.com/ros2/launch/commit/183b1c5d05685ab3604d3de1df964a0c1600852e",
+  "comments_url": "https://api.github.com/repos/ros2/launch/commits/183b1c5d05685ab3604d3de1df964a0c1600852e/comments",
+  "author": {
+   "login": "Dylan-Gallagher",
+   "id": 76841713,
+   "node_id": "MDQ6VXNlcjc2ODQxNzEz",
+   "avatar_url": "https://avatars.githubusercontent.com/u/76841713?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/Dylan-Gallagher",
+   "html_url": "https://github.com/Dylan-Gallagher",
+   "followers_url": "https://api.github.com/users/Dylan-Gallagher/followers",
+   "following_url": "https://api.github.com/users/Dylan-Gallagher/following{/other_user}",
+   "gists_url": "https://api.github.com/users/Dylan-Gallagher/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/Dylan-Gallagher/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/Dylan-Gallagher/subscriptions",
+   "organizations_url": "https://api.github.com/users/Dylan-Gallagher/orgs",
+   "repos_url": "https://api.github.com/users/Dylan-Gallagher/repos",
+   "events_url": "https://api.github.com/users/Dylan-Gallagher/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/Dylan-Gallagher/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+    "url": "https://api.github.com/repos/ros2/launch/commits/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4",
+    "html_url": "https://github.com/ros2/launch/commit/2fd84e320b7f4a4eca0d4754341a0b8dd72f5af4"
+   }
+  ]
+ }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+    "node_id": "C_kwDOD0AxsdoAKGRmY2IyODc5MmNmYzM0NGJlNzZkODEyMmIyMmM3Y2QwYWJmNTUyZjM",
+    "commit": {
+      "author": {
+        "name": "Samir Bhattarai",
+        "email": "147074565+samirbhattarai135@users.noreply.github.com",
+        "date": "2026-08-11T09:20:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-11T09:20:36Z"
+      },
+      "message": "Revert \"ModelCommandAPI_TEST: skip failing check on arm64\" (#3874)\n\nThe sdformat bug that caused the arm64 failure is fixed by gazebosim/sdformat#1693, so the expectations can be restored on arm64.\n\nThis reverts commit e6a74396e7a5843e7d0a9cff7f7d1cb828343883.\n\nAssisted-by: Claude Opus 5 (Anthropic Claude Code)\n\nSigned-off-by: samirbhattarai135 <147074565+samirbhattarai135@users.noreply.github.com>",
+      "tree": {
+        "sha": "bf285475a44aaaf9a16fae03c4558565c245d850",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/git/trees/bf285475a44aaaf9a16fae03c4558565c245d850"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-sim/git/commits/dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqeulkCRC1aQ7uu5UhlAAAtKsQAFmym5C3Jx2pMIWNWfJkko12\nr0sVKogVhmQ2StCggcG/cFVwQOHp/Aw9aoMMIUq19jCD3IbZDxpNXAhiaQISSpgt\nIrdRthPL6RQXBW49k8CuVsz/KdHnyxY8uhnZaAYECehdIj1dYci75qcLcuSAcsqK\nr6mvsbJexwpBd1BUdOKDsWF1iC8iQRmBKu0OkhRMk4V0N4EVJiq+ln8h8uf6iSiV\nF+b87rLmwcl9NZhjOe9AgwSDs69HjADmv0AOSFHq2+HTspaoB65e5iHJtetbiO36\nGhkCom4IzKC1EzXGu6OiJskeke82l0uplfiuNoaMwAOVg+U5QcsyMbrivJyRNt1l\nvir+zPkhnfwiNnNBnwiGj0KOSw/L1Z/Ic4r4y4luO6NAfiWxD2W8u3e8JCNi31i6\nu54kXlFcSJ09m9pMnYF26w9XDHRpQWBPRLn9VuFPuSm/2ZGOw9v5oQjGds+nrMOg\nezrTq9INvx6mlaIkiL4VF054FwLFRKXNfuub/6yYVuWpZo1htKYDG+GcgzPQy5A4\n1gxEpxdFNcrDWp0mwfx1y/gTRj+OB/BBSAmj31rYtpG2NLXKQZJWngtA5ghaaz88\ntDep+66OvWBr3RU8wjqHqWrsKQUdNoQjNC8y5CY5o7GxrgoemKnvsxYaN+m3k5QU\nwO2oRK1ZJaZapKiHw7Qz\n=xpcn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bf285475a44aaaf9a16fae03c4558565c245d850\nparent 42f95b961d66dcd0248886c6953d2d41509de8fc\nauthor Samir Bhattarai <147074565+samirbhattarai135@users.noreply.github.com> 1786440036 -0500\ncommitter GitHub <noreply@github.com> 1786440036 -0700\n\nRevert \"ModelCommandAPI_TEST: skip failing check on arm64\" (#3874)\n\nThe sdformat bug that caused the arm64 failure is fixed by gazebosim/sdformat#1693, so the expectations can be restored on arm64.\n\nThis reverts commit e6a74396e7a5843e7d0a9cff7f7d1cb828343883.\n\nAssisted-by: Claude Opus 5 (Anthropic Claude Code)\n\nSigned-off-by: samirbhattarai135 <147074565+samirbhattarai135@users.noreply.github.com>",
+        "verified_at": "2026-08-11T09:25:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+    "html_url": "https://github.com/gazebosim/gz-sim/commit/dfcb28792cfc344be76d8122b22c7cd0abf552f3",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-sim/commits/dfcb28792cfc344be76d8122b22c7cd0abf552f3/comments",
+    "author": {
+      "login": "samirbhattarai135",
+      "id": 147074565,
+      "node_id": "U_kgDOCMQuBQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/147074565?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/samirbhattarai135",
+      "html_url": "https://github.com/samirbhattarai135",
+      "followers_url": "https://api.github.com/users/samirbhattarai135/followers",
+      "following_url": "https://api.github.com/users/samirbhattarai135/following{/other_user}",
+      "gists_url": "https://api.github.com/users/samirbhattarai135/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/samirbhattarai135/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/samirbhattarai135/subscriptions",
+      "organizations_url": "https://api.github.com/users/samirbhattarai135/orgs",
+      "repos_url": "https://api.github.com/users/samirbhattarai135/repos",
+      "events_url": "https://api.github.com/users/samirbhattarai135/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/samirbhattarai135/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "42f95b961d66dcd0248886c6953d2d41509de8fc",
+        "url": "https://api.github.com/repos/gazebosim/gz-sim/commits/42f95b961d66dcd0248886c6953d2d41509de8fc",
+        "html_url": "https://github.com/gazebosim/gz-sim/commit/42f95b961d66dcd0248886c6953d2d41509de8fc"
+      }
+    ]
+  }
+]

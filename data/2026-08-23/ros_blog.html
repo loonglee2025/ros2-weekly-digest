@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17821189-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-17821189-2');
+  </script>
+  <!-- New Google Analytics Tag -->
+  <!-- These two tags will run concurrently until we test the new tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVD5Z6G6NH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EVD5Z6G6NH');
+  </script>
+  
+  <meta charset="utf-8" />
+  <title>ROS: ROS Blog</title>
+  <link rel="stylesheet" href="/css/owlcarousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/css/owlcarousel/owl.theme.default.min.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/stylesheet.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="shortcut icon"
+    href="/favicon.ico"
+    type="image/x-icon"
+  />
+  <script src="/javascript/default.js"></script>
+  <script src="/javascript/masonry.pkgd.js"></script>
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="Nanoc 4.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+  <body id="body" onclick="closeMenus(this)">
+    
+      <header id="header-small">
+  <div id="navbar-small">
+    <div class="logo-small">
+      <a href="/"><img src="/imgs/logo-white.png" /></a>
+    </div>
+    <ul class="main-menu">
+      <!-- <li class="nav-item hover"><a href="/blog/about">About</a></li> -->
+      <li class="nav-item hover"><a href="/blog/why-ros">Why ROS?</a></li>
+      <li class="nav-item hover"><a href="/blog/getting-started/#">Getting Started</a></li>
+      <li class="nav-item hover"><a href="/blog/community">Community</a></li>
+      <li class="nav-item hover"><a href="/blog/ecosystem">Ecosystem</a></li>
+      <!-- The submenu for About is at the bottom of the header tag -->
+      <!--
+      <li id="nav-item-hover" class="nav-item hover">
+        <a
+          href="javascript:void(0);"
+          id="about"
+          class="hide-after"
+          onclick="openCloseAbout(), closeMenus(this)"
+          >About</a>
+      </li>
+      -->
+    </ul>
+
+    <!--
+    <div id="dropdown-dots" class='dropdown-dots-small' onclick="openCloseDotsMenu(), closeMenus(this)">
+      <img src="/imgs/dot.png" id="dot-top" class="dropdown-dot-top" />
+      <img src="/imgs/dot.png" class="dropdown-dot-middle dot-1" />
+      <img src="/imgs/dot.png" class="dropdown-dot-middle dot-2" />
+      <img src="/imgs/dot.png" class="dropdown-dot-middle dot-3" />
+      <img src="/imgs/dot.png" id="dot-bottom" class="dropdown-dot-bottom" />
+    </div>
+    <ul id="submenu-dots" class="hidden submenu-dots-small" onclick="closeMenus(this)">
+      <div class="grid-mob-menu">
+  <a class="twitter-icon" href="#"
+    ><img src="/imgs/twitter-icon.svg"
+  /></a>
+  <a class="discourse-icon" href="#"
+    ><img src="/imgs/discourse-icon.svg"
+  /></a>
+  <a class="github-icon" href="#"><img src="/imgs/github-icon.svg"/></a>
+  <a class="mob-nav-item-1" href="/blog/">Blog</a>
+  <a class="mob-nav-item-2" href="#">Wiki</a>
+  <a class="mob-nav-item-3" href="#">About</a>
+  <a class="mob-nav-item-4" href="#">contact</a>
+</div>
+<li class="sub-item">
+  <a href="#">sub-item 1</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 1</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 1</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 2</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 3</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 4</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+<li class="sub-item">
+  <a href="#">sub-item 5</a>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore.
+  </p>
+</li>
+
+    </ul>
+    -->
+  </div>
+  <!--
+  <div id="submenu-about" class="hidden submenu-about-small" onclick="closeMenus(this)">
+    <ul>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">History</a>
+  </li>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">What is ROS</a>
+    <ul>
+      <li><a href="#">Core ROS Capabilities</a></li>
+      <li><a href="#">ROS Packages</a></li>
+      <li><a href="#">Build Tools</a></li>
+      <li><a href="#">Sibling Libraries</a></li>
+      <li><a href="#">Community Resources</a></li>
+    </ul>
+  </li>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">TSC</a>
+    <ul>
+      <li><a href="#">Working Groups</a></li>
+      <li><a href="#">Road Map</a></li>
+      <li><a href="#">Contributors</a></li>
+    </ul>
+  </li>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">DISTROS</a>
+  </li>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">LEGAL</a>
+    <ul>
+      <li><a href="#">Brand Guidelines</a></li>
+      <li><a href="#">License</a></li>
+    </ul>
+  </li>
+  <li class="submenu-list wide">
+    <a href="#" class="submenu-title">How is ROS Developed</a>
+  </li>
+  <li class="submenu-list">
+    <a href="#" class="submenu-title">Contact</a>
+  </li>
+</ul>
+
+  </div>
+  -->
+</header>
+
+    
+    <div id="main">
+      
+<div class="blog-wrapper">
+  <div class="blog-grid-main">
+    
+
+
+<div class="bg-photo" style="background-image: url('/imgs/quadcopter.png')">
+
+  <h1>ROS Blog</h1>
+  
+  <h2>Checkout the latest from ROS</h2>
+  
+</div>
+
+    <div class="blog-post-main">
+      
+        <h2><a href="/blog/noetic-eol/">Upcoming ROS 1 End of Life</a></h2>
+        
+        <h3>12/16/2024, Kat Scott</h3>
+        <h2 id="ros-1-noetic-ninjemys-goes-end-of-life-2025-05-31">ROS 1 Noetic Ninjemys goes End-of-Life 2025-05-31</h2>
+
+<p>If you have been directed to this page it was probably because you saw one of the notifications we slipped into the source code for ROS Noetic or RViz. 
+We’ve heard from a number of users that they were unaware that ROS 1 Noetic, and consequently all of 1, <a href="https://wiki.ros.org/Distributions">will go end-of-life on <strong>May 31st, 2025</strong></a>.
+We’re sorry that we interrupted your work, but it is crucial that you know what happens once ROS 1 goes end-of-life.</p>
+
+<p>ROS Noetic Ninjemys, the <a href="https://www.openrobotics.org/blog/2020/5/23/noetic-ninjemys-the-last-official-ros-1-release">last ROS 1 release</a>, will reach End of Life in May 2025.
+Over the past five years we focused our efforts on making ROS 2 a world class framework for professional robot development, and our user community seems to agree.
+According to September 2024 download data from our servers ROS 2 downloads now make up almost 80% of all ROS downloads.
+We’ve now seen ROS 2 used successfully in production by a large number of companies, across dozens of industries, and we think it is time for the last remaining ROS users to make the switch.</p>
+
+<p><img src="/imgs/distro-download-data.png" alt="ROS Downloads by Distro, September 2024" style="width:600px;align:center" /></p>
+
+<h3 id="what-does-end-of-life-mean">What Does End-of-Life Mean?</h3>
+
+<p>End of life for ROS Noetic means that the ROS team will no longer support ROS 1. 
+After May 31st of 2025, the ROS team will no longer provide the following for ROS 1:</p>
+
+<ul>
+  <li>New features or capabilities</li>
+  <li>Security updates</li>
+  <li>Bug fixes, patches or support</li>
+  <li>Updated binaries</li>
+</ul>
+
+<p><strong>After May 31st, 2025 ROS 1 Noetic users may find themselves exposed to un-patched security vulnerabilities and bugs, with few avenues of support short of fixing these issues themselves and recompiling Noetic from source.</strong>
+However, this isn’t an outright emergency, it is good to keep mind what won’t change after May of 2025.</p>
+
+<p>ROS 1 going end of life does <strong>not</strong> mean:</p>
+
+<ul>
+  <li><em>ROS 1 binaries will suddenly disappear.</em>
+    <ul>
+      <li>ROS 1 binaries will continue to be hosted on <code>packages.ros.org</code></li>
+    </ul>
+  </li>
+  <li><em>ROS 1 projects will suddenly stop working on May 31st.</em>
+    <ul>
+      <li>ROS 1 will continue to work, as it does today.</li>
+    </ul>
+  </li>
+  <li><em>Users must stop using ROS 1 immediately</em>,
+    <ul>
+      <li>ROS 1 will continue to work, but you should have migration plan as soon as possible.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="ros-2-migration-options">ROS 2 Migration Options</h3>
+
+<p><strong>If you are still using ROS 1 it is time to consider switching to ROS 2 Humble Hawksbill (<a href="https://docs.ros.org/en/humble/How-To-Guides/Migrating-from-ROS1.html">migration guide</a>) or ROS 2 Jazzy Jalisco (<a href="https://docs.ros.org/en/jazzy/How-To-Guides/Migrating-from-ROS1.html">migration guide</a>).</strong>
+Which distro you choose as your migration target is going to depend on the complexity of your ROS 1 system.
+This <a href="https://github.com/osrf/ros2-porting-heuristics">migration heuristic tool</a> can help you estimate the complexity of migrating your project to ROS 2.
+If you have a smaller ROS 1 project, or a reasonably de-coupled workspace, it is most likely that you can migrate to ROS 2 Jazzy Jalisco directly.
+The ROS community has produced a number of migration tools which you may find helpful, including this migration tool from <a href="https://github.com/awslabs/ros2-migration-tools">AWS Labs</a>, and this migration tool from ROS maintainer <a href="https://github.com/DLu/roscompile/tree/main/magical_ros2_conversion_tool">David Lu!</a></p>
+
+<p>If your ROS 1 system is tightly coupled, has a number of un-ported dependencies, or is reasonably complex, you may want to take advantage of the <a href="https://github.com/ros2/ros1_bridge">ROS 1 to ROS 2 Bridge</a>.
+The ROS 1 to ROS 2 Bridge performs automated translation between major ROS versions and should allow you to migrate your project one package at a time. 
+The ROS 1 to ROS 2 Bridge was intended to only support ROS 2 distros prior to and including ROS 2 Foxy, and due to operating system constraints it is no longer fully supported by the current ROS 2 releases. 
+However, with a little bit of work, it is still possible to use the ROS 1 / ROS 2 bridge with Noetic and a current ROS 2 distro. 
+Users can either compile ROS 2 Humble from source for Ubuntu 20.04, <a href="https://www.ros.org/reps/rep-2000.html#humble-hawksbill-may-2022-may-2027">which has Tier 3 support</a>, or use <a href="https://ros.packages.techfak.net/">ROS-O binaries</a> to build their packages on a newer version of Ubuntu (i.e. 22.04 of 24.04).</p>
+
+<h4 id="other-migration-options">Other Migration Options</h4>
+
+<p>We highly recommend you migrate your ROS 1 project to ROS 2 as soon as possible.
+Most users have found the migration process less difficult than they initially expected. 
+If you simply can’t migrate your ROS 1 project right now, you do have a few options,
+<strong>however, none of these solutions are officially supported, and we can’t speak to their long-term robustness.</strong></p>
+
+<ul>
+  <li>Canonical, offers <a href="https://ubuntu.com/robotics/docs/tutorial-ros-esm">extended security maintenance</a> for a number of ROS 1 host operating systems for a fee.</li>
+  <li><a href="https://github.com/ros-o/ros-o">ROS-O</a> is a volunteer run effort to extend the support lifetime of ROS 1 projects.</li>
+  <li>If you simply need an extra set of hands to help with your migration you are welcome to use our <a href="https://discourse.ros.org/c/jobs/15">jobs board</a> on ROS Discourse to find some help.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="whats-new-in-ros-2">What’s New in ROS 2?</h3>
+
+<p>Before you begin your ROS migration journey, we recommend you read up on some of the new and improved features in ROS 2. 
+We’ve put together a collection of resources that outline some of the major changes in ROS 2. 
+<strong>Almost all of these resources are readily available as part of our <a href="https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1.html">migration guide in the ROS 2 documentation</a>.</strong>
+While understanding what has and hasn’t changed between ROS 1 and ROS 2 can make the migration process go a lot smoother, it really isn’t necessary to get started!
+There’s a lot to love in ROS 2, and we think you’ll find some of the new ROS 2 features make for a much better user experience.</p>
+
+<p><strong>Changes to the ROS API</strong></p>
+
+<p>Most of the ROS 2 API should look familiar to ROS 1 users with a few notable exceptions. 
+Where things have changed, they have changed to address shortcomings in ROS 1. 
+The exciting thing about ROS 2 is that it has given us the opportunity to address a number of user complaints about ROS 1! 
+The list below outlines some of the larger changes to the ROS API found in version 2.</p>
+
+<ul>
+  <li>Nodelets in ROS 1 have been replaced with ROS 2’s <a href="https://docs.ros.org/en/rolling/Tutorials/Intermediate/Composition.html">composable nodes concept</a>. ROS users can now compose their processing routines into the same process space using both compile time and run time composition.</li>
+  <li>Parameters in ROS 2 now support namespacing, and there is an improved interface for loading, saving, and reconfiguring your parameters. This <a href="https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1/Migrating-Parameters.html">migration guide</a> provides guidance on how to migrate your parameter set.</li>
+  <li>ROS 2 supports three different types of launch files: <a href="https://docs.ros.org/en/rolling/Tutorials/Intermediate/Launch/Creating-Launch-Files.html">YAML, Python, and XML</a>. There is a complete guide to <a href="https://docs.ros.org/en/rolling/How-To-Guides/Migrating-from-ROS1/Migrating-Launch-Files.html">migrating your ROS 1 launch files</a> available on docs.ros.org.</li>
+  <li>The ROS 2 <a href="https://foxglove.dev/blog/how-to-use-ros2-lifecycle-nodes">lifecycle node API</a> has standardized the lifecycle of ROS nodes. The process of starting and stopping ROS nodes is now much more robust. We recommend taking advantage of this feature when migrating your ROS 1 project.</li>
+  <li>ROSBag performance has improved significantly in ROS 2, and the new ROS 2 type adaptation makes it even easier to share data using ROS Bags. As of ROS 2 Humble <a href="https://mcap.dev/guides">MCap</a> is now the standard ROSBag data format.</li>
+  <li>If you are looking for examples of common ROS 2 design patterns the <a href="https://github.com/mikeferguson/ros2_cookbook">ROS 2 Cookbook</a> offers code samples for common ROS 2 tasks.</li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>ROS Development</strong></p>
+
+<p>The ROS build and command line tools have also gotten a face lift in ROS 2.
+While there have been a few changes, the way you build and run your ROS application should feel familiar. All of our new tools are self-documenting, and you can learn a lot by simply passing them the <code>--help</code> option.</p>
+
+<ul>
+  <li>The <a href="https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">ROS command line interface (CLI)</a> syntax has changed slightly in ROS 2. All your favorite commands are still there, but the syntax has been modernized.</li>
+  <li>ROS 2 uses <a href="https://colcon.readthedocs.io/en/released/user/quick-start.html">Colcon</a>, rather than <code>catkin build</code> or <code>catkin_make</code>, as the build tool. The names have changed, but most of your favorite functionality is still there.</li>
+  <li><a href="https://github.com/ament">Ament</a> is a collection of <a href="https://docs.ros.org/en/rolling/Concepts/Advanced/About-Build-System.html">ROS build tool helper functions</a>. Ament wraps common build tasks and exposes them to Colcon and ROS.</li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>The ROS Middleware Layer (RMW)</strong></p>
+
+<p>ROS 1’s bespoke publish / subscribe layer was very simple to use, but also difficult to configure for more complex use cases. 
+In ROS 2 users have a choice about which protocol they would like to use to move data across their network.
+This new abstraction layer is called a ROS Middleware Layer (RMW), and users can pick the <a href="https://docs.ros.org/en/rolling/Concepts/Intermediate/About-Different-Middleware-Vendors.html">vendor</a> that best supports their application.
+<strong>If you don’t know which RMW is right for you, we suggest you use the default RMW that ships with your distro</strong>, however ROS 2 users now have multiple official and unofficial ROS RMWs to choose from, including:</p>
+
+<ul>
+  <li>DDS-based RMWs like <a href="https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/ros2_configure.html">Fast-DDS</a> and <a href="https://cyclonedds.io/docs/cyclonedds/latest/about_dds/eclipse_cyclone_dds.html">Cyclone DDS</a>.
+    <ul>
+      <li>We recommend new DDS users read our <a href="https://docs.ros.org/en/jazzy/How-To-Guides/DDS-tuning.html">tuning guide</a> and familiarize themselves with utilities like the <a href="https://fast-dds.docs.eprosima.com/en/latest/fastdds/ros2/discovery_server/ros2_discovery_server.html">Fast-DDS Discovery Server</a> when using WiFi networks.</li>
+    </ul>
+  </li>
+  <li>A preview of <a href="https://github.com/ros2/rmw_zenoh">RMW-Zenoh</a> is available in ROS 2 Jazzy, and binaries for the new RMW <a href="https://discourse.ros.org/t/rmw-zenoh-binaries-for-rolling-jazzy-and-humble/41395">are now available via apt</a>.</li>
+  <li>Other community supported and proprietary RMWs are also available including <a href="https://github.com/ros2/rmw_connextdds">RTI Connext</a>, <a href="https://discourse.ros.org/t/rmw-iceoryx2-v0-1-0-release/40996">IceOryx2</a>, <a href="https://github.com/ros2/rmw_gurumdds">Gurum-DDS</a> and even, <a href="https://discourse.ros.org/t/ros-2-over-email-rmw-email-an-rmw-implementation/22360">e-mail</a>.</li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>Related Projects</strong></p>
+
+<p>Most of the major ROS packages and projects have already upgraded to ROS 2. 
+Our sister project, Gazebo, is also in the process of migrating to its second major release, and many ROS users are also making the switch to a modern version of Gazebo.
+You don’t necessarily need to upgrade both ROS and Gazebo at the same time, but it is important to note that <a href="https://community.gazebosim.org/t/gazebo-classic-end-of-life/2563">Gazebo Classic reached end of life in 2025</a> too.
+Other related ROS projects like MoveIt, Nav2, and ros2_control also have new and improved releases that are production-ready for your robotics application!</p>
+
+<ul>
+  <li>We recommend Gazebo users <a href="https://gazebosim.org/docs/harmonic/gazebo_classic_migration/">migrate their Gazebo simulation to a modern version of Gazebo</a>.
+    <ul>
+      <li>Starting with ROS 2 Iron Irwini, binaries for modern Gazebo are readily available, while in older versions modern Gazebo and ROS 2 are supported through source compilation (e.g. Humble and Fortress). ROS 2 / modern Gazebo integration is accomplished using the <a href="https://github.com/gazebosim/ros_gz"><code>ros_gz</code> repository</a>.</li>
+    </ul>
+  </li>
+  <li>If your robot supports custom hardware, it may be worth investigating <a href="https://micro.ros.org/">micro-ROS</a>.</li>
+  <li>MoveIt2, the latest version of MoveIt, has a complete <a href="https://moveit.picknik.ai/main/api/html/index.html">migration guide available in their official documentation.</a></li>
+  <li>Nav2, the ROS 2 navigation framework, has <a href="https://docs.nav2.org/index.html">complete documentation available for new users</a>.</li>
+  <li><a href="https://control.ros.org/master/doc/getting_started/getting_started.html">ROS 2 Control</a> is the new ROS 2 control framework with extensive documentation.</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="where-to-find-help">Where To Find Help</h3>
+
+<p>You don’t just have to take our word for it, a number of professional ROS users have already made the jump to ROS 2 and written about their ROS migration experience. 
+We’ve collected a few relevant blog posts below:</p>
+
+<ul>
+  <li><a href="https://medium.com/husarion-blog/porting-a-project-from-ros1-to-ros2-our-experience-ef27b1748915">Husarion Blog on ROS 2 Migration</a></li>
+  <li><a href="https://discourse.ros.org/t/migrating-turtlebot-2-to-ros-2/36225">ROS 2 Migration Guide using the TurtleBot 2</a></li>
+  <li><a href="https://roboticsbackend.com/migrate-ros-project-from-ros1-to-ros2/">Robotics Back End Migration Guide</a></li>
+  <li><a href="https://industrial-training-master.readthedocs.io/en/melodic/_source/session7/ROS1-to-ROS2-porting.html">ROS Industrial Migration Guide</a></li>
+</ul>
+
+<p>At ROSCon 2024, our annual ROS developers conference, an overwhelming majority of the talks were about ROS 2. 
+Below you find a collection of ROSCon talks that directly cover the process of migrating from ROS 1 to ROS 2.</p>
+
+<ul>
+  <li><a href="https://vimeo.com/showcase/9954564/video/767140113">ROSCon 2022: “Migrating from ROS1 to ROS2 - choosing the right bridge”</a></li>
+  <li><a href="https://vimeo.com/378682692">ROSCon 2019: “Migrating a large ROS 1 codebase to ROS 2”</a></li>
+  <li><a href="https://vimeo.com/378682068">ROSCon 2019: “Migrating to ROS 2: Advice from Rover Robotics”</a></li>
+  <li><a href="https://vimeo.com/379127737">ROSCon 2019: “Bridging Your Transitions from ROS 1 to ROS 2”</a></li>
+</ul>
+
+<p>Robotics is a tough field but the ROS community is always happy to help!
+Below you’ll find a list of community resources that can support you in migrating your ROS system.
+If you run into migration problem that you just can’t solve feel free to swing by our Discord server for some advice.</p>
+
+<ul>
+  <li><a href="https://discourse.ros.org/">Discourse</a> – our ROS discussion forum.</li>
+  <li><a href="https://openrobotics.zulipchat.com/">ROS Zulip</a> – our live community and developer discussion server.</li>
+  <li><a href="https://robotics.stackexchange.com/">Robotics Stack Exchange</a> – our preferred Q&amp;A forum.</li>
+  <li><a href="https://docs.ros.org/">Official ROS 2 Documentation</a> – our official ROS documentation.</li>
+  <li><a href="https://docs.ros.org/en/rolling/p/">ROS Package API reference</a> – API documentation for ROS package.</li>
+  <li><a href="https://index.ros.org/">ROS Package Index</a> – our list of ROS packages and binaries of their source code.</li>
+  <li><a href="https://hub.docker.com/_/ros/">ROS on Docker Hub</a> – a complete collection of ROS Docker containers for every ROS distro.</li>
+</ul>
+
+        <br />
+        <br />
+      
+        <h2><a href="/blog/discord/">New Open Robotics Discord Server</a></h2>
+        
+        <h3>03/14/2023, Kat Scott</h3>
+        
+<h1 id="new-open-robotics-discord-server">New Open Robotics Discord Server</h1>
+
+<p>As part of the growth of OSRF as a fully-independent entity, we’re reviewing all
+the services we do provide or should provide to the community for our projects -
+ROS, Gazebo, Open-RMF, and, although most don’t realize it, the infrastructure
+that supports them. Amongst those services are those used for communication by
+the community of users of the above projects. To support those members of the
+community who prefer a real-time chat-based method, OSRF has decided to launch
+an official Discord server.</p>
+
+<p>This server contains spaces to talk about all OSRF projects, as well as talk
+about OSRF in general. In general, we hope it will be used for such things as
+the following.</p>
+
+<ul>
+  <li>
+    <p>Talking about OSRF projects (ROS, Gazebo, Open-RMF, and Infrastructure).</p>
+  </li>
+  <li>
+    <p>Informally discussing ideas for improvements before taking the result of those
+discussions to a more long-form medium such as GitHub issues, PRs, and
+Discourse.</p>
+  </li>
+  <li>
+    <p>Informally proposing how to implement or fix an issue from GitHub, such as
+asking if how you want to fix a bug would be a good way to do it, before making
+a PR.</p>
+  </li>
+  <li>
+    <p>Chatting to others about your cool robot project.</p>
+  </li>
+  <li>
+    <p>Organizing community events, both in your area and online.</p>
+  </li>
+</ul>
+
+<p><a href="https://discourse.ros.org/t/announcing-the-official-osrf-discord-server/30236">For more information and a link to join the Discord server</a>, see this post on the
+ROS Discourse.</p>
+
+        <br />
+        <br />
+      
+        <h2><a href="/blog/media/">ROS Media and Visual Assets</a></h2>
+        
+        <h3>01/14/2022, Katherine Scott</h3>
+        <h2 id="looking-for-a-ros-image">Looking for a ROS Image?</h2>
+
+<p>We provide a wide variety of visual assets that the ROS community can use for their own projects and events. Most of the images are provided under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. The ROS distribution images and illustrations were created by San Francisco based illustrator <a href="https://www.joshuaellingson.com/">Joshua Ellingson</a></p>
+
+<p>High quality vector files of the  ROS “nine dot” Logo can be found in the <a href="/imgs/ROSPressKit.zip">ROS Press Kit and Logos</a>. Stylistic usage information for the ROS name and nine dot logo can be found in the <a href="/imgs/TrademarkRulesAndGuidelines2022.pdf">ROS Brand Guide</a>.</p>
+
+<h2 id="ros-trademark-rules-and-guidelines">ROS Trademark Rules and Guidelines</h2>
+<p>The “ROS” name, the “Nine Dots” ROS logo, and other ROS trademarks are property of Open Source Robotics Foundation, Inc. (“OSRF” or <a href="http://www.openrobotics.org">“Open Robotics”</a>).</p>
+
+<p>Below are the relevant agreements, rules, and guidelines on displaying the ROS trademarks, which may be updated from time to time. Use of any ROS trademark must be in accordance with these Rules and Guidelines or separate agreement between you and Open Robotics.</p>
+
+<h2 id="trademark-use">Trademark Use</h2>
+<p>Subject to compliance with these Rules and Guidelines, you may use the “ROS” name or the “Nine Dots” ROS logo to indicate your implementation of the ROS platform as set forth in these Rules and Guidelines. All other uses of the ROS trademarks must be expressly approved in writing by Open Robotics. To inquire about approval to use the ROS trademarks or to submit your marketing for review, please contact info@openrobotics.org.</p>
+
+<p>Any and all use of the “ROS” name, the “Nine Dots” ROS logo, and other ROS trademarks inures to the benefit of Open Robotics. You agree not to do anything inconsistent with Open Robotics’ ownership of these trademarks, including without limitation seeking registration of any mark, domain name, or social media name/handle comprised of or incorporating the “ROS” name, the “Nine Dots” ROS logo, or any other ROS trademarks. You likewise agree not to make any use of the ROS trademarks that is likely to confuse or mislead consumers with respect to any relationship with Open Robotics; and you agree not to make any use of the ROS trademarks that is likely to harm the reputation and goodwill built up in the marks. You acknowledge and agree that any and all licenses or permissions to use any ROS trademarks are limited, personal, non-transferable, non-sublicensable, and revocable. Open Robotics may revoke any such licenses or permissions in its sole and absolute discretion.</p>
+
+<p>Fully updated copyright information for the ROS logos can be found in our <a href="/imgs/TrademarkRulesAndGuidelines2022.pdf">ROS Trademark Guide</a>, while styling recommendations can be found in our <a href="/imgs/ROSBrandGuide.pdf">ROS Brand Guide</a>.</p>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+  <li><a href="https://www.flickr.com/photos/willowgarage/albums/72157624356302313">ROS Illustrations</a></li>
+  <li><a href="https://github.com/ros-infrastructure/artwork/tree/master/distributions">ROS Distro Logos</a></li>
+  <li><a href="https://github.com/ros-infrastructure/artwork/tree/master/orgunits">ROS Org Units</a></li>
+  <li><a href="/imgs/ROSBrandGuide.pdf">ROS Brand Guide</a></li>
+  <li><a href="/imgs/TrademarkRulesAndGuidelines2022.pdf">ROS Trademark Guide 2022</a></li>
+  <li><a href="/imgs/ROSPressKit.zip">ROS Press Kit and Logos</a></li>
+</ul>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+
+
+        <br />
+        <br />
+      
+        <h2><a href="/blog/2021-06-28-test/">Test</a></h2>
+        
+        <h3>06/28/2021</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <br />
+        <br />
+      
+        <h2><a href="/blog/2021-06-26-new-blog-post/">New blog post</a></h2>
+        
+        <h3>06/26/2021, Jane Doe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <br />
+        <br />
+      
+      <div class="blog-post-main--archive">
+        <a class="blog-post-main--archive__link" href="/blog/archive">ROS Blog Archive</a>
+      </div>
+    </div>
+    <!-- Kat Note -->
+<!-- I have temporarily disabled this feature until we have content. -->
+<!-- I added the nbsp to keep proportionality until we can fill it up. -->
+
+<div class="blog-sidebar">
+  <!-- <h1>Articles</h1> -->
+  
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/noetic-eol/">Upcoming ROS 1 End of Life</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>12/16/2024 - Kat Scott</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/discord/">New Open Robotics Discord Server</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>03/14/2023 - Kat Scott</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/media/">ROS Media and Visual Assets</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>01/14/2022 - Katherine Scott</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/2021-06-28-test/">Test</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>06/28/2021</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/2021-06-26-new-blog-post/">New blog post</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>06/26/2021 - Jane Doe</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/new-blog-post/">Other New blog post</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>06/26/2021 - Josefina Doe</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/why-ros/">Why ROS?</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>06/15/2021 - Katherine Scott</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+
+  <div class="recent-post">
+    &nbsp
+  </div>
+  
+    <!-- <div class="recent-post"> -->
+    <!--   <div class="recent-post-title"> -->
+    <!--     <h2><a href="/blog/getting-started/">Getting Started</a></h2> -->
+    <!--   </div> -->
+    <!--   <div class="recent-post-author-date"> -->
+    <!--      -->
+    <!--     <h3>06/15/2021 - Katherine Scott</h3> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    
+ 
+  <!-- <div class="blog-sidebar--archive"> -->
+  <!--   <a class="blog-sidebar--archive__link" href="/blog/archive/">ROS Blog Archive</a> -->
+  <!-- </div> -->
+  <!-- <div class="newsletter-signup"> -->
+  <!--   <h2>Stay Up-to-Date - Subscribe Now!</h2> -->
+  <!--   <input placeholder="Name" /> -->
+  <!--   <input placeholder="Email Address" /> -->
+  <!--   <button class="btn-subscribe">Subscribe</button> -->
+  <!-- </div> -->
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <footer>
+  <div class="footer-main">
+    <img src="/imgs/logo-white.png" class="logo" />
+    <div class="footer-menu">
+      <ul>
+        <li class="link-home"><a href="/">Home</a></li>
+	<!-- <li><a href="/blog/about">About</a></li> -->
+	<li><a href="/blog/why-ros">Why ROS?</a></li>
+	<li><a href="/blog/getting-started/#">Getting Started</a></li>
+	<li><a href="/blog/community">Community</a></li>
+	<li><a href="/blog/ecosystem">Ecosystem</a></li>
+      </ul>
+    </div>
+    <div class="footer-submenu-mob">
+      <ul>
+        <li><a href="https://robotics.stackexchange.com/">Q&A</a></li>
+        <li><a href="http://discourse.ros.org">Forum</a></li>
+        <li><a href="http://index.ros.org">Packages</a></li>
+	<li><a href="http://docs.ros.org">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-sub">
+    <div class="footer-sub-menu">
+      <ul>
+	<li><a href="/blog/media">media</a></li>
+        <li><a href="https://robotics.stackexchange.com/">Q&A</a></li>
+        <li><a href="http://discourse.ros.org">Forum</a></li>
+        <li><a href="http://index.ros.org">Packages</a></li>
+        <li><a href="http://roscon.ros.org">ROSCon</a></li>
+	<li><a href="http://docs.ros.org">Documentation</a></li>
+	<li><a href="https://openrobotics.zulipchat.com/">Zulip</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p>
+	Brought to you by <a href="https://www.openrobotics.org">Open Robotics</a> |
+	        licensed under
+        <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attributions 3.0</a> | ©2026 <a href="https://www.openrobotics.org">Open Robotics</a>
+      </p>
+    </div>
+  </div>
+  <script src="/javascript/owlcarousel/jquery.min.js"></script>
+  <script src="/javascript/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#video-carousel").owlCarousel({
+        items: 1,
+        nav: true,
+        center: true,
+        stagePadding: 10,
+        videoWidth: 500,
+        videoHeight: 280,
+        merge: false,
+        loop: true,
+        margin: 0,
+        lazyLoad: false,
+        center: true,
+        responsive: {
+          500: {
+            items: 1
+          },
+          501: {
+            items: 3
+          },
+          1200: {
+            items: 5
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#support-carousel").owlCarousel({
+        items: 3,
+        nav: false,
+        center: true,
+        merge: false,
+        stagePadding: 0,
+        padding: 0,
+        loop: true,
+        rewind: true,
+        lazyLoad: false,
+        responsive: {
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#blog-image-slider").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        dots: false,
+        center: true,
+        padding: 20,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#description-image-slider").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        dots: false,
+        center: true,
+        padding: 20,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</footer>
+
+  </body>
+</html>
+

@@ -1,0 +1,178 @@
+##### TITLE: Ros2probe: observe ROS 2 traffic without the probe effect (swap ros2 -> rp)
+created: 2026-06-12T01:58:06.813Z
+REPLIES: 7
+
+--- [2026-06-12] sanghoon_lee ---
+ros2probe is a drop-in replacement for rosbag2 and ros2 topic that does not perturb the system it observes. It records and monitors ROS 2 traffic from outside the DDS domain. No extra subscriber, no observer-induced drops, far less CPU and memory. It reports exactly the loss the real subscriber saw, and the CLI mirrors ROS 2, so you just swap ros2 for rp . 
+
+ Code · Paper (arXiv) · Project page 
+ concept architecture 1280×736 102 KB 
+ Why this exists 
+ Every standard observer ( rosbag2 , ros2 topic echo / hz , the ros2 daemon , 
+DDS vendor monitors) sees your data by subscribing. That adds a DataReader, the 
+publisher sends an extra copy, and near link saturation that copy steals 
+bandwidth from the real subscriber. The observer also reads a different copy, so 
+the loss it reports is not the loss your subscriber actually experienced. This 
+is structural to DDS pub/sub, not a bug in any one tool. 
+ What ros2probe does differently 
+
+ Passive eBPF wire tap. Reads a kernel copy of RTPS off the wire. 
+ Never joins the domain. No participant, no DataReader, nothing added to the wire. 
+ Reads the same packets the subscriber gets. The loss and latency it reports match what the subscriber actually saw (recall 1.0). 
+ Full reconstruction in userspace. Topic graph, per-topic metrics, and message streams, independent of the DDS vendor. 
+
+ Results on real hardware 
+ 3 platforms (laptop, Jetson, Raspberry Pi), 2 DDS implementations (Fast DDS, Cyclone DDS), 7 workloads, wired and wireless, two QoS settings. 
+
+ ros2probe 
+ existing ros2 tools 
+
+ Loss it causes on the subscriber (recording the full near-GbE workload) 
+ 0% 
+ up to 75.5% (rosbag2) 
+
+ Loss it reports vs what the subscriber saw 
+ exact, recall 1.0 
+ 0.09 (rosbag2 at 10% loss) 
+
+ Discovery graph perturbation 
+ within 0.5% 
+ up to 2.6x inflation 
+
+ Observer CPU 
+ up to 7x lower 
+ baseline 
+
+ Observer memory 
+ up to 28x lower (1.7 MB vs ~47 MB) 
+ baseline 
+
+ exp2_results 1920×1431 227 KB 
+ On a Raspberry Pi 4B, ros2 topic hz saturates a CPU core while ros2probe stays under 30%. 
+ Usage. You already know the commands 
+ Install once, then replace ros2 with rp : 
+
+[CODE]ros2 topic hz /scan -> rp topic hz /scan
+ros2 bag record /scan -> rp bag record /scan
+
+[/CODE]
+
+ Recordings are written as MCAP and replay with ros2 bag play . Scripts and CI 
+that parse hz output keep working unchanged. 
+ ros2probe also ships a GUI ( rp gui ) with a live ROS graph, a per-topic monitor, and an MCAP recorder. 
+ dashboard 1849×1054 184 KB 
+ topic-monitor2 1851×1053 182 KB 
+ bag-recorder1 1850×1054 111 KB 
+ Status 
+
+ Works today on RTPS-based DDS. Tested on Fast DDS and Cyclone DDS. 
+ Shared-memory (SHM) transport is a structural limit, not a blind spot. The 
+topic graph is still recovered passively from discovery on the network, but 
+SHM payloads never reach the wire, so observing them falls back to a 
+short-lived, namespace-isolated shadow subscriber that joins the domain. For 
+those topics ros2probe still works, but gives up its probe-effect-free 
+guarantee. Network-transported topics keep the full benefit. 
+ Zenoh (rmw_zenoh) uses a different wire protocol and is planned. RViz 
+integration is on the roadmap. 
+
+ Links 
+
+ Project page (more figures and experiment plots): ros2probe · Non-intrusive Observability for ROS 2 
+ Code: GitHub - csi-dgist/ros2probe: Host-level observability for ROS 2 middleware traffic, without creating any ROS 2 subscriptions. · GitHub 
+ Paper (arXiv): [2606.10746] ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware 
+
+ Background writeup on LinkedIn 
+
+ Feedback, issues, and real use cases are very welcome. 
+If you are curious about my other work, see https://hun0130.github.io/ .
+
+--- [2026-06-12] chfritz ---
+sanghoon_lee: 
+
+ Passive eBPF wire tap 
+
+ That’s such a great idea! 
+ FYI, @pablothepenguin , seems relevant to your ros_tap tool.
+
+--- [2026-06-12] Michal_Faferek ---
+nice work, the shadow subscriber trick is really clever! 
+ 1 thing worth fixing though: the README says the filter attaches to non-loopback interfaces only and that SHM-only topics are excluded from recording, but from what I see the code always captures on lo and spawns the shadow sub for SHM topics, so single-host actually works better than the README suggests, right? 
+ I’d like to try the passive hz/delay metrics as an input for health monitoring in ros2_medkit , where single-host is the common case 
+ @sanghoon_lee I will report back once we’ve given it a proper test
+
+--- [2026-06-15] sanghoon_lee ---
+Thanks for the kind words, and great catch on the README. You’re right, the code does capture on lo and spawns the shadow sub for SHM topics, so single-host works better than the docs claim. I’ll fix it to match the actual behavior. 
+ The ros2_medkit idea sounds really interesting. Using the passive hz/delay metrics as a health-monitoring input is exactly the kind of use case I was hoping people would find. Please do give it a spin and let me know how it goes, and feel free to throw any rough edges or feature requests my way. Looking forward to your report!
+
+--- [2026-06-15] sanghoon_lee ---
+Thanks, that means a lot! And thanks for the pointer to ros_tap . I went and read through it, and I think they’re actually after fairly different things. 
+ From what I can tell, ros_tap joins the DDS network as a CycloneDDS participant and subscribes to stream telemetry (JSONL to stdout, disk, or S3), which is a clean fit for zero-config fleet capture from any machine. ros2probe goes the opposite direction and sits below the middleware, reading a kernel copy of the RTPS packets via eBPF, so it never joins the graph at all. That no-participant part is really the whole point for us, since adding a subscriber is exactly the probe effect we’re trying to avoid. 
+ So different layer and different goal, but I appreciate the connection.
+
+--- [2026-06-15] chfritz ---
+sanghoon_lee: 
+
+ That no-participant part is really the whole point for us, since adding a subscriber is exactly the probe effect we’re trying to avoid. 
+
+ Yes, I know. And I think that’s the better approach for the recording ros_tap aims to do as well, so thought I Pablo might be interested.
+
+--- [2026-06-20] zc_Liu ---
+This is excellent work. The “observer effect” problem in ROS 2 tooling is very real, especially near bandwidth or CPU saturation. A non-intrusive RTPS/eBPF-level recorder is a very valuable layer. 
+ One thought: this seems highly complementary to a different class of runtime assurance tools that operate above transport-level observability. ros2probe answers questions like: 
+
+[CODE]Did the real subscriber receive the packet?
+Was there DDS/RTPS loss?
+Did the observer perturb the graph or add load?
+What latency/loss did the subscriber actually see?
+[/CODE]
+
+ There is another failure plane where the transport can be perfectly healthy, but the control intent is no longer semantically or physically healthy . 
+ For example, in PX4 Offboard autonomy, the network may deliver every /fmu/in/trajectory_setpoint packet correctly, but the upstream planner / VIO / perception stack may be delayed, bursty, or re-emitting setpoints that are stale relative to the current vehicle state. In that case, a transport-level probe can correctly report “delivery is fine,” while the autonomy stack still needs a boundary-level check: 
+
+[CODE]Is the setpoint stream fresh?
+Is it jittered?
+Is it consistent with the current Offboard mode?
+Is the vehicle response physically matching the intent stream?
+[/CODE]
+
+ I have been experimenting with this complementary layer in a small ROS 2 / PX4 project called AFIO, currently reframing it as Autonomy Flight Integrity Observer . It is a passive Offboard boundary observer that watches: 
+
+[CODE]/fmu/in/trajectory_setpoint
+/fmu/in/offboard_control_mode
+/fmu/out/vehicle_odometry
+[/CODE]
+
+ and publishes standard /diagnostics plus CSV labels such as: 
+
+[CODE]setpointAgeMs
+setpointJitterMs
+staleStreams
+positionTrackingResidual
+velocityTrackingResidual
+flightResidual
+dominantCause
+[/CODE]
+
+ In controlled PX4/Gazebo latency-injection tests, the transport can remain syntactically valid while the Offboard boundary transitions from healthy → SETPOINT_JITTER → STALE_STREAM . 
+ I see a very natural integration path: 
+
+[CODE]ros2probe:
+ non-intrusive capture / MCAP / true subscriber-side transport metrics
+
+AFIO:
+ domain-level residual analysis on trajectory_setpoint + odometry + mode semantics
+[/CODE]
+
+ That combination could give both: 
+
+[CODE]Did the subscriber receive the data?
+and
+Was the received data still a valid control intent for the vehicle?
+[/CODE]
+
+ Question: does ros2probe expose reconstructed message payloads and timestamps in a way that downstream tools can consume live or from MCAP? If so, it would be very interesting to run Offboard boundary-integrity analysis on top of ros2probe recordings without adding any extra ROS 2 subscribers. 
+ AFIO repo for reference: https://github.com/ZC502/ai_flight_integrity_observer.git
+
+--- [2026-08-21] lars ---
+Sounds very promising, any chance that this could get integrated into the official repos? @emersonknapp @mjcarroll 
+ Rosbag under ros2 is really an issue if you have many topics.

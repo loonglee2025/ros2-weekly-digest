@@ -1,0 +1,171 @@
+[
+  {
+    "sha": "8fcb5d2327767af3c764b1348a69a9b74c5efd18",
+    "node_id": "C_kwDOCi-gUdoAKDhmY2I1ZDIzMjc3NjdhZjNjNzY0YjEzNDhhNjlhOWI3NGM1ZWZkMTg",
+    "commit": {
+      "author": {
+        "name": "Christian Rauch",
+        "email": "Christian.Rauch@unileoben.ac.at",
+        "date": "2026-08-19T07:45:53Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-19T07:45:53Z"
+      },
+      "message": "Modernize Qt signal-slot connections to use function pointers (#3823)\n\nThis will identify mismatched connections at compile time already.",
+      "tree": {
+        "sha": "bb1c39a73d313b373d4b90b8ed2dfcf05988682e",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/bb1c39a73d313b373d4b90b8ed2dfcf05988682e"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/8fcb5d2327767af3c764b1348a69a9b74c5efd18",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhV8xCRC1aQ7uu5UhlAAA9pEQAJkmtF1yCwD2D6NEZme3OXGm\nwfkSN+Czq3z839Fh7zPYy28rsNBa0+NgSo0ikLfLtjVtAIq0kgoVpuvCwK/iAnGM\nNV2JuOsiABD+LDbbJCzyo67mBPqvvqqx2MK9OX57tdFg4tubRXdFFjuIN67SuFAq\nZ0a2ert7QTwktriPTLoLOA0UcryuZaHfnC+5MNwyQ3/EeFKCLEbY//oLTm3Rv+c8\ndGN6v0BgWZc4qqpDRIjs6jBrnvt7LO7DGaFPOfmYRb//LDFeRYU6UdqUzaJGmNEa\nyy0xojc9LdjaOapHQ9O0ykwblBuc9KbGl0J6/lZRBx4leMadW79S99ZENl5eVwGk\nbepi5/64neC7n2jzy+FWhhEUC3dplYw07YuhBeNOYIFcxzh1MPDZrx7CFfOTMDnr\nE6mxN6n3u/Kma10qzrYgsnHF6u86xGyfr9zvsvWzZ7AA0wZp91JwBS6iBVXChshb\nyqtkmr9PwYTm4VUP0WWNrF6swW1WoUDfbqrYN1gN9TO02q1nWhRvromMUM0C6mxz\n/WE3a3D9aq8Kw51xC8uuFAKpl8BsvmsZhBVXqsPGFVb4GeSUEnLqntxVUORpGQhR\nhy4fEjobcOxL35bkw4Sz61ovjgt39ouk0xtL9KOQfPJD9OoDJsKPzoZseJD+ib1g\n7qJeA0g5SVagNJyYsnEE\n=nSaD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bb1c39a73d313b373d4b90b8ed2dfcf05988682e\nparent 7ae8653055c07016108307423c7557ee0767e7d9\nauthor Christian Rauch <Christian.Rauch@unileoben.ac.at> 1787125553 +0200\ncommitter GitHub <noreply@github.com> 1787125553 +0200\n\nModernize Qt signal-slot connections to use function pointers (#3823)\n\nThis will identify mismatched connections at compile time already.",
+        "verified_at": "2026-08-19T07:45:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/8fcb5d2327767af3c764b1348a69a9b74c5efd18",
+    "html_url": "https://github.com/moveit/moveit2/commit/8fcb5d2327767af3c764b1348a69a9b74c5efd18",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/8fcb5d2327767af3c764b1348a69a9b74c5efd18/comments",
+    "author": {
+      "login": "christian-rauch",
+      "id": 8226248,
+      "node_id": "MDQ6VXNlcjgyMjYyNDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8226248?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christian-rauch",
+      "html_url": "https://github.com/christian-rauch",
+      "followers_url": "https://api.github.com/users/christian-rauch/followers",
+      "following_url": "https://api.github.com/users/christian-rauch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christian-rauch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christian-rauch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christian-rauch/subscriptions",
+      "organizations_url": "https://api.github.com/users/christian-rauch/orgs",
+      "repos_url": "https://api.github.com/users/christian-rauch/repos",
+      "events_url": "https://api.github.com/users/christian-rauch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christian-rauch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7ae8653055c07016108307423c7557ee0767e7d9",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/7ae8653055c07016108307423c7557ee0767e7d9",
+        "html_url": "https://github.com/moveit/moveit2/commit/7ae8653055c07016108307423c7557ee0767e7d9"
+      }
+    ]
+  },
+  {
+    "sha": "7ae8653055c07016108307423c7557ee0767e7d9",
+    "node_id": "C_kwDOCi-gUdoAKDdhZTg2NTMwNTVjMDcwMTYxMDgzMDc0MjNjNzU1N2VlMDc2N2U3ZDk",
+    "commit": {
+      "author": {
+        "name": "Robert Haschke",
+        "email": "rhaschke@users.noreply.github.com",
+        "date": "2026-08-18T11:58:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-18T11:58:44Z"
+      },
+      "message": "Fix CI on Ubuntu 26.04 (#3818)",
+      "tree": {
+        "sha": "9b30c9ffc879cc11311f8d0b29989f20594b9eec",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/9b30c9ffc879cc11311f8d0b29989f20594b9eec"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/7ae8653055c07016108307423c7557ee0767e7d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqhEj0CRC1aQ7uu5UhlAAAyZUQAKVcaWhQZIjMwTqv4nKfYFu6\nlYg/efbx1jSfk7YHSrJJ2vsexnSR6RhC1QosSqv/zrQZxHE4p5jA10Fn8JGsQo4Y\nxnJu16T+K/K9eODQcY5dURI3a438DvdZoY5vDas4z5zMrn9IJv88dQYN0bntm1Uo\nc56fpD2ab+wuQS+VLlCxnKAJ+hsegyj/dtWtBO4a9v42jSGm+LxiUFy/92gKWYh9\npYdpeVeRRQn7jklh1Mn3NE0FwlijbxH7SJSp+UQvK7yIX+HjO/NHnTYm+VKvwkul\niLR80zw9wTRigTRoYBaYENyLlRItu+3Fw9osCp0yuanTT/Jsooet+bYUQ/ieVXFH\nF7+hzGoVvrcz3wPULG7hU/976mt+u+mvbBMR/Jf63Gm8lzg1GTBloNu7BnaaaQOA\nGxNBc4ebR9NuPY+VO2hXiEVPhvqEO0lpyO+gwp8YIGr/07gHWpTNA45TJ1/zUXJX\n6d2m/yVwpbOXihOQDLnQcJsN35gY2tKYJukysDOdfkHdZDP9LSm1V92BM59ZQFns\nY1Rm7lpkNIR7zUgnxoXzzfPohVYT1+zps207pFEC9Xd2vF9SZ/v8KITMXy9OdU+R\n25bv9pxPF3zMb1k0rR+s6zN7msppynFcB7KFaRj0wSns0gzpUuwHfQ6WgaASc4Tq\n6rQR8Eo2ofHfPU9cUz7G\n=O5t9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9b30c9ffc879cc11311f8d0b29989f20594b9eec\nparent 2970a08943ffdbda05b3bf49e4a1b0882923cb51\nparent cf2eb491a82ccb5cbd1005339f67a3ca6a88b2ee\nauthor Robert Haschke <rhaschke@users.noreply.github.com> 1787054324 +0200\ncommitter GitHub <noreply@github.com> 1787054324 +0200\n\nFix CI on Ubuntu 26.04 (#3818)",
+        "verified_at": "2026-08-18T11:58:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/7ae8653055c07016108307423c7557ee0767e7d9",
+    "html_url": "https://github.com/moveit/moveit2/commit/7ae8653055c07016108307423c7557ee0767e7d9",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/7ae8653055c07016108307423c7557ee0767e7d9/comments",
+    "author": {
+      "login": "rhaschke",
+      "id": 5376030,
+      "node_id": "MDQ6VXNlcjUzNzYwMzA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5376030?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhaschke",
+      "html_url": "https://github.com/rhaschke",
+      "followers_url": "https://api.github.com/users/rhaschke/followers",
+      "following_url": "https://api.github.com/users/rhaschke/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhaschke/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhaschke/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhaschke/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhaschke/orgs",
+      "repos_url": "https://api.github.com/users/rhaschke/repos",
+      "events_url": "https://api.github.com/users/rhaschke/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhaschke/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2970a08943ffdbda05b3bf49e4a1b0882923cb51",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/2970a08943ffdbda05b3bf49e4a1b0882923cb51",
+        "html_url": "https://github.com/moveit/moveit2/commit/2970a08943ffdbda05b3bf49e4a1b0882923cb51"
+      },
+      {
+        "sha": "cf2eb491a82ccb5cbd1005339f67a3ca6a88b2ee",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/cf2eb491a82ccb5cbd1005339f67a3ca6a88b2ee",
+        "html_url": "https://github.com/moveit/moveit2/commit/cf2eb491a82ccb5cbd1005339f67a3ca6a88b2ee"
+      }
+    ]
+  }
+]

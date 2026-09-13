@@ -1,0 +1,35 @@
+Title: Check your launch files for common errors: introducing lint_launch - Projects - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/check-your-launch-files-for-common-errors-introducing-lint-launch/57402
+
+Published Time: 2026-08-14T04:40:11+00:00
+
+Markdown Content:
+Hello everyone,
+
+We would like to introduce [lint_launch](https://github.com/woven-by-toyota/lint_launch), a tool meant to check your launch files for common errors without attempting to launch any processes. We originally developed this tool for ROS2 Humble and have been using it internally for a few years. We recently decided to open-source it in the hope that it can be useful to the community.
+
+Features:
+
+1.   Checks your launch files without actually starting them. This can be used CI to ensure that robot-specific launch files remain in a working state. The tool can be used as a standalone CLI application, or integrated as a CMake test.
+2.   Emits a clear error message when an error is found
+
+ i. The original error message that launch would have emitted e.g. a parameter is missing, a node executable is missing etc…
+
+ ii. Additional context about the location of the error: we use a small trick to let you know where exactly in the launch file the error happened. Issues in the launch file are often reported as coming from the launch library itself, or lack context. For example in the case of a missing node executable, this is what `ros2 launch` outputs:
+
+```
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'bar' not found, searching: [list, of, packages]
+```
+
+Whereas `lint_launch` correctly reports where the error occurred, throughout the include chain (if it exists):
+
+```
+[CRITICAL] \[2026-03-05 11:23:44,818\] Failed to process test.launch.py
+    |-> "package 'bar' not found, searching: \[list, of, packages\]" In test.launch.py:6
+        |-> "package 'bar' not found, searching: \[list, of, packages\]"
+```
+
+1.   Enforces some conventions surrounding argument definition and passing. While launch behaves as if every include was a textual include, `lint_launch` enforces a tighter convention, where every used parameter must have been declared upstream in the include chain and explicitly passed down. While this comes down to personal preference, we have found that it promotes better reusability of launch files by being more explicit about the inputs and outputs of each sub-launch file.
+
+We welcome comments, suggestions, and contributions either here on Discourse or in the repository.

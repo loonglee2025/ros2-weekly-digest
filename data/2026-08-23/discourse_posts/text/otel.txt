@@ -1,0 +1,50 @@
+##### TITLE: ROS2 x OpenTelemetry: End‑to‑End Telemetry for Robotics
+created: 2025-10-22T23:26:04.183Z
+REPLIES: 1
+
+--- [2025-10-22] szobov ---
+Hey there, 
+ I’m releasing ros-opentelemetry , a production-grade library that instruments ROS 2 applications with OpenTelemetry for distributed tracing, correlated logs, and metrics — for both C++ and Python nodes. 
+ image 1895×1074 317 KB 
+ Why this matters 
+
+ Follow a task across nodes (services, actions, topics) with connected spans. 
+
+ Correlate logs with trace/span IDs for rapid root-cause analysis. 
+
+ Backend-agnostic: send data to any OTel-compatible stack (e.g., SigNoz; Grafana planned). 
+
+ What’s inside 
+
+ ros_opentelemetry_cpp and ros_opentelemetry_py helpers to bootstrap tracers. 
+
+ ros_opentelemetry_interfaces with a TraceMetadata message to propagate the trace context between nodes. 
+
+ Detailed instructions on how to instrument your ROS2 code. 
+
+ “ Justfile ” commands + Docker setup for a one-command demo environment. 
+
+ Demo 
+The repo includes Just targets to bring up an example with MoveIt2-based C++ node + a Python task producer instrumented with OpenTelemetry and an OTel stack (e.g., SigNoz). 
+
+ just docker-up-telemetry 
+
+ just docker-up-example 
+
+ or run locally with just run-example-locally (rViz). 
+
+ Repo: ROS2 x OpenTelemetry: End‑to‑End Telemetry for Robotics 
+ OpenTelemetry background: opentelemetry.io (traces/logs, language SDKs) 
+ How this relates to existing work 
+
+ Complements ros2_tracing (LTTng-based tracing of ROS 2 internals) by offering vendor-neutral OpenTelemetry export and cross-service propagation for app-level spans. If you already use ros2_tracing , you can keep it for low-level insights and layer OTel for end-to-end visibility. 
+
+ I’m looking forward to your feedback. 
+Additionally, I will be presenting this library at ROSCon DE&FR 2025 , and I would be happy to discuss it in person. 
+ Thanks, 
+Sergei
+
+--- [2026-08-21] proffalken ---
+Hey, great to see this in the community. 
+ I’ve been looking at how to get OTEL running in the ROS2 space for a while now and this is a great help. 
+ Is it still actively being worked on?

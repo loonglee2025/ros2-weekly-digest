@@ -1,0 +1,84 @@
+[
+ {
+  "sha": "64cce1855944ade3a2a9b191b22626a97ac08ddf",
+  "node_id": "C_kwDOATWz_9oAKDY0Y2NlMTg1NTk0NGFkZTNhMmE5YjE5MWIyMjYyNmE5N2FjMDhkZGY",
+  "commit": {
+   "author": {
+    "name": "Carlos Ferreira Gonz\u00e1lez",
+    "email": "carlosferreira@eprosima.com",
+    "date": "2026-08-24T07:12:41Z"
+   },
+   "committer": {
+    "name": "GitHub",
+    "email": "noreply@github.com",
+    "date": "2026-08-24T07:12:41Z"
+   },
+   "message": "Fix TSAN report warnings for interleaved logs (#6468)\n\n* Refs #25574: Fix TSAN report interleaved logs\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Add informative step\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Account for file separation report and consider crashes\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Annotate test name in each TSAN report separated file\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Add real test name and not only executables\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Improve failure message\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Fix SEGV error\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Make manual inspection step always succeed\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n---------\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>",
+   "tree": {
+    "sha": "87da7fa911d8cf8961f0e49feb86642a6aca0e15",
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/87da7fa911d8cf8961f0e49feb86642a6aca0e15"
+   },
+   "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/64cce1855944ade3a2a9b191b22626a97ac08ddf",
+   "comment_count": 0,
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqi+7qCRC1aQ7uu5UhlAAAv9IQAKXYxtnt53gsX0/MI7rxWNPd\nhEqcUT/7xaRFAGsRIGbr83xTRY+MPU7hK8mZRh4ZR9nViOfQJoVtlRAvQkqs+Dr8\nYxyBvqBhx+pPG8fHQYnfcU3Kvkde30dMMlFhEGPOKQmoltWzcSOjUbZ/JNa6wapx\nJp7yYcfhSLMzpKpnZk9JMhPPVEA38EkEu5Mbc7MrgJACm0wOXKqMW8ZpG/24dHJt\nxJUIzRRsMuj2sVN6Q5aKeWXgvoSPr/PkrvrtKLOOtGZlqNrvogS7jvBPPB8HZ+nF\nZowdSQu2PyWVpGYiMAVSLGrGV5MORQfN3ePI1XmOyT0Bo0TOtRcyN2goTbTsjzIe\ngT7cNCQ1SvBvpTOYJ+T/AQqXkultNey01TMIUI+3zrHncIJ2kIa7UAvSxzhpSNvg\njdF0rlZX90tiaSadc/7J7broDxTV36TZEan412x4cFWjeD/rWmU8JD2h0GSS/s+k\nOG3CWAtYvSxuf5jWNCzEDO9NDw4yAnli108qNctuP2GXhvmrvtvRAT84Qt6vCAua\nac3Mvgk6pOEwl+LY8mc6wxfkgIZm2wlWUMNDqfdcHVTfjQLvNmI0w/QLkf5Ta6a+\nKb6+Nh4+Q1mKfqQmxoeH8ATn3+ex7OLYTZxo/LRgTqwPt2Z/dDxioR4reXZ/0UJq\nSe+EMZQWK1Ec12V+UaJ7\n=A0Nu\n-----END PGP SIGNATURE-----\n",
+    "payload": "tree 87da7fa911d8cf8961f0e49feb86642a6aca0e15\nparent 2bad9bcca3c0846671920eef0fe10d4d5ae68ffd\nauthor Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com> 1787555561 +0200\ncommitter GitHub <noreply@github.com> 1787555561 +0200\n\nFix TSAN report warnings for interleaved logs (#6468)\n\n* Refs #25574: Fix TSAN report interleaved logs\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Add informative step\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Account for file separation report and consider crashes\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Annotate test name in each TSAN report separated file\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Add real test name and not only executables\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Improve failure message\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Fix SEGV error\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n* Refs #25574: Make manual inspection step always succeed\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>\n\n---------\n\nSigned-off-by: Carlos Ferreira Gonz\u00e1lez <carlosferreira@eprosima.com>",
+    "verified_at": "2026-08-24T07:12:42Z"
+   }
+  },
+  "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/64cce1855944ade3a2a9b191b22626a97ac08ddf",
+  "html_url": "https://github.com/eProsima/Fast-DDS/commit/64cce1855944ade3a2a9b191b22626a97ac08ddf",
+  "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/64cce1855944ade3a2a9b191b22626a97ac08ddf/comments",
+  "author": {
+   "login": "cferreiragonz",
+   "id": 76408085,
+   "node_id": "MDQ6VXNlcjc2NDA4MDg1",
+   "avatar_url": "https://avatars.githubusercontent.com/u/76408085?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/cferreiragonz",
+   "html_url": "https://github.com/cferreiragonz",
+   "followers_url": "https://api.github.com/users/cferreiragonz/followers",
+   "following_url": "https://api.github.com/users/cferreiragonz/following{/other_user}",
+   "gists_url": "https://api.github.com/users/cferreiragonz/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/cferreiragonz/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/cferreiragonz/subscriptions",
+   "organizations_url": "https://api.github.com/users/cferreiragonz/orgs",
+   "repos_url": "https://api.github.com/users/cferreiragonz/repos",
+   "events_url": "https://api.github.com/users/cferreiragonz/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/cferreiragonz/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "committer": {
+   "login": "web-flow",
+   "id": 19864447,
+   "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/web-flow",
+   "html_url": "https://github.com/web-flow",
+   "followers_url": "https://api.github.com/users/web-flow/followers",
+   "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+   "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+   "organizations_url": "https://api.github.com/users/web-flow/orgs",
+   "repos_url": "https://api.github.com/users/web-flow/repos",
+   "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/web-flow/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "parents": [
+   {
+    "sha": "2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/2bad9bcca3c0846671920eef0fe10d4d5ae68ffd"
+   }
+  ]
+ }
+]

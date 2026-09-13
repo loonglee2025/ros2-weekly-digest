@@ -1,0 +1,116 @@
+Title: [GSoC 2026] Add Support for Mixin Composition in Colcon-Mixin — Progress Update - Infrastructure Project / Infrastructure General - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408
+
+Published Time: 2026-08-14T16:31:51+00:00
+
+Markdown Content:
+**Organization:** OSRF
+
+**Contributor:** Innocent Pious ([GitHub](https://github.com/PiousCrossten), [LinkedIn](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408))
+
+**Mentors:** Scott Logan ([GitHub](https://github.com/cottsay)) and Kimberly McGuire ([GitHub](https://github.com/knmcguire))
+
+**GSoC project:** Add Support for Mixin Composition in Colcon-Mixin
+
+**Repository:**[colcon-mixin](https://github.com/colcon/colcon-mixin)
+
+**Pull requests:**[#70 - mixin composition](https://github.com/colcon/colcon-mixin/pull/70), [#71 - merge-order fix](https://github.com/colcon/colcon-mixin/pull/71)
+
+Hey folks ![Image 1: :waving_hand:](https://emoji.discourse-cdn.com/noto/waving_hand.png?v=15)
+
+I’m Innocent Pious, a final-year CS student from Chennai, India. I’ve always enjoyed tinkering with developer tooling, and this summer I got to work on colcon-mixin with OSRF, with Scott Logan and Kimberly McGuire mentoring me.
+
+Things are going well the main feature works end to end and is under review. Figured it’s about time I shared what I’ve been up to, flagged a behavior change, and gathered some feedback before it all lands.
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-why-this-project-exists-1)Why this project exists
+
+Mixins let you save a bundle of command-line arguments under a name, so instead of typing out a long `colcon build --cmake-args ...` every time, you just say `--mixin debug`. Handy but so far every mixin was a standalone bundle. Mixins couldn’t reference each other.
+
+So if you wanted a “dev” setup that combined your debug flags, ccache config, and test flags, you had to copy-paste the same arguments into every variant. Change one, and you’d have to remember to update it everywhere. This has been a longstanding ask ([#39](https://github.com/colcon/colcon-mixin/issues/39)).
+
+The goal here is to let mixins be built out of other mixins kind of like how package managers let one package depend on others.
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-a-quick-heads-up-2)A quick heads up ![Image 2: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15)
+
+Early on, while poking around the merge logic, I ran into [#40](https://github.com/colcon/colcon-mixin/issues/40): when you pass multiple mixins like `colcon build --mixin a b`, the arguments weren’t merging the way you’d expect.
+
+**For list arguments**, they came out backwards. With:
+
+```
+build:
+  a:
+    cmake-args: ["-DA=1"]
+  b:
+    cmake-args: ["-DB=1"]
+```
+
+`colcon build --mixin a b` gave you `["-DB=1", "-DA=1"]` instead of `["-DA=1", "-DB=1"]`.
+
+**For scalar arguments**, there’s a second half worth calling out separately, because it’s the one more likely to quietly change your build: previously the _first_ mixin you listed set the value, and any later mixin’s value was silently skipped. Now the _last_ mixin you list wins. That matches how the list case reads (later flags win downstream) and how most people expect “I listed b after a” to behave but if you’ve got a setup that leaned on the old first-one-wins behavior for something like `build-base` or `parallel-workers`, this will shift under you.
+
+Both halves follow the same rule now: merging follows the order you list the mixins in.
+
+PR: [#71](https://github.com/colcon/colcon-mixin/pull/71) (this supersedes [#59](https://github.com/colcon/colcon-mixin/pull/59), my earlier attempt at the same fix if you arrived here from issue #40, #71 is the one to look at)
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-the-main-feature-mixin-composition-3)The main feature: mixin composition
+
+A mixin can now list other mixins under a reserved `mixin` key:
+
+```
+build:
+  debug:
+    cmake-args: ["-DCMAKE_BUILD_TYPE=Debug"]
+  ccache:
+    cmake-args: ["-DCMAKE_CXX_COMPILER_LAUNCHER=ccache"]
+  dev:
+    mixin: ["debug", "ccache"]
+    cmake-args: ["-DBUILD_TESTING=ON"]
+```
+
+Now `colcon build --mixin dev` applies `debug`, then `ccache`, then `dev`’s own arguments.
+
+The rule I went with: references get applied first, so the mixin doing the referencing gets the last word and can override anything it inherits. Command-line arguments still beat all of them.
+
+A few details under the hood:
+
+*   Application order is worked out with a depth-first, post-order walk.
+*   A mixin reached through more than one path is applied once per path deliberate, so last-one-wins stays consistent no matter how the graph is shaped. The tradeoff is that diamond-shaped graphs can produce repeated arguments; deduplication is on the to-do list below.
+*   Circular references get caught (looking only at the active path, so legitimate re-use isn’t mistaken for a cycle) and reported cleanly with the full path, instead of just hanging.
+*   `mixin` is now a reserved key inside a mixin definition, and is not treated as an argument to overlay.
+*   Mixins that don’t use the key behave exactly as before the merge-order fix above is the only behavior shift in this series.
+
+PR: [#70](https://github.com/colcon/colcon-mixin/pull/70)
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-a-fun-little-side-adventure-stacked-prs-4)A fun little side-adventure: stacked PRs ![Image 3: :pancakes:](https://emoji.discourse-cdn.com/noto/pancakes.png?v=15)
+
+Since the composition work sits on top of the merge-order fix, I set these up as stacked PRs - [#70](https://github.com/colcon/colcon-mixin/pull/70) targets [#71](https://github.com/colcon/colcon-mixin/pull/71)’s branch instead of master, so the diff on #70 shows only the new composition code rather than both changes tangled together. Once #71 lands, #70 gets retargeted to master and rebased.
+
+GitHub only shipped native stacked pull requests into public preview on July 30th, so this is about as fresh as features get, and I was pretty happy to actually put it to use it kept the two changes cleanly separated and made reviewing each piece way easier. Big thanks to Scott and Kimberly for pointing me toward the workflow; it was new to me and honestly a bit of a git bootcamp getting it wired up ![Image 4: :sweat_smile:](https://emoji.discourse-cdn.com/noto/sweat_smile.png?v=15). Kimberly mentioned this might be one of the first uses of stacked PRs across the Open Robotics projects, which was a fun bonus. Happy to share how it’s set up if anyone’s curious!
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-whats-done-so-far-5)What’s done so far
+
+*   Fixed multi-mixin argument merging so list and scalar values combine in the expected order ([#71](https://github.com/colcon/colcon-mixin/pull/71)).
+*   Added a standalone module that computes the application order for a mixin and its references via depth-first post-order traversal.
+*   Implemented multi-path re-application to keep last-one-wins consistent across any graph shape.
+*   Added cycle detection that reports circular references with their full path, plus clean errors for unknown names and malformed `mixin` keys.
+*   Wired composition into `parse_args` so referenced mixins apply first, with command-line args still taking precedence.
+*   Added tests for the ordering algorithm, nested references, scalar overrides, command-line precedence, and error paths.
+*   Kept full backward compatibility for mixins that don’t use the new key.
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-whats-left-6)What’s left
+
+Still some time left in GSoC. The main remaining bits:
+
+*   Add list deduplication so repeated arguments get collapsed cleanly (see the diamond-graph note above).
+*   Extend `colcon mixin show` to display the resolved application order for mixins that reference others, so you can see what a composition expands to without running a build.
+*   Add tests for when the same mixin name is defined across multiple repositories, and document that override behavior.
+*   Add user-facing docs once things are officially merged (these live over in [colcon.readthedocs.org](http://colcon.readthedocs.org/)).
+
+## [](http://discourse.ros.org/t/gsoc-2026-add-support-for-mixin-composition-in-colcon-mixin-progress-update/57408#p-116836-would-love-your-feedback-7)Would love your feedback
+
+Mainly on the ordering/override semantics does “referenced mixins first, the one you asked for last” match your intuition? And if you’ve got mixin setups in the wild that you think might trip this up, I’d genuinely love to hear about them so I can turn them into test cases.
+
+The scalar change in [#40](https://github.com/colcon/colcon-mixin/issues/40) is the one I’d most like a sanity check on, since it’s the part that could quietly alter an existing build.
+
+Huge thanks to Scott and Kimberly for all the patient guidance and detailed reviews so far, and to OSRF and the ROS community for being so welcoming. Thanks for reading!

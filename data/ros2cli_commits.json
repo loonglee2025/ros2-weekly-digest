@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "55f7f02886915908701284c7d45590162956c6df",
+    "node_id": "C_kwDOBZO9q9oAKDU1ZjdmMDI4ODY5MTU5MDg3MDEyODRjN2Q0NTU5MDE2Mjk1NmM2ZGY",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar@dexory.com",
+        "date": "2026-06-18T16:39:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-06-18T16:39:10Z"
+      },
+      "message": "Remove fzf interactive selection for services (#1244)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "dacbdd4aaf78981f264001809246ca3932944e96",
+        "url": "https://api.github.com/repos/ros2/ros2cli/git/trees/dacbdd4aaf78981f264001809246ca3932944e96"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2cli/git/commits/55f7f02886915908701284c7d45590162956c6df",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqNB8uCRC1aQ7uu5UhlAAA+4cQAF3eER27b/RE/1h6OvmyUZ6D\nMgGZ3pxiuZvOlpdzDTX3K0mp/teNdDc08j2L4J9nL/azteHZh3VuBo955ogOUOUV\nrrswMsyXtgxKiosDBnfOYqxY37JWrW+DPqV05vniIykBxV2DZnzFxs340wYzQaA5\nVltomZf1m09obhr23B+L3w0ImFHW5YADusZp43XQG0S1GxXdLTUZz5+in62M+0ym\nioaERDmrnNawrq/5Awj/yVtl32EBTntaDZPGunCMTzhHKFVXciH7Ng8p5Eig2wVY\njEayXOtF/ztQWFrjiTqQRgYCwa82eruKPIL2q7ArmbKtgUmnbSPn9nb4EIgnTe1p\nTQkRSrd2PFY0CRVVuV2rhFJcp6AzxfFVf9n7apdOeWzUHnp3kqnc0jTjb0pxkoi+\nvNXCbQz/oAtBJ+VuCAhflZ07BiandRGmIM6d2XYc/gKNhuPaM1mrjYuSDhGMFbJI\nroFqPgCafq89I4pYbIJoDwkPUeZDixq8P7O+hQZrqDHW7xiyNj9DTem32JVkFcws\n6o2DRzny6O/8/lkH7V4F/RLvFnFe4yCOvnsFCs3TPpUh3h155erHeReqJ0silRhX\ncCXvLKYaqyLZcrRS4Ziu/oNlc6b6/Sqx67a5w1EdNUM65rhBpFGt2FZO8AilcF58\n5k0zJYUi6GIe1ghhbBRF\n=h22H\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dacbdd4aaf78981f264001809246ca3932944e96\nparent 70327b91c0d2bb4795e39643ce12875f5e020c08\nauthor Tony Najjar <tony.najjar@dexory.com> 1781800750 +0200\ncommitter GitHub <noreply@github.com> 1781800750 -0500\n\nRemove fzf interactive selection for services (#1244)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-06-18T16:39:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2cli/commits/55f7f02886915908701284c7d45590162956c6df",
+    "html_url": "https://github.com/ros2/ros2cli/commit/55f7f02886915908701284c7d45590162956c6df",
+    "comments_url": "https://api.github.com/repos/ros2/ros2cli/commits/55f7f02886915908701284c7d45590162956c6df/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "70327b91c0d2bb4795e39643ce12875f5e020c08",
+        "url": "https://api.github.com/repos/ros2/ros2cli/commits/70327b91c0d2bb4795e39643ce12875f5e020c08",
+        "html_url": "https://github.com/ros2/ros2cli/commit/70327b91c0d2bb4795e39643ce12875f5e020c08"
+      }
+    ]
+  }
+]

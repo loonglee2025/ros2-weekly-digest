@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+    "node_id": "C_kwDOAUvaeNoAKDhjZDM0YzNhMDNiY2U4ZjAyYmVkMWY5ZjRjYWRiMTM2YTlkZmIzY2U",
+    "commit": {
+      "author": {
+        "name": "Józef Wiatr",
+        "email": "155722909+UseVix@users.noreply.github.com",
+        "date": "2026-08-22T23:54:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-08-22T23:54:08Z"
+      },
+      "message": "Solving issue #799. BoundedVector::data() is unusable.  (#978)\n\n* Solving issue #799. I believe that pointer returned by data should be of type Tp with which the class is templated with and therefore ! next to std::is_same<T, Tp>::value is typo and can be replaced with T=Tp for the method to work\n\nSigned-off-by: UseVix <jozef.franciszek.wiatr@gmail.com>\n\n* Add unit tests for BoundedVector::data() and fix code formatting\n\nSigned-off-by: William Woodall <wjwwood@google.com>\n\n* Add unit tests for BoundedVector::data() and fix code formatting\n\nSigned-off-by: William Woodall <wjwwood@google.com>\n\n---------\n\nSigned-off-by: UseVix <jozef.franciszek.wiatr@gmail.com>\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: UseVix <jozef.franciszek.wiatr@gmail.com>\nCo-authored-by: William Woodall <wjwwood@google.com>",
+      "tree": {
+        "sha": "3533917dc08eedbead92237750584f785d3b9279",
+        "url": "https://api.github.com/repos/ros2/rosidl/git/trees/3533917dc08eedbead92237750584f785d3b9279"
+      },
+      "url": "https://api.github.com/repos/ros2/rosidl/git/commits/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqijagCRC1aQ7uu5UhlAAATiUQAE3zoGfUd7fZD2RqeEbnW0BY\nbyBZ1Py+cq3ae3WqUnMO7B++tAmI8G99a97hS8kA8XnhqUYL2hvjMPPqt7SKGo4u\nNWt6BD7PQUIaAd/leae0I6mhKgAdqlab8UPdoHDUiSByUcce0wupRhJ0ikN66dB8\nFcY2M4ysmYScZlj2soF2q3eCWcBkovtFmMKQLTUcRIxAEXOmhK92c+eFPTqIBDFT\nOQgUFW6JBIM8PiN8kcQX/4qZxeJPY9OGiPJGViWOHoPgRU+TTci4mInt/0XCPRch\ncSATj5Kkc6sLNNBhEQgC1Ikg3hz1kyXhlqDfrkaSCfzlSsVc9PbdBUy4Oy7encPg\nT/KYm4Qdmcwuz1nwyi/MBcglxCaTqGoUZwhydJ/ljl875GU2oIE4OwWvuLacj9Cx\niBmHa9Tp7jI35WyZGrCIJXKYEu0AKhIcO9d+edg/6WtE1j1kyeYn+D9Pxzo2sCSO\neg/xv/kojYlGFTjGqBFrdJNHYucBlTsKTeuSY4/fDy2JrITdXLjVCd/GdtgSJ+ex\noyvhA51DHsP064EE3VGSNSP3Ev3+8iFQuZRGJkO3GQsm/YPlcsmWFvCzI1UxjkIU\nmGNd7pkgM0KuHRKzxl6VGjx44ka3LLk04BC0U6c/KCSG9twXHKflH3d+UCihNTBS\n7viTaPFc+5OPq3+Lql6F\n=rfFs\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3533917dc08eedbead92237750584f785d3b9279\nparent 217324c7a90bc5b54d70045b4d8b7e2551b15b19\nauthor Józef Wiatr <155722909+UseVix@users.noreply.github.com> 1787442848 +0200\ncommitter GitHub <noreply@github.com> 1787442848 +0900\n\nSolving issue #799. BoundedVector::data() is unusable.  (#978)\n\n* Solving issue #799. I believe that pointer returned by data should be of type Tp with which the class is templated with and therefore ! next to std::is_same<T, Tp>::value is typo and can be replaced with T=Tp for the method to work\n\nSigned-off-by: UseVix <jozef.franciszek.wiatr@gmail.com>\n\n* Add unit tests for BoundedVector::data() and fix code formatting\n\nSigned-off-by: William Woodall <wjwwood@google.com>\n\n* Add unit tests for BoundedVector::data() and fix code formatting\n\nSigned-off-by: William Woodall <wjwwood@google.com>\n\n---------\n\nSigned-off-by: UseVix <jozef.franciszek.wiatr@gmail.com>\nSigned-off-by: William Woodall <wjwwood@google.com>\nCo-authored-by: UseVix <jozef.franciszek.wiatr@gmail.com>\nCo-authored-by: William Woodall <wjwwood@google.com>",
+        "verified_at": "2026-08-22T23:54:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosidl/commits/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+    "html_url": "https://github.com/ros2/rosidl/commit/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce",
+    "comments_url": "https://api.github.com/repos/ros2/rosidl/commits/8cd34c3a03bce8f02bed1f9f4cadb136a9dfb3ce/comments",
+    "author": {
+      "login": "UseVix",
+      "id": 155722909,
+      "node_id": "U_kgDOCUgknQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155722909?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/UseVix",
+      "html_url": "https://github.com/UseVix",
+      "followers_url": "https://api.github.com/users/UseVix/followers",
+      "following_url": "https://api.github.com/users/UseVix/following{/other_user}",
+      "gists_url": "https://api.github.com/users/UseVix/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/UseVix/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/UseVix/subscriptions",
+      "organizations_url": "https://api.github.com/users/UseVix/orgs",
+      "repos_url": "https://api.github.com/users/UseVix/repos",
+      "events_url": "https://api.github.com/users/UseVix/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/UseVix/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "217324c7a90bc5b54d70045b4d8b7e2551b15b19",
+        "url": "https://api.github.com/repos/ros2/rosidl/commits/217324c7a90bc5b54d70045b4d8b7e2551b15b19",
+        "html_url": "https://github.com/ros2/rosidl/commit/217324c7a90bc5b54d70045b4d8b7e2551b15b19"
+      }
+    ]
+  }
+]

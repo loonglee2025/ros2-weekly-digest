@@ -1,0 +1,45 @@
+Title: Never miss a backport again — automatic ABI checking for ROS 2 core repos (prototype ready) - ROS / ROS General - Open Robotics Discourse
+
+URL Source: http://discourse.ros.org/t/never-miss-a-backport-again-automatic-abi-checking-for-ros-2-core-repos-prototype-ready/57477
+
+Published Time: 2026-08-18T02:09:19+00:00
+
+Markdown Content:
+## post by tomoyafujita 4 hours ago
+
+Hi ROS community! ![Image 1: :waving_hand:](https://emoji.discourse-cdn.com/noto/waving_hand.png?v=15)
+
+Have you ever debugged a problem on Humble or Jazzy for hours… only to discover the fix already existed on rolling, but was never backported? ![Image 2: :weary_face:](https://emoji.discourse-cdn.com/noto/weary_face.png?v=15) You’re not alone — and I’d like to fix this systematically.
+
+**![Image 3: :confounded_face:](https://emoji.discourse-cdn.com/noto/confounded_face.png?v=15) The pain**
+
+In principle, all bug fixes should be backported to the supported downstream distributions — precisely because they are fixes. Today, however, this depends entirely on the maintainer’s manual effort and judgment, so backports happen on a need-to-do or requested basis rather than automatically and systematically.
+
+ One of the key blockers: it’s not always easy to tell whether a fix is ABI compatible with released distributions just by looking at the source code. This depends on developer skill and experience.
+
+ And too often, community developers hit a bug on a released distro, dig all the way down to the root cause, and only then find the fix was already merged to rolling — so they have to request the backport themselves. That’s wasted effort for everyone. ![Image 4: :hourglass_not_done:](https://emoji.discourse-cdn.com/noto/hourglass_not_done.png?v=15)
+
+Making this automatic would save significant time for **maintainers, developers, and users alike**. Original discussion: [ros2/rclcpp#2555](https://github.com/ros2/rclcpp/issues/2555)
+
+**![Image 5: :sparkles:](https://emoji.discourse-cdn.com/noto/sparkles.png?v=15) The prototype (working today!)**
+
+I built this as two GitHub Actions:
+
+![Image 6: :wrench:](https://emoji.discourse-cdn.com/noto/wrench.png?v=15)[libabigail-action](https://github.com/fujitatomoya/libabigail-action) — generic, repo-agnostic. Diffs two shared libraries with [libabigail](https://sourceware.org/libabigail/)’s `abidiff`. Useful for _any_ C/C++ project, not just ROS!
+
+![Image 7: :robot:](https://emoji.discourse-cdn.com/noto/robot.png?v=15)[ros2-abi-action](https://github.com/fujitatomoya/ros2-abi-action) — the ROS-aware layer. For every PR it:
+
+Maintainers can decide on backports **at a glance**. And the per-repo integration is a ~10-line workflow file, so rclcpp, rcl, rcutils, rmw and friends can all share the same setup. ![Image 8: :tada:](https://emoji.discourse-cdn.com/noto/tada.png?v=15)
+
+![Image 9: :warning:](https://emoji.discourse-cdn.com/noto/warning.png?v=15) Small print: an `ABI compatible` label is _information_, not an obligation to backport — behavioral changes can still surprise users even when ABI is intact. And this is binary ABI only; header templates/inlines still need human eyes. ![Image 10: :eyes:](https://emoji.discourse-cdn.com/noto/eyes.png?v=15)
+
+**![Image 11: :folded_hands:](https://emoji.discourse-cdn.com/noto/folded_hands.png?v=15) I’d love your feedback**
+
+1.   Does this approach make sense for ROS 2 core repos? Concerns about CI cost or noise? ![Image 12: :money_with_wings:](https://emoji.discourse-cdn.com/noto/money_with_wings.png?v=15)
+2.   Tooling: libabigail vs. the older abi-compliance-checker (used by industrial_ci / auto-abi-checker) — experiences? ![Image 13: :hammer_and_wrench:](https://emoji.discourse-cdn.com/noto/hammer_and_wrench.png?v=15)
+3.   Should we go further and wire the `ABI compatible` label into the Mergify backport flow? ![Image 14: :repeat_button:](https://emoji.discourse-cdn.com/noto/repeat_button.png?v=15)
+4.   Would community packages benefit from this as a shared reusable workflow too? ![Image 15: :globe_showing_europe_africa:](https://emoji.discourse-cdn.com/noto/globe_showing_europe_africa.png?v=15)
+
+Comments, use cases, and contributions all very welcome! ![Image 16: :rocket:](https://emoji.discourse-cdn.com/noto/rocket.png?v=15)
+
+Tomoya
