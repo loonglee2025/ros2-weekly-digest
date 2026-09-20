@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "8ce45a8526eebdf9b44a5dbbe298c46760ea421d",
+    "node_id": "C_kwDOAe-vztoAKDhjZTQ1YTg1MjZlZWJkZjliNDRhNWRiYmUyOThjNDY3NjBlYTQyMWQ",
+    "commit": {
+      "author": {
+        "name": "渠超胜",
+        "email": "quchaosheng000406@163.com",
+        "date": "2026-09-18T21:36:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-18T21:36:45Z"
+      },
+      "message": "Reject invalid GroupAction boolean attributes (#1003)\n\nSigned-off-by: 渠超胜 <quchaosheng000406@163.com>",
+      "tree": {
+        "sha": "e0e3a8408f5fa7423003b921c5f00860087d2772",
+        "url": "https://api.github.com/repos/ros2/launch/git/trees/e0e3a8408f5fa7423003b921c5f00860087d2772"
+      },
+      "url": "https://api.github.com/repos/ros2/launch/git/commits/8ce45a8526eebdf9b44a5dbbe298c46760ea421d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqra7tCRC1aQ7uu5UhlAAAaMgQABzmxQ6JrDpr0C+9VofWy9VZ\nq0ZTRQiExIRDUzvPqi37Bi/L8ZBZG/f63WuxsO+ILwYghGcV+2eCVw/rqWLvNbvV\nvrMEy0WmyY1HhbKZG/G4oNIkdoEDSPdRcg/Ryi8P53Ky8GM2znvNNQswquuU83ur\n/Qf66D4vE70K3tLo0UcKwO+E7HnPZZFPOJHSVpoZBenzYRRTNJgCsn290XAEwnjS\nLVDXWExUr6Xt1zHo+q6dx02Gq1bWuaEjqyiVkGO4zFMdTmBhvDjOGxdsNNxYm8bb\nQDkhfkrFjUF78MWGsln2F2K+J5D4o1Dg/Vd3kKTWNQ3ByBAzfjnDUL13sc6pVIxF\n9NxNQSVe2C9zB8sY1WAYAbBO+OagotGX0NIlVHmHZQGwBgSsBlJKedz7GwlE4Z9X\n8GnQfjcOPVdAGjQeiihyGdUkQmlyh5hbkrjCmVRCZLhi3wngWWveolngk7m0TbIF\n17L4YhC/o8oQRFTCdIeNRul4j0TRMjNvuhcZi13BeFLGhJvIyYo4p7X/ZZXgPb1R\nzu2/ySAoDoNR1rTJ+P9f8wXjiEbUc/myhJH0XZqPhGSiFoLObp/nYdfrbv3R+TKm\ndgvVbgRqYeYdRbsxAZWJ3wRWDnWvH9TohrT3IdYo6+s9oKC+KXJT1bW4b6GQeGdo\nORHlQXqBpnVzCeg166E/\n=tE8A\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e0e3a8408f5fa7423003b921c5f00860087d2772\nparent 2e44ada201f03875ecf7b691ef2130ac79e0427c\nauthor 渠超胜 <quchaosheng000406@163.com> 1789767405 +0800\ncommitter GitHub <noreply@github.com> 1789767405 -0700\n\nReject invalid GroupAction boolean attributes (#1003)\n\nSigned-off-by: 渠超胜 <quchaosheng000406@163.com>",
+        "verified_at": "2026-09-18T21:36:45Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/launch/commits/8ce45a8526eebdf9b44a5dbbe298c46760ea421d",
+    "html_url": "https://github.com/ros2/launch/commit/8ce45a8526eebdf9b44a5dbbe298c46760ea421d",
+    "comments_url": "https://api.github.com/repos/ros2/launch/commits/8ce45a8526eebdf9b44a5dbbe298c46760ea421d/comments",
+    "author": {
+      "login": "Quchaosheng",
+      "id": 203742003,
+      "node_id": "U_kgDODCTbMw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/203742003?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Quchaosheng",
+      "html_url": "https://github.com/Quchaosheng",
+      "followers_url": "https://api.github.com/users/Quchaosheng/followers",
+      "following_url": "https://api.github.com/users/Quchaosheng/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Quchaosheng/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Quchaosheng/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Quchaosheng/subscriptions",
+      "organizations_url": "https://api.github.com/users/Quchaosheng/orgs",
+      "repos_url": "https://api.github.com/users/Quchaosheng/repos",
+      "events_url": "https://api.github.com/users/Quchaosheng/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Quchaosheng/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2e44ada201f03875ecf7b691ef2130ac79e0427c",
+        "url": "https://api.github.com/repos/ros2/launch/commits/2e44ada201f03875ecf7b691ef2130ac79e0427c",
+        "html_url": "https://github.com/ros2/launch/commit/2e44ada201f03875ecf7b691ef2130ac79e0427c"
+      }
+    ]
+  }
+]

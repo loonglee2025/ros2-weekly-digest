@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "a048e540854423144a3b203b1e95c4f8da98930e",
+    "node_id": "C_kwDOB5aMANoAKGEwNDhlNTQwODU0NDIzMTQ0YTNiMjAzYjFlOTVjNGY4ZGE5ODkzMGU",
+    "commit": {
+      "author": {
+        "name": "Michael Carlstrom",
+        "email": "rmc@carlstrom.com",
+        "date": "2026-09-19T20:36:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-19T20:36:09Z"
+      },
+      "message": "Re-run stubgen (#2501)\n\nSigned-off-by: Michael Carlstrom <rmc@carlstrom.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "465ca9f6a5f255f4d2cf1b691a690334b7d38249",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/465ca9f6a5f255f4d2cf1b691a690334b7d38249"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/a048e540854423144a3b203b1e95c4f8da98930e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrvI5CRC1aQ7uu5UhlAAAo8wQABCsH+83H5+yuUZlQWor2yDG\nd9OaZudcTTNctpUczmnWSFo3hhgfdS9awa8HZSvAiy4XCrQiyKDVUAwH3nRL0lCS\nDJ/ouFTTs6a94uohLCQvvlsoPkbAw6WIXcihs4cS3bypFtfDXCX45K+8gCwS4rfP\nwR+n2V4rmfC7N0uZtBJDQb3q/5o1gd1in4QpcDMctSjKw4k5ESkyczT2A+sYJFD/\nCT/2M2CLZmtPvI9mcySIDMuxPBN70iMmwDlSxrNRgx/VtVibxml7jJ1afM6XzBX4\nLXPIxAg3HT/zTUf8aT9C4zktSv+gweXa1fQ5Z7MNq64jDbH+mZf0vCGC7zRKJm9b\nLRrbUxMk13qFASnL0qC2HjeTvl9GoyvespbImKDzd3vob7wn13w9Udi1l03LCvZX\nDuL3h+qpDP9OBcOT76L7sc1yniYZA5exetrBT5OK2fVgDPEkI+WYVGaPKzidhjJC\nnhysAV1JEqG/JcJiEaYdarf5o5lXGAr4lv43UNvwUw2KK5sErYYGrolKuvh3pTFr\ndDZH8gs/Qow+E+Uv2MmhvlsQ/UgEikjXblDe5r5y5JjlRDxNpnTy82Np2SL3+yHg\nswYQk1686hWHy9HEz52WKZ9OHwfwzmhTGiTvCLqJ9Nu2uwNHF8MXHFIP3MGEJiDR\nZR5Pp8a+wxxswyJlInWX\n=7xup\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 465ca9f6a5f255f4d2cf1b691a690334b7d38249\nparent cdfb8d83572e5353b05630c4b870c00b0f1f070f\nauthor Michael Carlstrom <rmc@carlstrom.com> 1789850169 -0700\ncommitter GitHub <noreply@github.com> 1789850169 -0700\n\nRe-run stubgen (#2501)\n\nSigned-off-by: Michael Carlstrom <rmc@carlstrom.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+        "verified_at": "2026-09-19T20:36:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/a048e540854423144a3b203b1e95c4f8da98930e",
+    "html_url": "https://github.com/ros2/rosbag2/commit/a048e540854423144a3b203b1e95c4f8da98930e",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/a048e540854423144a3b203b1e95c4f8da98930e/comments",
+    "author": {
+      "login": "InvincibleRMC",
+      "id": 36806982,
+      "node_id": "MDQ6VXNlcjM2ODA2OTgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36806982?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/InvincibleRMC",
+      "html_url": "https://github.com/InvincibleRMC",
+      "followers_url": "https://api.github.com/users/InvincibleRMC/followers",
+      "following_url": "https://api.github.com/users/InvincibleRMC/following{/other_user}",
+      "gists_url": "https://api.github.com/users/InvincibleRMC/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/InvincibleRMC/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/InvincibleRMC/subscriptions",
+      "organizations_url": "https://api.github.com/users/InvincibleRMC/orgs",
+      "repos_url": "https://api.github.com/users/InvincibleRMC/repos",
+      "events_url": "https://api.github.com/users/InvincibleRMC/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/InvincibleRMC/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+        "html_url": "https://github.com/ros2/rosbag2/commit/cdfb8d83572e5353b05630c4b870c00b0f1f070f"
+      }
+    ]
+  },
+  {
+    "sha": "cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+    "node_id": "C_kwDOB5aMANoAKGNkZmI4ZDgzNTcyZTUzNTNiMDU2MzBjNGI4NzBjMDBiMGYxZjA3MGY",
+    "commit": {
+      "author": {
+        "name": "Christophe Bedard",
+        "email": "bedard.christophe@gmail.com",
+        "date": "2026-09-19T19:03:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-19T19:03:33Z"
+      },
+      "message": "Switch to Ubuntu Resolute base images in GitHub CI (#2502)\n\nAnd use ghcr.io instead of Docker Hub.\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+      "tree": {
+        "sha": "480f3387a469d8aa700b3aed918a695b6b6355f4",
+        "url": "https://api.github.com/repos/ros2/rosbag2/git/trees/480f3387a469d8aa700b3aed918a695b6b6355f4"
+      },
+      "url": "https://api.github.com/repos/ros2/rosbag2/git/commits/cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrtyFCRC1aQ7uu5UhlAAAwOAQABFwIJ2E2g9TnoAubXB5q7Tt\nKwu2tS+WRVZB1iGZhvOWwWP6aeIYprIGiN9N1x4xEGqLTu6Xs+9FPSsGDBSzGzgu\nKLD3UfQ00kDTmWjlsDetOXC+w+LVUYrKjp6h/ECntzCdW4/7rISPMTQfhMVjTMSi\nQw83VFshAwcwICijUj016G1cVTm676zPK3lEABgPol/eFLad7hYhYzP7I+k6WWxi\nH8JRzQqnMl4u7LBUyyZ6C9+UNsCCxhLlLxy4IcFyIyhwc55GfK2Uczuyd0NV+Jla\nW06Q6jk5lMiGxsQbo6dbhCsqv9JR9CS/QNCXORbAV3JMF4Ks/QP380ZkdbJdIMo9\n8exF/RWZNsIDRagOjkmqBrv427STOTaeHJMHBB9qSK/3NNmYhOq28pfvl+LkPSZ6\ntB2ad8ak+uhxTsrVnaI320PNetu8vyVeqamYbC63fpanU+9hrJZm5acV5EPBx/1Z\nht+CwalxLYdnbSZFgOJqaVb5j/u2Jjy54zga8F5PKuTd35a6nEmXCDL6KZrawj2a\nTJ09ZTtuq3gwMwK/hFlpPVa2SNiyZxIvArrbK6YgADPeDwplIgXMto5WyadPACK9\nXFqXMVS+I2Sx58ZG7JKTpRYgDWijPdY1gBB76c7XOaDjJNC90Qe++loqDjaQSmky\noFCyFsKR4g4yrx7/RvTu\n=vlQK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 480f3387a469d8aa700b3aed918a695b6b6355f4\nparent 7096f29d2bb46ae01003f490b584e1a771154dc0\nauthor Christophe Bedard <bedard.christophe@gmail.com> 1789844613 -0700\ncommitter GitHub <noreply@github.com> 1789844613 -0700\n\nSwitch to Ubuntu Resolute base images in GitHub CI (#2502)\n\nAnd use ghcr.io instead of Docker Hub.\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+        "verified_at": "2026-09-19T19:03:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosbag2/commits/cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+    "html_url": "https://github.com/ros2/rosbag2/commit/cdfb8d83572e5353b05630c4b870c00b0f1f070f",
+    "comments_url": "https://api.github.com/repos/ros2/rosbag2/commits/cdfb8d83572e5353b05630c4b870c00b0f1f070f/comments",
+    "author": {
+      "login": "christophebedard",
+      "id": 3717345,
+      "node_id": "MDQ6VXNlcjM3MTczNDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3717345?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christophebedard",
+      "html_url": "https://github.com/christophebedard",
+      "followers_url": "https://api.github.com/users/christophebedard/followers",
+      "following_url": "https://api.github.com/users/christophebedard/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christophebedard/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christophebedard/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christophebedard/subscriptions",
+      "organizations_url": "https://api.github.com/users/christophebedard/orgs",
+      "repos_url": "https://api.github.com/users/christophebedard/repos",
+      "events_url": "https://api.github.com/users/christophebedard/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christophebedard/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7096f29d2bb46ae01003f490b584e1a771154dc0",
+        "url": "https://api.github.com/repos/ros2/rosbag2/commits/7096f29d2bb46ae01003f490b584e1a771154dc0",
+        "html_url": "https://github.com/ros2/rosbag2/commit/7096f29d2bb46ae01003f490b584e1a771154dc0"
+      }
+    ]
+  }
+]

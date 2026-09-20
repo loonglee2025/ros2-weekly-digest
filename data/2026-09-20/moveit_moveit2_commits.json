@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "093360fef2ea8269c607821b551ffb2d4bc5c9a8",
+    "node_id": "C_kwDOCi-gUdoAKDA5MzM2MGZlZjJlYTgyNjljNjA3ODIxYjU1MWZmYjJkNGJjNWM5YTg",
+    "commit": {
+      "author": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-09-16T16:54:50Z"
+      },
+      "committer": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-09-16T16:54:50Z"
+      },
+      "message": "2.15.2",
+      "tree": {
+        "sha": "429623e188ed63abaea29e40220bcaff823ba0fd",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/429623e188ed63abaea29e40220bcaff823ba0fd"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/093360fef2ea8269c607821b551ffb2d4bc5c9a8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/093360fef2ea8269c607821b551ffb2d4bc5c9a8",
+    "html_url": "https://github.com/moveit/moveit2/commit/093360fef2ea8269c607821b551ffb2d4bc5c9a8",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/093360fef2ea8269c607821b551ffb2d4bc5c9a8/comments",
+    "author": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "424867b99c06fdbdd597dd135993b75b7e95036d",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/424867b99c06fdbdd597dd135993b75b7e95036d",
+        "html_url": "https://github.com/moveit/moveit2/commit/424867b99c06fdbdd597dd135993b75b7e95036d"
+      }
+    ]
+  },
+  {
+    "sha": "424867b99c06fdbdd597dd135993b75b7e95036d",
+    "node_id": "C_kwDOCi-gUdoAKDQyNDg2N2I5OWMwNmZkYmRkNTk3ZGQxMzU5OTNiNzViN2U5NTAzNmQ",
+    "commit": {
+      "author": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-09-16T16:54:43Z"
+      },
+      "committer": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-09-16T16:54:43Z"
+      },
+      "message": "Update changelogs",
+      "tree": {
+        "sha": "6d273aae5c55e08b3ae54927e878ed098dafce33",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/6d273aae5c55e08b3ae54927e878ed098dafce33"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/424867b99c06fdbdd597dd135993b75b7e95036d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/424867b99c06fdbdd597dd135993b75b7e95036d",
+    "html_url": "https://github.com/moveit/moveit2/commit/424867b99c06fdbdd597dd135993b75b7e95036d",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/424867b99c06fdbdd597dd135993b75b7e95036d/comments",
+    "author": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+        "html_url": "https://github.com/moveit/moveit2/commit/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4"
+      }
+    ]
+  },
+  {
+    "sha": "4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+    "node_id": "C_kwDOCi-gUdoAKDRiZGJkZTJmYzY4N2ViMzA3N2NkMzZkOWE5YThlNDcwMDIzMzNjYTQ",
+    "commit": {
+      "author": {
+        "name": "Nathan Brooks",
+        "email": "nathanbrooks@picknik.ai",
+        "date": "2026-09-16T14:53:36Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T14:53:36Z"
+      },
+      "message": "Give the controller spawners a parameter file (#3851)\n\n* moveit_configs_utils: give the controller spawners a parameter file\n\ngenerate_spawn_controllers_launch starts each spawner with only the\ncontroller name. The controller_manager node reads\nros2_controllers.yaml, but the controller nodes do not read it. Each\ncontroller therefore starts with no parameters and fails to initialize.\nThe user can plan a motion, but the user cannot run it.\n\nThe spawner program has a --param-file option. The option loads the file\ninto the controller node before configuration. This commit gives the\noption to each spawner.\n\ngenerate_demo_launch already uses the same path convention for the\nros2_control_node. This commit reuses that convention. The code omits\nthe option if the file does not exist, so a config package without\nros2_controllers.yaml keeps the old behavior.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* Give a parameter file to the controller spawners in this repository\n\nThe utility function now has callers, but 12 launch files in this\nrepository create their spawners directly. They have the same defect, so\nthis commit corrects them too.\n\nFour moveit_servo demo launch files spawn the same controllers that\ngenerate_spawn_controllers_launch() creates, and they use the same\nconfiguration package. They now call the utility function instead. The\nutility function takes an optional controller_manager_timeout, because\nthese demos start the controller manager themselves and must wait longer\nthan the default.\n\nThe other eight launch files cannot use the utility function without a\nchange of behavior:\n\n* prbt_moveit_config and the hybrid planning test spawn\n  panda_joint_group_position_controller, which is not the controller in\n  moveit_controllers.yaml.\n* The move_group tests also spawn panda_hand_controller.\n* The remaining tests stage each spawner with a TimerAction or an event\n  handler, which the utility function does not reproduce.\n\nEach of those files gets --param-file directly. Every file already holds\nthe correct path in ros2_controllers_path.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* prbt_moveit_config: spawn the controller that the configuration defines\n\ndemo.launch.py spawns panda_joint_group_position_controller. The\nvariable that holds the node is named prbt_arm_controller_spawner, and\nprbt_ros_controllers.yaml defines prbt_arm_controller, not the panda\none. prbt_controllers.yaml also maps MoveIt to prbt_arm_controller.\n\nThe requested controller therefore has no type and cannot load. This\ncommit spawns prbt_arm_controller.\n\nThis defect is older than this branch. It became visible once the\nspawner received the parameter file.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* trajectory_cache: give the spawners a parameter file\n\nThe two trajectory_cache fixtures start their spawners with\nExecuteProcess and a shell command, not with a Node action. The earlier\ncommits looked only for the Node form, so these two files kept the\ndefect.\n\nBoth files already hold the correct path in ros2_controllers_path.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* trajectory_cache: pass the spawner command as an argument list\n\nThe previous commit put the parameter file path into a shell command\nstring. A path that holds a space or a shell metacharacter would split\nbefore --param-file received it.\n\nThese two fixtures were the only launch files in the repository that ran\na shell. Every other launch file gives an argument list to a Node\naction. This commit gives ExecuteProcess an argument list as well, so no\nshell reads the path and no quoting is necessary.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "f642c24e9565d72d555596ccfed7466a3c32dc8e",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/f642c24e9565d72d555596ccfed7466a3c32dc8e"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqq1wCRC1aQ7uu5UhlAAAIWsQAHzlQz37hcaDNyFsjc4f/2Lc\n8PMg4rzGCjwWfnhMM+TPiZJwRZJOQW1QGyf6L5CWB37sUntO0/eovNiBM+A1vQd+\nRPlvnDOxAexkfc4ftYAbnIelqGymnJp1f4udBWcNXp489PEfFm+4c5OO+u4GnQTW\nP6Cha2EodrpMJnAoJdo1jAJHhIObuTvlKC8EU13RQfFAzgkDANUPt4bS/Vthqhf7\neESg2gp3uS3ikGmYv7K/v3HFvuOD8rty5/jyiFmco4wxB2MIzZkDfoerACHClXNM\nknDv8o8/tgveOVCB7B/h8BWOjUT4NrEVWmVR3wWdoANryHRl8ZUJnAfkkNPPky7R\n5Gj2Kv4gva5VsBEBuCO46DgybeuCaixbnqzyhoRMu0KVfcPLYxDQU9PGYtSWT7Jx\nMJF2YciOM3jiHUfXMQSQjnuP1wZEFqtFKZ5kIdE/OEaYW9UO4XhGdDITLEKPXWXt\n8QSMohi/rvRm7eLqHpj8nrW4jYvaswm4ku3FbA2+/yks151n5R67z36TA5Q4ptu2\n90zkR45Vxmn0NfSieTkhDNpMYwrOrr5hfWyJnVI2fFPXIorZxO80jFB6RSlkdeZd\nI4ofjHYjdRvsqUd2E6BSfN+5sdhU5M1ZQHHNUHzck3bG01ZovRTtC+2MFUyUOIik\nHkYeYiClEOm7x3g9xTb5\n=sNQ5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f642c24e9565d72d555596ccfed7466a3c32dc8e\nparent 822acad0f32dd2caded0930e77d176d435b1ac98\nauthor Nathan Brooks <nathanbrooks@picknik.ai> 1789570416 -0600\ncommitter GitHub <noreply@github.com> 1789570416 -0600\n\nGive the controller spawners a parameter file (#3851)\n\n* moveit_configs_utils: give the controller spawners a parameter file\n\ngenerate_spawn_controllers_launch starts each spawner with only the\ncontroller name. The controller_manager node reads\nros2_controllers.yaml, but the controller nodes do not read it. Each\ncontroller therefore starts with no parameters and fails to initialize.\nThe user can plan a motion, but the user cannot run it.\n\nThe spawner program has a --param-file option. The option loads the file\ninto the controller node before configuration. This commit gives the\noption to each spawner.\n\ngenerate_demo_launch already uses the same path convention for the\nros2_control_node. This commit reuses that convention. The code omits\nthe option if the file does not exist, so a config package without\nros2_controllers.yaml keeps the old behavior.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* Give a parameter file to the controller spawners in this repository\n\nThe utility function now has callers, but 12 launch files in this\nrepository create their spawners directly. They have the same defect, so\nthis commit corrects them too.\n\nFour moveit_servo demo launch files spawn the same controllers that\ngenerate_spawn_controllers_launch() creates, and they use the same\nconfiguration package. They now call the utility function instead. The\nutility function takes an optional controller_manager_timeout, because\nthese demos start the controller manager themselves and must wait longer\nthan the default.\n\nThe other eight launch files cannot use the utility function without a\nchange of behavior:\n\n* prbt_moveit_config and the hybrid planning test spawn\n  panda_joint_group_position_controller, which is not the controller in\n  moveit_controllers.yaml.\n* The move_group tests also spawn panda_hand_controller.\n* The remaining tests stage each spawner with a TimerAction or an event\n  handler, which the utility function does not reproduce.\n\nEach of those files gets --param-file directly. Every file already holds\nthe correct path in ros2_controllers_path.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* prbt_moveit_config: spawn the controller that the configuration defines\n\ndemo.launch.py spawns panda_joint_group_position_controller. The\nvariable that holds the node is named prbt_arm_controller_spawner, and\nprbt_ros_controllers.yaml defines prbt_arm_controller, not the panda\none. prbt_controllers.yaml also maps MoveIt to prbt_arm_controller.\n\nThe requested controller therefore has no type and cannot load. This\ncommit spawns prbt_arm_controller.\n\nThis defect is older than this branch. It became visible once the\nspawner received the parameter file.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* trajectory_cache: give the spawners a parameter file\n\nThe two trajectory_cache fixtures start their spawners with\nExecuteProcess and a shell command, not with a Node action. The earlier\ncommits looked only for the Node form, so these two files kept the\ndefect.\n\nBoth files already hold the correct path in ros2_controllers_path.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n* trajectory_cache: pass the spawner command as an argument list\n\nThe previous commit put the parameter file path into a shell command\nstring. A path that holds a space or a shell metacharacter would split\nbefore --param-file received it.\n\nThese two fixtures were the only launch files in the repository that ran\na shell. Every other launch file gives an argument list to a Node\naction. This commit gives ExecuteProcess an argument list as well, so no\nshell reads the path and no quoting is necessary.\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 5 <noreply@anthropic.com>",
+        "verified_at": "2026-09-16T14:53:36Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+    "html_url": "https://github.com/moveit/moveit2/commit/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/4bdbde2fc687eb3077cd36d9a9a8e47002333ca4/comments",
+    "author": {
+      "login": "nbbrooks",
+      "id": 5314817,
+      "node_id": "MDQ6VXNlcjUzMTQ4MTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5314817?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nbbrooks",
+      "html_url": "https://github.com/nbbrooks",
+      "followers_url": "https://api.github.com/users/nbbrooks/followers",
+      "following_url": "https://api.github.com/users/nbbrooks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nbbrooks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nbbrooks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nbbrooks/subscriptions",
+      "organizations_url": "https://api.github.com/users/nbbrooks/orgs",
+      "repos_url": "https://api.github.com/users/nbbrooks/repos",
+      "events_url": "https://api.github.com/users/nbbrooks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nbbrooks/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "822acad0f32dd2caded0930e77d176d435b1ac98",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/822acad0f32dd2caded0930e77d176d435b1ac98",
+        "html_url": "https://github.com/moveit/moveit2/commit/822acad0f32dd2caded0930e77d176d435b1ac98"
+      }
+    ]
+  },
+  {
+    "sha": "822acad0f32dd2caded0930e77d176d435b1ac98",
+    "node_id": "C_kwDOCi-gUdoAKDgyMmFjYWQwZjMyZGQyY2FkZWQwOTMwZTc3ZDE3NmQ0MzViMWFjOTg",
+    "commit": {
+      "author": {
+        "name": "Puja Chaudhury",
+        "email": "61319491+catplotlib@users.noreply.github.com",
+        "date": "2026-09-14T07:53:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-14T07:53:49Z"
+      },
+      "message": "Fix FloatingJointModel::getMaximumExtent(): cover full rotation range (#3854)\n\nRotation range is 0..180° (or 0..pi). Drop factor of 0.5.\n\nBefore 83ff55a4 the rotation distance was acos(|dot|), a half-angle in [0, pi/2], \nso the 0.5 was correct then and was missed when the consumer changed.",
+      "tree": {
+        "sha": "8d0d06dfc6a6172eee82ee18fb0e113225ea2543",
+        "url": "https://api.github.com/repos/moveit/moveit2/git/trees/8d0d06dfc6a6172eee82ee18fb0e113225ea2543"
+      },
+      "url": "https://api.github.com/repos/moveit/moveit2/git/commits/822acad0f32dd2caded0930e77d176d435b1ac98",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqp6gNCRC1aQ7uu5UhlAAARRAQAEZgCIsZuZEs8M1u13r6goKa\nySKHz99PJ41W/RsA/Pvij3bI/TmuVw/5fS8qscwgsC+YVRklCuZbbM/NaOxyBxuh\nH9HqkO2aooWGJHceGiQuP3cB+8AIsuV1oyFNe+qQmTlojg9uwWvbXM/7extD0oZQ\ntYTE7Ayrm7+FA1T5ZPG3KEEQkLSAqinV7DH/eIkpMSmDDBxir70GRDL+EXOTH+cm\nW3+ZE1uD81y3KzpxecSq9bqPB1h47Qo5vuGXGsNQfcis/1NxTVDB3ZCW68UiyV3T\nbpSkJ6jm6WOwKurJB5C75QBZ7SqXtMp0aIdAgJCP6IuAo7Mieyo0X6hCr7EB2j6d\ngbEEpdqYc6lR0sMzh9pTxfLs2de36eq5+I/92Oyv5bBofKvq940P2P7BDwUJmcZq\nVkuvNELVcAr8LuhDyBW55t0VLk/+zPqkqTpaeZjOZEaEAG+MUX+1D00Rz8+XkgiW\nFsCickZBExSOd7d4s06iv0KAmeRUUZ8GA/W9mkcy8cMpIncSaQl598u4DaADpLjM\nDTFDEYrQuH6wNDhrJrlY8S0yokm98nhERIIq/CGADPB3kyKCORQ09yKSKcbjE4Oj\nbPRQptD1fwEWhb2GlBujNpGRiPZ6r2joIVzmeIfOYDr+VLsPvDOxN3+awCQW6r97\nzNLK5G2G+DjJEwSpI91a\n=vaX4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8d0d06dfc6a6172eee82ee18fb0e113225ea2543\nparent 43404a21aea34ae17d09b6a3d948d1b52ef8fec7\nauthor Puja Chaudhury <61319491+catplotlib@users.noreply.github.com> 1789372429 -0700\ncommitter GitHub <noreply@github.com> 1789372429 +0200\n\nFix FloatingJointModel::getMaximumExtent(): cover full rotation range (#3854)\n\nRotation range is 0..180° (or 0..pi). Drop factor of 0.5.\n\nBefore 83ff55a4 the rotation distance was acos(|dot|), a half-angle in [0, pi/2], \nso the 0.5 was correct then and was missed when the consumer changed.",
+        "verified_at": "2026-09-14T07:53:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/moveit/moveit2/commits/822acad0f32dd2caded0930e77d176d435b1ac98",
+    "html_url": "https://github.com/moveit/moveit2/commit/822acad0f32dd2caded0930e77d176d435b1ac98",
+    "comments_url": "https://api.github.com/repos/moveit/moveit2/commits/822acad0f32dd2caded0930e77d176d435b1ac98/comments",
+    "author": {
+      "login": "catplotlib",
+      "id": 61319491,
+      "node_id": "MDQ6VXNlcjYxMzE5NDkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61319491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/catplotlib",
+      "html_url": "https://github.com/catplotlib",
+      "followers_url": "https://api.github.com/users/catplotlib/followers",
+      "following_url": "https://api.github.com/users/catplotlib/following{/other_user}",
+      "gists_url": "https://api.github.com/users/catplotlib/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/catplotlib/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/catplotlib/subscriptions",
+      "organizations_url": "https://api.github.com/users/catplotlib/orgs",
+      "repos_url": "https://api.github.com/users/catplotlib/repos",
+      "events_url": "https://api.github.com/users/catplotlib/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/catplotlib/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+        "url": "https://api.github.com/repos/moveit/moveit2/commits/43404a21aea34ae17d09b6a3d948d1b52ef8fec7",
+        "html_url": "https://github.com/moveit/moveit2/commit/43404a21aea34ae17d09b6a3d948d1b52ef8fec7"
+      }
+    ]
+  }
+]

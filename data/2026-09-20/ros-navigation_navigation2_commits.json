@@ -1,0 +1,1396 @@
+[
+  {
+    "sha": "7a1651bc22472cd23c3fa9ef25dd9b60d981a515",
+    "node_id": "C_kwDOCBF7SNoAKDdhMTY1MWJjMjI0NzJjZDIzYzNmYTllZjI1ZGQ5YjYwZDk4MWE1MTU",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-09-20T15:59:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-20T15:59:07Z"
+      },
+      "message": "Reusing a staleness-proofed tf lookup in controller server and subsequent components. (#6436)\n\n* Verifying if the transforms used by the controller server are stale\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Making current_pose in progress checker check method const\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Add transform staleness utilities and reuse controller pose\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Removing getPoseWithStalenessCheck util, adding comments\n\nSigned-off-by: Marco Matteo Bassa <bassamarco91@gmail.com>\n\n* Changing error mechanism for bool lookupTransformWithStalenessCheck\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Update nav2_controller/plugins/feasible_path_handler.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "d013d5e87ba3fcf3aa91c6cba2a0a917fc19d719",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/d013d5e87ba3fcf3aa91c6cba2a0a917fc19d719"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/7a1651bc22472cd23c3fa9ef25dd9b60d981a515",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsALLCRC1aQ7uu5UhlAAAAYEQACd14nF0fTIceheFvkjOpRVI\ntFaTuOotieUxg9T7dVHB61r6AbATk18BDvz6rusJGyen1cmczRUF5zyMD2xs8EsY\nxhK+/zMv23SU6NeSQk7Uka5Kp2JLYhvdN5r6QPY5HU9KQp8zBuR0uuT7ouNEhC6j\n0lrwjS0AiRvganqhXEpDcAxmPOeH0Tp81a2cA4SCuNqFK7lOGw6S0sAnfJX5RTh/\nJRRoIKgN2HOGPzV2se7DxK0zQ9jMsIsThKNGXRv9NVOTpg3mswkOGmy0YEri+lg2\nDMsSBudl/Q91jkmYTbG1BR4dE3r9ydn4xM1rr24ddZD3pEuLCotFu6QmsklKMhhp\nDldU6t5aK6I95rboRW2uYvjGnUOMzcDu3Mwvkh8oG0mIzK59uh0EHnzgnPsMu+QP\nYhXyQi6fbvI5nspvbrZfMnqfvK9mDLkZDS/6UHgqPHCUGA9sG/R/aecv0M9Vpr72\n/lu3d2XjF24GtgEoAr/oI+1VGft7eX2J+ZCwtSCg1wbehwXFQ1LqAJGhBjZcQST2\nrzMYPRSeyUh3LQHycIqpoH1kfPx8fjw7JEsq1gIkrYupw0gGpOncS0GPPsHF4Mq/\nt0k+uey7i1Nrs78cN6SM9YxChO8jTJXbNj6OFUOksRYbqeOAl4GDQ2PtF7xc6NH+\nLchg2WY82EMF+wKcUe1e\n=+P/F\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d013d5e87ba3fcf3aa91c6cba2a0a917fc19d719\nparent 24d4c19e958c5cfac3b10468066a8f88f00b89f6\nauthor Marco Bassa <bassamarco91@gmail.com> 1789919947 +0200\ncommitter GitHub <noreply@github.com> 1789919947 +0200\n\nReusing a staleness-proofed tf lookup in controller server and subsequent components. (#6436)\n\n* Verifying if the transforms used by the controller server are stale\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Making current_pose in progress checker check method const\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Add transform staleness utilities and reuse controller pose\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Removing getPoseWithStalenessCheck util, adding comments\n\nSigned-off-by: Marco Matteo Bassa <bassamarco91@gmail.com>\n\n* Changing error mechanism for bool lookupTransformWithStalenessCheck\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Update nav2_controller/plugins/feasible_path_handler.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-09-20T15:59:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7a1651bc22472cd23c3fa9ef25dd9b60d981a515",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/7a1651bc22472cd23c3fa9ef25dd9b60d981a515",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7a1651bc22472cd23c3fa9ef25dd9b60d981a515/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/24d4c19e958c5cfac3b10468066a8f88f00b89f6"
+      }
+    ]
+  },
+  {
+    "sha": "24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+    "node_id": "C_kwDOCBF7SNoAKDI0ZDRjMTllOTU4YzVjZmFjM2IxMDQ2ODA2NmE4Zjg4ZjAwYjg5ZjY",
+    "commit": {
+      "author": {
+        "name": "JanKim27",
+        "email": "btreefuzz@gmail.com",
+        "date": "2026-09-18T16:48:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-18T16:48:01Z"
+      },
+      "message": "Validate costmap message data size (Bug 2 in #6430)  (#6452)\n\n* Validate costmap message data size\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Add malformed costmap subscriber test\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Match Costmap cell count validation with OccupancyGrid\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Validate Costmap message header and metadata\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Fix CostmapSubscriber tests for header validation\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+      "tree": {
+        "sha": "43309ca934605b2873ffccdc8c4014ec36daba38",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/43309ca934605b2873ffccdc8c4014ec36daba38"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrWtBCRC1aQ7uu5UhlAAAILAQABjwwrs3dQHImv9I1L6Wth5t\n6clLFfmSYXb3UICaV3bYRu8UDcPPHRyRoXJi0QCyK97jswiOzns1q2ZqA6mCErKE\nzj94cmsXLdrp6lGyT4guJ2gSJIHwkE/NVZViALVZ3yAGgCpZblIbm1pf8EsGBheH\nCDflPJNOt3BrBpztkCFyg/AgMhn+J/rF9oHAIofKbBntc9512G3q4BsG5KDSGIWJ\n23J6xqwAO4s484815RSDneVX2WnnUhU3zoTf3JJdV0c7UQZvuiZ3zvioTKVBC+lj\n2kN65ekPMSuaLKMP4apWgRqmh67wtGy2sm1PMjdHyXsG2XWrydbCQ97aUPAou04u\njLhPic993qKbJ2/io2P9UK1tXiA/7dV0hGExDQk81MZiDjfHDMQJUgFJXmlHhR5i\nbhigdk9EpkJSQ5FrtSL64yH8fWbJStGmf+ZnUZRkSgdQGtdOlQEzY3Mdd7eg4KHe\nUglr2OQxa1Ge/CsCgZllywo8uDNfOKcdORRSDVBbdj/BYllQ6mRLECqGHraFPDzH\nhBPE8ginmkmM3Z4oZGmpG6xZi0mved6u7Iss7ollki+H0hhi+GhvNOjNLvhaclzs\nhAxyJq9xmnq5FY4/VRiPS48OU59FWpzRaSSwHUhh3X7jh+D/kICYIjk5go+dxGwC\nyxSopaGe9v2iQoqiWAhN\n=HtRn\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 43309ca934605b2873ffccdc8c4014ec36daba38\nparent 250cee9fca23ad182f5a5d61ca9427e8fb618e97\nauthor JanKim27 <btreefuzz@gmail.com> 1789750081 +0900\ncommitter GitHub <noreply@github.com> 1789750081 -0700\n\nValidate costmap message data size (Bug 2 in #6430)  (#6452)\n\n* Validate costmap message data size\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Add malformed costmap subscriber test\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Match Costmap cell count validation with OccupancyGrid\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Validate Costmap message header and metadata\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n* Fix CostmapSubscriber tests for header validation\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\n\n---------\n\nSigned-off-by: JanKim <sonysame@korea.ac.kr>\nCo-authored-by: JanKim <sonysame@korea.ac.kr>",
+        "verified_at": "2026-09-18T16:48:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/24d4c19e958c5cfac3b10468066a8f88f00b89f6",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/24d4c19e958c5cfac3b10468066a8f88f00b89f6/comments",
+    "author": {
+      "login": "JanKim27",
+      "id": 320895706,
+      "node_id": "U_kgDOEyB62g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/320895706?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JanKim27",
+      "html_url": "https://github.com/JanKim27",
+      "followers_url": "https://api.github.com/users/JanKim27/followers",
+      "following_url": "https://api.github.com/users/JanKim27/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JanKim27/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JanKim27/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JanKim27/subscriptions",
+      "organizations_url": "https://api.github.com/users/JanKim27/orgs",
+      "repos_url": "https://api.github.com/users/JanKim27/repos",
+      "events_url": "https://api.github.com/users/JanKim27/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JanKim27/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/250cee9fca23ad182f5a5d61ca9427e8fb618e97"
+      }
+    ]
+  },
+  {
+    "sha": "250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+    "node_id": "C_kwDOCBF7SNoAKDI1MGNlZTlmY2EyM2FkMTgyZjVhNWQ2MWNhOTQyN2U4ZmI2MThlOTc",
+    "commit": {
+      "author": {
+        "name": "Suad Shabaj",
+        "email": "suad.shabaj@ocado.com",
+        "date": "2026-09-18T16:37:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-18T16:37:24Z"
+      },
+      "message": "Support rvalues in Metadata::getValue & setValue (#6542)\n\n* Support rvalues in Metadata::getValue & setValue\n\nUpdate the parameter signatures of default_value and value from a\nmutable reference (T &) to a const reference (const T &).\n\nThis allows developers to pass temporary rvalues and literals\ndirectly into the functions.\n\nTicket Addressing: #6533\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>\n\n* Add test cases for metadata rvalue changes\n\n- Extended the existing Metadata unit test to cover the new signatures.\n- Added a case passing a literal default for an existing key.\n- Added a case setting a value using a literal instead of a named\n  variable.\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>\n\n---------\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>",
+      "tree": {
+        "sha": "6901badcda6aff30df0a7fb99cc112e80be4bf3e",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/6901badcda6aff30df0a7fb99cc112e80be4bf3e"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrWjECRC1aQ7uu5UhlAAAircQADyDea+t99UBAA7FjTmUR7mn\nYlSxNXVB56e0BKW0PC9aAyMarJjR6kDHSzfO7/Y0exdu4kJKKjsmzuFW3Bx1fVEk\nvBSn1tWCwiDZZ0Mizvj7xEpJjkAjeVX6iqQj0Vs1uR9AYemL3lXUj4s846tE4bRC\n33HX324UAE0JY0GXBfXYGX14eQ3QDjAJK8XP8TZV6iLOvzPQkESV8Lsa/RjWxl/7\nspGQZSzwd4oqwjv7cax3uWkcANsCGTTgVLXBgXRQAUP/x928YADINp7l2F6dGPLH\nLvzWDrTwE4w6b+ZiPYLZYT2l8QBXReVatiQRdc0vJDI1D/iSxBedYE3HWJqNvc9R\nSycu443tcgV70oqMt0SjqXJc1y/K+3KKpgtXx/0h3C3Lgo6DZJAsQZhLkS23jpjh\nYPyBcK8uFApnd6DUm2VNmNgUkk9X3aGJmRQXwL7mROsQ2/BQu61/56C7Ij83aGdN\njEBHjGrpE/p7lT2WNKakZ9QgUpaRH2JZ+C7C6sg035JiYtrL8AF5CSUu+L88lW36\n9XHxJTptodY+cXiw8tRrbVh1dDILrhL8lcsHBuzFIjkTNx3XnKqDR+Vo8CIgIjGv\nDvyEFiwECfbztchzMdSuV6P3+oyb+QkWficn+WlXeO1vU74AGXYvjHqYAdbtu/11\nwyXCOMDe7nkCdr4tHMo7\n=xm/G\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6901badcda6aff30df0a7fb99cc112e80be4bf3e\nparent e9b5a24b057835e51d216d564ea99b94d3b33690\nauthor Suad Shabaj <suad.shabaj@ocado.com> 1789749444 +0300\ncommitter GitHub <noreply@github.com> 1789749444 -0700\n\nSupport rvalues in Metadata::getValue & setValue (#6542)\n\n* Support rvalues in Metadata::getValue & setValue\n\nUpdate the parameter signatures of default_value and value from a\nmutable reference (T &) to a const reference (const T &).\n\nThis allows developers to pass temporary rvalues and literals\ndirectly into the functions.\n\nTicket Addressing: #6533\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>\n\n* Add test cases for metadata rvalue changes\n\n- Extended the existing Metadata unit test to cover the new signatures.\n- Added a case passing a literal default for an existing key.\n- Added a case setting a value using a literal instead of a named\n  variable.\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>\n\n---------\n\nSigned-off-by: Suad Shabaj <suad.shabai@gmail.com>",
+        "verified_at": "2026-09-18T16:37:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/250cee9fca23ad182f5a5d61ca9427e8fb618e97",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/250cee9fca23ad182f5a5d61ca9427e8fb618e97/comments",
+    "author": {
+      "login": "SuadOcado",
+      "id": 186715316,
+      "node_id": "U_kgDOCyEMtA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/186715316?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuadOcado",
+      "html_url": "https://github.com/SuadOcado",
+      "followers_url": "https://api.github.com/users/SuadOcado/followers",
+      "following_url": "https://api.github.com/users/SuadOcado/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SuadOcado/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SuadOcado/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SuadOcado/subscriptions",
+      "organizations_url": "https://api.github.com/users/SuadOcado/orgs",
+      "repos_url": "https://api.github.com/users/SuadOcado/repos",
+      "events_url": "https://api.github.com/users/SuadOcado/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SuadOcado/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e9b5a24b057835e51d216d564ea99b94d3b33690",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9b5a24b057835e51d216d564ea99b94d3b33690",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/e9b5a24b057835e51d216d564ea99b94d3b33690"
+      }
+    ]
+  },
+  {
+    "sha": "e9b5a24b057835e51d216d564ea99b94d3b33690",
+    "node_id": "C_kwDOCBF7SNoAKGU5YjVhMjRiMDU3ODM1ZTUxZDIxNmQ1NjRlYTk5Yjk0ZDNiMzM2OTA",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-18T00:57:13Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-18T00:57:13Z"
+      },
+      "message": "Fix Smac Hybrid search state after costmap resolution changes (#6512)\n\n* Fix Smac Hybrid search state after costmap resolution changes\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Address feedback\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Lint\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "2bded7575d87690811fcc42d79facbbaf07965e4",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/2bded7575d87690811fcc42d79facbbaf07965e4"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/e9b5a24b057835e51d216d564ea99b94d3b33690",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrIxpCRC1aQ7uu5UhlAAAGLgQAKm0di4IVcDEz5Maxpv5Omai\nI1sG+cPuIXAdiZtR/Z7Ug9Bo5g1gimvP+V/bxvyPPLefEP2RILfq72exJUKTuHwA\nQFWVGmhpTq1qPpWwvtnbIeZQx6kA2ghOY655jfiOFB3x9eaWZDkw6hN6Cj5tWKi9\ncYzdjyWoNfC5xlsstVnTLwjj1og9yBFSm9wCqbWBzUwsRQBvH9Xf4kiufaQZyrKv\nHmkNQchSo8BJdQNYCjWCsAr0iEzOa7vbodh4Ra0r30uff/H7JhGmRmBvoc58AwQS\nJkgSRn+/XU9X+CYfCIStZvd3ati8N4thHvMMEKzxRhBmNSOwKmmVWQa0N92t5kAB\nxU5LukEXf0IuSXTBy81lG20LbHJkCU9pBZe3jZzKIF4Ks3WcfbvtsvyTBL7x2YJh\ng7ClMDHzq/8uli7cOZlXBblMGA1b9pmMkFhM2+Kyiyrc8rbeUr4zZ6wQKcRSfcTm\nsLdAFN87kU46ihC6fBH08G/ixEyA8AEHJOmplpfoOGhOeggyLCgUISrOiWcRLRsQ\nG25igmxu2/n+U0xVLeBJKKQXEtXpj9MQIuMGfHBIU/rMZIqKACEQEgnwlolRiZIy\nmjf0/Y8HNguBs7gejC60dFb/6lv6j/pMrJGMCiUYUiubEZOFt0uSzx5dfFJwPglb\n46srvuK5K3hWv8DKhZPx\n=/4rB\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2bded7575d87690811fcc42d79facbbaf07965e4\nparent 76b2d4d0e09e549ebdc08127a603ba8e81120b94\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1789693033 +0800\ncommitter GitHub <noreply@github.com> 1789693033 -0700\n\nFix Smac Hybrid search state after costmap resolution changes (#6512)\n\n* Fix Smac Hybrid search state after costmap resolution changes\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Address feedback\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Lint\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-09-18T00:57:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9b5a24b057835e51d216d564ea99b94d3b33690",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/e9b5a24b057835e51d216d564ea99b94d3b33690",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9b5a24b057835e51d216d564ea99b94d3b33690/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/76b2d4d0e09e549ebdc08127a603ba8e81120b94"
+      }
+    ]
+  },
+  {
+    "sha": "76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+    "node_id": "C_kwDOCBF7SNoAKDc2YjJkNGQwZTA5ZTU0OWViZGMwODEyN2E2MDNiYThlODExMjBiOTQ",
+    "commit": {
+      "author": {
+        "name": "suchetanrs",
+        "email": "79915569+suchetanrs@users.noreply.github.com",
+        "date": "2026-09-17T18:06:05Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T18:06:05Z"
+      },
+      "message": "Fix AssistedTeleop lateral projection sign and also add unit tests for assisted teleop (#6535)\n\nSigned-off-by: suchetanrs <suchetan.saravanan@gmail.com>",
+      "tree": {
+        "sha": "e79501d414207500c71f0142c4b926b1d0591dc5",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e79501d414207500c71f0142c4b926b1d0591dc5"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrCwNCRC1aQ7uu5UhlAAAZUsQAFOXZu2AjrXCOMy4ktzfqAVq\nyqUhPkFfKmBFSygtPuJyisjoT3qGaF7rqB6cDr5r+wOE1G/tSdX2VzwT+7UdIU+z\n2tEwU/jw2JWjKa2ZCj6vcNvwF84FSkSxRxrIDiYqgip0AnOy7R0EdK8dnObGt8/q\nRqEPSpGZS3wxQdqqqnVOGsAVjO9fqhPEwG8uiQqPvlQEtP5i8RSBmtXMhNZVpxUb\ndZUjLzUlt8y1zz8catWVarvMqpR6d/mH0fu6Nk0hfSfpBrPKu3gQcQrvJEgoqwST\nKE8wVAUPqcBN9gBniNKeKCWl3bBAqSL7xE2NJtKuRayXxrR8Dj31W8MGOCBdPQjc\nP/UjWR+bvIQHbGbKcnJ06f+dH7/wsa7RkFuwNrNBOIzCmWvFjRX6zK67nAnOwigS\nSs6aYLFiDfY6iMp4I7LgqACyYM2HeF043mx54pymkhlGP+eWqBa+Y6saYxKieAk3\nLFwfQQCZf9HWqWTIgIgy5SI3pPILtYE36e4gGuQ94hf/7fiE+Au20Jsdhempay0c\nJ8fHOfmiOdk4k8F13aaQLc2nAF7zy++TyL/J1dCObVmyNA9Y4p9kXySQMFpsU+x1\nxa/rw0aly6fTNOR/KNaY+TeELUI8GTJUknUfW/eZ8YPt1BDKUHjLQxMswTEeGcAc\n3+njC72ArzbIVsSFbaxs\n=UgPM\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e79501d414207500c71f0142c4b926b1d0591dc5\nparent e9e77d65583730c2174bf1080a0e6379840e44f6\nauthor suchetanrs <79915569+suchetanrs@users.noreply.github.com> 1789668365 +0530\ncommitter GitHub <noreply@github.com> 1789668365 -0700\n\nFix AssistedTeleop lateral projection sign and also add unit tests for assisted teleop (#6535)\n\nSigned-off-by: suchetanrs <suchetan.saravanan@gmail.com>",
+        "verified_at": "2026-09-17T18:06:06Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/76b2d4d0e09e549ebdc08127a603ba8e81120b94",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/76b2d4d0e09e549ebdc08127a603ba8e81120b94/comments",
+    "author": {
+      "login": "suchetanrs",
+      "id": 79915569,
+      "node_id": "MDQ6VXNlcjc5OTE1NTY5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79915569?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/suchetanrs",
+      "html_url": "https://github.com/suchetanrs",
+      "followers_url": "https://api.github.com/users/suchetanrs/followers",
+      "following_url": "https://api.github.com/users/suchetanrs/following{/other_user}",
+      "gists_url": "https://api.github.com/users/suchetanrs/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/suchetanrs/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/suchetanrs/subscriptions",
+      "organizations_url": "https://api.github.com/users/suchetanrs/orgs",
+      "repos_url": "https://api.github.com/users/suchetanrs/repos",
+      "events_url": "https://api.github.com/users/suchetanrs/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/suchetanrs/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e9e77d65583730c2174bf1080a0e6379840e44f6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9e77d65583730c2174bf1080a0e6379840e44f6",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/e9e77d65583730c2174bf1080a0e6379840e44f6"
+      }
+    ]
+  },
+  {
+    "sha": "e9e77d65583730c2174bf1080a0e6379840e44f6",
+    "node_id": "C_kwDOCBF7SNoAKGU5ZTc3ZDY1NTgzNzMwYzIxNzRiZjEwODBhMGU2Mzc5ODQwZTQ0ZjY",
+    "commit": {
+      "author": {
+        "name": "Sabeeh ul hassan Saad",
+        "email": "engrsabeeh@live.com",
+        "date": "2026-09-17T18:01:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T18:01:42Z"
+      },
+      "message": "Clear MPPI costs between optimization iterations (#6537)\n\nDiscard previous rollout costs before scoring each new batch so\nmulti-iteration updates use only current trajectory costs.\n\nAdd GoalCritic regression coverage for one, two and three iterations.\nAn equivalent reset was included in ros-navigation/navigation2#6151.\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+      "tree": {
+        "sha": "eefa00252a4c0ec0ec98b2fdfd85a3f6408edc66",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/eefa00252a4c0ec0ec98b2fdfd85a3f6408edc66"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/e9e77d65583730c2174bf1080a0e6379840e44f6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrCsGCRC1aQ7uu5UhlAAAeMIQAFrpT9BfV2s8Pz1aeGXrsvb9\nSEYiNqQ4UcvEwwVQ/sESDhkwXO1MDsU78wrBkn4o9k/gLhVENjxpTiThTjxgz/pQ\n314vCY7ruH9IkY8Tfvg10Yv/PagPrtLoXyVMbZTTBU8ymzIlKzhcuJnVl7B8LOtz\nDAEKn8p1jPLfea+LLzzUTswTT2jL7Ed2oG3NITioRJA2SSTSy2JtHZui7LkCxio9\nAuEhYKC7xhWzJogpC0hl7f72W8iYhOXWYGUIgZN5IR2L7i4cVshBLi61HoPKUIjE\nAlxJmL9QhmlEwo117aFoBoQNZJBlXzvZVkvSoslArB761QX0cQZwqVmU18LIVczL\nTLDM8wk2FSmfw6+eQ3Hm5A3aMvvBcQCLtin4MzQ+qxp5nNkBiRJ/3hbfKPCPQJh2\nor3FRdqnA0QY0Z8Esl7IWtVy2bVuhPt3LiFK3TCpctotjCKktv3NbS/wFQqD69qN\n+6xj+DHn+XexfxkEYYCd647CmzqEc18GOHjmLwCWeDA21wnizBbsJ1z/4I7RvOZh\nwF5l9GxxMyvcvHh9+iYHGxgKvogRvplA3BVU9hzUSVs5deBkODCA0MpT6iHBjtuD\nemvBeQUrONk+ecs/slTY/Q1x5cShfrUI5OCVK1A0YHoAPQK5QqOjZsJTzbnuYH8t\nI3H16iCzsUFu/JaIRcR/\n=Lc7F\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree eefa00252a4c0ec0ec98b2fdfd85a3f6408edc66\nparent c8a281296ad2cd061d371f9b957057182f32f06c\nauthor Sabeeh ul hassan Saad <engrsabeeh@live.com> 1789668102 +0200\ncommitter GitHub <noreply@github.com> 1789668102 -0700\n\nClear MPPI costs between optimization iterations (#6537)\n\nDiscard previous rollout costs before scoring each new batch so\nmulti-iteration updates use only current trajectory costs.\n\nAdd GoalCritic regression coverage for one, two and three iterations.\nAn equivalent reset was included in ros-navigation/navigation2#6151.\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+        "verified_at": "2026-09-17T18:01:43Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9e77d65583730c2174bf1080a0e6379840e44f6",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/e9e77d65583730c2174bf1080a0e6379840e44f6",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e9e77d65583730c2174bf1080a0e6379840e44f6/comments",
+    "author": {
+      "login": "sabeeh-saad",
+      "id": 14162626,
+      "node_id": "MDQ6VXNlcjE0MTYyNjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14162626?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sabeeh-saad",
+      "html_url": "https://github.com/sabeeh-saad",
+      "followers_url": "https://api.github.com/users/sabeeh-saad/followers",
+      "following_url": "https://api.github.com/users/sabeeh-saad/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sabeeh-saad/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sabeeh-saad/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sabeeh-saad/subscriptions",
+      "organizations_url": "https://api.github.com/users/sabeeh-saad/orgs",
+      "repos_url": "https://api.github.com/users/sabeeh-saad/repos",
+      "events_url": "https://api.github.com/users/sabeeh-saad/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sabeeh-saad/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c8a281296ad2cd061d371f9b957057182f32f06c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c8a281296ad2cd061d371f9b957057182f32f06c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/c8a281296ad2cd061d371f9b957057182f32f06c"
+      }
+    ]
+  },
+  {
+    "sha": "c8a281296ad2cd061d371f9b957057182f32f06c",
+    "node_id": "C_kwDOCBF7SNoAKGM4YTI4MTI5NmFkMmNkMDYxZDM3MWY5Yjk1NzA1NzE4MmYzMmYwNmM",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-17T15:57:17Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-17T15:57:17Z"
+      },
+      "message": "Fix missing fstream include in Nav2 panel (#6536)\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "e968b343ec4a36690c6b4c95dd1f9325da2238cd",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/e968b343ec4a36690c6b4c95dd1f9325da2238cd"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/c8a281296ad2cd061d371f9b957057182f32f06c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrA3dCRC1aQ7uu5UhlAAAFooQACLuHeNYQYgmLEIJRYik/iL2\nameaiti8OG10zn28taCIfsqvwv/yx/RHdZuYTHOYR/ttLdUfHvqk0NeWazYCMUr0\nc9xek3ESKqE6WAKjgQ3kAhNF4OKO8MK2TF/crW6rTsi3ZRpgUNRK/UFVhfsH6mhH\niE/C61UsxtHUtTGs0X2HT6TQE6osOD8b/tY6BAgtVwvezDQnY+d2nIZX43ngQyj7\nBLp4ObKMftlvZ9iCquM1WNqOqYj6wK8He0GD5m1B8WjuzgEokVmyE1s9nqudE6WR\nCDzK2uIXK4lILzhnt0LVCzu4c62wZJikopThlh4lcCetFhdJjp7T9syJkYE9G71M\n62mDE4m4IW5Jk1eZSBSRvlrmmpM3on8tshKHgwHzSAmNJU1rqi78tbKkiKcw1+6m\nnWhcHYGdPOwnxvSpRjqPxcCuXxFb4LXnWbzGlTN2VGsVofnbypgNdkRj+T2qg7ly\ny9pI34JALNwAAakzHiZJyYUzBLLeDYoLGJ5hpNekZvCYIocnRBG6JpNI31LPrI6D\nKdh5jumBpyt49JwbcC8KBB2J/1PGoY+aNU9DSdlyfKKdaw3dq8zGJwAfMFN1W6XD\n16BjuTFi1l3ybczl5QEekfWnNB+L2mRxY3C6S1r4Kl2CfveYIi1QNgM8GFbUTZHW\nFauaY/Z08hyOlSQdxdU0\n=FJ/J\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e968b343ec4a36690c6b4c95dd1f9325da2238cd\nparent f1f807037e109528798d0e00af50a0288bcb160b\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1789660637 +0800\ncommitter GitHub <noreply@github.com> 1789660637 -0700\n\nFix missing fstream include in Nav2 panel (#6536)\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-09-17T15:57:17Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c8a281296ad2cd061d371f9b957057182f32f06c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/c8a281296ad2cd061d371f9b957057182f32f06c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/c8a281296ad2cd061d371f9b957057182f32f06c/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f1f807037e109528798d0e00af50a0288bcb160b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f1f807037e109528798d0e00af50a0288bcb160b",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/f1f807037e109528798d0e00af50a0288bcb160b"
+      }
+    ]
+  },
+  {
+    "sha": "f1f807037e109528798d0e00af50a0288bcb160b",
+    "node_id": "C_kwDOCBF7SNoAKGYxZjgwNzAzN2UxMDk1Mjg3OThkMGUwMGFmNTBhMDI4OGJjYjE2MGI",
+    "commit": {
+      "author": {
+        "name": "Sabeeh ul hassan Saad",
+        "email": "engrsabeeh@live.com",
+        "date": "2026-09-16T23:00:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T23:00:46Z"
+      },
+      "message": "Refresh MPPI noise distributions on reset (#6531)\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+      "tree": {
+        "sha": "a02031ee97b115ce7d6d0f9a0d2e05081aadb246",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/a02031ee97b115ce7d6d0f9a0d2e05081aadb246"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/f1f807037e109528798d0e00af50a0288bcb160b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqx+eCRC1aQ7uu5UhlAAAAjgQADwuoyf14Ss18oqRNiOS1YZh\nesnLDvYtCkpO5c5ehmL5QrrE2S5UZEp1TYwZ3teroftytbMUKOwhU6w97yYjULVe\nlwim8qUBnsqdx/KYT6R7z9p0AvfhFTVCjF9TrsKthM371ypHR/EwfaLXjWE5mFkR\nUU4FXz/9tbl9oNoP2Csz02fWNTo+ycYKMwQCSCHSJVtBXAE/c35kQoXUwJwwHU8D\nYlurAT+ulYIUA6sExyeQ+eax/7mNSSLRf+vcjtd+Zz8yLPfxIyV70EADqQ/SszBm\nNrirxdItDCaxfR8OC/3K9bk2ZPDQvYVTmPz6qQFkkGea4cNxGDQFVQRyP+QM8A3T\nQLKd55Kfoo57Ff7N3KUrFKug4aneAYfyp/94thCzFTIImJjX53ITlSzoFXFgikK3\n0d5KBOBmjAx0XSGc9cfkndbQ70lg8uEykvRhU7qeUTMUqUoArjXUY0ib/T/xwOYt\nrkC4JeZzUlN1Q2NAX7RQ9LDvecHyufyeXqf9H3FvHcbDF4TjtNGVaJL4Bt7CZ1lA\nxVhw463DA+Yjkbh+N76MARidNyBjCD6tNWThQRgVyyUfGVlQfZVn3JQ5Kt21bYpv\nWpfM4E1TRZThe6UtanArHAWwIh2sntx6elmuZ20iedFzdXtcnwACqUpWSg8mD70b\nNcCC1HLooUzrOK2VFr8A\n=KiqP\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a02031ee97b115ce7d6d0f9a0d2e05081aadb246\nparent 0e572bab734ee79c683c5668adf0d598dde6260c\nauthor Sabeeh ul hassan Saad <engrsabeeh@live.com> 1789599646 +0200\ncommitter GitHub <noreply@github.com> 1789599646 -0700\n\nRefresh MPPI noise distributions on reset (#6531)\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+        "verified_at": "2026-09-16T23:00:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f1f807037e109528798d0e00af50a0288bcb160b",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/f1f807037e109528798d0e00af50a0288bcb160b",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f1f807037e109528798d0e00af50a0288bcb160b/comments",
+    "author": {
+      "login": "sabeeh-saad",
+      "id": 14162626,
+      "node_id": "MDQ6VXNlcjE0MTYyNjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14162626?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sabeeh-saad",
+      "html_url": "https://github.com/sabeeh-saad",
+      "followers_url": "https://api.github.com/users/sabeeh-saad/followers",
+      "following_url": "https://api.github.com/users/sabeeh-saad/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sabeeh-saad/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sabeeh-saad/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sabeeh-saad/subscriptions",
+      "organizations_url": "https://api.github.com/users/sabeeh-saad/orgs",
+      "repos_url": "https://api.github.com/users/sabeeh-saad/repos",
+      "events_url": "https://api.github.com/users/sabeeh-saad/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sabeeh-saad/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0e572bab734ee79c683c5668adf0d598dde6260c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0e572bab734ee79c683c5668adf0d598dde6260c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/0e572bab734ee79c683c5668adf0d598dde6260c"
+      }
+    ]
+  },
+  {
+    "sha": "0e572bab734ee79c683c5668adf0d598dde6260c",
+    "node_id": "C_kwDOCBF7SNoAKDBlNTcyYmFiNzM0ZWU3OWM2ODNjNTY2OGFkZjBkNTk4ZGRlNjI2MGM",
+    "commit": {
+      "author": {
+        "name": "Sabeeh ul hassan Saad",
+        "email": "engrsabeeh@live.com",
+        "date": "2026-09-16T20:45:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T20:45:37Z"
+      },
+      "message": "Fix skipped cells on steep footprint edges (#6525)\n\n* Fix skipped cells on steep footprint edges\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Handle steep lines in the line iterator\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Preserve precise line endpoints\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Consolidate line iterator test checks\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Preserve constant coordinates on horizontal lines\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n---------\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+      "tree": {
+        "sha": "3adde1937d22d21258aec127d803f9b27c3203cf",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/3adde1937d22d21258aec127d803f9b27c3203cf"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/0e572bab734ee79c683c5668adf0d598dde6260c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqv/xCRC1aQ7uu5UhlAAAeIEQAHWqZvcN6Oxb3+zI05O7kcJQ\nKPbyf/5dcsb1RsLuIXtwVrN+i6CaiCfXiNz+3yL6Z4Heb8zMflSE2Sdpdwq3fh3d\ngv6A0GkTeMySpqcfudJdymeipyaWlNGxn947faeKOAnYd5Eg0eG2l0xcEzw2MJ5t\n/Ciy2tdp7mES1L+SdxpP/hNhgicGGcNDAfyFdgpNa27Zz9wzWdDxuHCDrh3tuxRI\nGU0t/4u98CH9duM9IGxRGv5j/M4e4j7TWT/zYIAw+rwjzSGvSFxiqe++Mna3p1LF\nfbyMCUZNn42fxRth8r9bqDYCppk4DI6DmBrSFTJtlgSFurJ6TbeJJcm841If/vji\nucCvJqFMEsy2EzrIv0wAR9cGtgTEqT2GKfckoAQxKk7HrSSe1SZ/IHAVpiIbYbop\nacMKnpGOU+1BoTYqFT1Z7YO1hspUma7Qruy4j2xhNd8gGnyv1Sk/VRgaJXXnnyzm\nXM72AYsmABmvpjlgj+MohJkhavul35hNJ7kgFYUyJkCjiU2AbynAwsb1ozNqpmVN\nPi4hJES3U68f48Xi7g3lUYXCaSck2DzGN7vrwQg0A6tbqNUDZU+otTPkE6/E0feq\nH68UvMG+PhSXDwJ+JdsQYenwv+8ajxw6tgwNzapcWryr0nCfssjX9qgBtfbdIK+S\nqSpykZcDYmlClx69AvjV\n=P7uC\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3adde1937d22d21258aec127d803f9b27c3203cf\nparent a661a598f6393047ef3a270b8e055ab9d85fb91f\nauthor Sabeeh ul hassan Saad <engrsabeeh@live.com> 1789591537 +0200\ncommitter GitHub <noreply@github.com> 1789591537 -0700\n\nFix skipped cells on steep footprint edges (#6525)\n\n* Fix skipped cells on steep footprint edges\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Handle steep lines in the line iterator\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Preserve precise line endpoints\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Consolidate line iterator test checks\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n* Preserve constant coordinates on horizontal lines\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>\n\n---------\n\nSigned-off-by: Sabeeh ul Hassan Saad <engrsabeeh@live.com>",
+        "verified_at": "2026-09-16T20:45:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0e572bab734ee79c683c5668adf0d598dde6260c",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/0e572bab734ee79c683c5668adf0d598dde6260c",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/0e572bab734ee79c683c5668adf0d598dde6260c/comments",
+    "author": {
+      "login": "sabeeh-saad",
+      "id": 14162626,
+      "node_id": "MDQ6VXNlcjE0MTYyNjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14162626?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sabeeh-saad",
+      "html_url": "https://github.com/sabeeh-saad",
+      "followers_url": "https://api.github.com/users/sabeeh-saad/followers",
+      "following_url": "https://api.github.com/users/sabeeh-saad/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sabeeh-saad/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sabeeh-saad/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sabeeh-saad/subscriptions",
+      "organizations_url": "https://api.github.com/users/sabeeh-saad/orgs",
+      "repos_url": "https://api.github.com/users/sabeeh-saad/repos",
+      "events_url": "https://api.github.com/users/sabeeh-saad/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sabeeh-saad/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a661a598f6393047ef3a270b8e055ab9d85fb91f",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a661a598f6393047ef3a270b8e055ab9d85fb91f",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/a661a598f6393047ef3a270b8e055ab9d85fb91f"
+      }
+    ]
+  },
+  {
+    "sha": "a661a598f6393047ef3a270b8e055ab9d85fb91f",
+    "node_id": "C_kwDOCBF7SNoAKGE2NjFhNTk4ZjYzOTMwNDdlZjNhMjcwYjhlMDU1YWI5ZDg1ZmI5MWY",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-16T19:10:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-16T19:10:56Z"
+      },
+      "message": "Static Layer resize_master (#6488)\n\n* Fix StaticLayer maximum merge treating unknown as the highest cost\n\nIn the rolling-window path of updateCosts the layer merged with a plain std::max.\nNO_INFORMATION (255) is larger than LETHAL_OBSTACLE (254), so an unknown map cell\noverwrote lethal cells placed by other layers, and on a master that tracks unknown\nspace the map's own lethal cells never landed at all. Apply the same rule as\nupdateWithMax: unknown map cells are transparent and a known cost replaces an\nunknown master cell.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add StaticLayer overlay mode\n\nNew initialization-only parameter resize_master (default true keeps the current\nbehavior). With resize_master: false on a non-rolling costmap the layer keeps the\nmap's own size, origin and resolution and is sampled into the master through the\nexisting rolling-window path, so several OccupancyGrid sources can be layered under\nInflationLayer. The layer reports its current and previous extent as bounds so a\nreplaced or moved map clears what it used to cover.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Revert \"Fix StaticLayer maximum merge treating unknown as the highest cost\"\n\nThis reverts commit 75bc6dd242c3aa3dd2e7cc59b29e7e2b437dd784.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Rename sharesMasterGeometry to usesMasterCostmapSize for clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor StaticLayer to remove unused overlay bounds and improve clarity in comments\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Fix StaticLayer to ensure has_updated_data_ is set on TransformException\nRename overlay tests to reflect their purpose in resizing master geometry\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add tests for StaticLayer to validate master resize behavior and frame rejection\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor StaticLayer to improve boundary calculations and update test cases for resolution changes\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "8045540eabfad60268024da84bdb6fcd3bb87389",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/8045540eabfad60268024da84bdb6fcd3bb87389"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a661a598f6393047ef3a270b8e055ab9d85fb91f",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqunACRC1aQ7uu5UhlAAAkOcQAKx5MWhlb3tWpDP5q10sm3A4\nuR7+IWOC1tcg1pRcqDYhp7NksDQAhfEk/cw1qpsliFMZabhbYwPDr3bW8F4PUsME\nsn8yp7BEwzOsANJWVIq6lb2MTyo7EO6bzU8Ts5/lPe4rwykv/e23F7nPDGkZWu9H\nl8tY0MmKV6YytZsJcO/+iOnEbE9NMOKfmMZPTfStnwRvHys/iZ1oZt9aIxqbMsTo\nBp+OEeXvtSceyDBtgslmg9DbGCGmgEfVxXnSMYtNR1A8KizzoR543l1oRaLlcO9n\nQPTqLoYb9gGSZ4eD3LNsB271zo2m1sNoLzeaMXa/fdDyO/HNZA3T5zhlebinq2x2\nIbMG8k/Cg/GIfKvveUQ72HNzhZoLGUchLziBthVbU8VHm4E71FttQn3yV5Jz3GmT\nEXkAI5Legg54Xk6M/UFMR3DOOQ/niwBLYUfPr+JmlkNPVVZFvz2W7VLgCX0Djh8Z\nCAHt5CVT3+eoUxodIaRidWP52k9l2mG9CFtSyBgmU3+jbwh4qgnpusnUXwUDaQXZ\n9eSlOpAOf4nQaqPXjk8t31wimpe0dJM8ek5KMpjvNcwG51HakGOzq4EfCFUXmyc+\nUlKfd8cNxNhWtuydXR3iTMlHoqctbD00B3QdbfRRdbwbWoSwFaaQgfqe4u20Nzo7\nQGX+vyLnXItay8o0slWO\n=ZFRL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8045540eabfad60268024da84bdb6fcd3bb87389\nparent 195290e2fe34d653a808262ece9600aa592b5db6\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1789585856 +0200\ncommitter GitHub <noreply@github.com> 1789585856 -0700\n\nStatic Layer resize_master (#6488)\n\n* Fix StaticLayer maximum merge treating unknown as the highest cost\n\nIn the rolling-window path of updateCosts the layer merged with a plain std::max.\nNO_INFORMATION (255) is larger than LETHAL_OBSTACLE (254), so an unknown map cell\noverwrote lethal cells placed by other layers, and on a master that tracks unknown\nspace the map's own lethal cells never landed at all. Apply the same rule as\nupdateWithMax: unknown map cells are transparent and a known cost replaces an\nunknown master cell.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add StaticLayer overlay mode\n\nNew initialization-only parameter resize_master (default true keeps the current\nbehavior). With resize_master: false on a non-rolling costmap the layer keeps the\nmap's own size, origin and resolution and is sampled into the master through the\nexisting rolling-window path, so several OccupancyGrid sources can be layered under\nInflationLayer. The layer reports its current and previous extent as bounds so a\nreplaced or moved map clears what it used to cover.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Revert \"Fix StaticLayer maximum merge treating unknown as the highest cost\"\n\nThis reverts commit 75bc6dd242c3aa3dd2e7cc59b29e7e2b437dd784.\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Rename sharesMasterGeometry to usesMasterCostmapSize for clarity\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor StaticLayer to remove unused overlay bounds and improve clarity in comments\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Fix StaticLayer to ensure has_updated_data_ is set on TransformException\nRename overlay tests to reflect their purpose in resizing master geometry\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Add tests for StaticLayer to validate master resize behavior and frame rejection\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Refactor StaticLayer to improve boundary calculations and update test cases for resolution changes\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-16T19:10:57Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a661a598f6393047ef3a270b8e055ab9d85fb91f",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a661a598f6393047ef3a270b8e055ab9d85fb91f",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a661a598f6393047ef3a270b8e055ab9d85fb91f/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "195290e2fe34d653a808262ece9600aa592b5db6",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/195290e2fe34d653a808262ece9600aa592b5db6",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/195290e2fe34d653a808262ece9600aa592b5db6"
+      }
+    ]
+  },
+  {
+    "sha": "195290e2fe34d653a808262ece9600aa592b5db6",
+    "node_id": "C_kwDOCBF7SNoAKDE5NTI5MGUyZmUzNGQ2NTNhODA4MjYyZWNlOTYwMGFhNTkyYjVkYjY",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-15T22:41:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-15T22:41:10Z"
+      },
+      "message": "Enhance footprint clearing for rolling costmaps and improve transformation handling (#6520)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "6dc15b248c4e4a7138c75e68d84c89507e86bb06",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/6dc15b248c4e4a7138c75e68d84c89507e86bb06"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/195290e2fe34d653a808262ece9600aa592b5db6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqcmGCRC1aQ7uu5UhlAAAcggQAH4Ww1nHBNtqSq2uH3kYuhn9\nO1+RVCkYnlGtDwLUyDjtczbVwChWfypdmW9LsHG2SrbvTEPjjAf9CN9zxIJPrBfo\n6ED2kaU+w5gXLynw1fzeWC7MSqDKQXWLIDGjmVH/fk8W61hvqnMI419O9bXoe2dy\n9Wj7/ExSuCGXpPooGvxRGVNrzs6p4e5P6WmOyn2SnXEYaDEiYxoqFslMVQphmziu\nPgZMt8Ye2xwwiilNK/0/H2c8fV5+yX9aMGQvBCKi/027sReMjT339UNN4Y8rhzoJ\n8GkqtnCjOYN5i34NzR/A17G8GjdWSN+LjpFkd6SOxuh6KqrGOi1BNgJOTGknfKKV\nHVkR5JWnMuPpJHrk5PW444aGcPP6sYo7VlhReT9JTMcyFtpZjClYs5YyKyLuFNEK\nBNai+9CZm2Bfz/5RrqHnPLEH/chUWdwmKY763E+T7wDccYcXg6R2Ems9oBb5mov+\nJNgyqaqZWyJ94remr84i0g2aDoCmnXOPr3kakeM1o0kVR1csptCNM72eBwlwI/sp\nhKLhUBxgFjUOH6xfbtI+odgFJC2PGsQZMusODyJDVNpn1auvAjHwhqDAUokK0kIp\nVBuT+EkzYD+llAyDlHcFXsxKuL9SmN16+EFPs0j+H25VkNRYmM+1oIFz4BGfeuLR\nxSn3qcGhflegAsXpfYk3\n=5kz0\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6dc15b248c4e4a7138c75e68d84c89507e86bb06\nparent 370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1789512070 +0200\ncommitter GitHub <noreply@github.com> 1789512070 -0700\n\nEnhance footprint clearing for rolling costmaps and improve transformation handling (#6520)\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-15T22:41:11Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/195290e2fe34d653a808262ece9600aa592b5db6",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/195290e2fe34d653a808262ece9600aa592b5db6",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/195290e2fe34d653a808262ece9600aa592b5db6/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd"
+      }
+    ]
+  },
+  {
+    "sha": "370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+    "node_id": "C_kwDOCBF7SNoAKDM3MGY2YjZjYjA4MWYzYmE1NTNiYmRmYTQwODJiMWFjOTBjYzQ3YmQ",
+    "commit": {
+      "author": {
+        "name": "Marco Bassa",
+        "email": "bassamarco91@gmail.com",
+        "date": "2026-09-15T19:54:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-15T19:54:21Z"
+      },
+      "message": "Always performing a full costmap publish on new subscriptions (#6510)\n\n* Always performing a full costmap publish on new subscriptions\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Performing a full costmap publish on new subscriptions without waiting\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+      "tree": {
+        "sha": "3f38224198e8ed4baf5a4e5502a65ed3e8b1632b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/3f38224198e8ed4baf5a4e5502a65ed3e8b1632b"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqaJtCRC1aQ7uu5UhlAAAELoQAIOWCsZ+mLT94u6OzKENZlN5\nIcWe2RRubEhK99Ppmnd/cEvPLxFAkvvGNX0+mG2nOSapzQyLtSd9Bedv5NZkojFc\nPsOnYPK6cMNEA8nVuV6LuWSkis9Mp8FoNZ00y+GhlxXf+OM0ApVTdpG3nOGDQ/yw\nx+jjZpE1cclMnKKB6SSZVIpZhb5w/s9qhbQ/PFPM9DQJH/YJnj8JsA3HCoTmvzcl\nschyzYwvN+qS36Xnfq2qWWe7/B1MLnGybeftmNx3YDc4/izVjuMC7KqWBSBpz+d2\n7IdXmca/Xl3vKeVNJRiYYuA74yRgoSmHces0asR9tRbz8IWqL/HP8NQqRJkxrjcM\nCO2gCtW+kwwp4JGpH0CMcoS+DVY27THDVTW5OW24jY6Uv8KTmqBWjf2jNz7nEyDT\npyFXKFYkjXitZ82Ehvrqu658BC4Eb9y+Z/WV26sXzV3UVIIMk+np4XR2qaKo29A9\nlW5/OjREll/sSaVB8GZkeo3jpGLa9P9nX/EkuPeLs9wWVWbMJoIKblzkdR4zuGiq\nk/gz4iTs/YMMQJOFeKCwos76BjFfzAwjWv8KArUDcfZCtlcoYmjiL2u/l8CiDnUF\naB3KhyTOWr/Wi5agib9DrUuSnC0nDyI91l7oikJn/C10RL0IWgf5gKtokTBPAfad\nHe79eZ/NbCMTeYqqGGsj\n=roJ+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3f38224198e8ed4baf5a4e5502a65ed3e8b1632b\nparent afcc1448cd0873079652808f1da742071188be33\nauthor Marco Bassa <bassamarco91@gmail.com> 1789502061 +0200\ncommitter GitHub <noreply@github.com> 1789502061 -0700\n\nAlways performing a full costmap publish on new subscriptions (#6510)\n\n* Always performing a full costmap publish on new subscriptions\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n* Performing a full costmap publish on new subscriptions without waiting\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>\n\n---------\n\nSigned-off-by: Marco Bassa <bassamarco91@gmail.com>",
+        "verified_at": "2026-09-15T19:54:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/370f6b6cb081f3ba553bbdfa4082b1ac90cc47bd/comments",
+    "author": {
+      "login": "nirwester",
+      "id": 9111641,
+      "node_id": "MDQ6VXNlcjkxMTE2NDE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9111641?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nirwester",
+      "html_url": "https://github.com/nirwester",
+      "followers_url": "https://api.github.com/users/nirwester/followers",
+      "following_url": "https://api.github.com/users/nirwester/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nirwester/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nirwester/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nirwester/subscriptions",
+      "organizations_url": "https://api.github.com/users/nirwester/orgs",
+      "repos_url": "https://api.github.com/users/nirwester/repos",
+      "events_url": "https://api.github.com/users/nirwester/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nirwester/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "afcc1448cd0873079652808f1da742071188be33",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/afcc1448cd0873079652808f1da742071188be33",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/afcc1448cd0873079652808f1da742071188be33"
+      }
+    ]
+  },
+  {
+    "sha": "afcc1448cd0873079652808f1da742071188be33",
+    "node_id": "C_kwDOCBF7SNoAKGFmY2MxNDQ4Y2QwODczMDc5NjUyODA4ZjFkYTc0MjA3MTE4OGJlMzM",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-15T19:48:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-15T19:48:37Z"
+      },
+      "message": "Fix NO_INFORMATION taking precedence over any other cost in the case of rolling static layer (#6516)\n\n* Implement static layer cost update logic and add unit tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Fix copyright notice in static_layer_test.cpp\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "c830c9c6de28441d5eb86d68770b4b03318cf6ac",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/c830c9c6de28441d5eb86d68770b4b03318cf6ac"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/afcc1448cd0873079652808f1da742071188be33",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqaEVCRC1aQ7uu5UhlAAA43YQACbGMjSt8D2Tci6zWf/IGDSL\nZtrMQjbUPqtmK8cZhZgtSrhj6LGvgTXlQLsj6f2PinQJBVCxkDLaNiGsu2/Cfjv7\n2urBu3JZOzWRJm+k9lpq2rHJKepFQ7GkUiC4ydSbhY4Jf3tZnY2P3a1M6XPieMPI\nKdcUAveoYVqhEmcVQ3nPC0wefjMUqbvFst8ftNU8A1SiCmzFFQyumMFwEl0EfdS8\np/Y4NjXbfJi3vfDSXgNqEkR4QeI78HrsbPf2DYO9hnD+F3Mx304Ktq1UHc1hQcV3\nJmnHfSgjy5G6oM2yEgwVum2CQCwbxB2/Od5ptnPjgu3q3eiWCf0kLNjhvp+tJafr\nYbunSY/8311s59BmHF45YhjGu+WtfdbaoziKJp+hYKwF7mcSlpxYBuPvGfa5Wtwt\nIoKoztS1UOuDuUlRRrAG8E1vVFuaYunhvp4zVBz700eeARlJrYXC7RVi2iigjhg5\nqLtCbchi+Ecr57bnYIl5ekADPwn5X6Td3hC1lGvZOzu0sAx6bESaoUp1Uy+5ckdN\nt4QAQnEclhlk/bbf8csV+pkBOiD9aVYy2+WHhABRarZ20qR2UjDWDOgnCb/Um5kB\ny/zqJg7xGU9uOhqLsIepYpbyWf1uuCXhFKtLVzdtvuWg9dH6v5QX5E3IN5VUtH0d\nxZuQqFVtABvTMXRR9OXt\n=YW4e\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c830c9c6de28441d5eb86d68770b4b03318cf6ac\nparent a1904cdc6af57f2acbc65d152e352c5630ffffeb\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1789501717 +0200\ncommitter GitHub <noreply@github.com> 1789501717 -0700\n\nFix NO_INFORMATION taking precedence over any other cost in the case of rolling static layer (#6516)\n\n* Implement static layer cost update logic and add unit tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Fix copyright notice in static_layer_test.cpp\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-15T19:48:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/afcc1448cd0873079652808f1da742071188be33",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/afcc1448cd0873079652808f1da742071188be33",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/afcc1448cd0873079652808f1da742071188be33/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/a1904cdc6af57f2acbc65d152e352c5630ffffeb"
+      }
+    ]
+  },
+  {
+    "sha": "a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+    "node_id": "C_kwDOCBF7SNoAKGExOTA0Y2RjNmFmNTdmMmFjYmM2NWQxNTJlMzUyYzU2MzBmZmZmZWI",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-15T19:30:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-15T19:30:48Z"
+      },
+      "message": "Combine lifecycle managers (#6410)\n\n* Unpin btcpp\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Remove kilted.repos\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update underlay.jazzy.repos\n\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\n\n* Consolidate Nav2 lifecycle managers\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix tests\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Remove lifecycle manager from nested files\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Prototype\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix namespace\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Address review comments\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Address review feedbacks and update tests\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Allow loopback sim to use namespace\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Feedback\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "cf4efc03b51baf0109d3a5eaf7f4c81f46f0779a",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/cf4efc03b51baf0109d3a5eaf7f4c81f46f0779a"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqZzoCRC1aQ7uu5UhlAAAiMUQAGhyfmt+a0Y2oNjstZ1FAYsR\napBPIxa+IzQNFoT/elJa6HiKOd5Qks79VQxRi2FeacmSGgacdPepSFhgJPrgKln/\n/b6xWCu6a6SXehMrwoclfKeGfiqfTS7+2qQddyneenbVvXA9/gSccfrhhzJdqHCe\nnD5nTOADarU4u5ymTDqlXO5HQJ1AnVseUOjt/KXVkFzdTpGznMLeybcaEYR3jdMV\n/iLmLEndUrsz9ufG8ggoqAUrr7DLGOnPRXwDmJKCBmtPYcbq+T52SH4t/o5jSWHq\nkHp/bmmRrqna1B3W93eSpAKBowPNElUxaxZCwljfXBYa931DwiPEuumh9PiFXTBe\n/ltZIYiZpglXxmjRQ6fWPyFyk5qwbc4OyiFK35VwmXD6+IKke+j3hJNRQ+h/4eWy\nu3gDAZfoGhYLihFLstNij6an3AhM9i+gy+6d3asuANGYqdY1K8j6fYuQxDJ/CoJd\nZR/2cvW1Z9ZQUybZ9EyxxgiMdrxbS/9tynPVT0ufazq4m+S6/srVh8QnuaWYlZ6A\nUgAWp/2WymDqnugyL0S4PtZ/ByYF9RpCOxt2ckvI4usMiViT3UPJFnP7tRFcfglP\nbCAcazehg9eGRCekDSJtUDPFQX2WefcB//N5jABH7DQLQtI4jP5NM/DXBcyq8bSB\ndAuL0KVjl/KJjU+V04Dd\n=0uqG\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree cf4efc03b51baf0109d3a5eaf7f4c81f46f0779a\nparent 560a69161882746b9b68f350ef5f9ae7ae6255f3\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1789500648 +0800\ncommitter GitHub <noreply@github.com> 1789500648 -0700\n\nCombine lifecycle managers (#6410)\n\n* Unpin btcpp\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Remove kilted.repos\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update underlay.jazzy.repos\n\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\n\n* Consolidate Nav2 lifecycle managers\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix tests\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Remove lifecycle manager from nested files\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Prototype\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Fix namespace\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Address review comments\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Address review feedbacks and update tests\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Allow loopback sim to use namespace\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n* Feedback\n\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Maurice Alexander Purnawan <mauricepurnawan@gmail.com>\nSigned-off-by: mini-1235 <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-09-15T19:30:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/a1904cdc6af57f2acbc65d152e352c5630ffffeb",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/a1904cdc6af57f2acbc65d152e352c5630ffffeb/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "560a69161882746b9b68f350ef5f9ae7ae6255f3",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/560a69161882746b9b68f350ef5f9ae7ae6255f3",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/560a69161882746b9b68f350ef5f9ae7ae6255f3"
+      }
+    ]
+  },
+  {
+    "sha": "560a69161882746b9b68f350ef5f9ae7ae6255f3",
+    "node_id": "C_kwDOCBF7SNoAKDU2MGE2OTE2MTg4Mjc0NmI5YjY4ZjM1MGVmNWY5YWU3YWU2MjU1ZjM",
+    "commit": {
+      "author": {
+        "name": "Tony Najjar",
+        "email": "tony.najjar.1997@gmail.com",
+        "date": "2026-09-15T18:26:21Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-15T18:26:21Z"
+      },
+      "message": "Add radial goal tolerance parameter to AxisGoalChecker (#6513)\n\n* Add radial goal tolerance parameter to AxisGoalChecker\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Rename radial_goal_tolerance to fallback_radial_goal_tolerance in AxisGoalChecker and update related tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+      "tree": {
+        "sha": "c6b63ff3dc19664fa07b02ab826d10e7e8fc3921",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/c6b63ff3dc19664fa07b02ab826d10e7e8fc3921"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/560a69161882746b9b68f350ef5f9ae7ae6255f3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqY3NCRC1aQ7uu5UhlAAA1IcQAC60yve3/CjsVGsSgJTRT9Jn\nOZZ2MlkQwEHRosxEIY7PvbrJSWVxFAerXMWtDDII0H3fbcKbLCvjjZXme3rmJRVY\nAf8nQISyJlZHOGEQubryWjxyhXMDrrdkCU6+HyVN57Zduf7J/Sn1rXBk3meMhJ4/\nQuzDlCoyNN46mHrIn4b6I5sli6t7ok0hmNGKNpf2qDjRgPAjRKwc31tkGFr8iSca\nBum4T/wpHK7qL3bJvIkcXSRzw1la3gUo0A3iEh/CIjnpd9F9NSNP9be3SHJS5YnY\nTD5DRByVxJANPi5L+StAiszIT2WDrA5fNdhO1ynDj1ebLV6SEVtJ7fpUYoDZ8iBJ\neY9FkOrPD8v2FjLwKTd8EWcbiDkS7dMJHnH72R6qTMxAy/nl6iFXV15ebDybfF8D\nKeKHS9mGaEtsqU2tlIY9NxaK5KaUK9yKAxR35Ini21+NaXBxq2HuCNENyreCBdMV\ncRkb7X2BbiSLur/anuKdsOD9Lj1cNg2o8ghg27T5g5ZS/mvYZ7lnFJjaqQM2Wzj2\ny/dmUBfcd/ls9KkbrVmJQRgrWyv5J3kPHYA6s2CV8XCMo+8vTsPjMxQteepdC3wv\nelhwzvKs3G/YQxKEOw/4UOxC0q3pl3bN1YcFZhzPMoMOptiXzbHOZrwLyXpbiL4b\npLLZ3Dm/bJbP8YHqsJo5\n=ixEL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c6b63ff3dc19664fa07b02ab826d10e7e8fc3921\nparent 7a15f220d25b52c2a74654f0dc169b9778093c5b\nauthor Tony Najjar <tony.najjar.1997@gmail.com> 1789496781 +0200\ncommitter GitHub <noreply@github.com> 1789496781 -0700\n\nAdd radial goal tolerance parameter to AxisGoalChecker (#6513)\n\n* Add radial goal tolerance parameter to AxisGoalChecker\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n* Rename radial_goal_tolerance to fallback_radial_goal_tolerance in AxisGoalChecker and update related tests\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>\n\n---------\n\nSigned-off-by: Tony Najjar <tony.najjar@dexory.com>",
+        "verified_at": "2026-09-15T18:26:21Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/560a69161882746b9b68f350ef5f9ae7ae6255f3",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/560a69161882746b9b68f350ef5f9ae7ae6255f3",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/560a69161882746b9b68f350ef5f9ae7ae6255f3/comments",
+    "author": {
+      "login": "tonynajjar",
+      "id": 14879660,
+      "node_id": "MDQ6VXNlcjE0ODc5NjYw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14879660?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tonynajjar",
+      "html_url": "https://github.com/tonynajjar",
+      "followers_url": "https://api.github.com/users/tonynajjar/followers",
+      "following_url": "https://api.github.com/users/tonynajjar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tonynajjar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tonynajjar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tonynajjar/subscriptions",
+      "organizations_url": "https://api.github.com/users/tonynajjar/orgs",
+      "repos_url": "https://api.github.com/users/tonynajjar/repos",
+      "events_url": "https://api.github.com/users/tonynajjar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tonynajjar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a15f220d25b52c2a74654f0dc169b9778093c5b",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7a15f220d25b52c2a74654f0dc169b9778093c5b",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/7a15f220d25b52c2a74654f0dc169b9778093c5b"
+      }
+    ]
+  },
+  {
+    "sha": "7a15f220d25b52c2a74654f0dc169b9778093c5b",
+    "node_id": "C_kwDOCBF7SNoAKDdhMTVmMjIwZDI1YjUyYzJhNzQ2NTRmMGRjMTY5Yjk3NzgwOTNjNWI",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-14T16:49:48Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-14T16:49:48Z"
+      },
+      "message": "Fix route server template linkage (#6507)\n\n* Fix route server template linkage\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update nav2_route/src/route_server.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Instantiate all route server template variants\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+      "tree": {
+        "sha": "224bf36fde2b193c2ca89e9908b097a96eb6f5d1",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/224bf36fde2b193c2ca89e9908b097a96eb6f5d1"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/7a15f220d25b52c2a74654f0dc169b9778093c5b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqCWsCRC1aQ7uu5UhlAAAGgcQAIY7bVgDKv1PU+/QyEKkbu9G\naB9oLPcRBt/f0TxPRZ/v+KE0KJymh6X04lMysLlBbHURyzqYife9YCS+M9yUC+vh\nhMNuUeLj98XNdMwQ2rWz3SIH1lPfSNMvC84AA1Nuoj7ML5tYJMcSBK1muWp9F2/d\nbqki1V0jmcKI/Vw8hSeUVEAba16/FGQheOhOeCKEsnhlNwmu6EVdfITCQqU+gVSA\nGl0s8X+dAy7qy/l77IyupOfE5HMLxErkn4iVeVRkkXy7t6fn9svyI3V9gHKotBl1\n0erOQMy9Jk0yhjEV74+Q5252LrJPcozd0I8NaLXGK1w0fpqk+CC3FH4ng/vsA3Ob\nlIL0rwb0c1W9qJhODsloAlkawmLY0vn8HL7IqcNyU+8jY2Z2kM50zOnzhrEnfKyY\neJZpMIHPSWtb7+PzNcMFjHL9GNxbhu4spIWAIdsPgyiHLNGnxEtPpbT5IOAraQCH\nUe8oC29YhvzdPzG6T7q/D6DjoxA1U20KCBi1uyf8DG2+FLmUiZFJmNv0S6V9TdI3\nFMb/fjLL1Sg2IkQE8fq3Ue/RyB1C1EW+zctSWkh5BYlNUH0hz7l6vEjyBUrWbWKY\nVwfLfdUawRi1+rELhO0cgcRyJncMYEurxX4o5X/1iZ8X0YuoJA5lzdKqzUY+8lsR\neRuEQo7wip1DAz/WIySO\n=z3Yv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 224bf36fde2b193c2ca89e9908b097a96eb6f5d1\nparent e424b4c325f8eedc11124791bbc1ef325372e84d\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1789404588 +0800\ncommitter GitHub <noreply@github.com> 1789404588 -0700\n\nFix route server template linkage (#6507)\n\n* Fix route server template linkage\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n* Update nav2_route/src/route_server.cpp\n\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\n\n* Instantiate all route server template variants\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\n\n---------\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nSigned-off-by: Steve Macenski <stevenmacenski@gmail.com>\nCo-authored-by: Steve Macenski <stevenmacenski@gmail.com>",
+        "verified_at": "2026-09-14T16:49:49Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7a15f220d25b52c2a74654f0dc169b9778093c5b",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/7a15f220d25b52c2a74654f0dc169b9778093c5b",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/7a15f220d25b52c2a74654f0dc169b9778093c5b/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e424b4c325f8eedc11124791bbc1ef325372e84d",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e424b4c325f8eedc11124791bbc1ef325372e84d",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/e424b4c325f8eedc11124791bbc1ef325372e84d"
+      }
+    ]
+  },
+  {
+    "sha": "e424b4c325f8eedc11124791bbc1ef325372e84d",
+    "node_id": "C_kwDOCBF7SNoAKGU0MjRiNGMzMjVmOGVlZGMxMTEyNDc5MWJiYzFlZjMyNTM3MmU4NGQ",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-14T15:08:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-14T15:08:54Z"
+      },
+      "message": "Guard libuuid lookup on non-Apple Unix (#6501)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+      "tree": {
+        "sha": "0df733649e165cc13078aff9eaea73e7ef372cb1",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/git/trees/0df733649e165cc13078aff9eaea73e7ef372cb1"
+      },
+      "url": "https://api.github.com/repos/ros-navigation/navigation2/git/commits/e424b4c325f8eedc11124791bbc1ef325372e84d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqqA4GCRC1aQ7uu5UhlAAAtNcQAFRfRXaDTP/ZkHBigMO3XB4v\nk8a38n1bs6Nz1YGjiv0/g7LdPXjKwURHkcJSXd/4FPqWxKxYm0Ym5u24NND2aG7Q\nC/GrPohzT8L5jKUtDuFR/FDu3bWtmvBrWUZI/yHOXrLb/rw8abAX4ZWj8LJWVpo2\nzy4lY2Onj/7pbiKKqWwtZI/kA/fwttdMSOxeuB+UYqSEwtoBn6g8sl8AEt66JlWk\nWaXv8l1gyn6dX5bvcJJoukI76oTxSM9X/n3xHcO+IUNkTeMb1wEFfvkJHj7VSDzt\npom4OJpg8ZT0DLsWxjDXFLcaWt/5ZYVFDSGPWBy3QP6RYF4BY7KcT+ILJGm2e/Bg\nfXrn/uAffpBMhhpCnXb40NopWjl6SHUmm1hdyj6yxmAxUNIeNuWy83ykzZM2Dx8T\n8KXO+ZNQYsE0LDNjZM1ICsnIUktq8Tc9UPPP2wIe+FyeBrnrRJJYTJQzq3lGr21n\ntNFIs0f014lTxfjddRrHQ5tLXGBa/Y+62Os8zDOAVGbFCotYEmFWa+9I/7Hj1cCf\nVKOMwZRYJbWTQWxAB++ai6J95l62ZVyiBJAICI6wYYSK/8fk/UNTiazUnyEHbzgJ\nZKuZDJePjvy/PoKjXBYRFfZOJWZ0tOSECCETSUtdtZwheyrnPyG0dWfJo2hRSJ/a\nDo1DtHEUk2DyVhyanGve\n=j+ei\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0df733649e165cc13078aff9eaea73e7ef372cb1\nparent f31c7f49bf7afb9e32f4651ef91fb46f5636c88c\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1789398534 +0800\ncommitter GitHub <noreply@github.com> 1789398534 -0700\n\nGuard libuuid lookup on non-Apple Unix (#6501)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>",
+        "verified_at": "2026-09-14T15:08:54Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e424b4c325f8eedc11124791bbc1ef325372e84d",
+    "html_url": "https://github.com/ros-navigation/navigation2/commit/e424b4c325f8eedc11124791bbc1ef325372e84d",
+    "comments_url": "https://api.github.com/repos/ros-navigation/navigation2/commits/e424b4c325f8eedc11124791bbc1ef325372e84d/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+        "url": "https://api.github.com/repos/ros-navigation/navigation2/commits/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c",
+        "html_url": "https://github.com/ros-navigation/navigation2/commit/f31c7f49bf7afb9e32f4651ef91fb46f5636c88c"
+      }
+    ]
+  }
+]
