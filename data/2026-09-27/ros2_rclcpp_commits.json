@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "eee4b508d4357c81c0847f922617e5f498d1d4b7",
+    "node_id": "C_kwDOAVrxtdoAKGVlZTRiNTA4ZDQzNTdjODFjMDg0N2Y5MjI2MTdlNWY0OThkMWQ0Yjc",
+    "commit": {
+      "author": {
+        "name": "Michael Carroll",
+        "email": "mjcarroll.oss@gmail.com",
+        "date": "2026-09-25T15:12:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T15:12:01Z"
+      },
+      "message": "Use the SPDX identifier Apache-2.0 in package.xml license tags (#3284)\n\nThe <license> tags spelled the license as prose (\"Apache License 2.0\",\n\"Apache 2.0\"). Use the SPDX identifier instead so the declaration can be\nmatched mechanically. The license itself does not change.\n\nAssisted-by: Claude Code:claude-opus-5 [git, gh]\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+      "tree": {
+        "sha": "51c3e9a7af0d0b2714857e2c8c66bd0456a9716c",
+        "url": "https://api.github.com/repos/ros2/rclcpp/git/trees/51c3e9a7af0d0b2714857e2c8c66bd0456a9716c"
+      },
+      "url": "https://api.github.com/repos/ros2/rclcpp/git/commits/eee4b508d4357c81c0847f922617e5f498d1d4b7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqto9BCRC1aQ7uu5UhlAAAJU0QAIONPwMx68nYauqdZURsBv0B\nuKX2fqP/mjzxQ27Pfm7YjmqAyOvX8cJY5O86kb2JW/V6RNUqhAsIMpD33VYPD3v+\nb0jjvt4IH8fDG16EUlUWQ5R8XN9bZj8KwrN2dLABuznNrk4ebJhGH2ClW6TjX23C\n5NGvHHEtjdh4VoZsNPXp1bOlq/sI4QRzRIe9F5W/GZ9g3biUaZr05cvW34cvN0QD\n5998k7yRPOzP52xYVcVDwfSrq5O/OC3iZPElK8Mqf+otRb//htyVccE2nJpsCmQ6\nF7BUfnAHPXLbQCXdLFLlJFYkqTEAykY4T9LlpNiefbUYQMLfKCQriX9eGDsbb6CC\nQIk5FnrxqPXE8fxIVzKaNxCVZy64nJQk++L09QEgjPzMxkScbFvizpUul6yu9V/d\nCDxXLAqtu9GT2oaS4eZH+Mvz7r19zxugGSMJh9pLmOA4ngvYM3hOuJ5UW1OMkPk1\nwlGJMrchv5Lq8CF1TEEBVY0u1s6Qc7ZKxYDtgE8VogdM7xjvdTco8WK0hZp+f9dz\nQ3yLSbHrutPeuExbhuIl8EesgFQJr7vhQ7ipvfZ7Usp39FIB9cNBsj7Qr2wWPefe\nafoWYaKuIi23YZ9+q4wysOAgnabCiGE0WOncp0ToU51OmyaLxARgjMz8TjiR7Gmi\n13lWTg2QaiOJZ/N7o751\n=pb9m\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 51c3e9a7af0d0b2714857e2c8c66bd0456a9716c\nparent 29de98cf1bc2e736ec1a5f7ad4c74e98c3fd3b17\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1790349121 -0400\ncommitter GitHub <noreply@github.com> 1790349121 -0400\n\nUse the SPDX identifier Apache-2.0 in package.xml license tags (#3284)\n\nThe <license> tags spelled the license as prose (\"Apache License 2.0\",\n\"Apache 2.0\"). Use the SPDX identifier instead so the declaration can be\nmatched mechanically. The license itself does not change.\n\nAssisted-by: Claude Code:claude-opus-5 [git, gh]\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+        "verified_at": "2026-09-25T15:12:01Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rclcpp/commits/eee4b508d4357c81c0847f922617e5f498d1d4b7",
+    "html_url": "https://github.com/ros2/rclcpp/commit/eee4b508d4357c81c0847f922617e5f498d1d4b7",
+    "comments_url": "https://api.github.com/repos/ros2/rclcpp/commits/eee4b508d4357c81c0847f922617e5f498d1d4b7/comments",
+    "author": {
+      "login": "mjcarroll",
+      "id": 279701,
+      "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjcarroll",
+      "html_url": "https://github.com/mjcarroll",
+      "followers_url": "https://api.github.com/users/mjcarroll/followers",
+      "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+      "repos_url": "https://api.github.com/users/mjcarroll/repos",
+      "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "29de98cf1bc2e736ec1a5f7ad4c74e98c3fd3b17",
+        "url": "https://api.github.com/repos/ros2/rclcpp/commits/29de98cf1bc2e736ec1a5f7ad4c74e98c3fd3b17",
+        "html_url": "https://github.com/ros2/rclcpp/commit/29de98cf1bc2e736ec1a5f7ad4c74e98c3fd3b17"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+Title: Not the Droids You're Looking For
+
+URL Source: https://www.ros.org/blog/ros-news/
+
+Warning: Target URL returned error 404: Not Found
+
+Markdown Content:
+## 404!!
+
+Like an affordable robot that can do all the laundry in your house, this page doesn't exist (yet).
+
+![Image 1: ROS Foxy logo but missing the turtle and fox](https://www.ros.org/imgs/Foxy404.png)

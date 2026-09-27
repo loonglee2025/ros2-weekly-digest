@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "6f4125d94172fa36026917a6dee9c90df3ad162c",
+    "node_id": "C_kwDOD0Ax7toAKDZmNDEyNWQ5NDE3MmZhMzYwMjY5MTdhNmRlZTljOTBkZjNhZDE2MmM",
+    "commit": {
+      "author": {
+        "name": "Addisu Z. Taddese",
+        "email": "addisuzt@intrinsic.ai",
+        "date": "2026-09-22T16:59:22Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-22T16:59:22Z"
+      },
+      "message": "mujoco: Store body pointer and constant offset in FrameInfo (#1098)\n\n* mujoco: Store body pointer and constant offset in FrameInfo\n\nEliminate mjSite instances for links, shapes, models, and joints by\nstoring the owning body pointer and constant Eigen::Isometry3d offset\ndirectly in FrameInfo.\n\nIn MuJoCo, each mjs_add* call triggers a full-tree walk and string\nserialization to recompute the spec signature. Replacing the four\nframe sites per model cuts element-creation overhead in half and speeds\nup world loading without altering query results.\n\nFrameDataRelativeToWorld computes frame pose directly from the body's\nxpos and xmat, and evaluates 6D spatial velocity via mju_transformSpatial\n(with zero velocity for static bodies).\n\nAssisted-by: Gemini 3.8 Flash\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* mujoco: Use xmat in getBodyWorldPoseFromMjDataEigen\n\nAssisted-by: Gemini 3.8 Flash\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* Address reviewer feedback\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* More doxygen\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* Use const ref for jointInChild\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n---------\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>",
+      "tree": {
+        "sha": "dc2e9e1386c9e85f7e2baf190771757ab27631f9",
+        "url": "https://api.github.com/repos/gazebosim/gz-physics/git/trees/dc2e9e1386c9e85f7e2baf190771757ab27631f9"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-physics/git/commits/6f4125d94172fa36026917a6dee9c90df3ad162c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsrPqCRC1aQ7uu5UhlAAAxaEQAEpl6Q1u3NcpZ1ItealLclBp\nsUyx7DA1+/q817siIJwE0+K+waGUL9f2LJrTbJkuDW7ZYVkBzxa0qExewHDeat9G\nV3czDDpY3Yvdziost7YcsfsK3wgygKMFqZGFP6/NGOwZn/6gfYuvRxq+RXiCoZU7\n3FhMZlzzfcU4ACjX6cTIJ9D0YqooGeT7ExtMkLBRV2eL9lc4jOVrdNaFJj7JWNeT\nYM07FvCp8tyDPav6Hgl5fz7NWvLl7oNpn8H3h+SGzQzlkrgH7qxOqcus4CjhsBpK\nER91TRtin+oKvfZXQ5N/9ce3sg2oO7zyUengTpZRLEne4nPsyxKPKSa4x4rAMM9E\n1fonwwSB9CUd2/efHvl9O04gQrAY4ZT7Adbn3dSM8pjepBff8ZZzIxhJJiD7dKP3\nLhX3sp32yCqebazgiVDpt8muSl74SaClCXUjBZ4Yx3Ggq6kW+I6hJPHcIZdEEYKe\naECvfra9jB7+Mbwjeb3NbTAjtGdtM33qhRbZD7qnQuSh2sEbfXvCT3yGdzVjeThY\nwg2P8eq6bAdCioxh5DkKjOYG9OYOxMpclFzOD0nDBmsoO9G7Is9D2ru2A/tOovSb\nhRnvgxVi/3ksdkmrgUgZXjttyLLpV1kzXpdW87/UYsMEtdSAMwKt3ABoLzcWS9T9\nb/nUu8Ybww2ZQ2wuByJb\n=kjA9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree dc2e9e1386c9e85f7e2baf190771757ab27631f9\nparent a9f1470ff89448d38d26ee247cac593cb28fd51b\nauthor Addisu Z. Taddese <addisuzt@intrinsic.ai> 1790096362 -0400\ncommitter GitHub <noreply@github.com> 1790096362 -0400\n\nmujoco: Store body pointer and constant offset in FrameInfo (#1098)\n\n* mujoco: Store body pointer and constant offset in FrameInfo\n\nEliminate mjSite instances for links, shapes, models, and joints by\nstoring the owning body pointer and constant Eigen::Isometry3d offset\ndirectly in FrameInfo.\n\nIn MuJoCo, each mjs_add* call triggers a full-tree walk and string\nserialization to recompute the spec signature. Replacing the four\nframe sites per model cuts element-creation overhead in half and speeds\nup world loading without altering query results.\n\nFrameDataRelativeToWorld computes frame pose directly from the body's\nxpos and xmat, and evaluates 6D spatial velocity via mju_transformSpatial\n(with zero velocity for static bodies).\n\nAssisted-by: Gemini 3.8 Flash\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* mujoco: Use xmat in getBodyWorldPoseFromMjDataEigen\n\nAssisted-by: Gemini 3.8 Flash\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* Address reviewer feedback\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* More doxygen\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n* Use const ref for jointInChild\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>\n\n---------\n\nSigned-off-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>",
+        "verified_at": "2026-09-22T16:59:22Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-physics/commits/6f4125d94172fa36026917a6dee9c90df3ad162c",
+    "html_url": "https://github.com/gazebosim/gz-physics/commit/6f4125d94172fa36026917a6dee9c90df3ad162c",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-physics/commits/6f4125d94172fa36026917a6dee9c90df3ad162c/comments",
+    "author": {
+      "login": "azeey",
+      "id": 206116,
+      "node_id": "MDQ6VXNlcjIwNjExNg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/206116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azeey",
+      "html_url": "https://github.com/azeey",
+      "followers_url": "https://api.github.com/users/azeey/followers",
+      "following_url": "https://api.github.com/users/azeey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azeey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azeey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azeey/subscriptions",
+      "organizations_url": "https://api.github.com/users/azeey/orgs",
+      "repos_url": "https://api.github.com/users/azeey/repos",
+      "events_url": "https://api.github.com/users/azeey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azeey/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a9f1470ff89448d38d26ee247cac593cb28fd51b",
+        "url": "https://api.github.com/repos/gazebosim/gz-physics/commits/a9f1470ff89448d38d26ee247cac593cb28fd51b",
+        "html_url": "https://github.com/gazebosim/gz-physics/commit/a9f1470ff89448d38d26ee247cac593cb28fd51b"
+      }
+    ]
+  }
+]

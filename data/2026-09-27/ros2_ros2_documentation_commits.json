@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "725e95a02a8a99c279d25ba1c193e45c0086cbe4",
+    "node_id": "C_kwDOCNWCptoAKDcyNWU5NWEwMmE4YTk5YzI3OWQyNWJhMWMxOTNlNDVjMDA4NmNiZTQ",
+    "commit": {
+      "author": {
+        "name": "Michael Carroll",
+        "email": "mjcarroll.oss@gmail.com",
+        "date": "2026-09-25T20:04:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T20:04:55Z"
+      },
+      "message": "Add new contributors to Governance.rst (#7204)\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\nSigned-off-by: Skyler Medeiros <skye.galaxy@proton.me>\nCo-authored-by: Skyler Medeiros <skyler@polymathrobotics.com>\nCo-authored-by: Tim Clephas <tim.clephas@nobleo.nl>\nCo-authored-by: Martin Pecka <peckama2@fel.cvut.cz>\nCo-authored-by: Kimberly McGuire <kimberleymcguire@gmail.com>",
+      "tree": {
+        "sha": "5303e31c2549ceba7afe7e3f1d626ec1d1454736",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/git/trees/5303e31c2549ceba7afe7e3f1d626ec1d1454736"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2_documentation/git/commits/725e95a02a8a99c279d25ba1c193e45c0086cbe4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqttPnCRC1aQ7uu5UhlAAAvcUQAHiBnbw3Z8w+OG3jq57DD5ld\n3zQ8SR4PzccJDvbhT0w2r0NZpDHO5YISqPfKzLXhzl8EtMmpBPv73ZjQCMqyKkdr\nVorSLDwMoflue3/Pn1If4cjVVbyjBT7g2CTM04IMeD+SXC4fCFrcdUN51vhk8lWm\nveFZ/WzF9yQJibbp8rNN5iHMLPL8th9KlJc+lLl1zaFoTxmLJJDmzSY62HZsYaoN\n5Gsf/Q11qXjMs9lnLBkAwOt/7Cov1H0Psv3KQfC1ElqmGcTJxt4zTXOYhxKNEoZm\nnxUVGzaLr/+PgM0Qc2aZPrf0Qxnu3SowAlww5ge3tH5WColqmLMYfTSaYIAsAUAa\nSORBdlL9dw/AyowIQhyL0htYWHFI5b8ZM+iAfel/fBxVqlTMcxbNW0O2JQc/ERC3\nKxyyzid7tz9v0OKmzxJmnBBrrdgDhGAJgKuSqfSI8ZSXydCAlEt9+EEtvL0DTxdf\n3AUHSGyPoZrLeRBgMOdjTmoBLa6eklwKPh3Q6tDVNfDkrd0NU0hsZBCuEizlMZSD\nys85yk2iOrk4K6bOT9ds2zwDg6CITDO1+ScomKFuAXh6M88d7bx9iNry6jgX7fxR\nRCP5ABwVDasb4wxvhje/zWVnYnp+kSzIaX7uMjnflkGXWp+QL74L+ozH4x2v5XLp\n2m/8ddE9E2nup/HYFeIT\n=xGR9\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5303e31c2549ceba7afe7e3f1d626ec1d1454736\nparent 617ded65b39360f8a159d5d2df396139608bf3c0\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1790366695 -0400\ncommitter GitHub <noreply@github.com> 1790366695 -0700\n\nAdd new contributors to Governance.rst (#7204)\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\nSigned-off-by: Skyler Medeiros <skye.galaxy@proton.me>\nCo-authored-by: Skyler Medeiros <skyler@polymathrobotics.com>\nCo-authored-by: Tim Clephas <tim.clephas@nobleo.nl>\nCo-authored-by: Martin Pecka <peckama2@fel.cvut.cz>\nCo-authored-by: Kimberly McGuire <kimberleymcguire@gmail.com>",
+        "verified_at": "2026-09-25T20:04:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/725e95a02a8a99c279d25ba1c193e45c0086cbe4",
+    "html_url": "https://github.com/ros2/ros2_documentation/commit/725e95a02a8a99c279d25ba1c193e45c0086cbe4",
+    "comments_url": "https://api.github.com/repos/ros2/ros2_documentation/commits/725e95a02a8a99c279d25ba1c193e45c0086cbe4/comments",
+    "author": {
+      "login": "mjcarroll",
+      "id": 279701,
+      "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjcarroll",
+      "html_url": "https://github.com/mjcarroll",
+      "followers_url": "https://api.github.com/users/mjcarroll/followers",
+      "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+      "repos_url": "https://api.github.com/users/mjcarroll/repos",
+      "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "617ded65b39360f8a159d5d2df396139608bf3c0",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/617ded65b39360f8a159d5d2df396139608bf3c0",
+        "html_url": "https://github.com/ros2/ros2_documentation/commit/617ded65b39360f8a159d5d2df396139608bf3c0"
+      }
+    ]
+  },
+  {
+    "sha": "617ded65b39360f8a159d5d2df396139608bf3c0",
+    "node_id": "C_kwDOCNWCptoAKDYxN2RlZDY1YjM5MzYwZjhhMTU5ZDVkMmRmMzk2MTM5NjA4YmYzYzA",
+    "commit": {
+      "author": {
+        "name": "Christophe Bedard",
+        "email": "bedard.christophe@gmail.com",
+        "date": "2026-09-22T20:30:39Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-22T20:30:39Z"
+      },
+      "message": "Add page for the snapshot repository (#7191)\n\nResolves #7188.\n\nThis updates & ports the instructions, context, and explanation from:\n\n1. The ROS wiki page: https://wiki.ros.org/SnapshotRepository\n2. This Discourse post:\n   https://discourse.openrobotics.org/t/announcing-ros-snapshot-repositories/7705\n\nI added more details to this page compared to the original ROS wiki\npage: I found that switching to an older snapshot (with older versions)\nwouldn't actually downgrade already-installed packages unless\n`Pin-Priority: 1001` is set for the snapshot repository.\n\nMuch like the original ROS wiki page, this sort of assumes you've\nalready installed ROS. For instance, it assumes you've already installed\nrosdep. I'm not sure it's worth complicating it more to support fresh\ninstalls.\n\nThis can be backported to all active distros.\n\n---\n\nI used Claude Opus 5 to make the initial draft, which I then\nconsiderably reworked and validated manually.\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+      "tree": {
+        "sha": "6799776e634d5ac21e63119e9b3e1ff5f280cd2b",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/git/trees/6799776e634d5ac21e63119e9b3e1ff5f280cd2b"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2_documentation/git/commits/617ded65b39360f8a159d5d2df396139608bf3c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsuVvCRC1aQ7uu5UhlAAAIvYQAEgPC8iB72xqIS8Y5puxty8Y\n/u9/y1HQdP1SVMixn2z3jCCPOlUPNLzHS+fPBFTcxS1tZRDvjOh+UmJhAspGGDOw\nh7ERAWWduDuw3JnpHL7qJ1r1Ae5CQe4z04QavIraOyik9m4cA2flb7Xl+0miw2AD\nnhKQqzsnAD3hIc6+uIxWoGfqebhQPJIN1G7u/hjB46fWmVdFTzn5K9Iy17pacST9\nl3nlr9AVi2dywRmgPTICwJQ9CleStmwl1pbHMgtXnnEr7A5OAy3J2J90r+xilqVZ\nb97hE/0gRrnTAxc/6RiVVUMvfLUljwCCa1B1sBRfmIgwjj2zu/n1PAsto6gh/IJ1\n7u0f4RnzxwDW1J6HnvEBWsusc9CfDDyqvvfJ9u52X9utye8Icxp6fWy81TfUfeCe\nypnkUkZrPimvBeCm9P84XIVk8i3Tu0nnmUJ88aRYyglIGFSd0IwYWvyArotK7F4R\ntAxmCuJBmW2N41tM2Sd1sBTMlA5AfnMZsTiqwqDnJeWoXIsD3bg9qiZzMRYl6Cwg\nYuwLNyBXua+KO9z+M6nk/BYllCG6uEViKuF5gjeqElvuGIzB7H6VQeW8D7cjdVxa\ng4vzBRcZYYBQQuTGcpjrMIaB2U0hypYdNwaXUFK3i3KRS7ya9wO7AbhNqEDIYleo\nj+XTZREXZHrOPJZi/ZcG\n=+i15\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 6799776e634d5ac21e63119e9b3e1ff5f280cd2b\nparent 5760c9244a67c3917cfdcfadc44b710e7f8c62c7\nauthor Christophe Bedard <bedard.christophe@gmail.com> 1790109039 -0700\ncommitter GitHub <noreply@github.com> 1790109039 +0000\n\nAdd page for the snapshot repository (#7191)\n\nResolves #7188.\n\nThis updates & ports the instructions, context, and explanation from:\n\n1. The ROS wiki page: https://wiki.ros.org/SnapshotRepository\n2. This Discourse post:\n   https://discourse.openrobotics.org/t/announcing-ros-snapshot-repositories/7705\n\nI added more details to this page compared to the original ROS wiki\npage: I found that switching to an older snapshot (with older versions)\nwouldn't actually downgrade already-installed packages unless\n`Pin-Priority: 1001` is set for the snapshot repository.\n\nMuch like the original ROS wiki page, this sort of assumes you've\nalready installed ROS. For instance, it assumes you've already installed\nrosdep. I'm not sure it's worth complicating it more to support fresh\ninstalls.\n\nThis can be backported to all active distros.\n\n---\n\nI used Claude Opus 5 to make the initial draft, which I then\nconsiderably reworked and validated manually.\n\nSigned-off-by: Christophe Bedard <bedard.christophe@gmail.com>",
+        "verified_at": "2026-09-22T20:30:40Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/617ded65b39360f8a159d5d2df396139608bf3c0",
+    "html_url": "https://github.com/ros2/ros2_documentation/commit/617ded65b39360f8a159d5d2df396139608bf3c0",
+    "comments_url": "https://api.github.com/repos/ros2/ros2_documentation/commits/617ded65b39360f8a159d5d2df396139608bf3c0/comments",
+    "author": {
+      "login": "christophebedard",
+      "id": 3717345,
+      "node_id": "MDQ6VXNlcjM3MTczNDU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3717345?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christophebedard",
+      "html_url": "https://github.com/christophebedard",
+      "followers_url": "https://api.github.com/users/christophebedard/followers",
+      "following_url": "https://api.github.com/users/christophebedard/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christophebedard/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christophebedard/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christophebedard/subscriptions",
+      "organizations_url": "https://api.github.com/users/christophebedard/orgs",
+      "repos_url": "https://api.github.com/users/christophebedard/repos",
+      "events_url": "https://api.github.com/users/christophebedard/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christophebedard/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+        "html_url": "https://github.com/ros2/ros2_documentation/commit/5760c9244a67c3917cfdcfadc44b710e7f8c62c7"
+      }
+    ]
+  },
+  {
+    "sha": "5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+    "node_id": "C_kwDOCNWCptoAKDU3NjBjOTI0NGE2N2MzOTE3Y2ZkY2ZhZGM0NGI3MTBlN2Y4YzYyYzc",
+    "commit": {
+      "author": {
+        "name": "Maurice Alexander Purnawan",
+        "email": "mauricepurnawan@gmail.com",
+        "date": "2026-09-22T17:07:47Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-22T17:07:47Z"
+      },
+      "message": "Document verbose ros2 action info output (#7190)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nCo-authored-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+      "tree": {
+        "sha": "54e60e72b0385daaf279af85ec3b6e95d1475fbd",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/git/trees/54e60e72b0385daaf279af85ec3b6e95d1475fbd"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2_documentation/git/commits/5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsrXjCRC1aQ7uu5UhlAAAqykQAKc2sBBfCc4CCUFfxUun50+T\n+RYEiCz3B8JjMqL1iJ+XA3Wr1NJUcR+E5wvg5wv6hmm2kVRSLzQAD5fnc602m1wZ\neNNdxrhEycgzhNN9/GSdZqrovlgMgapaUvaJmJR7RvdYv3QlxmWd/oUbNi0jC0p3\nzXTvqQ9d9sbPT+0SE1EE1Oe+uAZEmCn6AIQXS5qDof00XzcKaKnJyEVL+anvcOnI\nBy80QT9slLaNX+3MY4ZvOXcRPKUQiR7YjfOqEAU+unQU87DfvgK1409qB/T2BtgS\nheFmrjiozCceeB4gCRI4Iw5FUZQoTb/+DgObx6ho0pQ8ifLS+u+FgnH5mUlxZ9Nx\ngZUSzmzEKb0f8jsCiLezsTQsghIBpa1GXSUym+zx6elz4E7ogrGCMT9JjAihMFk3\nWQyFgxZPy9inn3hp4LhsF1ao9RT8HuiHAtG7cTXbcJkqe9tQhX2ZoiHbddvQKAH6\nbkYh5UDpx0iL/P665GZppc/CemV785OFviUB0UUVuV1CZ4Ei+4JGVXdeSZddgvYx\n9xlvwnRU/fzB/VjKp77+1KONQT+JvMsQ+D1CcJMMU+kWcoryvaEVTuUXZs7C5JVJ\naRvhVNrOv19bw9FUTk7ucvpnByqKGz0Jf2kKl0uTRMq9EVYK+7bX2xnRMUFg1Y6k\nxPCW9neHcWt6jgekruBB\n=DUwY\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 54e60e72b0385daaf279af85ec3b6e95d1475fbd\nparent 0d14d8e8e2a3ed2d94a0e7b1eda013d2ffd5cdf2\nauthor Maurice Alexander Purnawan <mauricepurnawan@gmail.com> 1790096867 +0800\ncommitter GitHub <noreply@github.com> 1790096867 +0000\n\nDocument verbose ros2 action info output (#7190)\n\nSigned-off-by: Maurice <mauricepurnawan@gmail.com>\nCo-authored-by: Tomoya Fujita <fujita.tomoya@triorb.co.jp>",
+        "verified_at": "2026-09-22T17:07:48Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+    "html_url": "https://github.com/ros2/ros2_documentation/commit/5760c9244a67c3917cfdcfadc44b710e7f8c62c7",
+    "comments_url": "https://api.github.com/repos/ros2/ros2_documentation/commits/5760c9244a67c3917cfdcfadc44b710e7f8c62c7/comments",
+    "author": {
+      "login": "mini-1235",
+      "id": 58433591,
+      "node_id": "MDQ6VXNlcjU4NDMzNTkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58433591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mini-1235",
+      "html_url": "https://github.com/mini-1235",
+      "followers_url": "https://api.github.com/users/mini-1235/followers",
+      "following_url": "https://api.github.com/users/mini-1235/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mini-1235/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mini-1235/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mini-1235/subscriptions",
+      "organizations_url": "https://api.github.com/users/mini-1235/orgs",
+      "repos_url": "https://api.github.com/users/mini-1235/repos",
+      "events_url": "https://api.github.com/users/mini-1235/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mini-1235/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0d14d8e8e2a3ed2d94a0e7b1eda013d2ffd5cdf2",
+        "url": "https://api.github.com/repos/ros2/ros2_documentation/commits/0d14d8e8e2a3ed2d94a0e7b1eda013d2ffd5cdf2",
+        "html_url": "https://github.com/ros2/ros2_documentation/commit/0d14d8e8e2a3ed2d94a0e7b1eda013d2ffd5cdf2"
+      }
+    ]
+  }
+]

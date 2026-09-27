@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "a0f133d921e043aa2cfec8bd7c61effbb8ac132c",
+    "node_id": "C_kwDOBiM5UdoAKGEwZjEzM2Q5MjFlMDQzYWEyY2ZlYzhiZDdjNjFlZmZiYjhhYzEzMmM",
+    "commit": {
+      "author": {
+        "name": "Christoph Fröhlich",
+        "email": "christophfroehlich@users.noreply.github.com",
+        "date": "2026-09-25T02:40:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T02:40:14Z"
+      },
+      "message": "Add a fail-on-deprecations workflow (#3635)",
+      "tree": {
+        "sha": "bdc3f7a87e86392ef5bf391c50b1898deb903d0a",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/git/trees/bdc3f7a87e86392ef5bf391c50b1898deb903d0a"
+      },
+      "url": "https://api.github.com/repos/ros-controls/ros2_control/git/commits/a0f133d921e043aa2cfec8bd7c61effbb8ac132c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtd8OCRC1aQ7uu5UhlAAAoCcQACxwrCiK/XxWZP7hXF6dMAcR\nHMQ/6qOrN18vmszEnsl79P0fxzEW9hD5jLitDDYInC87eB/R4LETMBLP9DbPNG4d\nSE0iiJ7XxopB/E/jbIXyv/cJeyt7ITmcFJMYLdotnoUaJaH+8drkxz+qI0KO6EfS\n3hfJsdO8CrJeD2axFZAZ6J5+foQh6X/WGhZ0OsMYGqNgjVaY4L4xQNg5OhYbkOiI\nF7G3XkdmTc/8ApZjF0na1d8B3XyAeBIcS7grta7SpEH3Ep9rGL2RTUsOJj1TR/po\ncrWC4lbAM/ngmXgZBGmpycyXmNoYlO0YFpuqapFxcqjbA1+IrfqL3MCEJKJPPEaa\nLgbpAZWgUz9/WirXXYv4893WHx/1qlQQ7CrfZpc0KG0cAwx2mDuURLUT5gz5CXT3\nXDzuZWLNeFwqPS1f2QridHvhntr81HI8N3oFX45L0Qw1d0pWL2GTQIXKtcbMAbhd\nKoOfVLNq7cHTFS/ho4KXLqGHPRG4Yj7gAa0Ajxb7MiQJtFT7LjHw3HKrzVHmIiIu\nRD9/4scvE5Ql4TJNOWzKzQ/8QcAu9RJeqBgqAU8ivVkV4KNaLa/IiWq5YXlHeTEO\nz7aDZggCsRl8GHdUSBnvj8vFqGnCeB4MG1eX070eNfuiJ330yuoXCjUOzfnIzC63\neLBMNCeJq1+T2+8lzDGL\n=Gl4Q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree bdc3f7a87e86392ef5bf391c50b1898deb903d0a\nparent b0c14b5edca8d17fc2996be1909815e8fcb587c6\nauthor Christoph Fröhlich <christophfroehlich@users.noreply.github.com> 1790304014 +0200\ncommitter GitHub <noreply@github.com> 1790304014 +0200\n\nAdd a fail-on-deprecations workflow (#3635)",
+        "verified_at": "2026-09-25T02:40:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/a0f133d921e043aa2cfec8bd7c61effbb8ac132c",
+    "html_url": "https://github.com/ros-controls/ros2_control/commit/a0f133d921e043aa2cfec8bd7c61effbb8ac132c",
+    "comments_url": "https://api.github.com/repos/ros-controls/ros2_control/commits/a0f133d921e043aa2cfec8bd7c61effbb8ac132c/comments",
+    "author": {
+      "login": "christophfroehlich",
+      "id": 3367244,
+      "node_id": "MDQ6VXNlcjMzNjcyNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3367244?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christophfroehlich",
+      "html_url": "https://github.com/christophfroehlich",
+      "followers_url": "https://api.github.com/users/christophfroehlich/followers",
+      "following_url": "https://api.github.com/users/christophfroehlich/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christophfroehlich/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christophfroehlich/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christophfroehlich/subscriptions",
+      "organizations_url": "https://api.github.com/users/christophfroehlich/orgs",
+      "repos_url": "https://api.github.com/users/christophfroehlich/repos",
+      "events_url": "https://api.github.com/users/christophfroehlich/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christophfroehlich/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b0c14b5edca8d17fc2996be1909815e8fcb587c6",
+        "url": "https://api.github.com/repos/ros-controls/ros2_control/commits/b0c14b5edca8d17fc2996be1909815e8fcb587c6",
+        "html_url": "https://github.com/ros-controls/ros2_control/commit/b0c14b5edca8d17fc2996be1909815e8fcb587c6"
+      }
+    ]
+  }
+]

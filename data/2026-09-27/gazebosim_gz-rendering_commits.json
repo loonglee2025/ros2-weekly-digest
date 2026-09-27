@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "6c7acca20271ac4e6306aab6e46f72c97f242551",
+    "node_id": "C_kwDOD0Ax_toAKDZjN2FjY2EyMDI3MWFjNGU2MzA2YWFiNmU0NmY3MmM5N2YyNDI1NTE",
+    "commit": {
+      "author": {
+        "name": "Dylan Gallagher",
+        "email": "76841713+Dylan-Gallagher@users.noreply.github.com",
+        "date": "2026-09-25T18:40:27Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T18:40:27Z"
+      },
+      "message": "Fix Ogre2 CPU ray queries from inside AABBs (#1324)\n\nKeep zero-distance broadphase candidates because Ogre reports zero when the ray origin lies inside an object AABB. The triangle-level pass can still find a valid front-face intersection.\n\nAdd a rotated-box regression whose AABB contains the ray origin while the geometry does not.\n\nGenerated-by: OpenAI Codex (GPT-5; accessed 2026-08-18)\n\nSigned-off-by: Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com>\nCo-authored-by: Ian Chen <iche@intrinsic.ai>",
+      "tree": {
+        "sha": "c2bed25756740db4f26efc13fc1d1043793c6173",
+        "url": "https://api.github.com/repos/gazebosim/gz-rendering/git/trees/c2bed25756740db4f26efc13fc1d1043793c6173"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-rendering/git/commits/6c7acca20271ac4e6306aab6e46f72c97f242551",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtsAbCRC1aQ7uu5UhlAAADX4QAKgIcLL/ZbmbeWooc47yZfLt\nlJ0up6JSdbiuh5yJpAVmKaFvW7Tog87zRgJglCwkoc9LIaJTeecNFW1dV4gdtuwi\nphlxhncVDBv8lQ5VCWxgkN/x+ELQA53WRcOPSmEgwEtGad4bUpvI4+DDY2QVyENe\nIOOQ+nI6vR/BZeyXEA1mn8vVQ3fRLJKQ8vmLkQXVlRj5R9iQQgu35hsicehft80M\nsyL/QDvpufwGJWMxFEwY1Nl3xVV66SIDksveK/ocH15kt/ATZPUzvXCkufaXKNRB\nS+qPft9OdOQQkF10zuQ0Ej6zxkY27BIamgFMWroyJtGkEZ9LkHUcrYrxrz1dK97G\nDLwolHXEuFYmAXUu0Pebl/UGJQFeIBvwRuLdTCNmGp6q3BNZbWvqv2DewKiQ/KyY\nFiDicK3AIzJUfuGiXUg9hMDOtkY41s+fAZxKJZXjTrSON+c2sgmJHJILMbPZiwUI\nDhTo4QV86r0vhFZehFeAWI4sbMjDKelxmetxW14AiXyT7+6823S8amN66qOYTndy\nbq2ZozSVwoSxI0RSBFFnQoHlmipBQhtKuRrm5UfU6zGnI50E/CTBSzZDhXS961E1\nMcEc4EdA6flKQXYhS8Mt/GiwWbGCCEHbiPZ4ut7RMKFaN8I50A8HbpFYcag6PyeC\nAtJBJSGn6N/c0X+T9Ba5\n=4LB8\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c2bed25756740db4f26efc13fc1d1043793c6173\nparent 2d4f9111f9fbcb3fbeb8528a4a1edb65f65a5df3\nauthor Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com> 1790361627 +0100\ncommitter GitHub <noreply@github.com> 1790361627 -0700\n\nFix Ogre2 CPU ray queries from inside AABBs (#1324)\n\nKeep zero-distance broadphase candidates because Ogre reports zero when the ray origin lies inside an object AABB. The triangle-level pass can still find a valid front-face intersection.\n\nAdd a rotated-box regression whose AABB contains the ray origin while the geometry does not.\n\nGenerated-by: OpenAI Codex (GPT-5; accessed 2026-08-18)\n\nSigned-off-by: Dylan Gallagher <76841713+Dylan-Gallagher@users.noreply.github.com>\nCo-authored-by: Ian Chen <iche@intrinsic.ai>",
+        "verified_at": "2026-09-25T18:40:28Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-rendering/commits/6c7acca20271ac4e6306aab6e46f72c97f242551",
+    "html_url": "https://github.com/gazebosim/gz-rendering/commit/6c7acca20271ac4e6306aab6e46f72c97f242551",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-rendering/commits/6c7acca20271ac4e6306aab6e46f72c97f242551/comments",
+    "author": {
+      "login": "Dylan-Gallagher",
+      "id": 76841713,
+      "node_id": "MDQ6VXNlcjc2ODQxNzEz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76841713?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Dylan-Gallagher",
+      "html_url": "https://github.com/Dylan-Gallagher",
+      "followers_url": "https://api.github.com/users/Dylan-Gallagher/followers",
+      "following_url": "https://api.github.com/users/Dylan-Gallagher/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Dylan-Gallagher/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Dylan-Gallagher/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Dylan-Gallagher/subscriptions",
+      "organizations_url": "https://api.github.com/users/Dylan-Gallagher/orgs",
+      "repos_url": "https://api.github.com/users/Dylan-Gallagher/repos",
+      "events_url": "https://api.github.com/users/Dylan-Gallagher/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Dylan-Gallagher/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d4f9111f9fbcb3fbeb8528a4a1edb65f65a5df3",
+        "url": "https://api.github.com/repos/gazebosim/gz-rendering/commits/2d4f9111f9fbcb3fbeb8528a4a1edb65f65a5df3",
+        "html_url": "https://github.com/gazebosim/gz-rendering/commit/2d4f9111f9fbcb3fbeb8528a4a1edb65f65a5df3"
+      }
+    ]
+  }
+]

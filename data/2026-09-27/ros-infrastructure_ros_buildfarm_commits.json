@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "b3f60e39be8aff3f08ef92f140568785e6f2a252",
+    "node_id": "C_kwDOAXeOP9oAKGIzZjYwZTM5YmU4YWZmM2YwOGVmOTJmMTQwNTY4Nzg1ZTZmMmEyNTI",
+    "commit": {
+      "author": {
+        "name": "Jorge J. Perez",
+        "email": "jjperez@ekumenlabs.com",
+        "date": "2026-09-24T06:11:45Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T06:11:45Z"
+      },
+      "message": "Remove crates supplied by ROS packages before vendoring (#1147)\n\nAssisted-by: Claude Opus 5 <noreply@anthropic.com>",
+      "tree": {
+        "sha": "7c03d360c185fb1f4f77889b28055dc5cbf54ff4",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/trees/7c03d360c185fb1f4f77889b28055dc5cbf54ff4"
+      },
+      "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/commits/b3f60e39be8aff3f08ef92f140568785e6f2a252",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtL8hCRC1aQ7uu5UhlAAAkhUQAIZyiWXvutKvwiVT71Qn/lAb\n5sb8HuECGfxn0xnS/qT45nLvem5JN/n8bDNRqDFrv+EUcG780UwAY8yc4iam6dj8\nq3EFTrF8bv6t2b80/WD0BZNZqez3yuH3UODff+xxHALIOC090ZkWmB6DKt3NEZjE\nAzpDvisiBEKD7hl0eALCAxuncGcCwZZeCt1FT054qRAY5ofY6qa7eETw6ZSKWRi8\noMAM3XsHpx1wafew5D5SfUufI1VlnAgmQE6LAGuJdw/wQ9q3sWXNy/qiTQqPDZ8V\nowdmzgTURYm0qEEkvamP5BRuYgBx2FRfr9AlPBkrxqXePtLutRY6Qx7Z4ErRvXzl\nQaZzO2XAVqz3yD+AfoB/xXCYM3046iaf9YFcxTX3ooPA18yWsUIxOjF26QMOUl5a\n58blWs+vv0WRSWj0NAsrIQjxE3g8Oe/BFcti66fuysMbAZ3LMi2+De2QpUS2wWiP\nbBbtDbl+S2kp8K2J8bBeLTv7BX0xQKZl3z2yC4tzAfsWfXraf3ll6rK+wxCjhuZt\nu2jNyHfOeJQU908BQiFhgI1ubpzcaJNy2py2MJhU0p/M79KNCHzJ0QpnVd6ETB/2\nTkbgX4QMArF3IDn28vXFSbGNX4kIg8yIO8oEBMEIK/5lJoApr7fHO/6EWUfoRsLt\nyDhnpZ1DotMujCKkn5RI\n=WJ88\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7c03d360c185fb1f4f77889b28055dc5cbf54ff4\nparent 139a5f8864bdad2b6127c00492924019a690bc24\nauthor Jorge J. Perez <jjperez@ekumenlabs.com> 1790230305 -0300\ncommitter GitHub <noreply@github.com> 1790230305 -0400\n\nRemove crates supplied by ROS packages before vendoring (#1147)\n\nAssisted-by: Claude Opus 5 <noreply@anthropic.com>",
+        "verified_at": "2026-09-24T06:11:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/b3f60e39be8aff3f08ef92f140568785e6f2a252",
+    "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/b3f60e39be8aff3f08ef92f140568785e6f2a252",
+    "comments_url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/b3f60e39be8aff3f08ef92f140568785e6f2a252/comments",
+    "author": {
+      "login": "Blast545",
+      "id": 8069967,
+      "node_id": "MDQ6VXNlcjgwNjk5Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8069967?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Blast545",
+      "html_url": "https://github.com/Blast545",
+      "followers_url": "https://api.github.com/users/Blast545/followers",
+      "following_url": "https://api.github.com/users/Blast545/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Blast545/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Blast545/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Blast545/subscriptions",
+      "organizations_url": "https://api.github.com/users/Blast545/orgs",
+      "repos_url": "https://api.github.com/users/Blast545/repos",
+      "events_url": "https://api.github.com/users/Blast545/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Blast545/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "139a5f8864bdad2b6127c00492924019a690bc24",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/139a5f8864bdad2b6127c00492924019a690bc24",
+        "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/139a5f8864bdad2b6127c00492924019a690bc24"
+      }
+    ]
+  },
+  {
+    "sha": "139a5f8864bdad2b6127c00492924019a690bc24",
+    "node_id": "C_kwDOAXeOP9oAKDEzOWE1Zjg4NjRiZGFkMmI2MTI3YzAwNDkyOTI0MDE5YTY5MGJjMjQ",
+    "commit": {
+      "author": {
+        "name": "Jorge J. Perez",
+        "email": "j.j.perez13@hotmail.com",
+        "date": "2026-09-24T05:35:23Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T05:35:23Z"
+      },
+      "message": "Vendor crate dependencies in sourcejobs (#1144)\n\nAssisted-By: Claude Fable 5 <noreply@anthropic.com>\nAssisted-By: Claude Opus 5 <noreply@anthropic.com>\nCo-authored-by: Scott K Logan <logans@cottsay.net>",
+      "tree": {
+        "sha": "c9eec1ea6dfd72fcef9c0cda3b1689f5e7091135",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/trees/c9eec1ea6dfd72fcef9c0cda3b1689f5e7091135"
+      },
+      "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/commits/139a5f8864bdad2b6127c00492924019a690bc24",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtLacCRC1aQ7uu5UhlAAAQWUQABXkg50lXnmsEWEr/W+W2Pcs\n8aQasIPVJZpbpl1lB8feVNSq59W/D9QvaS8Dcvk16pd5kOVVR982DCxlLjBMCXam\nQTPMN0NWtoSJqG7LN9d4V7ET2fKdK6eL+FToMLDCJWkV08JxgZN+w885SwuE50Wv\n0w/vutAJoG4JUGylKnZB2Qy1awZaKeFiqzdRNXJFeSpMyUNFs3ZSPOO3daCzU5sV\nBShrJ73scvH9u2lsqNphBo18vaS/Aly0h8NaZPNw1wU5nnvZY1wWLZQPX1ip9Pib\nflIoqb0ncwihKFSF+Aswav7AzB5hvl8VAAn9j+bM8JyscRhIh1mlzVFZ6/1Is/r+\n6yC/DT2dNro2qhgslAtJYSg2hK3srJ3xIWfd5/n51nMXpjiEbv2878iDuGEo6Fte\nB2NDSRNmn9XEIi8s0bCbsshbCxlReUOrEs+o+XfGyYTLJeIXYEe7LBXawy2CJItW\nu0FRMIuR3TIhrYX/CtY1psOsRr7Hn2LSYm3POIkYSduauZf0UiqeY25jPqLS3Nsg\nuNdxq9EJdYJuB9pkxscgcAHI5/KmR77sDXoRDWYhpSw57EgnTztjiexSHS6ZOZ8v\nIw7h1DWBLyOzLZZZuw0jwER7qPTlA3BdQ4qc0z4bM9FcFjXrt1FnU7gL9uD0n/vj\nvSzlxNVlFK2lUnueZLvw\n=6PS+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c9eec1ea6dfd72fcef9c0cda3b1689f5e7091135\nparent b510cda046f32abef5361fd5f3d91486482113b1\nauthor Jorge J. Perez <j.j.perez13@hotmail.com> 1790228123 -0300\ncommitter GitHub <noreply@github.com> 1790228123 -0400\n\nVendor crate dependencies in sourcejobs (#1144)\n\nAssisted-By: Claude Fable 5 <noreply@anthropic.com>\nAssisted-By: Claude Opus 5 <noreply@anthropic.com>\nCo-authored-by: Scott K Logan <logans@cottsay.net>",
+        "verified_at": "2026-09-24T05:35:24Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/139a5f8864bdad2b6127c00492924019a690bc24",
+    "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/139a5f8864bdad2b6127c00492924019a690bc24",
+    "comments_url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/139a5f8864bdad2b6127c00492924019a690bc24/comments",
+    "author": {
+      "login": "Blast545",
+      "id": 8069967,
+      "node_id": "MDQ6VXNlcjgwNjk5Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8069967?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Blast545",
+      "html_url": "https://github.com/Blast545",
+      "followers_url": "https://api.github.com/users/Blast545/followers",
+      "following_url": "https://api.github.com/users/Blast545/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Blast545/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Blast545/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Blast545/subscriptions",
+      "organizations_url": "https://api.github.com/users/Blast545/orgs",
+      "repos_url": "https://api.github.com/users/Blast545/repos",
+      "events_url": "https://api.github.com/users/Blast545/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Blast545/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b510cda046f32abef5361fd5f3d91486482113b1",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/b510cda046f32abef5361fd5f3d91486482113b1",
+        "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/b510cda046f32abef5361fd5f3d91486482113b1"
+      }
+    ]
+  },
+  {
+    "sha": "b510cda046f32abef5361fd5f3d91486482113b1",
+    "node_id": "C_kwDOAXeOP9oAKGI1MTBjZGEwNDZmMzJhYmVmNTM2MWZkNWYzZDkxNDg2NDgyMTEzYjE",
+    "commit": {
+      "author": {
+        "name": "Scott K Logan",
+        "email": "logans@cottsay.net",
+        "date": "2026-09-23T22:12:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-23T22:12:33Z"
+      },
+      "message": "Install dh-cargo for sourcedeb builds (#1139)",
+      "tree": {
+        "sha": "2af89b647dfb68e4249b277213eb4020de33cc24",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/trees/2af89b647dfb68e4249b277213eb4020de33cc24"
+      },
+      "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/git/commits/b510cda046f32abef5361fd5f3d91486482113b1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtE7RCRC1aQ7uu5UhlAAA7xQQAF9a7rEYVT8JTttF2XHwADPb\nqFstCj5xYJJz2brryDjmJgZRdkDvqNsvc8T2AWhzf5gly2hOrpJudMQS9e21qwUa\nBMObQsAUP+Mlerdw6dkZKrUXPfyr7l3kkmIMQKAvyCaMKPNkUqyrjaAszqbgHtWz\nfvu8Jir0X8HEbT+j3u8hfw/i2i954BTCVhMVYpyrA/jWDkHkI51uu+5eFdT4smep\n2KOmmoSvu18PfRGg0LnMHzsQAU6Gi6gbRN2cLFDnzycSpij+6urLcM7R5Qu0zAm3\noQfEF8A3jVNSHY804uE86X3fGu3dyf60ui0/1KalkyxD4mPKnXFkiujBmq6PLcVE\nnATe2R0DEUxm+HRX7khhdto7jIWokARjnhmdYmaGXBy7M8cbImTYVDnJzaOaCvad\njRWwS5e9/0mWhQpqGKg7UxisOJSJPP0Pj3CguwXfMubGAeT6ChTBCIW8/a1xu8T1\nPXqFcebHgItWddaE6lQEvLYV9TT1LZVxOP3UcdmwyuiwUPo17K1kT2qTIeYuNyUg\n5Nzu/c34RYMuyW3lImfa4GDuq2+BF3aAinctlVrigJFlKS9ziv7MGuEQXSi7Q9iD\nuiPzaRCLViZpsXTB/EJOHscKkWyvhP2bHSOG0c51TkwKbY9U8tTumGQobo/JnkG5\n5OksMazQjiplGtza7eR9\n=MF/C\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2af89b647dfb68e4249b277213eb4020de33cc24\nparent f8c0b46f9a08cc39b812bbc725da091eeb4b93d3\nauthor Scott K Logan <logans@cottsay.net> 1790201553 -0400\ncommitter GitHub <noreply@github.com> 1790201553 -0400\n\nInstall dh-cargo for sourcedeb builds (#1139)",
+        "verified_at": "2026-09-23T22:12:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/b510cda046f32abef5361fd5f3d91486482113b1",
+    "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/b510cda046f32abef5361fd5f3d91486482113b1",
+    "comments_url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/b510cda046f32abef5361fd5f3d91486482113b1/comments",
+    "author": {
+      "login": "cottsay",
+      "id": 1144588,
+      "node_id": "MDQ6VXNlcjExNDQ1ODg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1144588?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cottsay",
+      "html_url": "https://github.com/cottsay",
+      "followers_url": "https://api.github.com/users/cottsay/followers",
+      "following_url": "https://api.github.com/users/cottsay/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cottsay/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cottsay/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cottsay/subscriptions",
+      "organizations_url": "https://api.github.com/users/cottsay/orgs",
+      "repos_url": "https://api.github.com/users/cottsay/repos",
+      "events_url": "https://api.github.com/users/cottsay/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cottsay/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f8c0b46f9a08cc39b812bbc725da091eeb4b93d3",
+        "url": "https://api.github.com/repos/ros-infrastructure/ros_buildfarm/commits/f8c0b46f9a08cc39b812bbc725da091eeb4b93d3",
+        "html_url": "https://github.com/ros-infrastructure/ros_buildfarm/commit/f8c0b46f9a08cc39b812bbc725da091eeb4b93d3"
+      }
+    ]
+  }
+]

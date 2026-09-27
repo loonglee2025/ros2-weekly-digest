@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "1eb667d95f6fb6d9bc043794e0d276ad88060e8d",
+    "node_id": "C_kwDOATWz_9oAKDFlYjY2N2Q5NWY2ZmI2ZDliYzA0Mzc5NGUwZDI3NmFkODgwNjBlOGQ",
+    "commit": {
+      "author": {
+        "name": "Zakaria Talbi Lalmi",
+        "email": "zakariatalbi@eprosima.com",
+        "date": "2026-09-22T10:01:22Z"
+      },
+      "committer": {
+        "name": "Miguel Company",
+        "email": "miguelcompany@eprosima.com",
+        "date": "2026-09-25T06:45:27Z"
+      },
+      "message": "Fix several DATA_FRAG CVEs\n\n* Fix [GHSA-w92j-25c7-68qx] by rejecting DATA_FRAG submessages with a zero\n  fragment size, sample size, fragments-in-submessage or starting number.\n* Fix [GHSA-33xc-m88x-3cp8] by checking that the pending change buffer fits the\n  new fragmentation before reusing it on the StatelessReader DATA_FRAG path.\n* Fix [GHSA-f5r6-qvhq-mx93] by reserving room for the fragment index when\n  calculating the required payload size of a single-fragment sample.\n\nThis is a squashed commit of a privately reviewed branch.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\nReviewed-by: Carlos Ferreira González <carlosferreira@eprosima.com>",
+      "tree": {
+        "sha": "0196cdd5a94bc54fda3efcad8dc49f2a345fed84",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/0196cdd5a94bc54fda3efcad8dc49f2a345fed84"
+      },
+      "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/1eb667d95f6fb6d9bc043794e0d276ad88060e8d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE4KjixLARi34L3QQwoZULmVyx4vAFAmq2GIcACgkQoZULmVyx\n4vDVpA//YvJyniRub/ngD8NPPcZQPKa4/DALsysezU4/F48i1AIZgn+4kfqbgZ87\nwnfzKIM/hIXFslNuAXFzvXj7vK2OjprzOqGCvty5zNIk/fsiMUevcESXPPZwwQcD\nwcd82LCaJypAp9wEWPyM/OEbQCTeIh1WdjgfHlzec0QK1ZdF3nm2ift87PcO/Ksk\nWaxqlcKd9gcNWolHPEDN4WzIQZ0hccvjMDIqOKIgJ74R28X3uKCeMJMYyg1f4Arb\nKE8RoAotfx42z7Pkw9bCZpc6CZb8WQJFtZ80vJgY55qXE8BvkM2o2IxoMBRSqGv0\nj0ofUqgLe3ppQ8EPIqpjr/oRRSQK5f8drCVSt6Hi3Fu03XhrPJFJ2wxTDJv7iPQ6\ndrPru1VUy2XoncGBS8+HFpS2c/iZQXIIY2gFlntQBVvVDw6pBlNx5jSetzpBFDGh\nTZGoPxO0bvaZt2stWdL5Ditd23x3FJpkivcRK3Ny7iJd02cDcJgr/S6iFy2cb4Bv\nx2nVo9+hfuYYQkdvLlzJ4RKOhSXLiR3Fca6U9GLCJMFhK5BUejMm9/GNPNqVa6wh\nSWLBoxb9bjBSC99Rc/pp3auF6qmHUwjTdugmyW5m9fKPpaGYaLcRZV358VnhOb8c\nbC/cMS1wHGNaSuPrlHJF85PhpXG+VbDsyIVVJ/cCoal8JHH7nCU=\n=Qfcv\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0196cdd5a94bc54fda3efcad8dc49f2a345fed84\nparent 26ec83a174b3ca03ecf2b81cff7b4b2366c9c651\nauthor Zakaria Talbi Lalmi <zakariatalbi@eprosima.com> 1790071282 +0200\ncommitter Miguel Company <miguelcompany@eprosima.com> 1790318727 +0200\n\nFix several DATA_FRAG CVEs\n\n* Fix [GHSA-w92j-25c7-68qx] by rejecting DATA_FRAG submessages with a zero\n  fragment size, sample size, fragments-in-submessage or starting number.\n* Fix [GHSA-33xc-m88x-3cp8] by checking that the pending change buffer fits the\n  new fragmentation before reusing it on the StatelessReader DATA_FRAG path.\n* Fix [GHSA-f5r6-qvhq-mx93] by reserving room for the fragment index when\n  calculating the required payload size of a single-fragment sample.\n\nThis is a squashed commit of a privately reviewed branch.\n\nSigned-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>\nReviewed-by: Carlos Ferreira González <carlosferreira@eprosima.com>\n",
+        "verified_at": "2026-09-25T06:45:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/1eb667d95f6fb6d9bc043794e0d276ad88060e8d",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/1eb667d95f6fb6d9bc043794e0d276ad88060e8d",
+    "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/1eb667d95f6fb6d9bc043794e0d276ad88060e8d/comments",
+    "author": {
+      "login": "ZakariaTalbi",
+      "id": 129870492,
+      "node_id": "U_kgDOB72qnA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129870492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ZakariaTalbi",
+      "html_url": "https://github.com/ZakariaTalbi",
+      "followers_url": "https://api.github.com/users/ZakariaTalbi/followers",
+      "following_url": "https://api.github.com/users/ZakariaTalbi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ZakariaTalbi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ZakariaTalbi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ZakariaTalbi/subscriptions",
+      "organizations_url": "https://api.github.com/users/ZakariaTalbi/orgs",
+      "repos_url": "https://api.github.com/users/ZakariaTalbi/repos",
+      "events_url": "https://api.github.com/users/ZakariaTalbi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ZakariaTalbi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "MiguelCompany",
+      "id": 36661117,
+      "node_id": "MDQ6VXNlcjM2NjYxMTE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36661117?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MiguelCompany",
+      "html_url": "https://github.com/MiguelCompany",
+      "followers_url": "https://api.github.com/users/MiguelCompany/followers",
+      "following_url": "https://api.github.com/users/MiguelCompany/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MiguelCompany/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MiguelCompany/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MiguelCompany/subscriptions",
+      "organizations_url": "https://api.github.com/users/MiguelCompany/orgs",
+      "repos_url": "https://api.github.com/users/MiguelCompany/repos",
+      "events_url": "https://api.github.com/users/MiguelCompany/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MiguelCompany/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+        "html_url": "https://github.com/eProsima/Fast-DDS/commit/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651"
+      }
+    ]
+  },
+  {
+    "sha": "26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+    "node_id": "C_kwDOATWz_9oAKDI2ZWM4M2ExNzRiM2NhMDNlY2YyYjgxY2ZmN2I0YjIzNjZjOWM2NTE",
+    "commit": {
+      "author": {
+        "name": "Miguel Company",
+        "email": "miguelcompany@eprosima.com",
+        "date": "2026-09-24T07:36:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T07:36:46Z"
+      },
+      "message": "Use the SPDX identifier Apache-2.0 in package.xml license tag (#6546)\n\nSigned-off-by: Miguel Company <miguelcompany@eprosima.com>",
+      "tree": {
+        "sha": "c3988938494bba649b5165bfe330c7ce1c27d23e",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/c3988938494bba649b5165bfe330c7ce1c27d23e"
+      },
+      "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtNMOCRC1aQ7uu5UhlAAABokQAHcPBejiOV7lkGa81H3Xtoxr\nibbaEXTmGWKxIdljhwl7ftCHpap/QIE+369FgzGarEresSkVsUOjq4gdWjukVv32\n6hax0Nm+Lp70fby3cqOtKxqtHLgKVWlFkyywsq0K8xtxBOHmXF3KSffbfX7xkA6p\nvRw5oJnFePI9Dn1pj1fUaFR5nN4ZK7mE7sHMP+E0yD+GI6vDD8E6TPx87VKcpOdV\nj4m6EM+ecjIMcyXTMeVQpZmsIMF9gL4y6QkvYpfWUZLMFV8H6+Qe4MKeUCg1wjgA\nehVTE3o1tGWaV6dE8Y7tKyHGZhCGakvAUtoWH2byXdTwpXO2ZGqeouwXwh3ZYIKw\nbRZWcE1CaGL/y7EYhy0uzVhDfxGY9Rd2wMEwRgm2tNJzAsNNaraqDFTkzy2DxSoA\nFrs3QHmQcG+T0NeOrDmr0M+Z3/CVwb1pMtqIwY2Z7EI1d2rc3rJjm7Z1MoJ6Mep7\nsgpcAdbn4QxUXb+7KHqce8iqGlZuFysPkvlkMncl/Qk5zQHjV1EFIK0nleXJffZp\nTlF/DW4BXAk+LbR9zMtQhHf/VdS95yNptCGTAWOivgNT920gSclob6wTk67i9wSd\nc+4kj2XuGRuDtN7FJUUFHOmnqeLkdC39vfkcB7y3pt4WUFIiCFhdj7Jyiapqa8oE\nstWyL1ljbWccrJbvLMjh\n=SeC4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c3988938494bba649b5165bfe330c7ce1c27d23e\nparent 27aa5073daebeff368fa9f97693ffbec8913ac2d\nauthor Miguel Company <miguelcompany@eprosima.com> 1790235406 +0200\ncommitter GitHub <noreply@github.com> 1790235406 +0200\n\nUse the SPDX identifier Apache-2.0 in package.xml license tag (#6546)\n\nSigned-off-by: Miguel Company <miguelcompany@eprosima.com>",
+        "verified_at": "2026-09-24T07:36:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651",
+    "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/26ec83a174b3ca03ecf2b81cff7b4b2366c9c651/comments",
+    "author": {
+      "login": "MiguelCompany",
+      "id": 36661117,
+      "node_id": "MDQ6VXNlcjM2NjYxMTE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36661117?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MiguelCompany",
+      "html_url": "https://github.com/MiguelCompany",
+      "followers_url": "https://api.github.com/users/MiguelCompany/followers",
+      "following_url": "https://api.github.com/users/MiguelCompany/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MiguelCompany/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MiguelCompany/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MiguelCompany/subscriptions",
+      "organizations_url": "https://api.github.com/users/MiguelCompany/orgs",
+      "repos_url": "https://api.github.com/users/MiguelCompany/repos",
+      "events_url": "https://api.github.com/users/MiguelCompany/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MiguelCompany/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "27aa5073daebeff368fa9f97693ffbec8913ac2d",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/27aa5073daebeff368fa9f97693ffbec8913ac2d",
+        "html_url": "https://github.com/eProsima/Fast-DDS/commit/27aa5073daebeff368fa9f97693ffbec8913ac2d"
+      }
+    ]
+  },
+  {
+    "sha": "27aa5073daebeff368fa9f97693ffbec8913ac2d",
+    "node_id": "C_kwDOATWz_9oAKDI3YWE1MDczZGFlYmVmZjM2OGZhOWY5NzY5M2ZmYmVjODkxM2FjMmQ",
+    "commit": {
+      "author": {
+        "name": "Carlos Ferreira González",
+        "email": "carlosferreira@eprosima.com",
+        "date": "2026-09-23T06:45:37Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-23T06:45:37Z"
+      },
+      "message": "Fix volatile reader desync after initial positioning GAP (#6542)\n\n* Refs #24631: Regression Test\n\n\n\n* Refs #24631: Limit GAP processing to HB announced value\n\n\n\n* Refs #24631: Send a HB before every GAP\n\n\n\n* Refs #24631: Update tests\n\n\n\n* Refs #24631: Fix writer's assumption of reader state after GAP sent\n\n\n\n* Refs #24631: Uncrustify\n\n\n\n* Refs #24631: Update versions.md\n\n\n\n* Refs #24631: Skip GAPs for changes removed from history\n\n\n\n* Refs #24631: Fix Datasharing GAP reception\n\n\n\n* Refs #24631: Handle sample processed as lost instead of GAP'ed\n\n\n\n* Refs #24631: Send HB in process_acknack iff GAP is required\n\n\n\n* Refs #24631: Coverage test for unknown sequence number comparison\n\n\n\n---------\n\nSigned-off-by: Carlos Ferreira González <carlosferreira@eprosima.com>",
+      "tree": {
+        "sha": "9076bae81386ec36f128d120d1d13916a2d3cc2c",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/9076bae81386ec36f128d120d1d13916a2d3cc2c"
+      },
+      "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/27aa5073daebeff368fa9f97693ffbec8913ac2d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqs3WRCRC1aQ7uu5UhlAAA2xsQAJDulUqeD8b+9b3c6o2SChqI\nbflnZSQ2a2v82ae/l6+V05Dr9UDzGZexoL/GpFypPj4TTQTpEEAxizmqNsJaiKXu\nE9ISg3j2S/6IPUW4XGuI7T5mT04Q1vbAPXzIUqXZDr5aSueWWFYwvTJLdNUJSf1R\nADJY2D2J/B/jn7yYSwrYQybEOjFCB9vRMg1vQ2ukaq7wR5AwL3h/FrpmJ4j4RmWc\nQeb4IY/Sdpc3PeLwa89ejmcbdfq5iul2rbuRRmVfmgsJ40UPiqsAmTvyBbjqqda8\nlXbFobHf53zhafIO1FEgagd/REeCBsSZDV6Levi/uzdagA9YGBCFL5zakf6vRUuC\nw36Rma+i2C39+MLzUxrsXV8t+YTaPGOnJySXcHHZh1swkg8EgK0lN/b8N9G3du+b\nDUxqqgs2XDP4NCceDmx2y4LtQfumuuG0ddXJke3t9Ax0Vbt3JUcIJaImEW0TUGwa\nUysoZ8PQLRs2juEj6FuIlefhwrnNn2Rf4KehozSBZ2U6cdxCb5fSMHQlKVi249uW\nv3qaYPwe511mwFTwHKFSCLkRvNZMg/1niO4EhOzlwmEuAJhr8+3ITsq+8V82d/FF\nHOib0acVilqzlUWLEzq0MdZ6sV4BKR8LbeBaQv8J9JO1RZrOdxfAKJ5cWAba9JhC\nvGAowD1gOjdY/8xx2nW4\n=eeCx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9076bae81386ec36f128d120d1d13916a2d3cc2c\nparent dcd9b80be1f97cd950d7f414da31ff97f77d14f4\nauthor Carlos Ferreira González <carlosferreira@eprosima.com> 1790145937 +0200\ncommitter GitHub <noreply@github.com> 1790145937 +0200\n\nFix volatile reader desync after initial positioning GAP (#6542)\n\n* Refs #24631: Regression Test\n\n\n\n* Refs #24631: Limit GAP processing to HB announced value\n\n\n\n* Refs #24631: Send a HB before every GAP\n\n\n\n* Refs #24631: Update tests\n\n\n\n* Refs #24631: Fix writer's assumption of reader state after GAP sent\n\n\n\n* Refs #24631: Uncrustify\n\n\n\n* Refs #24631: Update versions.md\n\n\n\n* Refs #24631: Skip GAPs for changes removed from history\n\n\n\n* Refs #24631: Fix Datasharing GAP reception\n\n\n\n* Refs #24631: Handle sample processed as lost instead of GAP'ed\n\n\n\n* Refs #24631: Send HB in process_acknack iff GAP is required\n\n\n\n* Refs #24631: Coverage test for unknown sequence number comparison\n\n\n\n---------\n\nSigned-off-by: Carlos Ferreira González <carlosferreira@eprosima.com>",
+        "verified_at": "2026-09-23T06:45:38Z"
+      }
+    },
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/27aa5073daebeff368fa9f97693ffbec8913ac2d",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/27aa5073daebeff368fa9f97693ffbec8913ac2d",
+    "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/27aa5073daebeff368fa9f97693ffbec8913ac2d/comments",
+    "author": {
+      "login": "cferreiragonz",
+      "id": 76408085,
+      "node_id": "MDQ6VXNlcjc2NDA4MDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76408085?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cferreiragonz",
+      "html_url": "https://github.com/cferreiragonz",
+      "followers_url": "https://api.github.com/users/cferreiragonz/followers",
+      "following_url": "https://api.github.com/users/cferreiragonz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cferreiragonz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cferreiragonz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cferreiragonz/subscriptions",
+      "organizations_url": "https://api.github.com/users/cferreiragonz/orgs",
+      "repos_url": "https://api.github.com/users/cferreiragonz/repos",
+      "events_url": "https://api.github.com/users/cferreiragonz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cferreiragonz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+        "html_url": "https://github.com/eProsima/Fast-DDS/commit/dcd9b80be1f97cd950d7f414da31ff97f77d14f4"
+      }
+    ]
+  },
+  {
+    "sha": "dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+    "node_id": "C_kwDOATWz_9oAKGRjZDliODBiZTFmOTdjZDk1MGQ3ZjQxNGRhMzFmZjk3Zjc3ZDE0ZjQ",
+    "commit": {
+      "author": {
+        "name": "Carlos Ferreira González",
+        "email": "carlosferreira@eprosima.com",
+        "date": "2026-09-21T14:31:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-21T14:31:29Z"
+      },
+      "message": "Fix leak in UDP when opening input channels (#6540)\n\n* Refs #25659: Regression test\n\n* Refs #25659: Clean channels after exception\n\n* Refs #25659: Use allowlist instead of whitelist\n\n* Refs #25659: Review\n\n---------\n\nSigned-off-by: Carlos Ferreira González <carlosferreira@eprosima.com>",
+      "tree": {
+        "sha": "537e661b192423767aa536b436f076490d518ef1",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/trees/537e661b192423767aa536b436f076490d518ef1"
+      },
+      "url": "https://api.github.com/repos/eProsima/Fast-DDS/git/commits/dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqsT/BCRC1aQ7uu5UhlAAAESUQAB6S/Oo6f5V8nmiOmvIIo9DK\nlxvCQWO+/Vml2gQ5DQvEfTVHBDgqCd2Vci+ml7g/jso6pz4biVOvFIUhd3Mtt6bq\n4z66Jd//mhatVKBH3e2EvmDR+XI0i+/L/fY5aSIBxYJQGTxutk4hxaTwijGWJ8Sq\n+TgelBmPsIqJ2wydGDqDTJPZDHNXgRnQc64+7+u2MYiivdYzhDnOQjD3Jm+MIrkm\nNmsbS4OHvdqWkOAY/B2QBygy0m/YMBVqh9+zuf4KYGLH7B8qADn4D71Y5z7aReM1\nD+RJSV9yxKqN6iCYWY65GLTp879cxoBAMHzFyJgGob3JAJmTkM/Ucc1SFPXjGGTU\nw8dgkeaHcNxDaTiTrU/VYMzZTLJvKSsGgGtTGSAbWAdgt/bAdHSQIZ0yqpAz4Ell\n96DEIAx30nvzIlF0R9vIqeClfh6j5ctLQipu5VWe3b3KEpZ3O70FvNOFP+TcqUyJ\nzgXKLx2pfMEQaVY/0Vs+9Zu/03+c5ssBGkdREbufZIU/C6JGhSNeMh8GkV5P9kQA\nVtu++k8QwJ7UEPkYS9aJni2ThsKlMYH/dhP9CcFG1EjVaOguqtXAPyP44e4IjVWA\nSbrOtqvaV4M1fBpP4VL0JIqgK0KIUqQIJuPiFk6YEn+Ux1IzChXslp5FWyazyj2h\nMfe/fnovhouzQH5vCExm\n=MUks\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 537e661b192423767aa536b436f076490d518ef1\nparent f6376882050013616d1b0aeacaca2ccc9ee06874\nauthor Carlos Ferreira González <carlosferreira@eprosima.com> 1790001089 +0200\ncommitter GitHub <noreply@github.com> 1790001089 +0200\n\nFix leak in UDP when opening input channels (#6540)\n\n* Refs #25659: Regression test\n\n* Refs #25659: Clean channels after exception\n\n* Refs #25659: Use allowlist instead of whitelist\n\n* Refs #25659: Review\n\n---------\n\nSigned-off-by: Carlos Ferreira González <carlosferreira@eprosima.com>",
+        "verified_at": "2026-09-21T14:31:30Z"
+      }
+    },
+    "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+    "html_url": "https://github.com/eProsima/Fast-DDS/commit/dcd9b80be1f97cd950d7f414da31ff97f77d14f4",
+    "comments_url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/dcd9b80be1f97cd950d7f414da31ff97f77d14f4/comments",
+    "author": {
+      "login": "cferreiragonz",
+      "id": 76408085,
+      "node_id": "MDQ6VXNlcjc2NDA4MDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76408085?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cferreiragonz",
+      "html_url": "https://github.com/cferreiragonz",
+      "followers_url": "https://api.github.com/users/cferreiragonz/followers",
+      "following_url": "https://api.github.com/users/cferreiragonz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cferreiragonz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cferreiragonz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cferreiragonz/subscriptions",
+      "organizations_url": "https://api.github.com/users/cferreiragonz/orgs",
+      "repos_url": "https://api.github.com/users/cferreiragonz/repos",
+      "events_url": "https://api.github.com/users/cferreiragonz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cferreiragonz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6376882050013616d1b0aeacaca2ccc9ee06874",
+        "url": "https://api.github.com/repos/eProsima/Fast-DDS/commits/f6376882050013616d1b0aeacaca2ccc9ee06874",
+        "html_url": "https://github.com/eProsima/Fast-DDS/commit/f6376882050013616d1b0aeacaca2ccc9ee06874"
+      }
+    ]
+  }
+]

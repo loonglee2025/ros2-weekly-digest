@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "deceff9f99ee9e774cb6013a9816981b599db3c0",
+    "node_id": "C_kwDOAUvaeNoAKGRlY2VmZjlmOTllZTllNzc0Y2I2MDEzYTk4MTY5ODFiNTk5ZGIzYzA",
+    "commit": {
+      "author": {
+        "name": "AADITYA007x",
+        "email": "aadityasah7112006@gmail.com",
+        "date": "2026-09-25T15:15:12Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T15:15:12Z"
+      },
+      "message": "Remove ament_export_include_directories and ament_export_libraries calls (#1011)\n\nThese packages already call ament_export_targets(), so the old-style exports are redundant. Fixes #1004\n\nSigned-off-by: AADITYA007x <aadityasah7112006@gmail.com>",
+      "tree": {
+        "sha": "854c16ac613c374b7e9de4b44cfef54851984957",
+        "url": "https://api.github.com/repos/ros2/rosidl/git/trees/854c16ac613c374b7e9de4b44cfef54851984957"
+      },
+      "url": "https://api.github.com/repos/ros2/rosidl/git/commits/deceff9f99ee9e774cb6013a9816981b599db3c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtpAACRC1aQ7uu5UhlAAAkGwQAI5JH7wamCuD6TMenk5tXg9D\n3+WOQYq+2kB8M+SPlOmKtR/Oc+HWUcjPpeoaYNrWJg9s9cU6keHoZXZQi3zMf5+y\n5tCJLe9Fl4rGtrhBcCgYX8/UzPQ7UDghqC6Z4rdzX8g5uYjRxWaibPD/xqqT8uJT\naGKe1eT1H3bIctMzA/+2GIMaKypBzCA62P+/Jxppfyt3SDonE0pO9RURwSTKuAja\nn52G7vMDlPbz2J78arN7DU6wTr08LfTnnhjk/VuKFsTRBWto8yo9ygEc2lQgPJXi\nDeBbjxfgRfXTB52BDeMRjxE4gxNPxICS66XwWe8Xwl6RzCa854jN37gYj9ptzi64\n7uRpNLpo3CoG4xdUBEg0zgEj7WUWw38TXa3ddAot2MYi2LWE1J9kklmetgI7NTF4\nUbe75KrkKao2PP8LCMqoco2wCSNgYKLPiBucDXvTg5FhOeyHcwDkcs8mMwvQjRUO\n+cMPJcDZ4H2EZTYVx/ZCxaWMK3ZrwS+d2XN/h8PfSHzikQZgcEWbt5iiu6S1g3U+\nCKNro5MXvHXiT3LZNRvvrswzjRr2zq+l9KIOlb0chuAkIl4/3VIi8yBfQth6rCdl\nsNF0MwTMA/1loFsp6w1ev0Y0s8DjwRzJZj4W/Z79uijkHIHF7HybNSDxmO7T1BUK\ntjEw9wp4aXL9ruuL+Bfy\n=1O7h\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 854c16ac613c374b7e9de4b44cfef54851984957\nparent b3dbbe67083ca2ba2f679cd69fa83b31383a29e6\nauthor AADITYA007x <aadityasah7112006@gmail.com> 1790349312 +0530\ncommitter GitHub <noreply@github.com> 1790349312 -0700\n\nRemove ament_export_include_directories and ament_export_libraries calls (#1011)\n\nThese packages already call ament_export_targets(), so the old-style exports are redundant. Fixes #1004\n\nSigned-off-by: AADITYA007x <aadityasah7112006@gmail.com>",
+        "verified_at": "2026-09-25T15:15:13Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosidl/commits/deceff9f99ee9e774cb6013a9816981b599db3c0",
+    "html_url": "https://github.com/ros2/rosidl/commit/deceff9f99ee9e774cb6013a9816981b599db3c0",
+    "comments_url": "https://api.github.com/repos/ros2/rosidl/commits/deceff9f99ee9e774cb6013a9816981b599db3c0/comments",
+    "author": {
+      "login": "AADITYA007x",
+      "id": 267351358,
+      "node_id": "U_kgDOD-91Pg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/267351358?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/AADITYA007x",
+      "html_url": "https://github.com/AADITYA007x",
+      "followers_url": "https://api.github.com/users/AADITYA007x/followers",
+      "following_url": "https://api.github.com/users/AADITYA007x/following{/other_user}",
+      "gists_url": "https://api.github.com/users/AADITYA007x/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/AADITYA007x/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/AADITYA007x/subscriptions",
+      "organizations_url": "https://api.github.com/users/AADITYA007x/orgs",
+      "repos_url": "https://api.github.com/users/AADITYA007x/repos",
+      "events_url": "https://api.github.com/users/AADITYA007x/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/AADITYA007x/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+        "url": "https://api.github.com/repos/ros2/rosidl/commits/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+        "html_url": "https://github.com/ros2/rosidl/commit/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6"
+      }
+    ]
+  },
+  {
+    "sha": "b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+    "node_id": "C_kwDOAUvaeNoAKGIzZGJiZTY3MDgzY2EyYmEyZjY3OWNkNjlmYTgzYjMxMzgzYTI5ZTY",
+    "commit": {
+      "author": {
+        "name": "Michael Carroll",
+        "email": "mjcarroll.oss@gmail.com",
+        "date": "2026-09-25T15:12:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-25T15:12:08Z"
+      },
+      "message": "Use the SPDX identifier Apache-2.0 in license declarations (#1003)\n\nThe <license> tags in package.xml and the license= fields in setup.py\nspelled the license as prose (\"Apache License 2.0\", \"Apache License,\nVersion 2.0\", \"Apache 2.0\"). Use the SPDX identifier instead so the\ndeclaration can be matched mechanically. The license itself does not\nchange.\n\nAssisted-by: Claude Code:claude-opus-5 [git, gh]\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+      "tree": {
+        "sha": "1c938c3aea8842d09674f5576ffeff1ae23c14ad",
+        "url": "https://api.github.com/repos/ros2/rosidl/git/trees/1c938c3aea8842d09674f5576ffeff1ae23c14ad"
+      },
+      "url": "https://api.github.com/repos/ros2/rosidl/git/commits/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqto9ICRC1aQ7uu5UhlAAAGfIQAJ060N/+dQLpPM/ntyUtyHOq\nlFvEjTLW3D11fYEE1mqqfL8/7xcy7Z+rgdGJT5KGhZJNKo542Pe8mUTvGEXcAR+9\nMFQmaURcyzT3Z10IPXBQhUEtIHavQL8+aJ21YkUqAU30TKh4VMStAywFArdSPXOU\nLGbznm4lIPTbYehhlJD9ohNSH9X6lQTgqkRaBRC1suUo8mWKkjX/r65njw1leyyr\ndlGz01ELDHwARK76dJ10F2fG65+wg+IvtMroUtwXRyIF4TdDox80cTXDFa4gkZ54\ne9yjbh9dKmApgXl9SlZH03yrpsPgi+D78OjJcTVq65mi5zrOt2vCoKEukmvcCGAp\nuivoqXUYcw0icd9aWK4tkkJqlNiae25Q+VJ8GGBx2+y1YWXAE4JOsSv05g3HUkeP\nZOPgZQeqaFV8ptlo6anunffdyBp2TB2GGY/8F+U9NvcqtJrUQWcItZFMGuegUmTR\nYXSmhyBcZFr7SAUvYX++ufXEFQA3sJD3i5hOyCKjz6GZBUjxY3Wx9WhnL0fVXZ0l\nJYvVB3TDFOV1IPjZJn2oLtE3q4MS0oMxPlvpOZgeCuQW3YuUvYy/MIx6Fqsd80y3\njgTrnDgzVYEKV/TaSABNAKmXmYcLbLHGsE3El3wpnBtGbRnnhOf+zMinVKWLxn6s\nQBrYJJFsuYiiAVhvjJ68\n=8UgX\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1c938c3aea8842d09674f5576ffeff1ae23c14ad\nparent 00d13c5139b5eb2000b5b190a558cac5eb9e8bf2\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1790349128 -0400\ncommitter GitHub <noreply@github.com> 1790349128 -0400\n\nUse the SPDX identifier Apache-2.0 in license declarations (#1003)\n\nThe <license> tags in package.xml and the license= fields in setup.py\nspelled the license as prose (\"Apache License 2.0\", \"Apache License,\nVersion 2.0\", \"Apache 2.0\"). Use the SPDX identifier instead so the\ndeclaration can be matched mechanically. The license itself does not\nchange.\n\nAssisted-by: Claude Code:claude-opus-5 [git, gh]\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+        "verified_at": "2026-09-25T15:12:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/rosidl/commits/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+    "html_url": "https://github.com/ros2/rosidl/commit/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6",
+    "comments_url": "https://api.github.com/repos/ros2/rosidl/commits/b3dbbe67083ca2ba2f679cd69fa83b31383a29e6/comments",
+    "author": {
+      "login": "mjcarroll",
+      "id": 279701,
+      "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjcarroll",
+      "html_url": "https://github.com/mjcarroll",
+      "followers_url": "https://api.github.com/users/mjcarroll/followers",
+      "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+      "repos_url": "https://api.github.com/users/mjcarroll/repos",
+      "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "00d13c5139b5eb2000b5b190a558cac5eb9e8bf2",
+        "url": "https://api.github.com/repos/ros2/rosidl/commits/00d13c5139b5eb2000b5b190a558cac5eb9e8bf2",
+        "html_url": "https://github.com/ros2/rosidl/commit/00d13c5139b5eb2000b5b190a558cac5eb9e8bf2"
+      }
+    ]
+  }
+]

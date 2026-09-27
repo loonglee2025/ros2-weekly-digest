@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "c36e7a3040c3a2e299521591747b23b7e8b62a18",
+    "node_id": "C_kwDOBq4fT9oAKGMzNmU3YTMwNDBjM2EyZTI5OTUyMTU5MTc0N2IyM2I3ZThiNjJhMTg",
+    "commit": {
+      "author": {
+        "name": "ros2-rust-release-plz[bot]",
+        "email": "219314922+ros2-rust-release-plz[bot]@users.noreply.github.com",
+        "date": "2026-09-23T16:25:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-23T16:25:56Z"
+      },
+      "message": "chore: release v0.8.0 (#595)\n\nCo-authored-by: ros2-rust-release-plz[bot] <219314922+ros2-rust-release-plz[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "2ef2c9851280531f03851669dc1c906becd50e5a",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/trees/2ef2c9851280531f03851669dc1c906becd50e5a"
+      },
+      "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/commits/c36e7a3040c3a2e299521591747b23b7e8b62a18",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqs/2UCRC1aQ7uu5UhlAAAiX4QAG6/4IlXxLBrn+zWQ6zl/3nX\npHIfnU/Ej2twZI8t/DZ/nkk5oDzromRX4p7AhZE4aXZtZKEHt3/ulk2CEIzNgvQb\n9mDgpk4smD0i3sEx3SfgFA0sUwcmAiNcLQgqWOt+CmcXYfUypNnKDHOx3AKT0go/\nIHeysHrFDd/kTZT6MIdy9JbQDN3JzS4fdGMuwF9qmeOuNdNytjctNMyzZoyFSJhQ\nCaQKpXdJzS6c86Ocdh5IJOtjbRa71lvsTuJqybpfIHoIMJch4LJo1sLe19dNj/hL\nEkId2NiOeRXncWgrXRVEfl7yukkMJYSMKIM38CnBGZiv1F3WoAhXPcDN6xzQis1F\nSoYW4FnKU3JaXtBYxo31eH359OEPomB//vLwdq025GCwK13N1hNmc2oc3JvMX9Lp\nhE9GmNqeX6IYGWKA+yFFGHRW/GGKeXfusOTvMGLCe6yi7F3RGCvjdGVTnjJDNClZ\n0R3YHwE0MimXlb0kAnbgzFXVXCTgjjmnGnyEEj5z+xjy8RJipsp7oFTysKd51x0m\nS6aVjBwErE52IzFOrCf7L955j6RPud7X6Pht5g6v7/SfZWjrCM4sW3ATG4G0k3kg\nx85FsCf3U00bxcBUPN76EKWGUkQPnJiht7NS3pn20qI7hhOazS4q0Q/BEvuVCiXj\nxZHcYGQOXGIsFl/jmWdX\n=LjaD\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 2ef2c9851280531f03851669dc1c906becd50e5a\nparent 3ce1d7f3439c81526955834b4638a88202d5940e\nauthor ros2-rust-release-plz[bot] <219314922+ros2-rust-release-plz[bot]@users.noreply.github.com> 1790180756 +0200\ncommitter GitHub <noreply@github.com> 1790180756 +0200\n\nchore: release v0.8.0 (#595)\n\nCo-authored-by: ros2-rust-release-plz[bot] <219314922+ros2-rust-release-plz[bot]@users.noreply.github.com>",
+        "verified_at": "2026-09-23T16:25:56Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/c36e7a3040c3a2e299521591747b23b7e8b62a18",
+    "html_url": "https://github.com/ros2-rust/ros2_rust/commit/c36e7a3040c3a2e299521591747b23b7e8b62a18",
+    "comments_url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/c36e7a3040c3a2e299521591747b23b7e8b62a18/comments",
+    "author": {
+      "login": "ros2-rust-release-plz[bot]",
+      "id": 219314922,
+      "node_id": "BOT_kgDODRJ66g",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48261446?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D",
+      "html_url": "https://github.com/apps/ros2-rust-release-plz",
+      "followers_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ros2-rust-release-plz%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3ce1d7f3439c81526955834b4638a88202d5940e",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/3ce1d7f3439c81526955834b4638a88202d5940e",
+        "html_url": "https://github.com/ros2-rust/ros2_rust/commit/3ce1d7f3439c81526955834b4638a88202d5940e"
+      }
+    ]
+  },
+  {
+    "sha": "3ce1d7f3439c81526955834b4638a88202d5940e",
+    "node_id": "C_kwDOBq4fT9oAKDNjZTFkN2YzNDM5YzgxNTI2OTU1ODM0YjQ2MzhhODgyMDJkNTk0MGU",
+    "commit": {
+      "author": {
+        "name": "Esteve Fernandez",
+        "email": "33620+esteve@users.noreply.github.com",
+        "date": "2026-09-23T16:25:14Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-23T16:25:14Z"
+      },
+      "message": "docs: update README.md for rclrs 0.8.0 (#712)\n\nSigned-off-by: Esteve Fernandez <esteve@apache.org>",
+      "tree": {
+        "sha": "99a5f1358dac0b667dc23a2fa29b5752212b6455",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/trees/99a5f1358dac0b667dc23a2fa29b5752212b6455"
+      },
+      "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/commits/3ce1d7f3439c81526955834b4638a88202d5940e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqs/1qCRC1aQ7uu5UhlAAARY8QAIgy/JmexwJQk3FIG1pJMsdi\nvAUHtjSBUKnwinzhWFJyuTj1yYs15FtW49o9bYD7+/fHbjQDFYJVSgVNE+ZZOLRd\nf85G6DNvxN6TRUtqyUrhniDKuzOUAjqAjScOCetZFfeEWKdwqu4uDbSG26MVhykW\nMHT7k92F3JKUQ7APNVtsAzavy6jrSeJYx2Ac9JYLLcNT1pI0mrsnI8w8R9KXh2Pr\nEI5AqKNA1BAjEyLKqREUDvekqxi0FPJqqd/jxvdjswlw8gg4vFLeRMBfWBjBXNdI\n7dDCkk9WVMXQMxm0Yul4ra5Dc3QlPtlE7zKCskCYMP3sDNStpMhX2BRvra0/y3Ed\n3jV7MYLtDff9sdiGeHGBjERL5G87dk24dXtaZAN4gopThq4OZZ3PK1p0cov5IolD\nBtUphPmXYDWmkXTtLa2Arua+5c5Lq+tUHbA/UfIQnR3Ek5RuBO0TKrK6TrTTFRql\nPo79cngA9j9ZkshYOh9n0m5UIy6rCkua0orK4+tTSml0xL3BnbJo/lsJjeZSKOLK\ngkqpE7QQzit/grBaTT1CaG62TkAsACZ9xTMV7p1WTcBs/jBk5eFvmUE+CtDEUrh4\n51G7mLj692LYSeT3KHA1uCbK1rrL/Vkg6IPayEko69dfySmyRjJsJ15qZ+fIZxTc\nl7MT0/zFIyXR2WiYwiT3\n=2Kgq\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 99a5f1358dac0b667dc23a2fa29b5752212b6455\nparent 62154b385c44d1b039e91c63415a9261c84dc1d2\nauthor Esteve Fernandez <33620+esteve@users.noreply.github.com> 1790180714 +0200\ncommitter GitHub <noreply@github.com> 1790180714 +0200\n\ndocs: update README.md for rclrs 0.8.0 (#712)\n\nSigned-off-by: Esteve Fernandez <esteve@apache.org>",
+        "verified_at": "2026-09-23T16:25:14Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/3ce1d7f3439c81526955834b4638a88202d5940e",
+    "html_url": "https://github.com/ros2-rust/ros2_rust/commit/3ce1d7f3439c81526955834b4638a88202d5940e",
+    "comments_url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/3ce1d7f3439c81526955834b4638a88202d5940e/comments",
+    "author": {
+      "login": "esteve",
+      "id": 33620,
+      "node_id": "MDQ6VXNlcjMzNjIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33620?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/esteve",
+      "html_url": "https://github.com/esteve",
+      "followers_url": "https://api.github.com/users/esteve/followers",
+      "following_url": "https://api.github.com/users/esteve/following{/other_user}",
+      "gists_url": "https://api.github.com/users/esteve/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/esteve/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/esteve/subscriptions",
+      "organizations_url": "https://api.github.com/users/esteve/orgs",
+      "repos_url": "https://api.github.com/users/esteve/repos",
+      "events_url": "https://api.github.com/users/esteve/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/esteve/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "62154b385c44d1b039e91c63415a9261c84dc1d2",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/62154b385c44d1b039e91c63415a9261c84dc1d2",
+        "html_url": "https://github.com/ros2-rust/ros2_rust/commit/62154b385c44d1b039e91c63415a9261c84dc1d2"
+      }
+    ]
+  },
+  {
+    "sha": "62154b385c44d1b039e91c63415a9261c84dc1d2",
+    "node_id": "C_kwDOBq4fT9oAKDYyMTU0YjM4NWM0NGQxYjAzOWU5MWM2MzQxNWE5MjYxYzg0ZGMxZDI",
+    "commit": {
+      "author": {
+        "name": "Mathieu David",
+        "email": "mathieudavid@mathieudavid.org",
+        "date": "2026-09-23T11:58:59Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-23T11:58:59Z"
+      },
+      "message": "feat!: take the ROS shim interfaces from ros-env (#711)\n\nThe stubs in `rclrs/src/vendor.rs` were added when the crate moved to\n`ros-env` for its messages, and in that same change every call site\nswitched from `crate::vendor::` to `ros_env::`. Nothing has referred to\nthem since. When building the with `use_ros_shim` it fails to resolve\n`ros_env::rcl_interfaces` at all.\n\nDrop the vendored stubs and let `ros-env` supply the interfaces under its own\n`use_ros_shim` feature, so the module paths are the same whether they\ncome from the shim or from a sourced workspace.\n\nAssisted-by: Claude:claude-opus-5 [Claude Code]",
+      "tree": {
+        "sha": "fe148f06aa23574fe539ce9ed6cae7a04897bb54",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/trees/fe148f06aa23574fe539ce9ed6cae7a04897bb54"
+      },
+      "url": "https://api.github.com/repos/ros2-rust/ros2_rust/git/commits/62154b385c44d1b039e91c63415a9261c84dc1d2",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqs78DCRC1aQ7uu5UhlAAAYt8QAEQJfuVsuB9ELIfpejSjWF75\nvuotBP6PCLkYgYJsleB9A5gYX3L45VzJWwzoCK0vKbwtFKxSUNBL8BzDdQ5Jizn+\nBulMsbYxEJjxVEPl+YE6JhggXWFkatdiBuBpQbfd+pGr3WmjOkN1g5fL0n0FpQhQ\nzCiJ0lgcP8WWgCLCeZz9M+3L4qs2NJ9+nSn9WQ9IvBXoP3rtm19GYnRI51QsrtOU\n+TWf5bPBnixb7jjnx+sHxkGDzgQbYYq8qyxH59nzT5H618IWJn5U6HwU36zyBMPP\n3BrPNGSJd7dzbIPXoIh6rcvcpvyV6jGv1KR65Kof3Lj8ax2xpJHpjLhhR/fM9ohx\nGq9YrIB5ozuUWfWEWNGOTe9a9TW/0DIndIqIJQ9HCPI990O96sXAJbweQmFZVd/l\nVhjewZW6j+3t/gWwrAHTFkJhbtQfRtM00jm/0pI3N1Fud0fEsclwyH1hIaMS23FQ\nTJm8Or5p7BfcMhZcR3FNizPundHULuG2i0UDDBrcED33oC2H7m8tGIskaKmPGlDU\nait+44jVKiMW4YIkyVxsK9eQ5drKFy/iPambfp2apPzqSZh/vCNYfAE09p1x0pgR\nKhq9Qq1jJJf6Wdx8jpeGsQyKw/ySPdJ8iu+9XFPmz6WN0/s7UOB+RCANKaCA8YHX\nuDrqI766u4sqIX9YwHFh\n=aan5\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fe148f06aa23574fe539ce9ed6cae7a04897bb54\nparent d27a8cb9ccea23446c0e37fe56ba2623ade892af\nauthor Mathieu David <mathieudavid@mathieudavid.org> 1790164739 +0200\ncommitter GitHub <noreply@github.com> 1790164739 +0200\n\nfeat!: take the ROS shim interfaces from ros-env (#711)\n\nThe stubs in `rclrs/src/vendor.rs` were added when the crate moved to\n`ros-env` for its messages, and in that same change every call site\nswitched from `crate::vendor::` to `ros_env::`. Nothing has referred to\nthem since. When building the with `use_ros_shim` it fails to resolve\n`ros_env::rcl_interfaces` at all.\n\nDrop the vendored stubs and let `ros-env` supply the interfaces under its own\n`use_ros_shim` feature, so the module paths are the same whether they\ncome from the shim or from a sourced workspace.\n\nAssisted-by: Claude:claude-opus-5 [Claude Code]",
+        "verified_at": "2026-09-23T11:59:00Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/62154b385c44d1b039e91c63415a9261c84dc1d2",
+    "html_url": "https://github.com/ros2-rust/ros2_rust/commit/62154b385c44d1b039e91c63415a9261c84dc1d2",
+    "comments_url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/62154b385c44d1b039e91c63415a9261c84dc1d2/comments",
+    "author": {
+      "login": "azerupi",
+      "id": 7647338,
+      "node_id": "MDQ6VXNlcjc2NDczMzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7647338?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azerupi",
+      "html_url": "https://github.com/azerupi",
+      "followers_url": "https://api.github.com/users/azerupi/followers",
+      "following_url": "https://api.github.com/users/azerupi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azerupi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azerupi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azerupi/subscriptions",
+      "organizations_url": "https://api.github.com/users/azerupi/orgs",
+      "repos_url": "https://api.github.com/users/azerupi/repos",
+      "events_url": "https://api.github.com/users/azerupi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azerupi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d27a8cb9ccea23446c0e37fe56ba2623ade892af",
+        "url": "https://api.github.com/repos/ros2-rust/ros2_rust/commits/d27a8cb9ccea23446c0e37fe56ba2623ade892af",
+        "html_url": "https://github.com/ros2-rust/ros2_rust/commit/d27a8cb9ccea23446c0e37fe56ba2623ade892af"
+      }
+    ]
+  }
+]

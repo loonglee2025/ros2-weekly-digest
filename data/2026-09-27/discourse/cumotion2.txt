@@ -1,0 +1,24 @@
+Title: Collision Aware Motion Planning with NVIDIA Isaac™ ROS cuMotion - Projects - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/t/collision-aware-motion-planning-with-nvidia-isaac-ros-cumotion/58330
+
+Published Time: 2026-09-22T22:07:00+00:00
+
+Markdown Content:
+## post by Pyo 5 days ago
+
+![Image 1: AI WORKER #20: Collision Aware Motion Planning with NVIDIA Isaac™ ROS cuMotion](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/b/8/b8ccabe6ee4c262a48734aeba279fb44f3e95735.jpeg)
+
+Getting a robot arm to a target pose is only part of the problem in real-world manipulation. The planner also needs to account for self-collision, fixed structures, newly observed obstacles, and the geometry of the object being carried.
+
+In this work, we integrated NVIDIA Isaac ROS cuMotion with the AI Worker MoveIt 2 stack. The same planning workflow can coordinate the left arm, right arm, both arms, and the lift. For changing environments, depth data from ZED and RealSense cameras is processed with Nvblox to build a 3D distance representation of surrounding obstacles, which cuMotion uses when calculating a new collision-aware trajectory.
+
+We also include the carried object in the robot collision model. Even when the gripper itself can clear an obstacle, the object being held may still collide with the surrounding environment, so its geometry needs to be considered during planning.
+
+With the release of NVIDIA Isaac ROS 5.0, AI Worker was also featured in the NVIDIA Blog as one of the robotics applications integrating Isaac ROS.
+
+The video shows the behavior on the physical robot, while the technical story covers the system architecture, collision model configuration, Nvblox integration, launch setup, and current limitations.
+
+![Image 2: :clapper_board:](https://emoji.discourse-cdn.com/noto/clapper_board.png?v=15) Video: [https://youtu.be/fmZdMV72IR0](https://youtu.be/fmZdMV72IR0)  
+![Image 3: :memo:](https://emoji.discourse-cdn.com/noto/memo.png?v=15) Docs: [AI Worker x NVIDIA Isaac ROS cuMotion | ROBOTIS Docs](https://docs.robotis.com/docs/systems/aiworker/resources/technical_story/isaac_cumotion/)  
+![Image 4: :memo:](https://emoji.discourse-cdn.com/noto/memo.png?v=15) NVIDIA Blog: [NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development | NVIDIA Blog](https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/)

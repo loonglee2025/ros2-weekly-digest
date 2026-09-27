@@ -1,0 +1,172 @@
+Title: Latest topics - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/latest?order=created
+
+Markdown Content:
+[Community Meeting #64 - September 28th, 2026 @ 3pm UTC](https://discourse.ros.org/t/community-meeting-64-september-28th-2026-3pm-utc/58439)
+
+[![Image 1: pinching_hand](https://emoji.discourse-cdn.com/noto/pinching_hand.png?v=15)OpenEmbedded](https://discourse.ros.org/c/community-groups/openembedded/26)[![Image 2: robwoolley - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/robwoolley/24/12542_2.png)](https://discourse.ros.org/u/robwoolley)[0](https://discourse.ros.org/t/community-meeting-64-september-28th-2026-3pm-utc/58439/1)1[20m](https://discourse.ros.org/t/community-meeting-64-september-28th-2026-3pm-utc/58439/1)
+[Shared_buffer_backend: shared-memory rosidl::Buffer for ROS 2 processes](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414)
+
+[![Image 3: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [lyrical](https://discourse.ros.org/tag/lyrical/556)[![Image 4: Daisuke_Kato - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/daisuke_kato/24/23487_2.png)](https://discourse.ros.org/u/daisuke_kato)[![Image 5: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[3](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414/1)63[9h](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414/4)
+[Question on local vs. remote inference placement for perception tasks](https://discourse.ros.org/t/question-on-local-vs-remote-inference-placement-for-perception-tasks/58394)
+
+[![Image 6: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [ai](https://discourse.ros.org/tag/ai/215),
+*   [wg-cloud-robotics](https://discourse.ros.org/tag/wg-cloud-robotics/423),
+*   [working-group](https://discourse.ros.org/tag/working-group/100)[![Image 7: johan784 - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/johan784/24/35602_2.png)](https://discourse.ros.org/u/johan784)[![Image 8: mjcarroll - Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/mjcarroll/24/35469_2.png)](https://discourse.ros.org/u/mjcarroll)[1](https://discourse.ros.org/t/question-on-local-vs-remote-inference-placement-for-perception-tasks/58394/1)61[2d](https://discourse.ros.org/t/question-on-local-vs-remote-inference-placement-for-perception-tasks/58394/2)
+[Webots Demo 6: Compound Physical Safety Reflex on TIAGo (QERRA-v2 Classical)](https://discourse.ros.org/t/webots-demo-6-compound-physical-safety-reflex-on-tiago-qerra-v2-classical/58372)
+
+[![Image 9: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [webots](https://discourse.ros.org/tag/webots/268),
+*   [safetylayer](https://discourse.ros.org/tag/safetylayer/586)[![Image 10: marunigno-ship-it - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/marunigno-ship-it/24/34877_2.png)](https://discourse.ros.org/u/marunigno-ship-it)[0](https://discourse.ros.org/t/webots-demo-6-compound-physical-safety-reflex-on-tiago-qerra-v2-classical/58372/1)36[3d](https://discourse.ros.org/t/webots-demo-6-compound-physical-safety-reflex-on-tiago-qerra-v2-classical/58372/1)
+[Ros2_unbag is now available via the ROS 2 buildfarm ![Image 11: package](https://emoji.discourse-cdn.com/noto/package.png?v=15)](https://discourse.ros.org/t/ros2-unbag-is-now-available-via-the-ros-2-buildfarm/58367)
+
+[![Image 12: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [release](https://discourse.ros.org/tag/release/8)[![Image 13: lostendo - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/lostendo/24/29946_2.png)](https://discourse.ros.org/u/lostendo)[![Image 14: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[1](https://discourse.ros.org/t/ros2-unbag-is-now-available-via-the-ros-2-buildfarm/58367/1)81[3d](https://discourse.ros.org/t/ros2-unbag-is-now-available-via-the-ros-2-buildfarm/58367/2)
+[Aerial Robotics Meeting - October 1st 2026](https://discourse.ros.org/t/aerial-robotics-meeting-october-1st-2026/58357)
+
+[![Image 15: airplane](https://emoji.discourse-cdn.com/noto/airplane.png?v=15)Aerial Robotics](https://discourse.ros.org/c/community-groups/aerial-robotics/14)[![Image 16: TOTON95 - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/toton95/24/17392_2.png)](https://discourse.ros.org/u/toton95)[0](https://discourse.ros.org/t/aerial-robotics-meeting-october-1st-2026/58357/1)41[4d](https://discourse.ros.org/t/aerial-robotics-meeting-october-1st-2026/58357/1)
+[Assistant Research Engineer (AI/ML) - MATRIX Lab - University of Maryland](https://discourse.ros.org/t/assistant-research-engineer-ai-ml-matrix-lab-university-of-maryland/58354)
+
+[![Image 17: person_in_suit_levitating](https://emoji.discourse-cdn.com/noto/person_in_suit_levitating.png?v=15)Jobs](https://discourse.ros.org/c/jobs/15)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [machine-learning](https://discourse.ros.org/tag/machine-learning/599)[![Image 18: CursedRock17 - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/cursedrock17/24/17275_2.png)](https://discourse.ros.org/u/cursedrock17)[0](https://discourse.ros.org/t/assistant-research-engineer-ai-ml-matrix-lab-university-of-maryland/58354/1)54[4d](https://discourse.ros.org/t/assistant-research-engineer-ai-ml-matrix-lab-university-of-maryland/58354/1)
+[ROSCon Toronto FollowUp: Kubernetes/KubeEdge with ROS 2](https://discourse.ros.org/t/roscon-toronto-followup-kubernetes-kubeedge-with-ros-2/58350)
+
+[![Image 19: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [ros](https://discourse.ros.org/tag/ros/118),
+*   [docker](https://discourse.ros.org/tag/docker/14),
+*   [kubernetes](https://discourse.ros.org/tag/kubernetes/131)[![Image 20: tomoyafujita - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/tomoyafujita/24/6097_2.png)](https://discourse.ros.org/u/tomoyafujita)[![Image 21: frank.oh - Recent Poster](https://avatars.discourse-cdn.com/v4/letter/f/cab0a1/24.png)](https://discourse.ros.org/u/frank.oh)[![Image 22: robwoolley - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/robwoolley/24/12542_2.png)](https://discourse.ros.org/u/robwoolley)[3](https://discourse.ros.org/t/roscon-toronto-followup-kubernetes-kubeedge-with-ros-2/58350/1)89[19m](https://discourse.ros.org/t/roscon-toronto-followup-kubernetes-kubeedge-with-ros-2/58350/4)
+[Fifteen Years of MoveIt, and the Next Fifteen](https://discourse.ros.org/t/fifteen-years-of-moveit-and-the-next-fifteen/58349)
+
+[![Image 23: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)[![Image 24: davetcoleman - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/davetcoleman/24/1835_2.png)](https://discourse.ros.org/u/davetcoleman)[![Image 25: dhood - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/dhood/24/1121_2.png)](https://discourse.ros.org/u/dhood)[1](https://discourse.ros.org/t/fifteen-years-of-moveit-and-the-next-fifteen/58349/1)409[3d](https://discourse.ros.org/t/fifteen-years-of-moveit-and-the-next-fifteen/58349/2)
+[Announcement: rclrs 0.8.0 Release](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347)
+
+[![Image 26: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [rust](https://discourse.ros.org/tag/rust/47),
+*   [rclrs](https://discourse.ros.org/tag/rclrs/197)[![Image 27: esteve - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/esteve/24/12_2.png)](https://discourse.ros.org/u/esteve)[0](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347/1)80[4d](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347/1)
+[Extension of the DENSO robot ROS 2 stack and update to Jazzy](https://discourse.ros.org/t/extension-of-the-denso-robot-ros-2-stack-and-update-to-jazzy/58345)
+
+[![Image 28: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [gazebo](https://discourse.ros.org/tag/gazebo/67),
+*   [humble](https://discourse.ros.org/tag/humble/293),
+*   [jazzy](https://discourse.ros.org/tag/jazzy/418),
+*   [moveit2](https://discourse.ros.org/tag/moveit2/86)[![Image 29: trevisan - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/trevisan/24/35578_2.png)](https://discourse.ros.org/u/trevisan)[![Image 30: Katherine_Scott - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/katherine_scott/24/4434_2.png)](https://discourse.ros.org/u/katherine_scott)[2](https://discourse.ros.org/t/extension-of-the-denso-robot-ros-2-stack-and-update-to-jazzy/58345/1)53[4d](https://discourse.ros.org/t/extension-of-the-denso-robot-ros-2-stack-and-update-to-jazzy/58345/3)
+[Orbital space robotics with ROS2 & Isaac Sim](https://discourse.ros.org/t/orbital-space-robotics-with-ros2-isaac-sim/58342)
+
+[![Image 31: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [ros](https://discourse.ros.org/tag/ros/118),
+*   [jazzy](https://discourse.ros.org/tag/jazzy/418),
+*   [isaac-sim](https://discourse.ros.org/tag/isaac-sim/419)[![Image 32: sangregoriokimpo - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/sangregoriokimpo/24/22837_2.png)](https://discourse.ros.org/u/sangregoriokimpo)[0](https://discourse.ros.org/t/orbital-space-robotics-with-ros2-isaac-sim/58342/1)61[4d](https://discourse.ros.org/t/orbital-space-robotics-with-ros2-isaac-sim/58342/1)
+[ROSCon Global 2026 Live Stream](https://discourse.ros.org/t/roscon-global-2026-live-stream/58340)
+
+[![Image 33: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [roscon](https://discourse.ros.org/tag/roscon/11),
+*   [roscon2026](https://discourse.ros.org/tag/roscon2026/555),
+*   [2026](https://discourse.ros.org/tag/554-tag/554)[![Image 34: Katherine_Scott - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/katherine_scott/24/4434_2.png)](https://discourse.ros.org/u/katherine_scott)[2](https://discourse.ros.org/t/roscon-global-2026-live-stream/58340/1)239[3d](https://discourse.ros.org/t/roscon-global-2026-live-stream/58340/4)
+[Maritime hackathon in San Francisco, October 16–18 — looking for marine robotics builders](https://discourse.ros.org/t/maritime-hackathon-in-san-francisco-october-16-18-looking-for-marine-robotics-builders/58332)
+
+[![Image 35: sailboat](https://emoji.discourse-cdn.com/noto/sailboat.png?v=15)Marine Robotics](https://discourse.ros.org/c/community-groups/marine-robotics/36)[![Image 36: SiliconMtn - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/siliconmtn/24/35569_2.png)](https://discourse.ros.org/u/siliconmtn)[0](https://discourse.ros.org/t/maritime-hackathon-in-san-francisco-october-16-18-looking-for-marine-robotics-builders/58332/1)30[5d](https://discourse.ros.org/t/maritime-hackathon-in-san-francisco-october-16-18-looking-for-marine-robotics-builders/58332/1)
+[Collision Aware Motion Planning with NVIDIA Isaac™ ROS cuMotion](https://discourse.ros.org/t/collision-aware-motion-planning-with-nvidia-isaac-ros-cumotion/58330)
+
+[![Image 37: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)[![Image 38: Pyo - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/pyo/24/15617_2.png)](https://discourse.ros.org/u/pyo)[0](https://discourse.ros.org/t/collision-aware-motion-planning-with-nvidia-isaac-ros-cumotion/58330/1)89[5d](https://discourse.ros.org/t/collision-aware-motion-planning-with-nvidia-isaac-ros-cumotion/58330/1)
+[Stress-testing a moral execution guard beyond direct language (QERRA-v2 Classical)](https://discourse.ros.org/t/stress-testing-a-moral-execution-guard-beyond-direct-language-qerra-v2-classical/58314)
+
+[![Image 39: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [behaviortrees](https://discourse.ros.org/tag/behaviortrees/580),
+*   [adversarialbenchmark](https://discourse.ros.org/tag/adversarialbenchmark/598),
+*   [moralexecution](https://discourse.ros.org/tag/moralexecution/597)[![Image 40: marunigno-ship-it - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/marunigno-ship-it/24/34877_2.png)](https://discourse.ros.org/u/marunigno-ship-it)[![Image 41: RLSOK - Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/rlsok/24/35115_2.png)](https://discourse.ros.org/u/rlsok)[2](https://discourse.ros.org/t/stress-testing-a-moral-execution-guard-beyond-direct-language-qerra-v2-classical/58314/1)61[5d](https://discourse.ros.org/t/stress-testing-a-moral-execution-guard-beyond-direct-language-qerra-v2-classical/58314/3)
+[From CT Scan to Robotic Surgery Prototype: Kidney Stone Detection & PCNL Planning in ROS 2](https://discourse.ros.org/t/from-ct-scan-to-robotic-surgery-prototype-kidney-stone-detection-pcnl-planning-in-ros-2/58308)
+
+[![Image 42: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12),
+*   [gazebo](https://discourse.ros.org/tag/gazebo/67),
+*   [jazzy](https://discourse.ros.org/tag/jazzy/418),
+*   [rviz](https://discourse.ros.org/tag/rviz/44),
+*   [medical](https://discourse.ros.org/tag/medical/436)[![Image 43: ynsziya - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/ynsziya/24/35565_2.png)](https://discourse.ros.org/u/ynsziya)[0](https://discourse.ros.org/t/from-ct-scan-to-robotic-surgery-prototype-kidney-stone-detection-pcnl-planning-in-ros-2/58308/1)61[6d](https://discourse.ros.org/t/from-ct-scan-to-robotic-surgery-prototype-kidney-stone-detection-pcnl-planning-in-ros-2/58308/1)
+[Oh noes! What’s going on with Anubis?](https://discourse.ros.org/t/oh-noes-whats-going-on-with-anubis/58302)
+
+[![Image 44: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)[![Image 45: Bernd_Pfrommer - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/bernd_pfrommer/24/11594_2.png)](https://discourse.ros.org/u/bernd_pfrommer)[![Image 46: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[![Image 47: smac - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/smac/24/6763_2.png)](https://discourse.ros.org/u/smac)[2](https://discourse.ros.org/t/oh-noes-whats-going-on-with-anubis/58302/1)182[6d](https://discourse.ros.org/t/oh-noes-whats-going-on-with-anubis/58302/3)
+[MOOS-IvP Skills plugin for coding agents: v1.4.12](https://discourse.ros.org/t/moos-ivp-skills-plugin-for-coding-agents-v1-4-12/58296)
+
+[![Image 48: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [release](https://discourse.ros.org/tag/release/8),
+*   [robotics](https://discourse.ros.org/tag/robotics/351),
+*   [autonomous-vehicles](https://discourse.ros.org/tag/autonomous-vehicles/330),
+*   [plugin](https://discourse.ros.org/tag/plugin/56),
+*   [llm](https://discourse.ros.org/tag/llm/526)[![Image 49: Charlie_Benjamin - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/charlie_benjamin/24/35550_2.png)](https://discourse.ros.org/u/charlie_benjamin)[0](https://discourse.ros.org/t/moos-ivp-skills-plugin-for-coding-agents-v1-4-12/58296/1)48[6d](https://discourse.ros.org/t/moos-ivp-skills-plugin-for-coding-agents-v1-4-12/58296/1)
+[ROS Meetings for Week of September 21, 2026](https://discourse.ros.org/t/ros-meetings-for-week-of-september-21-2026/58291)
+
+[![Image 50: busts_in_silhouette](https://emoji.discourse-cdn.com/noto/busts_in_silhouette.png?v=15)ROS PMC](https://discourse.ros.org/c/ros/ros-pmc/113)[![Image 51: mjcarroll - Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/mjcarroll/24/35469_2.png)](https://discourse.ros.org/u/mjcarroll)[0](https://discourse.ros.org/t/ros-meetings-for-week-of-september-21-2026/58291/1)60[6d](https://discourse.ros.org/t/ros-meetings-for-week-of-september-21-2026/58291/1)
+[Camera calibration without a checkerboard](https://discourse.ros.org/t/camera-calibration-without-a-checkerboard/58282)
+
+[![Image 52: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)[![Image 53: qwert1337 - Original Poster, Most Recent Poster](https://avatars.discourse-cdn.com/v4/letter/q/f08c70/24.png)](https://discourse.ros.org/u/qwert1337)[![Image 54: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[2](https://discourse.ros.org/t/camera-calibration-without-a-checkerboard/58282/1)183[6d](https://discourse.ros.org/t/camera-calibration-without-a-checkerboard/58282/3)
+[LGDXRobot2: Now Supporting ROS 2 Lyrical](https://discourse.ros.org/t/lgdxrobot2-now-supporting-ros-2-lyrical/58252)
+
+[![Image 55: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [ros2](https://discourse.ros.org/tag/ros2/12)[![Image 56: yukaitung - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/yukaitung/24/34169_2.png)](https://discourse.ros.org/u/yukaitung)[0](https://discourse.ros.org/t/lgdxrobot2-now-supporting-ros-2-lyrical/58252/1)52[9d](https://discourse.ros.org/t/lgdxrobot2-now-supporting-ros-2-lyrical/58252/1)
+[New Packages for Lyrical 2026-09-18](https://discourse.ros.org/t/new-packages-for-lyrical-2026-09-18/58251)
+
+[![Image 57: rolled_up_newspaper](https://emoji.discourse-cdn.com/noto/rolled_up_newspaper.png?v=15)ROS Announcements and News](https://discourse.ros.org/c/ros/ros-announcements-news/112)
+
+*   [release](https://discourse.ros.org/tag/release/8),
+*   [lyrical](https://discourse.ros.org/tag/lyrical/556)[![Image 58: sloretz - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/sloretz/24/23113_2.png)](https://discourse.ros.org/u/sloretz)[![Image 59: Shahazad_Abdulla - Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/shahazad_abdulla/24/35609_2.png)](https://discourse.ros.org/u/shahazad_abdulla)[![Image 60: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[2](https://discourse.ros.org/t/new-packages-for-lyrical-2026-09-18/58251/1)90[22h](https://discourse.ros.org/t/new-packages-for-lyrical-2026-09-18/58251/3)
+[Lyrical reaction (emoji) is broken](https://discourse.ros.org/t/lyrical-reaction-emoji-is-broken/58249)
+
+[Site Feedback](https://discourse.ros.org/c/site-feedback/3)[![Image 61: christophebedard - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/christophebedard/24/1514_2.png)](https://discourse.ros.org/u/christophebedard)[0](https://discourse.ros.org/t/lyrical-reaction-emoji-is-broken/58249/1)49[9d](https://discourse.ros.org/t/lyrical-reaction-emoji-is-broken/58249/1)
+[ROS News for the week of September 14th, 2026](https://discourse.ros.org/t/ros-news-for-the-week-of-september-14th-2026/58248)
+
+[![Image 62: megaphone](https://emoji.discourse-cdn.com/noto/megaphone.png?v=15)Community News](https://discourse.ros.org/c/community-news/122)
+
+*   [weekly-update](https://discourse.ros.org/tag/weekly-update/157)[![Image 63: Katherine_Scott - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/katherine_scott/24/4434_2.png)](https://discourse.ros.org/u/katherine_scott)[0](https://discourse.ros.org/t/ros-news-for-the-week-of-september-14th-2026/58248/1)410[9d](https://discourse.ros.org/t/ros-news-for-the-week-of-september-14th-2026/58248/1)
+[D-Robotics at ROSCon Global 2026 — Let’s Connect in Toronto](https://discourse.ros.org/t/d-robotics-at-roscon-global-2026-let-s-connect-in-toronto/58247)
+
+[![Image 64: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [roscon](https://discourse.ros.org/tag/roscon/11)[![Image 65: xiangbella093 - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/xiangbella093/24/35522_2.png)](https://discourse.ros.org/u/xiangbella093)[![Image 66: ZhenshengLee - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/zhenshenglee/24/10103_2.png)](https://discourse.ros.org/u/zhenshenglee)[1](https://discourse.ros.org/t/d-robotics-at-roscon-global-2026-let-s-connect-in-toronto/58247/1)93[7d](https://discourse.ros.org/t/d-robotics-at-roscon-global-2026-let-s-connect-in-toronto/58247/2)
+[New SMACC demo in Gazebo using the PX4 flight stack](https://discourse.ros.org/t/new-smacc-demo-in-gazebo-using-the-px4-flight-stack/58232)
+
+[![Image 67: ros](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/2/6/26123a37f7aac0c6c95da44564ca0d81836a8628.png?v=15)ROS General](https://discourse.ros.org/c/ros/ros-general/8)
+
+*   [wg-smacc](https://discourse.ros.org/tag/wg-smacc/342)[![Image 68: brettpac - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/brettpac/24/4476_2.png)](https://discourse.ros.org/u/brettpac)[0](https://discourse.ros.org/t/new-smacc-demo-in-gazebo-using-the-px4-flight-stack/58232/1)88[10d](https://discourse.ros.org/t/new-smacc-demo-in-gazebo-using-the-px4-flight-stack/58232/1)
+[New packages for Kilted Kaiju 2026-09-17](https://discourse.ros.org/t/new-packages-for-kilted-kaiju-2026-09-17/58231)
+
+[![Image 69: rolled_up_newspaper](https://emoji.discourse-cdn.com/noto/rolled_up_newspaper.png?v=15)ROS Announcements and News](https://discourse.ros.org/c/ros/ros-announcements-news/112)
+
+*   [kilted](https://discourse.ros.org/tag/kilted/483)[![Image 70: cottsay - Original Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/cottsay/24/2504_2.png)](https://discourse.ros.org/u/cottsay)[![Image 71: Timple - Frequent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/timple/24/4891_2.png)](https://discourse.ros.org/u/timple)[![Image 72: mjcarroll - Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/mjcarroll/24/35469_2.png)](https://discourse.ros.org/u/mjcarroll)[![Image 73: peci1 - Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/peci1/24/10145_2.png)](https://discourse.ros.org/u/peci1)[4](https://discourse.ros.org/t/new-packages-for-kilted-kaiju-2026-09-17/58231/1)84[9d](https://discourse.ros.org/t/new-packages-for-kilted-kaiju-2026-09-17/58231/5)
+[Ported the arduinobot manipulator workspace from Humble to ROS 2 Jazzy — notes on what broke](https://discourse.ros.org/t/ported-the-arduinobot-manipulator-workspace-from-humble-to-ros-2-jazzy-notes-on-what-broke/58225)
+
+[![Image 74: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)[![Image 75: Prasad_Prabhu - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/prasad_prabhu/24/35323_2.png)](https://discourse.ros.org/u/prasad_prabhu)[0](https://discourse.ros.org/t/ported-the-arduinobot-manipulator-workspace-from-humble-to-ros-2-jazzy-notes-on-what-broke/58225/1)30[10d](https://discourse.ros.org/t/ported-the-arduinobot-manipulator-workspace-from-humble-to-ros-2-jazzy-notes-on-what-broke/58225/1)
+[AssemblyGrid v1: benchmarking multi-robot production, handoffs, coalitions, and concurrency](https://discourse.ros.org/t/assemblygrid-v1-benchmarking-multi-robot-production-handoffs-coalitions-and-concurrency/58223)
+
+[![Image 76: hammer](https://emoji.discourse-cdn.com/noto/hammer.png?v=15)Projects](https://discourse.ros.org/c/projects/10)
+
+*   [release](https://discourse.ros.org/tag/release/8),
+*   [simulation](https://discourse.ros.org/tag/simulation/121),
+*   [robotics](https://discourse.ros.org/tag/robotics/351),
+*   [benchmarking](https://discourse.ros.org/tag/benchmarking/348)[![Image 77: Fouad_Bahrpeyma - Original Poster, Most Recent Poster](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/fouad_bahrpeyma/24/35499_2.png)](https://discourse.ros.org/u/fouad_bahrpeyma)[0](https://discourse.ros.org/t/assemblygrid-v1-benchmarking-multi-robot-production-handoffs-coalitions-and-concurrency/58223/1)37[10d](https://discourse.ros.org/t/assemblygrid-v1-benchmarking-multi-robot-production-handoffs-coalitions-and-concurrency/58223/1)

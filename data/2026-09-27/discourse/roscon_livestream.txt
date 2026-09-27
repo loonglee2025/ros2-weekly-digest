@@ -1,0 +1,52 @@
+Title: ROSCon Global 2026 Live Stream - ROS / ROS General - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/t/roscon-global-2026-live-stream/58340
+
+Published Time: 2026-09-23T12:51:02+00:00
+
+Markdown Content:
+## post by Katherine_Scott 4 days ago
+
+[Katherine_Scott](https://discourse.ros.org/u/katherine_scott)
+
+OSRA TGC Member ![Image 1: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)
+
+## [](https://discourse.ros.org/t/roscon-global-2026-live-stream/58340#p-118357-roscon-global-2026-live-from-toronto-canada-1)ROSCon Global 2026 live from Toronto! ![Image 2: :canada:](https://emoji.discourse-cdn.com/noto/canada.png?v=15)
+
+[![Image 3: be10b549a9310e5a4b89a2fcf40f7e4bcdb74b5f_2_1035x475](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/6/3/632618084066de65b99f3b1e1dc58676f80e683f_2_345x158.webp) be10b549a9310e5a4b89a2fcf40f7e4bcdb74b5f_2_1035x475 1035×475 85 KB](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/6/3/632618084066de65b99f3b1e1dc58676f80e683f.webp "be10b549a9310e5a4b89a2fcf40f7e4bcdb74b5f_2_1035x475")
+
+*   [Streams are both on the ROSCon website.](https://roscon.ros.org/)
+*   [Primary ROSCon 2026 Live Stream on Vimeo (Grand Ballroom West/Centre)](https://vimeo.com/event/6211060/7b6ec82e73)
+*   [Secondary ROSCon 2026 Live Stream on Vimeo (Grand Ballroom East)](https://vimeo.com/event/6209541/3c6325ffae) (starts after lunch)
+
+## Pinned globally 4 days ago
+
+[![Image 4: OSRA TGC Member](https://sea2.discourse-cdn.com/flex022/user_avatar/discourse.openrobotics.org/katherine_scott/24/4434_2.png)](https://discourse.ros.org/u/katherine_scott)
+
+## post by Katherine_Scott 3 days ago
+
+[Katherine_Scott](https://discourse.ros.org/u/katherine_scott)
+
+OSRA TGC Member ![Image 5: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)
+
+## [](https://discourse.ros.org/t/roscon-global-2026-live-stream/58340#p-118405-day-three-streams-1)Day Three Streams
+
+*   [Both streams are available on the ROSCon website.](https://roscon.ros.org/2026/#livestream)
+*   [Day 3 Primary Stream – West Ballroom](https://vimeo.com/event/6209634/52b768b66f)
+*   [Day 3 Secondary Stream – East Ballroom](https://vimeo.com/event/6209607/3c60ff65ff) – starts at September 24, 2026 5:50 PM
+
+## post by Katherine_Scott 3 days ago
+
+[Katherine_Scott](https://discourse.ros.org/u/katherine_scott)
+
+OSRA TGC Member ![Image 6: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)
+
+[![Image 7: ROSCon2026Wrap (1)](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/f/5/f53bd85da6e3262b0a40530daf5e0166d07dafe3_2_517x291.jpeg) ROSCon2026Wrap (1)1600×900 513 KB](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/f/5/f53bd85da6e3262b0a40530daf5e0166d07dafe3.jpeg "ROSCon2026Wrap (1)")
+
+  
+
+[![Image 8: Kraków (1)](https://us1.discourse-cdn.com/flex022/uploads/ros/optimized/3X/c/3/c3f2254c26dc9186122ce5746a3e98e7120227f0_2_375x375.jpeg) Kraków (1)1200×1200 469 KB](https://us1.discourse-cdn.com/flex022/uploads/ros/original/3X/c/3/c3f2254c26dc9186122ce5746a3e98e7120227f0.jpeg "Kraków (1)")
+
+ROSCon Global 2026 in Toronto is a wrap. See you next October 12th - 14th for ROSCon Global 2027 in Kraków, Poland. ![Image 9: :poland:](https://emoji.discourse-cdn.com/noto/poland.png?v=15)![Image 10: :dumpling:](https://emoji.discourse-cdn.com/noto/dumpling.png?v=15)
+
+Videos will be up in a couple of weeks!

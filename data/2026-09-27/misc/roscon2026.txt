@@ -1,0 +1,242 @@
+Title: ROSCon Global 2026
+
+URL Source: https://roscon.ros.org/2026/
+
+Markdown Content:
+*   [Home](https://roscon.ros.org/2026/#intro)
+*   [Dates](https://roscon.ros.org/2026/#important-dates)
+*   [attend](https://roscon.ros.org/2026/#location)
+*   [Program](https://roscon.ros.org/2026/#program)
+*   [Organizers](https://roscon.ros.org/2026/#more-info)
+*   [Code of Conduct](https://roscon.ros.org/2026/#coc)
+*   [Archive](https://roscon.ros.org/2026/#archive)
+
+## Toronto, Canada
+
+## September 22nd - September 24th, 2026
+
+![Image 1: ROSCon Global 2026](https://roscon.ros.org/2026/img/ROSCon2026LogoTransparent.png)
+
+![Image 2: ROSCon Global 2026 Group Photo](https://roscon.ros.org/2026/img/ROSCon26Wrap.png)
+
+## ROSCon 2026 is a Wrap!
+
+### 🇵🇱 Join us for ROSCon Global 2027 in Kraków, Poland 🇵🇱
+
+### October 12th-14th, 2027
+
+ROSCon Global 2026 will be held in Toronto, Canada on September 22nd - September 24th, 2026. ROSCon Global 2026 is a chance for ROS developers of all levels, beginner to expert, to spend an extraordinary three days learning from and networking with the ROS Global community. Get tips and tricks from experts and meet and share ideas with fellow developers.
+
+ROSCon Global is a developers’ conference. Following the success of our [past events](https://roscon.ros.org/2026/#past-events), this year’s ROSCon Global will be our fifteenth ROSCon Global and held in Toronto, Canada. As in previous years, the three-day program will comprise a mixture of workshops, technical talks, tutorials, and demonstrations that will introduce you to new tools and libraries, as well as teach you more about the ones you already know.
+
+[Video 3](https://vimeo.com/1171185612)
+
+We aim for ROSCon Global to represent the entire ROS community, which is global and diverse. Whoever you are, whatever you do, and wherever you do it, if you’re interested in ROS, then we want you to join us at ROSCon Global. We encourage women, members of minority groups, and members of other under-represented groups to attend ROSCon Global. We expect all attendees to follow our [code of conduct](https://roscon.ros.org/2026/#code-of-conduct).
+
+If you have questions, concerns, or ideas for ROSCon Global 2026, please contact the ROSCon Global [executive committee](mailto:roscon-2026-ec@openrobotics.org).
+
+The ROSCon Global executive committee acknowledges that the barriers to attendance for traditionally under-represented groups may be many and varied, and we are striving throughout the planning process to make the event as inclusive and accessible as possible. This year we are proud to continue the ROSCon Global Diversity Scholarship Program to help make ROSCon Global 2026 more representative of the ROS Global community.
+
+We also welcome suggestions for what else we can do to encourage more participation. [Contact us](mailto:roscon-2026-ec@openrobotics.org) if you have ideas that you’d like to share.
+
+## ROSCon Global 2026 Key Dates
+
+## All dates are preliminary and subject to change
+
+### Call for Presentation and Workshop Proposals
+
+March 9th, 2026
+
+### Call for Birds of a Feather Session Proposals
+
+April 14th, 2026
+
+### Diversity Scholarship application deadline
+
+March 22nd, 2026
+
+### Workshop proposal submission deadline
+
+April 5th, 2026
+
+### Presentation proposal submission deadline
+
+April 26th, 2026
+
+### Workshop acceptance notification
+
+May 12th, 2026
+
+### Ticket Sales Begin
+
+May 11th, 2026
+
+### Presentation acceptance notification
+
+June 9th, 2026
+
+### Early registration deadline
+
+July 12th, 2026
+
+### Late registration starts
+
+September 5th, 2026
+
+### Birds of a Feather Session proposal submission deadline
+
+July 24th, 2026
+
+### Birds of a Feather Session acceptance notification
+
+July 31st, 2026
+
+## ROSCon Global Registration
+
+Space at ROSCon Global is limited, and registration is on a first-come, first-serve basis, _We recommend you register as soon as possible as ROSCon Global registration often sells out a few weeks before the event._ Workshop seating is limited, and popular workshops sell out quickly. Discounted registration fees are available for early registration and students (see the table). Ticket sales for ROSCon Global will open on May 11th, 2026.
+
+REGISTRATION INCLUDES: Access to the venue for all three official conference days, including all conference sessions, meetups, and networking sessions, and the exhibit hall. Meals covered include lunch and refreshment breaks for all three days, and also the event reception on the evening of Day 2.
+
+### ROSCon Global Registration Rates
+
+Thanks to a generous grant from [Destination Toronto](https://www.destinationtoronto.com/) we’ve extended regular-price ticket sales for three more days! Save $300 when you book before 11:59pm PST on Thursday August 27th (6:59 AM UTC, August 28th).
+
+| Ticket Type | Price (USD) | Available Dates |
+| --- | --- | --- |
+| Early Student | $250 | Until 2026-07-12 |
+| Early General | $575 | Until 2026-07-12 |
+| Regular Student | $350 | 2026-07-13 to 2026-08-27 |
+| Regular General | $725 | 2026-07-13 to 2026-08-27 |
+| Late Student | $500 | After 2026-08-24 |
+| Late General | $1025 | After 2026-08-27 |
+| Workshops-Student | $50-$75 + Conference Registration | Until 2026-09-24 (while supplies last) |
+| Workshops-Non-Student | $100-$150 + Conference Registration | Until 2026-09-24 (while supplies last) |
+
+## Event Location
+
+ROSCon Global 2026 will be held at the [Sheraton Centre Toronto](https://www.marriott.com/en-us/hotels/yyztc-sheraton-centre-toronto-hotel/overview/?cid=NAT_google_hotel_url) at 123 Queen Street W, Toronto, Ontario, Canada. Hotel rooms can be reserved at the [venue hotel using this link](https://book.passkey.com/e/51215993). The negotiated event rate for the Sheraton Centre is C$449 / ~US$338 per night plus tax. The deadline for event hotel reservations is September 3rd, 2026.
+
+[Google Maps](https://maps.app.goo.gl/aPJuCPXik8n7VsMe7) | [Apple Maps](https://maps.apple.com/place?place-id=I3589121B83732744&address=123+Queen+St+W%2C+Toronto+ON+M5H+2M9%2C+Canada&coordinate=43.650753%2C-79.384530&name=Sheraton+Centre+Toronto+Hotel&_provider=9902) | [Open Street Maps](https://osm.org/go/ZX6BsNP8b?way=367653677)
+
+## Travel Information
+
+Please visit our [ROSCon Global destination Toronto microsite](https://www.destinationtoronto.com/roscon-6ixstack/) for additional travel information and details.
+
+*   Toronto Pearson International Airport (YYZ) is the main airport.
+*   The airport is 25miles / 27.1km from The Sheraton Centre Toronto Hotel.
+*   Private transportation from Toronto Pearson International Airport: 
+    *   Ride Sharing * Uber, Lyft, and Hopp pick up at the airport * Terminal 1 - Ground Level - Door P or Q * Terminal 3 - Arrivals Level - Door D, outer curb
+    *   Taxis and Limos * Terminal 1 - Door D or Door C * Terminal 3 - Door E
+
+*   Public Transportation, [UP Express](https://www.upexpress.com/en) and [TTC](https://www.ttc.ca/) are the recommended way to get downtown as an alternative to ride-share apps or taxis/limos during running hours. 
+    *   Option 1 — UP Express + TTC Subway (Fastest & Easy) * Approximate time: ~45 minutes total * Cost: UP Express (C$12.35) + TTC fare (C$3.35) * From the airport, go to the UP Express station: * If you arrive at Terminal 1, go up the escalators (to the left, if you are arriving internationally), across the bridge, and up another set of escalators to the UP Express platforms — follow signs for “Train to City.” * If you arrive at Terminal 3, take the free Terminal Link train to Terminal 1. The UP Express platforms are right next to the Terminal Link platforms when you arrive at Terminal 1. * Take the Union Pearson Express (UP Express) to Union Station (downtown) — trains run about every 15 minutes and the ride is ~25 minutes. You can buy a ticket right at the train platforms, or tap on and off with credit, debit, mobile wallet, or use PRESTO. * Once at Union Station: * Use the TTC Line 1 Yonge–University subway going north/east toward Osgoode Station. * Exit at Osgoode Station (closest subway stop to the hotel) * Walk east along Queen St W (~5 minutes) to reach the Sheraton Centre. * Alternatively walk ~10 minutes from Union Station.
+    *   Option 2 — TTC Bus + Subway (Cheapest) 
+        *   Approximate time: ~60–75 minutes, assuming minimal traffic near the airport.
+        *   Cost: TTC fare (C$3.35)
+        *   From either airport terminal, find the TTC 192 Airport Rocket or 900 Airport Express bus stop. These buses go to Kipling Station on the subway line.
+        *   At Kipling Station, take the TTC subway Line 2 (Bloor–Danforth) eastbound to St. George Station.
+        *   Transfer at St. George to Line 1 Yonge–University southbound to Osgoode Station.
+        *   Walk east on Queen St W to the hotel (~5 min).
+
+## Toronto Tourist Resources
+
+*   [Destination Toronto Microsite for ROSCon](https://www.destinationtoronto.com/roscon-6ixstack/)
+*   [Welcome to Toronto – City of Toronto](https://www.toronto.ca/explore-enjoy/visitor-toronto/)
+*   [Official Travel Documentation](https://travel.gc.ca/)
+*   [Toronto Wikitravel Page](https://wikitravel.org/en/Toronto)
+*   [Toronto, Ontario on Tripadvisor](https://www.tripadvisor.com/Tourism-g155019-Toronto_Ontario-Vacations.html)
+*   [Toronto on Atlas Obscura](https://www.atlasobscura.com/things-to-do/toronto-ontario)
+
+## ROSCon Global Schedule
+
+ROSCon workshops (on day 1 - Tuesday, September 22nd) are available for an additional fee when you register for ROSCon Global.
+
+**Space is limited, and workshops often sell out, so make sure to register early!**
+
+## Chairs
+
+## General Chairs
+
+Vanessa Yamzon Orsi (Open Robotics)
+
+### Content Chair
+
+Geoff Biggs (Open Robotics)
+
+Vicky Brasseur  
+(Open Robotics)
+
+Stephanie Eng  
+(Rockwell Automation)
+
+Tully Foote   
+(Intrinsic)
+
+Kat Scott   
+(Intrinsic)
+
+## Local Chair
+
+Ryan Gariepy   
+ (Rockwell Automation)
+
+## Advisors
+
+Ryan Gariepy   
+ (OSRF Board Member/Rockwell Automation)
+
+Brian Gerkey   
+ (OSRF Board Chair/Intrinsic)
+
+## MeetGreen Team
+
+Denise Barker, Team Lead
+
+Kate Wilson
+
+Edward Aquitania
+
+## Program Committee Chairs
+
+Juan Miguel Jimeno
+
+Kimberly McGuire   
+ ([McGuire Robotics](https://www.mcguirerobotics.com/))
+
+## Conference Image Design
+
+[Ryan Hungerford](https://www.instagram.com/ryetoons/)
+
+## Code of Conduct
+
+All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+
+### The Quick Version
+
+Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.
+
+### The Less Quick Version
+
+Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+
+Participants asked to stop any harassing behavior are expected to comply immediately.
+
+Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualised environment.
+
+If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
+
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they’ll be wearing badges as well as there will be staff at the registration desk.
+
+Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
+
+We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+
+## Archive of Past ROSCons
+
+The archived ROSCon websites listed below include information about ROSCon speakers, recordings of their talks, and in some cases copies of their slide decks.
+
+Past ROSCons
+
+Regional ROSCons
+
+[#ROSCon](https://twitter.com/search?q=%23ROSCon)[@OpenRoboticsOrg](https://twitter.com/OpenRoboticsOrg)[@rosorg](https://twitter.com/rosorg)

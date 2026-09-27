@@ -1,0 +1,77 @@
+Title: Announcement: rclrs 0.8.0 Release - ROS / ROS General - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347
+
+Published Time: 2026-09-23T16:49:53+00:00
+
+Markdown Content:
+We’re happy to announce the release of `rclrs` v0.8.0!
+
+Continuing our proud tradition of Conference-Driven Development (CDD), this release arrives just in time for [ROSCon Global 2026 in Toronto](https://roscon.ros.org/2026/).
+
+If you are at ROSCon, do not miss Michael Grey’s talk on composable actions concurrency with rclrs.
+
+What’s New
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-ros-2-lyrical-support-1)**ROS 2 Lyrical Support**
+
+`rclrs` now supports ROS 2 Lyrical Luth. Bindings have been regenerated for Humble, Jazzy, Kilted, Lyrical, and Rolling.
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-ros-env-message-access-2)**ros-env Message Access**
+
+ROS message packages are now accessed through `ros-env`. This keeps `rclrs`, applications, and generated messages on the same message definitions.
+
+Applications using generated messages should import them with:
+
+`use ros_env::*;`
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-actions-and-parameters-3)**Actions and Parameters**
+
+*   `ActionClientState` now exposes `server_is_available`.
+*   Action APIs received corrections and action-server tasks no longer require Sync.
+*   Parameter callbacks are now supported.
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-topic-endpoint-qos-4)**Topic Endpoint QoS**
+
+`TopicEndpointInfo` now exposes its QoS profile, improving graph inspection and diagnostics.
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-performance-and-reliability-5)**Performance and Reliability**
+
+This release includes performance improvements and fixes across action handling, dynamic-message introspection, sequence resizing, and `rosout` initialization.
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-breaking-changes-6)Breaking Changes
+
+*   Applications using generated ROS messages must add `ros-env` and use `use ros_env::*;`.
+*   ROS shim interfaces are now supplied through `ros-env`.
+*   `TopicEndpointInfo` exposes its QoS profile.
+*   Parameter callback APIs introduce breaking interface changes.
+
+See the changelog ( [ros2_rust/rclrs/CHANGELOG.md at main · ros2-rust/ros2_rust · GitHub](https://github.com/ros2-rust/ros2_rust/blob/main/rclrs/CHANGELOG.md) ) for the complete list of changes.
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-contributors-7)Contributors
+
+A huge thank you to everyone who contributed to this release!
+
+*   Balthasar Schüssler
+*   Esteve Fernández
+*   J Pace
+*   Kimberly McGuire
+*   Mathieu David
+*   Michael G. Grey
+*   Patrick Deschambault
+*   Peter Isho
+*   Sam Privett
+*   Tony Welte
+*   Trim Bresilla
+
+### [](https://discourse.ros.org/t/announcement-rclrs-0-8-0-release/58347#p-118367-links-8)Links
+
+*   GitHub: [GitHub - ros2-rust/ros2_rust: Rust bindings for ROS 2](https://github.com/ros2-rust/ros2_rust)
+
+*   Examples: [GitHub - ros2-rust/examples: Example packages for ros2-rust](https://github.com/ros2-rust/examples)
+
+*   Changelog: [ros2_rust/rclrs/CHANGELOG.md at main · ros2-rust/ros2_rust · GitHub](https://github.com/ros2-rust/ros2_rust/blob/main/rclrs/CHANGELOG.md)
+
+*   [Crates.io](http://crates.io/): [crates.io: Rust Package Registry](https://crates.io/crates/rclrs)
+
+As always, we welcome feedback and contributions.

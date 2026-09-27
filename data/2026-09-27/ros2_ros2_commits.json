@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "b8a0716c9b4d119ed6e1f7855bc0e0a439041719",
+    "node_id": "C_kwDOAd1ittoAKGI4YTA3MTZjOWI0ZDExOWVkNmUxZjc4NTViYzBlMGE0MzkwNDE3MTk",
+    "commit": {
+      "author": {
+        "name": "Michael Carroll",
+        "email": "mjcarroll.oss@gmail.com",
+        "date": "2026-09-26T19:59:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-26T19:59:46Z"
+      },
+      "message": "Add ninja and sccache in a buildfarm-only environment (#1854)\n\n* Point the Qt plugin path at the environment in use\n\nQT_QPA_PLATFORM_PLUGIN_PATH was spelled out as .pixi/envs/default, which\nis only correct for the default environment.  Any other environment gets\na path into a directory that holds a different set of packages, or none\nat all, and qt_gui_cpp then fails to find a platform plugin at runtime\nwith no obvious connection to the cause.\n\n%CONDA_PREFIX% is the environment pixi actually activated, so it is right\nin every environment including the default one.  Note the percent form:\npixi does not expand $CONDA_PREFIX here, it passes it through literally.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n* Add ninja and sccache in a buildfarm-only environment\n\nThe ROS 2 buildfarm is moving its Windows jobs onto the Ninja generator\nwith sccache as a compiler launcher, and it gets its tooling from this\nfile.  Neither tool is needed to build ROS 2, though, and [dependencies]\nis installed for everyone who uses this manifest -- so putting them there\nwould hand every ROS 2 developer a compiler cache and a build tool they\ndid not ask for, and pay for them on every pixi install.\n\nA feature and an environment scope them instead.  An environment is the\ndefault feature plus the features it names, so \"buildfarm\" is everything\nin [dependencies] and these two on top; the buildfarm asks for it by name\nwith 'pixi install -e buildfarm' and 'pixi run -e buildfarm', and the\ndefault environment is unchanged.  Anyone who does want them locally can\nuse the same environment rather than installing them by hand and hoping\nthe versions line up.\n\nNinja is not optional for the cache, which is why both arrive together:\nCMake honours CMAKE_<LANG>_COMPILER_LAUNCHER only under the Ninja and\nMakefile generators, and silently ignores it under Visual Studio.\n\nBoth are pinned loosely, as tooling whose APIs we do not depend on.\nUbuntu 26.04 ships sccache 0.13.0, but this is not held to the Ubuntu\nversions the way the library dependencies are.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n* Update pixi.lock for the buildfarm environment\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n---------\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+      "tree": {
+        "sha": "71a636127801e1025bffa08d5c10778f666c1545",
+        "url": "https://api.github.com/repos/ros2/ros2/git/trees/71a636127801e1025bffa08d5c10778f666c1545"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2/git/commits/b8a0716c9b4d119ed6e1f7855bc0e0a439041719",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquCQyCRC1aQ7uu5UhlAAAyi8QAH1EZZ3xPJ/DTsTIB4Ihtaxk\ntlf6fIZGY1EMWNENlBLDNauzU25AdBZxkl+kfl9z5embzM0vVkQaiWe8tgUUFg+y\nP1LXPDmc5jV8lstkjqv45+eVoC4Rb/k2PaimIJs+zYJU+wmz74KPZfJn4yyi3ts7\n6Xrr9o+sESSf0OOBohT3aZPZEyEwP84KYiSFKw/Xqy+meBLaM4NIkkIdi7Fl46+W\nJOxXJLSbEWs0ZEc4i2r/CofrEOToyFQDJ9/Dt/x4q43gSM38RT+s/PVStJQVocGe\nP1GF92v+apP1nSKYkGoh2RfevjbIYM7ZXDMLmoS6DwnU4l0qaM/+M0ah/JFycY4L\nqx0I16c9pyEt8XJvGPuoWpClsLVpHNvU0Y0+zPbxMjR9C0a7UbPV+ufU3leIf7mB\nx5Z0fSjWTa5aBWoQrFVP0qn/U+mjEcA1wvJ6QFHu7gQ7SzC6mZ9PlVQctaDnxkKz\n6gMX0oPrkiES9CKySPSiH9MaQsvBbxcgPERJArTnR2tEzOcQjbB66EJq3NyhWH3v\nybIKU0mH7sQjewLOediS+T0EKwoyR4klHuWWRkYREnjlUbwARWwjfgxmusmp/IH0\ncJ8ySJLtopC4WhZ3Zgyju5J89edWh1SNT9YQQ6iW3JsbGmLWtVRkg3Ur5XqXQ9I7\nfPwfkTzr8INJfgSjfG5P\n=dx51\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 71a636127801e1025bffa08d5c10778f666c1545\nparent 7f4ac52b52de90966cc219342768e63dfb100e98\nauthor Michael Carroll <mjcarroll.oss@gmail.com> 1790452786 -0400\ncommitter GitHub <noreply@github.com> 1790452786 -0400\n\nAdd ninja and sccache in a buildfarm-only environment (#1854)\n\n* Point the Qt plugin path at the environment in use\n\nQT_QPA_PLATFORM_PLUGIN_PATH was spelled out as .pixi/envs/default, which\nis only correct for the default environment.  Any other environment gets\na path into a directory that holds a different set of packages, or none\nat all, and qt_gui_cpp then fails to find a platform plugin at runtime\nwith no obvious connection to the cause.\n\n%CONDA_PREFIX% is the environment pixi actually activated, so it is right\nin every environment including the default one.  Note the percent form:\npixi does not expand $CONDA_PREFIX here, it passes it through literally.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n* Add ninja and sccache in a buildfarm-only environment\n\nThe ROS 2 buildfarm is moving its Windows jobs onto the Ninja generator\nwith sccache as a compiler launcher, and it gets its tooling from this\nfile.  Neither tool is needed to build ROS 2, though, and [dependencies]\nis installed for everyone who uses this manifest -- so putting them there\nwould hand every ROS 2 developer a compiler cache and a build tool they\ndid not ask for, and pay for them on every pixi install.\n\nA feature and an environment scope them instead.  An environment is the\ndefault feature plus the features it names, so \"buildfarm\" is everything\nin [dependencies] and these two on top; the buildfarm asks for it by name\nwith 'pixi install -e buildfarm' and 'pixi run -e buildfarm', and the\ndefault environment is unchanged.  Anyone who does want them locally can\nuse the same environment rather than installing them by hand and hoping\nthe versions line up.\n\nNinja is not optional for the cache, which is why both arrive together:\nCMake honours CMAKE_<LANG>_COMPILER_LAUNCHER only under the Ninja and\nMakefile generators, and silently ignores it under Visual Studio.\n\nBoth are pinned loosely, as tooling whose APIs we do not depend on.\nUbuntu 26.04 ships sccache 0.13.0, but this is not held to the Ubuntu\nversions the way the library dependencies are.\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n* Update pixi.lock for the buildfarm environment\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>\n\n---------\n\nSigned-off-by: Michael Carroll <mjcarroll.oss@gmail.com>",
+        "verified_at": "2026-09-26T19:59:47Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2/commits/b8a0716c9b4d119ed6e1f7855bc0e0a439041719",
+    "html_url": "https://github.com/ros2/ros2/commit/b8a0716c9b4d119ed6e1f7855bc0e0a439041719",
+    "comments_url": "https://api.github.com/repos/ros2/ros2/commits/b8a0716c9b4d119ed6e1f7855bc0e0a439041719/comments",
+    "author": {
+      "login": "mjcarroll",
+      "id": 279701,
+      "node_id": "MDQ6VXNlcjI3OTcwMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/279701?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjcarroll",
+      "html_url": "https://github.com/mjcarroll",
+      "followers_url": "https://api.github.com/users/mjcarroll/followers",
+      "following_url": "https://api.github.com/users/mjcarroll/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjcarroll/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjcarroll/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjcarroll/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjcarroll/orgs",
+      "repos_url": "https://api.github.com/users/mjcarroll/repos",
+      "events_url": "https://api.github.com/users/mjcarroll/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjcarroll/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f4ac52b52de90966cc219342768e63dfb100e98",
+        "url": "https://api.github.com/repos/ros2/ros2/commits/7f4ac52b52de90966cc219342768e63dfb100e98",
+        "html_url": "https://github.com/ros2/ros2/commit/7f4ac52b52de90966cc219342768e63dfb100e98"
+      }
+    ]
+  },
+  {
+    "sha": "7f4ac52b52de90966cc219342768e63dfb100e98",
+    "node_id": "C_kwDOAd1ittoAKDdmNGFjNTJiNTJkZTkwOTY2Y2MyMTkzNDI3NjhlNjNkZmIxMDBlOTg",
+    "commit": {
+      "author": {
+        "name": "Clara Berendsen",
+        "email": "42071084+claraberendsen@users.noreply.github.com",
+        "date": "2026-09-26T19:59:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-26T19:59:07Z"
+      },
+      "message": "Add nanobind (#1856)\n\n* migrate from pybind11 to nanobind\n---\nSee https://github.com/ros2/rclpy/pull/1707 for more information\n\n* Update pixi.lock.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\nCo-authored-by: Chris Lalancette <clalancette@gmail.com>",
+      "tree": {
+        "sha": "56b0e351c11b53f2524cb943ee96df34fda646d6",
+        "url": "https://api.github.com/repos/ros2/ros2/git/trees/56b0e351c11b53f2524cb943ee96df34fda646d6"
+      },
+      "url": "https://api.github.com/repos/ros2/ros2/git/commits/7f4ac52b52de90966cc219342768e63dfb100e98",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJquCQLCRC1aQ7uu5UhlAAAqC8QADOxKwfksZGfTJT77NApK5Yj\nTfNkZMHdJHQyAHahmT2m+P2eUmFD8gcWRoPO9GMk0YxNoUhsQXxhbWGZbNBlF1zs\ns8bcmtUQgQ/pAVAz5BQmWR1GLIxPXCV9pvxosprXtj+CibZsDsXT1x/R/9i7CRjy\nWFS4Ci9YUsOEo9Ej7RvIM70B7f6STy4z4xHiS7RgYXxfqrml6eJJRP7a9CgFqtRq\nY2NpkNJZKXIocXqmMIrHa2Dtburf4nFhHTtAOJS40zOCJrBmU3yOD/g/yDsayIpG\n9tXHYf7qsoYPt29qq6WkqljFJyo1YUmt34U4n7adqHo1e236RRHtdAkty6QD9y1d\nh+TLIZZIX31vGixBiBSKxVkqiFIMGXWgcUCaZ8+hRa6oyejMuXfkLqeu8LwKGpQA\n19srlVqG7wTTKlJXCW0CEWjuP7pchgwkOXWnRp7QsZQJhdFGzqCMSVI9Tp3kC3H8\nwaOEejsHrtjvQf7wdvXZToSWJpKs9PpAKXJuj+AtvCdgwEDTHc5Wz3A+x5CL+/7Z\nRgiNtIx0FjBua0N8PZUcEczT1JGaEpSJXxo9bpOUnVr2azyOkJAndDP5P6T4bh1U\nMsJPZPSPZtZrX1QqI+/uSsqiRDo1CH7WZCxkIB+pzR3r/IWUUgm31x10atO3Qzao\nf5jzf1HyKe6YF2WeNHtX\n=1yw7\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 56b0e351c11b53f2524cb943ee96df34fda646d6\nparent d8bbb0e05c14849c13f2cf994d959393aa564474\nauthor Clara Berendsen <42071084+claraberendsen@users.noreply.github.com> 1790452747 -0300\ncommitter GitHub <noreply@github.com> 1790452747 -0400\n\nAdd nanobind (#1856)\n\n* migrate from pybind11 to nanobind\n---\nSee https://github.com/ros2/rclpy/pull/1707 for more information\n\n* Update pixi.lock.\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\n\n---------\n\nSigned-off-by: Chris Lalancette <clalancette@gmail.com>\nCo-authored-by: Chris Lalancette <clalancette@gmail.com>",
+        "verified_at": "2026-09-26T19:59:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/ros2/ros2/commits/7f4ac52b52de90966cc219342768e63dfb100e98",
+    "html_url": "https://github.com/ros2/ros2/commit/7f4ac52b52de90966cc219342768e63dfb100e98",
+    "comments_url": "https://api.github.com/repos/ros2/ros2/commits/7f4ac52b52de90966cc219342768e63dfb100e98/comments",
+    "author": {
+      "login": "claraberendsen",
+      "id": 42071084,
+      "node_id": "MDQ6VXNlcjQyMDcxMDg0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42071084?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claraberendsen",
+      "html_url": "https://github.com/claraberendsen",
+      "followers_url": "https://api.github.com/users/claraberendsen/followers",
+      "following_url": "https://api.github.com/users/claraberendsen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claraberendsen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claraberendsen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claraberendsen/subscriptions",
+      "organizations_url": "https://api.github.com/users/claraberendsen/orgs",
+      "repos_url": "https://api.github.com/users/claraberendsen/repos",
+      "events_url": "https://api.github.com/users/claraberendsen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claraberendsen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d8bbb0e05c14849c13f2cf994d959393aa564474",
+        "url": "https://api.github.com/repos/ros2/ros2/commits/d8bbb0e05c14849c13f2cf994d959393aa564474",
+        "html_url": "https://github.com/ros2/ros2/commit/d8bbb0e05c14849c13f2cf994d959393aa564474"
+      }
+    ]
+  }
+]

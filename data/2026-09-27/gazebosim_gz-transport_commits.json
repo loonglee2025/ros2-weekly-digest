@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "7f7fa91496926b70c373710a80b3be0e5a52204d",
+    "node_id": "C_kwDOD0AyIdoAKDdmN2ZhOTE0OTY5MjZiNzBjMzczNzEwYTgwYjNiZTBlNWE1MjIwNGQ",
+    "commit": {
+      "author": {
+        "name": "Carlos Agüero",
+        "email": "caguero@honurobotics.com",
+        "date": "2026-09-24T04:19:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-24T04:19:54Z"
+      },
+      "message": "Enable Zenoh shared memory (#842)\n\n* Zenoh: make CreateZenohGet non-blocking, drop late replies via weak_ptr\n* Zenoh: undeclare publisher entities on destruction instead of leaking\n* Zenoh: create the centralized subscriber under the NodeShared mutex\n* Zenoh: make the SHM helpers compile when Zenoh lacks SHM support\n* Zenoh: degrade gracefully when the environment cannot provide SHM\n* Zenoh: make CreateMsgFromBuffer ABI-stable via a message factory\n* Zenoh: share one lazily-created SHM pool across the whole process\n* Zenoh: harden config read, topic-list checks, and benchmark logging\n* Document SHM build requirements in ShmHelpers.hh\n* Use the Zenoh session's SHM provider and config keys for shared memory\n* Benchmark Zenoh with shared memory disabled and with gz-transport defaults\n\nAssisted-by: Claude Fable 5.1 <noreply@anthropic.com>\n\n---------\n\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>\nCo-authored-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>",
+      "tree": {
+        "sha": "7deb18163e7fc82203b54faba32236649e95de07",
+        "url": "https://api.github.com/repos/gazebosim/gz-transport/git/trees/7deb18163e7fc82203b54faba32236649e95de07"
+      },
+      "url": "https://api.github.com/repos/gazebosim/gz-transport/git/commits/7f7fa91496926b70c373710a80b3be0e5a52204d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqtKTqCRC1aQ7uu5UhlAAASk0QAHmeRISmL6GloMETbOBltdp3\n6bTBFAPaZofixUaEttNkAdH/ReSS9Tj/YgwuwPuy7+FXx6Ot5jy5iqAE5fdcoR+7\nSO0ygqduuMw/qhX7MjGnKZl+qbn0RhpgHN3k3aoESYI/WkdqVf2m09L/jhZi5WR7\nUKQAlkcEeeR2gudWaMkQq2az5EIUspB35O6Xg3NYejbOV7ePHLDE5lY4LTgQwP68\ntihAwlOf68m7F4YqUirWdGSLkCFxlxsEZt5fdUcZSiUxsB41S//biyT6TUkXd2eZ\nQbifYUZQD3aepoXsX3YI3vIhwrw6NjJtwwDBBp7yEQDnikKiH/pHDYSgolrbTf56\nhNSHvvvpsO0adOIQ8FgQOPgp2lZEfxDtAhS7Zk0FfNRXBUXy49YopG3qP4lyZUix\n4HlJ9+7uNQLeOqeczSbBzpYyM8lXE+ugVT5TIvVwhmVTqpCh8QaEIx7OOD+o9Z8N\n4VLNjOe8Q8UfdQePydNoFL04PuyjxYaumIHRhdkNsK73fyWxXATZ4hIyeZ0OV6VM\n2POo/eIY7LJ/RJEOyq4ITIbPrYDH83nk1EotW4tCqjf1glbNZuFCHexVqw8KrS8p\nAFwnEIQGmc1UwqLFjWwDeDHLVJULRAo4AhGuWwogUpOGn+gUMtFWHAhcrdgDFLDg\nzkYCLdnD8+fEriR3FtCO\n=X7Hl\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7deb18163e7fc82203b54faba32236649e95de07\nparent ed63e5588c27691f0acd11f84ef0e396865270c8\nauthor Carlos Agüero <caguero@honurobotics.com> 1790223594 +0200\ncommitter GitHub <noreply@github.com> 1790223594 -0400\n\nEnable Zenoh shared memory (#842)\n\n* Zenoh: make CreateZenohGet non-blocking, drop late replies via weak_ptr\n* Zenoh: undeclare publisher entities on destruction instead of leaking\n* Zenoh: create the centralized subscriber under the NodeShared mutex\n* Zenoh: make the SHM helpers compile when Zenoh lacks SHM support\n* Zenoh: degrade gracefully when the environment cannot provide SHM\n* Zenoh: make CreateMsgFromBuffer ABI-stable via a message factory\n* Zenoh: share one lazily-created SHM pool across the whole process\n* Zenoh: harden config read, topic-list checks, and benchmark logging\n* Document SHM build requirements in ShmHelpers.hh\n* Use the Zenoh session's SHM provider and config keys for shared memory\n* Benchmark Zenoh with shared memory disabled and with gz-transport defaults\n\nAssisted-by: Claude Fable 5.1 <noreply@anthropic.com>\n\n---------\n\nSigned-off-by: Carlos Agüero <caguero@honurobotics.com>\nCo-authored-by: Addisu Z. Taddese <addisuzt@intrinsic.ai>",
+        "verified_at": "2026-09-24T04:19:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/gazebosim/gz-transport/commits/7f7fa91496926b70c373710a80b3be0e5a52204d",
+    "html_url": "https://github.com/gazebosim/gz-transport/commit/7f7fa91496926b70c373710a80b3be0e5a52204d",
+    "comments_url": "https://api.github.com/repos/gazebosim/gz-transport/commits/7f7fa91496926b70c373710a80b3be0e5a52204d/comments",
+    "author": {
+      "login": "caguero",
+      "id": 1440739,
+      "node_id": "MDQ6VXNlcjE0NDA3Mzk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1440739?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/caguero",
+      "html_url": "https://github.com/caguero",
+      "followers_url": "https://api.github.com/users/caguero/followers",
+      "following_url": "https://api.github.com/users/caguero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/caguero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/caguero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/caguero/subscriptions",
+      "organizations_url": "https://api.github.com/users/caguero/orgs",
+      "repos_url": "https://api.github.com/users/caguero/repos",
+      "events_url": "https://api.github.com/users/caguero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/caguero/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed63e5588c27691f0acd11f84ef0e396865270c8",
+        "url": "https://api.github.com/repos/gazebosim/gz-transport/commits/ed63e5588c27691f0acd11f84ef0e396865270c8",
+        "html_url": "https://github.com/gazebosim/gz-transport/commit/ed63e5588c27691f0acd11f84ef0e396865270c8"
+      }
+    ]
+  }
+]

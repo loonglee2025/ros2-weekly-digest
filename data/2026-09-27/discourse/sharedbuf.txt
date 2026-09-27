@@ -1,0 +1,132 @@
+Title: Shared_buffer_backend: shared-memory rosidl::Buffer for ROS 2 processes - Projects - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414
+
+Published Time: 2026-09-26T15:23:10+00:00
+
+Markdown Content:
+## [](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414#p-118459-shared_buffer_backend-shared-memory-rosidlbuffer-for-ros-2-processes-1)shared_buffer_backend: shared-memory rosidl::Buffer for ROS 2 processes
+
+I would like to share [`shared_buffer_backend`](https://github.com/dskkato/shared_buffer_backend), an experimental CPU shared-memory backend for `rosidl::Buffer`. This follows my [earlier discussion about a CPU shared-memory backend](https://discourse.openrobotics.org/t/has-a-cpu-shared-memory-backend-for-rosidl-buffer-been-explored/57240), and was previously called `memfd`.
+
+The goal is to make large, variable-length payloads such as images available to nodes in separate processes, including Python nodes, without transporting the payload bytes themselves through the normal message path when the endpoints can share memory.
+
+Modern robotics systems are using more sensors with increasingly large payloads, making communication overhead an important part of overall system performance. ROS 2 has long supported intra-process communication, so placing a camera publisher and its consumers in one C++ process can avoid much of this overhead. However, that layout is less convenient when a downstream inference node is written in Python, or when separate processes are preferred for fault isolation.
+
+Middleware-specific shared-memory and zero-copy mechanisms can also have type constraints. For example, Fast DDS Data-sharing requires bounded topic types, while its full zero-copy path additionally requires plain types. Approaches based on preallocated fixed-size arrays have also been discussed in this forum. This project explores a different point in the stack: sharing the backing storage of a variable-length payload through the `rosidl::Buffer` abstraction introduced in ROS 2 Lyrical.
+
+The publisher-side change can be as small as:
+
+```
+sensor_msgs::msg::Image image;
+// Set the image metadata and determine byte_count first.
+image.data = shared_buffer::allocate_buffer(byte_count);
+// Fill image.data, then publish it.
+publisher->publish(std::move(image));
+```
+
+Python subscribers can use the `shared_buffer` module’s read-only buffer view with NumPy, without making another payload copy:
+
+```
+import numpy as np
+from shared_buffer import read_buffer
+
+view = read_buffer(message.data)
+pixels = np.frombuffer(view, dtype=np.uint8)
+process(pixels)
+```
+
+The repository has more complete [C++ and Python examples](https://github.com/dskkato/shared_buffer_backend). Currently, the packages need to be built from source in a workspace:
+
+```
+cd ~/ros2_ws/src
+git clone -b lyrical https://github.com/dskkato/shared_buffer_backend.git
+cd ..
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+source install/setup.bash
+```
+
+A [V4L2 camera example and subscriber tools](https://github.com/dskkato/amp) are also available to try the inter-process path, including some simple CUDA samples.
+
+## [](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414#p-118459-a-camera-experiment-2)A camera experiment
+
+As a small end-to-end experiment, I ran the V4L2 publisher at 640 × 480, converting MJPEG input to `bgr8`, with a nominal frame rate of 30 Hz.
+
+This is not intended as a controlled benchmark. The goal is simply to compare the behavior of the inter-process path using the ordinary CPU buffer and `shared_buffer`, and to confirm that the shared-buffer path also works with a Python subscriber.
+
+In my Fast DDS setup, the receive rate of a separate C++ subscriber using the ordinary CPU-buffer path did not settle near the 30 Hz publisher rate. Even after startup, the measured rate continued to vary widely, including intervals with no received messages. With `shared_buffer` enabled, both the C++ and Python subscribers settled near the nominal 30 Hz camera rate after startup.
+
+The examples below use the same camera configuration and differ primarily in the buffer backend used for the image payload.
+
+### [](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414#p-118459-ordinary-cpu-buffer-3)Ordinary CPU buffer
+
+Camera publisher:
+
+```
+amp$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p use_shared_buffer:=false
+[INFO] [1790430006.127114092] [host_endpoint_manager]: Initialized shared memory registry for domain 0 on host tamago
+[INFO] [1790430006.257520270] [v4l2_camera]: capturing /dev/video0 at 640x480 (MJPEG), publishing '/image_raw' as bgr8
+```
+
+C++ subscriber:
+
+```
+amp$ ros2 run ros2topic_hz ros2topic_hz
+[INFO] [1790435384.515555635] [host_endpoint_manager]: Attached to existing shared memory registry for domain 0
+[INFO] [1790435384.622966078] [ros2topic_hz]: measuring '/image_raw', interval 1.000 s
+[INFO] [1790435385.623216431] [ros2topic_hz]: received: 0, rate: 0.000 Hz, backends: none, elapsed: 1.135076 s
+[INFO] [1790435386.623187882] [ros2topic_hz]: received: 1, rate: 1.000 Hz, backends: cpu: 1, elapsed: 0.999972 s
+[INFO] [1790435387.623163917] [ros2topic_hz]: received: 9, rate: 9.000 Hz, backends: cpu: 9, elapsed: 0.999978 s
+[INFO] [1790435388.623216334] [ros2topic_hz]: received: 15, rate: 14.999 Hz, backends: cpu: 15, elapsed: 1.000046 s
+[INFO] [1790435389.623178514] [ros2topic_hz]: received: 0, rate: 0.000 Hz, backends: none, elapsed: 0.999967 s
+[INFO] [1790435390.623144693] [ros2topic_hz]: received: 0, rate: 0.000 Hz, backends: none, elapsed: 0.999966 s
+[INFO] [1790435391.623232459] [ros2topic_hz]: received: 2, rate: 2.000 Hz, backends: cpu: 2, elapsed: 1.000084 s
+[INFO] [1790435392.623188221] [ros2topic_hz]: received: 5, rate: 5.000 Hz, backends: cpu: 5, elapsed: 0.999957 s
+[INFO] [1790435393.623121452] [ros2topic_hz]: received: 1, rate: 1.000 Hz, backends: cpu: 1, elapsed: 0.999933 s
+```
+
+Note that I have not yet isolated which part of the ordinary inter-process path accounts for this behavior, so this should not be interpreted as a general Fast DDS performance comparison.
+
+### [](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414#p-118459-shared_buffer_backend-4)`shared_buffer_backend`
+
+Camera publisher:
+
+```
+amp$ ros2 run v4l2_camera v4l2_camera_node --ros-args -p use_shared_buffer:=true --log-level serialize_buffer_with_endpoint:=warn
+[INFO] [1790430006.127114092] [host_endpoint_manager]: Initialized shared memory registry for domain 0 on host tamago
+[INFO] [1790430006.257520270] [v4l2_camera]: capturing /dev/video0 at 640x480 (MJPEG), publishing '/image_raw' as bgr8
+```
+
+C++ subscriber:
+
+```
+amp$ ros2 run ros2topic_hz ros2topic_hz --accept-buffer-backend shared_buffer --ros-args --log-level deserialize_buffer_with_endpoint:=warn
+[INFO] [1790431373.039412040] [host_endpoint_manager]: Attached to existing shared memory registry for domain 0
+[INFO] [1790431373.163283672] [ros2topic_hz]: measuring '/image_raw', interval 1.000 s, acceptable buffer backend: shared_buffer
+[INFO] [1790431374.163475767] [ros2topic_hz]: received: 31, rate: 26.752 Hz, backends: shared_buffer: 31, elapsed: 1.158785 s
+[INFO] [1790431375.163620653] [ros2topic_hz]: received: 30, rate: 29.996 Hz, backends: shared_buffer: 30, elapsed: 1.000141 s
+[INFO] [1790431376.163546004] [ros2topic_hz]: received: 31, rate: 31.002 Hz, backends: shared_buffer: 31, elapsed: 0.999927 s
+```
+
+Python subscriber:
+
+```
+amp$ ros2 run ros2topic_hz ros2topic_shared_buffer_hz --ros-args --log-level deserialize_buffer_with_endpoint:=warn
+[INFO] [1790431494.115264552] [host_endpoint_manager]: Attached to existing shared memory registry for domain 0
+[INFO] [1790431494.241528344] [ros2topic_shared_buffer_hz]: measuring '/image_raw', interval 1.000 s, acceptable buffer backend: shared_buffer
+[INFO] [1790431495.236844432] [ros2topic_shared_buffer_hz]: received: 33, rate: 27.909 Hz, backends: shared_buffer: 33, elapsed: 1.182420 s
+[INFO] [1790431496.236972779] [ros2topic_shared_buffer_hz]: received: 30, rate: 30.000 Hz, backends: shared_buffer: 30, elapsed: 0.999996 s
+[INFO] [1790431497.236937553] [ros2topic_shared_buffer_hz]: received: 30, rate: 30.001 Hz, backends: shared_buffer: 30, elapsed: 0.999983 s
+```
+
+The logger overrides above are only used to suppress repeated buffer-path debug messages. [`rosidl_typesupport_fastrtps` PR #164](https://github.com/ros2/rosidl_typesupport_fastrtps/pull/164), which has since been merged, changes those hot-path messages to log only once per process.
+
+## [](https://discourse.ros.org/t/shared-buffer-backend-shared-memory-rosidl-buffer-for-ros-2-processes/58414#p-118459-references-and-notes-5)References and notes
+
+*   I used the [ROS `rosidl_buffer_backends` CUDA implementation](https://github.com/ros2/rosidl_buffer_backends) as a reference, and tried to keep the user-facing API and allocation model familiar.
+*   The `ros2topic_hz` tool is based on the implementation discussed in [Simple C++ node to get more accurate topic frequency](https://discourse.openrobotics.org/t/simple-c-node-to-get-more-accurate-topic-frequency/57741). For this experiment, I used a concrete `sensor_msgs::msg::Image` subscription instead of `rclcpp::GenericSubscription`, since the generic subscription path does not currently provide the buffer-backend selection needed here.
+*   The `v4l2_camera` example is based on [ros2_v4l2_camera](https://gitlab.com/boldhearts/ros2_v4l2_camera), with additional support for buffer-backend selection and external-buffer adoption.
+*   Related approaches using preallocated fixed-size arrays for zero-copy communication have previously been discussed in [Using zero-copy transport in ROS 2 with ros2_shm_msgs](https://discourse.openrobotics.org/t/using-zero-copy-transport-in-ros2-with-ros2-shm-msgs/26226).
+
+I hope this gives ROS 2 users another practical option for placing high-bandwidth sensor producers and consumers in separate processes, while still allowing the payload storage to be shared when possible. Feedback, implementation suggestions, and results from other workloads would be very welcome. Thanks!
