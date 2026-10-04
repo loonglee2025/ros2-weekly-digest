@@ -1,0 +1,93 @@
+Title: ROS PMC Minutes for September 29, 2026 - ROS / ROS PMC - Open Robotics Discourse
+
+URL Source: https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518
+
+Published Time: 2026-09-30T18:02:45+00:00
+
+Markdown Content:
+## post by mjcarroll 4 days ago
+
+The [ROS PMC](https://osralliance.org/staging/wp-content/uploads/2024/03/ros_project_charter.pdf) meeting for this week was on Tuesday, September 29, 2026. The notes from the meeting are available at [ROS PMC weekly meeting agenda](https://docs.google.com/document/d/1TGXYp33N00ZJtilsRzfClFXcSyMa4QKVNmA03Lx9D7w/edit?tab=t.0).
+
+This was the first meeting back after ROSCon.
+
+## [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-ros-pmc-business-1)ROS PMC Business
+
+## [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-regular-business-2)Regular Business
+
+### [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-buildfarm-update-3)Buildfarm update
+
+The buildfarm builds and tests ROS packages across all supported distributions and platforms. This section covers new issues, current priorities, and infrastructure changes that affect maintainers.
+
+### [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-waffle-note-taker-4)Waffle note-taker
+
+Waffle is a weekly meeting where maintainers triage incoming issues and pull requests that haven’t been otherwise acted upon. One person per week is assigned to be the “waffle note-taker” to both take notes in the meeting to keep the meeting as efficient as possible.
+
+*   Oct 1, 2026 
+    *   [@skye.galaxy](https://discourse.ros.org/u/skye.galaxy)
+    *   Expected to be a banner week. This is the first Waffle after ROSCon and the most likely to draw new faces.
+
+### [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-rosdistro-assignmentshttpsgithubcomrosrosdistro-5)[Rosdistro assignments](https://github.com/ros/rosdistro)
+
+Rosdistro is a weekly assignment to monitor incoming issues and pull requests in [GitHub - ros/rosdistro](https://github.com/ros/rosdistro). Two people per week are assigned to be the rosdistro maintainers.
+
+*   Sep 29, 2026 - Oct 6, 2026 
+    *   [@emersonknapp](https://discourse.ros.org/u/emersonknapp) and [@wjwwood](https://discourse.ros.org/u/wjwwood)
+
+### [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-release-managementhttpsosrfzulipchatcomnarrowchannel526029-ros-pmctopicrelease20management20thread-6)[Release Management](https://osrf.zulipchat.com/#narrow/channel/526029-ROS-PMC/topic/Release.20Management.20Thread)
+
+Release Management tracks the status of upcoming releases, patches, and syncs across the active ROS distributions.
+
+## [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-working-group-updates-7)Working Group Updates
+
+## [](https://discourse.ros.org/t/ros-pmc-minutes-for-september-29-2026/58518#p-118604-agenda-8)Agenda
+
+*   [[@mjcarroll](https://discourse.ros.org/u/mjcarroll)] **Fill out the ROSCon survey.** Feedback guides the kind of content, structure, and format we see in future years.
+*   [[@mjcarroll](https://discourse.ros.org/u/mjcarroll)] **Fill out the annual Open Robotics survey**, new this year. What you use and what you do not use both matter, because this feedback sets the direction of the OSRA, which in turn sets the direction of the projects. 
+    *   [Complete the Open Robotics Annual Survey 2026 to enter the prize draw!](https://discourse.openrobotics.org/t/complete-the-open-robotics-annual-survey-2026-to-enter-the-prize-draw/58488)
+
+*   [Sayan Paul, Red Hat] **ARM64 RPM packages.** Red Hat is enabling ROS on a set of mostly ARM based boards and is looking for ARM64 RPM packages for Lyrical and Rolling. 
+    *   The buildfarm does not currently produce ARM64 RPM packages at all.
+    *   [@cottsay](https://discourse.ros.org/u/cottsay) does not expect meaningful ARM specific fallout, since we already have the intersection of RPM builds and ARM builds on the deb side. This is largely a resource allocation question: roughly 1500 additional jobs per distribution, so Rolling plus Lyrical would be about 3000.
+    *   Next steps are to talk to the buildfarm folks about what that costs, and to Red Hat about whether further buildfarm investment is in budget.
+    *   On the missing packages (Pinocchio, some Nav2 packages) the answer is to chase the upstreams directly.
+
+*   [[@cottsay](https://discourse.ros.org/u/cottsay)] **Drawing a clearer line around PMC maintained packages.** A security report came in today for a repository the PMC does not maintain. 
+    *   We do not have a good story or good documentation here, and routing community maintained package problems through the PMC only delays resolution. For anything not maintained by the PMC, the community should go directly to the package maintainers; we are just the infrastructure at that point.
+
+*   [[@clalancette](https://discourse.ros.org/u/clalancette)] **Pull request build hooks.**[@cottsay](https://discourse.ros.org/u/cottsay) dug into the root cause before doing the work to update every hook, and believes he has found what went wrong, with help from [@Crola1702](https://discourse.ros.org/u/crola1702). 
+    *   The planned change to redeploy all the hooks assumed we needed to program a secret that was not previously present. A secret like this is global, and if everyone using the buildfarm for pull request builds knows it, it serves no purpose, which is exactly how things were configured before.
+    *   The new plan is to restore the buildfarm to its previous state with no secret at all, and clean up only the couple of repositories that moved forward rather than all of them. This also avoids a Discourse post and coordination with the broader community for repositories we do not control.
+    *   It is being tested on the test farm first. **Nothing is needed from [@clalancette](https://discourse.ros.org/u/clalancette)**; [@cottsay](https://discourse.ros.org/u/cottsay) will ping the thread.
+
+*   [[@clalancette](https://discourse.ros.org/u/clalancette)] **CI and CD requirements document.** Coming out of ROSCon conversations about what we actually want from CI and CD in the ROS project. Our infrastructure has grown organically rather than by design, and things take too long. 
+    *   The document is deliberately a requirements list, not a design or a tool selection. Specification and design would follow, so we can see how to move from where we are toward where we want to be.
+    *   This is inherently cross PMC between infrastructure and ROS. **Everyone should read it and comment**: missing requirements, disagreements, edits. Comment permissions are open; say so if they are not.
+    *   On overlap with the proposed CI/CD SIG: the proposal went to the TGC to decide funding allocation. The original reasoning was that the ROS and infrastructure PMCs are overburdened enough that nobody would stand up a SIG without funding attached to make it a priority.
+
+*   [[@emersonknapp](https://discourse.ros.org/u/emersonknapp)] **A place for evergreen writing.** Prompted by describing the thin node pattern in his ROSCon talk and finding it was not written down anywhere. 
+*   [[@mjcarroll](https://discourse.ros.org/u/mjcarroll)] **ROSCon debrief**, from the shared notes document. Only the first part was covered; the rest carries to next week. 
+    *   **Potential contributors and maintainers.**[@Katherine_Scott![Image 1: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)](https://discourse.ros.org/u/katherine_scott) has the hackathon email list. [@robwoolley](https://discourse.ros.org/u/robwoolley) and Sai are the two strongest committer candidates. Someone approached [@skye.galaxy](https://discourse.ros.org/u/skye.galaxy) after her talk with ideas for making the executors faster, but the name was not caught.
+    *   **Working group discoverability.**[@emersonknapp](https://discourse.ros.org/u/emersonknapp) received direct feedback that working groups are hard to find. The entry point today is a Google doc or an embedded Google calendar that gives you every group’s invites at once. [@Katherine_Scott![Image 2: speech_balloon](https://emoji.discourse-cdn.com/noto/speech_balloon.png?v=15)](https://discourse.ros.org/u/katherine_scott) proposed a static landing page per working group, possibly on a subdomain, with an index on [docs.ros.org](http://docs.ros.org/). [@mjcarroll](https://discourse.ros.org/u/mjcarroll) noted the groups should be straightforward to enumerate since real working groups have charters on file.
+    *   **macOS.** We do not need macOS to be Tier 1, but we do need a golden path for ROS and Gazebo that largely works. The current approach is fragmented, with Gazebo going through Homebrew and various community efforts doing their own thing. [@mjcarroll](https://discourse.ros.org/u/mjcarroll) would prefer standardizing on Pixi. [@KimMcG](https://discourse.ros.org/u/kimmcg) noted from the workshop that building on macOS does not mean it runs and behaves as expected, so this also needs testing and tutorial resources.
+    *   **Pixi versus curated platforms.**[@cottsay](https://discourse.ros.org/u/cottsay) raised the elephant in the room: we plan significant investment in Pixi and the prefix.dev folks are on board, but Pixi is entirely rolling while our workflows, tooling, and distribution model are built on stable, curated, security patched foundations. CMake 4 is the easy example, but any dependency can roll forward and break us mid cycle. 
+        *   A centralized `pixi.lock` worked well for the core packages but does not scale to the distribution level, and is not something the team can maintain as we expand past PMC maintained packages.
+        *   [@clalancette](https://discourse.ros.org/u/clalancette) pinned Pixi tightly on purpose after Homebrew proved unsustainable. The result is reproducible builds with no CMake 4 style surprises, but also no security uptake.
+        *   [@mjcarroll](https://discourse.ros.org/u/mjcarroll) suggested the middle ground of version ranges rather than exact pins, closer to Python packaging, which is spiritually similar to how the Bazel pins work.
+        *   [@andrew_symington](https://discourse.ros.org/u/andrew_symington) noted Bazel pins all upstream dependencies explicitly, so a stable pin and a rolling pin are both possible. He also reported a relatively clean macOS Bazel build including Qt, and believes a full Bazel build up to desktop is achievable given the hours to convert the files.
+        *   [@tfoote](https://discourse.ros.org/u/tfoote) noted the Bazel pin files are generated semi dynamically from rosdistro on Ubuntu, and similar automation could keep Pixi constraints aligned.
+        *   [@mjcarroll](https://discourse.ros.org/u/mjcarroll) pushed back on anchoring to Ubuntu or Debian versions, given how those choices have played out over recent LTS releases. [@clalancette](https://discourse.ros.org/u/clalancette) countered that constructing a solvable package set from scratch is much harder than it looks, as he found working backward for Humble.
+        *   [@wjwwood](https://discourse.ros.org/u/wjwwood) noted Homebrew did help keep Rolling current, and that pinning trades one set of problems for another rather than eliminating work.
+        *   **This needs to be captured somewhere**, either a document or a dedicated meeting.
+
+    *   **“Less is more” resonated widely.** If something about ROS 2 has been bothering you, raise it. Not everything can be ripped out and rewritten, but where it makes sense, there is latitude to do it.
+
+read  5 min
+
+## post by vmb 3 days ago
+
+## post by mjcarroll 3 days ago
+
+## post by vmb 2 days ago
+
+## post by mjcarroll 2 days ago

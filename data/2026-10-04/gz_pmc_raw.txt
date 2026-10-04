@@ -1,0 +1,85 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/58502
+
+Markdown Content:
+azeey | 2026-09-29 23:23:27 UTC | #1
+
+Hi Gazebo Community!
+
+This week's meeting was held on [date=2026-09-28 time=13:00:00 timezone="America/Chicago"] and the following is a summary:
+
+## PMC Business
+- **Formal Decision:** Accepted **REP-158: OpenUSD Conventions for Simulation Asset Interoperability in Open Source Robotics**. This was a joint vote with the ROS PMC, and the final results will be announced once officially recorded by both PMCs.
+- A formal vote will be requested to sponsor Cherie Hu as a mentee committer. She has made significant [contributions](https://github.com/gazebosim/gz-common/pulls?q=author%3Acheriehu) to `gz-common`.
+
+## New agenda items
+- **ROSCon 2026 Debrief**
+  - **Simulator Landscape & Value Proposition:** Following widespread momentum around MuJoCo at ROSCon (including direct use with `mujoco_ros2_control` and the unveiling of a new renderer), the PMC discussed how to clearly articulate Gazebo's core value propositions. Key strengths highlighted include ease of use, flexibility, not strictly requiring a GPU, hardware-in-the-loop (HIL) and integration testing, mixed kinematic/dynamic simulation modes, first-class Fuel integration, and the ability to start in Gazebo and export to other simulators via file format converters.
+  - **macOS & Onboarding Feedback:** Feedback from the intro workshop and hackathon emphasized making it easier to get started with Gazebo and investing in first-class macOS support for both Gazebo and ROS—especially with Pixi coming online, as Homebrew currently lacks full ROS integration and many attendees used Mac laptops.
+  - **Zero-Copy Sensor Data Transport:** Inspired by ROSCon sessions on zero-copy `rcl_buffer` image transport, the team discussed using `rcl_buffer` with ROS messages to efficiently expose sensor data from Gazebo to ROS without conversion overhead, with `ros_gz_pointcloud` noted as a prime candidate for integration.
+  - **Hackathon & Future Events:** The ROSCon hackathon was a big success, with participants building Gazebo from source and reviewing pull requests. The team discussed organizing co-located meetings and hackathons at future robotics conferences (such as RSS), noting that hackathons require less preparation overhead than workshops while still being effective for onboarding contributors.
+- **Speeding Up Compilations & Conditional CI Execution**
+  - Discussed skipping unnecessary CI builds when pull requests only modify documentation or text files ([gazebo-tooling/release-tools#1558](https://github.com/gazebo-tooling/release-tools/pull/1558)).
+  - Evaluated moving file-ignore and dependency-graph logic into `gzdev` to intelligently determine which CI builds and tests need to run (accounting for Python bindings and world file changes). While a script in `release-tools` provides an immediate cross-platform fix, prototype dependency-graph tooling has already shown a noticeable reduction in CI runs and will be evaluated further.
+  - Agreed to enable a Jenkins configuration requiring manual approval before running CI on pull requests from new contributors (similar to GitHub Actions) to prevent queue congestion from bulk/automated pull requests.
+
+## Updates
+
+### Buildfarm & CI (Discussed Live)
+- **Ubuntu Resolute Ogre 1 CMake Warnings:** `gz-sensors` CI fails to find `gz-rendering-ogre` 11.0.0 on Ubuntu Resolute ([gazebosim/gz-rendering#1346](https://github.com/gazebosim/gz-rendering/issues/1346)) because Ogre 1 components are no longer built in nightlies. Discussion is ongoing in [gazebosim/gz-cmake#587](https://github.com/gazebosim/gz-cmake/pull/587) on how to specify components that are required for CI vs. optional for end users without masking silent CI failures.
+- **macOS Sequoia ARM64 GUI Test Failures:** `gz-gui10` Homebrew tests on `mac-six-arm` are failing with `SIGTRAP` when using Qt Metal ([gazebosim/gz-gui#790](https://github.com/gazebosim/gz-gui/issues/790)), likely due to XQuartz not running, permission issues, or outdated Xcode CLI tools. The team plans to inspect an idle Jenkins workspace on the host machine.
+- **Windows Flaky Stopwatch Test:** The re-opened `Stopwatch.StartStopReset` test failure on Windows ([gazebosim/gz-math#95](https://github.com/gazebosim/gz-math/issues/95)) is occurring roughly every 20–30 builds and may require backporting [gazebosim/gz-math#610](https://github.com/gazebosim/gz-math/pull/610).
+
+*Note: The following updates were shared as written updates in the meeting agenda and were not discussed live due to time constraints.*
+
+### URDF & SDFormat
+- Delivered a ROSCon presentation on URDF 1.1 / 1.2.
+- **In progress:**
+  - Support URDF 1.1 capsules in SDFormat ([gazebosim/sdformat#1722](https://github.com/gazebosim/sdformat/pull/1722)).
+  - Opened a tracking issue to discuss closed-loop kinematics in URDF ([ros/urdfdom#267](https://github.com/ros/urdfdom/issues/267)).
+  - Noted that the `urdfdom` version in `bazel-central-registry` is outdated.
+
+### Package Updates (`gz-sim`, `gz-physics`, `gz-rendering`, `gz-gui`, `gz-transport`)
+- **Merged:**
+  - `gz-gui`: Fixed macOS Metal viewport gamma by reinterpreting the sRGB texture view ([gazebosim/gz-gui#783](https://github.com/gazebosim/gz-gui/pull/783)).
+  - `gz-physics`: Stored body pointer and constant offset in `FrameInfo` for MuJoCo to speed up load times by removing `site` elements ([gazebosim/gz-physics#1098](https://github.com/gazebosim/gz-physics/pull/1098), [google-deepmind/mujoco#3397](https://github.com/google-deepmind/mujoco/issues/3397)).
+  - `gz-physics`: Ensured the MuJoCo arena is properly sized for broadphase collision in static worlds, fixing a crash with `3k_shapes_static.sdf` ([gazebosim/gz-physics#1097](https://github.com/gazebosim/gz-physics/pull/1097)).
+  - `gz-sim`: Added Python binding for `ServerConfig::SetSdfString` ([gazebosim/gz-sim#3999](https://github.com/gazebosim/gz-sim/pull/3999)).
+- **In review:**
+  - `gz-sim`: Add runtime-typed ECM batch queries and expose them to Python ([gazebosim/gz-sim#4006](https://github.com/gazebosim/gz-sim/pull/4006)).
+  - `gz-sim`: Wait for the thruster command before stepping in the thruster test ([gazebosim/gz-sim#4011](https://github.com/gazebosim/gz-sim/pull/4011)).
+  - `gz-rendering`: Copy camera frames into caller-owned memory through `PixelBuffer` ([gazebosim/gz-rendering#1344](https://github.com/gazebosim/gz-rendering/pull/1344)).
+  - `gz-transport`: Make `CreateMsgFromBuffer` virtual and drop the message factory ([gazebosim/gz-transport#969](https://github.com/gazebosim/gz-transport/pull/969)).
+  - `gz-transport`: Drop `enable_shared_from_this` from the Zenoh handlers ([gazebosim/gz-transport#968](https://github.com/gazebosim/gz-transport/pull/968)).
+
+### Packaging, Release Tools & Documentation
+- **Homebrew & Documentation:**
+  - **Merged:** Renamed `ogre2.3` to `ogre2.3-with-freeimage` ([osrf/homebrew-simulation#3566](https://github.com/osrf/homebrew-simulation/pull/3566)) with corresponding documentation updates ([gazebosim/docs#716](https://github.com/gazebosim/docs/pull/716)), renamed `gz-rotary-ogre2.3-vendor` to `ogre2.3` ([osrf/homebrew-simulation#3567](https://github.com/osrf/homebrew-simulation/pull/3567)), and added a deprecation date to Ionic formulae via script ([osrf/homebrew-simulation#3584](https://github.com/osrf/homebrew-simulation/pull/3584)).
+  - **In review:** Script to disable deprecated Homebrew formulae ([osrf/homebrew-simulation#3583](https://github.com/osrf/homebrew-simulation/pull/3583)).
+- **Release Process & Architecture Support:**
+  - Deprecating `armhf` (32-bit) binary production ([gazebo-tooling/release-tools#1548](https://github.com/gazebo-tooling/release-tools/issues/1548)).
+  - Exploring improvements to reduce release process overhead, including next steps for auto-changelog generation (finishing `release-tools` integration and piloting file collection in `gz-transport15` in [gazebo-tooling/release-tools#246](https://github.com/gazebo-tooling/release-tools/issues/246)) and improvements to the manual Homebrew `build-bottle` step ([gazebo-tooling/release-tools#1560](https://github.com/gazebo-tooling/release-tools/issues/1560)).
+
+As always, the meeting notes are available at [:classical_building: Gazebo PMC meeting weekly agenda - Google Docs](https://docs.google.com/document/d/1RpVMkwiKqXKnDjqtkviz4qp73oehivf4Z1x-fTITgZY/).
+
+The next Gazebo PMC meeting will be on [date=2026-10-05 time=13:00:00 timezone="America/Chicago"]
+(See [Open Source Robotics Foundation official events](https://calendar.google.com/calendar/u/0/embed?src=agf3kajirket8khktupm9go748@group.calendar.google.com&ctz=UTC))
+
+-------------------------
+
+mjcarroll | 2026-09-30 00:07:53 UTC | #2
+
+[quote="azeey, post:1, topic:58502"]
+* the team discussed using `rcl_buffer` with ROS messages to efficiently expose sensor data from Gazebo to ROS without conversion overhead
+[/quote]
+
+This could be potentially interesting if you have a sensor rendered in GPU/CUDA that could directly be used in a ROS node with no transfer overhead.  Would have to think about the actual implementation, though.
+
+-------------------------
+
+peci1 | 2026-09-30 08:55:45 UTC | #3
+
+I'm afraid that would need a similar mechanism to rcl:: buffer also in Gazebo... But in general, I really like the idea.
+
+-------------------------

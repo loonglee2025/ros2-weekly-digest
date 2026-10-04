@@ -1,0 +1,261 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/57697
+
+Markdown Content:
+danimtb | 2026-08-27 15:18:51 UTC | #1
+
+Hi ROS community!
+
+I am Dani, a member of the [Conan C/C++ Package Manager](https://conan.io) team, and we would like to introduce [conan-io/ros-conan](https://github.com/conan-io/ros-conan): a collection of Conan recipes for installing and consuming ROS Kilted on Linux, macOS, and Windows.
+
+We have recently been working to offer an alternative workflow for C++ developers: install ROS with Conan, declare it in a conanfile, and consume its libraries like any other C++ package.
+
+Here is a quick demo of how it works:
+
+<video controls width="100%">
+  <source src="https://github.com/conan-io/ros-conan/raw/refs/heads/danimtb/video/examples/pose_estimation/assets/ros-conan-screencast.mp4" type="video/mp4">
+</video>
+
+This [example](https://github.com/conan-io/ros-conan/tree/main/examples/pose_estimation) demonstrates how to install ROS Kilted along with OpenCV and TensorFlow to create a ROS node application that tracks the human pose from an image input.
+
+# Let's try it!
+
+Here is a small guide on how to start using ROS with Conan:
+
+## Prepare Conan and the ROS recipes
+
+ROS 2 Kilted targets Python 3.12. Create a virtual environment and install Conan.
+
+On Linux or macOS:
+
+```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install conan
+conan profile detect --force
+```
+
+On Windows PowerShell:
+
+```powershell
+py -3.12 -m venv .venv
+.venv\Scripts\activate
+python -m pip install conan
+conan profile detect --force
+```
+
+Next, clone the recipes and add the repository as a local recipe index:
+
+```bash
+git clone https://github.com/conan-io/ros-conan.git
+conan remote add ros-conan ./ros-conan --type=local-recipes-index
+```
+The recipe provides `core`, `base`, and `desktop` variants, allowing a project to select the part of the ROS distribution it needs.
+
+## Start with a ROS node in plain CMake
+
+The clearest way to show the proposed workflow is a minimal C++ ROS node.
+
+```bash
+cd ros-conan/examples/consumer_cmake
+```
+
+The complete dependency declaration is in the `conanfile.txt`:
+
+```ini
+[requires]
+ros-kilted/2026.06.17
+
+[generators]
+CMakeToolchain
+CMakeDeps
+
+[layout]
+cmake_layout
+```
+The CMake side uses the standard package config and imported target provided by `rclcpp`:
+
+```cmake
+cmake_minimum_required(VERSION 3.22)
+project(conan_ros2_kilted_consumer CXX)
+
+find_package(rclcpp REQUIRED)
+
+add_executable(consumer_node src/main.cpp)
+target_link_libraries(consumer_node PRIVATE rclcpp::rclcpp)
+```
+From the example directory, install the dependencies:
+
+```bash
+conan install --profile=../../profiles/ros --build=missing
+```
+
+This command builds ROS and any missing dependencies from source if the binaries are not already cached. The first run can take a while, but the resulting packages are cached for reuse.
+
+Now build the application with the same commands used by any other CMake project:
+
+```bash
+# macOS and Linux
+
+cmake --preset conan-release
+cmake --build --preset conan-release
+
+# Windows
+
+cmake --preset conan-default
+cmake --build --preset conan-release
+```
+
+Activate the environment:
+
+```bash
+# macOS and Linux
+/build/generators/conanrun.sh
+
+# Windows
+.\build\generators\conanrun.bat
+```
+
+And run the node:
+
+```bash
+# macOS and Linux
+./build/Release/consumer_node
+
+# Windows
+.\build\Release\consumer_node.exe
+
+[INFO] [...] [conan_test_package_node]: Conan consumer_node: rclcpp linked and node started.
+```
+There is no ROS-specific project layout, `package.xml`, `ament_cmake` integration, or `colcon` workspace in this example.
+
+**An existing CMake application can add ROS without adopting a separate development flow**, while Conan manages ROS and the application's other C++ dependencies together.
+
+As an alternative, for projects using a colcon workspace, the [colcon example]( https://github.com/conan-io/ros-conan/tree/main/examples/consumer_colcon) shows the same Conan-provided ROS installation being consumed by ordinary `ament_cmake` packages. Teams can choose the development model that fits each project.
+
+## Run a familiar ROS tutorial
+
+The packaged ROS installation also supports the usual ROS commands. Let’s use the `desktop` variant to run the [turtlesim tutorial](https://docs.ros.org/en/kilted/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html).
+
+```bash
+cd ros-conan/examples/consumer_cmake
+```
+First of, **update the conanfile.txt** to indicate the **desktop variant** for this case (as this is the one that includes the `turtlesim` package):
+
+```ini
+[requires]
+ros-kilted/2026.06.17
+
+[options]
+ros-kilted/*:variant=desktop
+```
+
+Use the install command to install and build the packages as we did previously (**this will take some time** as the desktop variant includes many more packages of ROS):
+
+```bash
+conan install --profile=../../profiles/ros --build=missing
+```
+
+Activate the generated run environment and launch `turtlesim` as described in the ROS tutorials:
+
+```bash
+# Linux and macOS
+
+source conanrun.sh
+ros2 run turtlesim turtlesim_node
+```
+
+```bat
+REM Windows
+
+conanrun.bat
+ros2 run turtlesim turtlesim_node
+```
+
+In a second terminal, launch the keyboard controller. You can use `conan run` command to launch the command inside the enviroment directly:
+
+```bash
+conan run "ros2 run turtlesim turtle_teleop_key" --profile=ros-conan/profiles/ros
+```
+
+The **ROS commands and behavior are unchanged**, Conan supplies the installation and runtime environment.
+
+## Why consume ROS with Conan?
+
+Bringing ROS into the Conan dependency graph offers several advantages:
+
+- **A native C++ workflow:** plain CMake projects can use `find_package(rclcpp REQUIRED)` and link to `rclcpp::rclcpp`. They do not need a `colcon` workspace or `ament_cmake`.
+
+- **The same workflow as any other C/C++ package:** declare ROS in a `conanfile` and use the same install command, profiles, options, lockfiles, and local cache across Linux, macOS, and Windows.
+
+- **One dependency graph for the whole application:** Conan detects version conflicts and lets ROS compose directly with libraries from [ConanCenter (the Conan central repository for open-source libraries)]( https://conan.io/center), such as OpenCV, Eigen, or TensorFlow Lite.
+
+- **Per-project ROS dependency:**  Different ROS versions and distributions could coexist in the Conan cache on the same machine. Each project would select and activate its own ROS dependency without colliding with a system-wide installation.
+
+## We would like your feedback
+
+ROS 2 Kilted is the first distribution covered by these recipes. The `core` and `desktop` variants are exercised in CI by building from source for Linux (gcc 13, X86_64/ARM64), macOS (clang 17, x86_64/ARM64), and Windows (MSVC 19.40).
+
+We would particularly like to hear:
+
+- How does the proposed native C/C++ workflow compare with the traditional ROS development workflow for your projects?
+
+- Would per-project ROS dependencies help you develop and test packages against multiple ROS versions or distributions?
+
+- Which third-party C or C++ packages would you want to combine with ROS through the same `conanfile`?
+
+- Which ROS distributions, package variants, and platforms should we prioritize next?
+
+Please try the [quick start and examples]( https://github.com/conan-io/ros-conan) and share your experience in this thread. Bugs and contributions are also welcome in the repository's [issues](https://github.com/conan-io/ros-conan/issues) and pull requests.
+
+---
+
+**We will be at ROSCon Global 2026 in Toronto**, so if you are attending, we would be very happy to discuss this workflow and your feedback in person.
+
+Thanks for taking a look. We are looking forward to hearing what you think!
+
+-------------------------
+
+wwedler | 2026-09-22 21:06:44 UTC | #2
+
+When I build a colcon workspace, I can move the `install` directory to another machine (using `scp` for example) with the required system dependencies installed, and then on the other machine I can source the `setup.bash` file and run applications.  Is there anything equivalent for conan?
+
+And when I want to build a dependency from source, I can clone it into the colcon workspace and build. Then the same workflow applies for the workspace, where I can move the `install` directory to another machine and run it from there. What is the equivalent way to add a dependency built from source and "packaged" with my applications to run on another machine?
+
+-------------------------
+
+danimtb | 2026-09-30 12:47:09 UTC | #3
+
+Hi @wwedler, thanks for the question! Both workflows have Conan equivalents:
+
+**1. Moving the result to another machine (the `install/` + `setup.bash` equivalent)**
+
+You can use `conan install` with a deployer to gather everything the application needs into a self-contained folder, and generate the runtime environment script alongside it:
+
+```bash
+conan install . --deployer=full_deploy --deployer-folder=deploy -g VirtualRunEnv
+```
+
+* `full_deploy` copies every dependency's package (headers, libs, binaries) into `deploy/`. If you only need what's required at runtime (executables and shared libraries), `runtime_deploy` gives you a smaller output.
+* `VirtualRunEnv` generates `conanrun.sh`, the counterpart of `setup.bash`. When used together with a deployer, the generated scripts point to the deployed folder rather than the Conan cache, so the result is self-contained. Copy the folder to the other machine, `source conanrun.sh`, and run your applications. \[Dani: confirm that the ros-conan recipes populate the ROS variables such as `AMENT_PREFIX_PATH` in `runenv_info`, or drop this note.\]
+
+The same caveats apply as with a colcon install: the target should have a compatible OS, architecture and glibc, and the required system libraries need to be installed there.
+
+If you'd rather move the packages themselves than a deployed tree, `conan cache save "*"` and `conan cache restore` on the other machine let you transfer them as an archive. That's handy for CI or air-gapped setups.
+
+**2. Adding a dependency built from source**
+
+The equivalent of "clone it into the workspace and build" is to give Conan a recipe for that dependency (or use an existing one) and build it from source as part of your graph:
+
+```bash
+conan create path/to/dep --build=missing  # build it and put it in the local cache
+```
+
+Once it's in your dependency graph, it's treated like any other package, so the deployer from step 1 bundles it with your application automatically.
+
+If you're iterating on the dependency's source, **editable packages** (`conan editable add`) let you keep working in a local checkout without re-creating the package after every change. Conan also supports working with its own workspaces (having multiple packages opened in editable mode in the same project folder), so that the workflow is more similar to colcon's. You can check the example at https://github.com/conan-io/ros-conan/tree/main/examples/conan_workspace
+
+Thanks again for the questions. Any feedback about this is very welcome!
+
+-------------------------

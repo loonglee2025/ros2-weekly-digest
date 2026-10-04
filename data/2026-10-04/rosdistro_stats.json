@@ -1,0 +1,41 @@
+{
+ "total": 122,
+ "bloom": 115,
+ "pkgs": [
+  "ament_lint",
+  "cloudini",
+  "ehukai",
+  "fastswarmsim",
+  "foxglove-sdk",
+  "gtsam",
+  "gz_physics_vendor",
+  "launch",
+  "localization_msgs_tools",
+  "mapviz",
+  "microstrain_inertial",
+  "mola_input_ouster",
+  "mola_lidar_odometry",
+  "mola_sm_loop_closure",
+  "mola_state_estimation",
+  "mp2p_icp",
+  "mrpt3",
+  "mrpt_navigation",
+  "mrpt_path_planning",
+  "mrpt_sensors",
+  "mvsim",
+  "odom_to_tf_ros2",
+  "pointcloud_to_laserscan",
+  "pose_cov_ops",
+  "rko_lio",
+  "rtabmap",
+  "rtabmap_ros",
+  "wirestead"
+ ],
+ "distros": {
+  "rolling": 23,
+  "lyrical": 26,
+  "jazzy": 22,
+  "humble": 24,
+  "kilted": 20
+ }
+}

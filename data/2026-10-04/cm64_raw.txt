@@ -1,0 +1,39 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/58439
+
+Markdown Content:
+robwoolley | 2026-09-27 16:44:07 UTC | #1
+
+I have returned home and am still recovering from an epic ROSCon Global.
+
+Looking forward to filling everyone in on how it went. We also have a chock full list of new topics to explore:
+
+* **Layer Audit**
+* **ROS World builds / skip groups**
+* **Superflore Transitive Dependencies**
+* **SDK Documentation**
+* **OEROS Container Images**
+* **Support for Edge AI**
+* **bitbake-setup OE Config Fragments**
+
+See more details here: https://github.com/ros/meta-ros/discussions/1841
+
+I have drafted some specifications and proof of concepts and am looking for community feedback. Whether you are an advanced user or a beginner, there are great ways to contribute. Especially with trying out the SDKs and helping identifying where the docs are unclear or missing.
+
+Looking forward to seeing everyone tomorrow!
+
+# **Meeting Details**
+
+* **Date/Time**
+  Monday, September 28th, 2026 @ 3pm UTC, (5pm CEST / 11am EDT / 8am PDT)
+
+* **Google Meet**
+  Video call link: https://meet.google.com/bxp-triq-yvr
+  Dial-in numbers: https://meet.google.com/tel/fom-qmmu-nnw?pin=8216926365973
+
+To chat about meta-ros before then, come find us on the Open Robotics Zulip Channel: [#OpenEmbedded - Open Source Robotics Foundation - Zulip](https://openrobotics.zulipchat.com/#narrow/channel/526059-OpenEmbedded "https://openrobotics.zulipchat.com/#narrow/channel/526059-OpenEmbedded")
+
+Catch up on our meeting minutes here: [ROS OpenEmbedded Community Meeting Minutes · Discussions · GitHub](https://github.com/ros/meta-ros/discussions/categories/meeting-minutes "https://github.com/ros/meta-ros/discussions/categories/meeting-minutes"))
+
+-------------------------

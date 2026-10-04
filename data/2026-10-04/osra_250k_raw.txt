@@ -1,0 +1,83 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/49373
+
+Markdown Content:
+gbiggs | 2025-08-01 03:38:34 UTC | #1
+
+The Technical Governance Committee (TGC) of the Open Source Robotics Alliance (OSRA) has approved funding of US$250,000 to significantly enhance project infrastructure and documentation across the OSRA ecosystem. This funding will focus on maximising value across all OSRA projects through strategic improvements in two key areas.
+
+## Enable the use of Cargo-provided dependencies in the buildfarm
+
+The Infrastructure PMC put forward a proposal to support Cargo dependency management in our buildfarm. The goal of this work is to enable packages being built by the build farm to depend on external Cargo packages. The end result will be ROS packages being able to leverage Rust libraries via Cargo-distributed packages. This work will have a broad impact across all OSRF projects.
+
+## Fundamental work to improve documentation across all OSRF projects
+
+Improvements to our documentation is one of the most common requests from both users of OSRF projects, who often find it difficult to use, and contributors, who would prefer to be implementing new features rather than writing documentation. Documentation is also the foundation of a happy community and a healthy project, though, so it is something that we cannot ignore. Fortunately, all PMCs are aware of the need to improve their documentation and all requested funding this year to help them do so. This item combines the requests from all PMCs into a single item that will provide the fundamentals for good documentation that all projects can leverage going forward.
+
+Much of the work will be focused on documentation structure and infrastructure (particularly, what is known as an information architecture), aiming to provide a common information architecture that all projects can build on. We will also be putting funding into improving the searchability of documentation (both via external search engines and internally), the usability of the documentation when used via LLM-powered agents, and supporting structured “learning pathways” through a project’s documentation.
+
+This work is open-ended, so we expect that it will lead into continued improvements in the future through additional funding from the OSRF.
+
+## OSRA member dues provide a sustainable future for open-source robotics
+
+This initiative aims to broadly improve software development workflows and user experience across all OSRA projects, making the robotics ecosystem more accessible and efficient for the global developer community. This investment represents OSRA’s commitment to strengthening the foundation that supports the open-source robotics community worldwide.
+
+This funding has become available due to the invaluable support of the members of the OSRA. Their collaborative funding ensures the sustainability of the critical infrastructure that supports the open source robotics ecosystem and, with this new initiative, contributes to improving all OSRF projects for all users of open-source robotics software.
+
+The Open Source Robotics Alliance is an initiative of the Open Source Robotics Foundation (OSRF) to organise and strengthen project governance and community involvement. It operates on a mixed membership and meritocratic model, following other successful foundations for open-source projects. Membership in the OSRA allows organisations and individuals to collectively fund open-source robotics software.
+
+-------------------------
+
+Katherine_Scott | 2025-08-01 16:43:54 UTC | #2
+
+
+
+-------------------------
+
+vrichard | 2025-08-05 07:22:10 UTC | #3
+
+[quote="gbiggs, post:1, topic:49373"]
+The end result will be ROS packages being able to leverage Rust libraries via Cargo-distributed packages
+
+[/quote]
+
+I am curious what are the concrete use cases for this. As far as robotic is concerned, the C/C++ ecosystem is way bigger and mature than Rust one, so I don’t really see which Rust library would make sense integrating into ROS packages (vs C/C++ ones). Do you have example of such library? Or is the long term goal rather to have Rust become an official language for ROS?
+
+-------------------------
+
+gavanderhoorn | 2025-08-05 14:29:30 UTC | #4
+
+I’m also curious about the motivation for the Rust work.
+
+Is this based on pull from OSRA members, community input, something else?
+
+(are the proposals public? Would be interesting to read them)
+
+-------------------------
+
+mjcarroll | 2025-08-05 14:51:01 UTC | #5
+
+Most of the motivation is due to general community interest in the Rust ecosystem.  It has notable benefits in terms of memory safety and concurrency that make it appealing to use in robotics applications.  There have been several talks over the past few ROSCons as well as large birds-of-a-feather meetings that are a strong signal of interest.  
+
+Currently, the `zenoh` package is the most notable example of a Rust package that is being used in the ROS ecosystem.  The RMF team also makes use of Rust through several of their libraries and applications ( https://github.com/open-rmf/rmf_site ). The ability to package and distribute Rust has been on the infrastructure roadmap since Zenoh first entered the picture.  There isn’t any current commitment to making Rust an “official” language for ROS, but as implementations like \`rclrs\` mature, we want to make sure that the infrastructure is not the blocker to getting those packages built and distributed in the rest of the robotics ecosystem.
+
+-------------------------
+
+davidmc | 2025-08-07 14:31:11 UTC | #6
+
+A while ago, I created a post about improving ROS 2 tutorials and docs, but I didn’t have any time to work on it. Will there be a dedicated work group assigned to work on that initiative?
+
+-------------------------
+
+ruben-arts | 2026-09-28 09:36:56 UTC | #7
+
+I watched the presentation by @cottsay and Jorge during ROSCon 2026 on this topic. Is there a written summary of the status of the project that I can reference?
+
+-------------------------
+
+cottsay | 2026-10-01 17:02:40 UTC | #8
+
+We're (informally) tracking overall progress here: https://github.com/ros-infrastructure/ros_buildfarm/issues/1157
+
+-------------------------

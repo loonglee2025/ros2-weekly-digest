@@ -1,0 +1,63 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/55027
+
+Markdown Content:
+xinyu | 2026-05-23 01:17:32 UTC | #1
+
+Hi everyone,
+
+We are thrilled to announce that **ROSCon China 2026** is officially on the horizon! As one of the most vibrant regional ROS events, ROSCon China continues to bring together developers, researchers, and industry leaders to share the latest advancements in the ROS ecosystem, embodied AI, robotics technologies and commercial robotics deployment.
+
+Whether you are a seasoned core contributor, an enterprise, or a student diving into robot, this event is designed for you.
+
+ **Event Details**
+
+* **Dates:** October 16-17, 2026
+
+* **Location:** Shanghai, China
+
+* **Format:** In-person with live-streaming available
+
+**Call for Proposals (CFP)** 
+
+The official website, speaker application portal, and early-bird registration link will be launched very soon. We are looking for technical presentations, case studies, and lightning talks!
+
+Stay tuned for the official links which we will append to this post. In the meantime, feel free to drop any questions or suggestions in the thread below.
+
+Looking forward to seeing the ROS community gather in China!
+
+Best regards,
+
+Xinyu Zhang
+ROS Education Foundation in China
+
+---
+
+-------------------------
+
+Matthew_Festo | 2026-08-06 10:18:29 UTC | #2
+
+Hi @xinyu , has the official ROSCon China 2026 website been launched? Could you add the link to this post? or point me to another post that mentions it? I did some searching on Discourse but couldn't seem to find it. Looking forward to attending this year. Thank you in advance!
+
+-------------------------
+
+Aaron_Chong | 2026-08-10 10:01:48 UTC | #3
+
+I found more information on https://mp.weixin.qq.com/s/jtUDAb-aqlDowFME64Hkeg
+
+With the ticket purchasing link https://class.guyuehome.com/p/t_pc/goods_pc_detail/goods_detail/activity_202605071040gxhA6Gdf6542?fromH5=true&product_id=&type=2
+
+Will there be a way to purchase the tickets without a mobile number from China? It seems like only +86 country codes are allowed to register at the moment, even with a wechat account.
+
+-------------------------
+
+Aaron_Chong | 2026-10-03 03:29:31 UTC | #4
+
+Looks like the website is up!
+
+https://www.roscon.cn/2026/index.html
+
+Excited to see yall there!
+
+-------------------------

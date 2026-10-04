@@ -1,0 +1,14 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/58544
+
+Markdown Content:
+sloretz | 2026-10-02 17:07:08 UTC | #1
+
+Hello Lyrical maintainers!
+
+Starting now, I will be holding new Lyrical [ros/rosdistro](https://github.com/ros/rosdistro/) release PRs with a plan to sync ROS Lyrical packages to the main apt repo on 2026-10-05. Please comment here if there are any issues I should know about before performing the sync.
+
+There are currently [307 packages](https://repo.ros2.org/status_page/ros_lyrical_default.html?q=SYNC) waiting to sync and [3 regressions](https://repo.ros2.org/status_page/ros_lyrical_default.html?q=REGRESSION).
+
+-------------------------

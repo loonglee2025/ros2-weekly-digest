@@ -1,0 +1,22 @@
+Title: 
+
+URL Source: https://discourse.ros.org/raw/58533
+
+Markdown Content:
+marcogg | 2026-10-02 02:53:11 UTC | #1
+
+We’re planning a Jazzy Jalisco sync next Monday [date=2026-10-05 timezone=Asia/Singapore]. There are currently [472 packages ](http://repo.ros2.org/status_page/ros_jazzy_default.html?q=SYNC)ready to sync and [no regressions](http://repo.ros2.org/status_page/ros_jazzy_default.html?q=REGRESSION).
+
+If you find any other regression when testing, please report it upstream and leave a comment here so we can track it leading up to the sync.
+
+Starting today [date=2026-10-02 timezone=Asia/Singapore] we’ll hold all rosdistro PRs unless they fix reported regressions.
+
+-------------------------
+
+SuperJappie08 | 2026-10-02 08:55:33 UTC | #2
+
+Could this [PR (ros2/ros2cli#1321)](https://github.com/ros2/ros2cli/pull/1321) still be in the Jazzy sync?
+
+As not fixing can cause `ros2 interface show` to display the wrong message and/or crash.
+
+-------------------------
