@@ -1,0 +1,22 @@
+{
+ "ros2/rclcpp": 5,
+ "ros2/rclpy": 2,
+ "ros2/rosbag2": 4,
+ "ros2/rmw": 0,
+ "ros2/ros2cli": 4,
+ "ros2/launch": 1,
+ "ros2/rosidl": 0,
+ "ros2/rcl": 5,
+ "ros2/ros2": 2,
+ "ros2/ros2_documentation": 9,
+ "ros-navigation/navigation2": 26,
+ "moveit/moveit2": 0,
+ "ros-controls/ros2_control": 9,
+ "micro-ROS/micro_ros_agent": "FAIL",
+ "micro-ROS/micro_ros_arduino": 0,
+ "micro-ROS/micro_ros_setup": 1,
+ "gazebosim/gz-sim": 6,
+ "eProsima/Fast-DDS": 3,
+ "ros/rosdistro": 200,
+ "ros/ros_comm": 0
+}
