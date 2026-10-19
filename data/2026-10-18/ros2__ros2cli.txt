@@ -1,0 +1,2 @@
+2026-10-16T07:27:28Z | f41b4273 | Accept loopback clients in LocalXMLRPCServer (#1241)
+2026-10-16T07:26:55Z | 99e308c2 | Skip multicast tests where sending is known to be broken on Windows (#1333)

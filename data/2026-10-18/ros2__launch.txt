@@ -1,0 +1,4 @@
+2026-10-16T16:39:51Z | a46664a1 | Add boolean launch argument frontend tests (#1043)
+2026-10-14T22:10:28Z | a14f9f76 | Correct the docstring of DeclareBooleanLaunchArgument (#1044)
+2026-10-14T17:03:15Z | 0d7882b0 | Fix XML examples in DeclareLaunchArgument and DeclareBooleanLaunchArgument docs (#1037)
+2026-10-13T08:01:22Z | 4db1470a | Make documentation for XML <arg> default match behavior (#1032)

@@ -1,0 +1,5 @@
+2026-10-16T21:03:03Z | 9e3b78f5 | Add runtime-typed ECM batch queries and expose them to Python (#4006)
+2026-10-16T10:39:09Z | e2792ca1 | Add global odometry frame offset support to OdometryPublisher (#3370) (#4081)
+2026-10-14T11:03:56Z | 793a0269 | Hydrodynamics: document the frame, units and sign of ocean currents (#4062)
+2026-10-13T21:38:48Z | 58ac5a47 | Physics system: cache failed EntityCast results (#4069)
+2026-10-13T01:52:27Z | d261424c | Document namespace support in DiffDrive parameters (#4067)

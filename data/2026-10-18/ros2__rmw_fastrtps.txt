@@ -1,0 +1,4 @@
+2026-10-16T07:28:01Z | 2a0fc2f1 | Support rmw_take_sequence for buffer-aware subscriptions (#936)
+2026-10-15T20:10:49Z | 0cbab6d6 | Honor ignore_local_publications on the buffer-aware take paths (#934)
+2026-10-13T08:23:08Z | 21ae052a | Remove ament_export_include_directories and ament_export_libraries calls (#924)
+2026-10-12T07:16:04Z | d17d80b5 | Report main publisher GID for messages taken from the buffer-aware CPU channel. (#927)

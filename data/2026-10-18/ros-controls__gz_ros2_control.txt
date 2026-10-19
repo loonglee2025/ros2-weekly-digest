@@ -1,0 +1,8 @@
+2026-10-15T07:23:49Z | 21241420 | Add unit tests for GazeboSimSystem and fix read() on empty components (#983)
+2026-10-14T08:10:15Z | 7d4cfbe4 | Add optional timeout while waiting for hardware initialization (#982)
+2026-10-14T07:49:56Z | 6f9f41ea | Validate update_rate, deduplicate parameter handling and add default … (#981)
+2026-10-14T07:21:21Z | 168eb484 | Unify package.xml metadata and modernize gz_ros2_control CMake exports (#980)
+2026-10-13T14:31:58Z | f92a19c8 | Removed dead code and const_cast (#979)
+2026-10-13T13:54:06Z | e05ed8f5 | Fix package.xml and CMakeLists.txt (#977)
+2026-10-13T13:34:58Z | 184dd7b8 | Fixes several crashes (#978)
+2026-10-13T13:34:15Z | 8eeebf45 | Include what you use and granular includes (#976)

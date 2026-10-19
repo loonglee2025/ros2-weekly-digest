@@ -1,0 +1,8 @@
+2026-10-16T14:05:25Z | 3e76cf1e | bullet-featherstone: lock kinematic joints that hold dynamic links (#1124)
+2026-10-16T03:11:19Z | 60a65fd8 | bullet-featherstone: fix root joint position and velocity (#1125)
+2026-10-16T01:52:57Z | b1cf0cc6 | bullet-featherstone: kinematic base velocity for links with a CoM offset (#1123)
+2026-10-15T23:32:39Z | 3f2cbe00 | Fix dartsim ray intersection test by updating supported collision detector list (#1126)
+2026-10-15T23:30:30Z | fe5fe22a | bullet-featherstone: fix toggling links between kinematic and dynamic (#1122)
+2026-10-15T21:47:41Z | 9f4c0186 | bullet-featherstone: enforce position limits on kinematically driven joints (#1118)
+2026-10-15T17:42:19Z | 13076874 | bullet-featherstone: support kinematic links in multi-link models (#1113)
+2026-10-15T16:29:31Z | b7abdbf4 | bullet-featherstone: fix velocities of non-base links (#1112)

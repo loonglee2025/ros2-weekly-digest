@@ -1,0 +1,25 @@
+=== 980f1926 2026-10-02T07:36:01Z
+Avoid RTPS statistics submessage missmatch
+
+Fix GHSA-hhx6-8qfx-8c23
+
+This is a squashed commit of a privately reviewed branch.
+
+Signed-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>
+Reviewed-by: Carlos Ferreira González <carlosferreira@eprosima.com>
+
+=== a2c44e78 2026-10-08T06:03:16Z
+Fix GHSA-5fgv-8wxq-3f69
+
+Fix GHSA-5fgv-8wxq-3f69
+
+This is a squashed commit of a privately reviewed branch.
+
+Signed-off-by: Carlos Ferreira González <carlosferreira@eprosima.com>
+Reviewed-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>
+
+=== edc0ed58 2026-10-14T06:05:26Z
+Update fastcdr to 2.3.7 (#6566)
+
+Signed-off-by: Zakaria Talbi Lalmi <zakariatalbi@eprosima.com>
+

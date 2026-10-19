@@ -1,0 +1,5 @@
+2026-10-17T19:14:37Z | b2be9d73 | Fix SIGINT propagation to spawner by dropping shell=True in launch_utils (#3682)
+2026-10-17T15:22:37Z | bd312fe3 | Fix GPS status values when state-interface reads fail (#3660)
+2026-10-17T13:45:54Z | bb84adc1 | Review "Include what you use" (#3696)
+2026-10-17T13:13:05Z | 000f5a7d | Use the pointers instead of reference in loaned interfaces (#2634)
+2026-10-14T08:35:29Z | b5c40090 | Add GPIO interface validation tests (#3553)
