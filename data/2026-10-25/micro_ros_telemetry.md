@@ -1,0 +1,30 @@
+Title: Micro-ROS telemetry: what a 100 Hz target does—and doesn’t—prove - Projects - Open Robotics Discourse
+
+URL Source: https://discourse.openrobotics.org/t/micro-ros-telemetry-what-a-100-hz-target-does-and-doesn-t-prove/59079
+
+Published Time: 2026-10-23T00:59:23+00:00
+
+Markdown Content:
+Open Robotics has a survey asking for _your_ feedback. Fill it in to enter a prize draw!
+
+[Open Robotics](https://www.openrobotics.org/) works to support the development, distribution, and adoption of open-source software for use in robotics research, education, and product development. As an organisation and as a movement, we know a lot about the software, tools and standards that we build, but _we do not know enough about the people who use them_ in their work, in their hobbies, and in their studies.
+
+What motivates people to use the Open Robotics Suite (ROS, ros-controls, Space ROS, Gazebo, Open-RMF, and the infrastructure that supports them), in whole or in part? What motivates companies to make their products depend on our software? What features are actually relied upon every day, and which are no longer necessary? Or, conversely, what motivates someone to _not_ use the Open Robotics Suite? To begin answering these questions, we are starting a new annual survey of everyone who is or could be using our software.
+
+We are asking anyone and everyone who is in robotics, in any way, to answer this survey. Even if you do not use any Open Robotics software, or you think that ROS is not suitable for your work, or you’ve only just started learning Gazebo, or you tried and have abandoned ROS, we still want to hear from you. If you’ve never used ROS, Gazebo, or any of our other software, we want to hear from you!
+
+Achieving our mission requires knowing who we are or should be building software for, no matter who they are or where they use it. This survey is how we get to know our community better.
+
+**You can fill in the survey by following this link**: [https://go.openrobotics.org/orsurvey26](https://go.openrobotics.org/orsurvey26)
+
+### [](https://discourse.openrobotics.org/t/micro-ros-telemetry-what-a-100-hz-target-does-and-doesn-t-prove/59079#p-118556-prize-draw-1)Prize draw
+
+All survey participants will have the opportunity to enter a prize draw to win one item of their choice from the [Open Robotics Store](https://store.openrobotics.org/). At the end of the survey you will have the opportunity to enter your email address for the purposes of entering this prize draw. You must enter a valid email address to be eligible for the prize draw. **50 participants will be chosen at random** from those who enter.
+
+### [](https://discourse.openrobotics.org/t/micro-ros-telemetry-what-a-100-hz-target-does-and-doesn-t-prove/59079#p-118556-deadline-2)Deadline
+
+**The survey period ends on the 30th of November, 2026**. All _completed_ surveys received by this date will be eligible for the prize draw.
+
+### [](https://discourse.openrobotics.org/t/micro-ros-telemetry-what-a-100-hz-target-does-and-doesn-t-prove/59079#p-118556-who-should-fill-in-the-survey-3)Who should fill in the survey?
+
+_Everyone_! We want the opinions of everyone working in, studying in, and playing in robotics. We want the opinions of every individual - not just one response per company. Get your colleagues to fill it in, your team mates, your staff, your classmates. The more information we have, the better we can work to ensure that the software you depend on better meets your needs - or, if you don’t use it, gets to the point where you want to!
